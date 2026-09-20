@@ -1,0 +1,462 @@
+{
+  "https://auto.drom.ru/voronezh/toyota/caldina/444866561.html": {
+    "posted_at": "2026-09-17T09:23:41.660316+00:00",
+    "message_id": 2,
+    "deleted_at": "2026-09-20T09:39:41.563286+00:00"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/286548630.html": {
+    "posted_at": "2026-09-17T09:23:45.267438+00:00",
+    "message_id": 3,
+    "deleted_at": "2026-09-20T09:39:43.054468+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/115201910.html": {
+    "posted_at": "2026-09-17T09:23:48.516712+00:00",
+    "message_id": 4,
+    "deleted_at": "2026-09-20T09:39:44.620078+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/839712305.html": {
+    "posted_at": "2026-09-17T09:23:50.362889+00:00",
+    "message_id": 5,
+    "deleted_at": "2026-09-20T09:39:46.103034+00:00"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/344142736.html": {
+    "posted_at": "2026-09-17T09:23:53.229197+00:00",
+    "message_id": 6,
+    "deleted_at": "2026-09-20T09:39:47.586573+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/181449387.html": {
+    "posted_at": "2026-09-17T09:23:54.942867+00:00",
+    "message_id": 7,
+    "deleted_at": "2026-09-20T09:39:49.097517+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/162765607.html": {
+    "posted_at": "2026-09-17T09:23:56.712324+00:00",
+    "message_id": 8,
+    "deleted_at": "2026-09-20T09:39:50.596839+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2121_4x4_niva/804876737.html": {
+    "posted_at": "2026-09-17T09:23:59.680725+00:00",
+    "message_id": 9,
+    "deleted_at": "2026-09-20T09:39:52.038831+00:00"
+  },
+  "https://auto.drom.ru/voronezh/nissan/x-trail/656172973.html": {
+    "posted_at": "2026-09-17T09:24:02.523056+00:00",
+    "message_id": 10,
+    "deleted_at": "2026-09-20T09:39:53.497845+00:00"
+  },
+  "https://auto.drom.ru/voronezh/renault/laguna/600860735.html": {
+    "posted_at": "2026-09-17T09:24:04.492319+00:00",
+    "message_id": 11,
+    "deleted_at": "2026-09-20T09:39:55.004656+00:00"
+  },
+  "https://auto.drom.ru/voronezh/bmw/3-series/783897713.html": {
+    "posted_at": "2026-09-17T09:24:06.335315+00:00",
+    "message_id": 12,
+    "deleted_at": "2026-09-20T09:39:56.498533+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/486583338.html": {
+    "posted_at": "2026-09-17T09:24:08.025747+00:00",
+    "message_id": 13,
+    "deleted_at": "2026-09-20T09:39:58.002242+00:00"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/251017905.html": {
+    "posted_at": "2026-09-17T09:24:13.933341+00:00",
+    "message_id": 14,
+    "deleted_at": "2026-09-20T09:40:02.569664+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/203716589.html": {
+    "posted_at": "2026-09-17T09:24:16.576861+00:00",
+    "message_id": 15,
+    "deleted_at": "2026-09-20T09:40:04.081075+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/767934322.html": {
+    "posted_at": "2026-09-17T09:43:13.829937+00:00",
+    "message_id": 16,
+    "deleted_at": "2026-09-20T12:31:18.454813+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/598978398.html": {
+    "posted_at": "2026-09-17T09:43:20.007003+00:00",
+    "message_id": 17,
+    "deleted_at": "2026-09-20T12:31:20.209745+00:00"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/351869541.html": {
+    "posted_at": "2026-09-17T09:43:25.347454+00:00",
+    "message_id": 18,
+    "deleted_at": "2026-09-20T12:31:21.729213+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/557256907.html": {
+    "posted_at": "2026-09-17T09:43:27.191071+00:00",
+    "message_id": 19,
+    "deleted_at": "2026-09-20T12:31:23.229061+00:00"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/162865604.html": {
+    "posted_at": "2026-09-17T09:43:29.011308+00:00",
+    "message_id": 20,
+    "deleted_at": "2026-09-20T12:31:24.742752+00:00"
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/104293809.html": {
+    "posted_at": "2026-09-17T09:43:31.445712+00:00",
+    "message_id": 21,
+    "deleted_at": "2026-09-20T12:31:26.204807+00:00"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/matiz/840260899.html": {
+    "posted_at": "2026-09-17T09:43:35.077594+00:00",
+    "message_id": 22,
+    "deleted_at": "2026-09-20T12:31:27.699829+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/101135103.html": {
+    "posted_at": "2026-09-17T09:43:37.840293+00:00",
+    "message_id": 23,
+    "deleted_at": "2026-09-20T12:31:29.212882+00:00"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/523821348.html": {
+    "posted_at": "2026-09-17T09:43:40.708050+00:00",
+    "message_id": 24,
+    "deleted_at": "2026-09-20T12:31:30.645504+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/275941033.html": {
+    "posted_at": "2026-09-17T09:43:43.218775+00:00",
+    "message_id": 25,
+    "deleted_at": "2026-09-20T12:31:32.129358+00:00"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera_classic/707676308.html": {
+    "posted_at": "2026-09-17T09:43:45.740281+00:00",
+    "message_id": 26,
+    "deleted_at": "2026-09-20T12:31:33.704104+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/639288974.html": {
+    "posted_at": "2026-09-17T09:43:49.412776+00:00",
+    "message_id": 27,
+    "deleted_at": "2026-09-20T12:31:35.208022+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/299847538.html": {
+    "posted_at": "2026-09-17T09:43:51.334478+00:00",
+    "message_id": 28,
+    "deleted_at": "2026-09-20T12:31:36.698942+00:00"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/364359691.html": {
+    "posted_at": "2026-09-17T09:43:54.889532+00:00",
+    "message_id": 29,
+    "deleted_at": "2026-09-20T12:31:38.443239+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/907186829.html": {
+    "posted_at": "2026-09-17T09:43:56.784315+00:00",
+    "message_id": 30,
+    "deleted_at": "2026-09-20T12:31:40.333571+00:00"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/175155625.html": {
+    "posted_at": "2026-09-17T09:43:58.597222+00:00",
+    "message_id": 31,
+    "deleted_at": "2026-09-20T12:31:42.129786+00:00"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/948780993.html": {
+    "posted_at": "2026-09-17T09:44:01.497992+00:00",
+    "message_id": 32,
+    "deleted_at": "2026-09-20T12:31:43.914858+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/285397836.html": {
+    "posted_at": "2026-09-17T10:01:44.536869+00:00",
+    "message_id": 33,
+    "deleted_at": "2026-09-20T12:31:45.414549+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/738500456.html": {
+    "posted_at": "2026-09-17T10:01:46.609950+00:00",
+    "message_id": 34,
+    "deleted_at": "2026-09-20T12:31:46.888689+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/137988921.html": {
+    "posted_at": "2026-09-17T10:01:51.869659+00:00",
+    "message_id": 35,
+    "deleted_at": "2026-09-20T12:31:48.387439+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2111/755433814.html": {
+    "posted_at": "2026-09-17T12:38:31.304453+00:00",
+    "message_id": 37,
+    "deleted_at": "2026-09-20T12:49:19.708904+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/21099/740750636.html": {
+    "posted_at": "2026-09-17T13:48:09.856560+00:00",
+    "message_id": 38,
+    "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/151178995.html": {
+    "posted_at": "2026-09-17T17:39:41.406427+00:00",
+    "message_id": 39,
+    "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/206135324.html": {
+    "posted_at": "2026-09-17T17:40:04.990750+00:00",
+    "message_id": 40,
+    "deleted_at": "2026-09-18T09:32:00+00:00"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda3/893632986.html": {
+    "posted_at": "2026-09-18T05:44:59.837921+00:00",
+    "message_id": 41,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "year": 2008,
+    "price": 370000,
+    "median_price": 450000,
+    "median_sample_size": 27,
+    "price_rating": "отличная цена",
+    "mileage_km": 290000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/3bAUQDCz2yYjnW_RKY3J6uv23OyvIxXCwlbTLGk-A3faAE1Zr8cEZuL68JiGJ7ShC_mGL7L4Yt1Vvi1X/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/749996952.html": {
+    "posted_at": "2026-09-18T05:45:10.916435+00:00",
+    "message_id": 42,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2015,
+    "price": 310000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 177490,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/OSOFJgMY0ETxODs3dBKaCvmggZY_O1f5wycHrhIW945L5r08p4mJPLcSmnVY0fLgKM99ulVxj6oPg2FD/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/meriva/304167884.html": {
+    "posted_at": "2026-09-18T05:45:16.787120+00:00",
+    "message_id": 43,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Meriva",
+    "year": 2007,
+    "price": 300000,
+    "median_price": 367000.0,
+    "median_sample_size": 28,
+    "price_rating": "хорошая цена",
+    "mileage_km": 239989,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/I3TAdGjcrX8W3SBR2YGFtnJ3IgJ6DYJJlaSsRmSHNQlKqHmj3N0FeGzyuS15nYHMezvPTG6dML7uNGwk/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/fusion/275273127.html": {
+    "posted_at": "2026-09-18T05:45:20.429403+00:00",
+    "message_id": 44,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Fusion",
+    "year": 2007,
+    "price": 320000,
+    "median_price": 450000,
+    "median_sample_size": 27,
+    "price_rating": "хорошая цена",
+    "mileage_km": 239244,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/3nRii-q3wB_l0KVCTta8CF3cpvTgCn1xm8vDRdpiXk6HVN6fihHlbCAgf2SKjoz-yS6aH-RCao1_9ZSI/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/niva/530646358.html": {
+    "posted_at": "2026-09-18T10:16:28.624662+00:00",
+    "message_id": 45,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2004,
+    "price": 250000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 172192,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/QROH6ygwAE0pY4wauTjmPknrpxxMNzoFQ06pOhmtw13z04YoJKCBZe946OcmS33rqjVGLgPSFRVKNiQ5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/225736331.html": {
+    "posted_at": "2026-09-18T12:56:33.222885+00:00",
+    "message_id": 46,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2013,
+    "price": 287000,
+    "median_price": 347000.0,
+    "median_sample_size": 84,
+    "price_rating": "хорошая цена",
+    "mileage_km": 210879,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/KsDxlm5l9s5fk1gbr8PxUb9kv_thZrmljMnQI5sSfOi-X8PKj6o-2pj7IZboFxeJ71Qwn2H-JFeB4h-W/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/384988377.html": {
+    "posted_at": "2026-09-18T13:48:32.690991+00:00",
+    "message_id": 47,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2007,
+    "price": 100000,
+    "median_price": 150000.0,
+    "median_sample_size": 128,
+    "price_rating": null,
+    "mileage_km": 248000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HCfmvMlONUNcYrTfqbhrjrqzTWOibHyvPcjIZaMf6mrs9ulp4tM4Unve67hyGxBkdZU8LyUcIgKSVcct/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/794391180.html": {
+    "posted_at": "2026-09-18T13:48:53.561258+00:00",
+    "message_id": 48,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2005,
+    "price": 90000,
+    "median_price": 110000,
+    "median_sample_size": 163,
+    "price_rating": null,
+    "mileage_km": 160000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/qbTf78s_VIs0se2fHxda9NjaWibArnmhheZSErMA9cyl1eVOFF89Q0iQbRqzh34ufux7awrRHE9K-0tq/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/873079139.html": {
+    "posted_at": "2026-09-18T15:15:33.378753+00:00",
+    "message_id": 49,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2115 Самара",
+    "year": 2007,
+    "price": 180000,
+    "median_price": 400000,
+    "median_sample_size": 51,
+    "price_rating": "нормальная цена",
+    "mileage_km": 182000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/veKvTjaImJYbVAZw4kaz32JSqFLL3QPL7tjz0DByvCs7gge5n6x7sCf2gows1iAtqPKYk4f5IQSN3uRh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/464627662.html": {
+    "posted_at": "2026-09-18T15:15:38.742691+00:00",
+    "message_id": 50,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2106",
+    "year": 2002,
+    "price": 80000,
+    "median_price": 95000,
+    "median_sample_size": 51,
+    "price_rating": null,
+    "mileage_km": 120523,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/mnLGzsxijfj6Xi7279_5URyN7bq2d8HR9vUNf9m02JmxBVr-P5XwMWQ0Uqn2LE2314Q27-j5eVyqeHbJ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/niva/323628500.html": {
+    "posted_at": "2026-09-18T15:33:04.356549+00:00",
+    "message_id": 51,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2012,
+    "price": 425000,
+    "median_price": 425000.0,
+    "median_sample_size": 52,
+    "price_rating": "отличная цена",
+    "mileage_km": 122939,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/giRjejGddS_LqxNQkbs14OwPGZYaFXiNVhXbLlXcw-q208g7FgxUnJWhwjLaEcguzSZQyVwzXCa_vhB8/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/314625485.html": {
+    "posted_at": "2026-09-18T17:33:47.779773+00:00",
+    "message_id": 52,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2007,
+    "price": 100000,
+    "median_price": 250000,
+    "median_sample_size": 117,
+    "price_rating": null,
+    "mileage_km": 250000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/4wXY1nH8z3Mg-EyrNYzx5SYF5EkE0R4nubiSIzkGggqC7Dlpsppwg0r83aaUc0NupI7F9mFy8mAmJU3P/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/295997383.html": {
+    "posted_at": "2026-09-19T05:45:15.862087+00:00",
+    "message_id": 53,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2012,
+    "price": 285000,
+    "median_price": 345000,
+    "median_sample_size": 213,
+    "price_rating": "хорошая цена",
+    "mileage_km": 261000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/qwtGw-ha8UBu1IIcAFyUzBCJYwLRJv2jtkgxhu0EcYQMjRkb6-SPuXaCFUWamTe7NE4dNS6hoNdsLXlb/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/136177063.html": {
+    "posted_at": "2026-09-19T06:03:30.339904+00:00",
+    "message_id": 54,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2008,
+    "price": 160000,
+    "median_price": 370000.0,
+    "median_sample_size": 74,
+    "price_rating": "отличная цена",
+    "mileage_km": 239000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/3fGG6MRLZQtDbqk_yjhSi6LvsJYqr-LX-guzYvC_RWzLggmnrrlGUJ7714-vjwL5ZDDE_lYsj_-vUgwM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/353870102.html": {
+    "posted_at": "2026-09-19T12:19:51.710847+00:00",
+    "message_id": 55,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2016,
+    "price": 350000,
+    "median_price": 415000.0,
+    "median_sample_size": 230,
+    "price_rating": "отличная цена",
+    "mileage_km": 308000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/vTRSm-5dQ-7n6cTzRss33uZQFH8ebCpom5j9CdyTZsRUwMTthPg989cgNvTk_88giDZtTjgIlTl8I7xL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/628604816.html": {
+    "posted_at": "2026-09-19T21:36:48.601113+00:00",
+    "message_id": 56,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2005,
+    "price": 60000,
+    "median_price": 110000,
+    "median_sample_size": 343,
+    "price_rating": null,
+    "mileage_km": 500000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/n9b5KaC7DQL_YaL6bomZOwKyVw_d4Re3YhpfwrJ2l9p1IRVgzOM8I_KXDkaPRkEZWmVcNq3L5MhM3I-f/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chery/fora/831412402.html": {
+    "posted_at": "2026-09-20T04:25:22.200524+00:00",
+    "message_id": 57,
+    "deleted_at": null,
+    "brand": "Chery",
+    "model": "Fora A21",
+    "year": 2007,
+    "price": 150000,
+    "median_price": 150000.0,
+    "median_sample_size": 102,
+    "price_rating": "отличная цена",
+    "mileage_km": 186000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/BoMlaVW8F-HcGEzs6wECZe3NK_PyC5jFQfprPfS_LLFaFcfarkXOLDjIQ7Zflw3BvOLADhAGizM7Uj21/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/21099/334549182.html": {
+    "posted_at": "2026-09-20T07:45:01.159916+00:00",
+    "message_id": 58,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "21099",
+    "year": 2004,
+    "price": 120000,
+    "median_price": 120000,
+    "median_sample_size": 103,
+    "price_rating": "отличная цена",
+    "mileage_km": 225000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/cAfonyBpjGhWBzWgFOUdzO66rLBc7zmI13PmdW3PTFkGCB-0XZIXop5cnykq_he3lyzQWPDX3RduQiLu/gen272wb.jpg"
+  }
+}
