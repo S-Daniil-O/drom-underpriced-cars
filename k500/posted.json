@@ -182,7 +182,7 @@
   "https://auto.drom.ru/voronezh/lada/2115/151178995.html": {
     "posted_at": "2026-09-17T17:39:41.406427+00:00",
     "message_id": 39,
-    "deleted_at": null
+    "deleted_at": "2026-09-20T18:42:50.397452+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2112/206135324.html": {
     "posted_at": "2026-09-17T17:40:04.990750+00:00",
@@ -458,5 +458,35 @@
     "mileage_km": 225000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/cAfonyBpjGhWBzWgFOUdzO66rLBc7zmI13PmdW3PTFkGCB-0XZIXop5cnykq_he3lyzQWPDX3RduQiLu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/206/342248597.html": {
+    "posted_at": "2026-09-20T18:45:36.842780+00:00",
+    "message_id": 59,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "206",
+    "year": 2007,
+    "price": 130000,
+    "median_price": 180000,
+    "median_sample_size": 115,
+    "price_rating": null,
+    "mileage_km": 250300,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/yjX53Sh73QvRlN0lBtYx9HY6z_OqccGqpc1D6_FpJQWBowAeetNRAErq2riNgAY2-PI9Ie6iTvXim049/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/628247330.html": {
+    "posted_at": "2026-09-20T18:45:39.068060+00:00",
+    "message_id": 60,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2006,
+    "price": 70000,
+    "median_price": 100000.0,
+    "median_sample_size": 186,
+    "price_rating": null,
+    "mileage_km": 302500,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/IK8o0aVEEvRLdFrNJ4406wyBbGGn-US868lzaOQMsc3pMb1hBpGVUTRVIrNDC36fKwdek-eziH9486qo/gen272wb.jpg"
   }
 }
