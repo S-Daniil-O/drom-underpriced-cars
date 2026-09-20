@@ -213,5 +213,35 @@
     "mileage_km": 43823,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/_-RR_h8RDdqUsCaU8N4j9IIYKqPbuCwRTRK-2yRP-F-BI9fJYthRmoutclc6JkvWCMbs3kHPsP0O3-_S/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/solaris/945885076.html": {
+    "posted_at": "2026-09-20T23:15:52.790678+00:00",
+    "message_id": 31,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2016,
+    "price": 790000,
+    "median_price": 949000,
+    "median_sample_size": 349,
+    "price_rating": "хорошая цена",
+    "mileage_km": 204000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Q-Gk0q5cqE5je6-CECPSKK92JRSPecwDYZYfC1NdKN3hLPXmn7y8HXWArx-rBBnFrTfXT9M8G5RH4YMN/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/720412292.html": {
+    "posted_at": "2026-09-20T23:15:54.813783+00:00",
+    "message_id": 32,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2024,
+    "price": 702000,
+    "median_price": 865000,
+    "median_sample_size": 653,
+    "price_rating": "хорошая цена",
+    "mileage_km": 59294,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/o6bZSmWTDNs5lYAiCywU0b9XLeswuc8SeKqJugXlk_PGcwPWoQUOGXsX6bLXEwUj0NC9m0k2rYV5rZAB/gen272wb.jpg"
   }
 }
