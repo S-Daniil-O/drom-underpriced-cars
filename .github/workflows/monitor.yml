@@ -1,0 +1,91 @@
+name: monitor
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        profile: [main, k500]
+    concurrency:
+      group: monitor-${{ matrix.profile }}
+      cancel-in-progress: false
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      PEREKUP_CHAT_ID: ${{ secrets.PEREKUP_CHAT_ID }}
+      TELEGRAM_CHAT_ID: ${{ matrix.profile == 'main' && secrets.TELEGRAM_CHAT_ID_MAIN || secrets.TELEGRAM_CHAT_ID_K500 }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: checkout state branch
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: _state
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
+
+      - name: restore price history (cache)
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ matrix.profile }}/data/price_history.json
+          key: ph-${{ matrix.profile }}-none
+          restore-keys: ph-${{ matrix.profile }}-
+
+      - name: prepare data
+        run: |
+          set -e
+          P=${{ matrix.profile }}
+          mkdir -p $P/data
+          test -f _state/$P/posted.json   # без posted.json запускаться нельзя: будут повторные публикации
+          cp _state/$P/posted.json $P/data/posted.json
+          if [ ! -f $P/data/price_history.json ]; then
+            echo "кэш пуст — берём стартовую историю цен из ветки state"
+            cp _state/$P/price_history.seed.json $P/data/price_history.json
+          fi
+
+      - name: run monitor
+        working-directory: ${{ matrix.profile }}
+        env:
+          PYTHONPATH: .
+        run: python ../monitor.py
+
+      - name: save price history (cache)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ matrix.profile }}/data/price_history.json
+          key: ph-${{ matrix.profile }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: persist posted.json to state branch
+        if: always()
+        run: |
+          P=${{ matrix.profile }}
+          if ! cmp -s $P/data/posted.json _state/$P/posted.json; then
+            cp $P/data/posted.json _state/$P/posted.json
+            cd _state
+            git config user.name "monitor-bot"
+            git config user.email "monitor-bot@users.noreply.github.com"
+            git add $P/posted.json
+            git commit -m "state($P): posted.json"
+            for i in 1 2 3 4 5; do
+              git push origin HEAD:state && exit 0
+              git pull --rebase origin state
+            done
+            exit 1
+          fi
