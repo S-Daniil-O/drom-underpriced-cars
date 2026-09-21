@@ -104,8 +104,9 @@ jobs:
       - name: подождать до 15 минут от старта и запустить следующий прогон
         env:
           GH_TOKEN: ${{ github.token }}
-          STARTED: ${{ github.run_started_at }}
         run: |
+          STARTED=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}" --jq .run_started_at)
+          echo "старт прогона: $STARTED"
           start=$(date -d "$STARTED" +%s); now=$(date +%s)
           wait=$(( 900 - (now - start) ))
           if [ "$wait" -gt 0 ]; then echo "жду ${wait} с"; sleep "$wait"; fi
