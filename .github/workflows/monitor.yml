@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   run:
@@ -89,3 +90,23 @@ jobs:
             done
             exit 1
           fi
+
+  # Цепочка: cron у GitHub срабатывает раз в несколько часов, поэтому после
+  # каждого прогона ждём, пока с его начала пройдёт 15 минут, и запускаем
+  # следующий. cron остаётся как страховка на случай обрыва цепочки.
+  # Остановить цепочку: отменить текущий запуск или `gh workflow disable monitor.yml`.
+  next:
+    needs: run
+    if: ${{ always() && needs.run.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: подождать до 15 минут от старта и запустить следующий прогон
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STARTED: ${{ github.run_started_at }}
+        run: |
+          start=$(date -d "$STARTED" +%s); now=$(date +%s)
+          wait=$(( 900 - (now - start) ))
+          if [ "$wait" -gt 0 ]; then echo "жду ${wait} с"; sleep "$wait"; fi
+          gh workflow run monitor.yml --repo "${{ github.repository }}" --ref main
