@@ -623,5 +623,35 @@
     "mileage_km": 137900,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/FUp7_EUKW0uO9u44psojD1wAMs5VEgmULbTFcEH9-W8nGkbIhtODFseN0w5YWdZD8eEl9m1cxQPsp2Qv/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/268426589.html": {
+    "posted_at": "2026-09-21T21:20:39.087064+00:00",
+    "message_id": 79,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2010,
+    "price": 139000,
+    "median_price": 165000,
+    "median_sample_size": 191,
+    "price_rating": null,
+    "mileage_km": 260000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/_oJYue0ovQRaP7sxh_day-nidcLoOWngS02sfnGN6n98rFWZyCVM5CCO_CI4Jctx37aWeFrdT0Wwi0DP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/228766730.html": {
+    "posted_at": "2026-09-21T21:20:41.817126+00:00",
+    "message_id": 80,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2008,
+    "price": 310000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 363,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/MwyYkVJxHiAY-44cP_WEeC3steYS4jhgSF1tF0tlK8hTPPZaaLAAHwo7hwBR3TyHjx8GMmJ-tAjpo_00/gen272wb.jpg"
   }
 }
