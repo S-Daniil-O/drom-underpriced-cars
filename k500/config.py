@@ -115,7 +115,7 @@ PEREKUP_DISCOUNT_THRESHOLD = 0.50  # дублируем, если цена <= 50
 PEREKUP_SEGMENT_LABEL = "50к–500к"
 # Тизер-канал показывает и находки со скромной выгодой (до PEREKUP_MAX_PROFIT), не только самые сильные.
 PEREKUP_MIN_PROFIT = 0
-PEREKUP_MAX_PROFIT = 100_000
+PEREKUP_MAX_PROFIT = 30_000
 # Призыв к подписке в конце тизер-поста (ссылка на сторонний бот оплаты Tribute).
 PEREKUP_PITCH = "Подписывайся на лучшие автомобили Дром\nИскусственный интеллект выбирает автомобили, на которых можно заработать\nhttps://t.me/tribute/app?startapp=ep_zdhgwQq9Q0LhlovGxrw2ywtaMMjeZPU7E1vEHx8uDUDQGqSTXXj"
 
