@@ -578,5 +578,20 @@
     "mileage_km": 251175,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/swH2JAiESI_p1ZSyRfASEcOyO2hQSMXvLNgqjr2QpZ23J0yyERoiE9-8Liq8BMxqcdEIVpxO1Y2DagXP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/4runner/195839935.html": {
+    "posted_at": "2026-09-21T17:20:07.049152+00:00",
+    "message_id": 68,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "4Runner",
+    "year": 1992,
+    "price": 500000,
+    "median_price": 500000,
+    "median_sample_size": 137,
+    "price_rating": "отличная цена",
+    "mileage_km": 495000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/vtgV8JlHm1VDojPIHiQMpykqdPrBuuu06cm47Twx3824E9uvJNBDuMqHECtSmydJ9yihEzwJmH0I0R8t/gen272wb.jpg"
   }
 }
