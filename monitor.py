@@ -705,7 +705,10 @@ def send_to_perekup(item, discount_pct, profit_rub):
     parts.append(item["url"])
     parts.append("")
     parts.append(f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}")
-    parts.append(f"Это самые сильные находки. Все находки в реальном времени — в боте: {config.PEREKUP_BOT_LINK}")
+    parts.append("")
+    parts.append("🔒 Лучшие предложения — в наших платных каналах, всего по 290 рублей.")
+    parts.append("")
+    parts.append(config.PEREKUP_PITCH)
     caption = "\n".join(parts)
 
     base = f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}"
@@ -834,8 +837,13 @@ def main():
 
             if item.get("median_price"):
                 discount_pct = round((1 - item["price"] / item["median_price"]) * 100)
-                if discount_pct >= config.PEREKUP_DISCOUNT_THRESHOLD * 100:
-                    profit_rub = round(item["price"] * discount_pct / 100)
+                profit_rub = round(item["price"] * discount_pct / 100)
+                # В тизер-канал идут: (1) самые сильные находки (скидка от порога) и
+                # (2) находки со скромной потенциальной выгодой, не больше
+                # PEREKUP_MAX_PROFIT (лучшие — только в платных каналах).
+                strong = discount_pct >= config.PEREKUP_DISCOUNT_THRESHOLD * 100
+                modest = discount_pct > 0 and config.PEREKUP_MIN_PROFIT <= profit_rub <= config.PEREKUP_MAX_PROFIT
+                if strong or modest:
                     send_to_perekup(item, discount_pct, profit_rub)
         time.sleep(1)
 

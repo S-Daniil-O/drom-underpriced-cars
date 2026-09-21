@@ -108,9 +108,13 @@ POST_TTL_DAYS = 3
 # подписчики основных каналов. Публикует и этот проект, и 50k-версия — в
 # один и тот же канал, поэтому там видно находки из обоих сегментов.
 PEREKUP_CHAT_ID = os.environ.get("PEREKUP_CHAT_ID", "")
-PEREKUP_BOT_LINK = "https://t.me/Python_DS_bot"  # воронка: выбор канала -> оплата -> доступ
 PEREKUP_DISCOUNT_THRESHOLD = 0.50  # дублируем, если цена <= 50% медианы группы
 PEREKUP_SEGMENT_LABEL = "500к–1.5М"
+# Тизер-канал показывает и находки со скромной выгодой (до PEREKUP_MAX_PROFIT), не только самые сильные.
+PEREKUP_MIN_PROFIT = 0
+PEREKUP_MAX_PROFIT = 100_000
+# Призыв к подписке в конце тизер-поста (ссылка на сторонний бот оплаты Tribute).
+PEREKUP_PITCH = "Подписывайся на автомобили ДРОМ от 500 тысяч руб.\nИскусственный интеллект выбирает лучшие автомобили, на которых потенциально можно заработать\nhttps://t.me/tribute/app?startapp=ep_zdhgwQGksqzEHLkyb9TjjMfAeei2kPICMdQEPC61mM6I7mAdAQT"
 
 # --- Файлы состояния (создаются автоматически) ---
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
