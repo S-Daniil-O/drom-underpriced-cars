@@ -117,4 +117,12 @@ jobs:
           start=$(date -d "$STARTED" +%s); now=$(date +%s)
           wait=$(( 900 - (now - start) ))
           if [ "$wait" -gt 0 ]; then echo "жду ${wait} с"; sleep "$wait"; fi
+          # Защита от размножения цепочек (например, запоздавший cron запускает ещё одну):
+          # продолжает цепочку только самый новый из активных запусков, остальные выходят.
+          NEWEST=$(gh run list --repo "${{ github.repository }}" --workflow monitor.yml --limit 30 --json databaseId,status \
+            --jq '[.[] | select(.status=="in_progress" or .status=="queued" or .status=="pending" or .status=="waiting") | .databaseId] | max')
+          if [ "$NEWEST" != "${{ github.run_id }}" ]; then
+            echo "есть более новый активный запуск ($NEWEST) — цепочку продолжает он"
+            exit 0
+          fi
           gh workflow run monitor.yml --repo "${{ github.repository }}" --ref main
