@@ -563,5 +563,20 @@
     "mileage_km": null,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/Fhf8ORi7hnulGc-fz4BZ45DRtGrT6hDL6X7l9Aem9DXLqvuq2IJl0E7ufjleb8LkWVyXsQb-A4I7TSFw/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/octavia/586232460.html": {
+    "posted_at": "2026-09-21T16:35:05.308152+00:00",
+    "message_id": 67,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Octavia",
+    "year": 2001,
+    "price": 290000,
+    "median_price": 400000,
+    "median_sample_size": 203,
+    "price_rating": null,
+    "mileage_km": 251175,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/swH2JAiESI_p1ZSyRfASEcOyO2hQSMXvLNgqjr2QpZ23J0yyERoiE9-8Liq8BMxqcdEIVpxO1Y2DagXP/gen272wb.jpg"
   }
 }
