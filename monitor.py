@@ -291,7 +291,19 @@ def fetch_listing_details(page, url):
     mileage = parse_mileage(text_of("specification-mileage"))
     description = text_of("info-full")
 
-    return {"owners": owners, "owners_display": owners_display, "mileage_km": mileage, "description": description}
+    # "Особые отметки" — отдельное поле в характеристиках объявления (не
+    # описание!), например "требуется ремонт или не на ходу". 2026-09-21:
+    # Lifan X60 с этой отметкой ушёл в публикацию, потому что описание у него
+    # было пустое, а фильтр смотрел только описание. Пустая строка = отметок нет.
+    special_marks = (text_of("specification-special-marks") or "").replace("Особые отметки", "").strip()
+
+    return {
+        "owners": owners,
+        "owners_display": owners_display,
+        "mileage_km": mileage,
+        "description": description,
+        "special_marks": special_marks,
+    }
 
 
 def _walk_json_for_items(node, results=None):
@@ -475,6 +487,16 @@ def enrich_and_filter_for_resale(candidates):
             owners = enriched.get("owners")
             if owners is not None and owners > config.MAX_OWNERS_FOR_RESALE:
                 log(f"Пропускаю (много владельцев, {owners}): {item['brand']} {item.get('model')} {item.get('year')}")
+                time.sleep(config.MIN_DELAY_BETWEEN_REQUESTS_SEC)
+                continue
+
+            # Любая "особая отметка" (кроме явно разрешённых в конфиге) —
+            # отказ: сейчас Drom показывает там только проблемы (ремонт, не на
+            # ходу и т.п.), а неизвестное значение безопаснее не публиковать.
+            marks = (enriched.get("special_marks") or "").strip()
+            allowed = {m.lower() for m in getattr(config, "SPECIAL_MARKS_ALLOWED", ())}
+            if marks and marks.lower() not in allowed:
+                log(f"Пропускаю (особые отметки: «{marks}»): {item['brand']} {item.get('model')} {item.get('year')}")
                 time.sleep(config.MIN_DELAY_BETWEEN_REQUESTS_SEC)
                 continue
 
