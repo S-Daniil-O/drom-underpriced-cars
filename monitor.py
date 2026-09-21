@@ -693,13 +693,14 @@ def send_to_perekup(item, discount_pct, profit_rub):
         return
 
     price_str = f"{item['price']:,}".replace(",", " ")
-    profit_str = f"{profit_rub:,}".replace(",", " ")
+    profit_str = f"{profit_rub:,}".replace(",", " ") if profit_rub is not None else ""
     parts = [
         f"🔥 {item['brand']} {item.get('model') or ''} {item.get('year') or ''}".strip(),
         f"💰 Цена: {price_str} ₽",
-        f"📉 Ниже медианы группы на {discount_pct}%",
-        f"💵 Потенциальная выгода: ~{profit_str} ₽",
     ]
+    if discount_pct is not None:
+        parts.append(f"📉 Ниже медианы группы на {discount_pct}%")
+        parts.append(f"💵 Потенциальная выгода: ~{profit_str} ₽")
     if item.get("price_rating"):
         parts.append(f"🏷 Оценка Drom: {item['price_rating']}")
     parts.append(item["url"])
@@ -725,7 +726,7 @@ def send_to_perekup(item, discount_pct, profit_rub):
         )
         data = resp.json() if resp.ok else None
         if data and data.get("ok"):
-            log(f"Продублировано в перекуп-канал: {item['brand']} {item.get('model')} — скидка {discount_pct}%")
+            log(f"Продублировано в перекуп-канал: {item['brand']} {item.get('model')} — скидка {discount_pct if discount_pct is not None else 'н/д (по метке Drom)'}%")
         else:
             log(f"Перекуп-канал: sendPhoto не удался ({resp.status_code}: {resp.text[:200]})")
     except requests.RequestException as e:
@@ -845,6 +846,10 @@ def main():
                 modest = discount_pct > 0 and config.PEREKUP_MIN_PROFIT <= profit_rub <= config.PEREKUP_MAX_PROFIT
                 if strong or modest:
                     send_to_perekup(item, discount_pct, profit_rub)
+            elif item.get("reason") == "drom_rating" and getattr(config, "PEREKUP_INCLUDE_DROM_RATING", False):
+                # Находка только по метке Drom "отличная цена" (своей медианы ещё нет) —
+                # показываем в тизере без расчёта скидки и выгоды.
+                send_to_perekup(item, None, None)
         time.sleep(1)
 
     log(f"Готово. Найдено выгодных: {len(underpriced)}, опубликовано новых: {new_posts}")

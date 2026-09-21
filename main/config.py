@@ -113,6 +113,8 @@ PEREKUP_SEGMENT_LABEL = "500к–1.5М"
 # Тизер-канал показывает и находки со скромной выгодой (до PEREKUP_MAX_PROFIT), не только самые сильные.
 PEREKUP_MIN_PROFIT = 0
 PEREKUP_MAX_PROFIT = 30_000
+# Находки только по метке Drom "отличная цена" (без своей медианы) тоже идут в тизер.
+PEREKUP_INCLUDE_DROM_RATING = True
 # Призыв к подписке в конце тизер-поста (ссылка на сторонний бот оплаты Tribute).
 PEREKUP_PITCH = "Подписывайся на автомобили ДРОМ от 500 тысяч руб.\nИскусственный интеллект выбирает лучшие автомобили, на которых потенциально можно заработать\nhttps://t.me/tribute/app?startapp=ep_zdhgwQGksqzEHLkyb9TjjMfAeei2kPICMdQEPC61mM6I7mAdAQT"
 
