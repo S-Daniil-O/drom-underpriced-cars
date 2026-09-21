@@ -273,5 +273,20 @@
     "mileage_km": 12500,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/PzfbykDVJNTu0wuRoG_VB4eEfzHj9hy3WuPiDdwrrnUPp3VfvjGVENwd9LeTcyYp3Alk5Emmo1fTr3X5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/uaz/patriot/432459340.html": {
+    "posted_at": "2026-09-21T21:22:22.240415+00:00",
+    "message_id": 41,
+    "deleted_at": null,
+    "brand": "УАЗ",
+    "model": "Патриот",
+    "year": 2016,
+    "price": 702000,
+    "median_price": 840000,
+    "median_sample_size": 143,
+    "price_rating": "нормальная цена",
+    "mileage_km": 160985,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/xBMjCFeYfU4v49NfPF-rSl-ZaxAJYnqomLdJzA1m95KF0MqBgYGLUdy6kikFmvlC5lhHjkHQ1NH6niec/gen272wb.jpg"
   }
 }
