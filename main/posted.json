@@ -142,7 +142,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/924882388.html": {
     "posted_at": "2026-09-18T11:59:38.466854+00:00",
     "message_id": 26,
-    "deleted_at": null,
+    "deleted_at": "2026-09-21T13:16:47.843060+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2024,
@@ -243,5 +243,35 @@
     "mileage_km": 59294,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/o6bZSmWTDNs5lYAiCywU0b9XLeswuc8SeKqJugXlk_PGcwPWoQUOGXsX6bLXEwUj0NC9m0k2rYV5rZAB/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/692852375.html": {
+    "posted_at": "2026-09-21T13:20:41.539914+00:00",
+    "message_id": 34,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2025,
+    "price": 915000,
+    "median_price": 1080000,
+    "median_sample_size": 893,
+    "price_rating": "нормальная цена",
+    "mileage_km": 43823,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/9psMchiyDObjLcsm9HQGieVpamWzdvucrPzilsl8i_mE11amkIvP3pFpHRcybNRNlpHRJor3IdfaxXF_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/809378863.html": {
+    "posted_at": "2026-09-21T13:20:47.001735+00:00",
+    "message_id": 35,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2025,
+    "price": 909000,
+    "median_price": 1080000.0,
+    "median_sample_size": 894,
+    "price_rating": "хорошая цена",
+    "mileage_km": 12500,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/PzfbykDVJNTu0wuRoG_VB4eEfzHj9hy3WuPiDdwrrnUPp3VfvjGVENwd9LeTcyYp3Alk5Emmo1fTr3X5/gen272wb.jpg"
   }
 }
