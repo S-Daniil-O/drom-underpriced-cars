@@ -593,5 +593,20 @@
     "mileage_km": 495000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/vtgV8JlHm1VDojPIHiQMpykqdPrBuuu06cm47Twx3824E9uvJNBDuMqHECtSmydJ9yihEzwJmH0I0R8t/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/solaris/921478824.html": {
+    "posted_at": "2026-09-21T17:35:06.709067+00:00",
+    "message_id": 69,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2011,
+    "price": 410000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 360000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/AVXnI2GnZtyMQu7IQE8xZ5Yd-8ZkgXZh8Gj3I8vABNT_ql8kwpA4_qWs9VW_cEcFL57Y3nDTQ6zBfhVg/gen272wb.jpg"
   }
 }
