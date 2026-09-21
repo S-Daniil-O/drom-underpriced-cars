@@ -118,6 +118,13 @@ PEREKUP_MIN_PROFIT = 0
 PEREKUP_MAX_PROFIT = 30_000
 # Находки только по метке Drom "отличная цена" (без своей медианы) тоже идут в тизер.
 PEREKUP_INCLUDE_DROM_RATING = True
+# Находки "только для тизера": слабее порога основного канала (скидка от 8% к медиане, но выгода
+# не больше PEREKUP_MAX_PROFIT), в платные каналы не идут. Проверяем не больше N за прогон.
+PEREKUP_TEASER_MIN_DISCOUNT = 0.08
+PEREKUP_TEASER_MAX_PER_RUN = 6
+# Тизер-посты удаляются через столько дней; отклонённые проверкой объявления перепроверяются через столько дней.
+PEREKUP_TTL_DAYS = 3
+PEREKUP_REJECT_RECHECK_DAYS = 3
 # Призыв к подписке в конце тизер-поста (ссылка на сторонний бот оплаты Tribute).
 PEREKUP_PITCH = "Подписывайся на лучшие автомобили Дром\nИскусственный интеллект выбирает автомобили, на которых можно заработать\nhttps://t.me/tribute/app?startapp=ep_zdhgwQq9Q0LhlovGxrw2ywtaMMjeZPU7E1vEHx8uDUDQGqSTXXj"
 
@@ -125,6 +132,7 @@ PEREKUP_PITCH = "Подписывайся на лучшие автомобили
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 PRICE_HISTORY_FILE = os.path.join(DATA_DIR, "price_history.json")
 POSTED_FILE = os.path.join(DATA_DIR, "posted.json")
+TEASER_FILE = os.path.join(DATA_DIR, "teaser.json")
 
 # --- Вежливость к площадке ---
 MIN_DELAY_BETWEEN_REQUESTS_SEC = 4   # пауза между запросами внутри одного прогона

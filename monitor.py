@@ -547,12 +547,21 @@ def update_history_and_find_underpriced(listings, history):
         # (мало наблюдений в группе), хотя у самого Drom помечен как "высокая
         # цена" (в описании — "после капремонта"). Поэтому метка Drom о
         # завышенной цене — жёсткое вето поверх любой другой причины.
-        if item.get("price_rating") in config.BAD_PRICE_RATINGS:
+        vetoed = item.get("price_rating") in config.BAD_PRICE_RATINGS
+        if vetoed:
             reason = None
         elif median_price is not None and item["price"] <= median_price * config.UNDERPRICED_THRESHOLD:
             reason = "median"
         elif item.get("price_rating") in config.GOOD_PRICE_RATINGS:
             reason = "drom_rating"
+        elif median_price is not None and getattr(config, "PEREKUP_TEASER_MIN_DISCOUNT", None):
+            # Слабее порога основного канала, но всё же дешевле медианы — такие
+            # находки идут ТОЛЬКО в тизер-канал (см. main): не больше
+            # PEREKUP_MAX_PROFIT потенциальной выгоды и от PEREKUP_TEASER_MIN_DISCOUNT скидки.
+            d = round((1 - item["price"] / median_price) * 100)
+            p = round(item["price"] * d / 100)
+            if d >= config.PEREKUP_TEASER_MIN_DISCOUNT * 100 and config.PEREKUP_MIN_PROFIT <= p <= config.PEREKUP_MAX_PROFIT:
+                reason = "teaser_only"
 
         if reason:
             underpriced.append({
@@ -690,7 +699,7 @@ def send_to_perekup(item, discount_pct, profit_rub):
     config.py) — необязательный шаг для тизер-канала, сбой здесь не должен
     влиять на уже прошедшую основную публикацию."""
     if not config.PEREKUP_CHAT_ID:
-        return
+        return None
 
     price_str = f"{item['price']:,}".replace(",", " ")
     profit_str = f"{profit_rub:,}".replace(",", " ") if profit_rub is not None else ""
@@ -717,7 +726,7 @@ def send_to_perekup(item, discount_pct, profit_rub):
         img_resp = requests.get(item["image_url"], timeout=15)
         if not img_resp.ok or not img_resp.content:
             log("Перекуп-канал: не удалось скачать фото, пропускаю дублирование")
-            return
+            return None
         resp = requests.post(
             f"{base}/sendPhoto",
             data={"chat_id": config.PEREKUP_CHAT_ID, "caption": caption},
@@ -727,10 +736,72 @@ def send_to_perekup(item, discount_pct, profit_rub):
         data = resp.json() if resp.ok else None
         if data and data.get("ok"):
             log(f"Продублировано в перекуп-канал: {item['brand']} {item.get('model')} — скидка {discount_pct if discount_pct is not None else 'н/д (по метке Drom)'}%")
-        else:
-            log(f"Перекуп-канал: sendPhoto не удался ({resp.status_code}: {resp.text[:200]})")
+            return data["result"]["message_id"]
+        log(f"Перекуп-канал: sendPhoto не удался ({resp.status_code}: {resp.text[:200]})")
     except requests.RequestException as e:
         log(f"Перекуп-канал: сетевая ошибка ({e})")
+    return None
+
+
+def teaser_file():
+    return getattr(config, "TEASER_FILE", os.path.join(config.DATA_DIR, "teaser.json"))
+
+
+def push_teaser(item, discount_pct, profit_rub, teaser):
+    """Публикует находку в тизер-канал не больше одного раза на объявление и
+    запоминает message_id (нужен для автоудаления). Запись с rejected=True —
+    это только кэш отклонённых проверкой объявлений, он публикации не мешает."""
+    entry = teaser.get(item["ad_id"])
+    if entry and (entry.get("message_id") or entry.get("deleted_at")):
+        return False
+    message_id = send_to_perekup(item, discount_pct, profit_rub)
+    if not message_id:
+        return False
+    now_iso = datetime.now(timezone.utc).isoformat()
+    teaser[item["ad_id"]] = {"posted_at": now_iso, "message_id": message_id, "deleted_at": None,
+                             "rejected": False, "checked_at": now_iso}
+    save_json(teaser_file(), teaser)
+    return True
+
+
+def cleanup_teaser(teaser):
+    """Удаляет из тизер-канала посты старше PEREKUP_TTL_DAYS дней и забывает
+    отклонённые объявления через PEREKUP_REJECT_RECHECK_DAYS дней (чтобы
+    перепроверить). Записи о показанных остаются навсегда — против повторов."""
+    ttl = timedelta(days=getattr(config, "PEREKUP_TTL_DAYS", config.POST_TTL_DAYS))
+    recheck = timedelta(days=getattr(config, "PEREKUP_REJECT_RECHECK_DAYS", 3))
+    now = datetime.now(timezone.utc)
+    base = f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}"
+    changed = deleted = 0
+    for ad_id in list(teaser):
+        e = teaser[ad_id]
+        try:
+            ts = datetime.fromisoformat(e.get("posted_at") or e.get("checked_at"))
+        except (TypeError, ValueError):
+            continue
+        if e.get("rejected") and not e.get("message_id"):
+            if now - ts > recheck:
+                del teaser[ad_id]
+                changed += 1
+            continue
+        if e.get("message_id") and not e.get("deleted_at") and now - ts > ttl:
+            try:
+                r = requests.post(f"{base}/deleteMessage",
+                                  data={"chat_id": config.PEREKUP_CHAT_ID, "message_id": e["message_id"]}, timeout=30)
+                d = r.json()
+            except requests.RequestException as ex:
+                log(f"Перекуп-канал: сетевая ошибка при удалении ({ex})")
+                continue
+            if d.get("ok") or d.get("error_code") == 400:
+                e["deleted_at"] = now.isoformat()
+                deleted += 1
+                changed += 1
+            time.sleep(1)
+    if changed:
+        save_json(teaser_file(), teaser)
+    if deleted:
+        log(f"Перекуп-канал: удалено устаревших постов (старше {ttl.days} дн.): {deleted}")
+    return teaser
 
 
 def cleanup_expired_posts(posted):
@@ -798,6 +869,10 @@ def main():
         save_json(config.POSTED_FILE, posted)
         log(f"Удалено устаревших постов (старше {config.POST_TTL_DAYS} дн.): {deleted_count}")
 
+    teaser = load_json(teaser_file(), {})
+    if config.PEREKUP_CHAT_ID:
+        teaser = cleanup_teaser(teaser)
+
     listings = scrape_listings()
     log(f"Всего собрано объявлений за прогон: {len(listings)}")
 
@@ -806,6 +881,8 @@ def main():
 
     # Фильтруем уже опубликованное ДО похода на страницы объявлений — нет
     # смысла тратить лишние запросы к Drom на то, что и так не отправим.
+    teaser_pool = [item for item in underpriced if item.get("reason") == "teaser_only"]
+    underpriced = [item for item in underpriced if item.get("reason") != "teaser_only"]
     new_candidates = [item for item in underpriced if item["ad_id"] not in posted]
     resale_candidates = enrich_and_filter_for_resale(new_candidates)
     log(f"После проверки на владельцев/описание осталось кандидатов: {len(resale_candidates)} из {len(new_candidates)}")
@@ -845,12 +922,41 @@ def main():
                 strong = discount_pct >= config.PEREKUP_DISCOUNT_THRESHOLD * 100
                 modest = discount_pct > 0 and config.PEREKUP_MIN_PROFIT <= profit_rub <= config.PEREKUP_MAX_PROFIT
                 if strong or modest:
-                    send_to_perekup(item, discount_pct, profit_rub)
+                    push_teaser(item, discount_pct, profit_rub, teaser)
             elif item.get("reason") == "drom_rating" and getattr(config, "PEREKUP_INCLUDE_DROM_RATING", False):
                 # Находка только по метке Drom "отличная цена" (своей медианы ещё нет) —
                 # показываем в тизере без расчёта скидки и выгоды.
-                send_to_perekup(item, None, None)
+                push_teaser(item, None, None, teaser)
         time.sleep(1)
+
+    # --- Находки только для тизер-канала (слабее порога основного канала) ---
+    teaser_posts = 0
+    if config.PEREKUP_CHAT_ID and teaser_pool:
+        cands = []
+        for it in teaser_pool:
+            e = teaser.get(it["ad_id"])
+            if it["ad_id"] in posted or (e and (e.get("message_id") or e.get("deleted_at") or e.get("rejected"))):
+                continue
+            cands.append(it)
+        # сначала самые выгодные; за прогон проверяем не больше N (каждая проверка — запрос страницы)
+        cands.sort(key=lambda i: 1 - i["price"] / i["median_price"], reverse=True)
+        cands = cands[: getattr(config, "PEREKUP_TEASER_MAX_PER_RUN", 6)]
+        if cands:
+            ok = enrich_and_filter_for_resale(cands)
+            ok_ids = {i["ad_id"] for i in ok}
+            now_iso = datetime.now(timezone.utc).isoformat()
+            for it in cands:
+                if it["ad_id"] not in ok_ids:
+                    teaser[it["ad_id"]] = {"posted_at": None, "message_id": None, "deleted_at": None,
+                                           "rejected": True, "checked_at": now_iso}
+            for it in ok:
+                d = round((1 - it["price"] / it["median_price"]) * 100)
+                p = round(it["price"] * d / 100)
+                if push_teaser(it, d, p, teaser):
+                    teaser_posts += 1
+                time.sleep(1)
+            save_json(teaser_file(), teaser)
+            log(f"Тизер-находки: проверено {len(cands)}, прошли {len(ok)}, опубликовано {teaser_posts}")
 
     log(f"Готово. Найдено выгодных: {len(underpriced)}, опубликовано новых: {new_posts}")
 

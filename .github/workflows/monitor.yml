@@ -55,6 +55,7 @@ jobs:
           mkdir -p $P/data
           test -f _state/$P/posted.json   # без posted.json запускаться нельзя: будут повторные публикации
           cp _state/$P/posted.json $P/data/posted.json
+          if [ -f _state/$P/teaser.json ]; then cp _state/$P/teaser.json $P/data/teaser.json; fi
           if [ ! -f $P/data/price_history.json ]; then
             echo "кэш пуст — берём стартовую историю цен из ветки state"
             cp _state/$P/price_history.seed.json $P/data/price_history.json
@@ -73,17 +74,23 @@ jobs:
           path: ${{ matrix.profile }}/data/price_history.json
           key: ph-${{ matrix.profile }}-${{ github.run_id }}-${{ github.run_attempt }}
 
-      - name: persist posted.json to state branch
+      - name: persist state (posted.json, teaser.json) to state branch
         if: always()
         run: |
           P=${{ matrix.profile }}
-          if ! cmp -s $P/data/posted.json _state/$P/posted.json; then
-            cp $P/data/posted.json _state/$P/posted.json
+          changed=0
+          for F in posted.json teaser.json; do
+            if [ -f $P/data/$F ] && ! cmp -s $P/data/$F _state/$P/$F 2>/dev/null; then
+              cp $P/data/$F _state/$P/$F
+              changed=1
+            fi
+          done
+          if [ "$changed" = 1 ]; then
             cd _state
             git config user.name "monitor-bot"
             git config user.email "monitor-bot@users.noreply.github.com"
-            git add $P/posted.json
-            git commit -m "state($P): posted.json"
+            git add -A $P
+            git commit -m "state($P): posted/teaser"
             for i in 1 2 3 4 5; do
               git push origin HEAD:state && exit 0
               git pull --rebase origin state
