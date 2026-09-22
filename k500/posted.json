@@ -698,5 +698,20 @@
     "mileage_km": 210000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/GTwkg8HurNN8D9PFySKvgcvOkgocgG3xVSMGtB5eXPriZNSTeFCRBAKdBNu9ARTbPeiaMHgv1k7vFw32/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/matiz/189112098.html": {
+    "posted_at": "2026-09-22T10:23:01.166133+00:00",
+    "message_id": 84,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Matiz",
+    "year": 2003,
+    "price": 142000,
+    "median_price": 142000,
+    "median_sample_size": 211,
+    "price_rating": "отличная цена",
+    "mileage_km": 105000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/wHmVSRZAiYjmBCH4cd8aWsWYtoWXMYXtc1HNx7M_IzkNUdZTO_ypCvLj3I8YmjGyKWsnbxyKd_46pk6_/gen272wb.jpg"
   }
 }
