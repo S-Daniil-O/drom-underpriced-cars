@@ -743,5 +743,20 @@
     "mileage_km": 150681,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/aDr1H3HfL3XJyJLuLZ4a8dg6yzkmZWwUsoq95WzHOcJLpHBH66ACChm0PEOzr8GjP5_XrXAlP62rFqUd/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/441862149.html": {
+    "posted_at": "2026-09-22T13:01:18.188082+00:00",
+    "message_id": 97,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2009,
+    "price": 95000,
+    "median_price": 165000.0,
+    "median_sample_size": 194,
+    "price_rating": null,
+    "mileage_km": 133000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/3dfy9DvUCongaqAB8xO-SOD9n9sR115pujxZm43xTRwdr6lOQLRvUufJzwVVP95O-nzBhUaFShA2fHZG/gen272wb.jpg"
   }
 }
