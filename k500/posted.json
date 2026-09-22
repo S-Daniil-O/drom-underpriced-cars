@@ -803,5 +803,35 @@
     "mileage_km": 500000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/961QAQGz7yjg_4mJSt162gfoBk3BiAL_KnBd2wzG9nW-jvFxAst_x6pAcFTA2aK4NNiy22yv20GAS2Vg/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/532730636.html": {
+    "posted_at": "2026-09-22T21:35:19.229866+00:00",
+    "message_id": 101,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2010,
+    "price": 270000,
+    "median_price": 165000,
+    "median_sample_size": 391,
+    "price_rating": "отличная цена",
+    "mileage_km": 79638,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/cYE5b4T_Hl-HcZo_dBHB5nSOpb2dV7zsGMWvuf86dcaHOHcvBEqCK5IoKynn-yCzeBNEXroMVWxS_bQh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/march/530382655.html": {
+    "posted_at": "2026-09-22T21:35:21.811281+00:00",
+    "message_id": 102,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "March",
+    "year": 2002,
+    "price": 199999,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 170000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/oPi9QWvwsRzrLG_cFxO2pCzjqSNIFSMm-4WJ-MW5psQW7MQZraIqSbFwXeGl1hvi-k8Uin0xgVZBXv0n/gen272wb.jpg"
   }
 }
