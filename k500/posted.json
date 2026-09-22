@@ -683,5 +683,20 @@
     "mileage_km": 320000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/JifJmKrH4GlUhIu6NZ5Vx0iUtvuHVKMcQFL4o5ZBI6m3-PaVCeSnqxHxuo7Z4j92GpH-IudTNvGHJ97K/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/166326985.html": {
+    "posted_at": "2026-09-22T08:07:26.133531+00:00",
+    "message_id": 83,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lanos",
+    "year": 2008,
+    "price": 190000,
+    "median_price": 230000.0,
+    "median_sample_size": 244,
+    "price_rating": "нормальная цена",
+    "mileage_km": 210000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/GTwkg8HurNN8D9PFySKvgcvOkgocgG3xVSMGtB5eXPriZNSTeFCRBAKdBNu9ARTbPeiaMHgv1k7vFw32/gen272wb.jpg"
   }
 }
