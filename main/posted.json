@@ -318,5 +318,20 @@
     "mileage_km": 98907,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/cxch4z7RqHH8rDfe2PA0OiFLkW_BnbPSNp-_M3rDjq39IdXpPTGbw1uKii9uRzpZfkb55qmjxmgBd_63/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/juke/512860784.html": {
+    "posted_at": "2026-09-22T21:36:21.673361+00:00",
+    "message_id": 47,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Juke",
+    "year": 2011,
+    "price": 650000,
+    "median_price": 860000,
+    "median_sample_size": 57,
+    "price_rating": null,
+    "mileage_km": 252168,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/8fLLJuDhiB4wOjPNfM8H8hywSN6nlDyU9-aR39JpgBk3AogqSIGO_iXGw2gphqxJtpoDtlr1ejuUjTo9/gen272wb.jpg"
   }
 }
