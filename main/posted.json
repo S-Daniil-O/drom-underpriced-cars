@@ -303,5 +303,20 @@
     "mileage_km": 137630,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/GB-o87C49_p3w_Xdrg2JwiaoCdWbImRZxPsCvSQD6lLUU-hSJEL8SckRz0Lv_84_DO2jB4zrUx9eIf8j/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/largus/824149123.html": {
+    "posted_at": "2026-09-22T07:38:15.855120+00:00",
+    "message_id": 45,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Ларгус",
+    "year": 2013,
+    "price": 540000,
+    "median_price": 540000.0,
+    "median_sample_size": 42,
+    "price_rating": "отличная цена",
+    "mileage_km": 98907,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/cxch4z7RqHH8rDfe2PA0OiFLkW_BnbPSNp-_M3rDjq39IdXpPTGbw1uKii9uRzpZfkb55qmjxmgBd_63/gen272wb.jpg"
   }
 }
