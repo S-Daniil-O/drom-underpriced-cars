@@ -788,5 +788,20 @@
     "mileage_km": 150000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/jqyCrcxVH7XYuLdiL-20jKao_dzrJqbyN7986Ot_kVQPCayxDRDkZxJMGfboHUac0R7jZjUKFwJ2AFRh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/gaz/3102_volga/129704847.html": {
+    "posted_at": "2026-09-22T21:20:10.320514+00:00",
+    "message_id": 100,
+    "deleted_at": null,
+    "brand": "ГАЗ",
+    "model": "3102 Волга",
+    "year": 2002,
+    "price": 170000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 500000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/961QAQGz7yjg_4mJSt162gfoBk3BiAL_KnBd2wzG9nW-jvFxAst_x6pAcFTA2aK4NNiy22yv20GAS2Vg/gen272wb.jpg"
   }
 }
