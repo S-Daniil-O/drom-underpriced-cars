@@ -758,5 +758,20 @@
     "mileage_km": 133000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/3dfy9DvUCongaqAB8xO-SOD9n9sR115pujxZm43xTRwdr6lOQLRvUufJzwVVP95O-nzBhUaFShA2fHZG/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/niva/663230469.html": {
+    "posted_at": "2026-09-22T15:32:22.310046+00:00",
+    "message_id": 98,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2008,
+    "price": 355000,
+    "median_price": 445000,
+    "median_sample_size": 69,
+    "price_rating": "нормальная цена",
+    "mileage_km": null,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Scnnt1GKtbss_vsZuDucXEk78JBdLD9qMF5WqNKeLv_PHsfDPOk_T9jvrzsZOd6iQ510BNenlZtbxjc_/gen272wb.jpg"
   }
 }
