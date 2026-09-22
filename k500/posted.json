@@ -773,5 +773,20 @@
     "mileage_km": null,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/Scnnt1GKtbss_vsZuDucXEk78JBdLD9qMF5WqNKeLv_PHsfDPOk_T9jvrzsZOd6iQ510BNenlZtbxjc_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2131_4x4_niva/213256702.html": {
+    "posted_at": "2026-09-22T16:42:04.648911+00:00",
+    "message_id": 99,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "4x4 2131 Нива",
+    "year": 2004,
+    "price": 140000,
+    "median_price": 165000.0,
+    "median_sample_size": 114,
+    "price_rating": null,
+    "mileage_km": 150000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jqyCrcxVH7XYuLdiL-20jKao_dzrJqbyN7986Ot_kVQPCayxDRDkZxJMGfboHUac0R7jZjUKFwJ2AFRh/gen272wb.jpg"
   }
 }
