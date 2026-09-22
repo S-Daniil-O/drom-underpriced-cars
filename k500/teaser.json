@@ -47,5 +47,12 @@
     "deleted_at": null,
     "rejected": false,
     "checked_at": "2026-09-22T11:31:01.574349+00:00"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/spark/472452554.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-09-22T14:31:40.477517+00:00"
   }
 }
