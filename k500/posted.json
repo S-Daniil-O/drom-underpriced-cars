@@ -908,5 +908,50 @@
     "mileage_km": 250000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/OXWK2o6ddHH_COZEnZmp1csA23TAWtBxRfjgleXmMNopCSrvWxPSZDKEHOxNXY5b5vsqR_lc_wP5Lc5L/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/796091575.html": {
+    "posted_at": "2026-09-23T21:32:42.973795+00:00",
+    "message_id": 108,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2003,
+    "price": 370000,
+    "median_price": 480000,
+    "median_sample_size": 69,
+    "price_rating": "нормальная цена",
+    "mileage_km": 20000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/mMjx3Eq7haNHX2q77u7-YQxwqcBWWl-VtQTfkNrHkVEUTn9orQFRP6i22ZDWjAcN9XMeWsqBExzYjkMs/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/742517442.html": {
+    "posted_at": "2026-09-23T21:32:45.450979+00:00",
+    "message_id": 109,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2012,
+    "price": 147000,
+    "median_price": 330000,
+    "median_sample_size": 513,
+    "price_rating": null,
+    "mileage_km": 138000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Wg85nvaiVH5MVp5jzBIgmgLICw-RNnSIMEITEzIez5FhddaZRHIHDYEwCmMftlaRnv6teuHDqvE06eIA/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/283909268.html": {
+    "posted_at": "2026-09-23T21:32:58.797057+00:00",
+    "message_id": 110,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2008,
+    "price": 280000,
+    "median_price": 399000,
+    "median_sample_size": 289,
+    "price_rating": "хорошая цена",
+    "mileage_km": 237,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/6_8d9lPUZc8V9iEx0KfR8oqMv6CH0r2lJB0XJeFkecOOMrJOWjD_A39e384I6Ihh6sqlGKA4OXcubuaT/gen272wb.jpg"
   }
 }
