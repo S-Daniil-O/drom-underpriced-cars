@@ -333,5 +333,20 @@
     "mileage_km": 252168,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/8fLLJuDhiB4wOjPNfM8H8hywSN6nlDyU9-aR39JpgBk3AogqSIGO_iXGw2gphqxJtpoDtlr1ejuUjTo9/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/223989300.html": {
+    "posted_at": "2026-09-23T21:18:39.351062+00:00",
+    "message_id": 48,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Logan",
+    "year": 2016,
+    "price": 765000,
+    "median_price": 990000,
+    "median_sample_size": 199,
+    "price_rating": "нормальная цена",
+    "mileage_km": 93393,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/G7ElqrkgNSc8WMF7wn9TSlFLLXgARa3r4zSE9nwSesaQnIz6FgTlW6sr-6pWcS86OhLiFXEsxCfn2Le_/gen272wb.jpg"
   }
 }
