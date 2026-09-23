@@ -893,5 +893,20 @@
     "mileage_km": 30000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/nQeftUkFtnzDUzi52dLuKm6miaEw9B8I64gjUpr6v87m1uW_6GVRZLONiQ4ulnLoow31hdttHMfzFs0d/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/micra/131592093.html": {
+    "posted_at": "2026-09-23T21:17:29.881073+00:00",
+    "message_id": 107,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Micra",
+    "year": 1998,
+    "price": 101000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 250000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/OXWK2o6ddHH_COZEnZmp1csA23TAWtBxRfjgleXmMNopCSrvWxPSZDKEHOxNXY5b5vsqR_lc_wP5Lc5L/gen272wb.jpg"
   }
 }
