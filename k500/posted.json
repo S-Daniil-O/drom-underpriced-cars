@@ -983,5 +983,20 @@
     "mileage_km": 164000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/NswtNEEFtjbUoHwODssQXYOkiC_s469LlFTK3eFp8mBCUH3M9duSlv7-xji4spXn0n1Biwoo-ABtsM4l/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/183675316.html": {
+    "posted_at": "2026-09-24T08:52:54.254480+00:00",
+    "message_id": 113,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2005,
+    "price": 310000,
+    "median_price": 430000.0,
+    "median_sample_size": 420,
+    "price_rating": "отличная цена",
+    "mileage_km": 218200,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/zvENYLuVg24ArcOvnkJ5DjeIGI2MXrZmIh1XXDwefDYnmeKeiVivej0g4Vd3Pit1i4S2gYueb4b7f-zx/gen272wb.jpg"
   }
 }
