@@ -277,7 +277,7 @@
   "https://auto.drom.ru/voronezh/uaz/patriot/432459340.html": {
     "posted_at": "2026-09-21T21:22:22.240415+00:00",
     "message_id": 41,
-    "deleted_at": null,
+    "deleted_at": "2026-09-24T21:32:51.624644+00:00",
     "brand": "УАЗ",
     "model": "Патриот",
     "year": 2016,
@@ -393,5 +393,50 @@
     "mileage_km": 184604,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/0z_3Xk3dKlH6K8LWNYJe6wF07CtDrtqofssacv9XDfY8S2XE14JBXf3b8fr8IY_aCLJet43-p0cy6Jzy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/polo/946478186.html": {
+    "posted_at": "2026-09-24T21:36:48.683341+00:00",
+    "message_id": 52,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2014,
+    "price": 650000,
+    "median_price": 850000,
+    "median_sample_size": 449,
+    "price_rating": "отличная цена",
+    "mileage_km": 114000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ZRqRxgPJiXnfaxccBF2j9SCtoKuYSLMVQRjl8In42_WUw-PNgclLuhYXnOGd8lO5Rm5StevqT5FOcKuy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/822146103.html": {
+    "posted_at": "2026-09-24T21:36:50.655445+00:00",
+    "message_id": 53,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2018,
+    "price": 880000,
+    "median_price": 1350000,
+    "median_sample_size": 149,
+    "price_rating": null,
+    "mileage_km": 162324,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ci5i16OFyTTeBw19UFvyw3I4qdAhcsMCluDa4RBuv2bRaCETUj6LGvX0JF8E5BxRdDwM5pZm-OJCbKeQ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/cx-7/796037915.html": {
+    "posted_at": "2026-09-24T21:36:59.609841+00:00",
+    "message_id": 54,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "CX-7",
+    "year": 2011,
+    "price": 730000,
+    "median_price": 1199000.0,
+    "median_sample_size": 238,
+    "price_rating": "нормальная цена",
+    "mileage_km": 382000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/7i5Qkt0D7ED9kRcIHpW1FWJgFaSaGr6jsMSCfhtEFxFuwnvBtb_r21xTiADX_1nTE9jH_JQn0ncJSvfh/gen272wb.jpg"
   }
 }
