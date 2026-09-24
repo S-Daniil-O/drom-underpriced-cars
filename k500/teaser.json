@@ -159,5 +159,12 @@
     "deleted_at": null,
     "rejected": false,
     "checked_at": "2026-09-24T19:35:20.956811+00:00"
+  },
+  "https://auto.drom.ru/voronezh/audi/100/759885385.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-09-24T22:05:52.386997+00:00"
   }
 }
