@@ -612,7 +612,7 @@
   "https://auto.drom.ru/voronezh/lada/2115/914548409.html": {
     "posted_at": "2026-09-21T19:35:20.575640+00:00",
     "message_id": 77,
-    "deleted_at": null,
+    "deleted_at": "2026-09-24T19:47:34.272689+00:00",
     "brand": "Лада",
     "model": "2115 Самара",
     "year": 2010,
@@ -1073,5 +1073,20 @@
     "mileage_km": 238002,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/hm3bWc6bkdaCsvf3WB_oUxXlsHqzANxKsejJSnlgY4ElkfzNpMZxk4U0xqasCmUB7dt_GKTsCZzKZNPZ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/fabia/266485945.html": {
+    "posted_at": "2026-09-24T19:50:25.416456+00:00",
+    "message_id": 119,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Fabia",
+    "year": 2010,
+    "price": 285000,
+    "median_price": 413000,
+    "median_sample_size": 349,
+    "price_rating": null,
+    "mileage_km": 350000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/BRNNJG-n1esmveitGSXMJtXVV4-NEUt_asAipFWI8ZCMegIns1_tpKgKNdWuSjCxv9Rv0qgGzcf_wGGD/gen272wb.jpg"
   }
 }
