@@ -453,5 +453,20 @@
     "mileage_km": null,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/oq8girsGgalvHvXj4Oy4zNX0OryuyNNuSaIa3rhn3OFgZq_6OcSldiZafadFs0QuHRGr_sv_1Zh5-ASI/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/honda/stepwgn/692996461.html": {
+    "posted_at": "2026-09-25T17:49:41.788892+00:00",
+    "message_id": 56,
+    "deleted_at": null,
+    "brand": "Honda",
+    "model": "Stepwgn",
+    "year": 2003,
+    "price": 550000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 460000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/J80A5upcnC-v2n35ufN3810AAIurY2Fq3vainbygkZ6U11ZTLHVU-onDPPygl07TlfgvkDAu35DzL6_x/gen272wb.jpg"
   }
 }
