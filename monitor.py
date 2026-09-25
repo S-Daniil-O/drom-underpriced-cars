@@ -783,21 +783,25 @@ def send_story_to_vk(file_bytes, kind):
     gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
     if not (os.environ.get("VK_TOKEN") and gid):
         return None
-    try:
-        method, field, name, mime = (("stories.getPhotoUploadServer", "file", "s.jpg", "image/jpeg") if kind == "photo"
-                                     else ("stories.getVideoUploadServer", "video_file", "s.mp4", "video/mp4"))
-        r = _vk_call(method, add_to_news=1, group_id=gid, link_text="learn_more", link_url="https://t.me/perekyp_vrn")
-        if "response" not in r:
-            log(f"VK история: {method} не удался ({str(r.get('error', r))[:150]})"); return None
-        up = requests.post(r["response"]["upload_url"], files={field: (name, file_bytes, mime)}, timeout=300).json()
-        result = (up.get("response") or {}).get("upload_result") or r["response"].get("upload_result")
-        sv = _vk_call("stories.save", upload_results=result)
-        items = (sv.get("response") or {}).get("items") or []
-        if items:
-            return items[0]["id"]
-        log(f"VK история: stories.save не удался ({str(sv.get('error', sv))[:200]})")
-    except (requests.RequestException, KeyError, ValueError, OSError) as e:
-        log(f"VK история: ошибка ({e})")
+    method, field, name, mime = (("stories.getPhotoUploadServer", "file", "s.jpg", "image/jpeg") if kind == "photo"
+                                 else ("stories.getVideoUploadServer", "video_file", "s.mp4", "video/mp4"))
+    # VK ограничивает частоту историй: при подряд идущих загрузках stories.save возвращает пустой список —
+    # тогда ждём и повторяем (проверено: через ~20 с проходит)
+    for attempt in range(3):
+        try:
+            r = _vk_call(method, add_to_news=1, group_id=gid, link_text="learn_more", link_url="https://t.me/perekyp_vrn")
+            if "response" not in r:
+                log(f"VK история: {method} не удался ({str(r.get('error', r))[:150]})"); return None
+            up = requests.post(r["response"]["upload_url"], files={field: (name, file_bytes, mime)}, timeout=300).json()
+            result = (up.get("response") or {}).get("upload_result") or r["response"].get("upload_result")
+            sv = _vk_call("stories.save", upload_results=result)
+            items = (sv.get("response") or {}).get("items") or []
+            if items:
+                return items[0]["id"]
+            log(f"VK история: stories.save вернул пусто (попытка {attempt + 1}/3), жду")
+        except (requests.RequestException, KeyError, ValueError, OSError) as e:
+            log(f"VK история: ошибка ({e})"); return None
+        time.sleep(20)
     return None
 
 
