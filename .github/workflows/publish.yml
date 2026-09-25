@@ -1,0 +1,40 @@
+name: publish-vk-video
+
+on:
+  push:
+    branches: [videos]
+    paths: ["videos/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-vk-video
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: videos
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: publish new videos to VK
+        env:
+          VK_TOKEN: ${{ secrets.VK_TOKEN }}
+          VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
+        run: python publish_vk_video.py
+      - name: save journal
+        if: always()
+        run: |
+          if [ -f published.json ] && [ -n "$(git status --porcelain published.json)" ]; then
+            git config user.name "video-bot"; git config user.email "video-bot@users.noreply.github.com"
+            git add published.json && git commit -q -m "journal: published videos"
+            for i in 1 2 3; do git push origin HEAD:videos && exit 0; git pull --rebase origin videos; done; exit 1
+          fi
