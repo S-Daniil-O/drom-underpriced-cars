@@ -468,5 +468,35 @@
     "mileage_km": 460000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/J80A5upcnC-v2n35ufN3810AAIurY2Fq3vainbygkZ6U11ZTLHVU-onDPPygl07TlfgvkDAu35DzL6_x/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta_cross/529929631.html": {
+    "posted_at": "2026-09-25T21:34:12.315025+00:00",
+    "message_id": 57,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта Кросс",
+    "year": 2024,
+    "price": 884000,
+    "median_price": 1055000,
+    "median_sample_size": 541,
+    "price_rating": "нормальная цена",
+    "mileage_km": 66014,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/j8KaSxOiHDyFH8RASszBROTjqFU4uq72_zt8CCOs_0jQwO7S6zqrqovhkLAqGMKnBn5Gs6ctxFC9C_UI/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/xray/366085746.html": {
+    "posted_at": "2026-09-25T21:34:14.456591+00:00",
+    "message_id": 58,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Х-рей",
+    "year": 2019,
+    "price": 615000,
+    "median_price": 910000,
+    "median_sample_size": 255,
+    "price_rating": "отличная цена",
+    "mileage_km": 72659,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/W2S_8a_tSvUx3BRwdMF-s1UrH410lZ2WWLOpc9D4-JGpVWzQp9rgEGJNrB5NQUcBeilnkfsBqTOcf79V/gen272wb.jpg"
   }
 }
