@@ -1163,5 +1163,20 @@
     "mileage_km": 277777,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/tTWYTCKAgrs4NHswf3kwhU97gFU3-AQjLWsPn_ylvPljxdedzQcYSXeSIobkbZtfz-j1ISemne1Kbimp/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/sonata/250135057.html": {
+    "posted_at": "2026-09-25T19:19:24.542480+00:00",
+    "message_id": 125,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Sonata",
+    "year": 2003,
+    "price": 250000,
+    "median_price": 350000,
+    "median_sample_size": 425,
+    "price_rating": null,
+    "mileage_km": 296610,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/SoSouSryhHEiDsKaCjaetkfkjdy55HuSebM9b3b1QvH0OpFhG8IJZKeMQpr4legqNjXgA2niPOq4W-NW/gen272wb.jpg"
   }
 }
