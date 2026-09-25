@@ -717,7 +717,7 @@
   "https://auto.drom.ru/voronezh/peugeot/308/242516692.html": {
     "posted_at": "2026-09-22T10:52:46.678254+00:00",
     "message_id": 85,
-    "deleted_at": null,
+    "deleted_at": "2026-09-25T11:01:07.103824+00:00",
     "brand": "Peugeot",
     "model": "308",
     "year": 2009,
@@ -1118,5 +1118,20 @@
     "mileage_km": 282324,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/71t5gBbnQrdVrmgTWYYEe0085awYjzj-hQSsJNhk5Scc0IOBea5Hxx-QvdpD4XyKceYY4HgYsVdhRH7N/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/spectra/577208029.html": {
+    "posted_at": "2026-09-25T11:03:59.039818+00:00",
+    "message_id": 122,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Spectra",
+    "year": 2007,
+    "price": 190000,
+    "median_price": 329000,
+    "median_sample_size": 641,
+    "price_rating": null,
+    "mileage_km": 239409,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/-6Aj_nycQb9AtRkA1H5DIN20FSgOmqULEumYKXI0MRDkAsdL28gV0p2HBJEcUUC80GkOLj8A9GaHu6-C/gen272wb.jpg"
   }
 }
