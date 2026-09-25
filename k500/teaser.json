@@ -62,17 +62,10 @@
     "rejected": false,
     "checked_at": "2026-09-22T16:57:00.801382+00:00"
   },
-  "https://auto.drom.ru/voronezh/nissan/terrano/325162374.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-09-22T20:50:15.056202+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2104/529817943.html": {
     "posted_at": "2026-09-22T20:50:16.360879+00:00",
     "message_id": 30,
-    "deleted_at": null,
+    "deleted_at": "2026-09-25T21:00:12.365109+00:00",
     "rejected": false,
     "checked_at": "2026-09-22T20:50:16.360879+00:00"
   },
