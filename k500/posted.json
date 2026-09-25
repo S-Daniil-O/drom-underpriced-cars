@@ -1133,5 +1133,20 @@
     "mileage_km": 239409,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/-6Aj_nycQb9AtRkA1H5DIN20FSgOmqULEumYKXI0MRDkAsdL28gV0p2HBJEcUUC80GkOLj8A9GaHu6-C/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/314190095.html": {
+    "posted_at": "2026-09-25T12:34:16.450973+00:00",
+    "message_id": 123,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2010,
+    "price": 90000,
+    "median_price": 290000.0,
+    "median_sample_size": 776,
+    "price_rating": null,
+    "mileage_km": 153286,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/tLkXIZJr2ntIlN0kS-NbQ4bZQQZQCd4X1I8Pc6k9FZigYsUbtMYWQMv8P1qxcdaroRMCul6E0la6e8TK/gen272wb.jpg"
   }
 }

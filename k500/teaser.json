@@ -180,5 +180,14 @@
     "deleted_at": null,
     "rejected": false,
     "checked_at": "2026-09-25T07:47:11.677954+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/314190095.html": {
+    "posted_at": "2026-09-25T12:34:21.900608+00:00",
+    "message_id": 43,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-09-25T12:34:21.900608+00:00",
+    "vk_post_id": 9,
+    "vk_deleted_at": null
   }
 }
