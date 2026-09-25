@@ -1,6 +1,6 @@
 """Общие функции публикации в VK токеном сообщества: текст на стену и истории (фото/видео).
 Фото и видео на стену VK токен сообщества загрузить не может, поэтому они идут историями (живут сутки)."""
-import io, os, textwrap
+import io, os, textwrap, time
 import requests
 
 TOKEN = os.environ.get("VK_TOKEN", ""); GID = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
@@ -39,19 +39,23 @@ def story(kind, data):
         return None
     method, field, name, mime = (("stories.getPhotoUploadServer", "file", "s.jpg", "image/jpeg") if kind == "photo"
                                  else ("stories.getVideoUploadServer", "video_file", "s.mp4", "video/mp4"))
-    try:
-        r = call(method, add_to_news=1, group_id=GID, link_text="learn_more", link_url=TG_LINK)
-        if "response" not in r:
-            print(f"  VK история: {method} не удался:", str(r.get("error", r))[:150]); return None
-        up = requests.post(r["response"]["upload_url"], files={field: (name, data, mime)}, timeout=600).json()
-        res = (up.get("response") or {}).get("upload_result") or r["response"].get("upload_result")
-        sv = call("stories.save", upload_results=res)
-        items = (sv.get("response") or {}).get("items") or []
-        if items:
-            return items[0]["id"]
-        print("  VK история: stories.save не удался:", str(sv.get("error", sv))[:200])
-    except (requests.RequestException, KeyError, ValueError) as e:
-        print("  VK история: ошибка:", e)
+    # VK ограничивает частоту историй: при подряд идущих загрузках stories.save возвращает пустой список,
+    # тогда ждём и повторяем (проверено: через ~20 с проходит)
+    for attempt in range(3):
+        try:
+            r = call(method, add_to_news=1, group_id=GID, link_text="learn_more", link_url=TG_LINK)
+            if "response" not in r:
+                print(f"  VK история: {method} не удался:", str(r.get("error", r))[:150]); return None
+            up = requests.post(r["response"]["upload_url"], files={field: (name, data, mime)}, timeout=600).json()
+            res = (up.get("response") or {}).get("upload_result") or r["response"].get("upload_result")
+            sv = call("stories.save", upload_results=res)
+            items = (sv.get("response") or {}).get("items") or []
+            if items:
+                return items[0]["id"]
+            print(f"  VK история: stories.save вернул пусто (попытка {attempt + 1}/3), жду")
+        except (requests.RequestException, KeyError, ValueError) as e:
+            print("  VK история: ошибка:", e); return None
+        time.sleep(20)
     return None
 
 
