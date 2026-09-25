@@ -1,4 +1,4 @@
-name: publish-vk-video
+name: publish-video
 
 on:
   push:
@@ -25,11 +25,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: publish new videos to VK
+      - name: publish new videos to Telegram (дальше зеркало переносит в VK)
         env:
-          VK_TOKEN: ${{ secrets.VK_TOKEN }}
-          VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
-        run: python publish_vk_video.py
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          PEREKUP_CHAT_ID: ${{ secrets.PEREKUP_CHAT_ID }}
+        run: python publish_video.py
       - name: save journal
         if: always()
         run: |
