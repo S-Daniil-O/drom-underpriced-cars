@@ -706,7 +706,7 @@ def send_to_vk(caption, image_bytes, ad_url):
     """Дублирует пост тизер-канала на стену сообщества VK (VK_TOKEN, VK_GROUP_ID из окружения;
     пусто — функция отключена). Возвращает post_id или None. Сбой здесь не должен влиять на Telegram.
     Загрузка фото работает только с пользовательским токеном админа (токен сообщества получает
-    ошибку 27) — тогда пост уходит с фото, иначе текстом со ссылкой на объявление (VK покажет превью)."""
+    ошибку 27) — тогда пост уходит с фото, иначе одним текстом (ссылка на объявление внутри текста)."""
     gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
     if not (os.environ.get("VK_TOKEN") and gid):
         return None
@@ -722,8 +722,11 @@ def send_to_vk(caption, image_bytes, ad_url):
             else:
                 log(f"VK: saveWallPhoto не удался ({str(sv)[:150]})")
         else:
-            log(f"VK: photos.getWallUploadServer недоступен ({str(r.get('error', r))[:150]}) — публикую ссылкой")
-        w = _vk_call("wall.post", owner_id=-int(gid), from_group=1, message=caption, attachments=attachment or ad_url)
+            log(f"VK: photos.getWallUploadServer недоступен ({str(r.get('error', r))[:150]}) — публикую текстом со ссылкой")
+        wp = dict(owner_id=-int(gid), from_group=1, message=caption)
+        if attachment:
+            wp["attachments"] = attachment  # ссылка-вложение не годится: VK отклоняет ссылки на Drom без картинки (link_photo_sizing_rule)
+        w = _vk_call("wall.post", **wp)
         if "response" in w:
             return w["response"]["post_id"]
         log(f"VK: wall.post не удался ({str(w.get('error', w))[:200]})")
