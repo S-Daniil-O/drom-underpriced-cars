@@ -747,7 +747,7 @@
   "https://auto.drom.ru/voronezh/lada/2107/441862149.html": {
     "posted_at": "2026-09-22T13:01:18.188082+00:00",
     "message_id": 97,
-    "deleted_at": null,
+    "deleted_at": "2026-09-25T13:01:44.359546+00:00",
     "brand": "Лада",
     "model": "2107",
     "year": 2009,
@@ -1148,5 +1148,20 @@
     "mileage_km": 153286,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/tLkXIZJr2ntIlN0kS-NbQ4bZQQZQCd4X1I8Pc6k9FZigYsUbtMYWQMv8P1qxcdaroRMCul6E0la6e8TK/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/megane/139011529.html": {
+    "posted_at": "2026-09-25T13:05:12.736267+00:00",
+    "message_id": 124,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Megane",
+    "year": 2007,
+    "price": 350000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 277777,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/tTWYTCKAgrs4NHswf3kwhU97gFU3-AQjLWsPn_ylvPljxdedzQcYSXeSIobkbZtfz-j1ISemne1Kbimp/gen272wb.jpg"
   }
 }
