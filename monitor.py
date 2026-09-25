@@ -741,7 +741,9 @@ def delete_vk_post(post_id):
         return True
     try:
         r = _vk_call("wall.delete", owner_id=-int(gid), post_id=post_id)
-        return "response" in r or r.get("error", {}).get("error_code") in (15, 100)  # 15/100 — уже удалён/не найден
+        # 15/100 — уже удалён/не найден; 27 — токен сообщества не умеет удалять записи (только токен пользователя):
+        # повторять бессмысленно, старые VK-посты остаются на стене
+        return "response" in r or r.get("error", {}).get("error_code") in (15, 100, 27)
     except requests.RequestException as e:
         log(f"VK: сетевая ошибка при удалении ({e})")
         return False
