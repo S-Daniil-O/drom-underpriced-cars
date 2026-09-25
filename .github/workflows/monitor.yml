@@ -23,6 +23,8 @@ jobs:
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       PEREKUP_CHAT_ID: ${{ secrets.PEREKUP_CHAT_ID }}
+      VK_TOKEN: ${{ secrets.VK_TOKEN }}
+      VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
       TELEGRAM_CHAT_ID: ${{ matrix.profile == 'main' && secrets.TELEGRAM_CHAT_ID_MAIN || secrets.TELEGRAM_CHAT_ID_K500 }}
       PYTHONUNBUFFERED: "1"
     steps:

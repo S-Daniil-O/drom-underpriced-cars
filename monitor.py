@@ -694,12 +694,62 @@ def send_to_telegram(item):
     return None
 
 
+VK_API_VERSION = "5.199"
+
+
+def _vk_call(method, **params):
+    params.update(access_token=os.environ.get("VK_TOKEN", ""), v=VK_API_VERSION)
+    return requests.post(f"https://api.vk.com/method/{method}", data=params, timeout=30).json()
+
+
+def send_to_vk(caption, image_bytes, ad_url):
+    """Дублирует пост тизер-канала на стену сообщества VK (VK_TOKEN, VK_GROUP_ID из окружения;
+    пусто — функция отключена). Возвращает post_id или None. Сбой здесь не должен влиять на Telegram.
+    Загрузка фото работает только с пользовательским токеном админа (токен сообщества получает
+    ошибку 27) — тогда пост уходит с фото, иначе текстом со ссылкой на объявление (VK покажет превью)."""
+    gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
+    if not (os.environ.get("VK_TOKEN") and gid):
+        return None
+    try:
+        attachment = None
+        r = _vk_call("photos.getWallUploadServer", group_id=gid)
+        if "response" in r:
+            up = requests.post(r["response"]["upload_url"], files={"photo": ("photo.jpg", image_bytes)}, timeout=60).json()
+            sv = _vk_call("photos.saveWallPhoto", group_id=gid, photo=up["photo"], server=up["server"], hash=up["hash"])
+            if "response" in sv:
+                p = sv["response"][0]
+                attachment = f"photo{p['owner_id']}_{p['id']}"
+            else:
+                log(f"VK: saveWallPhoto не удался ({str(sv)[:150]})")
+        else:
+            log(f"VK: photos.getWallUploadServer недоступен ({str(r.get('error', r))[:150]}) — публикую ссылкой")
+        w = _vk_call("wall.post", owner_id=-int(gid), from_group=1, message=caption, attachments=attachment or ad_url)
+        if "response" in w:
+            return w["response"]["post_id"]
+        log(f"VK: wall.post не удался ({str(w.get('error', w))[:200]})")
+    except (requests.RequestException, KeyError, ValueError, IndexError) as e:
+        log(f"VK: ошибка ({e})")
+    return None
+
+
+def delete_vk_post(post_id):
+    gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
+    if not (os.environ.get("VK_TOKEN") and gid and post_id):
+        return True
+    try:
+        r = _vk_call("wall.delete", owner_id=-int(gid), post_id=post_id)
+        return "response" in r or r.get("error", {}).get("error_code") in (15, 100)  # 15/100 — уже удалён/не найден
+    except requests.RequestException as e:
+        log(f"VK: сетевая ошибка при удалении ({e})")
+        return False
+
+
 def send_to_perekup(item, discount_pct, profit_rub):
     """Дублирует находку в @perekyp_vrn (см. PEREKUP_DISCOUNT_THRESHOLD в
     config.py) — необязательный шаг для тизер-канала, сбой здесь не должен
     влиять на уже прошедшую основную публикацию."""
     if not config.PEREKUP_CHAT_ID:
-        return None
+        return None, None
 
     price_str = f"{item['price']:,}".replace(",", " ")
     profit_str = f"{profit_rub:,}".replace(",", " ") if profit_rub is not None else ""
@@ -726,7 +776,7 @@ def send_to_perekup(item, discount_pct, profit_rub):
         img_resp = requests.get(item["image_url"], timeout=15)
         if not img_resp.ok or not img_resp.content:
             log("Перекуп-канал: не удалось скачать фото, пропускаю дублирование")
-            return None
+            return None, None
         resp = requests.post(
             f"{base}/sendPhoto",
             data={"chat_id": config.PEREKUP_CHAT_ID, "caption": caption},
@@ -736,11 +786,14 @@ def send_to_perekup(item, discount_pct, profit_rub):
         data = resp.json() if resp.ok else None
         if data and data.get("ok"):
             log(f"Продублировано в перекуп-канал: {item['brand']} {item.get('model')} — скидка {discount_pct if discount_pct is not None else 'н/д (по метке Drom)'}%")
-            return data["result"]["message_id"]
+            vk_id = send_to_vk(caption + "\n\n📲 Все находки в Telegram: https://t.me/perekyp_vrn", img_resp.content, item["url"])
+            if vk_id:
+                log(f"Продублировано в VK: post_id={vk_id}")
+            return data["result"]["message_id"], vk_id
         log(f"Перекуп-канал: sendPhoto не удался ({resp.status_code}: {resp.text[:200]})")
     except requests.RequestException as e:
         log(f"Перекуп-канал: сетевая ошибка ({e})")
-    return None
+    return None, None
 
 
 def teaser_file():
@@ -754,12 +807,12 @@ def push_teaser(item, discount_pct, profit_rub, teaser):
     entry = teaser.get(item["ad_id"])
     if entry and (entry.get("message_id") or entry.get("deleted_at")):
         return False
-    message_id = send_to_perekup(item, discount_pct, profit_rub)
+    message_id, vk_post_id = send_to_perekup(item, discount_pct, profit_rub)
     if not message_id:
         return False
     now_iso = datetime.now(timezone.utc).isoformat()
     teaser[item["ad_id"]] = {"posted_at": now_iso, "message_id": message_id, "deleted_at": None,
-                             "rejected": False, "checked_at": now_iso}
+                             "rejected": False, "checked_at": now_iso, "vk_post_id": vk_post_id, "vk_deleted_at": None}
     save_json(teaser_file(), teaser)
     return True
 
@@ -784,6 +837,10 @@ def cleanup_teaser(teaser):
                 del teaser[ad_id]
                 changed += 1
             continue
+        if e.get("vk_post_id") and not e.get("vk_deleted_at") and now - ts > ttl:
+            if delete_vk_post(e["vk_post_id"]):
+                e["vk_deleted_at"] = now.isoformat()
+                changed += 1
         if e.get("message_id") and not e.get("deleted_at") and now - ts > ttl:
             try:
                 r = requests.post(f"{base}/deleteMessage",
