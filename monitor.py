@@ -735,6 +735,72 @@ def send_to_vk(caption, image_bytes, ad_url):
     return None
 
 
+STORY_FONTS = (
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+)
+
+
+def _story_font(size):
+    from PIL import ImageFont
+    for path in STORY_FONTS:
+        if os.path.exists(path):
+            return ImageFont.truetype(path, size)
+    return None
+
+
+def make_story_card(item, discount_pct, photo_bytes):
+    """Вертикальная карточка 1080x1920 для истории VK: фото объявления, название, цена, скидка."""
+    import io
+    from PIL import Image, ImageDraw
+    f_big, f_mid, f_small = _story_font(78), _story_font(64), _story_font(46)
+    if not f_big:
+        return None
+    photo = Image.open(io.BytesIO(photo_bytes)).convert("RGB")
+    card = Image.new("RGB", (1080, 1920), (11, 18, 32)); d = ImageDraw.Draw(card)
+    w = 1000; h = min(int(photo.height * w / photo.width), 760)
+    card.paste(photo.resize((w, int(photo.height * w / photo.width))).crop((0, 0, w, h)), (40, 330))
+    d.text((60, 190), "НАХОДКА", fill=(255, 214, 10), font=f_big)
+    y = 330 + h + 70
+    title = f"{item['brand']} {item.get('model') or ''} {item.get('year') or ''}".strip()
+    d.text((60, y), title, fill=(255, 255, 255), font=f_big); y += 130
+    d.text((60, y), f"{item['price']:,}".replace(",", " ") + " руб.", fill=(126, 231, 135), font=f_big); y += 140
+    if discount_pct is not None:
+        d.rounded_rectangle((60, y, 60 + 620, y + 110), radius=28, fill=(248, 81, 73))
+        d.text((90, y + 20), f"−{discount_pct}% к рынку", fill=(255, 255, 255), font=f_mid); y += 150
+    elif item.get("price_rating"):
+        d.text((60, y), f"Оценка Drom: {item['price_rating']}", fill=(201, 209, 217), font=f_mid); y += 110
+    d.text((60, 1700), "Все находки — в Telegram", fill=(88, 166, 255), font=f_mid)
+    d.text((60, 1790), "@perekyp_vrn", fill=(201, 209, 217), font=f_small)
+    out = io.BytesIO(); card.save(out, "JPEG", quality=90)
+    return out.getvalue()
+
+
+def send_story_to_vk(file_bytes, kind):
+    """Публикует историю сообщества VK (kind: photo|video). Истории — единственный тип медиа, который VK
+    принимает от токена сообщества; живут сутки и сами исчезают. Возвращает story_id или None."""
+    gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
+    if not (os.environ.get("VK_TOKEN") and gid):
+        return None
+    try:
+        method, field, name, mime = (("stories.getPhotoUploadServer", "file", "s.jpg", "image/jpeg") if kind == "photo"
+                                     else ("stories.getVideoUploadServer", "video_file", "s.mp4", "video/mp4"))
+        r = _vk_call(method, add_to_news=1, group_id=gid, link_text="learn_more", link_url="https://t.me/perekyp_vrn")
+        if "response" not in r:
+            log(f"VK история: {method} не удался ({str(r.get('error', r))[:150]})"); return None
+        up = requests.post(r["response"]["upload_url"], files={field: (name, file_bytes, mime)}, timeout=300).json()
+        result = (up.get("response") or {}).get("upload_result") or r["response"].get("upload_result")
+        sv = _vk_call("stories.save", upload_results=result)
+        items = (sv.get("response") or {}).get("items") or []
+        if items:
+            return items[0]["id"]
+        log(f"VK история: stories.save не удался ({str(sv.get('error', sv))[:200]})")
+    except (requests.RequestException, KeyError, ValueError, OSError) as e:
+        log(f"VK история: ошибка ({e})")
+    return None
+
+
 def delete_vk_post(post_id):
     gid = os.environ.get("VK_GROUP_ID", "").strip().lstrip("-")
     if not (os.environ.get("VK_TOKEN") and gid and post_id):
@@ -794,6 +860,13 @@ def send_to_perekup(item, discount_pct, profit_rub):
             vk_id = send_to_vk(caption + "\n\n📲 Все находки в Telegram: https://t.me/perekyp_vrn", img_resp.content, item["url"])
             if vk_id:
                 log(f"Продублировано в VK: post_id={vk_id}")
+            try:
+                card = make_story_card(item, discount_pct, img_resp.content)
+                story_id = send_story_to_vk(card, "photo") if card else None
+                if story_id:
+                    log(f"Продублировано в VK историей: story_id={story_id}")
+            except Exception as e:  # история — дополнительный шаг, не должен ломать публикацию
+                log(f"VK история: не удалось собрать карточку ({e})")
             return data["result"]["message_id"], vk_id
         log(f"Перекуп-канал: sendPhoto не удался ({resp.status_code}: {resp.text[:200]})")
     except requests.RequestException as e:
