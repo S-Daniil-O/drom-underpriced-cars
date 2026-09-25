@@ -3,7 +3,7 @@ name: publish-video
 on:
   push:
     branches: [videos]
-    paths: ["videos/**"]
+    paths: ["videos/**", "posts/**"]
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests
+      - run: pip install requests pillow && sudo apt-get install -y -qq fonts-liberation
       - name: publish new videos to Telegram and VK stories
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -32,6 +32,13 @@ jobs:
           VK_TOKEN: ${{ secrets.VK_TOKEN }}
           VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
         run: python publish_video.py
+      - name: publish new posts (Telegram + VK)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          PEREKUP_CHAT_ID: ${{ secrets.PEREKUP_CHAT_ID }}
+          VK_TOKEN: ${{ secrets.VK_TOKEN }}
+          VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
+        run: python publish_post.py
       - name: save journal
         if: always()
         run: |
