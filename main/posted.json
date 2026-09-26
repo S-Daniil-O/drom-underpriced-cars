@@ -337,7 +337,7 @@
   "https://auto.drom.ru/voronezh/renault/logan/223989300.html": {
     "posted_at": "2026-09-23T21:18:39.351062+00:00",
     "message_id": 48,
-    "deleted_at": null,
+    "deleted_at": "2026-09-26T21:29:15.140772+00:00",
     "brand": "Renault",
     "model": "Logan",
     "year": 2016,
@@ -498,5 +498,35 @@
     "mileage_km": 72659,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/W2S_8a_tSvUx3BRwdMF-s1UrH410lZ2WWLOpc9D4-JGpVWzQp9rgEGJNrB5NQUcBeilnkfsBqTOcf79V/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/664745347.html": {
+    "posted_at": "2026-09-26T21:33:36.210012+00:00",
+    "message_id": 59,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2025,
+    "price": 900000,
+    "median_price": 1080000,
+    "median_sample_size": 5627,
+    "price_rating": "нормальная цена",
+    "mileage_km": 15475,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/LEmEAFxw8fS3qhRVdhRu7_dMBD8s5zboIpXgL5wvuSrpufXhrtKclftMOkRjK8qaLNnTYO8lAu9PAznQ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/sandero_stepway/638910803.html": {
+    "posted_at": "2026-09-26T21:33:38.488969+00:00",
+    "message_id": 60,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Sandero Stepway",
+    "year": 2013,
+    "price": 590000,
+    "median_price": 710000,
+    "median_sample_size": 69,
+    "price_rating": "нормальная цена",
+    "mileage_km": 207000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/rlut36pR6FhRS-28rAvUYpYnsKBRHS-kMzX_pE-9TIO2VEwlP6X83pUFgFKZlvJo057SZD_rMDOv9SP1/gen272wb.jpg"
   }
 }
