@@ -771,8 +771,9 @@ def make_story_card(item, discount_pct, photo_bytes):
         d.text((90, y + 20), f"−{discount_pct}% к рынку", fill=(255, 255, 255), font=f_mid); y += 150
     elif item.get("price_rating"):
         d.text((60, y), f"Оценка Drom: {item['price_rating']}", fill=(201, 209, 217), font=f_mid); y += 110
-    d.text((60, 1700), "Все находки — в Telegram", fill=(88, 166, 255), font=f_mid)
-    d.text((60, 1790), "@perekyp_vrn", fill=(201, 209, 217), font=f_small)
+    d.text((60, 1640), "Все находки — в Telegram", fill=(88, 166, 255), font=f_mid)
+    d.text((60, 1725), "@perekyp_vrn", fill=(201, 209, 217), font=f_small)
+    d.text((60, 1795), "Лучшие — в платных каналах, от 290 руб./мес", fill=(255, 214, 10), font=f_small)
     out = io.BytesIO(); card.save(out, "JPEG", quality=90)
     return out.getvalue()
 
@@ -819,6 +820,27 @@ def delete_vk_post(post_id):
         return False
 
 
+def build_vk_text(item, discount_pct, profit_rub):
+    """Текст поста для VK: все ссылки ведут на бесплатный Telegram-канал (там же объявление),
+    плюс напоминание о платных каналах с самыми сильными находками."""
+    title = f"{item['brand']} {item.get('model') or ''} {item.get('year') or ''}".strip()
+    lines = [f"🔥 {title}", f"💰 Цена: {item['price']:,} ₽".replace(",", " ")]
+    if discount_pct is not None:
+        lines.append(f"📉 Ниже медианы группы на {discount_pct}%")
+        lines.append(f"💵 Потенциальная выгода: ~{profit_rub:,} ₽".replace(",", " "))
+    if item.get("price_rating"):
+        lines.append(f"🏷 Оценка Drom: {item['price_rating']}")
+    if item.get("mileage_km"):
+        lines.append(f"🛣 Пробег: {item['mileage_km']:,} км".replace(",", " "))
+    lines += ["", f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}", "",
+              "🤖 ИИ проверяет объявления Дрома каждые 15 минут и отсеивает битые, залоговые и с кучей владельцев.",
+              "",
+              "📲 Ссылка на объявление и все находки в реальном времени — в бесплатном Telegram-канале:",
+              "https://t.me/perekyp_vrn", "",
+              "🔒 Самые лучшие находки собраны в платных каналах, от 290 ₽ в месяц — подробности в канале."]
+    return "\n".join(lines)
+
+
 def send_to_perekup(item, discount_pct, profit_rub):
     """Дублирует находку в @perekyp_vrn (см. PEREKUP_DISCOUNT_THRESHOLD в
     config.py) — необязательный шаг для тизер-канала, сбой здесь не должен
@@ -861,7 +883,7 @@ def send_to_perekup(item, discount_pct, profit_rub):
         data = resp.json() if resp.ok else None
         if data and data.get("ok"):
             log(f"Продублировано в перекуп-канал: {item['brand']} {item.get('model')} — скидка {discount_pct if discount_pct is not None else 'н/д (по метке Drom)'}%")
-            vk_id = send_to_vk(caption + "\n\n📲 Все находки в Telegram: https://t.me/perekyp_vrn", img_resp.content, item["url"])
+            vk_id = send_to_vk(build_vk_text(item, discount_pct, profit_rub), img_resp.content, item["url"])
             if vk_id:
                 log(f"Продублировано в VK: post_id={vk_id}")
             try:
