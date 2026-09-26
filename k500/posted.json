@@ -1268,5 +1268,20 @@
     "mileage_km": 220000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ywQxY6r2SNtzyj9zM3A0mh3NzT9m6g26kfU8QMJ51Uci3HsZHBzmdqcfvyCMM-JGcT1vHVqJEF7ZKz4u/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/subaru/forester/533921076.html": {
+    "posted_at": "2026-09-26T13:50:54.674292+00:00",
+    "message_id": 132,
+    "deleted_at": null,
+    "brand": "Subaru",
+    "model": "Forester",
+    "year": 2000,
+    "price": 390000,
+    "median_price": 450000,
+    "median_sample_size": 623,
+    "price_rating": "отличная цена",
+    "mileage_km": 189000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/bxLpSQyHxoVTMqUUSTaB5HqQ88lGX4cDLSS_gWnb1Qfby1DGNJqS-lY-_qzoWc-fWCMDKlnPrxT0xtIK/gen272wb.jpg"
   }
 }
