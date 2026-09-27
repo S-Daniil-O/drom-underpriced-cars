@@ -1017,7 +1017,7 @@
   "https://auto.drom.ru/voronezh/mitsubishi/carisma/209234977.html": {
     "posted_at": "2026-09-24T10:30:54.638162+00:00",
     "message_id": 115,
-    "deleted_at": null,
+    "deleted_at": "2026-09-27T10:32:38.161311+00:00",
     "brand": "Mitsubishi",
     "model": "Carisma",
     "year": 2002,
@@ -1358,5 +1358,20 @@
     "mileage_km": 150000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/53Wp90YX91gEU2ZsAl6BZobCRS_cTRc7REnayoY1UYOAXo_X9GEQN111c039CjtH2xk52u_B7TT3Lo1a/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/180549789.html": {
+    "posted_at": "2026-09-27T10:35:32.180676+00:00",
+    "message_id": 138,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2005,
+    "price": 170000,
+    "median_price": 250000.0,
+    "median_sample_size": 152,
+    "price_rating": "хорошая цена",
+    "mileage_km": 151700,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/oBdaoJJ_foRpjLaq73CInO8XdQm9_KNGaXgvJ03cqD1zwO50wH-uYtbKUmhZPpvBy3jjvCeP3RorHjS0/gen272wb.jpg"
   }
 }
