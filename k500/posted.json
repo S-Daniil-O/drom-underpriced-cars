@@ -1343,5 +1343,20 @@
     "mileage_km": 6000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/S84gDGfM-p1jSRpB-_VHu6t7DmaIw6BE5A1TiVjYenz70aAeqiQ_qYuCGa4yClDV9y2JlHlEQ1UN1dPd/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chery/amulet/296395796.html": {
+    "posted_at": "2026-09-27T05:59:12.506873+00:00",
+    "message_id": 137,
+    "deleted_at": null,
+    "brand": "Chery",
+    "model": "Amulet A15",
+    "year": 2007,
+    "price": 69000,
+    "median_price": 188000,
+    "median_sample_size": 1105,
+    "price_rating": null,
+    "mileage_km": 150000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/53Wp90YX91gEU2ZsAl6BZobCRS_cTRc7REnayoY1UYOAXo_X9GEQN111c039CjtH2xk52u_B7TT3Lo1a/gen272wb.jpg"
   }
 }
