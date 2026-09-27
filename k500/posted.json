@@ -1388,5 +1388,20 @@
     "mileage_km": 228581,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/lOkaeX1K00HMGL4H4IqJ11t8sEKHPmBegAR6B5XiKL4j5iX5eaNzrb8tumIlTgtrxCLVk6WE-asNB0md/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/maxima/311850737.html": {
+    "posted_at": "2026-09-27T11:50:23.623805+00:00",
+    "message_id": 140,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Maxima",
+    "year": 2001,
+    "price": 230000,
+    "median_price": 230000,
+    "median_sample_size": 959,
+    "price_rating": "отличная цена",
+    "mileage_km": 260000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/6DNgqDAicHXZHjrF7NaPn8IFQj3aClOpLHkOAzoonPwDHPTOoVGiX0JdjzkEGtZ_qEyogYDy93bHNNCn/gen272wb.jpg"
   }
 }
