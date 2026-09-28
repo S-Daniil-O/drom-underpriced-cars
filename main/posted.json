@@ -558,5 +558,20 @@
     "mileage_km": 195000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/UjL6QM-SfCfF77PY-3exR-hqd3rP8U5uGLnUzfmBEyK1-2UApwas0LhMYtRsJ__ajKVwZAGVYzfsC_ht/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/408/854210613.html": {
+    "posted_at": "2026-09-28T08:37:01.898915+00:00",
+    "message_id": 63,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "408",
+    "year": 2013,
+    "price": 579000,
+    "median_price": 690000.0,
+    "median_sample_size": 124,
+    "price_rating": null,
+    "mileage_km": 148600,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/hhFzR-kbLh5TKbUOWOKaUm_X3kH6TuYjr9KVogGXsOLpIGjePfcX6ykkAw_YpLLMc8uQ9xc3hFo8k90l/gen272wb.jpg"
   }
 }
