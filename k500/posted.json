@@ -1122,7 +1122,7 @@
   "https://auto.drom.ru/voronezh/kia/spectra/577208029.html": {
     "posted_at": "2026-09-25T11:03:59.039818+00:00",
     "message_id": 122,
-    "deleted_at": null,
+    "deleted_at": "2026-09-28T11:07:52.580759+00:00",
     "brand": "Kia",
     "model": "Spectra",
     "year": 2007,
@@ -1538,5 +1538,20 @@
     "mileage_km": 226000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/UMqLiBzb0ksnK6X6kVy9DWMLzP0RAXiIYQWkPugGkMXi51o0EosorhKWy9jw47i08BiyDLgl2igF0E8x/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volvo/s40/889733187.html": {
+    "posted_at": "2026-09-28T11:10:37.461797+00:00",
+    "message_id": 150,
+    "deleted_at": null,
+    "brand": "Volvo",
+    "model": "S40",
+    "year": 2004,
+    "price": 290000,
+    "median_price": 365000,
+    "median_sample_size": 649,
+    "price_rating": "нормальная цена",
+    "mileage_km": 300000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/JWVcexSg4iGus1vxchLqvhAIHfR6AqK9A_WD9wSd-c34SYxFSwEg4-ZO6shL_r-Dzx-NFLByAPxSrkCz/gen272wb.jpg"
   }
 }
