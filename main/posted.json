@@ -588,5 +588,50 @@
     "mileage_km": 89694,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/NfACfcCLW4T86_ezYGDt9UFSPPNMEftoAjpNvaM7zOWsBSZ_IezQ10zks21Tp_hg9laH-dE9RNqjUU4q/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta/937753045.html": {
+    "posted_at": "2026-09-28T09:26:43.520028+00:00",
+    "message_id": 65,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста",
+    "year": 2019,
+    "price": 730000,
+    "median_price": 930000.0,
+    "median_sample_size": 1328,
+    "price_rating": null,
+    "mileage_km": 101335,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/4LUZKLGgSMxg5BVkjxBKFrZkUXLGLE-sD8crkHeFh9sljUQaLix6HmAgdjqvkZzxx40MwaUp2d3ZBuY2/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta_cross/605243704.html": {
+    "posted_at": "2026-09-28T09:26:46.937383+00:00",
+    "message_id": 66,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста Кросс",
+    "year": 2020,
+    "price": 940000,
+    "median_price": 1221000.0,
+    "median_sample_size": 296,
+    "price_rating": "хорошая цена",
+    "mileage_km": 107823,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/rrDxh9nE5KmBe5E2q_8P23Vj4CYc4ax-zCVhJq-xtRN6eeZ0t1gUbsFjwaVKUNSIVf1jDcVixa1ZiIrV/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/fusion/824543071.html": {
+    "posted_at": "2026-09-28T09:26:50.740860+00:00",
+    "message_id": 67,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Fusion",
+    "year": 2019,
+    "price": 930000,
+    "median_price": 1390000,
+    "median_sample_size": 283,
+    "price_rating": null,
+    "mileage_km": 187992,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/QTF69qbyBP5ySjwFqSfMptxJ347CDfok-NLyzPYfW_tEdabgUbgm2ao8yDgU9vob0Ot9kD4-yCx35ytk/gen272wb.jpg"
   }
 }
