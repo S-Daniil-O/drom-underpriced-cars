@@ -1568,5 +1568,20 @@
     "mileage_km": 262000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/M2OD32arJKgPNwuv2ZfLMM7PycfPafiwWFjchYZUGvNiBFJ6XD3Ae4g9l8sLa7dp9pMuIP9iLD68Mh3v/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/939319594.html": {
+    "posted_at": "2026-09-28T13:41:01.599839+00:00",
+    "message_id": 152,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera",
+    "year": 2017,
+    "price": 420000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 330000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/7DeEikY4-F36K0e0qkhcAjo4MqMi4uZvJ7QhDLhcE6oEou260cTm5kBbnPGPVUe0oUMNnQfc0gV_pRRT/gen272wb.jpg"
   }
 }
