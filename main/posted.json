@@ -573,5 +573,20 @@
     "mileage_km": 148600,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/hhFzR-kbLh5TKbUOWOKaUm_X3kH6TuYjr9KVogGXsOLpIGjePfcX6ykkAw_YpLLMc8uQ9xc3hFo8k90l/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ssang_yong/kyron/501474517.html": {
+    "posted_at": "2026-09-28T09:11:09.172339+00:00",
+    "message_id": 64,
+    "deleted_at": null,
+    "brand": "SsangYong",
+    "model": "Kyron",
+    "year": 2014,
+    "price": 780000,
+    "median_price": 989000.0,
+    "median_sample_size": 210,
+    "price_rating": null,
+    "mileage_km": 89694,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NfACfcCLW4T86_ezYGDt9UFSPPNMEftoAjpNvaM7zOWsBSZ_IezQ10zks21Tp_hg9laH-dE9RNqjUU4q/gen272wb.jpg"
   }
 }
