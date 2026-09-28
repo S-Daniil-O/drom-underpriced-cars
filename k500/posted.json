@@ -1508,5 +1508,20 @@
     "mileage_km": 200000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ZHPYzvw592q8dM11Cra3U_lpbkaVMiJDVo7RLoR_fRU8xmngQgTLt4JyLqtiG81pD-RWaF3zBiNu6LdH/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2111/434426085.html": {
+    "posted_at": "2026-09-28T06:20:14.099481+00:00",
+    "message_id": 148,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2111",
+    "year": 2008,
+    "price": 70000,
+    "median_price": 229000.0,
+    "median_sample_size": 114,
+    "price_rating": null,
+    "mileage_km": 180000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/q9z83bpsGPZoXIZXUdXg9Nr9YOdHNKvDs1dlZOjtENFkeyJlqg1C6zWMTa14pB29z6Xu0S_VN9WwHBHi/gen272wb.jpg"
   }
 }
