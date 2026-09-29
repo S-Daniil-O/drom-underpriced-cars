@@ -1748,5 +1748,20 @@
     "mileage_km": 200000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/vXZ_tWKwQ5UXqycSflgKnE-uBqbRQaQB0f5003LHhcFp4pmWNjVq9F7QzmWVfTr41OFoPpDgFBMH66yZ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/matiz/827649280.html": {
+    "posted_at": "2026-09-29T12:46:29.466805+00:00",
+    "message_id": 164,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Matiz",
+    "year": 2012,
+    "price": 190000,
+    "median_price": 259000,
+    "median_sample_size": 69,
+    "price_rating": "хорошая цена",
+    "mileage_km": 117000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5qzxyBNs3Okm7WiFYA1VQJA69nprdOk1DNMEgnCJTspSt6CdXAo9tPbPRXFxVORrC7KjRQiGUVakldUZ/gen272wb.jpg"
   }
 }
