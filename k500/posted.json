@@ -1763,5 +1763,50 @@
     "mileage_km": 117000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/5qzxyBNs3Okm7WiFYA1VQJA69nprdOk1DNMEgnCJTspSt6CdXAo9tPbPRXFxVORrC7KjRQiGUVakldUZ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/289484197.html": {
+    "posted_at": "2026-09-29T21:20:53.406091+00:00",
+    "message_id": 165,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2011,
+    "price": 220000,
+    "median_price": 333000.0,
+    "median_sample_size": 2280,
+    "price_rating": null,
+    "mileage_km": 150000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/c4nYLpZNIOUenOhvpb7sz4i7WTRn8-bLGtzQaVRumgKXJ3oKlFIrrKH1Wq_bB5cHfcm5bHKN9B2MxizR/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2104/132662854.html": {
+    "posted_at": "2026-09-29T21:20:57.887979+00:00",
+    "message_id": 166,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2104",
+    "year": 2002,
+    "price": 100000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 30000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/XGrKIjMcDABQvJIKM39aBNpBCiGFUt8jaQXX-_Qi_7ByXlxy-3EhCo9vULDrLZvy6ZO1-8LGbTeV5MsB/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/starex/131567519.html": {
+    "posted_at": "2026-09-29T21:21:06.734084+00:00",
+    "message_id": 167,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Starex",
+    "year": 2001,
+    "price": 315000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 815000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/KeYxJOMoIMtGCnNElLsaZ1ze-G8RTdl-Xh6gK5-GDj6L8wpqGO2YiYUUZFn4yly0ayKmdFwXO7AQTKxa/gen272wb.jpg"
   }
 }
