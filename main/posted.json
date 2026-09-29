@@ -663,5 +663,20 @@
     "mileage_km": 111299,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/v_2rg0N_lxiXwNgqP8ZXkygQZBlCktt3oRJWtRv7XSdECgDMDfxbxAvF9NnyMLJiE30gWr2IfuEVr7l8/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/kaptur/111031558.html": {
+    "posted_at": "2026-09-29T10:31:31.238029+00:00",
+    "message_id": 70,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Kaptur",
+    "year": 2020,
+    "price": 1225000,
+    "median_price": 1225000,
+    "median_sample_size": 247,
+    "price_rating": "отличная цена",
+    "mileage_km": 88891,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/I9-dqAFn7nHM_xfJPPl3KKVw0z0i4Jd-PZPZnXkwcPnp0gHaXPoxnCkx3p7kz-FUQ05ZyMfmr2Y51LmA/gen272wb.jpg"
   }
 }
