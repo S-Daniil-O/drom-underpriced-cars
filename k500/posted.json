@@ -1302,7 +1302,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/212242311.html": {
     "posted_at": "2026-09-26T21:19:34.195103+00:00",
     "message_id": 134,
-    "deleted_at": null,
+    "deleted_at": "2026-09-29T21:32:57.451214+00:00",
     "brand": "Лада",
     "model": "2114 Самара",
     "year": 2005,
@@ -1317,7 +1317,7 @@
   "https://auto.drom.ru/voronezh/mazda/626/156781103.html": {
     "posted_at": "2026-09-26T21:19:36.315557+00:00",
     "message_id": 135,
-    "deleted_at": null,
+    "deleted_at": "2026-09-29T21:32:58.727746+00:00",
     "brand": "Mazda",
     "model": "626",
     "year": 1987,
@@ -1332,7 +1332,7 @@
   "https://auto.drom.ru/voronezh/lada/2101/945920235.html": {
     "posted_at": "2026-09-26T21:32:08.369563+00:00",
     "message_id": 136,
-    "deleted_at": null,
+    "deleted_at": "2026-09-29T21:32:59.998948+00:00",
     "brand": "Лада",
     "model": "2101",
     "year": 1976,
@@ -1808,5 +1808,20 @@
     "mileage_km": 815000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/KeYxJOMoIMtGCnNElLsaZ1ze-G8RTdl-Xh6gK5-GDj6L8wpqGO2YiYUUZFn4yly0ayKmdFwXO7AQTKxa/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/mondeo/843984827.html": {
+    "posted_at": "2026-09-29T21:36:08.663238+00:00",
+    "message_id": 168,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Mondeo",
+    "year": 2012,
+    "price": 450000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 310975,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/tBT_p5HtInVUoE7xfxzbWCdqEqYr58mzlc1seUaAySRCHISqoPMgVdRJHkPFi78ofGZtzNDLEYfyUW1C/gen272wb.jpg"
   }
 }
