@@ -648,5 +648,20 @@
     "mileage_km": 70584,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/p57hIRYIxiCL790tYQtJmhgPvrH75ja7qMBNHIG--9aR5wwhehM2ShJ3CnwU2SZDFiwb8JBS6klkS6jm/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/ix35/411885949.html": {
+    "posted_at": "2026-09-29T00:49:46.989863+00:00",
+    "message_id": 69,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "ix35",
+    "year": 2014,
+    "price": 1080000,
+    "median_price": 1299000.0,
+    "median_sample_size": 728,
+    "price_rating": "нормальная цена",
+    "mileage_km": 111299,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/v_2rg0N_lxiXwNgqP8ZXkygQZBlCktt3oRJWtRv7XSdECgDMDfxbxAvF9NnyMLJiE30gWr2IfuEVr7l8/gen272wb.jpg"
   }
 }
