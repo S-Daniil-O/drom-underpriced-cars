@@ -693,5 +693,20 @@
     "mileage_km": null,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/ums8b6HFUwngFkarKLaizlTfkgavIjR-bUH58mMh5Nm6GrGxtbMX1N9ITWV-bcW_CciTB1lxX5QKlZEu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/duster/804954533.html": {
+    "posted_at": "2026-09-29T15:01:36.150708+00:00",
+    "message_id": 72,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Duster",
+    "year": 2013,
+    "price": 810000,
+    "median_price": 1150000.0,
+    "median_sample_size": 374,
+    "price_rating": "нормальная цена",
+    "mileage_km": 200000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/1msKAGPA9s2Lth2bVVniuW7KXasi71Kns_O-kdOUe09cZq7r1TNwfbUNdfzKif6TgmCw4gnAk086dXpF/gen272wb.jpg"
   }
 }
