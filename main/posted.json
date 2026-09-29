@@ -708,5 +708,20 @@
     "mileage_km": 200000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/1msKAGPA9s2Lth2bVVniuW7KXasi71Kns_O-kdOUe09cZq7r1TNwfbUNdfzKif6TgmCw4gnAk086dXpF/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/niva_legend/687624679.html": {
+    "posted_at": "2026-09-29T21:37:18.160552+00:00",
+    "message_id": 73,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Нива Легенд",
+    "year": 2023,
+    "price": 640000,
+    "median_price": 860000,
+    "median_sample_size": 1273,
+    "price_rating": "хорошая цена",
+    "mileage_km": 61265,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/aCK9iiYasSvu2asA26nRXdPREpFPyqkvBfvZIhS6Uj55T64kkzADftaj786TZ0Mo5p4bV1vB3OVygcxd/gen272wb.jpg"
   }
 }
