@@ -1673,5 +1673,20 @@
     "mileage_km": 200000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/awTubwi4Qd4YBlJLAAQflGTeQ09Gj9MCYvPeoM9xUNdwleTIA9Pgod8CltTucE8uwb6Q7MsPqnDpmv0p/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/447887875.html": {
+    "posted_at": "2026-09-29T06:05:10.411862+00:00",
+    "message_id": 159,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Logan",
+    "year": 2013,
+    "price": 265000,
+    "median_price": 485000.0,
+    "median_sample_size": 970,
+    "price_rating": null,
+    "mileage_km": null,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/QMYCGD-GTJRf-GNvIKEFNnfiLYkgoainQEZAGbnEIPKKpatVzxFlLWCD9trcHUtHyTsn-ZRZb5SQooAh/gen272wb.jpg"
   }
 }
