@@ -1658,5 +1658,20 @@
     "mileage_km": 179000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/ONqyemGVMJwapFwhtH2qeh11Uo1TTN1PDJfh6pTAPa7FFkKJ5f7n97-VVBYNfGvnDj4IN_XRdsDpudwx/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/217517350.html": {
+    "posted_at": "2026-09-29T01:49:09.999749+00:00",
+    "message_id": 158,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2004,
+    "price": 65000,
+    "median_price": 87000.0,
+    "median_sample_size": 862,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/awTubwi4Qd4YBlJLAAQflGTeQ09Gj9MCYvPeoM9xUNdwleTIA9Pgod8CltTucE8uwb6Q7MsPqnDpmv0p/gen272wb.jpg"
   }
 }
