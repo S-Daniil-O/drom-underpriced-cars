@@ -1898,5 +1898,20 @@
     "mileage_km": 386000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/LLpX0zkmAwBXdOM3LpSnNR-tdq7DRDoUkECpZDLcNs3Dxc8JnEG2Q_rBSvOvKeCU-eS68wXOIs471iJa/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/fabia/797151774.html": {
+    "posted_at": "2026-09-30T15:32:59.159918+00:00",
+    "message_id": 174,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Fabia",
+    "year": 2010,
+    "price": 385000,
+    "median_price": 285000,
+    "median_sample_size": 1115,
+    "price_rating": "отличная цена",
+    "mileage_km": 202000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/0d5BEWciBvRtDp3tN9MDfHFL2ACim_i39hjv1uGz2-vnVxK4Xy_O5AemewhNbKZFbs91Nyl7fBkvfAyK/gen272wb.jpg"
   }
 }
