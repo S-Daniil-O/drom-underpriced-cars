@@ -1452,7 +1452,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/170024201.html": {
     "posted_at": "2026-09-27T21:16:25.950909+00:00",
     "message_id": 144,
-    "deleted_at": null,
+    "deleted_at": "2026-09-30T21:22:42.012132+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2013,
@@ -1928,5 +1928,35 @@
     "mileage_km": 120000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/m0Ml-FexiiZwcNIcJ3k874kX1gGK7cx4yAfUEH4SSYi0xVyAYkh0h0cIMKGYefm9k6jCw49W4zlmOwat/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/390551042.html": {
+    "posted_at": "2026-09-30T21:25:50.537922+00:00",
+    "message_id": 176,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2011,
+    "price": 215000,
+    "median_price": 311000,
+    "median_sample_size": 2045,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/l3jV1IAfX8Plma95WXS8du96y5FnHF-YFgNJ4OAK0CjhJ-Jv02FUVmtn13F3m6ZDrxTYkTfQ_aOLMOP_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/264592952.html": {
+    "posted_at": "2026-09-30T21:25:52.735094+00:00",
+    "message_id": 177,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2007,
+    "price": 145000,
+    "median_price": 299999,
+    "median_sample_size": 2027,
+    "price_rating": null,
+    "mileage_km": 274500,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/0p7umQxk1IHXd_Er96QEVDVENBTDKD94OrjW4otp1smKYhYz1koUggU6WVRxsnv6OsLNtSc6Hju3Hu_K/gen272wb.jpg"
   }
 }
