@@ -738,5 +738,20 @@
     "mileage_km": 145083,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/vJ4nkmod3g5Xv8bpAI8WWux6J7oeop1NkEoh3AhjCfTLlBT9AHeMHwDl0H_7nuAuPvrripvJhwfpYWsZ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta_cross/445426593.html": {
+    "posted_at": "2026-09-30T17:56:37.312454+00:00",
+    "message_id": 75,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта Кросс",
+    "year": 2023,
+    "price": 715000,
+    "median_price": 855000.0,
+    "median_sample_size": 920,
+    "price_rating": "нормальная цена",
+    "mileage_km": 108000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/14I0qFrZNmpOIbhn7DNNxPEMxWBBBeCjvIEHvNwy5TY9z7_CplLLY1yvPAn1gGju6Q8Wp14Xfvjidnm4/gen272wb.jpg"
   }
 }
