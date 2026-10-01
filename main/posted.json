@@ -753,5 +753,20 @@
     "mileage_km": 108000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/14I0qFrZNmpOIbhn7DNNxPEMxWBBBeCjvIEHvNwy5TY9z7_CplLLY1yvPAn1gGju6Q8Wp14Xfvjidnm4/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/181676537.html": {
+    "posted_at": "2026-10-01T09:00:23.993692+00:00",
+    "message_id": 76,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2020,
+    "price": 510000,
+    "median_price": 665000,
+    "median_sample_size": 2035,
+    "price_rating": null,
+    "mileage_km": 180000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/mSTEHlKG7oZnKKe7zG3MICkwYOHlM1TXC1Rbqx1iy2TlqNwm5roC9U19JdjuUV9j9UfSJoXARWUsKkRt/gen272wb.jpg"
   }
 }
