@@ -2123,5 +2123,35 @@
     "mileage_km": 180000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/eDKQdvo7AVAIIE-H9osl-fQcCxSKa-D6EMgU9ylwoK132OG9GNrmzFCeSjz5RKTEPOo5NdIvcV2-25ed/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda6/282573964.html": {
+    "posted_at": "2026-10-01T21:21:09.548303+00:00",
+    "message_id": 189,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda6",
+    "year": 2004,
+    "price": 200000,
+    "median_price": 250000.0,
+    "median_sample_size": 620,
+    "price_rating": null,
+    "mileage_km": 233744,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/BdIxykCyhE4mcHcLU9tdhqjw6u73j7VXFXQkW3zFtCZKgdXxrVGePdbpMaQsk8y9wj-3ff0VYRN0uedq/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/127989135.html": {
+    "posted_at": "2026-10-01T21:21:11.943127+00:00",
+    "message_id": 190,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2008,
+    "price": 105000,
+    "median_price": 220000,
+    "median_sample_size": 643,
+    "price_rating": null,
+    "mileage_km": 94000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5_Utw0s0dH6mPs4rD1uYs4yjF168vA013EjpUUYvPaaluOdnkp1t4H9u8jNdszvqS2Hb0SAhxPVkNl8R/gen272wb.jpg"
   }
 }
