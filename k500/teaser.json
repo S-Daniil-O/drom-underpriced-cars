@@ -281,13 +281,6 @@
     "vk_post_id": 28,
     "vk_deleted_at": "2026-10-01T13:52:01.616897+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/2114/280146632.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-09-28T16:26:43.474286+00:00"
-  },
   "https://auto.drom.ru/voronezh/peugeot/308/447930015.html": {
     "posted_at": "2026-09-28T17:18:11.923956+00:00",
     "message_id": 59,
@@ -436,5 +429,12 @@
     "checked_at": "2026-10-01T15:25:34.903398+00:00",
     "vk_post_id": 43,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/280146632.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-01T16:40:53.789966+00:00"
   }
 }
