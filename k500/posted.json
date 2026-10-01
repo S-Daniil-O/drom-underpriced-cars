@@ -1973,5 +1973,20 @@
     "mileage_km": 110000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/wCQN-vWAATOndLiPx_vS2qvDwMvCYXvKdrp3YDxLYDrhWQ458UWwGiARpKs20pXvbtB-1pQGbMUvncbG/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/getz/545050734.html": {
+    "posted_at": "2026-10-01T04:49:07.663483+00:00",
+    "message_id": 179,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Getz",
+    "year": 2007,
+    "price": 420000,
+    "median_price": 495000,
+    "median_sample_size": 923,
+    "price_rating": "нормальная цена",
+    "mileage_km": 241499,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/GOKvcYEw4dkapqz8cnpAXgimnx2d-NZ2Ec6KlAR54XWeGMzpzWvpHEXjb_-gAr67c7atnVetLtVuJlQ_/gen272wb.jpg"
   }
 }
