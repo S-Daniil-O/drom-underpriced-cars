@@ -768,5 +768,20 @@
     "mileage_km": 180000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/mSTEHlKG7oZnKKe7zG3MICkwYOHlM1TXC1Rbqx1iy2TlqNwm5roC9U19JdjuUV9j9UfSJoXARWUsKkRt/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/polo/615493994.html": {
+    "posted_at": "2026-10-01T11:30:52.406848+00:00",
+    "message_id": 77,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2017,
+    "price": 1099000,
+    "median_price": 1300000.0,
+    "median_sample_size": 396,
+    "price_rating": "нормальная цена",
+    "mileage_km": 164989,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/375pH8o6hcUsF0xisfFboTNvVibHUk_1U5EmhZ-rofp5a7hAlbdVxLBmOwANVzyl4jhH-GGBVVQhKL0y/gen272wb.jpg"
   }
 }
