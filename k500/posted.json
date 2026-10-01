@@ -2108,5 +2108,20 @@
     "mileage_km": 272989,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/U6desFZFHnxRYR8wbv0Nq9Zdj_e9-uMB7v2fXQ16vfjvYevdloyiRBfzzirz5vIHxuFYTNY1JKPTXTYs/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/jetta/630170379.html": {
+    "posted_at": "2026-10-01T19:35:42.534835+00:00",
+    "message_id": 188,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "year": 2010,
+    "price": 459999,
+    "median_price": 410000,
+    "median_sample_size": 779,
+    "price_rating": "отличная цена",
+    "mileage_km": 180000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/eDKQdvo7AVAIIE-H9osl-fQcCxSKa-D6EMgU9ylwoK132OG9GNrmzFCeSjz5RKTEPOo5NdIvcV2-25ed/gen272wb.jpg"
   }
 }
