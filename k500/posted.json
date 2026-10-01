@@ -1527,7 +1527,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/289698643.html": {
     "posted_at": "2026-09-28T08:05:40.326366+00:00",
     "message_id": 149,
-    "deleted_at": null,
+    "deleted_at": "2026-10-01T08:11:15.829421+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2009,
@@ -2033,5 +2033,35 @@
     "mileage_km": 370000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/HRHSfaBl7oNc3_tz_864DD4askF2r5Hmqw6Rt2VyQ23eZgrOF_Wu6qEmUffAmLBmw10a13YW99z7XCFO/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/330098242.html": {
+    "posted_at": "2026-10-01T08:14:30.888458+00:00",
+    "message_id": 183,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2014,
+    "price": 450000,
+    "median_price": 375000.0,
+    "median_sample_size": 2422,
+    "price_rating": "отличная цена",
+    "mileage_km": 97236,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Ztn48IQgDl7O6Lq_ubmrOLa5KUEtHqWfPIq78LKuGiU-HjN4A8COmwuw6-JWbbhjX54U1g3FtkGDqqil/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/w123/307091879.html": {
+    "posted_at": "2026-10-01T08:14:33.305464+00:00",
+    "message_id": 184,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "W123",
+    "year": 1982,
+    "price": 229999,
+    "median_price": 229999,
+    "median_sample_size": 235,
+    "price_rating": "отличная цена",
+    "mileage_km": 10000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/ICv6PFMSMpqQ2Pu0IPKxWN1kVyUewiSlPmLRBjddDmglmZ2MwJ3hoR-b0dhdLU9FpIfcjfA44KW4dpoo/gen272wb.jpg"
   }
 }
