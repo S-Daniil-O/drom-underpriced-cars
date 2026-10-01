@@ -2078,5 +2078,20 @@
     "mileage_km": 279000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/y-5uDRQJ-e59gHRTlRVO8OwNTkOOrIccQv8jdQWMENWwjDqTzcux9WAHU6Tw3U2hS4ls6qg0lTaF1Z3C/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/503849995.html": {
+    "posted_at": "2026-10-01T10:59:54.695916+00:00",
+    "message_id": 186,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2008,
+    "price": 335000,
+    "median_price": 399000,
+    "median_sample_size": 1481,
+    "price_rating": "хорошая цена",
+    "mileage_km": 174020,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/hUkl5bNI2zaA3cgSA-55tpS4mtxV3t0j6i4t0CJ2dzEOdKtFACJEplRuvF-qFXKoCkrp-pOgAY2iQfNZ/gen272wb.jpg"
   }
 }
