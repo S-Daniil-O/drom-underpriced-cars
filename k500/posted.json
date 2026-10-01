@@ -1988,5 +1988,35 @@
     "mileage_km": 241499,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/GOKvcYEw4dkapqz8cnpAXgimnx2d-NZ2Ec6KlAR54XWeGMzpzWvpHEXjb_-gAr67c7atnVetLtVuJlQ_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/386103170.html": {
+    "posted_at": "2026-10-01T06:13:49.772933+00:00",
+    "message_id": 180,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2013,
+    "price": 350000,
+    "median_price": 430000.0,
+    "median_sample_size": 4796,
+    "price_rating": "нормальная цена",
+    "mileage_km": 140000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/U0LIQYET7VwvL_t6eeLBIxtMEMAUGHY0zJD0pmz3bsYTq2MQjlr7D38qFEFXeWktvmPyY7HeyyKBBVxH/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/804893381.html": {
+    "posted_at": "2026-10-01T06:13:51.650172+00:00",
+    "message_id": 181,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2006,
+    "price": 350000,
+    "median_price": 439000.0,
+    "median_sample_size": 2888,
+    "price_rating": "отличная цена",
+    "mileage_km": 221000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/NUeoiyR6yyaY6gqcpbb9EewGTSAgY0OCyPThCYTSrVgc1pttIZov2uj10Pmz-NWovXEQLZFe4-83svOg/gen272wb.jpg"
   }
 }
