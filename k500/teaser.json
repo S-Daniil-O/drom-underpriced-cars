@@ -420,5 +420,12 @@
     "checked_at": "2026-10-01T06:59:10.960773+00:00",
     "vk_post_id": 42,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/a-class/681104076.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-01T10:44:49.081937+00:00"
   }
 }
