@@ -637,7 +637,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/133730253.html": {
     "posted_at": "2026-09-28T21:19:48.719188+00:00",
     "message_id": 68,
-    "deleted_at": null,
+    "deleted_at": "2026-10-01T21:33:11.195019+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2022,
@@ -798,5 +798,20 @@
     "mileage_km": 205397,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/IpEnz3azdHlCEEEicPM6CO08yck_1nu14Jr4qdtUYIpjU4oZtigZI9_8irQ14moQKAfovTt0IjRy8i9j/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/lancer/512090339.html": {
+    "posted_at": "2026-10-01T21:37:34.534810+00:00",
+    "message_id": 79,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Lancer",
+    "year": 2014,
+    "price": 830000,
+    "median_price": 1097000.0,
+    "median_sample_size": 222,
+    "price_rating": "нормальная цена",
+    "mileage_km": 228000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Rplf30oOP6EYSgTrwq_MP6hY9CUwqDjLhEtQtgE5-n-r9VxU7XSqfZiSkIVAf99Kwc3dBylZIz55dTQM/gen272wb.jpg"
   }
 }
