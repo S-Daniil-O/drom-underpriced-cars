@@ -2018,5 +2018,20 @@
     "mileage_km": 221000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/NUeoiyR6yyaY6gqcpbb9EewGTSAgY0OCyPThCYTSrVgc1pttIZov2uj10Pmz-NWovXEQLZFe4-83svOg/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/bmw/5-series/811779706.html": {
+    "posted_at": "2026-10-01T06:59:03.560043+00:00",
+    "message_id": 182,
+    "deleted_at": null,
+    "brand": "BMW",
+    "model": "5-Series",
+    "year": 2002,
+    "price": 445000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 370000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/HRHSfaBl7oNc3_tz_864DD4askF2r5Hmqw6Rt2VyQ23eZgrOF_Wu6qEmUffAmLBmw10a13YW99z7XCFO/gen272wb.jpg"
   }
 }
