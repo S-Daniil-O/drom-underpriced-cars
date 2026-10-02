@@ -828,5 +828,20 @@
     "mileage_km": 196939,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/xXsoVd6I-PlMkawxY-c5OPCl3SsmZnN5kdJiHMyQoxvX7xzI_nhnZgkD7CqmUPy0ApZjcVfzGyi_yoUr/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2121_4x4_niva/399457274.html": {
+    "posted_at": "2026-10-02T14:06:07.372155+00:00",
+    "message_id": 81,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "4x4 2121 Нива",
+    "year": 2021,
+    "price": 595000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 71815,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/r6meSvkVEsDMhEfR2XJYjE9DKOs2sfU9x5Yd6XjCgl813H0_MOUITIG3FfboyqcJ1aKO4_2U-hcJ9Hlt/gen272wb.jpg"
   }
 }
