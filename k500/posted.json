@@ -2243,5 +2243,20 @@
     "mileage_km": 350000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/Khm1aweO_eOEodviFf99yF2reQoIytKGRtf8ae1GOELbBam_zt3NwdMUKv1Atmh_7dwaUUmUtoIoQ3yF/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda6/276455000.html": {
+    "posted_at": "2026-10-02T19:09:58.981033+00:00",
+    "message_id": 197,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda6",
+    "year": 2006,
+    "price": 265000,
+    "median_price": 450000,
+    "median_sample_size": 121,
+    "price_rating": null,
+    "mileage_km": 280000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/7XZJG2yOW1iNG5ZsukK5VBFz_BgoM8Uu1XRcooWL0B-EFAzfYwYhqFQrpEaG1gKBRIly22t4GS_P4OYa/gen272wb.jpg"
   }
 }
