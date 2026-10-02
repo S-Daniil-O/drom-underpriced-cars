@@ -858,5 +858,20 @@
     "mileage_km": 137131,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/-D6ygobnZf1lDS5A2tuTSRYteTK9CY377iX_yP0vAKbgBecd_Bn4fSPEfqr30RAT85QfpII05heTAaXR/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/outlander/789669604.html": {
+    "posted_at": "2026-10-02T21:33:58.475524+00:00",
+    "message_id": 83,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Outlander",
+    "year": 2012,
+    "price": 1080000,
+    "median_price": 1356000,
+    "median_sample_size": 785,
+    "price_rating": "нормальная цена",
+    "mileage_km": 248455,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NrGALT2nw-RBD7bmBhcMjV6DSQjJ-e4hUYuf8iyilYbUzPioZhLkBtUSvrjNF-7PPvodVy2RNmviXA7e/gen272wb.jpg"
   }
 }
