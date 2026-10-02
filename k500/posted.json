@@ -1767,7 +1767,7 @@
   "https://auto.drom.ru/voronezh/lada/priora/289484197.html": {
     "posted_at": "2026-09-29T21:20:53.406091+00:00",
     "message_id": 165,
-    "deleted_at": null,
+    "deleted_at": "2026-10-02T21:29:59.304998+00:00",
     "brand": "Лада",
     "model": "Приора",
     "year": 2011,
@@ -1782,7 +1782,7 @@
   "https://auto.drom.ru/voronezh/lada/2104/132662854.html": {
     "posted_at": "2026-09-29T21:20:57.887979+00:00",
     "message_id": 166,
-    "deleted_at": null,
+    "deleted_at": "2026-10-02T21:30:00.753202+00:00",
     "brand": "Лада",
     "model": "2104",
     "year": 2002,
@@ -1797,7 +1797,7 @@
   "https://auto.drom.ru/voronezh/hyundai/starex/131567519.html": {
     "posted_at": "2026-09-29T21:21:06.734084+00:00",
     "message_id": 167,
-    "deleted_at": null,
+    "deleted_at": "2026-10-02T21:30:02.258000+00:00",
     "brand": "Hyundai",
     "model": "Starex",
     "year": 2001,
@@ -2273,5 +2273,50 @@
     "mileage_km": 180000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/S7srTy45exYTv8df4NU3WLs6iBolwVTF_sJYXT3hwg5CvOcwn5wdCXiPPrhuhb8OCtEVAtPAsGbOp_QM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/941110822.html": {
+    "posted_at": "2026-10-02T21:33:46.682232+00:00",
+    "message_id": 199,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lacetti",
+    "year": 2008,
+    "price": 300000,
+    "median_price": 410000,
+    "median_sample_size": 1613,
+    "price_rating": "хорошая цена",
+    "mileage_km": 293000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/OI_-kt-lDgRTyNYd1v0nXZG-vqrCmAH1AEtYvr5FB9-m7PygmVmIuj_SzwtQtDBP8WC2T6Su3jYXvSuw/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/vectra/361530050.html": {
+    "posted_at": "2026-10-02T21:33:49.132978+00:00",
+    "message_id": 200,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Vectra",
+    "year": 1995,
+    "price": 120000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 380000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Dn6SAZvD1ohb2IgREmLnj9a5PDeB5Kv2AhRZKriw1V3Eke-GbnXIQ-liTWn1XvXal5SD2l727dJrOdwf/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/408/247476935.html": {
+    "posted_at": "2026-10-02T21:33:59.267618+00:00",
+    "message_id": 201,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "408",
+    "year": 2012,
+    "price": 370000,
+    "median_price": 350000.0,
+    "median_sample_size": 386,
+    "price_rating": "отличная цена",
+    "mileage_km": 160000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Xhuw86AI_p-NekFSsoWGvfkdTPSz66r5GkRB5Vm4p1Z7-Cec503G5audfSC15xJyVfBJTtMjgk9FcZ0X/gen272wb.jpg"
   }
 }
