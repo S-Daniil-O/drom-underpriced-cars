@@ -813,5 +813,20 @@
     "mileage_km": 228000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/Rplf30oOP6EYSgTrwq_MP6hY9CUwqDjLhEtQtgE5-n-r9VxU7XSqfZiSkIVAf99Kwc3dBylZIz55dTQM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/zafira/420223710.html": {
+    "posted_at": "2026-10-02T06:26:42.956156+00:00",
+    "message_id": 80,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Zafira",
+    "year": 2013,
+    "price": 819000,
+    "median_price": 1149000.0,
+    "median_sample_size": 200,
+    "price_rating": "нормальная цена",
+    "mileage_km": 196939,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/xXsoVd6I-PlMkawxY-c5OPCl3SsmZnN5kdJiHMyQoxvX7xzI_nhnZgkD7CqmUPy0ApZjcVfzGyi_yoUr/gen272wb.jpg"
   }
 }
