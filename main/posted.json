@@ -843,5 +843,20 @@
     "mileage_km": 71815,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/r6meSvkVEsDMhEfR2XJYjE9DKOs2sfU9x5Yd6XjCgl813H0_MOUITIG3FfboyqcJ1aKO4_2U-hcJ9Hlt/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/baic/u5_plus/516550137.html": {
+    "posted_at": "2026-10-02T17:41:08.950193+00:00",
+    "message_id": 82,
+    "deleted_at": null,
+    "brand": "BAIC",
+    "model": "U5 Plus",
+    "year": 2023,
+    "price": 970000,
+    "median_price": 1399000.0,
+    "median_sample_size": 518,
+    "price_rating": "нормальная цена",
+    "mileage_km": 137131,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/-D6ygobnZf1lDS5A2tuTSRYteTK9CY377iX_yP0vAKbgBecd_Bn4fSPEfqr30RAT85QfpII05heTAaXR/gen272wb.jpg"
   }
 }
