@@ -326,13 +326,6 @@
     "vk_post_id": 33,
     "vk_deleted_at": "2026-10-02T08:45:16.997841+00:00"
   },
-  "https://auto.drom.ru/voronezh/chevrolet/lanos/754251346.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-09-29T08:59:46.081294+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2114/560711035.html": {
     "posted_at": "2026-09-29T12:00:19.841365+00:00",
     "message_id": 64,
@@ -445,5 +438,12 @@
     "checked_at": "2026-10-01T21:21:19.579192+00:00",
     "vk_post_id": 44,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/754251346.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-02T09:03:18.929464+00:00"
   }
 }
