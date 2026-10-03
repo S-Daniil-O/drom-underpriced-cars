@@ -1932,7 +1932,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/390551042.html": {
     "posted_at": "2026-09-30T21:25:50.537922+00:00",
     "message_id": 176,
-    "deleted_at": null,
+    "deleted_at": "2026-10-03T21:39:27.770153+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2011,
@@ -1947,7 +1947,7 @@
   "https://auto.drom.ru/voronezh/lada/priora/264592952.html": {
     "posted_at": "2026-09-30T21:25:52.735094+00:00",
     "message_id": 177,
-    "deleted_at": null,
+    "deleted_at": "2026-10-03T21:39:29.087412+00:00",
     "brand": "Лада",
     "model": "Приора",
     "year": 2007,
@@ -2438,5 +2438,20 @@
     "mileage_km": 291500,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/6uLArgTx5UlsPxZK5Qb892UpBxbQ5z5usQXT0Cae308rT-7NFkX0mWQpCWEsXfo7nK2I1AWryOVutWOz/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/925923236.html": {
+    "posted_at": "2026-10-03T21:43:00.539375+00:00",
+    "message_id": 210,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2006,
+    "price": 370000,
+    "median_price": 439000.0,
+    "median_sample_size": 3508,
+    "price_rating": "хорошая цена",
+    "mileage_km": 213872,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Uj8EKtjzqN-b4GXariRExHsBzLEtFz3IsePXh6mHcjMYRcyz1BiJW4r5B9WT-tcI-gNAeaVbXt3DPSFX/gen272wb.jpg"
   }
 }
