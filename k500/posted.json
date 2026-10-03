@@ -2393,5 +2393,50 @@
     "mileage_km": 382000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/6UYUP_vPDsNpDYJKsLDtlRtT_zp60YscmaKrlzPCLZI0S4jVzeFchth2rAvrXC9V9tYSEHz4H9GxuKwu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/553233636.html": {
+    "posted_at": "2026-10-03T21:28:11.403624+00:00",
+    "message_id": 207,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2110",
+    "year": 2002,
+    "price": 85000,
+    "median_price": 180000.0,
+    "median_sample_size": 574,
+    "price_rating": null,
+    "mileage_km": 168000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/tzKG4ufpuTMZGXmLwP1GC3cB_dU6z6liB_18m2zk4rPEyUBFaj1o3JCMcZ4yV3bMWvZLqVeIFN8YtEsR/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/206/255971879.html": {
+    "posted_at": "2026-10-03T21:28:21.699336+00:00",
+    "message_id": 208,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "206",
+    "year": 2008,
+    "price": 175000,
+    "median_price": 395000,
+    "median_sample_size": 347,
+    "price_rating": "отличная цена",
+    "mileage_km": 200125,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/bosxxONodseu0rtndYYQKet7s_isDUVJ3YzH7fQg6uHsdQiE1hincfykn16B_CRbmQDCZE8_68WC-z3Y/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/186692368.html": {
+    "posted_at": "2026-10-03T21:28:31.554520+00:00",
+    "message_id": 209,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2007,
+    "price": 170000,
+    "median_price": 300000.0,
+    "median_sample_size": 2100,
+    "price_rating": "нормальная цена",
+    "mileage_km": 291500,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/6uLArgTx5UlsPxZK5Qb892UpBxbQ5z5usQXT0Cae308rT-7NFkX0mWQpCWEsXfo7nK2I1AWryOVutWOz/gen272wb.jpg"
   }
 }
