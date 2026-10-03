@@ -888,5 +888,20 @@
     "mileage_km": 75000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/BstdwxSKVwycqjOGAiYD-mcAh7rWRUrGVCsVOvhQxAxVi169wWwxswKWOHm3t7kLc1KAKS9H95DBFSun/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/tiida/827159790.html": {
+    "posted_at": "2026-10-03T11:19:31.723920+00:00",
+    "message_id": 85,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Tiida",
+    "year": 2012,
+    "price": 650000,
+    "median_price": 949000.0,
+    "median_sample_size": 396,
+    "price_rating": "нормальная цена",
+    "mileage_km": 217233,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/AbsrC-ptsGgMFKPn7EFGJG5XoC98e4b_tqfQXckJi_60BfC77FatxJeHeA7fh58aJuMHYRYez9PUV1m7/gen272wb.jpg"
   }
 }
