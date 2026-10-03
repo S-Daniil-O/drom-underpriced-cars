@@ -2318,5 +2318,35 @@
     "mileage_km": 160000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/Xhuw86AI_p-NekFSsoWGvfkdTPSz66r5GkRB5Vm4p1Z7-Cec503G5audfSC15xJyVfBJTtMjgk9FcZ0X/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/704922610.html": {
+    "posted_at": "2026-10-03T13:19:18.823166+00:00",
+    "message_id": 202,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2008,
+    "price": 370000,
+    "median_price": 440000,
+    "median_sample_size": 3401,
+    "price_rating": null,
+    "mileage_km": 275000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/GsaOTcmf-Ero0Tw-2ASqu9s_TO4yzBHtockK3N8cSIJcoN15TbOqTteSx3QiR8k1bXah1DtwaSoIfYGP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/262459887.html": {
+    "posted_at": "2026-10-03T13:19:21.242320+00:00",
+    "message_id": 203,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2008,
+    "price": 120000,
+    "median_price": 210000,
+    "median_sample_size": 1135,
+    "price_rating": null,
+    "mileage_km": 47000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ti-psyH2RduT10XzuKgK6Kk26aJp5T-iIe9QBGtat2eM7OLHJSCSnKp4rIT6rvZn2eYd8W8evNjnQ3ip/gen272wb.jpg"
   }
 }
