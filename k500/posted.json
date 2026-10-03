@@ -2363,5 +2363,20 @@
     "mileage_km": 200000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/kAHHuFfg1g5e0ykTozU1_YPu2q47d_1XrQD7Yodzr_Ez7qx3-gn15SozIxa0L30XMBCLv5jIJajHQ_gy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/gaz/3110_volga/233099272.html": {
+    "posted_at": "2026-10-03T20:27:51.225594+00:00",
+    "message_id": 205,
+    "deleted_at": null,
+    "brand": "ГАЗ",
+    "model": "3110 Волга",
+    "year": 2000,
+    "price": 85000,
+    "median_price": 85000,
+    "median_sample_size": 293,
+    "price_rating": "отличная цена",
+    "mileage_km": 290000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/MAKUk-36oMPC2pMnJQSc75I3HjLt8C2DmQVCYbmFE4-zldbWnPoIv8m-8s-iWfAnp5OeLHoFd49IpZFp/gen272wb.jpg"
   }
 }
