@@ -1023,5 +1023,20 @@
     "mileage_km": 202000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/o7lla_qvyct887HbN35GSgTX4h95HDY7fBsGYAgQAHoHyw3DOemAQD2ryNzwV3AqRopmaOcJtiWT6HIz/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/niva/325496933.html": {
+    "posted_at": "2026-10-04T13:26:02.282050+00:00",
+    "message_id": 94,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2016,
+    "price": 530000,
+    "median_price": 649000.0,
+    "median_sample_size": 1428,
+    "price_rating": "нормальная цена",
+    "mileage_km": 261000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/yuSoJQHHhqpmXBiyJ05N9Fy-LRneNPGzLUtiVCPpBXIL7d7AfhilXxM9rWdgi86rRL7CEB-393pBh-74/gen272wb.jpg"
   }
 }
