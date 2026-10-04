@@ -1053,5 +1053,35 @@
     "mileage_km": 220000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/X0ijNG5EmvGe4HNC6BMjPVnXTg-h7YFcb3u03sTcTh42OQ9lHOhwZyvh0LkkYwCPPSMTEIOhP2ei9udd/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta/775100270.html": {
+    "posted_at": "2026-10-04T21:40:05.529129+00:00",
+    "message_id": 96,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста",
+    "year": 2017,
+    "price": 649000,
+    "median_price": 718000,
+    "median_sample_size": 339,
+    "price_rating": "отличная цена",
+    "mileage_km": 86813,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/eyxULjrHprA2eoKaax5t4inVqTQy8RfUrxPTBWLJOlBFq7OvZZ99L_WyikJnpKRih7czleiQgNsuBJij/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta_cross/712102603.html": {
+    "posted_at": "2026-10-04T21:40:08.723537+00:00",
+    "message_id": 97,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста Кросс",
+    "year": 2019,
+    "price": 915000,
+    "median_price": 1150000.0,
+    "median_sample_size": 1728,
+    "price_rating": "нормальная цена",
+    "mileage_km": 135000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/cfFrmT56g4oQc0a97BxEmzOWBDjSU_PNv7eirzoSXSIqNYoj4VwCBLLC3Beo-vsSEUx7NXNCF2a4a3eS/gen272wb.jpg"
   }
 }
