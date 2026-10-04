@@ -993,5 +993,20 @@
     "mileage_km": 123111,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/FR5ECXRcbyfYnOtjAsk5cqCGlVI9O6ORLuqM3A1jjb4IYnB8S0HaSLYPaYVXkZaZ4eOcI-eU9hKKKy7K/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/818784501.html": {
+    "posted_at": "2026-10-04T06:49:36.952608+00:00",
+    "message_id": 92,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2015,
+    "price": 555000,
+    "median_price": 669000.0,
+    "median_sample_size": 320,
+    "price_rating": "нормальная цена",
+    "mileage_km": 173095,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/P0rNbaNDLsA0XTmaDWPJQs-g5GL8tEKJ2LlbOndXjrZWwzn7v5MriiCC7Onb5aLnYoSA600hLa6j-Jvw/gen272wb.jpg"
   }
 }
