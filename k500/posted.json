@@ -2127,7 +2127,7 @@
   "https://auto.drom.ru/voronezh/mazda/mazda6/282573964.html": {
     "posted_at": "2026-10-01T21:21:09.548303+00:00",
     "message_id": 189,
-    "deleted_at": null,
+    "deleted_at": "2026-10-04T21:21:18.753441+00:00",
     "brand": "Mazda",
     "model": "Mazda6",
     "year": 2004,
@@ -2142,7 +2142,7 @@
   "https://auto.drom.ru/voronezh/lada/2107/127989135.html": {
     "posted_at": "2026-10-01T21:21:11.943127+00:00",
     "message_id": 190,
-    "deleted_at": null,
+    "deleted_at": "2026-10-04T21:21:20.241061+00:00",
     "brand": "Лада",
     "model": "2107",
     "year": 2008,
@@ -2573,5 +2573,65 @@
     "mileage_km": 155000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/y24-3bh-Q1gkuXj6AxHso9UlUSvskx9DYWaFddT6gCMY2ovmUadm-RTq7qZKOA3UM9Qn4m2jZU_tRswI/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/364194611.html": {
+    "posted_at": "2026-10-04T21:24:54.897614+00:00",
+    "message_id": 219,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2013,
+    "price": 300000,
+    "median_price": 380000,
+    "median_sample_size": 1837,
+    "price_rating": "хорошая цена",
+    "mileage_km": 231600,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/LgDu6lkgvubZ1ET4QOczHt60gjySUGebEBXN-ER81LtF32KmMgPnS-RWky2tBN84AlIwOJYpUCdX-nqX/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/350654713.html": {
+    "posted_at": "2026-10-04T21:24:57.367239+00:00",
+    "message_id": 220,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2001,
+    "price": 115000,
+    "median_price": 240000.0,
+    "median_sample_size": 22,
+    "price_rating": null,
+    "mileage_km": 410000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/TY8SNdmx_8T1v_b5PCPLkU5Szd8YrgTAo_KDDQaEJfW_2c6bzXIJJv21wYZmj-a1IoEtRjStIKwNMGxX/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/226846336.html": {
+    "posted_at": "2026-10-04T21:25:14.263469+00:00",
+    "message_id": 221,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2013,
+    "price": 240000,
+    "median_price": 349000.0,
+    "median_sample_size": 550,
+    "price_rating": "хорошая цена",
+    "mileage_km": 195000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/UxHUOaYZTvxJJk84z6BEpPNN-UaNhGCrSyacYuF5kJUwrmncGEg_GoMG_ghSJm0elpg3vTRYoXmyNcm3/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/corsa/126485503.html": {
+    "posted_at": "2026-10-04T21:25:16.626813+00:00",
+    "message_id": 222,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Corsa",
+    "year": 2007,
+    "price": 300000,
+    "median_price": 400000.0,
+    "median_sample_size": 688,
+    "price_rating": "нормальная цена",
+    "mileage_km": 280362,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/g9g8ImtfRiImB1lS8UYOWv1tIy0sfQLazxcxq4EBNjcBy3Jfz4f4FJUi06-fSzsH_inYw7yXSrQ56HY-/gen272wb.jpg"
   }
 }

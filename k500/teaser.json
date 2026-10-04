@@ -419,11 +419,11 @@
   "https://auto.drom.ru/voronezh/lada/2107/127989135.html": {
     "posted_at": "2026-10-01T21:21:19.579192+00:00",
     "message_id": 74,
-    "deleted_at": null,
+    "deleted_at": "2026-10-04T21:21:21.244437+00:00",
     "rejected": false,
     "checked_at": "2026-10-01T21:21:19.579192+00:00",
     "vk_post_id": 44,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-04T21:21:21.244437+00:00"
   },
   "https://auto.drom.ru/voronezh/chevrolet/lanos/754251346.html": {
     "posted_at": null,
@@ -515,5 +515,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-04T10:55:34.530586+00:00"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/350654713.html": {
+    "posted_at": "2026-10-04T21:25:04.884463+00:00",
+    "message_id": 83,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-04T21:25:04.884463+00:00",
+    "vk_post_id": 53,
+    "vk_deleted_at": null
   }
 }
