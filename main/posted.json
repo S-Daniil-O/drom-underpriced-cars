@@ -918,5 +918,20 @@
     "mileage_km": 150846,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/mF9ZdYrx-txoQbu_lSglmioAs-avOVg1N3u4p0K2oYPp-5D4MeegY0mrUTjJnrUAP7JrYaHxZZlWBeij/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/polo/603102628.html": {
+    "posted_at": "2026-10-04T03:50:08.391230+00:00",
+    "message_id": 87,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2015,
+    "price": 960000,
+    "median_price": 1240000,
+    "median_sample_size": 501,
+    "price_rating": null,
+    "mileage_km": 95600,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/QbP5KJNpnYz2ej1EGrtyd4ZG0cbud0T7eIEBE0MPj_kz7Ru82fumW-P1qPsv893gULNVgqykX-bCgo5I/gen272wb.jpg"
   }
 }
