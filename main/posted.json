@@ -1008,5 +1008,20 @@
     "mileage_km": 173095,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/P0rNbaNDLsA0XTmaDWPJQs-g5GL8tEKJ2LlbOndXjrZWwzn7v5MriiCC7Onb5aLnYoSA600hLa6j-Jvw/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/murano/228658120.html": {
+    "posted_at": "2026-10-04T10:40:54.434839+00:00",
+    "message_id": 93,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Murano",
+    "year": 2006,
+    "price": 650000,
+    "median_price": 690000,
+    "median_sample_size": 277,
+    "price_rating": "отличная цена",
+    "mileage_km": 202000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/o7lla_qvyct887HbN35GSgTX4h95HDY7fBsGYAgQAHoHyw3DOemAQD2ryNzwV3AqRopmaOcJtiWT6HIz/gen272wb.jpg"
   }
 }
