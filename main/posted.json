@@ -1038,5 +1038,20 @@
     "mileage_km": 261000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/yuSoJQHHhqpmXBiyJ05N9Fy-LRneNPGzLUtiVCPpBXIL7d7AfhilXxM9rWdgi86rRL7CEB-393pBh-74/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/outlander/353931331.html": {
+    "posted_at": "2026-10-04T21:24:42.737892+00:00",
+    "message_id": 95,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Outlander",
+    "year": 2007,
+    "price": 660000,
+    "median_price": 990000.0,
+    "median_sample_size": 236,
+    "price_rating": "нормальная цена",
+    "mileage_km": 220000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/X0ijNG5EmvGe4HNC6BMjPVnXTg-h7YFcb3u03sTcTh42OQ9lHOhwZyvh0LkkYwCPPSMTEIOhP2ei9udd/gen272wb.jpg"
   }
 }
