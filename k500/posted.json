@@ -2693,5 +2693,20 @@
     "mileage_km": 383900,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/d1OykoKTpMwKDXJzyTww6ya3LNedqh9HQGwiBtpFjz-YMYlp27Z-TPdQttLfjEphVWzqtNkPN5fyHBxL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/943820838.html": {
+    "posted_at": "2026-10-05T09:27:01.473660+00:00",
+    "message_id": 227,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2014,
+    "price": 270000,
+    "median_price": 395000.0,
+    "median_sample_size": 3748,
+    "price_rating": null,
+    "mileage_km": 129000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/SMCGtT0j0yhXERsqz8ENB9UDugOrai8e6CNvFfv3Jf_3IAQe9ZWBi4qYlp5PTh3Wc0_QOz1g6823Ui9o/gen272wb.jpg"
   }
 }
