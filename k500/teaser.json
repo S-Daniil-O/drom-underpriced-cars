@@ -425,13 +425,6 @@
     "vk_post_id": 44,
     "vk_deleted_at": "2026-10-04T21:21:21.244437+00:00"
   },
-  "https://auto.drom.ru/voronezh/mitsubishi/galant/879527711.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-10-02T13:49:14.583902+00:00"
-  },
   "https://auto.drom.ru/voronezh/ford/focus/512723349.html": {
     "posted_at": null,
     "message_id": null,
@@ -544,5 +537,12 @@
     "checked_at": "2026-10-05T11:27:16.203267+00:00",
     "vk_post_id": 56,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/galant/879527711.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-05T13:57:50.778707+00:00"
   }
 }
