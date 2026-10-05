@@ -425,39 +425,32 @@
     "vk_post_id": 44,
     "vk_deleted_at": "2026-10-04T21:21:21.244437+00:00"
   },
-  "https://auto.drom.ru/voronezh/ford/focus/512723349.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-10-02T16:54:27.706063+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2107/117291469.html": {
     "posted_at": "2026-10-02T21:17:29.705273+00:00",
     "message_id": 76,
-    "deleted_at": null,
+    "deleted_at": "2026-10-05T21:36:51.659066+00:00",
     "rejected": false,
     "checked_at": "2026-10-02T21:17:29.705273+00:00",
     "vk_post_id": 46,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-05T21:36:51.659066+00:00"
   },
   "https://auto.drom.ru/voronezh/opel/vectra/361530050.html": {
     "posted_at": "2026-10-02T21:33:56.770736+00:00",
     "message_id": 77,
-    "deleted_at": null,
+    "deleted_at": "2026-10-05T21:36:51.659066+00:00",
     "rejected": false,
     "checked_at": "2026-10-02T21:33:56.770736+00:00",
     "vk_post_id": 47,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-05T21:36:51.659066+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/priora/532025507.html": {
     "posted_at": "2026-10-02T21:34:23.862346+00:00",
     "message_id": 78,
-    "deleted_at": null,
+    "deleted_at": "2026-10-05T21:36:51.659066+00:00",
     "rejected": false,
     "checked_at": "2026-10-02T21:34:23.862346+00:00",
     "vk_post_id": 48,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-05T21:36:51.659066+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/priora/523969564.html": {
     "posted_at": "2026-10-03T03:11:53.656893+00:00",
@@ -552,6 +545,51 @@
     "rejected": false,
     "checked_at": "2026-10-05T15:37:26.115190+00:00",
     "vk_post_id": 57,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/859193822.html": {
+    "posted_at": "2026-10-05T21:40:52.173321+00:00",
+    "message_id": 88,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-05T21:40:52.173321+00:00",
+    "vk_post_id": 58,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/lancer/554376417.html": {
+    "posted_at": "2026-10-05T21:41:02.192168+00:00",
+    "message_id": 89,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-05T21:41:02.192168+00:00",
+    "vk_post_id": 59,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/442522732.html": {
+    "posted_at": "2026-10-05T21:41:11.707106+00:00",
+    "message_id": 90,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-05T21:41:11.707106+00:00",
+    "vk_post_id": 60,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/nissan/cefiro/350403010.html": {
+    "posted_at": "2026-10-05T21:41:27.251343+00:00",
+    "message_id": 91,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-05T21:41:27.251343+00:00",
+    "vk_post_id": 61,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/169482315.html": {
+    "posted_at": "2026-10-05T21:41:52.456120+00:00",
+    "message_id": 92,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-05T21:41:52.456120+00:00",
+    "vk_post_id": 62,
     "vk_deleted_at": null
   }
 }
