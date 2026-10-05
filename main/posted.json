@@ -1098,5 +1098,20 @@
     "mileage_km": 150000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/IpdvucN7wbPoex2BolDZNFTRLjTJVc3ZAy3p5D6-aKYY_IM37LteFMnwB2T5C3dNnDSsYQ8Hk3Aucgb1/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/a4/591019489.html": {
+    "posted_at": "2026-10-05T12:43:07.346830+00:00",
+    "message_id": 99,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2007,
+    "price": 735000,
+    "median_price": 989000,
+    "median_sample_size": 63,
+    "price_rating": null,
+    "mileage_km": 303500,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/UoqCeLSCnyDWVC4-4hS4uMK2OKoMlLUXxOoLvjgkbEQqlc3Zm3Rw3cuPYnACeDH2scmauWi0C1bVqDlo/gen272wb.jpg"
   }
 }
