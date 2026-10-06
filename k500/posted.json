@@ -2858,5 +2858,20 @@
     "mileage_km": 500000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/fwhFXfhxTxSihd_3fijizaK1NmoDcscDQAlFVp40In9fCsxjQvTss1lv2Nj1NwULSt49v91fFWFPiKrj/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/109508752.html": {
+    "posted_at": "2026-10-06T08:42:31.849032+00:00",
+    "message_id": 238,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2007,
+    "price": 250000,
+    "median_price": 299999.0,
+    "median_sample_size": 2638,
+    "price_rating": "нормальная цена",
+    "mileage_km": 257800,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/IsjHJE7Ms53f0vnlvHl6zXjcV1NDUAdTXDzvQ7L2bitwhlP2G_ULbk1piuWBO02rZuZmAG5_ns1mG100/gen272wb.jpg"
   }
 }
