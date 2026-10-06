@@ -16,3 +16,8 @@ jobs:
       - run: pip install -r requirements.txt && python -m playwright install --with-deps chromium
       - name: probe Avito + Auto.ru
         run: python probe_market.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: probe-out
+          path: probe_out/

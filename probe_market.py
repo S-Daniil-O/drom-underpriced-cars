@@ -1,66 +1,55 @@
-"""Проверка: пускают ли Авито и Авто.ру серверы GitHub. Ничего не публикует и не сохраняет.
+"""Проверка: пускают ли Авито и Авто.ру серверы GitHub. Ничего не публикует.
 
-Для каждой площадки — обычный HTTP-запрос и headless-браузер; печатает код ответа,
-заголовок страницы, признаки капчи/блокировки и число найденных карточек.
+Авито — только обычные HTTP-запросы, 3 страницы с паузой (браузер Авито банит по IP).
+Авто.ру — headless-браузер с ожиданием отрисовки. HTML сохраняется в probe_out/ (артефакт).
 """
+import os
 import re
+import time
 
 import requests
 from playwright.sync_api import sync_playwright
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
-
-TARGETS = {
-    "avito": {
-        "url": "https://www.avito.ru/voronezh/avtomobili?pmin=500000&pmax=1500000",
-        "card": r'data-marker="item"',
-    },
-    "autoru": {
-        "url": "https://auto.ru/voronezh/cars/all/?price_from=500000&price_to=1500000",
-        "card": r'class="[^"]*ListingItem[ "]',
-    },
-}
-
-BLOCK_WORDS = ("captcha", "капч", "доступ ограничен", "access denied", "проблема с ip",
-               "are you a robot", "вы не робот", "showcaptcha", "firewall")
+HDR = {"User-Agent": UA, "Accept-Language": "ru-RU,ru;q=0.9",
+       "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
+AVITO = "https://www.avito.ru/voronezh/avtomobili?pmin=500000&pmax=1500000&s=104"
+AUTORU = "https://auto.ru/voronezh/cars/all/?price_from=500000&price_to=1500000&sort=cr_date-desc"
+os.makedirs("probe_out", exist_ok=True)
 
 
-def verdict(html: str, card_re: str) -> str:
-    low = html.lower()
-    blocked = [w for w in BLOCK_WORDS if w in low]
-    cards = len(re.findall(card_re, html))
-    return f"карточек={cards} признаки_блокировки={blocked or 'нет'} размер={len(html)}"
-
-
-def title_of(html: str) -> str:
+def title_of(html):
     m = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
-    return (m.group(1).strip()[:80] if m else "")
+    return m.group(1).strip()[:80] if m else ""
 
 
-print("IP раннера:", requests.get("https://ipinfo.io/json", timeout=15).text)
+print("IP раннера:", requests.get("https://ipinfo.io/json", timeout=15).json().get("org"))
 
-for name, t in TARGETS.items():
+s = requests.Session()
+s.headers.update(HDR)
+for n in (1, 2, 3):
+    url = AVITO + (f"&p={n}" if n > 1 else "")
     try:
-        r = requests.get(t["url"], headers={"User-Agent": UA, "Accept-Language": "ru-RU,ru;q=0.9"},
-                         timeout=30, allow_redirects=True)
-        print(f"[{name}] requests: код={r.status_code} url={r.url[:100]} title={title_of(r.text)!r} "
-              f"{verdict(r.text, t['card'])}")
+        r = s.get(url, timeout=30)
+        cards = len(re.findall(r'data-marker="item"', r.text))
+        print(f"[avito] стр.{n}: код={r.status_code} title={title_of(r.text)!r} карточек={cards} размер={len(r.text)}")
+        open(f"probe_out/avito_{n}.html", "w").write(r.text)
     except Exception as e:
-        print(f"[{name}] requests: ОШИБКА {e}")
+        print(f"[avito] стр.{n}: ОШИБКА {e}")
+    time.sleep(12)
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
-    ctx = browser.new_context(user_agent=UA, locale="ru-RU")
-    page = ctx.new_page()
-    page.set_default_timeout(45000)
-    for name, t in TARGETS.items():
-        try:
-            resp = page.goto(t["url"], wait_until="domcontentloaded")
-            page.wait_for_timeout(4000)
-            html = page.content()
-            print(f"[{name}] browser: код={resp.status if resp else '?'} url={page.url[:100]} "
-                  f"title={page.title()[:80]!r} {verdict(html, t['card'])}")
-        except Exception as e:
-            print(f"[{name}] browser: ОШИБКА {e}")
+    page = browser.new_context(user_agent=UA, locale="ru-RU").new_page()
+    try:
+        resp = page.goto(AUTORU, wait_until="networkidle", timeout=60000)
+        page.wait_for_timeout(8000)
+        html = page.content()
+        cards = len(re.findall(r'ListingItem', html))
+        print(f"[autoru] browser: код={resp.status if resp else '?'} url={page.url[:90]} "
+              f"title={page.title()[:80]!r} ListingItem={cards} размер={len(html)}")
+        open("probe_out/autoru.html", "w").write(html)
+    except Exception as e:
+        print(f"[autoru] browser: ОШИБКА {e}")
     browser.close()
