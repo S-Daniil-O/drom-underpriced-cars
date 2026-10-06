@@ -2828,5 +2828,20 @@
     "mileage_km": 93776,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/b272yvV2iJ73GE4w27TACBeXo5hfBvJJlXrH00KVlMpuQ0bPJuOD4zkr5MSB-X0PzRe1ViMm-nkqXrPC/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/724532662.html": {
+    "posted_at": "2026-10-06T05:26:47.909256+00:00",
+    "message_id": 236,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2008,
+    "price": 88000,
+    "median_price": 165000,
+    "median_sample_size": 1987,
+    "price_rating": null,
+    "mileage_km": 88000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/KvzqoszxECUQhv2VQeKiABThJdY4rj2RXDpw7mWvQckqwLYeHlRz3MYVwm5W0ob_Pyj_ENcLsPayKCLR/gen272wb.jpg"
   }
 }
