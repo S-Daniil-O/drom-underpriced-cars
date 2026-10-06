@@ -1128,5 +1128,20 @@
     "mileage_km": 250000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/Abmq_0op7SA3iX1Ik8oazmbv99ERY82SDVfjvG7OWySXQkxnNQ4nhyVnhRaNw3w75c9tl7xZLs0JZ8Wz/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/octavia/225813561.html": {
+    "posted_at": "2026-10-06T18:42:12.013118+00:00",
+    "message_id": 101,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Octavia",
+    "year": 2016,
+    "price": 845000,
+    "median_price": 1415000,
+    "median_sample_size": 999,
+    "price_rating": null,
+    "mileage_km": 156125,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/sjjQgmajg83t7t78HivEc5sk_wHfnh8KCikFGMSLODGafiftL2GLtuvu9snVZCvv91kH_Wy81ss2LCX8/gen272wb.jpg"
   }
 }
