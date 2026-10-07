@@ -1248,5 +1248,35 @@
     "mileage_km": 244526,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/fc2ZjtQVmv3PgfhGj0mg3aAOXxbPAgYU1oy-Rnf09uymq9UwEvNEXYXUFBep8j0o_JfjA5ATwO4J_DYh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/ix35/492170849.html": {
+    "posted_at": "2026-10-07T13:25:53.265751+00:00",
+    "message_id": 109,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "ix35",
+    "year": 2011,
+    "price": 820000,
+    "median_price": 1228000,
+    "median_sample_size": 525,
+    "price_rating": "отличная цена",
+    "mileage_km": 355932,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/PsT0OMsZi6F25J8cgi1jwUzVqzRQmOEsd5WAm5FWbJ8JBaNbPDZjaRIbBiYAIQs0F1g_hlSVzQsCC6Os/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/qashqai/716749604.html": {
+    "posted_at": "2026-10-07T13:25:55.593565+00:00",
+    "message_id": 110,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Qashqai",
+    "year": 2012,
+    "price": 799000,
+    "median_price": 1073000,
+    "median_sample_size": 1067,
+    "price_rating": null,
+    "mileage_km": 126755,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/t-d31aCShBLP4fZJgYQfrFxceUkHHasTDdh2m1ouzFKvgc9GWOy9Z8238bPexRD9PY1in4mNljHYHQj4/gen272wb.jpg"
   }
 }
