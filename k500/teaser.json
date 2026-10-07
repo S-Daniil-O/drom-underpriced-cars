@@ -491,11 +491,11 @@
   "https://auto.drom.ru/voronezh/ford/focus/350654713.html": {
     "posted_at": "2026-10-04T21:25:04.884463+00:00",
     "message_id": 83,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:25:33.771345+00:00",
     "rejected": false,
     "checked_at": "2026-10-04T21:25:04.884463+00:00",
     "vk_post_id": 53,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-07T21:25:33.771345+00:00"
   },
   "https://auto.drom.ru/voronezh/daewoo/nexia/890765995.html": {
     "posted_at": "2026-10-04T21:40:03.284398+00:00",
@@ -668,5 +668,41 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-07T11:08:46.423951+00:00"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/436254473.html": {
+    "posted_at": "2026-10-07T21:28:25.084798+00:00",
+    "message_id": 100,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-07T21:28:25.084798+00:00",
+    "vk_post_id": 70,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/tagaz/vega/203866271.html": {
+    "posted_at": "2026-10-07T21:28:34.371535+00:00",
+    "message_id": 101,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-07T21:28:34.371535+00:00",
+    "vk_post_id": 71,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2105/513674779.html": {
+    "posted_at": "2026-10-07T21:28:54.679499+00:00",
+    "message_id": 102,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-07T21:28:54.679499+00:00",
+    "vk_post_id": 72,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/nissan/juke/612214442.html": {
+    "posted_at": "2026-10-07T21:29:13.711193+00:00",
+    "message_id": 103,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-07T21:29:13.711193+00:00",
+    "vk_post_id": 73,
+    "vk_deleted_at": null
   }
 }

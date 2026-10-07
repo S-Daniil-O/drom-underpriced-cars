@@ -2577,7 +2577,7 @@
   "https://auto.drom.ru/voronezh/lada/priora/364194611.html": {
     "posted_at": "2026-10-04T21:24:54.897614+00:00",
     "message_id": 219,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:25:28.897082+00:00",
     "brand": "Лада",
     "model": "Приора",
     "year": 2013,
@@ -2592,7 +2592,7 @@
   "https://auto.drom.ru/voronezh/ford/focus/350654713.html": {
     "posted_at": "2026-10-04T21:24:57.367239+00:00",
     "message_id": 220,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:25:30.188210+00:00",
     "brand": "Ford",
     "model": "Focus",
     "year": 2001,
@@ -2607,7 +2607,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/226846336.html": {
     "posted_at": "2026-10-04T21:25:14.263469+00:00",
     "message_id": 221,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:25:31.477490+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2013,
@@ -2622,7 +2622,7 @@
   "https://auto.drom.ru/voronezh/opel/corsa/126485503.html": {
     "posted_at": "2026-10-04T21:25:16.626813+00:00",
     "message_id": 222,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:25:32.767374+00:00",
     "brand": "Opel",
     "model": "Corsa",
     "year": 2007,
@@ -3188,5 +3188,50 @@
     "mileage_km": 350000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/QnmL_aP7nni6AgNQg-KdDjgbyvkH-FcgT8fpM-vFX5d4-PHH9nsSOoIIbAyDpaHbtoYeGqnFmadqUob3/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/fusion/839297169.html": {
+    "posted_at": "2026-10-07T21:28:17.029056+00:00",
+    "message_id": 260,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Fusion",
+    "year": 2010,
+    "price": 370000,
+    "median_price": 479000,
+    "median_sample_size": 69,
+    "price_rating": null,
+    "mileage_km": 279992,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/mJrSa5Jt3UGOtfMpFxV16LlPIWQKtolnqdMLz8MWlDnzt8MHsuCUbD8PBdIsg2J6g_hw63tXoWlBCaQu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/436254473.html": {
+    "posted_at": "2026-10-07T21:28:19.070947+00:00",
+    "message_id": 261,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 1993,
+    "price": 90000,
+    "median_price": 120000.0,
+    "median_sample_size": 22,
+    "price_rating": null,
+    "mileage_km": 480000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/upYHmMJNBV8QbANXaQdFpBxQWrhrXkZ81cXVgJvPHTKj14WMu-07nZNwu7a_R8JzWOf4SZDsOKMUq7go/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/tagaz/vega/203866271.html": {
+    "posted_at": "2026-10-07T21:28:28.449887+00:00",
+    "message_id": 262,
+    "deleted_at": null,
+    "brand": "ТагАЗ",
+    "model": "Вега",
+    "year": 2010,
+    "price": 165000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 193653,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/SGCuP0-MgmpNihd4qdL0dFNwRroejhG85sWpy2oH0YKZ6cfByhfwY0qyX-Ao_7Cw9dUKIy_3MGnmnBUI/gen272wb.jpg"
   }
 }
