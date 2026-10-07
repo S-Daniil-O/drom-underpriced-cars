@@ -1278,5 +1278,20 @@
     "mileage_km": 126755,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/t-d31aCShBLP4fZJgYQfrFxceUkHHasTDdh2m1ouzFKvgc9GWOy9Z8238bPexRD9PY1in4mNljHYHQj4/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/270795809.html": {
+    "posted_at": "2026-10-07T18:58:28.793688+00:00",
+    "message_id": 111,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2019,
+    "price": 1050000,
+    "median_price": 1329000,
+    "median_sample_size": 1081,
+    "price_rating": "нормальная цена",
+    "mileage_km": 174000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/NXjSqTQwyrSbVcO_e_X2XgzLTBehPT2vSU7xeobm9Z2_sj6DtognlB2xRfavd9ZNm-_oJD24phSJBdAG/gen272wb.jpg"
   }
 }
