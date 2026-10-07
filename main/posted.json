@@ -1057,7 +1057,7 @@
   "https://auto.drom.ru/voronezh/lada/vesta/775100270.html": {
     "posted_at": "2026-10-04T21:40:05.529129+00:00",
     "message_id": 96,
-    "deleted_at": null,
+    "deleted_at": "2026-10-07T21:40:07.489675+00:00",
     "brand": "Лада",
     "model": "Веста",
     "year": 2017,
@@ -1323,5 +1323,20 @@
     "mileage_km": 250000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/q9xnA-3bLB7yhpGZOVTOs2o_gO_8zpD9_grxvmRcpKRmFh0FLyiSm4DAI7tD_b9Arid89WY4i5jH4JnU/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta_cross/931443486.html": {
+    "posted_at": "2026-10-07T21:45:05.652857+00:00",
+    "message_id": 114,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта Кросс",
+    "year": 2024,
+    "price": 804000,
+    "median_price": 970000,
+    "median_sample_size": 1261,
+    "price_rating": "нормальная цена",
+    "mileage_km": 46000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NsBz7qG7eIvIrSuplrc-CCnPVvZ2eh2qL5oFcJUoPUis6KjYItKFEtiC-QQNYkl012UEu8fZNDElZATt/gen272wb.jpg"
   }
 }
