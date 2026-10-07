@@ -3128,5 +3128,20 @@
     "mileage_km": 113000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/G7eMht9TyEDhrKrz_h7QDcdOYXNRwWnMkK5M_yi1jhgZyOXOC0gFYxEM7PO9-sC4HR0_vk-hVNmZW8Hc/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2121_4x4_niva/918043320.html": {
+    "posted_at": "2026-10-07T10:38:41.166374+00:00",
+    "message_id": 256,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "4x4 2121 Нива",
+    "year": 1999,
+    "price": 265000,
+    "median_price": 400000.0,
+    "median_sample_size": 484,
+    "price_rating": "нормальная цена",
+    "mileage_km": 120000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Hv584HFvU_qDIruAHqawkmUbTAaj9uohFBN-O7zlVSXidQtsbvOpPwf8kaFpUcaKE9PvR-vCmHgCRCdB/gen272wb.jpg"
   }
 }
