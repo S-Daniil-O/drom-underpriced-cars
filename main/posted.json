@@ -1293,5 +1293,35 @@
     "mileage_km": 174000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/NXjSqTQwyrSbVcO_e_X2XgzLTBehPT2vSU7xeobm9Z2_sj6DtognlB2xRfavd9ZNm-_oJD24phSJBdAG/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/camry/129763002.html": {
+    "posted_at": "2026-10-07T21:18:34.633931+00:00",
+    "message_id": 112,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2007,
+    "price": 1020000,
+    "median_price": 1250000,
+    "median_sample_size": 143,
+    "price_rating": "нормальная цена",
+    "mileage_km": 297313,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/yAne9tBJswwBylIHbAZtkVzj0WGWB_jUdGJ3quzf3rzlzE6Wpj1dgB2LpOPRsxkAEr3QEKd35wNgx_Vi/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf_plus/101330210.html": {
+    "posted_at": "2026-10-07T21:18:36.917214+00:00",
+    "message_id": 113,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf Plus",
+    "year": 2012,
+    "price": 590000,
+    "median_price": 740000.0,
+    "median_sample_size": 296,
+    "price_rating": "нормальная цена",
+    "mileage_km": 250000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/q9xnA-3bLB7yhpGZOVTOs2o_gO_8zpD9_grxvmRcpKRmFh0FLyiSm4DAI7tD_b9Arid89WY4i5jH4JnU/gen272wb.jpg"
   }
 }
