@@ -3248,5 +3248,20 @@
     "mileage_km": 213156,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/DtdLPKWxxA2wLq9dW2nGGDW-gvJtmTTpcZdJybtAlUv9jWKvzTJo9qltNSbh1W7WDn-BLtIJs-X2nnh_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/100/824645264.html": {
+    "posted_at": "2026-10-08T14:28:54.336938+00:00",
+    "message_id": 264,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "100",
+    "year": 1988,
+    "price": 150000,
+    "median_price": 65000.0,
+    "median_sample_size": 534,
+    "price_rating": "отличная цена",
+    "mileage_km": 400000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/rJFs92NefUF1FOLY1Z3VJmdry80nTKA2zGewiLeKwK7cqzpjaqP_R6Extxx8uZTMkf7xQxCcgeR9wA5x/gen272wb.jpg"
   }
 }
