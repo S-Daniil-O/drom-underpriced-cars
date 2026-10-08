@@ -1353,5 +1353,35 @@
     "mileage_km": null,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/t222rFfMTaaEt71AT6RWedKJZZooe1XbE1uuM-m4s1pQSjUaIY0rdYfrPbHLdHpHVuOIK_fGQVwF51HU/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/427886645.html": {
+    "posted_at": "2026-10-08T21:25:28.765623+00:00",
+    "message_id": 116,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2026,
+    "price": 795000,
+    "median_price": 1130000,
+    "median_sample_size": 20317,
+    "price_rating": "хорошая цена",
+    "mileage_km": 12375,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/IhTxGo5hcfUWJHORNKxY342mXNxpv6LUVns1PK6iOBZHL9ce6_BSpC8WpcvJK9wAAsLi7sa55KXefl8V/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/baic/u5_plus/351933306.html": {
+    "posted_at": "2026-10-08T21:25:37.006197+00:00",
+    "message_id": 117,
+    "deleted_at": null,
+    "brand": "BAIC",
+    "model": "U5 Plus",
+    "year": 2023,
+    "price": 970000,
+    "median_price": 1279000.0,
+    "median_sample_size": 818,
+    "price_rating": "нормальная цена",
+    "mileage_km": 147666,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/pNy6EJbg3GQRme_69FHBTaDIVDsycEUb5mmUTAeYW07YTbXOIqkTfji_-HvgP6kAh04EByfmVvs83arF/gen272wb.jpg"
   }
 }
