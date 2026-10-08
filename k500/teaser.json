@@ -536,47 +536,47 @@
   "https://auto.drom.ru/voronezh/lada/2114/859193822.html": {
     "posted_at": "2026-10-05T21:40:52.173321+00:00",
     "message_id": 88,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:30.477010+00:00",
     "rejected": false,
     "checked_at": "2026-10-05T21:40:52.173321+00:00",
     "vk_post_id": 58,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-08T21:50:30.477010+00:00"
   },
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/554376417.html": {
     "posted_at": "2026-10-05T21:41:02.192168+00:00",
     "message_id": 89,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:30.477010+00:00",
     "rejected": false,
     "checked_at": "2026-10-05T21:41:02.192168+00:00",
     "vk_post_id": 59,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-08T21:50:30.477010+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2115/442522732.html": {
     "posted_at": "2026-10-05T21:41:11.707106+00:00",
     "message_id": 90,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:30.477010+00:00",
     "rejected": false,
     "checked_at": "2026-10-05T21:41:11.707106+00:00",
     "vk_post_id": 60,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-08T21:50:30.477010+00:00"
   },
   "https://auto.drom.ru/voronezh/nissan/cefiro/350403010.html": {
     "posted_at": "2026-10-05T21:41:27.251343+00:00",
     "message_id": 91,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:30.477010+00:00",
     "rejected": false,
     "checked_at": "2026-10-05T21:41:27.251343+00:00",
     "vk_post_id": 61,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-08T21:50:30.477010+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2106/169482315.html": {
     "posted_at": "2026-10-05T21:41:52.456120+00:00",
     "message_id": 92,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:30.477010+00:00",
     "rejected": false,
     "checked_at": "2026-10-05T21:41:52.456120+00:00",
     "vk_post_id": 62,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-08T21:50:30.477010+00:00"
   },
   "https://auto.drom.ru/voronezh/mercedes-benz/c-class/896900855.html": {
     "posted_at": "2026-10-06T08:13:14.947380+00:00",
@@ -730,6 +730,15 @@
     "rejected": false,
     "checked_at": "2026-10-08T21:38:45.256566+00:00",
     "vk_post_id": 76,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/933574135.html": {
+    "posted_at": "2026-10-08T21:53:40.316689+00:00",
+    "message_id": 107,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-08T21:53:40.316689+00:00",
+    "vk_post_id": 77,
     "vk_deleted_at": null
   }
 }

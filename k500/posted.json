@@ -2727,7 +2727,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/859193822.html": {
     "posted_at": "2026-10-05T21:40:44.539264+00:00",
     "message_id": 229,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:22.134049+00:00",
     "brand": "Лада",
     "model": "2114 Самара",
     "year": 2007,
@@ -2742,7 +2742,7 @@
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/554376417.html": {
     "posted_at": "2026-10-05T21:40:54.923502+00:00",
     "message_id": 230,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:23.625292+00:00",
     "brand": "Mitsubishi",
     "model": "Lancer",
     "year": 2007,
@@ -2757,7 +2757,7 @@
   "https://auto.drom.ru/voronezh/lada/2115/442522732.html": {
     "posted_at": "2026-10-05T21:41:04.564625+00:00",
     "message_id": 231,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:25.085347+00:00",
     "brand": "Лада",
     "model": "2115 Самара",
     "year": 2002,
@@ -2772,7 +2772,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/436778644.html": {
     "posted_at": "2026-10-05T21:41:17.720096+00:00",
     "message_id": 232,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:26.565076+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2018,
@@ -2787,7 +2787,7 @@
   "https://auto.drom.ru/voronezh/nissan/cefiro/350403010.html": {
     "posted_at": "2026-10-05T21:41:20.195261+00:00",
     "message_id": 233,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:28.029487+00:00",
     "brand": "Nissan",
     "model": "Cefiro",
     "year": 1998,
@@ -2802,7 +2802,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/237169131.html": {
     "posted_at": "2026-10-05T21:41:29.610704+00:00",
     "message_id": 234,
-    "deleted_at": null,
+    "deleted_at": "2026-10-08T21:50:29.472820+00:00",
     "brand": "Лада",
     "model": "2114 Самара",
     "year": 2011,
@@ -3338,5 +3338,20 @@
     "mileage_km": 250000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/z9qwCpTY06t0suCPmOCve6iIC-seoSQvfL9kamE3YpdPy6dfgPOxWsbSbFBs1cOCHxPw5Ke61ND1WqRM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/933574135.html": {
+    "posted_at": "2026-10-08T21:53:31.581388+00:00",
+    "message_id": 270,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2006,
+    "price": 110000,
+    "median_price": 150000.0,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 314000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/vbzqvcdplYFeFcwm4LjmWoxVJt1zbgqFNgckgC4ffVvRJ6wd0cCRVmAQh_-OvNhHQf6RU2hphPS68mXf/gen272wb.jpg"
   }
 }
