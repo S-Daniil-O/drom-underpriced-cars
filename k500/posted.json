@@ -3278,5 +3278,35 @@
     "mileage_km": 210000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/FT1jsDT-BKURJNtWdWXwXf0YeK9QtbOn5MyUV3he_3NroDVKnzHWKag9Az6G0FV1UkbuGTxFGDxzqL5e/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/490771808.html": {
+    "posted_at": "2026-10-08T21:23:01.940081+00:00",
+    "message_id": 266,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2011,
+    "price": 185000,
+    "median_price": 325000,
+    "median_sample_size": 5567,
+    "price_rating": null,
+    "mileage_km": 298000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/8XiZa_3x_N56wtMQZku_brmTEswshmCxVoQINwm4BTz8iAcL3mH-_h8H6ysVgNavXFQTbg4hb7_ZpDWj/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/308/112320649.html": {
+    "posted_at": "2026-10-08T21:23:04.392931+00:00",
+    "message_id": 267,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "308",
+    "year": 2010,
+    "price": 320000,
+    "median_price": 438000,
+    "median_sample_size": 3247,
+    "price_rating": null,
+    "mileage_km": 120571,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Gj_8yNI_3o97eIAgIbrM76Ka9asY21RqtVrAVfzHh5PmZ0DUlGtIq79XlScPYUcCRd78a1BMXtsXhjYy/gen272wb.jpg"
   }
 }
