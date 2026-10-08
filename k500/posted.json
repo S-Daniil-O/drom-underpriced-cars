@@ -3308,5 +3308,35 @@
     "mileage_km": 120571,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/Gj_8yNI_3o97eIAgIbrM76Ka9asY21RqtVrAVfzHh5PmZ0DUlGtIq79XlScPYUcCRd78a1BMXtsXhjYy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chery/bonus/787087473.html": {
+    "posted_at": "2026-10-08T21:38:10.344915+00:00",
+    "message_id": 268,
+    "deleted_at": null,
+    "brand": "Chery",
+    "model": "Bonus A13",
+    "year": 2011,
+    "price": 160000,
+    "median_price": 195000,
+    "median_sample_size": 739,
+    "price_rating": null,
+    "mileage_km": 150000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/RHUzAZf35Fi85KiZ6025yOORqBKNCXo1uZjGdBRUy2qTSOg1lfQ-Xq__6Ym62KatBas5eXnBVJGhhMP9/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/637926939.html": {
+    "posted_at": "2026-10-08T21:38:48.262904+00:00",
+    "message_id": 269,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2008,
+    "price": 200000,
+    "median_price": 290000.0,
+    "median_sample_size": 4188,
+    "price_rating": "хорошая цена",
+    "mileage_km": 250000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/z9qwCpTY06t0suCPmOCve6iIC-seoSQvfL9kamE3YpdPy6dfgPOxWsbSbFBs1cOCHxPw5Ke61ND1WqRM/gen272wb.jpg"
   }
 }
