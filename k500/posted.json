@@ -3383,5 +3383,20 @@
     "mileage_km": 170000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/vk-U8tikCCiqL_l3uT_enhh5rUDsB7DffLjg5r-EcK74W7xJQL6Tmps6YhtQG6hl26ETgmpf74GYRQfP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/308/596033947.html": {
+    "posted_at": "2026-10-09T10:52:34.375839+00:00",
+    "message_id": 273,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "308",
+    "year": 2010,
+    "price": 370000,
+    "median_price": 438000.0,
+    "median_sample_size": 3416,
+    "price_rating": "хорошая цена",
+    "mileage_km": 184662,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Q4BuXyV0rG0iuPrhswq9gy7GIv5ELDasF5rYpxWIXuvr0LO3sU36dIEOQSqlGaXo3a2TUdTIsrZ7LAxf/gen272wb.jpg"
   }
 }
