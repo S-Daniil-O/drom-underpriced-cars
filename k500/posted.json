@@ -2847,7 +2847,7 @@
   "https://auto.drom.ru/voronezh/mercedes-benz/c-class/896900855.html": {
     "posted_at": "2026-10-06T08:13:06.859514+00:00",
     "message_id": 237,
-    "deleted_at": null,
+    "deleted_at": "2026-10-09T08:17:52.184734+00:00",
     "brand": "Mercedes-Benz",
     "model": "C-Class",
     "year": 1995,
@@ -3368,5 +3368,20 @@
     "mileage_km": 200000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/Ywf4FGoaWFyO7Z0NjSCpLQPYTA47P69xIAWC1muH54rse-GxKerLvrkCbbtGiYq36SG5ORNi5j8-lsJP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/march/881268823.html": {
+    "posted_at": "2026-10-09T08:20:58.726402+00:00",
+    "message_id": 272,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "March",
+    "year": 2002,
+    "price": 210000,
+    "median_price": 199999,
+    "median_sample_size": 1275,
+    "price_rating": "отличная цена",
+    "mileage_km": 170000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/vk-U8tikCCiqL_l3uT_enhh5rUDsB7DffLjg5r-EcK74W7xJQL6Tmps6YhtQG6hl26ETgmpf74GYRQfP/gen272wb.jpg"
   }
 }
