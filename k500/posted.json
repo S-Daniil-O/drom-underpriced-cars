@@ -3458,5 +3458,20 @@
     "mileage_km": 160000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ZA3IVKvqlFBwrJcQ0-PQGI4xROG70ZyH9rAg-l1erLsjHrNw0BAZeC9hj_lWp-dYsOX8-Z64aXUzgxvI/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/fiesta/372298274.html": {
+    "posted_at": "2026-10-09T18:35:06.407373+00:00",
+    "message_id": 278,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Fiesta",
+    "year": 2006,
+    "price": 260000,
+    "median_price": 260000,
+    "median_sample_size": 275,
+    "price_rating": "отличная цена",
+    "mileage_km": 147945,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/NJX74QdSn5MotUX5dR7-rb63XdESkm0oTK_7Trouq9ajRZhddwK-HucgQHcqlmXTAgn81r8ByvVj85p5/gen272wb.jpg"
   }
 }
