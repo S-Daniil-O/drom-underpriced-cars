@@ -76,6 +76,28 @@ def load_posted():
     return migrated
 
 
+def load_inbox():
+    """Объявления других площадок (сейчас Авто.ру), собранные домашним компьютером
+    (home/autoru_collect.py) и лежащие в ветке inbox. У каждого уже есть рыночная
+    оценка площадки (market_price) и пройдена проверка на перепродажу."""
+    path = os.environ.get("INBOX_FILE")
+    if not path:
+        return []
+    items = load_json(path, [])
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=6)
+    fresh = [i for i in items if datetime.fromisoformat(i["seen_at"]) >= cutoff
+             and config.PRICE_MIN <= i["price"] <= config.PRICE_MAX]
+    log(f"Входящие с других площадок: {len(fresh)} из {len(items)}")
+    return fresh
+
+
+def source_suffix(item):
+    """Пометка площадки в посте и база сравнения цены."""
+    if item.get("source") == "autoru":
+        return "\n📍 Объявление с Авто.ру", "оценки Авто.ру"
+    return "", "медианы группы"
+
+
 def group_key(brand, model, year):
     return f"{brand.strip().lower()}|{model.strip().lower()}|{year}"
 
@@ -455,11 +477,13 @@ def enrich_and_filter_for_resale(candidates):
     слишком много владельцев или тревожные слова в описании (авария,
     капремонт, залог и т.п.) — этого не видно на карточке в поиске, только
     на самой странице объявления. Возвращает только прошедшие проверку
-    объявления, дополненные полями owners/description."""
+    объявления, дополненные полями owners/description.
+    Объявления других площадок (source) уже проверены домашним сборщиком."""
+    passed = [c for c in candidates if c.get("source")]
+    candidates = [c for c in candidates if not c.get("source")]
     if not candidates:
-        return []
+        return passed
 
-    passed = []
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page(
@@ -537,6 +561,8 @@ def update_history_and_find_underpriced(listings, history):
 
         prices_so_far = [e["price"] for e in entries]
         median_price = statistics.median(prices_so_far) if len(prices_so_far) >= config.MIN_SAMPLES_FOR_MEDIAN else None
+        if item.get("source"):
+            median_price, prices_so_far = item.get("market_price"), []
 
         reason = None
         # Собственная медиана считается только по цене — не знает про пробег,
@@ -567,10 +593,12 @@ def update_history_and_find_underpriced(listings, history):
             underpriced.append({
                 **item,
                 "median_price": median_price,
-                "median_sample_size": len(prices_so_far) if median_price is not None else None,
+                "median_sample_size": (len(prices_so_far) or None) if median_price is not None else None,
                 "reason": reason,
             })
 
+        if item.get("source"):
+            continue
         # добавляем текущее наблюдение в историю ПОСЛЕ сравнения с медианой,
         # чтобы объявление не сравнивалось само с собой
         entries.append({"price": item["price"], "seen_at": now_iso, "url": item["url"]})
@@ -605,7 +633,7 @@ def format_caption(item):
             # рыночной цене". Это не гарантия, а ориентир по нашим данным.
             profit_rub = round(item["price"] * discount_pct / 100)
             profit_str = f"{profit_rub:,}".replace(",", " ")
-            parts.append(f"📉 Ниже медианы группы примерно на {discount_pct}%{suffix}")
+            parts.append(f"📉 Ниже {source_suffix(item)[1]} примерно на {discount_pct}%{suffix}")
             parts.append(f"💵 Потенциально можно заработать ~{profit_str} ₽")
     if item.get("price_rating"):
         parts.append(f"🏷 Оценка Drom: {item['price_rating']}")
@@ -616,7 +644,7 @@ def format_caption(item):
     elif item.get("owners"):
         parts.append(f"👤 Владельцев: {item['owners']}")
     parts.append(item["url"])
-    return "\n".join(parts)
+    return "\n".join(parts) + source_suffix(item)[0]
 
 
 def _send_photo_by_upload(base, caption, image_url):
@@ -826,7 +854,7 @@ def build_vk_text(item, discount_pct, profit_rub):
     title = f"{item['brand']} {item.get('model') or ''} {item.get('year') or ''}".strip()
     lines = [f"🔥 {title}", f"💰 Цена: {item['price']:,} ₽".replace(",", " ")]
     if discount_pct is not None:
-        lines.append(f"📉 Ниже медианы группы на {discount_pct}%")
+        lines.append(f"📉 Ниже {source_suffix(item)[1]} на {discount_pct}%")
         lines.append(f"💵 Потенциальная выгода: ~{profit_rub:,} ₽".replace(",", " "))
     if item.get("price_rating"):
         lines.append(f"🏷 Оценка Drom: {item['price_rating']}")
@@ -855,11 +883,11 @@ def send_to_perekup(item, discount_pct, profit_rub):
         f"💰 Цена: {price_str} ₽",
     ]
     if discount_pct is not None:
-        parts.append(f"📉 Ниже медианы группы на {discount_pct}%")
+        parts.append(f"📉 Ниже {source_suffix(item)[1]} на {discount_pct}%")
         parts.append(f"💵 Потенциальная выгода: ~{profit_str} ₽")
     if item.get("price_rating"):
         parts.append(f"🏷 Оценка Drom: {item['price_rating']}")
-    parts.append(item["url"])
+    parts.append(item["url"] + source_suffix(item)[0])
     parts.append("")
     parts.append(f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}")
     parts.append("")
@@ -1034,7 +1062,7 @@ def main():
     if config.PEREKUP_CHAT_ID:
         teaser = cleanup_teaser(teaser)
 
-    listings = scrape_listings()
+    listings = scrape_listings() + load_inbox()
     log(f"Всего собрано объявлений за прогон: {len(listings)}")
 
     underpriced, history = update_history_and_find_underpriced(listings, history)

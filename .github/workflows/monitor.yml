@@ -36,6 +36,13 @@ jobs:
           ref: state
           path: _state
 
+      - name: checkout inbox branch (объявления Авто.ру с домашнего компьютера)
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: inbox
+          path: _inbox
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -67,6 +74,7 @@ jobs:
         working-directory: ${{ matrix.profile }}
         env:
           PYTHONPATH: .
+          INBOX_FILE: ${{ github.workspace }}/_inbox/inbox/${{ matrix.profile }}/autoru.json
         run: python ../monitor.py
 
       - name: save price history (cache)
