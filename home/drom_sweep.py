@@ -5,7 +5,8 @@ GitHub Actions каждые 15 минут смотрит только первы
 старые объявления, у которых продавец сбросил цену, и всё, что глубже 15-й страницы.
 
 1. Листает всю выдачу профиля (main/k500) теми же функциями monitor.py.
-2. Медиана по (марка, модель, год) — по всему снимку рынка сразу, от 5 объявлений в группе.
+2. Медиана по (марка, модель, год) — по всем объявлениям, виденным за 30 дней (каждое один раз,
+   последняя цена), от 5 штук в группе; если одного года мало — берём соседние годы ±1.
 3. Кандидаты: дешевле медианы на 8%+ или метка Drom «отличная цена» (кроме уже опубликованных).
 4. Проверка на перепродажу (владельцы, описание, особые отметки) — тем же кодом, что в GitHub.
 5. Прошедшие — в ветку inbox (inbox/<профиль>/drom_sweep.json), публикует monitor.py в GitHub.
@@ -27,6 +28,8 @@ SERVER_DIR = os.path.expanduser("~/server")
 INBOX_REPO = os.path.join(SERVER_DIR, "inbox_repo")
 LOCK_FILE = os.path.join(SERVER_DIR, "inbox.lock")
 REJECTED_FILE = os.path.join(SERVER_DIR, "sweep_rejected.json")
+MARKET_FILE = os.path.join(SERVER_DIR, "sweep_market_{}.json")   # все виденные объявления профиля
+MARKET_DAYS = 30         # объявление участвует в медиане 30 дней после того, как его видели последний раз
 
 MAX_PAGES = 120          # выдача кончится раньше — scrape_listings остановится сам
 MIN_GROUP = 5            # медиану считаем от 5 объявлений в группе
@@ -78,11 +81,34 @@ def sweep(prof, rejected, dry):
         log(f"{prof}: слишком мало — похоже на сбой или блокировку, пропускаю профиль")
         return None
 
-    groups = {}
+    # Рынок: все объявления профиля за MARKET_DAYS дней, каждое один раз с последней ценой.
+    now_iso = datetime.now(timezone.utc).isoformat()
+    try:
+        market = json.load(open(MARKET_FILE.format(prof)))
+    except (OSError, ValueError):
+        market = {}
     for it in listings:
         if it.get("brand") and it.get("year") and it.get("price"):
-            groups.setdefault(monitor.group_key(it["brand"], it.get("model") or "", it["year"]), []).append(it["price"])
-    medians = {k: (statistics.median(v), len(v)) for k, v in groups.items() if len(v) >= MIN_GROUP}
+            market[it["ad_id"]] = {"b": it["brand"], "m": it.get("model") or "", "y": it["year"],
+                                   "p": it["price"], "t": now_iso}
+    cutoff = datetime.now(timezone.utc) - timedelta(days=MARKET_DAYS)
+    market = {k: v for k, v in market.items() if datetime.fromisoformat(v["t"]) >= cutoff}
+    if not dry:
+        json.dump(market, open(MARKET_FILE.format(prof), "w"))
+
+    by_model = {}
+    for ad_id, v in market.items():
+        by_model.setdefault((v["b"].lower(), v["m"].lower()), []).append((v["y"], v["p"], ad_id))
+
+    def median_for(it):
+        """Медиана без самого объявления: сначала тот же год, при нехватке — годы ±1."""
+        rows = by_model.get((it["brand"].lower(), (it.get("model") or "").lower()), [])
+        for spread in (0, 1):
+            prices = [p for y, p, a in rows if abs(y - it["year"]) <= spread and a != it["ad_id"]]
+            if len(prices) >= MIN_GROUP:
+                return statistics.median(prices), len(prices)
+        return None, 0
+    log(f"{prof}: в базе рынка {len(market)} объявлений за {MARKET_DAYS} дн.")
 
     posted, teaser = already_shown(prof)
     now = datetime.now(timezone.utc)
@@ -93,7 +119,9 @@ def sweep(prof, rejected, dry):
         r = rejected.get(it["ad_id"])
         if r and now - datetime.fromisoformat(r) < timedelta(days=RECHECK_DAYS):
             continue
-        med, n = medians.get(monitor.group_key(it["brand"], it.get("model") or "", it.get("year")), (None, 0))
+        if not (it.get("brand") and it.get("year") and it.get("price")):
+            continue
+        med, n = median_for(it)
         disc = 1 - it["price"] / med if med else 0
         good_rating = it.get("price_rating") in cfg.GOOD_PRICE_RATINGS
         if disc >= CANDIDATE_DISCOUNT or good_rating:
@@ -102,7 +130,8 @@ def sweep(prof, rejected, dry):
             cands.append({**it, "market_price": round(med) if med else None, "median_sample_size": n or None,
                           "_disc": disc})
     cands.sort(key=lambda i: i["_disc"], reverse=True)
-    log(f"{prof}: групп с медианой {len(medians)}, кандидатов {len(cands)}")
+    log(f"{prof}: с медианой {sum(1 for i in listings if i.get('year') and median_for(i)[0])} из {len(listings)}, "
+        f"кандидатов {len(cands)}")
     for c in cands[:15]:
         log(f"   {c['brand']} {c.get('model')} {c.get('year')}: {c['price']} при медиане {c['market_price']} "
             f"({round(c['_disc'] * 100)}%, {c['median_sample_size']} объявл.) {c.get('price_rating') or ''}")
