@@ -1413,5 +1413,35 @@
     "mileage_km": 355932,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/yf2hRQlfvekg0kcXsdEdN7heYBzjtINmoTabPmQcUeP7lP3yTrQuA3J29BoLbCfc0ZbHHsEoIK6P3hHe/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/niva_legend/633247449.html": {
+    "posted_at": "2026-10-09T21:32:24.902628+00:00",
+    "message_id": 120,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Нива Легенд",
+    "year": 2025,
+    "price": 920000,
+    "median_price": 1162000.0,
+    "median_sample_size": 4240,
+    "price_rating": "нормальная цена",
+    "mileage_km": 13965,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ka60cQxu6Mx_Wj7xEsjEX1dUHo3uRLkZQ4fJk7sk8M83ZIZS-1TCDSw_hAkbnpApdCLv3b5Z_-7fmZ52/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/polo/275745525.html": {
+    "posted_at": "2026-10-09T21:32:28.583317+00:00",
+    "message_id": 121,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2011,
+    "price": 529000,
+    "median_price": 674000,
+    "median_sample_size": 295,
+    "price_rating": null,
+    "mileage_km": 206361,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ggntt0pxVe9dbTFNVCXfmstFiYQc36y2ytpvR5C32gg-hNIuUmOIwwQ795R2TQRjjHldcO0_U-JaL_87/gen272wb.jpg"
   }
 }
