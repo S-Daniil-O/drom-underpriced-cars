@@ -77,13 +77,17 @@ def load_posted():
 
 
 def load_inbox():
-    """Объявления других площадок (сейчас Авто.ру), собранные домашним компьютером
-    (home/autoru_collect.py) и лежащие в ветке inbox. У каждого уже есть рыночная
-    оценка площадки (market_price) и пройдена проверка на перепродажу."""
+    """Находки домашнего компьютера из ветки inbox: Авто.ру (home/autoru_collect.py) и
+    полный проход Drom по всем объявлениям (home/drom_sweep.py). У каждой уже есть
+    рыночная цена (market_price) и пройдена проверка на перепродажу."""
     path = os.environ.get("INBOX_FILE")
     if not path:
         return []
-    items = load_json(path, [])
+    folder = os.path.dirname(path)
+    items = []
+    for name in sorted(os.listdir(folder)) if os.path.isdir(folder) else []:
+        if name.endswith(".json"):
+            items += load_json(os.path.join(folder, name), [])
     cutoff = datetime.now(timezone.utc) - timedelta(hours=6)
     fresh = [i for i in items if datetime.fromisoformat(i["seen_at"]) >= cutoff
              and config.PRICE_MIN <= i["price"] <= config.PRICE_MAX]
@@ -95,6 +99,8 @@ def source_suffix(item):
     """Пометка площадки в посте и база сравнения цены."""
     if item.get("source") == "autoru":
         return "\n📍 Объявление с Авто.ру", "оценки Авто.ру"
+    if item.get("source") == "drom":
+        return "", "медианы по всем объявлениям Drom"
     return "", "медианы группы"
 
 
@@ -564,7 +570,7 @@ def update_history_and_find_underpriced(listings, history):
         prices_so_far = [e["price"] for e in entries]
         median_price = statistics.median(prices_so_far) if len(prices_so_far) >= config.MIN_SAMPLES_FOR_MEDIAN else None
         if item.get("source"):
-            median_price, prices_so_far = item.get("market_price"), []
+            median_price, prices_so_far = item.get("market_price"), [None] * (item.get("median_sample_size") or 0)
 
         reason = None
         # Собственная медиана считается только по цене — не знает про пробег,
@@ -1064,7 +1070,9 @@ def main():
     if config.PEREKUP_CHAT_ID:
         teaser = cleanup_teaser(teaser)
 
-    listings = scrape_listings() + load_inbox()
+    # Находки домашнего компьютера важнее обычной выдачи: у них медиана по всему рынку и уже
+    # пройдена проверка. Одно объявление в обоих списках — берём версию из входящих (без дублей).
+    listings = list({i["ad_id"]: i for i in scrape_listings() + load_inbox()}.values())
     log(f"Всего собрано объявлений за прогон: {len(listings)}")
 
     underpriced, history = update_history_and_find_underpriced(listings, history)

@@ -11,6 +11,7 @@
 
 Запуск: python autoru_collect.py [--dry-run]  (--dry-run: только печать, без git push)
 """
+import fcntl
 import itertools
 import json
 import os
@@ -162,6 +163,8 @@ def main():
     if dry:
         return
 
+    lock = open(os.path.join(os.path.dirname(INBOX_REPO), "inbox.lock"), "w")
+    fcntl.flock(lock, fcntl.LOCK_EX)  # drom_sweep.py пишет в тот же клон
     git("fetch", "-q", "origin", "inbox")
     git("reset", "-q", "--hard", "origin/inbox")
     cutoff = datetime.now(timezone.utc) - timedelta(hours=KEEP_HOURS)
