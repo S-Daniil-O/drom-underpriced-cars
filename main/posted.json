@@ -1147,7 +1147,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/266973937.html": {
     "posted_at": "2026-10-06T21:33:03.675694+00:00",
     "message_id": 102,
-    "deleted_at": null,
+    "deleted_at": "2026-10-09T21:42:31.276292+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2025,
@@ -1443,5 +1443,50 @@
     "mileage_km": 206361,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/ggntt0pxVe9dbTFNVCXfmstFiYQc36y2ytpvR5C32gg-hNIuUmOIwwQ795R2TQRjjHldcO0_U-JaL_87/gen272wb.jpg"
+  },
+  "autoru_1133659029-8bdd727e": {
+    "posted_at": "2026-10-09T21:47:32.097360+00:00",
+    "message_id": 122,
+    "deleted_at": null,
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "year": 2017,
+    "price": 750000,
+    "median_price": 1057000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 30000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17709739/36c5f04b8b2ae0d1c47ec2beaadf57cb/1200x900n"
+  },
+  "autoru_1133885281-8928fe05": {
+    "posted_at": "2026-10-09T21:47:36.445267+00:00",
+    "message_id": 123,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Casper",
+    "year": 2022,
+    "price": 1085000,
+    "median_price": 1467000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 34000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/16409627/d104c9a5a4559542971f9b41179e8a19/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mazda/cx-7/419018835.html": {
+    "posted_at": "2026-10-09T21:47:40.108886+00:00",
+    "message_id": 124,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "CX-7",
+    "year": 2010,
+    "price": 790000,
+    "median_price": 1291000,
+    "median_sample_size": 451,
+    "price_rating": "нормальная цена",
+    "mileage_km": 250000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/yKsf39qvDVlRX1PmFSkcuFYzz9rghKwnLO_Rklwsk3X2q37hoTFAlPYsVnmwVVXWID4poz_Y_r6fAtA5/gen272wb.jpg"
   }
 }
