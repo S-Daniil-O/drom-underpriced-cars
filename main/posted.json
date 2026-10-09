@@ -1398,5 +1398,20 @@
     "mileage_km": 27000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/sck6x3G66UZCHLOPPj-L4P1maFrECa_SIPE0lYQvArCfOKfrsrEDMKQU7A_TAWcRe3WLyr3cbxvoGp3n/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/ix35/536876667.html": {
+    "posted_at": "2026-10-09T17:21:36.110611+00:00",
+    "message_id": 119,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "ix35",
+    "year": 2011,
+    "price": 820000,
+    "median_price": 1190000.0,
+    "median_sample_size": 836,
+    "price_rating": "отличная цена",
+    "mileage_km": 355932,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/yf2hRQlfvekg0kcXsdEdN7heYBzjtINmoTabPmQcUeP7lP3yTrQuA3J29BoLbCfc0ZbHHsEoIK6P3hHe/gen272wb.jpg"
   }
 }
