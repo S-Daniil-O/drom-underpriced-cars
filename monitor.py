@@ -1083,6 +1083,16 @@ def main():
     teaser_pool = [item for item in underpriced if item.get("reason") == "teaser_only"]
     underpriced = [item for item in underpriced if item.get("reason") != "teaser_only"]
     new_candidates = [item for item in underpriced if item["ad_id"] not in posted]
+    # Находки домашнего компьютера (полный проход Drom, Авто.ру) приходят пачкой — публикуем
+    # не больше INBOX_MAX_POSTS_PER_RUN за прогон, самые выгодные первыми; остальные выйдут
+    # в следующих прогонах (во входящих они лежат 6 часов, полный проход обновляет их раз в 3).
+    inbox_cands = sorted((i for i in new_candidates if i.get("source")),
+                         key=lambda i: i["price"] / i["median_price"] if i.get("median_price") else 1)
+    deferred = inbox_cands[getattr(config, "INBOX_MAX_POSTS_PER_RUN", 4):]
+    if deferred:
+        log(f"Входящие: публикую {len(inbox_cands) - len(deferred)}, откладываю {len(deferred)} на следующие прогоны")
+        skip = {i["ad_id"] for i in deferred}
+        new_candidates = [i for i in new_candidates if i["ad_id"] not in skip]
     resale_candidates = enrich_and_filter_for_resale(new_candidates)
     log(f"После проверки на владельцев/описание осталось кандидатов: {len(resale_candidates)} из {len(new_candidates)}")
 
