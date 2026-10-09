@@ -553,10 +553,10 @@ def tg_send(d):
     base = f"https://api.telegram.org/bot{TG_TOKEN}"
     cap = caption(d)
     photo = None
-    if d.get("image"):
+    if d.get("image") and image_url_ok(d["image"]):
         try:
             img = requests.get(d["image"], headers={"User-Agent": UA}, timeout=60)
-            if img.ok and img.headers.get("content-type", "").startswith("image"):
+            if img.ok and img.headers.get("content-type", "").startswith("image") and len(img.content) < 5_000_000:
                 photo = img.content
         except requests.RequestException as e:
             log(f"фото не скачалось: {e}")
@@ -580,6 +580,17 @@ def tg_send(d):
     return None
 
 
+# ---------------------------------------------------------------- фото лотов
+IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru")
+
+
+def image_url_ok(url):
+    """Фото качаем только с самих площадок (адрес берётся из HTML чужого сайта)."""
+    from urllib.parse import urlparse
+    u = urlparse(url or "")
+    return u.scheme == "https" and (u.hostname or "") in IMAGE_HOSTS
+
+
 # ---------------------------------------------------------------- очередь для GitHub
 def write_queue(deals, qdir, limit=0):
     """Режим iMac: Telegram из дома недоступен, поэтому посты (текст + фото) кладутся
@@ -596,7 +607,7 @@ def write_queue(deals, qdir, limit=0):
     items = []
     for d in todo:
         img = None
-        if d.get("image"):
+        if d.get("image") and image_url_ok(d["image"]):
             try:
                 r = requests.get(d["image"], headers={"User-Agent": UA}, timeout=60)
                 if r.ok and r.headers.get("content-type", "").startswith("image") and len(r.content) < 5_000_000:

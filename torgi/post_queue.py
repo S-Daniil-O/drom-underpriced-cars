@@ -9,6 +9,7 @@
 """
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -31,8 +32,9 @@ def log(msg):
 def send(item, qdir):
     for attempt in range(3):
         try:
-            if item.get("image") and (qdir / item["image"]).exists():
-                with open(qdir / item["image"], "rb") as f:
+            img = item.get("image") or ""
+            if re.fullmatch(r"img/[A-Za-z0-9_-]+\.jpg", img) and (qdir / img).is_file():
+                with open(qdir / img, "rb") as f:
                     r = requests.post(f"{API}/sendPhoto", data={"chat_id": CHAT, "caption": item["caption"]},
                                       files={"photo": ("lot.jpg", f)}, timeout=60)
                 if r.ok:
