@@ -1,0 +1,62 @@
+name: torgi-post
+
+# Публикация банкротных торгов в @torgi_vrn_ss.
+# Очередь (inbox/torgi/queue.json + фото) каждый день кладёт домашний iMac
+# в ветку inbox. Этот файл лежит и в main (ручной запуск), и в ветке inbox —
+# там он срабатывает на push очереди (workflow для push берётся из пушнутого коммита).
+on:
+  push:
+    branches: [inbox]
+    paths: ["inbox/torgi/queue.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: torgi-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: inbox
+          path: _inbox
+      - uses: actions/checkout@v4
+        with:
+          ref: state
+          path: _state
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: publish
+        run: |
+          mkdir -p _state/torgi
+          test -f _state/torgi/posted.json   # без posted.json нельзя: будут повторы
+          python torgi/post_queue.py _inbox/inbox/torgi _state/torgi/posted.json
+      - name: save posted.json to state branch
+        if: always()
+        run: |
+          cd _state
+          if git status --porcelain torgi/posted.json | grep -q .; then
+            git config user.name "monitor-bot"
+            git config user.email "monitor-bot@users.noreply.github.com"
+            git add torgi/posted.json
+            git commit -m "state(torgi): posted"
+            for i in 1 2 3 4 5; do
+              git push origin HEAD:state && exit 0
+              git pull --rebase origin state
+            done
+            exit 1
+          fi
