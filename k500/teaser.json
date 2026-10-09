@@ -767,5 +767,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-09T15:38:11.042016+00:00"
+  },
+  "autoru_1132341849-602663c5": {
+    "posted_at": "2026-10-09T20:06:06.794608+00:00",
+    "message_id": 111,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-09T20:06:06.794608+00:00",
+    "vk_post_id": 81,
+    "vk_deleted_at": null
   }
 }
