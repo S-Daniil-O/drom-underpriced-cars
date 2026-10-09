@@ -31,8 +31,9 @@ PAGES = 2                      # свежие объявления, сортир
 PAUSE_SEC = (12, 20)           # пауза между запросами, случайная в диапазоне
 MAX_OWNERS = 2
 KEEP_HOURS = 6                 # сколько часов объявление лежит во входящих (на случай пропущенных прогонов)
+# seller_group=PRIVATE — только частники (салоны занимают ~40% выдачи и цену не сбрасывают)
 SEARCH = ("https://auto.ru/voronezhskaya_oblast/cars/used/"
-          "?price_from={pmin}&price_to={pmax}&sort=cr_date-desc{page}")
+          "?price_from={pmin}&price_to={pmax}&seller_group=PRIVATE&sort=cr_date-desc{page}")
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
 

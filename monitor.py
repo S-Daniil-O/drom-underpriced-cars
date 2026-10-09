@@ -129,6 +129,8 @@ def build_search_url(page_num=1):
     else:
         base = f"https://auto.drom.ru/{config.DROM_CITY_SLUG}/all"
         query = f"minprice={config.PRICE_MIN}&maxprice={config.PRICE_MAX}"
+        if getattr(config, "DROM_OWNER_TYPE", None):
+            query += f"&owner_type={config.DROM_OWNER_TYPE}"
 
     path = base if page_num == 1 else f"{base}/page{page_num}"
     return f"{path}/?{query}" if query else f"{path}/"
