@@ -1,1 +1,40 @@
-[]
+[
+{
+"ad_id": "https://auto.drom.ru/voronezh/nissan/almera/149195019.html",
+"brand": "Nissan",
+"model": "Almera",
+"year": 1998,
+"price": 110000,
+"mileage_km": 280000,
+"price_rating": "отличная цена",
+"url": "https://auto.drom.ru/voronezh/nissan/almera/149195019.html",
+"image_url": "https://s31.auto.drom.ru/photo/v2/fJuXRmJSHRLIvhT1UxF6PSEPHCk_InWBkfA4_jIm7jSRTmqrbCFlfaryKAwQrmP9nIh2bcfFX_72hjUe/gen272wb.jpg",
+"market_price": null,
+"median_sample_size": null,
+"owners": 4,
+"owners_display": "4 и более",
+"description": "Дополнительно: Альмера 1998 года, купе, на ходу, на литье, кондей отключен но можно восстановить. Задние сиденья складываются в пол. Резина хорошая. Пороги переварены, двигатель делался год назад. Остальное по телефону.",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-10T20:55:50.748204+00:00"
+},
+{
+"ad_id": "https://auto.drom.ru/voronezh/hyundai/accent/538049169.html",
+"brand": "Hyundai",
+"model": "Accent",
+"year": 2005,
+"price": 265000,
+"mileage_km": 246000,
+"price_rating": "отличная цена",
+"url": "https://auto.drom.ru/voronezh/hyundai/accent/538049169.html",
+"image_url": "https://s31.auto.drom.ru/photo/v2/Eef42cGtJYoeEzUVi8WGeWVzjm7TN0MKZKkMC6cPOjVFgpWaBaf1nDBH0idB4ePihLlAqsiulmiERGq-/gen272wb.jpg",
+"market_price": null,
+"median_sample_size": null,
+"owners": 4,
+"owners_display": "4 и более",
+"description": "Дополнительно: Состояние хорошее. Технически в рабочем состоянии, вложения минимальные.Внимания требует кузов, критичного ничего нет, стандартная проблема пороги, арки. Торг уместен.",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-10T20:55:50.748204+00:00"
+}
+]
