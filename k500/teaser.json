@@ -1006,5 +1006,23 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-10T20:47:22.010963+00:00"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/149195019.html": {
+    "posted_at": "2026-10-10T21:02:20.430002+00:00",
+    "message_id": 137,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-10T21:02:20.430002+00:00",
+    "vk_post_id": 107,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/538049169.html": {
+    "posted_at": "2026-10-10T21:02:32.620484+00:00",
+    "message_id": 138,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-10T21:02:32.620484+00:00",
+    "vk_post_id": 108,
+    "vk_deleted_at": null
   }
 }

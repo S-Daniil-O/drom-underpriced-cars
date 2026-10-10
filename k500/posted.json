@@ -4073,5 +4073,35 @@
     "mileage_km": 107000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/oLnNVobFOUjjVEYJkdOAmVxbse0wpOmAmThq-xN01noM7OasX8RnhAEVAh7FR03GzX8gFxXGdhYHm1LN/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/149195019.html": {
+    "posted_at": "2026-10-10T21:02:11.681798+00:00",
+    "message_id": 319,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera",
+    "year": 1998,
+    "price": 110000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 280000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/fJuXRmJSHRLIvhT1UxF6PSEPHCk_InWBkfA4_jIm7jSRTmqrbCFlfaryKAwQrmP9nIh2bcfFX_72hjUe/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/538049169.html": {
+    "posted_at": "2026-10-10T21:02:25.601310+00:00",
+    "message_id": 320,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2005,
+    "price": 265000,
+    "median_price": null,
+    "median_sample_size": null,
+    "price_rating": "отличная цена",
+    "mileage_km": 246000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Eef42cGtJYoeEzUVi8WGeWVzjm7TN0MKZKkMC6cPOjVFgpWaBaf1nDBH0idB4ePihLlAqsiulmiERGq-/gen272wb.jpg"
   }
 }
