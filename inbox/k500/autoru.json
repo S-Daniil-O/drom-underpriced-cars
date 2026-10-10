@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T21:24:28.376225+00:00"
+"seen_at": "2026-10-10T21:35:39.606989+00:00"
 },
 {
 "ad_id": "autoru_1160201617-c6eb29b3",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дубровка",
-"seen_at": "2026-10-10T21:24:09.277820+00:00"
+"seen_at": "2026-10-10T21:35:20.013520+00:00"
 },
 {
 "ad_id": "autoru_1160209427-a5611951",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T21:24:09.277794+00:00"
+"seen_at": "2026-10-10T21:35:20.013494+00:00"
 },
 {
 "ad_id": "autoru_1160210502-caa730bf",
@@ -56,12 +56,12 @@
 "price": 210000,
 "market_price": 126500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/lanos/1160210502-caa730bf/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/JMlc2F-3jicj3RN7UZ3XUyFNyWlljE8TYlCIYnnIXHvXJBSM-s5013dZTarnvVkqgX17pvMLm3rYFiho_ReC1pn5VGxbIEHZFJt-lu3ybBHJn6UYEry3SM58t35uC_c6CcHL71r1Nr0RmrEKWAig_xsDQrdyQNcdaHjubso6SOFP5Uo/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/vdbTzQ1p4EYswyaw3ceQAgqIqW7TteX9VxtTF-6P71YdANQcSSt1oo-FWFvZoSyMoD05-ik8c2BTaat1vawfVvG3GSL8E3rxIbcsIbMzPFEJd7-U5ixKUvEhBNAvCbpfz-pR85EviIUzVp2nz0HYXsk-ON8B4Jaj8tUplt0SdT4KcW4/1200x900n",
 "mileage_km": 190000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-10-10T21:24:09.277777+00:00"
+"seen_at": "2026-10-10T21:35:20.013480+00:00"
 },
 {
 "ad_id": "autoru_1160214358-62462c27",
@@ -77,23 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T21:24:09.277745+00:00"
-},
-{
-"ad_id": "autoru_1134190951-1ba3caea",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2009,
-"price": 255000,
-"market_price": 80500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1134190951-1ba3caea/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17909659/6930d68f112c1ac0f1be8d43edfe2fc6/1200x900n",
-"mileage_km": 59000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-10T21:24:09.277731+00:00"
+"seen_at": "2026-10-10T21:35:20.013455+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +93,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-10T21:24:09.277695+00:00"
+"seen_at": "2026-10-10T21:35:20.013440+00:00"
+},
+{
+"ad_id": "autoru_1134190951-1ba3caea",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2009,
+"price": 255000,
+"market_price": 80500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1134190951-1ba3caea/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17909659/6930d68f112c1ac0f1be8d43edfe2fc6/1200x900n",
+"mileage_km": 59000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-10T21:35:20.013409+00:00"
 },
 {
 "ad_id": "autoru_1160184697-10f00514",
