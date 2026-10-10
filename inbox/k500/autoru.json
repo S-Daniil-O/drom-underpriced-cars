@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T02:07:56.356113+00:00"
+"seen_at": "2026-10-10T02:19:07.293966+00:00"
 },
 {
 "ad_id": "autoru_1160189362-c153386d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T02:07:56.356038+00:00"
+"seen_at": "2026-10-10T02:19:07.293896+00:00"
 },
 {
 "ad_id": "autoru_1160201617-c6eb29b3",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дубровка",
-"seen_at": "2026-10-10T02:07:36.084052+00:00"
+"seen_at": "2026-10-10T02:18:46.255427+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-10T02:07:36.084009+00:00"
+"seen_at": "2026-10-10T02:18:46.255389+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -302,21 +302,5 @@
 "seller_type": "COMMERCIAL",
 "city": "Солнечный",
 "seen_at": "2026-10-09T21:16:32.340656+00:00"
-},
-{
-"ad_id": "autoru_1134136999-91c9e850",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2016,
-"price": 460000,
-"market_price": 423500,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1134136999-91c9e850/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20016218/506919e14cfba63ac1b0adc568051e6d/1200x900n",
-"mileage_km": 200895,
-"owners_display": "1",
-"seller_type": "COMMERCIAL",
-"city": "Воронеж",
-"seen_at": "2026-10-09T20:12:59.464609+00:00"
 }
 ]
