@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T09:59:50.468768+00:00"
+"seen_at": "2026-10-10T10:11:08.495473+00:00"
 },
 {
 "ad_id": "autoru_1160189362-c153386d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T09:59:50.468699+00:00"
+"seen_at": "2026-10-10T10:11:08.495404+00:00"
 },
 {
 "ad_id": "autoru_1160201617-c6eb29b3",
@@ -45,23 +45,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дубровка",
-"seen_at": "2026-10-10T09:59:30.108187+00:00"
+"seen_at": "2026-10-10T10:10:48.762205+00:00"
 },
 {
-"ad_id": "autoru_1134075323-e101d297",
+"ad_id": "autoru_1160209427-a5611951",
 "source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2011,
-"price": 470000,
-"market_price": 428000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
-"mileage_km": 124370,
-"owners_display": "1",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2014,
+"price": 350000,
+"market_price": 197000,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160209427-a5611951/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2062947/80545f65e633f8ecb71a43862d173e65/1200x900n",
+"mileage_km": 150000,
+"owners_display": "2",
 "seller_type": "PRIVATE",
-"city": "Подгорное",
-"seen_at": "2026-10-10T09:59:30.108158+00:00"
+"city": "Воронеж",
+"seen_at": "2026-10-10T10:10:48.762181+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -77,6 +77,22 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-10T09:59:30.108127+00:00"
+"seen_at": "2026-10-10T10:10:48.762167+00:00"
+},
+{
+"ad_id": "autoru_1134075323-e101d297",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2011,
+"price": 470000,
+"market_price": 428000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
+"mileage_km": 124370,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Подгорное",
+"seen_at": "2026-10-10T10:10:48.762135+00:00"
 }
 ]
