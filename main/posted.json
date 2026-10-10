@@ -1563,5 +1563,20 @@
     "mileage_km": 345000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/pxTubX8cZndBuYRTgMaJjjksdAIprF2ZUbfdtfQD1wVr7o1JyV5458LyYgXFOn3TTVol-hmNkynBQxDa/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/avensis/349091767.html": {
+    "posted_at": "2026-10-10T13:19:01.110061+00:00",
+    "message_id": 130,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Avensis",
+    "year": 2007,
+    "price": 790000,
+    "median_price": 1135000.0,
+    "median_sample_size": 606,
+    "price_rating": "нормальная цена",
+    "mileage_km": 240939,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/JoVJZ8csS8j5UWo3PBrkBFr1BGB7RforC4Rd3q5rLEKnEcUmuxT475uB2Vb44-8YlqLQ-wUvFB6uaSE5/gen272wb.jpg"
   }
 }
