@@ -641,13 +641,6 @@
     "vk_post_id": 69,
     "vk_deleted_at": "2026-10-10T06:30:24.594076+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/priora/516854769.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-10-07T07:08:18.316666+00:00"
-  },
   "https://auto.drom.ru/voronezh/daewoo/matiz/183595650.html": {
     "posted_at": null,
     "message_id": null,
@@ -981,5 +974,12 @@
     "checked_at": "2026-10-10T07:01:34.286703+00:00",
     "vk_post_id": 104,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/516854769.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-10T07:16:16.967331+00:00"
   }
 }
