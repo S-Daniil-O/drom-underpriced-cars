@@ -641,13 +641,6 @@
     "vk_post_id": 69,
     "vk_deleted_at": "2026-10-10T06:30:24.594076+00:00"
   },
-  "https://auto.drom.ru/voronezh/daewoo/matiz/183595650.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-10-07T11:08:46.423951+00:00"
-  },
   "https://auto.drom.ru/voronezh/volkswagen/golf/436254473.html": {
     "posted_at": "2026-10-07T21:28:25.084798+00:00",
     "message_id": 100,
@@ -981,5 +974,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-10T07:16:16.967331+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/493346170.html": {
+    "posted_at": "2026-10-10T11:16:45.333370+00:00",
+    "message_id": 135,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-10T11:16:45.333370+00:00",
+    "vk_post_id": 105,
+    "vk_deleted_at": null
   }
 }
