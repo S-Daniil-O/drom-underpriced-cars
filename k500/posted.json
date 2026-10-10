@@ -4043,5 +4043,20 @@
     "mileage_km": 258000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/TIjUnHhoAdJquFMR2y9hq1AeeuMJrs-RVrzMA56ODlPpVLj9YiCSa-T8Yy4crraPuWx3tEuNLie5ux8p/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/845350735.html": {
+    "posted_at": "2026-10-10T17:07:32.152931+00:00",
+    "message_id": 317,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2005,
+    "price": 235000,
+    "median_price": 275000.0,
+    "median_sample_size": 234,
+    "price_rating": "отличная цена",
+    "mileage_km": 237000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Q-xzn3bJk8AwDbI_RbnilZ7adH-iaby-OVfgGJQHrl8e6wshchi7gIrYtlGDJeOJ9xIjvm5mLwL2NH8j/gen272wb.jpg"
   }
 }
