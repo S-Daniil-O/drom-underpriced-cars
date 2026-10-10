@@ -3983,5 +3983,20 @@
     "mileage_km": 360000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/bZilhiQkFda0-Xv4aSP7yZQ9ngaysmqe10mi4XvTQxBRHLUfSVUmGaOxX4DIiDKd7TmZtE-BQ3h_IyR_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/cerato/539897926.html": {
+    "posted_at": "2026-10-10T01:00:42.980084+00:00",
+    "message_id": 313,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Cerato",
+    "year": 2006,
+    "price": 330000,
+    "median_price": 330000.0,
+    "median_sample_size": 28,
+    "price_rating": "отличная цена",
+    "mileage_km": 260000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/DsZOm26bZBQJmfvr4n7JRkGXFFTMtM7uNAoX15UTttVbx7rxosWndWWNxQX2DyzWYTI6LIN2YgQ8tKFH/gen272wb.jpg"
   }
 }
