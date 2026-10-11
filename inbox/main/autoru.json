@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326123+00:00"
+"seen_at": "2026-10-11T12:55:40.625890+00:00"
 },
 {
 "ad_id": "autoru_1160193959-fcc6f490",
@@ -29,87 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326106+00:00"
-},
-{
-"ad_id": "autoru_1160196087-1f1c81a0",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Tiida",
-"year": 2011,
-"price": 950000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/nissan/tiida/1160196087-1f1c81a0/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/42ee65113bd35e60249b0d069b833a93/1200x900n",
-"mileage_km": 56000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-11T12:44:25.326091+00:00"
-},
-{
-"ad_id": "autoru_1160197268-a7a0f566",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Lavida",
-"year": 2022,
-"price": 1460000,
-"market_price": 1409500,
-"url": "https://auto.ru/cars/used/sale/volkswagen/lavida/1160197268-a7a0f566/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19634380/ae9d4482029d4caf8c8f20221ae071a6/1200x900n",
-"mileage_km": 37000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326078+00:00"
-},
-{
-"ad_id": "autoru_1160197937-7ec5d3e3",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Terrano",
-"year": 2014,
-"price": 1200000,
-"market_price": 898500,
-"url": "https://auto.ru/cars/used/sale/nissan/terrano/1160197937-7ec5d3e3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/4b24dc9b4a1c820a4e7340f063a09822/1200x900n",
-"mileage_km": 186000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326064+00:00"
-},
-{
-"ad_id": "autoru_1160200812-cff4750d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2021,
-"price": 730000,
-"market_price": 577500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160200812-cff4750d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20116688/6c6b816b17d335421dd598f6b695ece7/1200x900n",
-"mileage_km": 122000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326046+00:00"
-},
-{
-"ad_id": "autoru_1160205180-e8ebbefe",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2021,
-"price": 700000,
-"market_price": 595500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160205180-e8ebbefe/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21119147/3e6e7be5944459e4e58ec4a8f6af9ac8/1200x900n",
-"mileage_km": 93000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Кантемировка",
-"seen_at": "2026-10-11T12:44:25.326027+00:00"
+"seen_at": "2026-10-11T12:55:40.625874+00:00"
 },
 {
 "ad_id": "autoru_1160205747-9382785c",
@@ -125,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.326010+00:00"
+"seen_at": "2026-10-11T12:55:40.625857+00:00"
 },
 {
 "ad_id": "autoru_1160206174-457a2bd9",
@@ -141,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.325990+00:00"
+"seen_at": "2026-10-11T12:55:40.625841+00:00"
 },
 {
 "ad_id": "autoru_1133341220-636acd98",
@@ -157,23 +77,103 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.325964+00:00"
+"seen_at": "2026-10-11T12:55:40.625820+00:00"
+},
+{
+"ad_id": "autoru_1160196087-1f1c81a0",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Tiida",
+"year": 2011,
+"price": 950000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/nissan/tiida/1160196087-1f1c81a0/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/42ee65113bd35e60249b0d069b833a93/1200x900n",
+"mileage_km": 56000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-11T12:55:40.625806+00:00"
+},
+{
+"ad_id": "autoru_1160197268-a7a0f566",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Lavida",
+"year": 2022,
+"price": 1460000,
+"market_price": 1409500,
+"url": "https://auto.ru/cars/used/sale/volkswagen/lavida/1160197268-a7a0f566/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19634380/ae9d4482029d4caf8c8f20221ae071a6/1200x900n",
+"mileage_km": 37000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-11T12:55:40.625793+00:00"
+},
+{
+"ad_id": "autoru_1160197937-7ec5d3e3",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Terrano",
+"year": 2014,
+"price": 1200000,
+"market_price": 898500,
+"url": "https://auto.ru/cars/used/sale/nissan/terrano/1160197937-7ec5d3e3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/4b24dc9b4a1c820a4e7340f063a09822/1200x900n",
+"mileage_km": 186000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-11T12:55:40.625780+00:00"
+},
+{
+"ad_id": "autoru_1160200812-cff4750d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2021,
+"price": 730000,
+"market_price": 577500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160200812-cff4750d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20116688/6c6b816b17d335421dd598f6b695ece7/1200x900n",
+"mileage_km": 122000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-11T12:55:40.625761+00:00"
+},
+{
+"ad_id": "autoru_1160205180-e8ebbefe",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2021,
+"price": 700000,
+"market_price": 595500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160205180-e8ebbefe/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21119147/3e6e7be5944459e4e58ec4a8f6af9ac8/1200x900n",
+"mileage_km": 93000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Кантемировка",
+"seen_at": "2026-10-11T12:55:40.625741+00:00"
 },
 {
 "ad_id": "autoru_1133341291-005dd1d0",
 "source": "autoru",
-"brand": "Changan",
-"model": "Benben E-Star",
+"brand": "Volkswagen",
+"model": "Tiguan",
 "year": 2022,
 "price": 1200000,
 "market_price": 1196500,
-"url": "https://auto.ru/cars/used/sale/changan/benben_e_star/1133341291-005dd1d0/",
+"url": "https://auto.ru/cars/used/sale/volkswagen/tiguan/1160205233-b6e76abe/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/e217690d404957fccbfdf30d73e0b7de/1200x900n",
 "mileage_km": 35000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:25.325930+00:00"
+"seen_at": "2026-10-11T12:55:40.625706+00:00"
 },
 {
 "ad_id": "autoru_1160210281-457615f7",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Солнечный",
-"seen_at": "2026-10-11T12:44:09.812415+00:00"
+"seen_at": "2026-10-11T12:55:26.107110+00:00"
 },
 {
 "ad_id": "autoru_1160210998-5af32811",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Митрофановка",
-"seen_at": "2026-10-11T12:44:09.812401+00:00"
+"seen_at": "2026-10-11T12:55:26.107097+00:00"
 },
 {
 "ad_id": "autoru_1160211164-e70bc842",
@@ -221,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812391+00:00"
+"seen_at": "2026-10-11T12:55:26.107087+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -237,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812379+00:00"
+"seen_at": "2026-10-11T12:55:26.107076+00:00"
 },
 {
 "ad_id": "autoru_1160184537-ea0b50ee",
@@ -253,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-11T12:44:09.812362+00:00"
+"seen_at": "2026-10-11T12:55:26.107067+00:00"
 },
 {
 "ad_id": "autoru_1160053466-29b9dd5e",
@@ -269,7 +269,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812352+00:00"
+"seen_at": "2026-10-11T12:55:26.107058+00:00"
 },
 {
 "ad_id": "autoru_1160212126-db731cb9",
@@ -285,7 +285,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-11T12:44:09.812337+00:00"
+"seen_at": "2026-10-11T12:55:26.107044+00:00"
 },
 {
 "ad_id": "autoru_1160186417-16ac43ca",
@@ -301,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812319+00:00"
+"seen_at": "2026-10-11T12:55:26.107027+00:00"
 },
 {
 "ad_id": "autoru_1160157737-0f3a2888",
@@ -317,7 +317,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812303+00:00"
+"seen_at": "2026-10-11T12:55:26.107013+00:00"
 },
 {
 "ad_id": "autoru_1160187919-8b328500",
@@ -333,7 +333,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:44:09.812251+00:00"
+"seen_at": "2026-10-11T12:55:26.106993+00:00"
 },
 {
 "ad_id": "autoru_1130347471-476d16cb",
@@ -349,6 +349,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T12:32:57.456321+00:00"
+"seen_at": "2026-10-11T12:55:26.106932+00:00"
 }
 ]
