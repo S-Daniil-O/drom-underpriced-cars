@@ -4103,5 +4103,20 @@
     "mileage_km": 246000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/Eef42cGtJYoeEzUVi8WGeWVzjm7TN0MKZKkMC6cPOjVFgpWaBaf1nDBH0idB4ePihLlAqsiulmiERGq-/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/spectra/789856889.html": {
+    "posted_at": "2026-10-11T11:40:12.186717+00:00",
+    "message_id": 321,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Spectra",
+    "year": 2008,
+    "price": 330000,
+    "median_price": 260000.0,
+    "median_sample_size": 828,
+    "price_rating": "отличная цена",
+    "mileage_km": 188000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/DnXfE3iYvR7_rrlZKrDZOZd2jycBvLfT8aFQCQlt7fEz0AKzZxiawcUsXIZ4a5xcs6lBRnvQzgteo1gQ/gen272wb.jpg"
   }
 }
