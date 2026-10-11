@@ -4133,5 +4133,20 @@
     "mileage_km": 136464,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/QyzK1Z-Lp9GH1QAtapNGmam6n305eieeeX7Q7a8TbSKH8H8h-XZFDwhYI4EC0sWo4OXx7yZKK9vmNvIx/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/cruze/794133056.html": {
+    "posted_at": "2026-10-11T13:26:39.679840+00:00",
+    "message_id": 323,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Cruze",
+    "year": 2012,
+    "price": 410000,
+    "median_price": 499000,
+    "median_sample_size": 243,
+    "price_rating": null,
+    "mileage_km": 185235,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/H-otmeqtl_3jrSpW0i_jjeerumgdVpqHyIxk9lqwqVdUsHs1WT20clr9sOvdfXU1FNdBkdU-c5Tnjo4p/gen272wb.jpg"
   }
 }
