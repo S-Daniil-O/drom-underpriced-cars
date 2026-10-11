@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824876+00:00"
+"seen_at": "2026-10-11T18:42:40.155296+00:00"
 },
 {
 "ad_id": "autoru_1160193959-fcc6f490",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824859+00:00"
+"seen_at": "2026-10-11T18:42:40.155277+00:00"
 },
 {
 "ad_id": "autoru_1160196087-1f1c81a0",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-11T18:31:36.824846+00:00"
+"seen_at": "2026-10-11T18:42:40.155260+00:00"
 },
 {
 "ad_id": "autoru_1160197268-a7a0f566",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824834+00:00"
+"seen_at": "2026-10-11T18:42:40.155245+00:00"
 },
 {
 "ad_id": "autoru_1160197937-7ec5d3e3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824821+00:00"
+"seen_at": "2026-10-11T18:42:40.155229+00:00"
 },
 {
 "ad_id": "autoru_1160200812-cff4750d",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824803+00:00"
+"seen_at": "2026-10-11T18:42:40.155207+00:00"
 },
 {
 "ad_id": "autoru_1160205180-e8ebbefe",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Кантемировка",
-"seen_at": "2026-10-11T18:31:36.824786+00:00"
+"seen_at": "2026-10-11T18:42:40.155185+00:00"
 },
 {
 "ad_id": "autoru_1160205747-9382785c",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824769+00:00"
+"seen_at": "2026-10-11T18:42:40.155164+00:00"
 },
 {
 "ad_id": "autoru_1160206174-457a2bd9",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824751+00:00"
+"seen_at": "2026-10-11T18:42:40.155141+00:00"
 },
 {
 "ad_id": "autoru_1133341220-636acd98",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824727+00:00"
+"seen_at": "2026-10-11T18:42:40.155111+00:00"
 },
 {
 "ad_id": "autoru_1133341291-005dd1d0",
@@ -173,55 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:36.824693+00:00"
-},
-{
-"ad_id": "autoru_1160212126-db731cb9",
-"source": "autoru",
-"brand": "Opel",
-"model": "Mokka",
-"year": 2023,
-"price": 1100000,
-"market_price": 996500,
-"url": "https://auto.ru/cars/used/sale/opel/mokka/1160209293-9f97cdd0/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21020531/492ca3baf11d4dc4a550631cc094e58d/1200x900n",
-"mileage_km": 39365,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-11T18:31:22.545302+00:00"
-},
-{
-"ad_id": "autoru_1160157737-0f3a2888",
-"source": "autoru",
-"brand": "Ford",
-"model": "Focus",
-"year": 2019,
-"price": 1500000,
-"market_price": 1152000,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160157737-0f3a2888/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/817d1191112085ef5c98f60f40800ee7/1200x900n",
-"mileage_km": 176000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545285+00:00"
-},
-{
-"ad_id": "autoru_1160187919-8b328500",
-"source": "autoru",
-"brand": "Kia",
-"model": "Sportage",
-"year": 2010,
-"price": 930000,
-"market_price": 805000,
-"url": "https://auto.ru/cars/used/sale/kia/sportage/1160187919-8b328500/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21009869/c69349f226edcd2b4f669c83dff63d4f/1200x900n",
-"mileage_km": 194000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545275+00:00"
+"seen_at": "2026-10-11T18:42:40.155075+00:00"
 },
 {
 "ad_id": "autoru_1160210281-457615f7",
@@ -237,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Солнечный",
-"seen_at": "2026-10-11T18:31:22.545256+00:00"
+"seen_at": "2026-10-11T18:42:27.084484+00:00"
 },
 {
 "ad_id": "autoru_1160210998-5af32811",
@@ -253,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Митрофановка",
-"seen_at": "2026-10-11T18:31:22.545243+00:00"
+"seen_at": "2026-10-11T18:42:27.084470+00:00"
 },
 {
 "ad_id": "autoru_1160211164-e70bc842",
@@ -269,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545233+00:00"
+"seen_at": "2026-10-11T18:42:27.084460+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -285,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545221+00:00"
+"seen_at": "2026-10-11T18:42:27.084442+00:00"
 },
 {
 "ad_id": "autoru_1160184537-ea0b50ee",
@@ -301,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-11T18:31:22.545210+00:00"
+"seen_at": "2026-10-11T18:42:27.084431+00:00"
 },
 {
 "ad_id": "autoru_1160053466-29b9dd5e",
@@ -317,7 +269,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545195+00:00"
+"seen_at": "2026-10-11T18:42:27.084419+00:00"
+},
+{
+"ad_id": "autoru_1160212126-db731cb9",
+"source": "autoru",
+"brand": "Changan",
+"model": "Alsvin",
+"year": 2023,
+"price": 1100000,
+"market_price": 996500,
+"url": "https://auto.ru/cars/used/sale/changan/alsvin/1160212126-db731cb9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21020531/492ca3baf11d4dc4a550631cc094e58d/1200x900n",
+"mileage_km": 39365,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-11T18:42:27.084402+00:00"
 },
 {
 "ad_id": "autoru_1160186417-16ac43ca",
@@ -333,7 +301,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-11T18:31:22.545129+00:00"
+"seen_at": "2026-10-11T18:42:27.084380+00:00"
+},
+{
+"ad_id": "autoru_1160157737-0f3a2888",
+"source": "autoru",
+"brand": "Ford",
+"model": "Focus",
+"year": 2019,
+"price": 1500000,
+"market_price": 1152000,
+"url": "https://auto.ru/cars/used/sale/ford/focus/1160157737-0f3a2888/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/817d1191112085ef5c98f60f40800ee7/1200x900n",
+"mileage_km": 176000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-11T18:42:27.084349+00:00"
+},
+{
+"ad_id": "autoru_1160187919-8b328500",
+"source": "autoru",
+"brand": "Kia",
+"model": "Sportage",
+"year": 2010,
+"price": 930000,
+"market_price": 805000,
+"url": "https://auto.ru/cars/used/sale/kia/sportage/1160187919-8b328500/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21009869/c69349f226edcd2b4f669c83dff63d4f/1200x900n",
+"mileage_km": 194000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-11T18:42:27.084287+00:00"
 },
 {
 "ad_id": "autoru_1130347471-476d16cb",
