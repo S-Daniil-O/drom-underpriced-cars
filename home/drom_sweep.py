@@ -172,6 +172,27 @@ def main():
                 git("commit", "-q", "-m", f"inbox: drom sweep {prof}")
                 git("push", "-q", "origin", "HEAD:inbox")
                 log(f"{prof}: находки отправлены в ветку inbox")
+    if not dry:
+        night_autoru_sweep()
+
+
+def night_autoru_sweep():
+    """Раз в сутки ночью (первый проход Drom между 0 и 6 часами) запускаем полный проход
+    Авто.ру — отдельная задача launchd для него не нужна: этот проход и так стартует
+    каждые 3 часа и сам обновляет код из GitHub."""
+    now = datetime.now()
+    marker = os.path.join(SERVER_DIR, "autoru_sweep.last")
+    try:
+        last = open(marker).read().strip()
+    except OSError:
+        last = ""
+    if now.hour >= 6 or last == now.strftime("%Y-%m-%d"):
+        return
+    open(marker, "w").write(now.strftime("%Y-%m-%d"))
+    log("ночной полный проход Авто.ру — лог в ~/server/autoru_sweep.log")
+    with open(os.path.join(SERVER_DIR, "autoru_sweep.log"), "a") as out:
+        subprocess.run([sys.executable, os.path.join(HOME_DIR, "autoru_sweep.py")], cwd=HOME_DIR,
+                       stdout=out, stderr=subprocess.STDOUT)
 
 
 if __name__ == "__main__":
