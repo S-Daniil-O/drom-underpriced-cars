@@ -4403,5 +4403,35 @@
     "mileage_km": 40600,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20543926/b081763fbdd37c683bd1c3b36cadede1/1200x900n"
+  },
+  "autoru_1131508824-64ed494c": {
+    "posted_at": "2026-10-12T23:20:35.657801+00:00",
+    "message_id": 341,
+    "deleted_at": null,
+    "brand": "ГАЗ",
+    "model": "3110 «Волга»",
+    "year": 1997,
+    "price": 60000,
+    "median_price": 67500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 131000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/14440393/12e1ce7b085cc64b72f0d0c34aa3b02c/1200x900n"
+  },
+  "autoru_1119079749-7a343a0a": {
+    "posted_at": "2026-10-12T23:20:55.349293+00:00",
+    "message_id": 342,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2110",
+    "year": 2003,
+    "price": 85000,
+    "median_price": 95500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2161372/71dc3dde6331fe217e0b8ee8d11c57a5/1200x900n"
   }
 }
