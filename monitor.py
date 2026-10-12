@@ -996,7 +996,44 @@ def push_teaser(item, discount_pct, profit_rub, teaser):
     teaser[item["ad_id"]] = {"posted_at": now_iso, "message_id": message_id, "deleted_at": None,
                              "rejected": False, "checked_at": now_iso, "vk_post_id": vk_post_id, "vk_deleted_at": None}
     save_json(teaser_file(), teaser)
+    if discount_pct is not None and discount_pct >= config.PEREKUP_DISCOUNT_THRESHOLD * 100:
+        send_chat_draft(item, discount_pct, message_id)
     return True
+
+
+def send_chat_draft(item, discount_pct, message_id):
+    """Сильная находка ушла в бесплатный канал — владельцу в личку готовый текст для чатов
+    (сам владелец проверяет объявление и вставляет текст в чаты вручную: автопостинг в чужие
+    чаты — бан аккаунта). Нужен секрет ADMIN_CHAT_ID; сбой здесь ни на что не влияет."""
+    admin = os.environ.get("ADMIN_CHAT_ID")
+    channel = getattr(config, "PEREKUP_CHANNEL_USERNAME", "")
+    if not admin or not channel:
+        return
+    fmt = lambda n: f"{int(n):,}".replace(",", " ")
+    title = f"{item['brand']} {item.get('model') or ''} {item.get('year') or ''}".split()
+    details = ["частник"]
+    if item.get("owners_display") or item.get("owners"):
+        details.append(f"владельцев по ПТС: {item.get('owners_display') or item.get('owners')}")
+    if item.get("mileage_km"):
+        details.append(f"пробег {fmt(item['mileage_km'])} км")
+    draft = "\n".join([
+        f"{' '.join(title)}, {fmt(item['price'])} ₽ — по Воронежу такие сейчас около "
+        f"{fmt(int(round(item['median_price'], -3)))} ₽, на {discount_pct}% дешевле.",
+        (lambda t: t[:1].upper() + t[1:])(", ".join(details)) + ".",
+        f"Подробности и фото: https://t.me/{channel}/{message_id}",
+        "",
+        "Такие находки бот выкладывает каждый день — только частники, без автосалонов.",
+    ])
+    note = (f"📝 Сильная находка (−{discount_pct}%) ушла в бесплатный канал. Текст для чатов — "
+            f"следующим сообщением.\nСначала откройте объявление и проверьте, что всё в порядке: {item['url']}")
+    base = f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}"
+    try:
+        for text in (note, draft):
+            requests.post(f"{base}/sendMessage", data={"chat_id": admin, "text": text,
+                                                       "disable_web_page_preview": "true"}, timeout=30)
+        log(f"Текст для чатов отправлен владельцу: {' '.join(title)}")
+    except requests.RequestException as e:
+        log(f"Текст для чатов не отправлен ({e})")
 
 
 def cleanup_teaser(teaser):

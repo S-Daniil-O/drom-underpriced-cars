@@ -119,6 +119,8 @@ PEREKUP_CHAT_ID = os.environ.get("PEREKUP_CHAT_ID", "")
 PEREKUP_DISCOUNT_THRESHOLD = 0.50  # дублируем, если цена <= 50% медианы группы (сильные находки — только в платных)
 # Пост о платном канале — раз в день отдельным постом, не в каждой находке (час по UTC, 9 = 12:00 МСК).
 PEREKUP_PITCH_HOUR_UTC = 9
+# Публичное имя бесплатного канала — для ссылок на посты в текстах для чатов (send_chat_draft).
+PEREKUP_CHANNEL_USERNAME = "perekyp_vrn"
 PEREKUP_SEGMENT_LABEL = "500к–1.5М"
 # Тизер-канал показывает и находки со скромной выгодой (до PEREKUP_MAX_PROFIT), не только самые сильные.
 PEREKUP_MIN_PROFIT = 0
