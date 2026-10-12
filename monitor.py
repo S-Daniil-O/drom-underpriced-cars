@@ -26,6 +26,12 @@ import config
 
 
 def log(msg):
+    # Тексты ошибок requests содержат URL запроса, а в URL Telegram — токен бота; логи
+    # GitHub Actions публичные, поэтому секреты вырезаются здесь, для всех сообщений сразу.
+    msg = str(msg)
+    for secret in (config.TELEGRAM_BOT_TOKEN, os.environ.get("VK_TOKEN", "")):
+        if secret:
+            msg = msg.replace(secret, "***")
     print(f"[{datetime.now().isoformat(timespec='seconds')}] {msg}", flush=True)
 
 
@@ -960,11 +966,12 @@ def post_daily_pitch(teaser):
                           data={"chat_id": config.PEREKUP_CHAT_ID, "text": text,
                                 "disable_web_page_preview": "true"}, timeout=30)
         d = r.json()
-    except requests.RequestException as e:
+    except (requests.RequestException, ValueError) as e:  # ValueError — ответ не JSON (например, 502)
         log(f"Перекуп-канал: не удалось отправить ежедневный пост о платном канале ({e})")
         return
-    if d.get("ok"):
-        teaser[key] = {"posted_at": now.isoformat(), "message_id": d["result"]["message_id"], "deleted_at": None}
+    message_id = ((d.get("result") or {}).get("message_id")) if isinstance(d, dict) and d.get("ok") else None
+    if message_id:
+        teaser[key] = {"posted_at": now.isoformat(), "message_id": message_id, "deleted_at": None}
         save_json(teaser_file(), teaser)
         log("Перекуп-канал: опубликован ежедневный пост о платном канале")
     else:
