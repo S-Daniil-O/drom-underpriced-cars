@@ -900,10 +900,8 @@ def send_to_perekup(item, discount_pct, profit_rub):
     parts.append(item["url"] + source_suffix(item)[0])
     parts.append("")
     parts.append(f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}")
-    parts.append("")
-    parts.append("🔒 Лучшие предложения — в наших платных каналах, всего по 290 рублей.")
-    parts.append("")
-    parts.append(config.PEREKUP_PITCH)
+    # Призыв в платный канал — не в каждом посте, а отдельным постом раз в день (post_daily_pitch):
+    # с ним в каждом посте бесплатный канал выглядел как витрина продаж, а не как полезный канал.
     caption = "\n".join(parts)
 
     base = f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}"
@@ -936,6 +934,41 @@ def send_to_perekup(item, discount_pct, profit_rub):
     except requests.RequestException as e:
         log(f"Перекуп-канал: сетевая ошибка ({e})")
     return None, None
+
+
+def post_daily_pitch(teaser):
+    """Раз в день (первый прогон после PEREKUP_PITCH_HOUR_UTC) — один пост о платном канале
+    этого сегмента в бесплатный канал. Запись _pitch_<дата> в teaser.json: защита от повторов
+    и автоудаление через PEREKUP_TTL_DAYS тем же cleanup_teaser."""
+    now = datetime.now(timezone.utc)
+    key = f"_pitch_{now.strftime('%Y-%m-%d')}"
+    if key in teaser or now.hour < getattr(config, "PEREKUP_PITCH_HOUR_UTC", 9):
+        return
+    text = "\n".join([
+        f"🔒 Платный канал: автомобили {config.PEREKUP_SEGMENT_LABEL} ₽",
+        "",
+        "Здесь, в бесплатном канале, — часть находок. В платном — все находки сегмента сразу, "
+        "как только появляются: на 10–15% и больше ниже рынка, только частники, проверены на число владельцев, "
+        "ДТП, залоги и ограничения.",
+        "",
+        "290 ₽ в месяц.",
+        "",
+        config.PEREKUP_PITCH,
+    ])
+    try:
+        r = requests.post(f"https://api.telegram.org/bot{config.TELEGRAM_BOT_TOKEN}/sendMessage",
+                          data={"chat_id": config.PEREKUP_CHAT_ID, "text": text,
+                                "disable_web_page_preview": "true"}, timeout=30)
+        d = r.json()
+    except requests.RequestException as e:
+        log(f"Перекуп-канал: не удалось отправить ежедневный пост о платном канале ({e})")
+        return
+    if d.get("ok"):
+        teaser[key] = {"posted_at": now.isoformat(), "message_id": d["result"]["message_id"], "deleted_at": None}
+        save_json(teaser_file(), teaser)
+        log("Перекуп-канал: опубликован ежедневный пост о платном канале")
+    else:
+        log(f"Перекуп-канал: пост о платном канале не отправлен ({d})")
 
 
 def teaser_file():
@@ -1071,6 +1104,7 @@ def main():
     teaser = load_json(teaser_file(), {})
     if config.PEREKUP_CHAT_ID:
         teaser = cleanup_teaser(teaser)
+        post_daily_pitch(teaser)
 
     # Находки домашнего компьютера важнее обычной выдачи: у них медиана по всему рынку и уже
     # пройдена проверка. Одно объявление в обоих списках — берём версию из входящих (без дублей).
