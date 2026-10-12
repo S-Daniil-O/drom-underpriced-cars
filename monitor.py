@@ -584,7 +584,9 @@ def update_history_and_find_underpriced(listings, history):
         vetoed = item.get("price_rating") in config.BAD_PRICE_RATINGS
         if vetoed:
             reason = None
-        elif median_price is not None and item["price"] <= median_price * config.UNDERPRICED_THRESHOLD:
+        elif median_price is not None and item["price"] <= median_price * (
+                getattr(config, "AUTORU_UNDERPRICED_THRESHOLD", config.UNDERPRICED_THRESHOLD)
+                if item.get("source") == "autoru" else config.UNDERPRICED_THRESHOLD):
             reason = "median"
         elif item.get("price_rating") in config.GOOD_PRICE_RATINGS:
             reason = "drom_rating"
