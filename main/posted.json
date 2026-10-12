@@ -1357,7 +1357,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/427886645.html": {
     "posted_at": "2026-10-08T21:25:28.765623+00:00",
     "message_id": 116,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:39.592327+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2026,
@@ -1372,7 +1372,7 @@
   "https://auto.drom.ru/voronezh/baic/u5_plus/351933306.html": {
     "posted_at": "2026-10-08T21:25:37.006197+00:00",
     "message_id": 117,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:40.982462+00:00",
     "brand": "BAIC",
     "model": "U5 Plus",
     "year": 2023,
@@ -1387,7 +1387,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/199724776.html": {
     "posted_at": "2026-10-09T09:22:29.084316+00:00",
     "message_id": 118,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:42.298155+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2025,
@@ -1593,5 +1593,35 @@
     "mileage_km": 370000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/XHqhaDL_y-9-keW43Kmj3cH2qexQVzYt5OSEs77JNwuNUdSrICOhw_0MDq67l0NxFcP8N0UHU-Cs8yFx/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/667601828.html": {
+    "posted_at": "2026-10-12T15:32:02.546605+00:00",
+    "message_id": 132,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2015,
+    "price": 890000,
+    "median_price": 760000,
+    "median_sample_size": 8,
+    "price_rating": "отличная цена",
+    "mileage_km": 52000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/DYhk-qsDDYJJcKm5zYEFm2jVf4lhr_lnwugTv8alX6FObUURZ_LHDz28zl-2cLdnjlab8Vb8FTddTLia/gen272wb.jpg"
+  },
+  "autoru_1160197631-b919b3e8": {
+    "posted_at": "2026-10-12T15:32:07.910301+00:00",
+    "message_id": 133,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Vesta",
+    "year": 2024,
+    "price": 1000000,
+    "median_price": 1114500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 35000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/b0ceef0c217004876647bc81d735d22f/1200x900n"
   }
 }
