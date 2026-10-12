@@ -123,7 +123,8 @@ def sweep(prof, rejected, dry):
             continue
         med, n = median_for(it)
         disc = 1 - it["price"] / med if med else 0
-        good_rating = it.get("price_rating") in cfg.GOOD_PRICE_RATINGS
+        # метка Drom без медианы не годится: в посте всегда должна быть сумма выгоды
+        good_rating = it.get("price_rating") in cfg.GOOD_PRICE_RATINGS and med and it["price"] < med
         if disc >= CANDIDATE_DISCOUNT or good_rating:
             if disc < 1 - cfg.UNDERPRICED_THRESHOLD and not good_rating and it["ad_id"] in teaser:
                 continue  # слабая находка, уже была в тизере

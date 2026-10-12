@@ -562,6 +562,23 @@ def _looks_blocked(page):
 # Логика "ниже рынка"
 # ---------------------------------------------------------------------------
 
+def fallback_median(history, item):
+    """Медиана, когда в своей группе (тот же год) мало наблюдений: годы ±1, каждое объявление
+    один раз с последней ценой (в истории одно объявление записано на каждом прогоне).
+    Возвращает (медиана, число объявлений) или (None, 0)."""
+    latest = {}
+    for y in (item["year"] - 1, item["year"], item["year"] + 1):
+        for e in prune_old_entries(history.get(group_key(item["brand"], item.get("model") or "", y), [])):
+            if e.get("url") and e["url"] != item["url"]:
+                prev = latest.get(e["url"])
+                if not prev or e["seen_at"] > prev["seen_at"]:
+                    latest[e["url"]] = e
+    prices = [e["price"] for e in latest.values()]
+    if len(prices) >= config.MIN_SAMPLES_FOR_MEDIAN:
+        return statistics.median(prices), len(prices)
+    return None, 0
+
+
 def update_history_and_find_underpriced(listings, history):
     now_iso = datetime.now(timezone.utc).isoformat()
     underpriced = []
@@ -577,6 +594,10 @@ def update_history_and_find_underpriced(listings, history):
         median_price = statistics.median(prices_so_far) if len(prices_so_far) >= config.MIN_SAMPLES_FOR_MEDIAN else None
         if item.get("source"):
             median_price, prices_so_far = item.get("market_price"), [None] * (item.get("median_sample_size") or 0)
+        elif median_price is None and isinstance(item.get("year"), int):
+            fb, n = fallback_median(history, item)
+            if fb:
+                median_price, prices_so_far = fb, [None] * n
 
         reason = None
         # Собственная медиана считается только по цене — не знает про пробег,
@@ -594,7 +615,8 @@ def update_history_and_find_underpriced(listings, history):
                 getattr(config, "AUTORU_UNDERPRICED_THRESHOLD", config.UNDERPRICED_THRESHOLD)
                 if item.get("source") == "autoru" else config.UNDERPRICED_THRESHOLD):
             reason = "median"
-        elif item.get("price_rating") in config.GOOD_PRICE_RATINGS:
+        elif item.get("price_rating") in config.GOOD_PRICE_RATINGS and median_price and item["price"] < median_price:
+            # 2026-10-12: только если можем посчитать выгоду — в каждом посте должна быть сумма
             reason = "drom_rating"
         elif median_price is not None and getattr(config, "PEREKUP_TEASER_MIN_DISCOUNT", None):
             # Слабее порога основного канала, но всё же дешевле медианы — такие
@@ -651,8 +673,6 @@ def format_caption(item):
             profit_str = f"{profit_rub:,}".replace(",", " ")
             parts.append(f"📉 Ниже {source_suffix(item)[1]} примерно на {discount_pct}%{suffix}")
             parts.append(f"💵 Потенциально можно заработать ~{profit_str} ₽")
-    if item.get("price_rating"):
-        parts.append(f"🏷 Оценка Drom: {item['price_rating']}")
     if item.get("mileage_km"):
         parts.append(f"🛣 Пробег: {item['mileage_km']:,} км".replace(",", " "))
     if item.get("owners_display"):
@@ -813,8 +833,6 @@ def make_story_card(item, discount_pct, photo_bytes):
     if discount_pct is not None:
         d.rounded_rectangle((60, y, 60 + 620, y + 110), radius=28, fill=(248, 81, 73))
         d.text((90, y + 20), f"−{discount_pct}% к рынку", fill=(255, 255, 255), font=f_mid); y += 150
-    elif item.get("price_rating"):
-        d.text((60, y), f"Оценка Drom: {item['price_rating']}", fill=(201, 209, 217), font=f_mid); y += 110
     d.text((60, 1640), "Все находки — в Telegram", fill=(88, 166, 255), font=f_mid)
     d.text((60, 1725), "@perekyp_vrn", fill=(201, 209, 217), font=f_small)
     d.text((60, 1795), "Лучшие — в платных каналах, от 290 руб./мес", fill=(255, 214, 10), font=f_small)
@@ -872,8 +890,6 @@ def build_vk_text(item, discount_pct, profit_rub):
     if discount_pct is not None:
         lines.append(f"📉 Ниже {source_suffix(item)[1]} на {discount_pct}%")
         lines.append(f"💵 Потенциальная выгода: ~{profit_rub:,} ₽".replace(",", " "))
-    if item.get("price_rating"):
-        lines.append(f"🏷 Оценка Drom: {item['price_rating']}")
     if item.get("mileage_km"):
         lines.append(f"🛣 Пробег: {item['mileage_km']:,} км".replace(",", " "))
     lines += ["", f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}", "",
@@ -901,8 +917,6 @@ def send_to_perekup(item, discount_pct, profit_rub):
     if discount_pct is not None:
         parts.append(f"📉 Ниже {source_suffix(item)[1]} на {discount_pct}%")
         parts.append(f"💵 Потенциальная выгода: ~{profit_str} ₽")
-    if item.get("price_rating"):
-        parts.append(f"🏷 Оценка Drom: {item['price_rating']}")
     parts.append(item["url"] + source_suffix(item)[0])
     parts.append("")
     parts.append(f"Сегмент: {config.PEREKUP_SEGMENT_LABEL}")
