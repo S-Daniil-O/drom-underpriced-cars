@@ -1,0 +1,30 @@
+name: whoami
+
+# Ручной запуск: показывает имя бота, а тем, кто написал ему /start, бот лично отвечает их
+# Telegram ID (в лог ID не пишется — логи публичные). Нужно, чтобы бот мог писать владельцу в личку.
+on:
+  workflow_dispatch:
+
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: bot name and /start replies
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+          base = "https://api.telegram.org/bot" + os.environ["TOKEN"]
+          get = lambda m, **p: json.load(urllib.request.urlopen(f"{base}/{m}?{urllib.parse.urlencode(p)}", timeout=20))
+          print("Бот: @" + get("getMe")["result"]["username"])
+          chats = {}
+          for u in get("getUpdates", allowed_updates='["message"]')["result"]:
+              msg = u.get("message") or {}
+              if msg.get("chat", {}).get("type") == "private" and (msg.get("text") or "").startswith("/start"):
+                  chats[msg["chat"]["id"]] = msg["chat"].get("first_name", "")
+          for cid, name in chats.items():
+              get("sendMessage", chat_id=cid, text=f"Ваш Telegram ID: {cid}\nПередайте его Claude, чтобы бот присылал вам тексты находок.")
+          print(f"Ответил в личку: {len(chats)} ({', '.join(chats.values()) or 'никто ещё не написал /start'})")
+          PY
