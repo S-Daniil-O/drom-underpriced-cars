@@ -1623,5 +1623,50 @@
     "mileage_km": 35000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/b0ceef0c217004876647bc81d735d22f/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/942015934.html": {
+    "posted_at": "2026-10-12T21:36:12.267913+00:00",
+    "message_id": 134,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2014,
+    "price": 500000,
+    "median_price": 750000,
+    "median_sample_size": 349,
+    "price_rating": "нормальная цена",
+    "mileage_km": 218148,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/o5K1HmTHvviP0uXgf7-_J3QAyeFll5947eF9ESCGnPkzGGWgE5W_8S2ARYDw5qplM-fFM4fmoa_F2RL6/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/rapid/685539623.html": {
+    "posted_at": "2026-10-12T21:36:15.704140+00:00",
+    "message_id": 135,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Rapid",
+    "year": 2017,
+    "price": 900000,
+    "median_price": 1179000.0,
+    "median_sample_size": 866,
+    "price_rating": "нормальная цена",
+    "mileage_km": 185000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Z2eWRUmWuUnnM-MdF5_Pgnl-STib3jCVPYH7r-yNfnkLVbRFWEWJy8CKnrTu8NwcFRO0XYkdQOHMDt30/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda6/544977525.html": {
+    "posted_at": "2026-10-12T21:36:18.701025+00:00",
+    "message_id": 136,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda6",
+    "year": 2010,
+    "price": 650000,
+    "median_price": 850000,
+    "median_sample_size": 765,
+    "price_rating": "нормальная цена",
+    "mileage_km": 227000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/W0Kh5piS2YRfLeCgfu6vf57_HSptctqs7bL5zJYi_Hlj4RqgF7_QQ8BJ_hN0w5a8w4eXEOOudeBC8PVP/gen272wb.jpg"
   }
 }
