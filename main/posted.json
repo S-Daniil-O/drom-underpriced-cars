@@ -1492,7 +1492,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/317838791.html": {
     "posted_at": "2026-10-09T22:17:10.850583+00:00",
     "message_id": 125,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T22:32:11.646546+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2021,
@@ -1507,7 +1507,7 @@
   "https://auto.drom.ru/voronezh/ford/focus/748574053.html": {
     "posted_at": "2026-10-09T22:17:19.175893+00:00",
     "message_id": 126,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T22:32:12.982937+00:00",
     "brand": "Ford",
     "model": "Focus",
     "year": 2010,
@@ -1522,7 +1522,7 @@
   "https://auto.drom.ru/voronezh/hyundai/solaris/362121159.html": {
     "posted_at": "2026-10-09T22:17:21.430510+00:00",
     "message_id": 127,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T22:32:14.324496+00:00",
     "brand": "Hyundai",
     "model": "Solaris",
     "year": 2017,
@@ -1537,7 +1537,7 @@
   "https://auto.drom.ru/voronezh/ford/focus/532231233.html": {
     "posted_at": "2026-10-09T22:17:23.569654+00:00",
     "message_id": 128,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T22:32:15.676671+00:00",
     "brand": "Ford",
     "model": "Focus",
     "year": 2012,
@@ -1552,7 +1552,7 @@
   "https://auto.drom.ru/voronezh/kia/rio_x-line/627760273.html": {
     "posted_at": "2026-10-09T22:17:25.970615+00:00",
     "message_id": 129,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T22:32:17.025505+00:00",
     "brand": "Kia",
     "model": "Rio X (X-Line)",
     "year": 2019,
@@ -1728,5 +1728,65 @@
     "mileage_km": 270000,
     "owners_display": null,
     "image_url": "https://avatars.avto.ru/get-autoru-vos/6292495/e9c691066e561c632a0af74fd8de1bf0/1200x900n"
+  },
+  "autoru_1134147242-3b63820e": {
+    "posted_at": "2026-10-12T22:36:08.688992+00:00",
+    "message_id": 141,
+    "deleted_at": null,
+    "brand": "Lexus",
+    "model": "GS",
+    "year": 2008,
+    "price": 980000,
+    "median_price": 1166000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 230000,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20997557/b8f06d3c8dfe615ec61aa30cb2b6389b/1200x900n"
+  },
+  "autoru_1133471034-ebb8661d": {
+    "posted_at": "2026-10-12T22:36:12.544384+00:00",
+    "message_id": 142,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Malibu",
+    "year": 2019,
+    "price": 1200000,
+    "median_price": 1384500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 82000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/fc42930a851979af63d1630f343a08ac/1200x900n"
+  },
+  "autoru_1134061648-e595f0ab": {
+    "posted_at": "2026-10-12T22:36:15.554902+00:00",
+    "message_id": 143,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Cruze",
+    "year": 2014,
+    "price": 680000,
+    "median_price": 778000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 150000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/9772983/e187c2baef03ed593d1a412512ef568b/1200x900n"
+  },
+  "autoru_1131252798-190b537d": {
+    "posted_at": "2026-10-12T22:36:30.532663+00:00",
+    "message_id": 144,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "CLS",
+    "year": 2007,
+    "price": 1000000,
+    "median_price": 1136000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 120000,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17707957/2adc3a9a80bfcf88b910a1966554477a/1200x900n"
   }
 }
