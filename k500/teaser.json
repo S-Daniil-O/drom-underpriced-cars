@@ -698,7 +698,7 @@
   "https://auto.drom.ru/voronezh/chery/bonus/787087473.html": {
     "posted_at": "2026-10-08T21:38:45.256566+00:00",
     "message_id": 106,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:55.005733+00:00",
     "rejected": false,
     "checked_at": "2026-10-08T21:38:45.256566+00:00",
     "vk_post_id": 76,
@@ -707,7 +707,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/933574135.html": {
     "posted_at": "2026-10-08T21:53:40.316689+00:00",
     "message_id": 107,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:55.005733+00:00",
     "rejected": false,
     "checked_at": "2026-10-08T21:53:40.316689+00:00",
     "vk_post_id": 77,
@@ -716,7 +716,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/933160152.html": {
     "posted_at": "2026-10-09T02:28:18.949744+00:00",
     "message_id": 108,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:55.005733+00:00",
     "rejected": false,
     "checked_at": "2026-10-09T02:28:18.949744+00:00",
     "vk_post_id": 78,
@@ -725,7 +725,7 @@
   "https://auto.drom.ru/voronezh/lada/2107/250986480.html": {
     "posted_at": "2026-10-09T12:08:00.892663+00:00",
     "message_id": 109,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:55.005733+00:00",
     "rejected": false,
     "checked_at": "2026-10-09T12:08:00.892663+00:00",
     "vk_post_id": 79,
@@ -734,7 +734,7 @@
   "https://auto.drom.ru/voronezh/lada/2110/110575272.html": {
     "posted_at": "2026-10-09T15:23:25.881665+00:00",
     "message_id": 110,
-    "deleted_at": null,
+    "deleted_at": "2026-10-12T15:27:55.005733+00:00",
     "rejected": false,
     "checked_at": "2026-10-09T15:23:25.881665+00:00",
     "vk_post_id": 80,
@@ -1034,6 +1034,74 @@
     "rejected": false,
     "checked_at": "2026-10-11T18:12:54.727860+00:00",
     "vk_post_id": 111,
+    "vk_deleted_at": null
+  },
+  "_pitch_2026-10-12": {
+    "posted_at": "2026-10-12T15:28:33.798827+00:00",
+    "message_id": 143,
+    "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/toyota/rav4/917754051.html": {
+    "posted_at": "2026-10-12T15:32:09.258276+00:00",
+    "message_id": 144,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:32:09.258276+00:00",
+    "vk_post_id": 112,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/opel/astra/754688210.html": {
+    "posted_at": "2026-10-12T15:32:18.617234+00:00",
+    "message_id": 145,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:32:18.617234+00:00",
+    "vk_post_id": 113,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2109/193393025.html": {
+    "posted_at": "2026-10-12T15:32:26.758334+00:00",
+    "message_id": 146,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:32:26.758334+00:00",
+    "vk_post_id": 114,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/888478263.html": {
+    "posted_at": "2026-10-12T15:33:45.676265+00:00",
+    "message_id": 147,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:33:45.676265+00:00",
+    "vk_post_id": 115,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/gaz/3102_volga/123611459.html": {
+    "posted_at": "2026-10-12T15:34:06.383341+00:00",
+    "message_id": 148,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:34:06.383341+00:00",
+    "vk_post_id": 116,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/745962197.html": {
+    "posted_at": "2026-10-12T15:34:22.568212+00:00",
+    "message_id": 149,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:34:22.568212+00:00",
+    "vk_post_id": 117,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2109/751711009.html": {
+    "posted_at": "2026-10-12T15:34:52.255836+00:00",
+    "message_id": 150,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-12T15:34:52.255836+00:00",
+    "vk_post_id": 118,
     "vk_deleted_at": null
   }
 }
