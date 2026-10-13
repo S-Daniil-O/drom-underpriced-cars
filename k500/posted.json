@@ -4478,5 +4478,20 @@
     "mileage_km": 287900,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/8qqDY7szLvfn_ocgwJt75bYKd9mAfBUVXc4Z332LeC9KMEBqr9wbrylpLuAnoL-wr-9Ox0xYzGupoMJc/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lifan/solano/502837936.html": {
+    "posted_at": "2026-10-13T18:00:09.274089+00:00",
+    "message_id": 346,
+    "deleted_at": null,
+    "brand": "Lifan",
+    "model": "Solano",
+    "year": 2010,
+    "price": 177777,
+    "median_price": 222222,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 140000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/-G-widJvlyDvYcBTzli-TImZLbVLBT8wLl-7cj4w8HUTH1MAtfsjhSFRTZDb6_i3HQcTGw_GsaXINC3K/gen272wb.jpg"
   }
 }
