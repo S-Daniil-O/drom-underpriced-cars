@@ -1,0 +1,25 @@
+name: torgi-find-chat
+# Разово: показать каналы/группы, о которых бот узнал (добавление в админы, посты),
+# чтобы узнать числовой id закрытого канала. Названия и id печатаются в лог.
+on: workflow_dispatch
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          t = os.environ["TORGI_BOT_TOKEN"]
+          u = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{t}/getUpdates?allowed_updates=%5B%22my_chat_member%22%2C%22channel_post%22%5D&limit=100"))
+          seen = {}
+          for x in u.get("result", []):
+              for k in ("my_chat_member", "channel_post"):
+                  if k in x:
+                      c = x[k]["chat"]
+                      seen[c["id"]] = (c.get("title"), c.get("username"), c.get("type"))
+          print("найдено:", len(seen))
+          for i, v in seen.items():
+              print("CHAT", i, v)
+          PY
