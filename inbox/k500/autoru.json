@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:44.168350+00:00"
+"seen_at": "2026-10-13T19:59:03.555264+00:00"
 },
 {
 "ad_id": "autoru_1160201617-c6eb29b3",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дубровка",
-"seen_at": "2026-10-13T19:47:44.168282+00:00"
+"seen_at": "2026-10-13T19:59:03.555196+00:00"
 },
 {
 "ad_id": "autoru_1160209427-a5611951",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:28.807682+00:00"
+"seen_at": "2026-10-13T19:58:47.384764+00:00"
 },
 {
 "ad_id": "autoru_1160210502-caa730bf",
@@ -56,12 +56,12 @@
 "price": 210000,
 "market_price": 126500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/lanos/1160210502-caa730bf/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/VONBTtbUr2RdepBC6jwo-xtIX7yab4jihaTBBAUFSY0o8QcTagUi-ilfy04VexQEpq4MJNyA4qzyjynVP0hnPpBYMQCb77TDaaGFIq9wJ2Osi21q2JfXw2hVwZ5Ts0AHdyVwUT4MqzLR0t-HTVYtJgGd3Irkoptw0T26R5lMtJzSVg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/H9jr7kBwRBw6SXNdmS8cQMKTNOwuUc5wX-cOAPS_3w5buoWkdTc95JV9j6s3tIVkTDUMy1kwQVe_eBFj5yBTXJt1FQwPgL2gW7_X7Exf5S9mEhlZbUIoKn8W04XxuYog_ZXa9qotz7Pa5ELmbYrDktDx8VTApDyMDp9Ma_U-TwSUsw/1200x900n",
 "mileage_km": 190000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-10-13T19:47:28.807670+00:00"
+"seen_at": "2026-10-13T19:58:47.384752+00:00"
 },
 {
 "ad_id": "autoru_1134010251-846d88ea",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:28.807642+00:00"
+"seen_at": "2026-10-13T19:58:47.384725+00:00"
 },
 {
 "ad_id": "autoru_1160313803-1d63b7f8",
@@ -88,12 +88,12 @@
 "price": 295000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17757189/vL-YhqgQYj-ywIDwULQhxpUPcrzRLiEOLFGjBaPgUhfYzBe684mv3tGUj9Rq7zXMmZQql-zo2Dvzt7rd-UmPMC0OozJiMAPHpyoLakIKYDFo8lgyQhd6PtR8HLofJ5cxiW17omWFt6-FI7xC-uzhezVTxBE22MPc3GWJm7-kLnmfgg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17757189/Cx6DqmhR67ZsEammpK8vHdxB6IpOXn_dIZoberhoLx8iWsjh6fSwbqGFt38ZNArqHIh-UOwXvuoM0ZsllfZ4Af4bdbz-TBaD-w2ONJbovJILCL8GDvDRlK2FYZTXribhNFjtt9cc_MwpkVb0Yc4-xHP2JRkCdV5ki1o89KHVpF9O-A/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:28.807628+00:00"
+"seen_at": "2026-10-13T19:58:47.384711+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:28.807616+00:00"
+"seen_at": "2026-10-13T19:58:47.384698+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T19:47:28.807604+00:00"
+"seen_at": "2026-10-13T19:58:47.384689+00:00"
+},
+{
+"ad_id": "autoru_1160316136-1b7df4dd",
+"source": "autoru",
+"brand": "Suzuki",
+"model": "Wagon R",
+"year": 2011,
+"price": 470000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/suzuki/wagon_r/1160316136-1b7df4dd/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/e9f77390737f2354286f4c6941a07d80/1200x900n",
+"mileage_km": 155999,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-13T19:58:47.384675+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -141,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-13T19:47:28.807568+00:00"
+"seen_at": "2026-10-13T19:58:47.384642+00:00"
 },
 {
 "ad_id": "autoru_1160189362-c153386d",
