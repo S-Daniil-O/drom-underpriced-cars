@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:56.214508+00:00"
+"seen_at": "2026-10-13T20:32:07.987708+00:00"
 },
 {
 "ad_id": "autoru_1160206174-457a2bd9",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:56.214486+00:00"
+"seen_at": "2026-10-13T20:32:07.987691+00:00"
 },
 {
 "ad_id": "autoru_1160210281-457615f7",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:56.214446+00:00"
+"seen_at": "2026-10-13T20:32:07.987659+00:00"
 },
 {
 "ad_id": "autoru_1160210998-5af32811",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Митрофановка",
-"seen_at": "2026-10-13T20:20:56.214425+00:00"
+"seen_at": "2026-10-13T20:32:07.987643+00:00"
 },
 {
 "ad_id": "autoru_1160211164-e70bc842",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:56.214410+00:00"
+"seen_at": "2026-10-13T20:32:07.987632+00:00"
 },
 {
 "ad_id": "autoru_1160212126-db731cb9",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-13T20:20:56.214390+00:00"
+"seen_at": "2026-10-13T20:32:07.987616+00:00"
 },
 {
 "ad_id": "autoru_1160009184-24616665",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:56.214363+00:00"
+"seen_at": "2026-10-13T20:32:07.987594+00:00"
 },
 {
 "ad_id": "autoru_1160001980-20d2d70e",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-13T20:20:56.214315+00:00"
+"seen_at": "2026-10-13T20:32:07.987551+00:00"
 },
 {
 "ad_id": "autoru_1160012308-5975bf32",
@@ -136,12 +136,28 @@
 "price": 1265000,
 "market_price": 1125000,
 "url": "https://auto.ru/cars/used/sale/skoda/rapid/1160012308-5975bf32/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17711545/jOAWRWvkrX95jt6Wz177qlGoYie4NG5RMmmPjD2pDhnFVc_uaNQeNckn-Lfa-BEmvZjZEp_yEvuEVi9p0ChUZkoAhtLsC4XBWj6BRbJh4ZHO73BcEN562zKzfFpnVPzvu826a9m2bTc8Qp4XHdVsMte9k6FbQZ_-lTipv_bINmf3KmY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17711545/eQ9wv4UURaKVfsfqCX-SWC4r91bPko7eNKc6Qoc1VLkKEgJTtFx3dhSb4mXggy65EueeLLXQocptjWX6yghAFWz3t63Vgalw0eAdNzGDovHS3Ob__AaBp-O8HWJ0nVkoV3t1qFBKWPNQweOaCSU1--6jqu8gg6GWu77IqQhO9ucf8-Q/1200x900n",
 "mileage_km": 194600,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073199+00:00"
+"seen_at": "2026-10-13T20:31:54.475270+00:00"
+},
+{
+"ad_id": "autoru_1133341220-636acd98",
+"source": "autoru",
+"brand": "BYD",
+"model": "Seagull",
+"year": 2023,
+"price": 1450000,
+"market_price": 1597500,
+"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
+"mileage_km": 40000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-13T20:31:54.475259+00:00"
 },
 {
 "ad_id": "autoru_1133341291-005dd1d0",
@@ -157,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073187+00:00"
+"seen_at": "2026-10-13T20:31:54.475250+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -168,12 +184,12 @@
 "price": 790000,
 "market_price": 640000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/6L1VtfjXU5CGQRBsNf8TJpdypkhhiTt6HIWmnKOt2bn7dXoVgimbW-pOOBOlX_ZtwALjt6BvAI06fnE78HMvqb-uVr88fJhuqr1jj3PyCnQ-YEv8koOjy79bSk-oy4EBuUmYtSQomebxL36VN9atD0Rp1Q7slK4v4ZDB2HOcKbUik9Y/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/S55CMe-LbzcplJK1ndS1rwijf4Mkj3l_K7FrOPdxp--tSN0wR_0_sxz5MLqmKW27d4cttrLDxLoYsRQCoRVwPS9D79yjbhopL-Q9Hg1wX1LybnV4WRJURiycAKhhAQRZzd_D3So1vJ_ti1IF0X80zYMW0Hvw7cpbmqDjd55vtdXRYi8/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073173+00:00"
+"seen_at": "2026-10-13T20:31:54.475237+00:00"
 },
 {
 "ad_id": "autoru_1160013989-8d9b50c3",
@@ -189,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073163+00:00"
+"seen_at": "2026-10-13T20:31:54.475227+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -205,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073149+00:00"
+"seen_at": "2026-10-13T20:31:54.475215+00:00"
 },
 {
 "ad_id": "autoru_1160184537-ea0b50ee",
@@ -221,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-13T20:20:39.073139+00:00"
+"seen_at": "2026-10-13T20:31:54.475205+00:00"
 },
 {
 "ad_id": "autoru_1160186417-16ac43ca",
@@ -237,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073122+00:00"
+"seen_at": "2026-10-13T20:31:54.475178+00:00"
 },
 {
 "ad_id": "autoru_1160157737-0f3a2888",
@@ -253,7 +269,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073106+00:00"
+"seen_at": "2026-10-13T20:31:54.475164+00:00"
 },
 {
 "ad_id": "autoru_1160313820-930032dd",
@@ -269,7 +285,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073093+00:00"
+"seen_at": "2026-10-13T20:31:54.475145+00:00"
+},
+{
+"ad_id": "autoru_1160316117-16a95258",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2011,
+"price": 650000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160316117-16a95258/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/d8b2205001f47c68da5c1384b344de56/1200x900n",
+"mileage_km": 290000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-13T20:31:54.475085+00:00"
 },
 {
 "ad_id": "autoru_1160314918-4be23cdc",
@@ -286,38 +318,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-13T20:20:39.073077+00:00"
-},
-{
-"ad_id": "autoru_1160316117-16a95258",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Lacetti",
-"year": 2011,
-"price": 650000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160316117-16a95258/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/d8b2205001f47c68da5c1384b344de56/1200x900n",
-"mileage_km": 290000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.073053+00:00"
-},
-{
-"ad_id": "autoru_1133341220-636acd98",
-"source": "autoru",
-"brand": "BYD",
-"model": "Seagull",
-"year": 2023,
-"price": 1450000,
-"market_price": 1597500,
-"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
-"mileage_km": 40000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-13T20:20:39.072993+00:00"
 },
 {
 "ad_id": "autoru_1160205180-e8ebbefe",
