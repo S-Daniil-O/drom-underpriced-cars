@@ -1863,5 +1863,20 @@
     "mileage_km": 130000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/kZ8j0z-LND6JpqAiFlPprDc96fWIfQhqSgqKBctgIPMjZEpyV2YDIOqIo67c9OPQ5nAJImZPpjh9geLN/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/rapid/368229888.html": {
+    "posted_at": "2026-10-13T14:14:44.002192+00:00",
+    "message_id": 150,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Rapid",
+    "year": 2020,
+    "price": 1100000,
+    "median_price": 1324000.0,
+    "median_sample_size": 528,
+    "price_rating": null,
+    "mileage_km": 225000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/YkZKmF7LCLDUEtYL0lgNJlUmo-ZfODpp91t2lkAQ__AxaHpQdnZ9hE_sgX3ybX4lRklqoJ1L8ucJcLO7/gen272wb.jpg"
   }
 }
