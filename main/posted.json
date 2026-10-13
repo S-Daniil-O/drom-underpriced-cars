@@ -1878,5 +1878,20 @@
     "mileage_km": 225000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/YkZKmF7LCLDUEtYL0lgNJlUmo-ZfODpp91t2lkAQ__AxaHpQdnZ9hE_sgX3ybX4lRklqoJ1L8ucJcLO7/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio_x-line/773573255.html": {
+    "posted_at": "2026-10-13T21:36:31.805415+00:00",
+    "message_id": 151,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio X (X-Line)",
+    "year": 2018,
+    "price": 1210000,
+    "median_price": 1430000,
+    "median_sample_size": 1583,
+    "price_rating": "нормальная цена",
+    "mileage_km": 120000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/W_NQ4CGOQn0TG2EvURVMXSA758ICrvn4bUACEgemn8tJL9aoGFttiYTsfcxDGujRcx7J6-atwln9jGRV/gen272wb.jpg"
   }
 }
