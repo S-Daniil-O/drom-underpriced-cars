@@ -4433,5 +4433,20 @@
     "mileage_km": 200000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2161372/71dc3dde6331fe217e0b8ee8d11c57a5/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2101/300428963.html": {
+    "posted_at": "2026-10-13T09:17:16.987029+00:00",
+    "message_id": 343,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2101",
+    "year": 1984,
+    "price": 80000,
+    "median_price": 170000.0,
+    "median_sample_size": 672,
+    "price_rating": null,
+    "mileage_km": 160000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/wixhcsG4RnlVoiXM3SioYA-Dti0FNBAvYk1AXNfDVKY8jXT1To5mlYuTE2B4A0IZ7HBEedpXcobdSHUw/gen272wb.jpg"
   }
 }
