@@ -131,17 +131,24 @@ CDT_API = "https://torgi.cdtrf.ru/api/"
 
 
 _cdt_regions = {}
+_cdt_regions_tries = [0]
 
 
 def cdt_region_name(region_id):
-    """Название региона ЦДТ по id (справочник Catalog/Region, кэшируется)."""
-    if not _cdt_regions:
+    """Название региона ЦДТ по id (справочник Catalog/Region; не больше 3 попыток за запуск)."""
+    if not _cdt_regions and _cdt_regions_tries[0] < 3:
+        _cdt_regions_tries[0] += 1
         try:
-            r = requests.get(CDT_API + "Catalog/Region", headers={"User-Agent": UA}, timeout=60).json()
-            _cdt_regions.update({x["id"]: x["displayText"] for x in r.get("items", [])})
-        except (requests.RequestException, ValueError):
-            pass
-    return _cdt_regions.get(region_id, "")
+            r = requests.get(CDT_API + "Catalog/Region", headers={"User-Agent": UA}, timeout=30).json()
+            items = r.get("items", []) if isinstance(r, dict) else []
+            _cdt_regions.update({x["id"]: x["displayText"] for x in items
+                                 if isinstance(x, dict) and "id" in x and "displayText" in x})
+        except Exception as e:  # noqa: BLE001 — справочник не должен ронять сбор
+            log(f"ЦДТ: справочник регионов недоступен ({e})")
+    try:
+        return _cdt_regions.get(int(region_id), "")   # в карточке лота id региона — строка
+    except (TypeError, ValueError):
+        return ""
 
 
 def cdt_list():
@@ -557,13 +564,28 @@ def discount(d):
     return 1 - d["min_price"] / d["market"]["price"]
 
 
+def _region_hits(d, names):
+    """Регион лота среди names: точно по названию региона площадки, иначе по адресу —
+    только «<Имя> обл…» или «г <город>» (а не любое вхождение, вроде «ул Орловская»)."""
+    rn = (d.get("region_name") or "").lower()
+    if rn:
+        return any(rn.startswith(n.lower()) for n in names)
+    addr = (d.get("region") or "").lower().replace("ё", "е")
+    stems = [n.lower()[:-3] for n in names]   # «воронежская» → «воронеж»
+    return bool(re.search(r"\b(" + "|".join(stems) + r")\w*\s+(обл|область)\b", addr) or
+                re.search(r"(^|[\s,])г\.?\s*(" + "|".join(CITY_STEMS.get(n, n.lower()[:-3]) for n in names) + r")\w*\b", addr))
+
+
+CITY_STEMS = {"Воронежская": "воронеж", "Белгородская": "белгород", "Липецкая": "липецк",
+              "Курская": "курск", "Тамбовская": "тамбов", "Орловская": "орел"}
+
+
 def tags(d):
     """#Воронеж, #Черноземье, #суперцена — по региону лота и скидке к рынку."""
-    reg = (d.get("region_name") or "") + " " + (d.get("region") or "")
     out = []
-    if HOME_REGION.lower() in reg.lower() or "воронеж" in reg.lower():
+    if _region_hits(d, [HOME_REGION]):
         out.append("#Воронеж")
-    if any(r.lower() in reg.lower() for r in NEAR_REGIONS):
+    if _region_hits(d, NEAR_REGIONS):
         out.append("#Черноземье")
     if discount(d) >= SUPER_DISCOUNT:
         out.append("#суперцена")
