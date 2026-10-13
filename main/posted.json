@@ -1848,5 +1848,20 @@
     "mileage_km": 49770,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/18986119/10f8298252309968c97406ea8599d7eb/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/honda/fit_shuttle/785134467.html": {
+    "posted_at": "2026-10-13T07:32:19.052833+00:00",
+    "message_id": 149,
+    "deleted_at": null,
+    "brand": "Honda",
+    "model": "Fit Shuttle",
+    "year": 2012,
+    "price": 790000,
+    "median_price": 1150000,
+    "median_sample_size": 555,
+    "price_rating": null,
+    "mileage_km": 130000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/kZ8j0z-LND6JpqAiFlPprDc96fWIfQhqSgqKBctgIPMjZEpyV2YDIOqIo67c9OPQ5nAJImZPpjh9geLN/gen272wb.jpg"
   }
 }
