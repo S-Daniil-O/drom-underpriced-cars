@@ -88,6 +88,10 @@ NET_RETRY_PAUSE_MIN = 10
 HOT_MAX_DAYS = 30
 HOT_MIN_DAYS = 2
 HOT_MAX_PRICE_RATIO = 1.5
+# Хэштеги в постах. Порог «суперцены»: минимальная цена ниже рынка не меньше чем на SUPER_DISCOUNT.
+SUPER_DISCOUNT = 0.80
+HOME_REGION = "Воронежская"   # #Воронеж
+NEAR_REGIONS = ["Воронежская", "Белгородская", "Липецкая", "Курская", "Тамбовская", "Орловская"]  # #Черноземье
 # Площадки и категории
 USE_CDT = True     # torgi.cdtrf.ru
 USE_METS = True    # m-ets.ru
@@ -124,6 +128,20 @@ def strip_html(s):
 
 # ---------------------------------------------------------------- ЦДТ (cdtrf)
 CDT_API = "https://torgi.cdtrf.ru/api/"
+
+
+_cdt_regions = {}
+
+
+def cdt_region_name(region_id):
+    """Название региона ЦДТ по id (справочник Catalog/Region, кэшируется)."""
+    if not _cdt_regions:
+        try:
+            r = requests.get(CDT_API + "Catalog/Region", headers={"User-Agent": UA}, timeout=60).json()
+            _cdt_regions.update({x["id"]: x["displayText"] for x in r.get("items", [])})
+        except (requests.RequestException, ValueError):
+            pass
+    return _cdt_regions.get(region_id, "")
 
 
 def cdt_list():
@@ -179,7 +197,8 @@ def cdt_detail(item):
         "min_price": min(prices),
         "end_date": (lot.get("lotScheduleItems") or [{}])[-1].get("endTime", "")[:10],
         "status": obj.get("tradeStatusDescription"),
-        "region": lot.get("location") or "",
+        "region": lot.get("location") or cdt_region_name(lot.get("regionID") or item.get("regionId")),
+        "region_name": cdt_region_name(lot.get("regionID") or item.get("regionId")),
         "image": img,
         "schedule": [[x.get("startTime", "")[:16], x.get("endTime", "")[:16], to_float(x.get("price"))]
                      for x in lot.get("lotScheduleItems") or [] if to_float(x.get("price"))],
@@ -533,6 +552,28 @@ def bad_reason(lot):
     return None
 
 
+# ---------------------------------------------------------------- хэштеги
+def discount(d):
+    return 1 - d["min_price"] / d["market"]["price"]
+
+
+def tags(d):
+    """#Воронеж, #Черноземье, #суперцена — по региону лота и скидке к рынку."""
+    reg = (d.get("region_name") or "") + " " + (d.get("region") or "")
+    out = []
+    if HOME_REGION.lower() in reg.lower() or "воронеж" in reg.lower():
+        out.append("#Воронеж")
+    if any(r.lower() in reg.lower() for r in NEAR_REGIONS):
+        out.append("#Черноземье")
+    if discount(d) >= SUPER_DISCOUNT:
+        out.append("#суперцена")
+    return out
+
+
+def super_line(d):
+    return f"💎 СУПЕРЦЕНА −{round(discount(d) * 100)}% к рынку" if discount(d) >= SUPER_DISCOUNT else None
+
+
 # ---------------------------------------------------------------- горящие лоты
 def _dt(x):
     from datetime import datetime
@@ -577,8 +618,10 @@ def hot_caption(d):
     in_min = h["start"] <= __import__("datetime").datetime.now()
     lines = [
         "⏰ КРАЙНЕЕ ПРЕДЛОЖЕНИЕ — торги скоро закончатся",
+        super_line(d),
         f"🔨 {d['car_name']}",
         f"📍 {d['region']}" if d.get("region") else None,
+        " ".join(tags(d)) or None,
         "",
         f"Минимальная цена: {money(h['min_price'])}",
         (f"✅ Действует сейчас — заявку можно подать до {h['end']:%d.%m.%Y %H:%M}"
@@ -608,8 +651,10 @@ def hot_caption(d):
 def caption(d):
     disc = round((1 - d["min_price"] / d["market"]["price"]) * 100)
     lines = [
+        super_line(d),
         f"🔨 {d['car_name']}" + ("" if d.get("year") else " (год не указан — проверьте в лоте)"),
         f"📍 {d['region']}" if d.get("region") else None,
+        " ".join(tags(d)) or None,
         "",
         f"Начальная цена: {money(d['start_price'])}" if d.get("start_price") else None,
         f"Текущая цена: {money(d['current_price'])}" if d.get("current_price") else None,
@@ -803,7 +848,8 @@ def main():
         deals = [d for d in deals if d["min_price"] >= d["market"]["price"] * MIN_RATIO]
         # доли в праве собственности — не целый автомобиль
         deals = [d for d in deals if not re.search(r"\bдол[ьяиеюей]\b|\d/\d\s*дол", (d["title"] + " " + d.get("description", "")).lower())]
-        deals.sort(key=lambda d: d["min_price"] / d["market"]["price"])
+        deals.sort(key=lambda d: ("#Воронеж" not in tags(d), "#Черноземье" not in tags(d),
+                                  d["min_price"] / d["market"]["price"]))
         DEALS_FILE.write_text(json.dumps(deals, ensure_ascii=False, indent=1))
         log(f"Отобрано лотов (мин. цена ниже рынка >50%): {len(deals)} → {DEALS_FILE}")
         for d in deals:
