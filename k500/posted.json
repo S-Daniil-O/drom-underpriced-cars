@@ -4077,7 +4077,7 @@
   "https://auto.drom.ru/voronezh/nissan/almera/149195019.html": {
     "posted_at": "2026-10-10T21:02:11.681798+00:00",
     "message_id": 319,
-    "deleted_at": null,
+    "deleted_at": "2026-10-13T21:02:56.071939+00:00",
     "brand": "Nissan",
     "model": "Almera",
     "year": 1998,
@@ -4092,7 +4092,7 @@
   "https://auto.drom.ru/voronezh/hyundai/accent/538049169.html": {
     "posted_at": "2026-10-10T21:02:25.601310+00:00",
     "message_id": 320,
-    "deleted_at": null,
+    "deleted_at": "2026-10-13T21:02:57.346736+00:00",
     "brand": "Hyundai",
     "model": "Accent",
     "year": 2005,
@@ -4508,5 +4508,20 @@
     "mileage_km": 380000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/IkiAdYPNz4ECOHAvUXH3Zi85dlAjeHUfYOouGtXaj6e_l61OtNHXMBZWvoUxadGVjKvif2ckR4VowH1u/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/500016801.html": {
+    "posted_at": "2026-10-13T21:06:12.738293+00:00",
+    "message_id": 348,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2009,
+    "price": 205000,
+    "median_price": 250000.0,
+    "median_sample_size": 3252,
+    "price_rating": null,
+    "mileage_km": 128400,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/YjgmY0_KZ4zxRpjFQHzJJySx4UnxUDVNEZB9UkBm8oQUHgrypkJ976Ewx5HtUjxc6COGDsSevtwxK9Us/gen272wb.jpg"
   }
 }
