@@ -81,6 +81,13 @@ MARKET_CACHE_HOURS = 72
 # Если площадка торгов не отвечает — сколько раз пробовать и с какой паузой (мин).
 NET_RETRIES = 4
 NET_RETRY_PAUSE_MIN = 10
+# «Горящие» лоты (второй канал «Крайние предложения торги»): до конца приёма заявок
+# по минимальной цене осталось от HOT_MIN_DAYS до HOT_MAX_DAYS дней, а текущая цена
+# не выше HOT_MAX_PRICE_RATIO × минимальной. Отбираются из тех же лотов (2010+, не битые,
+# ниже рынка > 50%).
+HOT_MAX_DAYS = 30
+HOT_MIN_DAYS = 2
+HOT_MAX_PRICE_RATIO = 1.5
 # Площадки и категории
 USE_CDT = True     # torgi.cdtrf.ru
 USE_METS = True    # m-ets.ru
@@ -174,6 +181,9 @@ def cdt_detail(item):
         "status": obj.get("tradeStatusDescription"),
         "region": lot.get("location") or "",
         "image": img,
+        "schedule": [[x.get("startTime", "")[:16], x.get("endTime", "")[:16], to_float(x.get("price"))]
+                     for x in lot.get("lotScheduleItems") or [] if to_float(x.get("price"))],
+        "deposit_info": (obj.get("requestDepositInfo") or "")[:200],
     }
 
 
@@ -237,6 +247,13 @@ def mets_start_price(lot):
         lot["start_price"] = to_float(m.group(1))
     if not lot.get("description"):
         lot["description"] = t[:600]
+    # график снижения: № | начало | окончание | цена | задаток
+    sched = []
+    for m in re.finditer(r"\b\d{1,3} (\d\d\.\d\d\.\d{4} \d\d:\d\d) \S+ \S+ (\d\d\.\d\d\.\d{4} \d\d:\d\d) \S+ \S+ "
+                         r"(\d[\d ]*,\d\d) (\d[\d ]*,\d\d)", t[t.find("График снижения цены"):] if "График снижения цены" in t else ""):
+        sched.append([m.group(1), m.group(2), to_float(m.group(3)), to_float(m.group(4))])
+    if sched:
+        lot["schedule"] = sched
 
 
 # ---------------------------------------------------------------- марка/модель/год
@@ -516,6 +533,77 @@ def bad_reason(lot):
     return None
 
 
+# ---------------------------------------------------------------- горящие лоты
+def _dt(x):
+    from datetime import datetime
+    for fmt in ("%d.%m.%Y %H:%M", "%d.%m.%Y %H:%M:%S", "%d.%m.%Y"):
+        try:
+            return datetime.strptime(x.strip(), fmt)
+        except (ValueError, AttributeError):
+            pass
+    return None
+
+
+def hot_info(d):
+    """Окно минимальной цены по графику снижения: когда начинается, когда кончается,
+    сколько дней осталось подать заявку, текущая цена. None — если график не разобран."""
+    from datetime import datetime
+    rows = [r for r in d.get("schedule") or [] if _dt(r[0]) and _dt(r[1]) and r[2]]
+    if not rows:
+        return None
+    now = datetime.now()
+    mn = min(r[2] for r in rows)
+    mins = [r for r in rows if r[2] == mn]
+    start, end = _dt(mins[0][0]), _dt(mins[-1][1])
+    cur = next((r for r in rows if _dt(r[0]) <= now < _dt(r[1])), None)
+    return {"min_price": mn, "start": start, "end": end,
+            "days_left": (end - now).total_seconds() / 86400,
+            "current_price": cur[2] if cur else (rows[0][2] if now < _dt(rows[0][0]) else None),
+            "current_end": _dt(cur[1]) if cur else None,
+            "deposit": mins[0][3] if len(mins[0]) > 3 else None}
+
+
+def is_hot(d):
+    h = hot_info(d)
+    if not h or h["current_price"] is None:
+        return False
+    return (HOT_MIN_DAYS <= h["days_left"] <= HOT_MAX_DAYS
+            and h["current_price"] <= h["min_price"] * HOT_MAX_PRICE_RATIO)
+
+
+def hot_caption(d):
+    h = hot_info(d)
+    disc = round((1 - h["min_price"] / d["market"]["price"]) * 100)
+    in_min = h["start"] <= __import__("datetime").datetime.now()
+    lines = [
+        "⏰ КРАЙНЕЕ ПРЕДЛОЖЕНИЕ — торги скоро закончатся",
+        f"🔨 {d['car_name']}",
+        f"📍 {d['region']}" if d.get("region") else None,
+        "",
+        f"Минимальная цена: {money(h['min_price'])}",
+        (f"✅ Действует сейчас — заявку можно подать до {h['end']:%d.%m.%Y %H:%M}"
+         if in_min else
+         f"Действует с {h['start']:%d.%m.%Y %H:%M} до {h['end']:%d.%m.%Y %H:%M}"),
+        f"⏳ До конца приёма заявок: {int(h['days_left'])} дн.",
+        (f"Сейчас цена: {money(h['current_price'])}" + (f" (до {h['current_end']:%d.%m %H:%M})" if h["current_end"] else ""))
+        if not in_min else None,
+        f"Задаток на минимальной цене: {money(h['deposit'])}" if h.get("deposit") else
+        (f"Задаток: {d['deposit_info']}" if d.get("deposit_info") else None),
+        "",
+        f"Рыночная цена: ~{money(d['market']['price'])} (Drom, медиана {d['market']['n']} похожих"
+        + (f": {d['market']['matched']})" if d["market"].get("matched") else ")"),
+        f"🔥 Минимальная цена ниже рынка на {disc}%",
+        f"Начальная цена была: {money(d['start_price'])}" if d.get("start_price") else None,
+        "",
+        "📝 " + (d["title"] if d["source"] == "ЦДТ" else d.get("description") or d["title"])[:300],
+        "",
+        f"VIN: {d['vin']}" if d.get("vin") else None,
+        f"Площадка: {d['source']}",
+        f"Лот: {d['url']}",
+    ]
+    return "\n".join(x for x in lines if x is not None)[:1024]
+
+
 # ---------------------------------------------------------------- Telegram
 def caption(d):
     disc = round((1 - d["min_price"] / d["market"]["price"]) * 100)
@@ -592,11 +680,13 @@ def image_url_ok(url):
 
 
 # ---------------------------------------------------------------- очередь для GitHub
-def write_queue(deals, qdir, limit=0):
+def write_queue(deals, qdir, limit=0, posted_file=None, cap=None):
     """Режим iMac: Telegram из дома недоступен, поэтому посты (текст + фото) кладутся
     в папку очереди, iMac отправляет её в ветку inbox, а GitHub Actions публикует.
     В очередь попадают только ещё не опубликованные лоты (по TORGI_POSTED_FILE)."""
-    posted = json.loads(POSTED_FILE.read_text()) if POSTED_FILE.exists() else {}
+    posted_file = posted_file or POSTED_FILE
+    cap = cap or caption
+    posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
     todo = [d for d in deals if d["id"] not in posted]
     if limit:
         todo = todo[:limit]
@@ -615,7 +705,7 @@ def write_queue(deals, qdir, limit=0):
                     (qdir / img).write_bytes(r.content)
             except requests.RequestException as e:
                 log(f"фото не скачалось ({d['id']}): {e}")
-        items.append({"id": d["id"], "url": d["url"], "caption": caption(d), "image": img})
+        items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img})
     (qdir / "queue.json").write_text(json.dumps(
         {"created": time.strftime("%Y-%m-%d %H:%M"), "items": items}, ensure_ascii=False, indent=1))
     log(f"Очередь для GitHub: {len(items)} постов (фото: {sum(1 for i in items if i['image'])}) → {qdir}")
@@ -745,6 +835,15 @@ def main():
     queue_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue=")), None)
     if queue_dir:
         write_queue(deals, Path(queue_dir), limit)
+        hot_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue-hot=")), None)
+        if hot_dir:
+            for d in deals:   # график МЭТС есть только в карточке лота
+                if d["source"] == "МЭТС" and not d.get("schedule"):
+                    mets_start_price(d)
+            hot = sorted((d for d in deals if is_hot(d)), key=lambda d: hot_info(d)["end"])
+            log(f"Горящих лотов (до конца {HOT_MIN_DAYS}–{HOT_MAX_DAYS} дн., цена ≤ {HOT_MAX_PRICE_RATIO}× мин.): {len(hot)}")
+            hp = os.environ.get("TORGI_HOT_POSTED_FILE")
+            write_queue(hot, Path(hot_dir), 0, Path(hp) if hp else DATA / "torgi_hot_posted.json", hot_caption)
         return
 
     if post:
