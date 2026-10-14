@@ -1923,5 +1923,20 @@
     "mileage_km": 18000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/18185687/de65a356d5cea55e46848604b99c266e/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/niva_legend/671927954.html": {
+    "posted_at": "2026-10-14T21:30:17.682763+00:00",
+    "message_id": 154,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Нива Легенд",
+    "year": 2025,
+    "price": 985000,
+    "median_price": 1162000,
+    "median_sample_size": 4241,
+    "price_rating": "нормальная цена",
+    "mileage_km": 11500,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/9XNGIx6D-3UNhMyaTM2qd3yS_FI92dPqaVGKcHQfoPfcIJk3A1TVxvjO1KFUCnXFChE6JYEFXMHzEDdF/gen272wb.jpg"
   }
 }
