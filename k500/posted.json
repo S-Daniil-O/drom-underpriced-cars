@@ -4568,5 +4568,20 @@
     "mileage_km": 208000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/KmwRrHEjRdKqafxSE_N0Xauhhh40n8L51Jd_LCIbJw1zY7i6aD14GVmOD-3nki7trx9hurFxybWhpek0/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/lancer/935666301.html": {
+    "posted_at": "2026-10-14T11:37:16.351671+00:00",
+    "message_id": 352,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Lancer",
+    "year": 2004,
+    "price": 303000,
+    "median_price": 400000,
+    "median_sample_size": 5,
+    "price_rating": "нормальная цена",
+    "mileage_km": 262600,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/oQK-MJOGknXynILLOXS5vitC6V4dBkA3EvLyspv5IhhktlrCMMKoLX03zcvb_vucmdwT-4j0UVTUguzB/gen272wb.jpg"
   }
 }
