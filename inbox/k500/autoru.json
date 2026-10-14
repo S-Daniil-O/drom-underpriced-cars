@@ -8,60 +8,12 @@
 "price": 295000,
 "market_price": 104000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/IqU3FEsY7R1cEU9ay_MIEDxZCIU8EOya1Z6yvv3_LOk4IzDPPM9I1ZCQpDZRkhGLYDj1MWREJ2-dcKTBu86dpT9bK__4lrUZ9kNRIM2mpuqo9YCPjFwWcAwXEK1f7k1IF3uvzJO9Dyk0wqjd-CQcOV_X_CK33PGW3_HB1xN0UOK7b_8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/a_IV5rB9_1Cbvk-IeRe3MR0AIMi2P7BCvOxF64wt0XCU3sVVi_l1NcHgoMC9nguoZsQW90fnv2Q5xIT7LrjYJQB6y2RyxxHNNeQY2gtIhH0ruxQRNSoY7s77jhTu0LiZUrHfiemBJsh-w2IgT9BMKStJqWo5BZymE0bXKtkZh5VQWg/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:42:40.968343+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 220000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T23:42:40.968327+00:00"
-},
-{
-"ad_id": "autoru_1160315558-4e4d1c31",
-"source": "autoru",
-"brand": "ЗАЗ",
-"model": "Vida",
-"year": 2012,
-"price": 370000,
-"market_price": 273500,
-"url": "https://auto.ru/cars/used/sale/zaz/vida/1160315558-4e4d1c31/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/235d14ed014a0c92edac52a1fdd2a076/1200x900n",
-"mileage_km": 150000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T23:42:40.968316+00:00"
-},
-{
-"ad_id": "autoru_1160318069-cc57835b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2106",
-"year": 1993,
-"price": 248000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2106/1160318069-cc57835b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17750516/1adf0c2067992ba12cf765595208353c/1200x900n",
-"mileage_km": 125085,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T23:42:40.968296+00:00"
+"seen_at": "2026-10-14T23:53:56.072482+00:00"
 },
 {
 "ad_id": "autoru_1160319454-e0774d31",
@@ -77,23 +29,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-14T23:42:40.968272+00:00"
+"seen_at": "2026-10-14T23:53:56.072454+00:00"
+},
+{
+"ad_id": "autoru_1160315473-914cc928",
+"source": "autoru",
+"brand": "Renault",
+"model": "Logan",
+"year": 2006,
+"price": 220000,
+"market_price": 228500,
+"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
+"mileage_km": 190000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-14T23:53:56.072433+00:00"
+},
+{
+"ad_id": "autoru_1160315558-4e4d1c31",
+"source": "autoru",
+"brand": "ЗАЗ",
+"model": "Vida",
+"year": 2012,
+"price": 370000,
+"market_price": 273500,
+"url": "https://auto.ru/cars/used/sale/zaz/vida/1160315558-4e4d1c31/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/235d14ed014a0c92edac52a1fdd2a076/1200x900n",
+"mileage_km": 150000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-14T23:53:56.072421+00:00"
+},
+{
+"ad_id": "autoru_1160318069-cc57835b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2106",
+"year": 1993,
+"price": 248000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2106/1160318069-cc57835b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17750516/1adf0c2067992ba12cf765595208353c/1200x900n",
+"mileage_km": 125085,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-14T23:53:56.072399+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
+"brand": "Opel",
+"model": "Astra",
 "year": 2004,
 "price": 189000,
 "market_price": 68000,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160320347-3ee5f06f/",
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160318290-257a0c59/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/1698998/136e6b87017cf3c2a9e230090668ea23/1200x900n",
 "mileage_km": 78900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:42:40.968257+00:00"
+"seen_at": "2026-10-14T23:53:56.072384+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-14T23:42:40.968243+00:00"
+"seen_at": "2026-10-14T23:53:56.072367+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-14T23:42:40.968196+00:00"
+"seen_at": "2026-10-14T23:53:56.072317+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-14T23:42:27.297316+00:00"
+"seen_at": "2026-10-14T23:53:39.613845+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:42:27.297299+00:00"
+"seen_at": "2026-10-14T23:53:39.613827+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-14T23:42:27.297285+00:00"
+"seen_at": "2026-10-14T23:53:39.613813+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
