@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160191134-8587e1c3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2017,
-"price": 500000,
-"market_price": 391000,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160191134-8587e1c3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/cc779b6f03113e53a882f0bd17096583/1200x900n",
-"mileage_km": 262301,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T00:50:48.215357+00:00"
-},
-{
 "ad_id": "autoru_1160201617-c6eb29b3",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дубровка",
-"seen_at": "2026-10-14T00:50:48.215288+00:00"
+"seen_at": "2026-10-14T01:01:58.199222+00:00"
+},
+{
+"ad_id": "autoru_1160191134-8587e1c3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2017,
+"price": 500000,
+"market_price": 391000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160201919-7307a861/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/cc779b6f03113e53a882f0bd17096583/1200x900n",
+"mileage_km": 262301,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-14T01:01:58.199185+00:00"
 },
 {
 "ad_id": "autoru_1160209427-a5611951",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T00:50:31.644954+00:00"
+"seen_at": "2026-10-14T01:01:44.683717+00:00"
 },
 {
 "ad_id": "autoru_1160210502-caa730bf",
@@ -56,12 +56,12 @@
 "price": 210000,
 "market_price": 126500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/lanos/1160210502-caa730bf/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/44wGd08--xWuvY54AJpJXXIwu9MsIDy2GnDn_tWgIE5K2atBwIGXyfWx0PSH9XeRJJ7HGKRb5kPbMTK3fWigLqegQ5qLohrij4b6vHUAU7FdP3N_8xidEMlVTHrvBEA4VYUvM0hmSAVcohWNbLDNI0Jtk0YXAy3h9zydkp3fzXvqhBU/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/_upW0yjumVU0411HlAdPFNKNiJEdRoBgpa1_KIw5KD5RaZsR7AJO2r0ksTphQBynu4FAab_imA7Ve0rdVpU2L0bLYLnf5HQaAqAYA7cjlGG7JPv93UipItuALPblY-Wu73K7I1fTdsqq2wgB3PQqjybFxAFswfAClAyOSxZi-NaZOlc/1200x900n",
 "mileage_km": 190000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-10-14T00:50:31.644942+00:00"
+"seen_at": "2026-10-14T01:01:44.683706+00:00"
 },
 {
 "ad_id": "autoru_1134010251-846d88ea",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T00:50:31.644913+00:00"
+"seen_at": "2026-10-14T01:01:44.683693+00:00"
 },
 {
 "ad_id": "autoru_1160313803-1d63b7f8",
@@ -88,12 +88,12 @@
 "price": 295000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17757189/39VsJREUKNmShKQeAcNzF7r2KwFlG2le1OLUTQBfZwNGAp4e6MaS4XZnIss4QBArTYb1x12VvBoWxgXUla0Nh6S4wfbuIcIoY65q_a362hNw8DPuKpRFEXpJUyCS9tbJZG9GmR3rEpsuoaRp_GP5q4xE4qpMZ1_wRmlCqtFp0WhaJEY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17757189/Ui6FyGu82xu9RVXpl1F99ksyfgXaDr-20g9WcafJ6RiG28LG455Hf8ajQ0wqkH1ExhSzjgD4ZE6kZ0hbaA_liHGLPO3YV6b8Pd6F7rAo37CG7FYgrP8dWzq_0N49YeQPEUaDmHRp9U6gIfXZN4VWGxzUwu9iyCvkZ7jf8X9Dqfdh3G8/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T00:50:31.644900+00:00"
+"seen_at": "2026-10-14T01:01:44.683681+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T00:50:31.644886+00:00"
+"seen_at": "2026-10-14T01:01:44.683667+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T00:50:31.644875+00:00"
+"seen_at": "2026-10-14T01:01:44.683655+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-14T00:50:31.644833+00:00"
+"seen_at": "2026-10-14T01:01:44.683601+00:00"
 },
 {
 "ad_id": "autoru_1160316136-1b7df4dd",
