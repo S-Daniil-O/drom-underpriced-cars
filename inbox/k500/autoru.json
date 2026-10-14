@@ -8,12 +8,12 @@
 "price": 295000,
 "market_price": 104000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/vjCNsgj9DziGE2_ANaBB-8LtrwhAf8RP2MzE9ZDOmWusR7nOb79QxEYTWx3jqwjR0xcoi3zzUXjKxbpwsVGhx_tnAax1aoj78jHeOBgndE6YC7tacbXZpgrkuVE01mX9m6Pt2rpCwFowZIlO_sKLrhZR9jGAqklW2vXUqm8Za2stpSM/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/9ZVRx_cx-5t9oTZPceWKYl1vegJISs-Zp_tqTwv5plKToISkMpG9wVoE4WvbcM67SGzjqOD1vxSgqy9CQqAOBGyI0Cp4g_8J8JyohbIQNcZW7gnW3H-WgWCb44QMcpzkI6uhFog5jrE2r65cbjCYmBrDmtfGUZdKf7dl4f9fhEmo83I/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:09:01.483011+00:00"
+"seen_at": "2026-10-14T23:20:19.987752+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:09:01.482995+00:00"
+"seen_at": "2026-10-14T23:20:19.987737+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:09:01.482985+00:00"
+"seen_at": "2026-10-14T23:20:19.987726+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:09:01.482965+00:00"
+"seen_at": "2026-10-14T23:20:19.987706+00:00"
 },
 {
 "ad_id": "autoru_1160319454-e0774d31",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-14T23:09:01.482939+00:00"
+"seen_at": "2026-10-14T23:20:19.987681+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:09:01.482925+00:00"
+"seen_at": "2026-10-14T23:20:19.987666+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-14T23:09:01.482909+00:00"
+"seen_at": "2026-10-14T23:20:19.987650+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -125,23 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-14T23:09:01.482859+00:00"
-},
-{
-"ad_id": "autoru_1160323678-ea35017d",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Polo",
-"year": 2009,
-"price": 495000,
-"market_price": 277500,
-"url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160323678-ea35017d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/11361277/ad4fe7d747f9baae715c1373df293ea0/1200x900n",
-"mileage_km": 250000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Семилуки",
-"seen_at": "2026-10-14T23:08:40.308801+00:00"
+"seen_at": "2026-10-14T23:20:19.987600+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -157,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T23:08:40.308780+00:00"
+"seen_at": "2026-10-14T23:20:01.157220+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -173,7 +157,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-14T23:08:40.308747+00:00"
+"seen_at": "2026-10-14T23:20:01.157208+00:00"
+},
+{
+"ad_id": "autoru_1160323678-ea35017d",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Polo",
+"year": 2009,
+"price": 495000,
+"market_price": 277500,
+"url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160323678-ea35017d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/11361277/ad4fe7d747f9baae715c1373df293ea0/1200x900n",
+"mileage_km": 250000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Семилуки",
+"seen_at": "2026-10-14T23:20:01.157180+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
