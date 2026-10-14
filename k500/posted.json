@@ -4613,5 +4613,20 @@
     "mileage_km": 175000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/z6c-vto-SlZ_HsU98KQowViIm8DQ9ZyNKskm9efe9uoErT-RFrfA6UdKgnQ-aiJrMgz7wPRrw5zzPgKp/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/mondeo/518834739.html": {
+    "posted_at": "2026-10-14T21:30:45.847662+00:00",
+    "message_id": 355,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Mondeo",
+    "year": 2005,
+    "price": 320000,
+    "median_price": 396000,
+    "median_sample_size": 117,
+    "price_rating": "хорошая цена",
+    "mileage_km": 260000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/DME6n0X2mXrPUMMmgFwJGlSlx10oFxGy9WMeyWywu0Tl5ixLgmj7uPYBaQp9LF4NXWNKXnVi-ikbUW0x/gen272wb.jpg"
   }
 }
