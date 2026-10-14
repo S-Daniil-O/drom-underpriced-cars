@@ -8,28 +8,12 @@
 "price": 295000,
 "market_price": 104000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/vOIDogMRSDo_aCGFoo5-sLhIxSxF5e3pJoImZkvnZ0iaYBt_Q4qAxKnfKP9PXAsjhIR_JkSpM7X9cZmrABTVbO7Ar2mxI-a8ZIye6qpwICF7p9ffJxZLJXn9ZPJ06-kx2qcDyPtbbSYbhEPEyZb5Ane3invj1Vv4i2F_oKSxulSH_eY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/DRi2UM_E5tLhmzjDf_9wzknO46ns2U7XHS9CzhIrLx8_6QGhWrdcYv-0CNsHX1AxcQ_JJ2P9UDaFF6T5QyZ0OsnZmQzpN2qKq9n53X99-OFc39Ght8-oVFjynBQwZqYBPkhCCo5O_6OAeIeH8QwDAnEWkkYHvW5i7K-kCTbAU4nUy60/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T22:12:26.124650+00:00"
-},
-{
-"ad_id": "autoru_1160319454-e0774d31",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 250000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160319454-e0774d31/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18068962/b972ff679e3a7012ffd2eb21333421bf/1200x900n",
-"mileage_km": 230000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-14T22:12:26.124608+00:00"
+"seen_at": "2026-10-14T22:23:50.464336+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T22:12:26.124565+00:00"
+"seen_at": "2026-10-14T22:23:50.464318+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T22:12:26.124507+00:00"
+"seen_at": "2026-10-14T22:23:50.464306+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -77,23 +61,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T22:12:26.124423+00:00"
+"seen_at": "2026-10-14T22:23:50.464285+00:00"
+},
+{
+"ad_id": "autoru_1160319454-e0774d31",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2008,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160319454-e0774d31/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18068962/b972ff679e3a7012ffd2eb21333421bf/1200x900n",
+"mileage_km": 230000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-14T22:23:50.464257+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
 "source": "autoru",
-"brand": "Opel",
-"model": "Astra",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
 "year": 2004,
 "price": 189000,
 "market_price": 68000,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160318290-257a0c59/",
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160320347-3ee5f06f/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/1698998/136e6b87017cf3c2a9e230090668ea23/1200x900n",
 "mileage_km": 78900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-14T22:12:26.124385+00:00"
+"seen_at": "2026-10-14T22:23:50.464239+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-14T22:12:26.124345+00:00"
+"seen_at": "2026-10-14T22:23:50.464201+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -125,39 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-14T22:12:07.252970+00:00"
-},
-{
-"ad_id": "autoru_1160325779-39d14f2f",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2015,
-"price": 430000,
-"market_price": 234000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160325779-39d14f2f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/036178467946f695ae93eee8bf99879e/1200x900n",
-"mileage_km": 296000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T22:12:07.252948+00:00"
-},
-{
-"ad_id": "autoru_1160325920-0d41e611",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2011,
-"price": 375000,
-"market_price": 274000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160325920-0d41e611/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/19ba387d8a3a0f7baba49e323c0ec3d0/1200x900n",
-"mileage_km": 129720,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Павловск",
-"seen_at": "2026-10-14T22:12:07.252936+00:00"
+"seen_at": "2026-10-14T22:23:29.559945+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -173,7 +141,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-14T22:12:07.252907+00:00"
+"seen_at": "2026-10-14T22:23:29.559915+00:00"
+},
+{
+"ad_id": "autoru_1160325779-39d14f2f",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2015,
+"price": 430000,
+"market_price": 234000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160325779-39d14f2f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/036178467946f695ae93eee8bf99879e/1200x900n",
+"mileage_km": 296000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-14T22:23:29.559895+00:00"
+},
+{
+"ad_id": "autoru_1160325920-0d41e611",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2011,
+"price": 375000,
+"market_price": 274000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160325920-0d41e611/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/19ba387d8a3a0f7baba49e323c0ec3d0/1200x900n",
+"mileage_km": 129720,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-10-14T22:23:29.559880+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -238,21 +238,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-14T18:38:46.530038+00:00"
-},
-{
-"ad_id": "autoru_1160324765-16b2aae7",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2013,
-"price": 457777,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160324765-16b2aae7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/a003dbc71d41b0d80dde71c101bffa76/1200x900n",
-"mileage_km": 114000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-14T16:23:14.054939+00:00"
 }
 ]
