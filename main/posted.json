@@ -2013,5 +2013,35 @@
     "mileage_km": 41256,
     "owners_display": null,
     "image_url": "https://avatars.avto.ru/get-autoru-vos/21116822/b80c437f207f6ce1f07901ef27d96c01/1200x900n"
+  },
+  "autoru_1160323611-cd917e7d": {
+    "posted_at": "2026-10-15T08:15:13.650434+00:00",
+    "message_id": 160,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Lamando",
+    "year": 2023,
+    "price": 1500000,
+    "median_price": 1875000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 31588,
+    "owners_display": null,
+    "image_url": "https://photo.auto.ru/photo/get-autoru-vos/21116822/8eJ9ciqXnsj0J-AAH_RSF6eb0ZYs-NcPM8CoyrxnFkO3ySfohS9ZtKnUq67Zf9gj02yw30_XSDk6PyB3pplL8RzwBX8S3HjuGaxB_w0SBn695FviihTQ4qUfyGhnP_iWyoN4suJfy3vDJlk1O6G8ZNWqCH-F1v2DZK-pewbpmue_iA/1200x900n"
+  },
+  "autoru_1160328880-912dd168": {
+    "posted_at": "2026-10-15T08:15:18.476421+00:00",
+    "message_id": 161,
+    "deleted_at": null,
+    "brand": "Geely",
+    "model": "Geometry E",
+    "year": 2025,
+    "price": 1340000,
+    "median_price": 1673000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 3400,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n"
   }
 }
