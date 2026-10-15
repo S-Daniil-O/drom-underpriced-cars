@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-15T12:28:31.500466+00:00"
+"seen_at": "2026-10-15T12:39:52.389996+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:31.500453+00:00"
+"seen_at": "2026-10-15T12:39:52.389983+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T12:28:31.500431+00:00"
+"seen_at": "2026-10-15T12:39:52.389965+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T12:28:31.500395+00:00"
+"seen_at": "2026-10-15T12:39:52.389934+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:31.500376+00:00"
+"seen_at": "2026-10-15T12:39:52.389915+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:31.500362+00:00"
+"seen_at": "2026-10-15T12:39:52.389900+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T12:28:31.500325+00:00"
+"seen_at": "2026-10-15T12:39:52.389861+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -125,23 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:11.912178+00:00"
-},
-{
-"ad_id": "autoru_1160328817-5f9734ed",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Lancer",
-"year": 2007,
-"price": 430000,
-"market_price": 312000,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160328817-5f9734ed/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/2055f177e571b893b2071c142a051fa1/1200x900n",
-"mileage_km": 223000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T12:28:11.912158+00:00"
+"seen_at": "2026-10-15T12:39:31.607950+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -157,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-10-15T12:28:11.912142+00:00"
+"seen_at": "2026-10-15T12:39:31.607934+00:00"
 },
 {
 "ad_id": "autoru_1160329518-08be40ca",
@@ -173,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:11.912133+00:00"
+"seen_at": "2026-10-15T12:39:31.607925+00:00"
 },
 {
 "ad_id": "autoru_1160329564-bd95e7c2",
@@ -189,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:11.912123+00:00"
+"seen_at": "2026-10-15T12:39:31.607916+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -205,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-15T12:28:11.912111+00:00"
+"seen_at": "2026-10-15T12:39:31.607905+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -221,7 +205,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T12:28:11.912098+00:00"
+"seen_at": "2026-10-15T12:39:31.607893+00:00"
+},
+{
+"ad_id": "autoru_1160328817-5f9734ed",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Lancer",
+"year": 2007,
+"price": 430000,
+"market_price": 312000,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160328817-5f9734ed/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/2055f177e571b893b2071c142a051fa1/1200x900n",
+"mileage_km": 223000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T12:39:31.607867+00:00"
 },
 {
 "ad_id": "autoru_1160330674-9b51bceb",
@@ -237,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-10-15T12:28:11.912058+00:00"
+"seen_at": "2026-10-15T12:39:31.607829+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -318,21 +318,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-15T07:35:47.125254+00:00"
-},
-{
-"ad_id": "autoru_1160313803-1d63b7f8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2011,
-"price": 295000,
-"market_price": 104000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/MaHUZ3aQwIh-x-Wi2TeMNRxrEvGPqe9o0tQ-yvYcJeuGRius8rux2pOnmly114ZLToqYrQ_ujyXjAbsHTP9UAYdMWBt_VjWpcIXat8-rmUctpzmDyoe3qmMPAoUI26TQXTMkaEEONr2A-I5-Zwr8bZFP5geLNZBzF0z9394GT9OYaIU/1200x900n",
-"mileage_km": 89900,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T06:39:20.034946+00:00"
 }
 ]
