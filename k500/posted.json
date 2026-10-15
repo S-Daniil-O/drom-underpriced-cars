@@ -4748,5 +4748,35 @@
     "mileage_km": 350000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/_36PQBl2lUGHamR7uW9AvsFAKmzq0AiXc47BHlUOrl4uLPRk7iukO2x2FtTD1GuaGdT7T9D8XRmHjv7d/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/162967247.html": {
+    "posted_at": "2026-10-15T21:27:49.359325+00:00",
+    "message_id": 364,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2006,
+    "price": 265000,
+    "median_price": 390000.0,
+    "median_sample_size": 792,
+    "price_rating": "нормальная цена",
+    "mileage_km": 245000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/VL3SxKxqJOu2zXcZnHK1ngrUwd1I9AeNrJBThQEGwAl4UfJ1V_QbnZOwiZEhqZNm5_fBKocM5DiwZAu5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/sandero/124520587.html": {
+    "posted_at": "2026-10-15T21:27:54.715570+00:00",
+    "message_id": 365,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Sandero",
+    "year": 2010,
+    "price": 400000,
+    "median_price": 490000,
+    "median_sample_size": 567,
+    "price_rating": "нормальная цена",
+    "mileage_km": 154000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/2IbDiTfYOl68KIGYF4KUmqw-EhCVsAhvYY13plKnF17wQ6CpHSlCvsuKOWqZeMjme_3rwM8D3aKXLk2M/gen272wb.jpg"
   }
 }
