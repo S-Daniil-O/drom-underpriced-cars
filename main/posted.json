@@ -1953,5 +1953,20 @@
     "mileage_km": 25000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/03458f70256764a1c8673be8d966beeb/1200x900n"
+  },
+  "autoru_1160322091-8f9dd29f": {
+    "posted_at": "2026-10-15T07:15:01.676289+00:00",
+    "message_id": 156,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 2023,
+    "price": 1500000,
+    "median_price": 2259000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 26584,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20829654/2f12adc57a9e9d2993133b39ea51467e/1200x900n"
   }
 }
