@@ -1968,5 +1968,50 @@
     "mileage_km": 26584,
     "owners_display": null,
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20829654/2f12adc57a9e9d2993133b39ea51467e/1200x900n"
+  },
+  "autoru_1160321498-310094fa": {
+    "posted_at": "2026-10-15T07:29:44.776658+00:00",
+    "message_id": 157,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2023,
+    "price": 1300000,
+    "median_price": 1791500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 28000,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/c83b0e3c85ad773c462c4899cc28a676/1200x900n"
+  },
+  "autoru_1160323079-9ce46e49": {
+    "posted_at": "2026-10-15T07:29:49.352113+00:00",
+    "message_id": 158,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "T-Roc",
+    "year": 2022,
+    "price": 1200000,
+    "median_price": 1847000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 31225,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17777984/a080262ac1d7a23da4a4dd52aa3f5f60/1200x900n"
+  },
+  "autoru_1160323578-5d8e5fd3": {
+    "posted_at": "2026-10-15T07:29:57.336228+00:00",
+    "message_id": 159,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Lavida",
+    "year": 2022,
+    "price": 1350000,
+    "median_price": 1826000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 41256,
+    "owners_display": null,
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/21116822/b80c437f207f6ce1f07901ef27d96c01/1200x900n"
   }
 }
