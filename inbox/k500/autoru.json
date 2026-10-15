@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:19.049876+00:00"
+"seen_at": "2026-10-15T08:09:25.688955+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:19.049857+00:00"
+"seen_at": "2026-10-15T08:09:25.688937+00:00"
 },
 {
 "ad_id": "autoru_1160319454-e0774d31",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-15T07:58:19.049833+00:00"
+"seen_at": "2026-10-15T08:09:25.688914+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:19.049818+00:00"
+"seen_at": "2026-10-15T08:09:25.688901+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-15T07:58:19.049803+00:00"
+"seen_at": "2026-10-15T08:09:25.688886+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T07:58:19.049757+00:00"
+"seen_at": "2026-10-15T08:09:25.688841+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -109,23 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T07:58:03.882344+00:00"
-},
-{
-"ad_id": "autoru_1160326633-cfad292e",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2011,
-"price": 215000,
-"market_price": 82000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160326633-cfad292e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/2388b2ca230b0ffc4b0602ed4d598433/1200x900n",
-"mileage_km": 264600,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T07:58:03.882326+00:00"
+"seen_at": "2026-10-15T08:09:10.442320+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
@@ -135,13 +119,13 @@
 "year": 2013,
 "price": 457777,
 "market_price": 456500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160328318-ff1c52c8/",
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160324765-16b2aae7/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/a003dbc71d41b0d80dde71c101bffa76/1200x900n",
 "mileage_km": 114000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:03.882304+00:00"
+"seen_at": "2026-10-15T08:09:10.442306+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -157,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:03.882293+00:00"
+"seen_at": "2026-10-15T08:09:10.442295+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -173,7 +157,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T07:58:03.882281+00:00"
+"seen_at": "2026-10-15T08:09:10.442283+00:00"
+},
+{
+"ad_id": "autoru_1160326633-cfad292e",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Nexia",
+"year": 2011,
+"price": 215000,
+"market_price": 82000,
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160326633-cfad292e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/2388b2ca230b0ffc4b0602ed4d598433/1200x900n",
+"mileage_km": 264600,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T08:09:10.442264+00:00"
 },
 {
 "ad_id": "autoru_1160328817-5f9734ed",
@@ -189,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T07:58:03.882257+00:00"
+"seen_at": "2026-10-15T08:09:10.442239+00:00"
 },
 {
 "ad_id": "autoru_1160328833-35ee9059",
