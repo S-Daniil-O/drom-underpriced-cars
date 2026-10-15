@@ -4703,5 +4703,20 @@
     "mileage_km": 264600,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/2388b2ca230b0ffc4b0602ed4d598433/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/493346170.html": {
+    "posted_at": "2026-10-15T17:49:13.676944+00:00",
+    "message_id": 361,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2012,
+    "price": 260000,
+    "median_price": 310000.0,
+    "median_sample_size": 6404,
+    "price_rating": "нормальная цена",
+    "mileage_km": 204000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/LU_Ni28NyNasVYYuDRvtiik05sUTtueQAofF9YRmCbm9xl0nbfvzJQumc9jtXXzTuwN8Sbd6pYr2fjHe/gen272wb.jpg"
   }
 }
