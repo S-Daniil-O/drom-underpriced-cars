@@ -2133,5 +2133,20 @@
     "mileage_km": 230000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/21092119/af6c23f6969cd19869294b55c135bfc7/1200x900n"
+  },
+  "autoru_1160326353-eb62c6bf": {
+    "posted_at": "2026-10-15T17:04:17.388764+00:00",
+    "message_id": 168,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2022,
+    "price": 1170000,
+    "median_price": 1444000.0,
+    "median_sample_size": 12,
+    "price_rating": null,
+    "mileage_km": 61000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/5c8093c3accb7165b83082ae504efbf7/1200x900n"
   }
 }
