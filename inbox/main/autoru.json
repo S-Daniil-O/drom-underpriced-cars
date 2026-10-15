@@ -1,53 +1,5 @@
 [
 {
-"ad_id": "autoru_1160325299-4c36b2e6",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2021,
-"price": 1202400,
-"market_price": 1059500,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160325299-4c36b2e6/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/845b5d2cd55e0c31bed65b520850b6da/1200x900n",
-"mileage_km": 78135,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390284+00:00"
-},
-{
-"ad_id": "autoru_1160325502-4136a5a4",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2017,
-"price": 675000,
-"market_price": 617000,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160325502-4136a5a4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20543926/VurVyxk-sbxMtIfvSah8PhAd9Wmgk4f0fy6wICvQd02hOVbaHP5zCYGanu6TBSLqNZeE39BihryV5nVLWqku3DYjsMxQT0gdBWnjerTTPFE3qokQqogFe1vurhwbsAH2BNa8MhkQIjFWO12HGd8Gn7gnPcujOLfrvWh78Hn40Sfyz6E/1200x900n",
-"mileage_km": 181000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390274+00:00"
-},
-{
-"ad_id": "autoru_1160326353-eb62c6bf",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2022,
-"price": 1170000,
-"market_price": 959500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160326353-eb62c6bf/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/5c8093c3accb7165b83082ae504efbf7/1200x900n",
-"mileage_km": 61000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-10-15T18:39:10.390257+00:00"
-},
-{
 "ad_id": "autoru_1160323079-9ce46e49",
 "source": "autoru",
 "brand": "Volkswagen",
@@ -61,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390233+00:00"
+"seen_at": "2026-10-15T18:50:23.383661+00:00"
 },
 {
 "ad_id": "autoru_1160323272-ecf9861d",
@@ -77,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390222+00:00"
+"seen_at": "2026-10-15T18:50:23.383650+00:00"
 },
 {
 "ad_id": "autoru_1160323578-5d8e5fd3",
@@ -93,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390207+00:00"
+"seen_at": "2026-10-15T18:50:23.383632+00:00"
 },
 {
 "ad_id": "autoru_1160323611-cd917e7d",
@@ -104,12 +56,60 @@
 "price": 1500000,
 "market_price": 1823500,
 "url": "https://auto.ru/cars/used/sale/volkswagen/lamando/1160323611-cd917e7d/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21116822/5FAR7scbAvDYLOsEoTvQ5PaWO5TDAEUmg7XLa7RNO17WbIYZu3WApKqI_3zgQyj67Su249rVeb1e7lCZ-AJaU0gd4suaEWVJUTGqa-pR1l8aljG090gCjuGWfDorlRv3B-Gbou3xXvrnDas6k9g6aOR-jxmoRbF_aOCuoHu3n2YBY6s/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21116822/0qEIEP-j1YRUTeIokM-6gPVdLciFKoVrBGslcub6th0GPT1nKqKot5KbUYh-UEYxJ08rzscxzu2nWE2GqPX1A1Df7ztYCNAbuYM7k1ENz0koxdwRajygZNY7jjRmtLFd87mfFZtdEmlVcm4tGNCAEQ3vyV8keuWQ6w6aHp6vOJquqic/1200x900n",
 "mileage_km": 31588,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390193+00:00"
+"seen_at": "2026-10-15T18:50:23.383617+00:00"
+},
+{
+"ad_id": "autoru_1160325299-4c36b2e6",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2021,
+"price": 1202400,
+"market_price": 1050500,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160325299-4c36b2e6/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/845b5d2cd55e0c31bed65b520850b6da/1200x900n",
+"mileage_km": 78135,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T18:50:23.383577+00:00"
+},
+{
+"ad_id": "autoru_1160325502-4136a5a4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2017,
+"price": 675000,
+"market_price": 617000,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160325502-4136a5a4/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20543926/cOew-lMs1tXE1VYmZq_kjgbzp3KRUJyYAcypcbn8OaBAsZLeNm62qlVX9CkbKFMyEf0Pw5BkMMihskr-bvFw67lzIP0wdp9li7g55567WRNX3R9Q2But_4yAEHQOfg46NbzNWD_K8vjSqVojMx8w7WF5UBV-pi41dETETN1xS0pxC7w/1200x900n",
+"mileage_km": 181000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T18:50:23.383562+00:00"
+},
+{
+"ad_id": "autoru_1160326353-eb62c6bf",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2022,
+"price": 1170000,
+"market_price": 959500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160326353-eb62c6bf/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/5c8093c3accb7165b83082ae504efbf7/1200x900n",
+"mileage_km": 61000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-10-15T18:50:23.383540+00:00"
 },
 {
 "ad_id": "autoru_1133735127-50323504",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-15T18:39:10.390159+00:00"
+"seen_at": "2026-10-15T18:50:23.383518+00:00"
 },
 {
 "ad_id": "autoru_1160328498-d9ee269f",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390141+00:00"
+"seen_at": "2026-10-15T18:50:23.383499+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -157,87 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:39:10.390106+00:00"
-},
-{
-"ad_id": "autoru_1160328718-eac52ea3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 530000,
-"market_price": 301500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1904718/934eeb09b8f7dc1a736ab946537d89a7/1200x900n",
-"mileage_km": 62000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ямное",
-"seen_at": "2026-10-15T18:38:51.531420+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531410+00:00"
-},
-{
-"ad_id": "autoru_1133341220-636acd98",
-"source": "autoru",
-"brand": "BYD",
-"model": "Seagull",
-"year": 2023,
-"price": 1450000,
-"market_price": 1536000,
-"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
-"mileage_km": 40000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531393+00:00"
-},
-{
-"ad_id": "autoru_1133341291-005dd1d0",
-"source": "autoru",
-"brand": "Changan",
-"model": "Benben E-Star",
-"year": 2022,
-"price": 1200000,
-"market_price": 890500,
-"url": "https://auto.ru/cars/used/sale/changan/benben_e_star/1133341291-005dd1d0/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/e217690d404957fccbfdf30d73e0b7de/1200x900n",
-"mileage_km": 35000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531384+00:00"
+"seen_at": "2026-10-15T18:50:23.383462+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
+"brand": "Lifan",
+"model": "X50",
 "year": 2024,
 "price": 1000000,
 "market_price": 1048000,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160197631-b919b3e8/",
+"url": "https://auto.ru/cars/used/sale/lifan/x50/1160328627-e807fb9d/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/b0ceef0c217004876647bc81d735d22f/1200x900n",
 "mileage_km": 35000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531370+00:00"
+"seen_at": "2026-10-15T18:50:06.259920+00:00"
 },
 {
 "ad_id": "autoru_1160184537-ea0b50ee",
@@ -253,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T18:38:51.531361+00:00"
+"seen_at": "2026-10-15T18:50:06.259910+00:00"
 },
 {
 "ad_id": "autoru_1160333817-6d8d20c9",
@@ -269,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531347+00:00"
+"seen_at": "2026-10-15T18:50:06.259889+00:00"
 },
 {
 "ad_id": "autoru_1160186417-16ac43ca",
@@ -285,7 +221,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531335+00:00"
+"seen_at": "2026-10-15T18:50:06.259877+00:00"
+},
+{
+"ad_id": "autoru_1160328718-eac52ea3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 530000,
+"market_price": 301500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1904718/934eeb09b8f7dc1a736ab946537d89a7/1200x900n",
+"mileage_km": 62000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ямное",
+"seen_at": "2026-10-15T18:50:06.259863+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T18:50:06.259851+00:00"
+},
+{
+"ad_id": "autoru_1133341220-636acd98",
+"source": "autoru",
+"brand": "BYD",
+"model": "Seagull",
+"year": 2023,
+"price": 1450000,
+"market_price": 1536000,
+"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
+"mileage_km": 40000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T18:50:06.259841+00:00"
+},
+{
+"ad_id": "autoru_1133341291-005dd1d0",
+"source": "autoru",
+"brand": "Changan",
+"model": "Benben E-Star",
+"year": 2022,
+"price": 1200000,
+"market_price": 890500,
+"url": "https://auto.ru/cars/used/sale/changan/benben_e_star/1133341291-005dd1d0/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/e217690d404957fccbfdf30d73e0b7de/1200x900n",
+"mileage_km": 35000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T18:50:06.259831+00:00"
 },
 {
 "ad_id": "autoru_1160329986-2eed2964",
@@ -301,23 +301,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531316+00:00"
+"seen_at": "2026-10-15T18:50:06.259810+00:00"
 },
 {
 "ad_id": "autoru_1160338031-99ed8ee3",
 "source": "autoru",
-"brand": "Ford",
-"model": "Focus",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
 "year": 2015,
 "price": 800000,
 "market_price": 672500,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1134208305-9e626ff1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21092119/af6c23f6969cd19869294b55c135bfc7/1200x900n",
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160197631-b919b3e8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/79ddbf509a09a21e752ef56665800777/1200x900n",
 "mileage_km": 230000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T18:38:51.531297+00:00"
+"seen_at": "2026-10-15T18:50:06.259790+00:00"
 },
 {
 "ad_id": "autoru_1160157737-0f3a2888",
@@ -333,7 +333,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531281+00:00"
+"seen_at": "2026-10-15T18:50:06.259771+00:00"
 },
 {
 "ad_id": "autoru_1160349369-43118f20",
@@ -349,7 +349,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T18:38:51.531264+00:00"
+"seen_at": "2026-10-15T18:50:06.259713+00:00"
 },
 {
 "ad_id": "autoru_1160322102-91d96347",
