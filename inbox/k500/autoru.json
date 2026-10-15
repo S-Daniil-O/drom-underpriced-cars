@@ -8,12 +8,12 @@
 "price": 295000,
 "market_price": 104000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/OpQFr_P2FBm4rHWPVGz39kTq5mbGyViuxeRYVbad2PGfYz13rIJyhjtUWpUl9M4f5VbxGLmIA4tiQqvvKXeFiUkkkg_ekd6PZAQ5xjF5KHP_SHtrBjop-m3_6z0zJsTu18OyhzLq5SkWqJIbpOleggrlA8GQRa28AcBYdOeF0WbnQTM/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/w2Am5SHTCxuy4tryfA8LV1OAGqOVfOd2vwlGoFrIzfcfmofVgc7NUL-jjLVSCbQcfaQaA9QkCXXTZwEQgI9DqY4WuSVRe1W2YA0WIjMKre1LaOxgEAwaX-9_0dPChJb07UGXbSjep2XB_AeyqMaAHbZ2-I5LK20MeBTgH0Au-bx1ygM/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:28.458641+00:00"
+"seen_at": "2026-10-15T01:12:52.267475+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:28.458625+00:00"
+"seen_at": "2026-10-15T01:12:52.267456+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:28.458613+00:00"
+"seen_at": "2026-10-15T01:12:52.267442+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:28.458593+00:00"
+"seen_at": "2026-10-15T01:12:52.267420+00:00"
 },
 {
 "ad_id": "autoru_1160319454-e0774d31",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-15T01:01:28.458568+00:00"
+"seen_at": "2026-10-15T01:12:52.267390+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:28.458551+00:00"
+"seen_at": "2026-10-15T01:12:52.267371+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-15T01:01:28.458534+00:00"
+"seen_at": "2026-10-15T01:12:52.267352+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T01:01:28.458485+00:00"
+"seen_at": "2026-10-15T01:12:52.267303+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T01:01:12.127991+00:00"
+"seen_at": "2026-10-15T01:12:31.525908+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T01:01:12.127972+00:00"
+"seen_at": "2026-10-15T01:12:31.525887+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T01:01:12.127958+00:00"
+"seen_at": "2026-10-15T01:12:31.525852+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -206,21 +206,5 @@
 "seller_type": "PRIVATE",
 "city": "Россошь",
 "seen_at": "2026-10-14T19:57:53.325509+00:00"
-},
-{
-"ad_id": "autoru_1160319958-7c6be0cc",
-"source": "autoru",
-"brand": "Opel",
-"model": "Corsa",
-"year": 2011,
-"price": 402000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/opel/corsa/1160319958-7c6be0cc/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17699839/e9b932650a54d96ffc5deea2ac119ae1/1200x900n",
-"mileage_km": 131154,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Отрадное",
-"seen_at": "2026-10-14T19:12:36.347769+00:00"
 }
 ]
