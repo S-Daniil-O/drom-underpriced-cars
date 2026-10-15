@@ -88,6 +88,10 @@ NET_RETRY_PAUSE_MIN = 10
 HOT_MAX_DAYS = 30
 HOT_MIN_DAYS = 2
 HOT_MAX_PRICE_RATIO = 1.5
+# «Последний шанс»: горящий лот, у которого до конца приёма заявок ≤ LAST_CALL_DAYS дней
+# и заявок по данным площадки нет. Публикуется отдельным постом (даже если лот уже был
+# в канале как горящий), с пометкой 🚨 и хэштегом #беззаявок.
+LAST_CALL_DAYS = 7
 # Хэштеги в постах. Порог «суперцены»: минимальная цена ниже рынка не меньше чем на SUPER_DISCOUNT.
 SUPER_DISCOUNT = 0.80
 HOME_REGION = "Воронежская"   # #Воронеж
@@ -210,6 +214,7 @@ def cdt_detail(item):
         "schedule": [[x.get("startTime", "")[:16], x.get("endTime", "")[:16], to_float(x.get("price"))]
                      for x in lot.get("lotScheduleItems") or [] if to_float(x.get("price"))],
         "deposit_info": (obj.get("requestDepositInfo") or "")[:200],
+        "requests": obj.get("allPartReqCount"),   # число заявок по данным площадки
     }
 
 
@@ -280,6 +285,9 @@ def mets_start_price(lot):
         sched.append([m.group(1), m.group(2), to_float(m.group(3)), to_float(m.group(4))])
     if sched:
         lot["schedule"] = sched
+    m = re.search(r"Количество заявок:?\s*(\d+)", t)
+    if m:
+        lot["requests"] = int(m.group(1))
 
 
 # ---------------------------------------------------------------- марка/модель/год
@@ -589,6 +597,8 @@ def tags(d):
         out.append("#Черноземье")
     if discount(d) >= SUPER_DISCOUNT:
         out.append("#суперцена")
+    if d.get("last_call"):
+        out.append("#беззаявок")
     return out
 
 
@@ -634,12 +644,27 @@ def is_hot(d):
             and h["current_price"] <= h["min_price"] * HOT_MAX_PRICE_RATIO)
 
 
+def is_last_call(d):
+    """Горящий, до конца ≤ LAST_CALL_DAYS дней и заявок нет."""
+    if not is_hot(d) or d.get("requests") is None or d["requests"] > 0:
+        return False
+    return hot_info(d)["days_left"] <= LAST_CALL_DAYS
+
+
+def requests_line(d):
+    n = d.get("requests")
+    if n is None:
+        return None
+    return "📭 Заявок пока нет" if n == 0 else f"📨 Заявок: {n}"
+
+
 def hot_caption(d):
     h = hot_info(d)
     disc = round((1 - h["min_price"] / d["market"]["price"]) * 100)
     in_min = h["start"] <= __import__("datetime").datetime.now()
     lines = [
-        "⏰ КРАЙНЕЕ ПРЕДЛОЖЕНИЕ — торги скоро закончатся",
+        (f"🚨 ПОСЛЕДНИЙ ШАНС: заявок нет, до конца приёма {max(0, int(hot_info(d)['days_left']))} дн."
+         if d.get("last_call") else "⏰ КРАЙНЕЕ ПРЕДЛОЖЕНИЕ — торги скоро закончатся"),
         super_line(d),
         f"🔨 {d['car_name']}",
         f"📍 {d['region']}" if d.get("region") else None,
@@ -650,6 +675,7 @@ def hot_caption(d):
          if in_min else
          f"Действует с {h['start']:%d.%m.%Y %H:%M} до {h['end']:%d.%m.%Y %H:%M}"),
         f"⏳ До конца приёма заявок: {int(h['days_left'])} дн.",
+        requests_line(d),
         (f"Сейчас цена: {money(h['current_price'])}" + (f" (до {h['current_end']:%d.%m %H:%M})" if h["current_end"] else ""))
         if not in_min else None,
         f"Задаток на минимальной цене: {money(h['deposit'])}" if h.get("deposit") else
@@ -909,6 +935,10 @@ def main():
                 if d["source"] == "МЭТС" and not d.get("schedule"):
                     mets_start_price(d)
             hot = sorted((d for d in deals if is_hot(d)), key=lambda d: hot_info(d)["end"])
+            # «последний шанс» — отдельные посты с ключом <id>#last, идут первыми
+            last = [dict(d, id=d["id"] + "#last", last_call=True) for d in hot if is_last_call(d)]
+            log(f"Из них «последний шанс» (≤ {LAST_CALL_DAYS} дн., заявок нет): {len(last)}")
+            hot = last + hot
             log(f"Горящих лотов (до конца {HOT_MIN_DAYS}–{HOT_MAX_DAYS} дн., цена ≤ {HOT_MAX_PRICE_RATIO}× мин.): {len(hot)}")
             hp = os.environ.get("TORGI_HOT_POSTED_FILE")
             write_queue(hot, Path(hot_dir), 0, Path(hp) if hp else DATA / "torgi_hot_posted.json", hot_caption)
