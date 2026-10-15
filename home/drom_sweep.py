@@ -91,6 +91,16 @@ def sweep(prof, rejected, dry):
         if it.get("brand") and it.get("year") and it.get("price"):
             market[it["ad_id"]] = {"b": it["brand"], "m": it.get("model") or "", "y": it["year"],
                                    "p": it["price"], "t": now_iso}
+    # Авто.ру — в тот же рынок (медиана по обеим площадкам): берём из ветки inbox, что собрал сборщик
+    git("fetch", "-q", "origin", "inbox")
+    for name in ("autoru.json", "autoru_sweep.json"):
+        try:
+            for it in json.loads(git("show", f"origin/inbox:inbox/{prof}/{name}")):
+                if it.get("brand") and it.get("year") and it.get("price"):
+                    market[it["ad_id"]] = {"b": it["brand"], "m": it.get("model") or "", "y": it["year"],
+                                           "p": it["price"], "t": it.get("seen_at") or now_iso}
+        except (subprocess.CalledProcessError, ValueError):
+            pass
     cutoff = datetime.now(timezone.utc) - timedelta(days=MARKET_DAYS)
     market = {k: v for k, v in market.items() if datetime.fromisoformat(v["t"]) >= cutoff}
     if not dry:
@@ -98,11 +108,11 @@ def sweep(prof, rejected, dry):
 
     by_model = {}
     for ad_id, v in market.items():
-        by_model.setdefault((v["b"].lower(), v["m"].lower()), []).append((v["y"], v["p"], ad_id))
+        by_model.setdefault(monitor.market_key(v["b"], v["m"]), []).append((v["y"], v["p"], ad_id))
 
     def median_for(it):
         """Медиана без самого объявления: сначала тот же год, при нехватке — годы ±1."""
-        rows = by_model.get((it["brand"].lower(), (it.get("model") or "").lower()), [])
+        rows = by_model.get(monitor.market_key(it["brand"], it.get("model") or ""), [])
         for spread in (0, 1):
             prices = [p for y, p, a in rows if abs(y - it["year"]) <= spread and a != it["ad_id"]]
             if len(prices) >= MIN_GROUP:

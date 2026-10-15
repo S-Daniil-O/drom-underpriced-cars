@@ -104,14 +104,59 @@ def load_inbox():
 def source_suffix(item):
     """Пометка площадки в посте и база сравнения цены."""
     if item.get("source") == "autoru":
-        return "\n📍 Объявление с Авто.ру", "оценки Авто.ру"
+        base = "медианы рынка (Drom + Авто.ру)" if item.get("market_kind") == "median" else "оценки Авто.ру"
+        return "\n📍 Объявление с Авто.ру", base
     if item.get("source") == "drom":
-        return "", "медианы по всем объявлениям Drom"
-    return "", "медианы группы"
+        return "", "медианы рынка (Drom + Авто.ру)"
+    return "", "медианы рынка (Drom + Авто.ру)"
+
+
+# Авто.ру и Drom называют отечественные модели по-разному («Lada (ВАЗ) Granta» / «Лада Гранта»,
+# «2114» / «2114 Самара», «3110 «Волга»» / «3110 Волга»). Приводим к названиям Drom, чтобы
+# медиана считалась по обеим площадкам в одной группе. Иномарки на обеих площадках совпадают.
+_LADA_WORDS = {"granta": "гранта", "vesta": "веста", "kalina": "калина", "priora": "приора",
+               "largus": "ларгус", "niva": "нива", "travel": "тревел", "legend": "легенд",
+               "xray": "х-рей", "cross": "кросс", "sport": "спорт", "iskra": "искра", "bronto": "бронто"}
+_UAZ_WORDS = {"patriot": "патриот", "hunter": "хантер", "pickup": "пикап", "profi": "профи"}
+
+
+def market_key(brand, model):
+    """(марка, модель) в написании Drom, нижний регистр."""
+    full = re.sub(r"[«»\"]", "", f"{brand} {model or ''}".lower())
+    full = re.sub(r"\s+", " ", full.replace("lada (ваз)", "лада").replace("lada", "лада")).strip()
+    b, _, m = full.partition(" ")
+    if b == "лада":
+        m = re.sub(r"^(21\d\d) \(4x4\)$", r"4x4 \1 нива", m)
+        m = " ".join(_LADA_WORDS.get(w, w) for w in m.split())
+        if m in ("2113", "2114", "2115"):
+            m += " самара"
+    elif b == "уаз":
+        m = " ".join(_UAZ_WORDS.get(w, w) for w in m.split())
+    return b, m
 
 
 def group_key(brand, model, year):
-    return f"{brand.strip().lower()}|{model.strip().lower()}|{year}"
+    b, m = market_key(brand.strip(), (model or "").strip())
+    return f"{b}|{m}|{year}"
+
+
+def market_median(history, item):
+    """Медиана по истории (Drom + Авто.ру): каждое объявление один раз с последней ценой, без самого
+    объявления; сначала тот же год, при нехватке — годы ±1. (медиана, число объявлений) или (None, 0)."""
+    def latest_prices(years):
+        latest = {}
+        for y in years:
+            for e in prune_old_entries(history.get(group_key(item["brand"], item.get("model") or "", y), [])):
+                if e.get("url") and e["url"] != item["url"]:
+                    prev = latest.get(e["url"])
+                    if not prev or e["seen_at"] > prev["seen_at"]:
+                        latest[e["url"]] = e
+        return [e["price"] for e in latest.values()]
+    for years in ((item["year"],), (item["year"] - 1, item["year"], item["year"] + 1)):
+        prices = latest_prices(years)
+        if len(prices) >= config.MIN_SAMPLES_FOR_MEDIAN:
+            return statistics.median(prices), len(prices)
+    return None, 0
 
 
 def prune_old_entries(entries):
@@ -592,7 +637,17 @@ def update_history_and_find_underpriced(listings, history):
 
         prices_so_far = [e["price"] for e in entries]
         median_price = statistics.median(prices_so_far) if len(prices_so_far) >= config.MIN_SAMPLES_FOR_MEDIAN else None
-        if item.get("source"):
+        threshold = config.UNDERPRICED_THRESHOLD
+        if item.get("source") == "autoru" and isinstance(item.get("year"), int):
+            # Авто.ру — по общей медиане Drom + Авто.ру, с теми же порогами, что и Drom; если похожих
+            # машин меньше MIN_SAMPLES_FOR_MEDIAN — запасной вариант: оценка самого Авто.ру.
+            med, n = market_median(history, item)
+            if med:
+                median_price, prices_so_far, item = med, [None] * n, {**item, "market_kind": "median"}
+            else:
+                median_price, prices_so_far = item.get("market_price"), []
+                threshold = getattr(config, "AUTORU_UNDERPRICED_THRESHOLD", config.UNDERPRICED_THRESHOLD)
+        elif item.get("source"):
             median_price, prices_so_far = item.get("market_price"), [None] * (item.get("median_sample_size") or 0)
         elif median_price is None and isinstance(item.get("year"), int):
             fb, n = fallback_median(history, item)
@@ -611,9 +666,7 @@ def update_history_and_find_underpriced(listings, history):
         vetoed = item.get("price_rating") in config.BAD_PRICE_RATINGS
         if vetoed:
             reason = None
-        elif median_price is not None and item["price"] <= median_price * (
-                getattr(config, "AUTORU_UNDERPRICED_THRESHOLD", config.UNDERPRICED_THRESHOLD)
-                if item.get("source") == "autoru" else config.UNDERPRICED_THRESHOLD):
+        elif median_price is not None and item["price"] <= median_price * threshold:
             reason = "median"
         elif item.get("price_rating") in config.GOOD_PRICE_RATINGS and median_price and item["price"] < median_price:
             # 2026-10-12: только если можем посчитать выгоду — в каждом посте должна быть сумма
@@ -635,8 +688,8 @@ def update_history_and_find_underpriced(listings, history):
                 "reason": reason,
             })
 
-        if item.get("source"):
-            continue
+        if item.get("source") and item.get("source") != "autoru":
+            continue  # полный проход Drom — те же объявления, что и в обычной выдаче, не дублируем
         # добавляем текущее наблюдение в историю ПОСЛЕ сравнения с медианой,
         # чтобы объявление не сравнивалось само с собой
         entries.append({"price": item["price"], "seen_at": now_iso, "url": item["url"]})
