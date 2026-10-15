@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:43:07.646695+00:00"
+"seen_at": "2026-10-15T17:54:37.893546+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T17:43:07.646675+00:00"
+"seen_at": "2026-10-15T17:54:37.893528+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T17:43:07.646638+00:00"
+"seen_at": "2026-10-15T17:54:37.893497+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:43:07.646618+00:00"
+"seen_at": "2026-10-15T17:54:37.893479+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:43:07.646605+00:00"
+"seen_at": "2026-10-15T17:54:37.893465+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -93,39 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T17:43:07.646571+00:00"
-},
-{
-"ad_id": "autoru_1134190951-1ba3caea",
-"source": "autoru",
-"brand": "BMW",
-"model": "5 серии",
-"year": 2009,
-"price": 255000,
-"market_price": 67500,
-"url": "https://auto.ru/cars/used/sale/bmw/5er/1160326596-afd6e07e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20793990/434c20209e963b041c4d092001031dd4/1200x900n",
-"mileage_km": 59000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T17:42:53.691159+00:00"
-},
-{
-"ad_id": "autoru_1160326633-cfad292e",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2011,
-"price": 215000,
-"market_price": 82000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160326633-cfad292e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/2388b2ca230b0ffc4b0602ed4d598433/1200x900n",
-"mileage_km": 264600,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-15T17:42:53.691140+00:00"
+"seen_at": "2026-10-15T17:54:37.893429+00:00"
 },
 {
 "ad_id": "autoru_1160328817-5f9734ed",
@@ -141,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:42:53.691119+00:00"
+"seen_at": "2026-10-15T17:54:16.034015+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -157,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-10-15T17:42:53.691102+00:00"
+"seen_at": "2026-10-15T17:54:16.034000+00:00"
 },
 {
 "ad_id": "autoru_1160329518-08be40ca",
@@ -173,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:42:53.691090+00:00"
+"seen_at": "2026-10-15T17:54:16.033991+00:00"
 },
 {
 "ad_id": "autoru_1160329564-bd95e7c2",
@@ -189,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T17:42:53.691077+00:00"
+"seen_at": "2026-10-15T17:54:16.033981+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -205,7 +173,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-15T17:42:53.691042+00:00"
+"seen_at": "2026-10-15T17:54:16.033970+00:00"
+},
+{
+"ad_id": "autoru_1160326633-cfad292e",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Nexia",
+"year": 2011,
+"price": 215000,
+"market_price": 82000,
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160326633-cfad292e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20223974/2388b2ca230b0ffc4b0602ed4d598433/1200x900n",
+"mileage_km": 264600,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T17:54:16.033956+00:00"
+},
+{
+"ad_id": "autoru_1134190951-1ba3caea",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2009,
+"price": 255000,
+"market_price": 67500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1134190951-1ba3caea/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17909659/6930d68f112c1ac0f1be8d43edfe2fc6/1200x900n",
+"mileage_km": 59000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-15T17:54:16.033918+00:00"
 },
 {
 "ad_id": "autoru_1160319454-e0774d31",
