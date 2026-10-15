@@ -4628,5 +4628,20 @@
     "mileage_km": 260000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/DME6n0X2mXrPUMMmgFwJGlSlx10oFxGy9WMeyWywu0Tl5ixLgmj7uPYBaQp9LF4NXWNKXnVi-ikbUW0x/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/245949598.html": {
+    "posted_at": "2026-10-15T04:57:46.713935+00:00",
+    "message_id": 356,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2010,
+    "price": 270000,
+    "median_price": 350000.0,
+    "median_sample_size": 908,
+    "price_rating": "нормальная цена",
+    "mileage_km": 144196,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/MYsaw7j83gXl5_5LSfqMyuiWL3Huf316wEZmWuGL8kh3indi_l5IQsm8wZ60p64QExBy8hqwQowQqgiN/gen272wb.jpg"
   }
 }
