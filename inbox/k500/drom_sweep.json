@@ -1,5 +1,43 @@
 [
 {
+"ad_id": "https://auto.drom.ru/novaya-usman/lada/2106/496612123.html",
+"brand": "Лада",
+"model": "2106",
+"year": 1992,
+"price": 60000,
+"mileage_km": 100000,
+"price_rating": null,
+"url": "https://auto.drom.ru/novaya-usman/lada/2106/496612123.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/ejLtKUQMMVn9CUm-rDY9D7aN_icj5jkuNul1FpVplKWsDoNiXQSWUTSPeHDs42mS-P5KYVOKwxDzpACy/gen272wb.jpg",
+"market_price": 140000,
+"median_sample_size": 5,
+"owners": 3,
+"owners_display": "3",
+"description": "Дополнительно: Продам ваз 2106, в хорошем состоянии, двигатель чуть-чуть дымит, пороги и дно целое. КПП 5 ст. Технически в отличном состоянии. На полном ходу. Торг у капота!!!",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-15T10:11:03.250128+00:00"
+},
+{
+"ad_id": "https://auto.drom.ru/voronezh/lada/priora/523969564.html",
+"brand": "Лада",
+"model": "Приора",
+"year": 2012,
+"price": 280000,
+"mileage_km": 189000,
+"price_rating": "хорошая цена",
+"url": "https://auto.drom.ru/voronezh/lada/priora/523969564.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/A8OuVn7E-5FGNHffF6ZgJ12NQkZarrli7soDPDsLjzTOxWm1I_sUJhmhqBclA9NRtB5WSx2UKA3kmW7q/gen272wb.jpg",
+"market_price": 345000,
+"median_sample_size": 11,
+"owners": 2,
+"owners_display": "2",
+"description": "Дополнительно: Продаю приору.\nМашина ухоженная, каждый день на ходу, двигатель работает ровно, коробка без нареканий. По подвеске ничего не стучит, едет бодро. Салон чистый и опрятный, музыка, сигнализация, стеклоподъёмники\n- всё для комфортной езды есть.\nПо кузову естькосметические моменты, ничего критичного. Документы в порядке, штрафов и запретов нет.\nОтличный вариант как для первой машины, так и для работы/повседневной езды.\nХороший торг у капота реальному покупателю.",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-15T10:11:03.250128+00:00"
+},
+{
 "ad_id": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
 "brand": "Opel",
 "model": "Astra",
@@ -8,7 +46,7 @@
 "mileage_km": 326000,
 "price_rating": "нормальная цена",
 "url": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
-"image_url": "https://s31.auto.drom.ru/photo/v2/HCtcuJ3kiR1cyV5oN1vWGiMdsrXQW6fNeSUNL41iuXkCSrZ9zsVV7iGXnjczoIBN-1QKZ8oLhMnzJtN1/gen272wb.jpg",
+"image_url": "https://s12.auto.drom.ru/photo/v2/HCtcuJ3kiR1cyV5oN1vWGiMdsrXQW6fNeSUNL41iuXkCSrZ9zsVV7iGXnjczoIBN-1QKZ8oLhMnzJtN1/gen272wb.jpg",
 "market_price": 455000,
 "median_sample_size": 6,
 "owners": 4,
@@ -16,6 +54,6 @@
 "description": "Дополнительно: Машина ухожена, коробка перебрана, подвеска перебрана.",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-10-15T06:56:23.788832+00:00"
+"seen_at": "2026-10-15T10:11:03.250128+00:00"
 }
 ]
