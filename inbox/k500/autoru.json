@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T21:05:51.858589+00:00"
+"seen_at": "2026-10-15T21:16:59.750379+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T21:05:51.858554+00:00"
+"seen_at": "2026-10-15T21:16:59.750345+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:51.858536+00:00"
+"seen_at": "2026-10-15T21:16:59.750326+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:51.858525+00:00"
+"seen_at": "2026-10-15T21:16:59.750314+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T21:05:51.858509+00:00"
+"seen_at": "2026-10-15T21:16:59.750298+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:51.858463+00:00"
+"seen_at": "2026-10-15T21:16:59.750251+00:00"
 },
 {
 "ad_id": "autoru_1160358845-f5838671",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:32.579272+00:00"
+"seen_at": "2026-10-15T21:16:46.231122+00:00"
 },
 {
 "ad_id": "autoru_1160328817-5f9734ed",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:32.579256+00:00"
+"seen_at": "2026-10-15T21:16:46.231108+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-10-15T21:05:32.579239+00:00"
+"seen_at": "2026-10-15T21:16:46.231094+00:00"
 },
 {
 "ad_id": "autoru_1160329518-08be40ca",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:32.579230+00:00"
+"seen_at": "2026-10-15T21:16:46.231084+00:00"
 },
 {
 "ad_id": "autoru_1160329564-bd95e7c2",
@@ -173,7 +173,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:32.579220+00:00"
+"seen_at": "2026-10-15T21:16:46.231074+00:00"
+},
+{
+"ad_id": "autoru_1134075323-e101d297",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2011,
+"price": 470000,
+"market_price": 406000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
+"mileage_km": 124370,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Подгорное",
+"seen_at": "2026-10-15T21:16:46.231062+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -189,23 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T21:05:32.579206+00:00"
-},
-{
-"ad_id": "autoru_1134075323-e101d297",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2011,
-"price": 470000,
-"market_price": 406000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160330536-a8ae7ea5/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
-"mileage_km": 124370,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Подгорное",
-"seen_at": "2026-10-15T21:05:32.579170+00:00"
+"seen_at": "2026-10-15T21:16:46.231031+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
