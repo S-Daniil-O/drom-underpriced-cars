@@ -8,28 +8,12 @@
 "price": 295000,
 "market_price": 104000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160313803-1d63b7f8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/8lPu871MLCKvV3-6svphCAy5czBD5UAYfpTvPoRxmfM0AU90vjLrQA3OaIqZ0Uo_erB7LHg09TVp6yKi550BDwZaCMw-ziMsCqCq_asqB1VEWHyApOxMRyXIE2EklEF8g3EwxVsY1PvLwUG_c9Gx1bNOzGaYwVtCrAFkPfSteLEVREw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2198920/dP0e-JOdggFHHSfGX3CnCPooocYsFVmLKJhm7oJQgnwbxwRxqv7YTJTU6uqeGRTK3mCq_-aJrV_BSEZPSquzxgkW_YyttpmohkzaZspIjJCW_6Zld9QYwlZDsDh_Uy1eRX486LaOnRLHMHOC25FcBSlNyNMJ7m-zPcDtw4iqqKEyEbU/1200x900n",
 "mileage_km": 89900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:05:05.157193+00:00"
-},
-{
-"ad_id": "autoru_1160319454-e0774d31",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 250000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160319454-e0774d31/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18068962/b972ff679e3a7012ffd2eb21333421bf/1200x900n",
-"mileage_km": 230000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-15T00:05:05.157167+00:00"
+"seen_at": "2026-10-15T00:16:23.906334+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:05:05.157151+00:00"
+"seen_at": "2026-10-15T00:16:23.906318+00:00"
 },
 {
 "ad_id": "autoru_1160315558-4e4d1c31",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:05:05.157140+00:00"
+"seen_at": "2026-10-15T00:16:23.906307+00:00"
 },
 {
 "ad_id": "autoru_1160318069-cc57835b",
@@ -77,23 +61,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:05:05.157120+00:00"
+"seen_at": "2026-10-15T00:16:23.906286+00:00"
+},
+{
+"ad_id": "autoru_1160319454-e0774d31",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2008,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160319454-e0774d31/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18068962/b972ff679e3a7012ffd2eb21333421bf/1200x900n",
+"mileage_km": 230000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-15T00:16:23.906260+00:00"
 },
 {
 "ad_id": "autoru_1160320347-3ee5f06f",
 "source": "autoru",
-"brand": "Opel",
-"model": "Astra",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
 "year": 2004,
 "price": 189000,
 "market_price": 68000,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160318290-257a0c59/",
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160320347-3ee5f06f/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/1698998/136e6b87017cf3c2a9e230090668ea23/1200x900n",
 "mileage_km": 78900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:05:05.157107+00:00"
+"seen_at": "2026-10-15T00:16:23.906245+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-15T00:05:05.157091+00:00"
+"seen_at": "2026-10-15T00:16:23.906227+00:00"
 },
 {
 "ad_id": "autoru_1160320937-c7b21bbc",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-15T00:05:05.157042+00:00"
+"seen_at": "2026-10-15T00:16:23.906177+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-15T00:04:43.717984+00:00"
+"seen_at": "2026-10-15T00:16:06.700403+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-15T00:04:43.717971+00:00"
+"seen_at": "2026-10-15T00:16:06.700389+00:00"
 },
 {
 "ad_id": "autoru_1160323678-ea35017d",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-15T00:04:43.717925+00:00"
+"seen_at": "2026-10-15T00:16:06.700337+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
