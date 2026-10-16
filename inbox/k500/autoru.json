@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418299+00:00"
+"seen_at": "2026-10-16T15:40:02.071616+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-16T15:28:57.418285+00:00"
+"seen_at": "2026-10-16T15:40:02.071601+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418264+00:00"
+"seen_at": "2026-10-16T15:40:02.071579+00:00"
 },
 {
 "ad_id": "autoru_1160328817-5f9734ed",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418236+00:00"
+"seen_at": "2026-10-16T15:40:02.071551+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-10-16T15:28:57.418218+00:00"
+"seen_at": "2026-10-16T15:40:02.071533+00:00"
 },
 {
 "ad_id": "autoru_1160329518-08be40ca",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418207+00:00"
+"seen_at": "2026-10-16T15:40:02.071521+00:00"
 },
 {
 "ad_id": "autoru_1160329564-bd95e7c2",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418195+00:00"
+"seen_at": "2026-10-16T15:40:02.071508+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -125,23 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:57.418160+00:00"
-},
-{
-"ad_id": "autoru_1134075323-e101d297",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2011,
-"price": 470000,
-"market_price": 406000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
-"mileage_km": 124370,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Подгорное",
-"seen_at": "2026-10-16T15:28:41.791300+00:00"
+"seen_at": "2026-10-16T15:40:02.071473+00:00"
 },
 {
 "ad_id": "autoru_1160370040-a130a88c",
@@ -157,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:41.791285+00:00"
+"seen_at": "2026-10-16T15:39:48.728175+00:00"
 },
 {
 "ad_id": "autoru_1160370494-e96bd2e0",
@@ -173,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T15:28:41.791254+00:00"
+"seen_at": "2026-10-16T15:39:48.728161+00:00"
+},
+{
+"ad_id": "autoru_1134075323-e101d297",
+"source": "autoru",
+"brand": "Kia",
+"model": "Spectra",
+"year": 2011,
+"price": 470000,
+"market_price": 406000,
+"url": "https://auto.ru/cars/used/sale/kia/spectra/1160368347-4bf944be/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
+"mileage_km": 124370,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Подгорное",
+"seen_at": "2026-10-16T15:39:48.728096+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
