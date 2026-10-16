@@ -4527,7 +4527,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/397085824.html": {
     "posted_at": "2026-10-13T21:21:34.752773+00:00",
     "message_id": 349,
-    "deleted_at": null,
+    "deleted_at": "2026-10-16T21:28:18.726410+00:00",
     "brand": "Лада",
     "model": "2114 Самара",
     "year": 2004,
@@ -4868,5 +4868,20 @@
     "mileage_km": 300000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/5DFDUzlR46i6BY5ZvYDPQgxoLnTbOIILLwWhgbn6Q9Gq2aKb9JK0stU8EqNvt1YWe6lRxeKk7JAs2pUk/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/731703666.html": {
+    "posted_at": "2026-10-16T21:31:38.663218+00:00",
+    "message_id": 372,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2000,
+    "price": 210000,
+    "median_price": 249000.0,
+    "median_sample_size": 1058,
+    "price_rating": "нормальная цена",
+    "mileage_km": 328000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/7Mjx4gEs5gyK9H3v7w_EDloLIhzdihtZeUdIbq4tYhVzOnsMDp4vAUMs--jTQZTVgfykuhhB_0PEQTbL/gen272wb.jpg"
   }
 }
