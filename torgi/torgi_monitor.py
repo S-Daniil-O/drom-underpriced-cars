@@ -651,6 +651,14 @@ def is_last_call(d):
     return hot_info(d)["days_left"] <= LAST_CALL_DAYS
 
 
+def deposit_short(text):
+    """«…задаток в размере 10% начальной цены… реквизиты…» → «10% от начальной цены» (без реквизитов)."""
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*%(?:\s*\([^)]*\))?\s*(от\s+)?((?:начальной|текущей|цены)[^.,;:]{0,60})?", text)
+    if m:
+        return f"{m.group(1)}% от " + (m.group(3) or "цены").strip()
+    return text[:80].rstrip() + "…"
+
+
 def requests_line(d):
     n = d.get("requests")
     if n is None:
@@ -679,7 +687,7 @@ def hot_caption(d):
         (f"Сейчас цена: {money(h['current_price'])}" + (f" (до {h['current_end']:%d.%m %H:%M})" if h["current_end"] else ""))
         if not in_min else None,
         f"Задаток на минимальной цене: {money(h['deposit'])}" if h.get("deposit") else
-        (f"Задаток: {d['deposit_info']}" if d.get("deposit_info") else None),
+        (f"Задаток: {deposit_short(d['deposit_info'])}" if d.get("deposit_info") else None),
         "",
         f"Рыночная цена: ~{money(d['market']['price'])} (Drom, медиана {d['market']['n']} похожих"
         + (f": {d['market']['matched']})" if d["market"].get("matched") else ")"),
