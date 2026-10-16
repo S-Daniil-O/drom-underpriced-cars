@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Семилуки",
-"seen_at": "2026-10-16T11:17:51.178809+00:00"
+"seen_at": "2026-10-16T11:29:07.872070+00:00"
 },
 {
 "ad_id": "autoru_1160324765-16b2aae7",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:51.178794+00:00"
+"seen_at": "2026-10-16T11:29:07.872054+00:00"
 },
 {
 "ad_id": "autoru_1160325779-39d14f2f",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:51.178784+00:00"
+"seen_at": "2026-10-16T11:29:07.872043+00:00"
 },
 {
 "ad_id": "autoru_1160325920-0d41e611",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-16T11:17:51.178770+00:00"
+"seen_at": "2026-10-16T11:29:07.872029+00:00"
 },
 {
 "ad_id": "autoru_1160326633-cfad292e",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:51.178749+00:00"
+"seen_at": "2026-10-16T11:29:07.872007+00:00"
 },
 {
 "ad_id": "autoru_1160328817-5f9734ed",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:51.178723+00:00"
+"seen_at": "2026-10-16T11:29:07.871977+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-10-16T11:17:51.178699+00:00"
+"seen_at": "2026-10-16T11:29:07.871952+00:00"
 },
 {
 "ad_id": "autoru_1160329518-08be40ca",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:51.178665+00:00"
+"seen_at": "2026-10-16T11:29:07.871917+00:00"
 },
 {
 "ad_id": "autoru_1160329564-bd95e7c2",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:31.826856+00:00"
+"seen_at": "2026-10-16T11:28:51.965311+00:00"
 },
 {
 "ad_id": "autoru_1134190951-1ba3caea",
@@ -157,39 +157,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:31.826845+00:00"
+"seen_at": "2026-10-16T11:28:51.965300+00:00"
 },
 {
 "ad_id": "autoru_1160358845-f5838671",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2109",
+"model": "2106",
 "year": 1995,
 "price": 200000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2109/1160330138-6796061f/",
+"url": "https://auto.ru/cars/used/sale/vaz/2106/1160358845-f5838671/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/5550926a60dd15a22009a885ee9a43b3/1200x900n",
 "mileage_km": 150000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:31.826835+00:00"
-},
-{
-"ad_id": "autoru_1134075323-e101d297",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2011,
-"price": 470000,
-"market_price": 406000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
-"mileage_km": 124370,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Подгорное",
-"seen_at": "2026-10-16T11:17:31.826812+00:00"
+"seen_at": "2026-10-16T11:28:51.965273+00:00"
 },
 {
 "ad_id": "autoru_1160370040-a130a88c",
@@ -205,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:31.826795+00:00"
+"seen_at": "2026-10-16T11:28:51.965249+00:00"
 },
 {
 "ad_id": "autoru_1160370494-e96bd2e0",
@@ -221,7 +205,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-16T11:17:31.826760+00:00"
+"seen_at": "2026-10-16T11:28:51.965235+00:00"
+},
+{
+"ad_id": "autoru_1134075323-e101d297",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2011,
+"price": 470000,
+"market_price": 406000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
+"mileage_km": 124370,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Подгорное",
+"seen_at": "2026-10-16T11:28:51.965203+00:00"
 },
 {
 "ad_id": "autoru_1160367474-05517fbb",
