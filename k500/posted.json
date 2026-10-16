@@ -4838,5 +4838,35 @@
     "mileage_km": 160000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/EutoyebnZPli01PIqtqLbJRMcrG7g6O-OUhuJho2bXBOxb6jyIfJuAS32hE5KdmHR6FqhM2TJvWsFB74/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/770159840.html": {
+    "posted_at": "2026-10-16T17:06:31.709560+00:00",
+    "message_id": 370,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2005,
+    "price": 100000,
+    "median_price": 135000,
+    "median_sample_size": 2033,
+    "price_rating": null,
+    "mileage_km": null,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Deel6vCIEZ6Z7gA0Rl5QKjzKOYek8tPo6VoBPbyZdIUJn_C47DO3TBU4oUbnkMisnTfKBWv2WeRCGeHF/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda3/606872969.html": {
+    "posted_at": "2026-10-16T17:06:45.736912+00:00",
+    "message_id": 371,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "year": 2004,
+    "price": 200000,
+    "median_price": 350000.0,
+    "median_sample_size": 684,
+    "price_rating": null,
+    "mileage_km": 300000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5DFDUzlR46i6BY5ZvYDPQgxoLnTbOIILLwWhgbn6Q9Gq2aKb9JK0stU8EqNvt1YWe6lRxeKk7JAs2pUk/gen272wb.jpg"
   }
 }
