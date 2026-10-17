@@ -1194,7 +1194,7 @@
   "_pitch_2026-10-14": {
     "posted_at": "2026-10-14T09:02:59.874611+00:00",
     "message_id": 166,
-    "deleted_at": null
+    "deleted_at": "2026-10-17T09:06:23.343082+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/kalina/808959344.html": {
     "posted_at": "2026-10-14T11:37:27.818888+00:00",
@@ -1341,5 +1341,10 @@
     "checked_at": "2026-10-17T08:09:55.370987+00:00",
     "vk_post_id": 143,
     "vk_deleted_at": null
+  },
+  "_pitch_2026-10-17": {
+    "posted_at": "2026-10-17T09:06:24.813604+00:00",
+    "message_id": 185,
+    "deleted_at": null
   }
 }
