@@ -4883,5 +4883,20 @@
     "mileage_km": 328000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/7Mjx4gEs5gyK9H3v7w_EDloLIhzdihtZeUdIbq4tYhVzOnsMDp4vAUMs--jTQZTVgfykuhhB_0PEQTbL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/639366262.html": {
+    "posted_at": "2026-10-17T05:18:31.430693+00:00",
+    "message_id": 373,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lacetti",
+    "year": 2007,
+    "price": 240000,
+    "median_price": 365000.0,
+    "median_sample_size": 2228,
+    "price_rating": null,
+    "mileage_km": 293000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/c1ZK7KA6lFVLDcdKP5f3fWk8-sFpB-DnYAMOIMgCy1mGN8seG11YWm0jWIMbztTtRXb5nirsXJrOFSue/gen272wb.jpg"
   }
 }
