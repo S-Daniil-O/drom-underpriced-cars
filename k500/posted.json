@@ -4913,5 +4913,35 @@
     "mileage_km": 215143,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/pU0YtvGEpxMilPEjfpLWyuRZ-AdNuQPhAiahqk3AjSurKtL_NeT3Q_ZXrCRlQ5smSl_dDU7OQ1gwRy2s/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/910851560.html": {
+    "posted_at": "2026-10-17T14:27:31.912130+00:00",
+    "message_id": 375,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2007,
+    "price": 125000,
+    "median_price": 219000,
+    "median_sample_size": 5419,
+    "price_rating": null,
+    "mileage_km": null,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/RSTUdc7Q_P5hDlcagycAdQx7YU1gOoJXjap3WFUsNBzjUVZXuR9YIHMrt3q0WdrEy2e-Gm_cOld8MUpS/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/802829176.html": {
+    "posted_at": "2026-10-17T14:27:34.519568+00:00",
+    "message_id": 376,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2004,
+    "price": 100000,
+    "median_price": 120000.0,
+    "median_sample_size": 2058,
+    "price_rating": null,
+    "mileage_km": 100000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/7IRuKaO-dL5bgkE2vFdz0YXU-w4fbo1bnsZZxma7e3VDMDxNGsWBfvZp-ez0ZFLsuIBFqsgsH4lAYiaz/gen272wb.jpg"
   }
 }
