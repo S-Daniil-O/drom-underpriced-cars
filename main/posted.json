@@ -2238,5 +2238,20 @@
     "mileage_km": 101000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20331633/c14663b9267310fca2211baea0e394d4/1200x900n"
+  },
+  "autoru_1160386830-7514358f": {
+    "posted_at": "2026-10-17T13:53:34.556177+00:00",
+    "message_id": 175,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "year": 2015,
+    "price": 750000,
+    "median_price": 1097000,
+    "median_sample_size": 7,
+    "price_rating": null,
+    "mileage_km": 320800,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17699914/d0a12bb3c268ab5c224b9db33fff9108/1200x900n"
   }
 }
