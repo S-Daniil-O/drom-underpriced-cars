@@ -13,71 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-10-17T00:04:26.597402+00:00"
-},
-{
-"ad_id": "autoru_1160365458-fa81f6d7",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Roomy",
-"year": 2025,
-"price": 1099999,
-"market_price": 1361500,
-"url": "https://auto.ru/cars/used/sale/toyota/roomy/1160365458-fa81f6d7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/bece98328c7c1cdb763fcde48afb85cb/1200x900n",
-"mileage_km": 1000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597384+00:00"
-},
-{
-"ad_id": "autoru_1160079726-839f733c",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera Classic",
-"year": 2011,
-"price": 600000,
-"market_price": 462500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160079726-839f733c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20793990/f6cfe6c0d9357fdbd857ab5de907d3d8/1200x900n",
-"mileage_km": 183000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-10-17T00:04:26.597370+00:00"
-},
-{
-"ad_id": "autoru_1160324237-fade6d4c",
-"source": "autoru",
-"brand": "Haval",
-"model": "M6",
-"year": 2022,
-"price": 1300000,
-"market_price": 1500000,
-"url": "https://auto.ru/cars/used/sale/haval/m6/1160324237-fade6d4c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18185687/de65a356d5cea55e46848604b99c266e/1200x900n",
-"mileage_km": 18000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597358+00:00"
-},
-{
-"ad_id": "autoru_1160367175-781cac9d",
-"source": "autoru",
-"brand": "Mazda",
-"model": "3",
-"year": 2010,
-"price": 950000,
-"market_price": 793500,
-"url": "https://auto.ru/cars/used/sale/mazda/3/1160367175-781cac9d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/fe892add85a30667389b70eb86481466/1200x900n",
-"mileage_km": 139000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597347+00:00"
+"seen_at": "2026-10-17T00:15:32.579842+00:00"
 },
 {
 "ad_id": "autoru_1160328498-d9ee269f",
@@ -93,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597332+00:00"
+"seen_at": "2026-10-17T00:15:32.579827+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -109,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-17T00:04:26.597319+00:00"
+"seen_at": "2026-10-17T00:15:32.579814+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -125,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597306+00:00"
+"seen_at": "2026-10-17T00:15:32.579801+00:00"
 },
 {
 "ad_id": "autoru_1160329986-2eed2964",
@@ -141,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597289+00:00"
+"seen_at": "2026-10-17T00:15:32.579784+00:00"
 },
 {
 "ad_id": "autoru_1160338031-99ed8ee3",
@@ -157,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-17T00:04:26.597258+00:00"
+"seen_at": "2026-10-17T00:15:32.579757+00:00"
 },
 {
 "ad_id": "autoru_1160349369-43118f20",
@@ -173,71 +109,87 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:26.597217+00:00"
+"seen_at": "2026-10-17T00:15:32.579741+00:00"
 },
 {
-"ad_id": "autoru_1133341220-636acd98",
+"ad_id": "autoru_1160365458-fa81f6d7",
 "source": "autoru",
-"brand": "BYD",
-"model": "Seagull",
-"year": 2023,
-"price": 1450000,
-"market_price": 1536000,
-"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
-"mileage_km": 40000,
+"brand": "Toyota",
+"model": "Roomy",
+"year": 2025,
+"price": 1099999,
+"market_price": 1361500,
+"url": "https://auto.ru/cars/used/sale/toyota/roomy/1160365458-fa81f6d7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/bece98328c7c1cdb763fcde48afb85cb/1200x900n",
+"mileage_km": 1000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451265+00:00"
+"seen_at": "2026-10-17T00:15:32.579725+00:00"
 },
 {
-"ad_id": "autoru_1133341291-005dd1d0",
+"ad_id": "autoru_1160079726-839f733c",
 "source": "autoru",
-"brand": "Changan",
-"model": "Benben E-Star",
-"year": 2022,
-"price": 1200000,
-"market_price": 890500,
-"url": "https://auto.ru/cars/used/sale/changan/benben_e_star/1133341291-005dd1d0/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/e217690d404957fccbfdf30d73e0b7de/1200x900n",
-"mileage_km": 35000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451254+00:00"
-},
-{
-"ad_id": "autoru_1160367581-0d7e8928",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2024,
-"price": 1250000,
-"market_price": 1049500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160367581-0d7e8928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/061ee97bfef83440491cd54995af2ed6/1200x900n",
-"mileage_km": 47504,
+"brand": "Nissan",
+"model": "Almera Classic",
+"year": 2011,
+"price": 600000,
+"market_price": 462500,
+"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160079726-839f733c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20793990/f6cfe6c0d9357fdbd857ab5de907d3d8/1200x900n",
+"mileage_km": 183000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-10-17T00:15:32.579709+00:00"
+},
+{
+"ad_id": "autoru_1160324237-fade6d4c",
+"source": "autoru",
+"brand": "Haval",
+"model": "M6",
+"year": 2022,
+"price": 1300000,
+"market_price": 1500000,
+"url": "https://auto.ru/cars/used/sale/haval/m6/1160324237-fade6d4c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18185687/de65a356d5cea55e46848604b99c266e/1200x900n",
+"mileage_km": 18000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451236+00:00"
+"seen_at": "2026-10-17T00:15:32.579694+00:00"
+},
+{
+"ad_id": "autoru_1160367175-781cac9d",
+"source": "autoru",
+"brand": "Mazda",
+"model": "3",
+"year": 2010,
+"price": 950000,
+"market_price": 793500,
+"url": "https://auto.ru/cars/used/sale/mazda/3/1160367175-781cac9d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/fe892add85a30667389b70eb86481466/1200x900n",
+"mileage_km": 139000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-17T00:15:32.579660+00:00"
 },
 {
 "ad_id": "autoru_1160372208-fcc41eaa",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
+"brand": "Kia",
+"model": "Carnival",
 "year": 2021,
 "price": 720000,
 "market_price": 592000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160372208-fcc41eaa/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20976236/CF4mhNMRsXDBtiNZBaUoC1QCzt7KwbTNJ-mo6tUbglK9cOdzGg57KAzJnCefxfEoVS-nZaBOvRp7UyUszTW2HBmqZH8lPzaDKORroxP9J9kmmiXZ469DgDhI0WDaRtI2SVz0d7XI0lUGUT_QvXCyKQ-j3SAlwENf_Y9AOZVqSYqn/1200x900n",
+"url": "https://auto.ru/cars/used/sale/kia/carnival/1160367240-acf81223/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20976236/uAb8GKDeya9HyjzLQWvIDZNj1eEhtGQDAiwNl_jnkZkgw5_oTV6KOXSPDQppXgGfXe8WfIrGr-0v-_MUL8qC4nzbL7V3_GdOhpfKLkJL2Zsf7mCnl0a6XIPdAkrICfRCwdifWoBZs-6IIZc-QdehKdkjb37VwDyGiRPiXhtYAEGMHz8/1200x900n",
 "mileage_km": 85000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-17T00:04:11.451222+00:00"
+"seen_at": "2026-10-17T00:15:19.508237+00:00"
 },
 {
 "ad_id": "autoru_1160372374-683ee8b4",
@@ -253,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451212+00:00"
+"seen_at": "2026-10-17T00:15:19.508228+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -269,23 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451200+00:00"
-},
-{
-"ad_id": "autoru_1160184537-ea0b50ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva Travel",
-"year": 2023,
-"price": 1050777,
-"market_price": 822500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
-"mileage_km": 56000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новая Усмань",
-"seen_at": "2026-10-17T00:04:11.451190+00:00"
+"seen_at": "2026-10-17T00:15:19.508218+00:00"
 },
 {
 "ad_id": "autoru_1160377468-22286fa0",
@@ -301,23 +237,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451170+00:00"
+"seen_at": "2026-10-17T00:15:19.508199+00:00"
+},
+{
+"ad_id": "autoru_1133341220-636acd98",
+"source": "autoru",
+"brand": "BYD",
+"model": "Seagull",
+"year": 2023,
+"price": 1450000,
+"market_price": 1536000,
+"url": "https://auto.ru/cars/used/sale/byd/seagull/1133341220-636acd98/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/1e1e9543a23a26f841cf69651432ae49/1200x900n",
+"mileage_km": 40000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-17T00:15:19.508185+00:00"
+},
+{
+"ad_id": "autoru_1133341291-005dd1d0",
+"source": "autoru",
+"brand": "Changan",
+"model": "Benben E-Star",
+"year": 2022,
+"price": 1200000,
+"market_price": 890500,
+"url": "https://auto.ru/cars/used/sale/changan/benben_e_star/1133341291-005dd1d0/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/e217690d404957fccbfdf30d73e0b7de/1200x900n",
+"mileage_km": 35000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-17T00:15:19.508170+00:00"
 },
 {
 "ad_id": "autoru_1160186417-16ac43ca",
 "source": "autoru",
-"brand": "Ford",
-"model": "Focus",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
 "year": 2018,
 "price": 1320000,
 "market_price": 983500,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160186417-16ac43ca/",
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160372208-fcc41eaa/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20315033/de09b4d899928d8e3d5634f88d50e4fc/1200x900n",
 "mileage_km": 133065,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451158+00:00"
+"seen_at": "2026-10-17T00:15:19.508149+00:00"
 },
 {
 "ad_id": "autoru_1160378428-6e23d938",
@@ -333,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Эртиль",
-"seen_at": "2026-10-17T00:04:11.451148+00:00"
+"seen_at": "2026-10-17T00:15:19.508140+00:00"
 },
 {
 "ad_id": "autoru_1160157737-0f3a2888",
@@ -349,7 +317,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451138+00:00"
+"seen_at": "2026-10-17T00:15:19.508130+00:00"
 },
 {
 "ad_id": "autoru_1160378771-5a31ecea",
@@ -365,7 +333,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451127+00:00"
+"seen_at": "2026-10-17T00:15:19.508120+00:00"
 },
 {
 "ad_id": "autoru_1160379852-55c21251",
@@ -381,7 +349,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-17T00:04:11.451110+00:00"
+"seen_at": "2026-10-17T00:15:19.508107+00:00"
 },
 {
 "ad_id": "autoru_1160379902-518143c9",
@@ -392,12 +360,12 @@
 "price": 1450000,
 "market_price": 1097500,
 "url": "https://auto.ru/cars/used/sale/mitsubishi/outlander/1160379902-518143c9/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17435526/-AogFO_MmCiiNRtilbHEyyaaS9J5oAeMnBI10CwoWnFDap2zE_16Phz0vJ8YfBi02Bw-WTut3Us30a1tTyWqbQnpk8RbKNxz_umY9okrg3cDEY1X82P4hm4OF0sxU8qpYzpdAR6PEVvVCtzlPJlle475VdVrqZIWdnXMGFATetg8vVU/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17435526/t0Xpn2nt9wRiMoUeZWKtldqjpAdIQgW5_sQCpk1jSUbX6mIFeJOJkoyggxBG2KNRZmr__P_ccNEInX_GQdKEJJm07POeMABynr2pTLiOCsPG_FWb8bjRqNA23Uu6oIKsXF91XJM428b_BvEFmhpLrxgHUyZqSWN58THps_rP0THsi0s/1200x900n",
 "mileage_km": 98000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-10-17T00:04:11.451094+00:00"
+"seen_at": "2026-10-17T00:15:19.508096+00:00"
 },
 {
 "ad_id": "autoru_1133735127-50323504",
@@ -413,7 +381,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-17T00:04:11.451042+00:00"
+"seen_at": "2026-10-17T00:15:19.508084+00:00"
+},
+{
+"ad_id": "autoru_1160367581-0d7e8928",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2024,
+"price": 1250000,
+"market_price": 1049500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160367581-0d7e8928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/061ee97bfef83440491cd54995af2ed6/1200x900n",
+"mileage_km": 47504,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-17T00:15:19.508067+00:00"
+},
+{
+"ad_id": "autoru_1160184537-ea0b50ee",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva Travel",
+"year": 2023,
+"price": 1050777,
+"market_price": 822500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
+"mileage_km": 56000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новая Усмань",
+"seen_at": "2026-10-17T00:15:19.508008+00:00"
 },
 {
 "ad_id": "autoru_1160325502-4136a5a4",
