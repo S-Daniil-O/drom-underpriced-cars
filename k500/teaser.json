@@ -1323,5 +1323,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-10-16T22:31:25.932307+00:00"
+  },
+  "autoru_1160381172-b80eaa6e": {
+    "posted_at": "2026-10-17T01:02:56.619433+00:00",
+    "message_id": 182,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-17T01:02:56.619433+00:00",
+    "vk_post_id": 142,
+    "vk_deleted_at": null
   }
 }
