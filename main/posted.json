@@ -2268,5 +2268,20 @@
     "mileage_km": 209000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/7VaVmqSGhg3fjBhcO9154zOYk5b8TxUcTe-FazOG6RcdUqP0L1Dq56aSuS_XWTHTBeZa1h9Bh-dSZF-y/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra/455347078.html": {
+    "posted_at": "2026-10-17T22:50:13.774794+00:00",
+    "message_id": 177,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra",
+    "year": 2011,
+    "price": 580000,
+    "median_price": 705000,
+    "median_sample_size": 14,
+    "price_rating": "хорошая цена",
+    "mileage_km": 223850,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/JXO4kVsIrDWa59jevVBBhqCLEpf5j4sNQ6h8So5-5eDv0SBShjfF6lko8kfXvlzDgzi3C1rK4PxIZ33p/gen272wb.jpg"
   }
 }
