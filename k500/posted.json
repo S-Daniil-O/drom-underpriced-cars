@@ -5033,5 +5033,20 @@
     "mileage_km": 76225,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20104625/0bc865235d082dae39cb360e17ab01d5/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/650416217.html": {
+    "posted_at": "2026-10-18T21:25:45.985937+00:00",
+    "message_id": 383,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2005,
+    "price": 200000,
+    "median_price": 250000.0,
+    "median_sample_size": 466,
+    "price_rating": "нормальная цена",
+    "mileage_km": 177000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Zcr75HF5C2s8-NmhGq766QSTNFX7rOKnfYrOcrtHF8CCPTFuLUZR4Uf8paXbVfsiSA7KfsWDcXkTgfAC/gen272wb.jpg"
   }
 }

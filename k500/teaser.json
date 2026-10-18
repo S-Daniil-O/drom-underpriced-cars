@@ -1391,5 +1391,21 @@
     "checked_at": "2026-10-18T16:13:08.740118+00:00",
     "vk_post_id": 149,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/522575912.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-18T21:26:01.688638+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/129626194.html": {
+    "posted_at": "2026-10-18T21:28:25.570296+00:00",
+    "message_id": 194,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-18T21:28:25.570296+00:00",
+    "vk_post_id": 150,
+    "vk_deleted_at": null
   }
 }
