@@ -4988,5 +4988,20 @@
     "mileage_km": 218354,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20849947/3b564851e09f122fdb204c433edbc554/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/kia/spectra/533191370.html": {
+    "posted_at": "2026-10-18T07:06:59.061345+00:00",
+    "message_id": 380,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Spectra",
+    "year": 2006,
+    "price": 180000,
+    "median_price": 498000,
+    "median_sample_size": 1425,
+    "price_rating": null,
+    "mileage_km": 372000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/W0H_TZyOoaZG_PQnnXpvVowBXGy5r3rwQaUCt0ElqU7yAHe-bCMVNdeOXFip2ThtHbq6p18pNkWrvZum/gen272wb.jpg"
   }
 }
