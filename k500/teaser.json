@@ -1373,5 +1373,14 @@
     "posted_at": "2026-10-18T09:05:57.182279+00:00",
     "message_id": 190,
     "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/ford/mondeo/270271108.html": {
+    "posted_at": "2026-10-18T11:40:10.200346+00:00",
+    "message_id": 192,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-18T11:40:10.200346+00:00",
+    "vk_post_id": 148,
+    "vk_deleted_at": null
   }
 }

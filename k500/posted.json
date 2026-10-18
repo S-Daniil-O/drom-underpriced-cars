@@ -5003,5 +5003,20 @@
     "mileage_km": 372000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/W0H_TZyOoaZG_PQnnXpvVowBXGy5r3rwQaUCt0ElqU7yAHe-bCMVNdeOXFip2ThtHbq6p18pNkWrvZum/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/mondeo/270271108.html": {
+    "posted_at": "2026-10-18T11:29:50.547604+00:00",
+    "message_id": 381,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Mondeo",
+    "year": 1998,
+    "price": 105000,
+    "median_price": 130000,
+    "median_sample_size": 1365,
+    "price_rating": "отличная цена",
+    "mileage_km": 350000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/fn4D9Smu9kDEkD8AkgvwBm1OxSix_wZRi60nyDgYQnhDoMycC3GBe12vj7HZ3ViltbWNYY-cZuiEUaWB/gen272wb.jpg"
   }
 }
