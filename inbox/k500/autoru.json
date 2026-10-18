@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:57.226345+00:00"
+"seen_at": "2026-10-18T05:05:08.506590+00:00"
 },
 {
 "ad_id": "autoru_1160370494-e96bd2e0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:57.226328+00:00"
+"seen_at": "2026-10-18T05:05:08.506572+00:00"
 },
 {
 "ad_id": "autoru_1160381172-b80eaa6e",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-18T04:53:57.226260+00:00"
+"seen_at": "2026-10-18T05:05:08.506495+00:00"
 },
 {
 "ad_id": "autoru_1120669147-c41e6cc8",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-18T04:53:40.601582+00:00"
+"seen_at": "2026-10-18T05:04:53.017722+00:00"
 },
 {
 "ad_id": "autoru_1160381611-3aea8888",
@@ -72,12 +72,12 @@
 "price": 290000,
 "market_price": 284500,
 "url": "https://auto.ru/cars/used/sale/vaz/2121/1160381611-3aea8888/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/snvL1wENXcFh-cPbqb7TpJvOLYGVmzTRVIMJ14RtY20MO3bnIBHitv9qmTmOHiE_XYEVggimEbdI-8mUxhcZkIYx0n-kcqknZs7X2cAsduBTPS4w95XKsOdPIDBauqMa550iE5AW0jPDBOE_H0p2G5TF-EL40yv582Rq9pgsIQSkAP0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/6XF3U2ImCqj-ROOISTsOx5ARYa5BWcBynfXPlFVMs9R3mn0HvMu7p062RKlqA6QYR66gEE0R8nZ7oAg0Ls7aIZnTr7WrouI16liNGNd3cWYgspG5L15ofXkpcrIsuq9yXVOV_htn1yQgcJOEuY4GlUyXdOCK9jC8yD3V1-NIPuUuWK4/1200x900n",
 "mileage_km": 15000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:40.601573+00:00"
+"seen_at": "2026-10-18T05:04:53.017712+00:00"
 },
 {
 "ad_id": "autoru_1160382598-750f80d0",
@@ -93,23 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:40.601559+00:00"
-},
-{
-"ad_id": "autoru_1134075323-e101d297",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2011,
-"price": 470000,
-"market_price": 406000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
-"mileage_km": 124370,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Подгорное",
-"seen_at": "2026-10-18T04:53:40.601544+00:00"
+"seen_at": "2026-10-18T05:04:53.017697+00:00"
 },
 {
 "ad_id": "autoru_1160386233-bf694cb5",
@@ -125,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:40.601528+00:00"
+"seen_at": "2026-10-18T05:04:53.017677+00:00"
 },
 {
 "ad_id": "autoru_1160387040-089e60ed",
@@ -141,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:40.601508+00:00"
+"seen_at": "2026-10-18T05:04:53.017658+00:00"
 },
 {
 "ad_id": "autoru_1160388857-72818033",
@@ -157,6 +141,22 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T04:53:40.601470+00:00"
+"seen_at": "2026-10-18T05:04:53.017643+00:00"
+},
+{
+"ad_id": "autoru_1134075323-e101d297",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2011,
+"price": 470000,
+"market_price": 406000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1134075323-e101d297/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2142578/92dd637510b3c46d6299297c76bcb298/1200x900n",
+"mileage_km": 124370,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Подгорное",
+"seen_at": "2026-10-18T05:04:53.017598+00:00"
 }
 ]
