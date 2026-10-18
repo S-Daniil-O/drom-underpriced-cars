@@ -1,51 +1,19 @@
 [
 {
-"ad_id": "autoru_1160386233-bf694cb5",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 1996,
-"price": 130000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160386233-bf694cb5/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/15268379/0534aadb0099dacdf6deb2ee5c8148dc/1200x900n",
-"mileage_km": 272700,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-18T16:19:58.642898+00:00"
-},
-{
-"ad_id": "autoru_1160387040-089e60ed",
+"ad_id": "autoru_1160381172-b80eaa6e",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
 "model": "2107",
-"year": 2009,
-"price": 205000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160387040-089e60ed/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/01ebf01c113113c54bfc2ed654f9cd4f/1200x900n",
-"mileage_km": 69570,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-18T16:19:58.642876+00:00"
-},
-{
-"ad_id": "autoru_1160381172-b80eaa6e",
-"source": "autoru",
-"brand": "Honda",
-"model": "Civic",
 "year": 2006,
 "price": 90000,
 "market_price": 77500,
-"url": "https://auto.ru/cars/used/sale/honda/civic/1134039450-7d8c289f/",
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160381172-b80eaa6e/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20360782/ae8dd22c2f3c8215b653679d267be84f/1200x900n",
 "mileage_km": 90000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-18T16:19:58.642866+00:00"
+"seen_at": "2026-10-18T16:31:09.729115+00:00"
 },
 {
 "ad_id": "autoru_1120669147-c41e6cc8",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-18T16:19:58.642854+00:00"
+"seen_at": "2026-10-18T16:31:09.729105+00:00"
 },
 {
 "ad_id": "autoru_1160381611-3aea8888",
@@ -72,12 +40,12 @@
 "price": 290000,
 "market_price": 284500,
 "url": "https://auto.ru/cars/used/sale/vaz/2121/1160381611-3aea8888/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/szmpgJHswWy2C-EBbKInbWiNrzUGQaBUeFJzVDTJpm-N-BZTLXwvmD9Nsf-8yH_9wO1q-eFRe8mQJike7cnocxQiB-iKQpCd0B850XBQyZ9HLpiqvU70RRZl4561nidBTtLXTRmm8r4t6Ljzb5UEzFaJWcQ4AhqcjKe9k0gF9jdh9w/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/nWnPXR5NMahfUskET0BASrAhS2wBpOjv21a5-RkPO89dpv_u6xmvQSpoxJm0aZqRV0zLcZeT3oLkAKBAZoX9BGu4EzMLR3nD2eDxoet0GyQskq5zK6PoYMOl3SglE9ekeZz1vdHGfEOyKvFJTIlV5MZAl7YgkajFyqT2efj4wienLQ/1200x900n",
 "mileage_km": 15000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:58.642842+00:00"
+"seen_at": "2026-10-18T16:31:09.729094+00:00"
 },
 {
 "ad_id": "autoru_1160382598-750f80d0",
@@ -93,7 +61,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:58.642824+00:00"
+"seen_at": "2026-10-18T16:31:09.729078+00:00"
+},
+{
+"ad_id": "autoru_1160386233-bf694cb5",
+"source": "autoru",
+"brand": "Opel",
+"model": "Astra",
+"year": 1996,
+"price": 130000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160386233-bf694cb5/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/15268379/0534aadb0099dacdf6deb2ee5c8148dc/1200x900n",
+"mileage_km": 272700,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-18T16:31:09.729056+00:00"
+},
+{
+"ad_id": "autoru_1160387040-089e60ed",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2009,
+"price": 205000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160387040-089e60ed/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/01ebf01c113113c54bfc2ed654f9cd4f/1200x900n",
+"mileage_km": 69570,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-18T16:31:09.729034+00:00"
 },
 {
 "ad_id": "autoru_1160388857-72818033",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:58.642775+00:00"
+"seen_at": "2026-10-18T16:31:09.728995+00:00"
 },
 {
 "ad_id": "autoru_1160391249-9328791b",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:39.028050+00:00"
+"seen_at": "2026-10-18T16:30:51.346239+00:00"
 },
 {
 "ad_id": "autoru_1160391510-4ab88bb0",
@@ -136,44 +136,12 @@
 "price": 250000,
 "market_price": 84000,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160391510-4ab88bb0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/e53S8PCXuNU0b1IfXCQKInQ8fwCRJ_ut0WJMfQ4xHPGq8WunrD9hKnj9Taf-VZeNNZyBUyOsW8vE2EFn93h-6u5oz-95S2qDBZFR1IF4o7NrBzRkJHj9oAQFo-_D7R97QTvhjIvVMO4bjW_blfSKRQJ8kxEBwqze-3DK39FHWEpYbkg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/RYwEAwXofSX9ItXRcZ8ds3Q6VoO4iFXAA0-S0HpBzxzwqR1J_0kTDn_oEbUKC-W8Bc_dGhPq6LOrXydSwQxKMjExg6CvPu47JffV2eeQ9Q5x5tKr6W6y4hxDj15eduCTDxMDUDa1QYErAg5Uy2AhFgOklnugtlPjLyGQcD9dFjRjUHE/1200x900n",
 "mileage_km": 95600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:39.028038+00:00"
-},
-{
-"ad_id": "autoru_1160394176-9ef7f0d3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2010,
-"price": 400000,
-"market_price": 205000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160394176-9ef7f0d3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20894132/6d7cbe9c671de16ad8e8680d3eea08f3/1200x900n",
-"mileage_km": 237000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-18T16:19:39.028024+00:00"
-},
-{
-"ad_id": "autoru_1160394368-b25bb00c",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Aveo",
-"year": 2008,
-"price": 380000,
-"market_price": 233000,
-"url": "https://auto.ru/cars/used/sale/chevrolet/aveo/1160394368-b25bb00c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19394128/a9ff3882efe886edfa6f96d03f091f1a/1200x900n",
-"mileage_km": 231205,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-18T16:19:39.028009+00:00"
+"seen_at": "2026-10-18T16:30:51.346229+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -189,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-18T16:19:39.027983+00:00"
+"seen_at": "2026-10-18T16:30:51.346217+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
@@ -205,7 +173,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T16:19:39.027927+00:00"
+"seen_at": "2026-10-18T16:30:51.346202+00:00"
+},
+{
+"ad_id": "autoru_1160394176-9ef7f0d3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2010,
+"price": 400000,
+"market_price": 205000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160394176-9ef7f0d3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20894132/6d7cbe9c671de16ad8e8680d3eea08f3/1200x900n",
+"mileage_km": 237000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-18T16:30:51.346183+00:00"
+},
+{
+"ad_id": "autoru_1160394368-b25bb00c",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Aveo",
+"year": 2008,
+"price": 380000,
+"market_price": 233000,
+"url": "https://auto.ru/cars/used/sale/chevrolet/aveo/1160394368-b25bb00c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19394128/a9ff3882efe886edfa6f96d03f091f1a/1200x900n",
+"mileage_km": 231205,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-18T16:30:51.346149+00:00"
 },
 {
 "ad_id": "autoru_1160395154-a11c002a",
