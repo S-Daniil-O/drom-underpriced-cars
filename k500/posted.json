@@ -4752,7 +4752,7 @@
   "https://auto.drom.ru/voronezh/chevrolet/aveo/162967247.html": {
     "posted_at": "2026-10-15T21:27:49.359325+00:00",
     "message_id": 364,
-    "deleted_at": null,
+    "deleted_at": "2026-10-18T21:37:27.742492+00:00",
     "brand": "Chevrolet",
     "model": "Aveo",
     "year": 2006,
@@ -4767,7 +4767,7 @@
   "https://auto.drom.ru/voronezh/renault/sandero/124520587.html": {
     "posted_at": "2026-10-15T21:27:54.715570+00:00",
     "message_id": 365,
-    "deleted_at": null,
+    "deleted_at": "2026-10-18T21:37:29.171537+00:00",
     "brand": "Renault",
     "model": "Sandero",
     "year": 2010,
@@ -5048,5 +5048,20 @@
     "mileage_km": 177000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/Zcr75HF5C2s8-NmhGq766QSTNFX7rOKnfYrOcrtHF8CCPTFuLUZR4Uf8paXbVfsiSA7KfsWDcXkTgfAC/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/778563661.html": {
+    "posted_at": "2026-10-18T21:40:56.998079+00:00",
+    "message_id": 384,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2009,
+    "price": 220000,
+    "median_price": 320000,
+    "median_sample_size": 427,
+    "price_rating": null,
+    "mileage_km": 296000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/2JlCFmPKBXGyRCKZbO1Es7rzI_SUPrk1fOMkiiGxUW91QvzwSEujK81MiTEq1PjLj-3jBw9YQKJd6LRA/gen272wb.jpg"
   }
 }
