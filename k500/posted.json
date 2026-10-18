@@ -4958,5 +4958,20 @@
     "mileage_km": 210369,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/At1ecSWXGpM6bzzz1fbcs1njcHKSMuN1TGLxDtK03eA_-HTJZ8cIuKTxJQxKyKERdt8iorimwOoSyY65/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/21099/891351860.html": {
+    "posted_at": "2026-10-18T01:34:28.444516+00:00",
+    "message_id": 378,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "21099",
+    "year": 2001,
+    "price": 120000,
+    "median_price": 183000,
+    "median_sample_size": 117,
+    "price_rating": "нормальная цена",
+    "mileage_km": 250000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/aFCSxlW7WGrVyYodBKEMiHNnQFwiIrJwZ00zKXRdt5sngeldW8apGxiAUnVivPZ4yjKpQgzzpyiogX5w/gen272wb.jpg"
   }
 }
