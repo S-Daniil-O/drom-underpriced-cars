@@ -5108,5 +5108,35 @@
     "mileage_km": 181759,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/M3SXGGoaYJVlRjoHPNfGT9MltqJmQo3accEVpVzDJoYZMmnZGg7Uwx3aEc6Q4vPDgKUwMzOS6tZX6ekM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/814557771.html": {
+    "posted_at": "2026-10-19T12:33:50.285176+00:00",
+    "message_id": 388,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2007,
+    "price": 150000,
+    "median_price": 180000,
+    "median_sample_size": 10,
+    "price_rating": "нормальная цена",
+    "mileage_km": 245000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/w8K0qZs29bWnOsQn_qaIjWIW952uwPt12bG36dDQJBmRB2d7swKc3Qwgtk81crWqm4CFNbPTy_R8aTsM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/763902887.html": {
+    "posted_at": "2026-10-19T12:33:52.242530+00:00",
+    "message_id": 389,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2011,
+    "price": 130000,
+    "median_price": 157500,
+    "median_sample_size": 12,
+    "price_rating": null,
+    "mileage_km": 260000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/j0K4-lWNCIKgAtJWmi-khSJE2iiuSS_0P7M4Z-um6FrT_aEzeU8q2W9F5hAZjoQTqL7bHT8fU9r2Hl5D/gen272wb.jpg"
   }
 }
