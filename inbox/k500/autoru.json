@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572328+00:00"
+"seen_at": "2026-10-19T04:40:50.485067+00:00"
 },
 {
 "ad_id": "autoru_1160386233-bf694cb5",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572304+00:00"
+"seen_at": "2026-10-19T04:40:50.485046+00:00"
 },
 {
 "ad_id": "autoru_1160387040-089e60ed",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572283+00:00"
+"seen_at": "2026-10-19T04:40:50.485028+00:00"
 },
 {
 "ad_id": "autoru_1160388857-72818033",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572268+00:00"
+"seen_at": "2026-10-19T04:40:50.485012+00:00"
 },
 {
 "ad_id": "autoru_1160391249-9328791b",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572241+00:00"
+"seen_at": "2026-10-19T04:40:50.484987+00:00"
 },
 {
 "ad_id": "autoru_1160391510-4ab88bb0",
@@ -88,12 +88,12 @@
 "price": 250000,
 "market_price": 84000,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160391510-4ab88bb0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/vTflOx6JcWKG3tJkVsnoTylU1Qy3LfNCD90U6aCHm7QTI4IU_IjJaHQvArQSNMsehQVhyHWAcplaIkGWReLCi68_-eBG-SoEoWaMi2p_iqkH_cGeqPDVPjfKEwcc6joLGrQ4IH1ib01XVUlElRMNTAaK2hgFi00ZC5STQ_43v0uyyg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/hbkUTCrTKH7JUVjF-mwuIl7ETkoE0tESeAFcxsbGtXje6sMrRsSHjITWYrRRjQh4Tbw6Oc9Nn1UPlYDwA0WDzIG_MaCS_weN_5RVcnTc6KiyPAHq84YAN66GYpKwrULlN0PQOZL5xOGhvCfW7B1jUVD1MvRZt07NVNjMy9SabqzIk8A/1200x900n",
 "mileage_km": 95600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:36.572228+00:00"
+"seen_at": "2026-10-19T04:40:50.484972+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,23 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-19T04:29:36.572188+00:00"
-},
-{
-"ad_id": "autoru_1160393160-cecf45b4",
-"source": "autoru",
-"brand": "Renault",
-"model": "Kangoo",
-"year": 2002,
-"price": 385000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
-"mileage_km": 257000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-19T04:29:21.803871+00:00"
+"seen_at": "2026-10-19T04:40:50.484932+00:00"
 },
 {
 "ad_id": "autoru_1160394176-9ef7f0d3",
@@ -141,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:21.803856+00:00"
+"seen_at": "2026-10-19T04:40:33.377464+00:00"
 },
 {
 "ad_id": "autoru_1160394368-b25bb00c",
@@ -157,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:21.803844+00:00"
+"seen_at": "2026-10-19T04:40:33.377453+00:00"
 },
 {
 "ad_id": "autoru_1160399076-80caffb0",
@@ -173,7 +157,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T04:29:21.803788+00:00"
+"seen_at": "2026-10-19T04:40:33.377412+00:00"
+},
+{
+"ad_id": "autoru_1160393160-cecf45b4",
+"source": "autoru",
+"brand": "Renault",
+"model": "Kangoo",
+"year": 2002,
+"price": 385000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
+"mileage_km": 257000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-19T04:40:33.377373+00:00"
 },
 {
 "ad_id": "autoru_1160381611-3aea8888",
