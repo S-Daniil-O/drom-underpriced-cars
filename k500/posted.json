@@ -5153,5 +5153,20 @@
     "mileage_km": 333333,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/CmlNGmD5f6VYBDAvvANWVW_uxI-C5Kg0SKQeJpu-DTQSG4Ez_dDr_X7Tc-zoXoEyJOHbuNwYUQnOXC6a/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/elantra/856595483.html": {
+    "posted_at": "2026-10-19T16:55:30.924535+00:00",
+    "message_id": 391,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2003,
+    "price": 210000,
+    "median_price": 250000.0,
+    "median_sample_size": 88,
+    "price_rating": "хорошая цена",
+    "mileage_km": 347498,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/CusnCK-VAS__PvvDKjSHczXdlS1GJNg8LlxZ7y_UyyyWXo_wrp4HmOSBg9bo03t8HTgNfwNYMZ324Tv5/gen272wb.jpg"
   }
 }
