@@ -5183,5 +5183,35 @@
     "mileage_km": 150000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/Tlgwv67chbvRbc_ZQ4jj7AgOL3DbgNvoiHiWnz3J7m_eOSDfRNSQnJ_r8x1xGy7hj3F8R9qLLd18dMjM/gen272wb.jpg"
+  },
+  "autoru_1160413872-5ff210fd": {
+    "posted_at": "2026-10-19T19:11:00.164332+00:00",
+    "message_id": 393,
+    "deleted_at": null,
+    "brand": "Datsun",
+    "model": "on-DO",
+    "year": 2015,
+    "price": 320000,
+    "median_price": 405000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 188000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/c2b2e3dd5a2395ac55a2c93022df248c/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/762080859.html": {
+    "posted_at": "2026-10-19T19:11:04.321107+00:00",
+    "message_id": 394,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2021,
+    "price": 350000,
+    "median_price": 470000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 258000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/FLBNFlCQArS7dYNahZdqkV4JPqIlvwTv4jFjW0ZDqiERY-DkvEkTTewz35AsuDOv_gT8epZVAOuyqWmJ/gen272wb.jpg"
   }
 }
