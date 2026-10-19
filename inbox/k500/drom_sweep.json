@@ -1,5 +1,24 @@
 [
 {
+"ad_id": "https://auto.drom.ru/voronezh/lada/granta/762080859.html",
+"brand": "Лада",
+"model": "Гранта",
+"year": 2021,
+"price": 350000,
+"mileage_km": 258000,
+"price_rating": null,
+"url": "https://auto.drom.ru/voronezh/lada/granta/762080859.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/FLBNFlCQArS7dYNahZdqkV4JPqIlvwTv4jFjW0ZDqiERY-DkvEkTTewz35AsuDOv_gT8epZVAOuyqWmJ/gen272wb.jpg",
+"market_price": 470000,
+"median_sample_size": 5,
+"owners": 3,
+"owners_display": "3",
+"description": "Дополнительно: БЕЗ ТОРГА...\n\nНОВОЕ СЦЕПЛЕНИЕ, КОРОБКА ПОСЛЕ КАП. РЕМОНТА.\n\nПО КУЗОВУ ЕСТЬ НЕДОСТАТКИ НА ЕЗДУ НЕ ВЛИЯЕТ, ПОЭТОМУ И ЦЕНА НИЖЕ РЫНКА...\n\nДОКУМЕНТЫ В ПОРЯДКЕ..",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-19T18:55:48.922155+00:00"
+},
+{
 "ad_id": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
 "brand": "Opel",
 "model": "Astra",
@@ -8,7 +27,7 @@
 "mileage_km": 326000,
 "price_rating": "нормальная цена",
 "url": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
-"image_url": "https://s31.auto.drom.ru/photo/v2/HCtcuJ3kiR1cyV5oN1vWGiMdsrXQW6fNeSUNL41iuXkCSrZ9zsVV7iGXnjczoIBN-1QKZ8oLhMnzJtN1/gen272wb.jpg",
+"image_url": "https://s12.auto.drom.ru/photo/v2/HCtcuJ3kiR1cyV5oN1vWGiMdsrXQW6fNeSUNL41iuXkCSrZ9zsVV7iGXnjczoIBN-1QKZ8oLhMnzJtN1/gen272wb.jpg",
 "market_price": 450000,
 "median_sample_size": 7,
 "owners": 4,
@@ -16,6 +35,6 @@
 "description": "Дополнительно: Машина ухожена, коробка перебрана, подвеска перебрана.",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-10-19T15:40:45.288782+00:00"
+"seen_at": "2026-10-19T18:55:48.922155+00:00"
 }
 ]
