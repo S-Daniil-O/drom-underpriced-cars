@@ -2328,5 +2328,20 @@
     "mileage_km": 157000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/18176076/82192d8afaec586135736302b44fa488/1200x900n"
+  },
+  "autoru_1160001980-20d2d70e": {
+    "posted_at": "2026-10-19T10:18:27.001704+00:00",
+    "message_id": 181,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2018,
+    "price": 630000,
+    "median_price": 759900,
+    "median_sample_size": 13,
+    "price_rating": null,
+    "mileage_km": 101333,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20346480/9bd58203cdbc3018d7fe907203e63ef1/1200x900n"
   }
 }
