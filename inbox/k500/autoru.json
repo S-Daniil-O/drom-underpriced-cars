@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:29.734629+00:00"
+"seen_at": "2026-10-19T18:32:42.294573+00:00"
 },
 {
 "ad_id": "autoru_1160391510-4ab88bb0",
@@ -24,12 +24,12 @@
 "price": 250000,
 "market_price": 84000,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160391510-4ab88bb0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/hnldHX73Ogn440MDBZTtztBleJwLbn5O6ue_ZMAlXvQWN5lWSziIQ2E1sOO-olJfxwyKMBr62jckHis6fLTrmLKn4hHgxlsfd-MHYD4PiChfVi-wLMp0fmXoHLhj9JUlI1I3AhxqgyIL8K8iqkp_6FXdhef3U_WQ3S6pcMFpKKvgjkE/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/xmlY9S45rAjwwCfKwx74FnEu4mBwuTxAnP6Q1B01HVARsSpZ_z-bKsFPBKDD7njWET8BEe0z_BU5DPrepg01qL_S1FJkUuRYEZAvkX8jXsc0ISNsvGAyM7RErSKoKKzm0i1oz3FpdYLDDH5vDRH7TocYEzjQBDpqn4Lcp-JQr9MUN_M/1200x900n",
 "mileage_km": 95600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:29.734617+00:00"
+"seen_at": "2026-10-19T18:32:42.294560+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:29.734599+00:00"
+"seen_at": "2026-10-19T18:32:42.294541+00:00"
 },
 {
 "ad_id": "autoru_1160394176-9ef7f0d3",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:29.734578+00:00"
+"seen_at": "2026-10-19T18:32:42.294522+00:00"
 },
 {
 "ad_id": "autoru_1160394368-b25bb00c",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Петропавловка",
-"seen_at": "2026-10-19T18:21:29.734543+00:00"
+"seen_at": "2026-10-19T18:32:42.294484+00:00"
 },
 {
 "ad_id": "autoru_1160399076-80caffb0",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:11.162099+00:00"
+"seen_at": "2026-10-19T18:32:28.259522+00:00"
 },
 {
 "ad_id": "autoru_1160400492-b0cc6466",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:11.162089+00:00"
+"seen_at": "2026-10-19T18:32:28.259509+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-19T18:21:11.162072+00:00"
+"seen_at": "2026-10-19T18:32:28.259492+00:00"
 },
 {
 "ad_id": "autoru_1160407858-580d89ab",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:21:11.162053+00:00"
+"seen_at": "2026-10-19T18:32:28.259473+00:00"
 },
 {
 "ad_id": "autoru_1160411868-7f4cca93",
@@ -157,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-19T18:21:11.162016+00:00"
+"seen_at": "2026-10-19T18:32:28.259453+00:00"
+},
+{
+"ad_id": "autoru_1160413872-5ff210fd",
+"source": "autoru",
+"brand": "Datsun",
+"model": "on-DO",
+"year": 2015,
+"price": 320000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413872-5ff210fd/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/c2b2e3dd5a2395ac55a2c93022df248c/1200x900n",
+"mileage_km": 188000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-19T18:32:28.259414+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
