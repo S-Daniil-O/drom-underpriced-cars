@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:42.294573+00:00"
+"seen_at": "2026-10-19T18:44:11.354236+00:00"
 },
 {
 "ad_id": "autoru_1160391510-4ab88bb0",
@@ -24,12 +24,12 @@
 "price": 250000,
 "market_price": 84000,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160391510-4ab88bb0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/xmlY9S45rAjwwCfKwx74FnEu4mBwuTxAnP6Q1B01HVARsSpZ_z-bKsFPBKDD7njWET8BEe0z_BU5DPrepg01qL_S1FJkUuRYEZAvkX8jXsc0ISNsvGAyM7RErSKoKKzm0i1oz3FpdYLDDH5vDRH7TocYEzjQBDpqn4Lcp-JQr9MUN_M/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/Gy7qaQtwd0f4X6isojqRx_ydqMYsiGKJ_0ZrCAmzT9nX546TGJMooiGkpGX3B1ugcG1D2MYzWS9oyqVggqHhoEkgpuGhOTlrIW8kJDAtcIm9LI7PmUl1F2ypA-_nL1eRuPSIe45j3Nj2BBtvAdPX5uN_dFe1GTenK4ZcHbb3skW-qHE/1200x900n",
 "mileage_km": 95600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:42.294560+00:00"
+"seen_at": "2026-10-19T18:44:11.354223+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:42.294541+00:00"
+"seen_at": "2026-10-19T18:44:11.354204+00:00"
 },
 {
 "ad_id": "autoru_1160394176-9ef7f0d3",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:42.294522+00:00"
+"seen_at": "2026-10-19T18:44:11.354184+00:00"
 },
 {
 "ad_id": "autoru_1160394368-b25bb00c",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Петропавловка",
-"seen_at": "2026-10-19T18:32:42.294484+00:00"
+"seen_at": "2026-10-19T18:44:11.354149+00:00"
 },
 {
 "ad_id": "autoru_1160399076-80caffb0",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:28.259522+00:00"
+"seen_at": "2026-10-19T18:43:50.193705+00:00"
 },
 {
 "ad_id": "autoru_1160400492-b0cc6466",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:28.259509+00:00"
+"seen_at": "2026-10-19T18:43:50.193694+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-19T18:32:28.259492+00:00"
+"seen_at": "2026-10-19T18:43:50.193678+00:00"
 },
 {
 "ad_id": "autoru_1160407858-580d89ab",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:28.259473+00:00"
+"seen_at": "2026-10-19T18:43:50.193661+00:00"
 },
 {
 "ad_id": "autoru_1160411868-7f4cca93",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-19T18:32:28.259453+00:00"
+"seen_at": "2026-10-19T18:43:50.193642+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
@@ -173,7 +173,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T18:32:28.259414+00:00"
+"seen_at": "2026-10-19T18:43:50.193629+00:00"
+},
+{
+"ad_id": "autoru_1160413927-8dc4e6c4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 2003,
+"price": 270000,
+"market_price": 94500,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160413927-8dc4e6c4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2171830/e3b7c905aafb0b179bab1aa89f3078b5/1200x900n",
+"mileage_km": 126523,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-19T18:43:50.193619+00:00"
+},
+{
+"ad_id": "autoru_1160413968-4fcfa1f4",
+"source": "autoru",
+"brand": "Datsun",
+"model": "on-DO",
+"year": 2014,
+"price": 387000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413968-4fcfa1f4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17980859/be05e6c7aafd104b4e89bbdbbd2d412f/1200x900n",
+"mileage_km": 153000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-10-19T18:43:50.193608+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -189,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-19T18:09:51.509979+00:00"
+"seen_at": "2026-10-19T18:43:50.193575+00:00"
 },
 {
 "ad_id": "autoru_1160388857-72818033",
