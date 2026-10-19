@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1131205821-25f8a788",
+"source": "autoru",
+"brand": "Ford",
+"model": "Focus",
+"year": 2010,
+"price": 470000,
+"market_price": 526000,
+"url": "https://auto.ru/cars/used/sale/ford/focus/1131205821-25f8a788/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/3d76d54c942365d7a72c17b003fbccd4/1200x900n",
+"mileage_km": 127000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-19T23:03:53.596671+00:00"
+},
+{
 "ad_id": "autoru_1160329564-bd95e7c2",
 "source": "autoru",
 "brand": "Toyota",
@@ -13,6 +29,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-18T22:56:29.045558+00:00"
+"seen_at": "2026-10-19T22:44:39.410773+00:00"
 }
 ]
