@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916144+00:00"
+"seen_at": "2026-10-19T12:21:10.677665+00:00"
 },
 {
 "ad_id": "autoru_1160388857-72818033",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916128+00:00"
+"seen_at": "2026-10-19T12:21:10.677650+00:00"
 },
 {
 "ad_id": "autoru_1160391249-9328791b",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916102+00:00"
+"seen_at": "2026-10-19T12:21:10.677625+00:00"
 },
 {
 "ad_id": "autoru_1160391510-4ab88bb0",
@@ -56,12 +56,12 @@
 "price": 250000,
 "market_price": 84000,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160391510-4ab88bb0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/miCp7udvTFgyMrOPWWb-cDasckuUN6fldihnQv2gQtd8osKYpsVBnk9rXYk4jqmbzHlDraaQnSCFdM17xX4h3Cz4oNXtiC9gaH63lIbsWXmssjTgixjdwTLKJRGFPmNf12MY-JZQ0YKxT21Ms7Qp1IjLZhuUpXECkW3TUKgHd9cwig/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/Bt0mcrTnZu9RhgrKvNxrPIixM4Z1BH7G5bPh264dRGV1OBgHwuEsgZ9B5p_yLOEWyE6P4p5uR1LmT9xRNvS-PnE8Pose9EuhHNBU96u24mA7FqOgWZLTPN-YEZs08nuzppcEBYlvl7-tdTuUha8WNelYODVQIWP26f595Iq54MXCR3s/1200x900n",
 "mileage_km": 95600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916091+00:00"
+"seen_at": "2026-10-19T12:21:10.677612+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916072+00:00"
+"seen_at": "2026-10-19T12:21:10.677592+00:00"
 },
 {
 "ad_id": "autoru_1160394176-9ef7f0d3",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:56.916052+00:00"
+"seen_at": "2026-10-19T12:21:10.677571+00:00"
 },
 {
 "ad_id": "autoru_1160394368-b25bb00c",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Петропавловка",
-"seen_at": "2026-10-19T12:09:56.916016+00:00"
+"seen_at": "2026-10-19T12:21:10.677532+00:00"
 },
 {
 "ad_id": "autoru_1160399076-80caffb0",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:41.046318+00:00"
+"seen_at": "2026-10-19T12:20:53.650418+00:00"
 },
 {
 "ad_id": "autoru_1160400492-b0cc6466",
@@ -141,23 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-19T12:09:41.046306+00:00"
-},
-{
-"ad_id": "autoru_1160406523-9de3f6f2",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
-"year": 1993,
-"price": 140000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160406523-9de3f6f2/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20181844/909214a311dfa03c9125e8e988b7daa1/1200x900n",
-"mileage_km": 229000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Староживотинное",
-"seen_at": "2026-10-19T12:09:41.046278+00:00"
+"seen_at": "2026-10-19T12:20:53.650402+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -173,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-19T12:09:41.046246+00:00"
+"seen_at": "2026-10-19T12:20:53.650375+00:00"
+},
+{
+"ad_id": "autoru_1160406523-9de3f6f2",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Passat",
+"year": 1993,
+"price": 140000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160406523-9de3f6f2/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20181844/909214a311dfa03c9125e8e988b7daa1/1200x900n",
+"mileage_km": 229000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Староживотинное",
+"seen_at": "2026-10-19T12:20:53.650329+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
