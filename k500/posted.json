@@ -5093,5 +5093,20 @@
     "mileage_km": 275000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/eUQxvQL8s8SNAgXkZdv6Jq1zZ1EgErw8zuc3YvOMG9fvBO5M0KC7_PGUFArP6nyvRE4iU9hNHMrN9Ivm/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/764373312.html": {
+    "posted_at": "2026-10-19T09:18:39.046442+00:00",
+    "message_id": 387,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lanos",
+    "year": 2006,
+    "price": 99999,
+    "median_price": 150000.0,
+    "median_sample_size": 1804,
+    "price_rating": null,
+    "mileage_km": 181759,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/M3SXGGoaYJVlRjoHPNfGT9MltqJmQo3accEVpVzDJoYZMmnZGg7Uwx3aEc6Q4vPDgKUwMzOS6tZX6ekM/gen272wb.jpg"
   }
 }
