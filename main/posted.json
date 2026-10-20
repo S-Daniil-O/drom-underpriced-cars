@@ -2388,5 +2388,20 @@
     "mileage_km": 282000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/5042723/14cbfb3cbbd4401ed9361049908ebad0/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/datsun/on-do/851758476.html": {
+    "posted_at": "2026-10-20T21:30:44.583297+00:00",
+    "message_id": 185,
+    "deleted_at": null,
+    "brand": "Datsun",
+    "model": "on-DO",
+    "year": 2018,
+    "price": 530000,
+    "median_price": 640000.0,
+    "median_sample_size": 454,
+    "price_rating": "нормальная цена",
+    "mileage_km": 137500,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/3JzvlVGvKofIfHbLf3TGsRbQmqOi0Tm-wIEO33u9oakGrQwl9yKKsnqzTM2F7nzlhmELfHWbR7q6XdsJ/gen272wb.jpg"
   }
 }
