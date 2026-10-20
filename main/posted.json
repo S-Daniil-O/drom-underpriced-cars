@@ -2373,5 +2373,20 @@
     "mileage_km": 22000,
     "owners_display": null,
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20289822/e78199cf9afee2bf1fa9357010e0becb/1200x900n"
+  },
+  "autoru_1160433454-26b630e7": {
+    "posted_at": "2026-10-20T20:30:31.723811+00:00",
+    "message_id": 184,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Cruze",
+    "year": 2013,
+    "price": 550000,
+    "median_price": 754500.0,
+    "median_sample_size": 12,
+    "price_rating": null,
+    "mileage_km": 282000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/5042723/14cbfb3cbbd4401ed9361049908ebad0/1200x900n"
   }
 }
