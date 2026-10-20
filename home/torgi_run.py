@@ -18,6 +18,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 INBOX_REPO = os.path.join(HERE, "inbox_repo")     # клон ветки inbox (общий с autoru_collect.py)
+CODE_REPO = os.path.join(HERE, "repo")            # клон main: отсюда берутся свежие скрипты
 WORK = os.path.join(HERE, "torgi")                 # torgi/torgi_monitor.py, torgi/data/
 QUEUE = os.path.join(WORK, "queue")
 QUEUE_HOT = os.path.join(WORK, "queue_hot")     # горящие лоты → канал «Крайние предложения торги»
@@ -33,8 +34,24 @@ def git(*args):
     return subprocess.run(["git", "-C", INBOX_REPO, *args], check=True, capture_output=True, text=True).stdout
 
 
+def self_update():
+    """Перед запуском взять свежие torgi_monitor.py и torgi_run.py из main (GitHub),
+    чтобы правки не нужно было копировать на iMac вручную."""
+    try:
+        subprocess.run(["git", "-C", CODE_REPO, "pull", "-q", "--ff-only", "origin", "main"],
+                       check=True, capture_output=True, text=True, timeout=120)
+        shutil.copy2(os.path.join(CODE_REPO, "torgi", "torgi_monitor.py"), os.path.join(WORK, "torgi_monitor.py"))
+        shutil.copy2(os.path.join(CODE_REPO, "home", "torgi_run.py"), os.path.join(HERE, "torgi_run.py"))
+        rev = subprocess.run(["git", "-C", CODE_REPO, "log", "--oneline", "-1"], capture_output=True, text=True).stdout.strip()
+        log(f"скрипты обновлены из GitHub: {rev}")
+    except (subprocess.SubprocessError, OSError) as e:
+        log(f"обновить скрипты не удалось, работаю на текущих: {e}")
+
+
 def main():
     dry = "--dry-run" in sys.argv
+    if "--no-update" not in sys.argv:
+        self_update()
     os.makedirs(os.path.dirname(POSTED), exist_ok=True)
     git("fetch", "-q", "origin", "state")
     with open(POSTED, "w") as f:
