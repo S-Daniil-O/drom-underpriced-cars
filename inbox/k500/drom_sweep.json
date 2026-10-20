@@ -1,5 +1,43 @@
 [
 {
+"ad_id": "https://auto.drom.ru/voronezh/ford/focus/202314569.html",
+"brand": "Ford",
+"model": "Focus",
+"year": 2010,
+"price": 330000,
+"mileage_km": 185000,
+"price_rating": null,
+"url": "https://auto.drom.ru/voronezh/ford/focus/202314569.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/v3TaFR6a2feFoFFkn2CKEZasTZapApChWgsdM-Q66uWUJeqVzil9T6XiiyhzZRp5Jxr4ZpOld6n_Erkd/gen272wb.jpg",
+"market_price": 450000,
+"median_sample_size": 5,
+"owners": 3,
+"owners_display": "3",
+"description": "Дополнительно: Форд Фокус 2 рестайлинг. На полном ходу, кондиционер дует, обогревы работают. По технике без нареканий, обслуживалось всё вовремя, сел — поехал. По кузову есть косяки, они видны на фото. Цена с учётом всех косяков и пробега ниже рыночной. Торг минимальный у капота. Документы чистые, машина всю жизнь в одной семье, оригинал ПТС.",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-20T02:26:55.105217+00:00"
+},
+{
+"ad_id": "https://auto.drom.ru/voronezh/ford/focus/149397279.html",
+"brand": "Ford",
+"model": "Focus",
+"year": 2010,
+"price": 345000,
+"mileage_km": 260000,
+"price_rating": null,
+"url": "https://auto.drom.ru/voronezh/ford/focus/149397279.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/HjJpP2vJjNtM6yzUd9xV3sV21YsUREShOVPTusRGJ3IDpxG00Mqd0bZq4-3IKs7wmZTkX2OfiViKgOh5/gen272wb.jpg",
+"market_price": 450000,
+"median_sample_size": 5,
+"owners": 3,
+"owners_display": "3",
+"description": "Дополнительно: Продаю своего верного друга. Который мне служил верой и правдой семь лет. По факту 3 владельца, на деле 4 до этого был оформлен на мою девушку, сейчас оформлен на отца. И так по машине, машиной нужно заниматься на фото всё видно, что не видно звоните расскажу, много чего сделано и заменяно, рулевайка рейка новая, подвеска передняя новая, новый стартер, новый генератор, новый вентилятор охлаждения, по тормазам, менялись год назад всё в круг с блинами, аккомулятор пару лет назад покупался, масла, фильтра старался менять всё вовремя, на данный момент нужно заменить заднюю подвеску, лежит купленая новая, отдам в придачу так как на данный момент нет времени заниматься, всё и не упомнишь, звоните постараюсь всё рассказать, торг у капота....",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-20T02:26:55.105217+00:00"
+},
+{
 "ad_id": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
 "brand": "Opel",
 "model": "Astra",
@@ -16,6 +54,6 @@
 "description": "Дополнительно: Машина ухожена, коробка перебрана, подвеска перебрана.",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-10-19T22:10:44.324439+00:00"
+"seen_at": "2026-10-20T02:26:55.105217+00:00"
 }
 ]
