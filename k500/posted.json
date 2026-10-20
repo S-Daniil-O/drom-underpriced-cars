@@ -5273,5 +5273,35 @@
     "mileage_km": 184500,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/A4FPYtCFI27jcoT9B7AvFtYpKqDOTo0hGG1KqS-YQ4p0_nCQdP5TQOYqUygl2ib5CdIZcUOh7OOVlDnV/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/a4/488780462.html": {
+    "posted_at": "2026-10-20T06:45:38.590086+00:00",
+    "message_id": 399,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "A4",
+    "year": 1997,
+    "price": 215000,
+    "median_price": 400000.0,
+    "median_sample_size": 672,
+    "price_rating": null,
+    "mileage_km": 350000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/pMwX0L-9xlKNVnlZVQeeOVMHvQhC-Cx0RWprjS1ddl2PW5OijHakZmhCAOzqxt7Cq_FUDOz3JbpiNzRU/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/798245049.html": {
+    "posted_at": "2026-10-20T06:45:40.980643+00:00",
+    "message_id": 400,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2011,
+    "price": 140000,
+    "median_price": 173000.0,
+    "median_sample_size": 3572,
+    "price_rating": null,
+    "mileage_km": 195000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/t4h6S5DzfYn6gMfbOCLuTqtBUkhrpueln5xFwVt4mdPXpJV2wZYfTytCqnerxMh9V9r0MjS0FKTCtvL2/gen272wb.jpg"
   }
 }
