@@ -5378,5 +5378,20 @@
     "mileage_km": 129125,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/JPJOmy4ZpO3SBAtCvUgHdB_J6CSJhAUCJzh8hivpBcmKys5eNe2MWCi9LOPNL8lo6ssYUSi4f8LT63iJ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/625183493.html": {
+    "posted_at": "2026-10-20T14:07:44.435875+00:00",
+    "message_id": 406,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2007,
+    "price": 240000,
+    "median_price": 340000,
+    "median_sample_size": 1799,
+    "price_rating": null,
+    "mileage_km": 207000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/ephzTZmLYAA3JI310dZS6Yn-Tbnyt_vG-5RMbFxfRcE1JyuPSjesf7FYMkrgPNIvyKIvl6XczIjy1XBr/gen272wb.jpg"
   }
 }
