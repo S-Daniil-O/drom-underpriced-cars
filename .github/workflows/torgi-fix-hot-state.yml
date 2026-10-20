@@ -1,0 +1,46 @@
+name: torgi-fix-hot-state
+# Разово (20.10.2026): отменённая публикация не сохранила posted.json горящих.
+# Узнаём номер последнего сообщения в канале (служебное сообщение → удалить),
+# и отмечаем первые K постов сегодняшней очереди как опубликованные.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+      CHAT: ${{ vars.TORGI_HOT_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: inbox, path: _inbox}
+      - uses: actions/checkout@v4
+        with: {ref: state, path: _state}
+      - run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse
+          T, chat = os.environ["TORGI_BOT_TOKEN"], os.environ["CHAT"]
+          def call(m, d):
+              return json.load(urllib.request.urlopen(urllib.request.Request(
+                  f"https://api.telegram.org/bot{T}/{m}", data=urllib.parse.urlencode(d).encode()), timeout=30))
+          r = call("sendMessage", {"chat_id": chat, "text": "·", "disable_notification": "true"})
+          last = r["result"]["message_id"]
+          call("deleteMessage", {"chat_id": chat, "message_id": last})
+          pf = "_state/torgi_hot/posted.json"
+          posted = json.load(open(pf))
+          prev = max(v for v in posted.values() if v)
+          k = last - prev - 1
+          q = json.load(open("_inbox/inbox/torgi_hot/queue.json"))["items"]
+          todo = [i for i in q if i["id"] not in posted]
+          print(f"последнее в канале до служебного: {last - 1}, известное: {prev}, опубликовано сегодня: {k}, в очереди новых: {len(todo)}")
+          assert 0 <= k <= len(todo), "не сходится — ничего не меняю"
+          for n, i in enumerate(todo[:k]):
+              posted[i["id"]] = prev + 1 + n
+          json.dump(posted, open(pf, "w"), ensure_ascii=False, indent=0)
+          print("отмечено опубликованными:", k)
+          PY
+          cd _state
+          git config user.name "monitor-bot"; git config user.email "monitor-bot@users.noreply.github.com"
+          git add torgi_hot/posted.json
+          git commit -m "state(torgi_hot): восстановлено после отменённой публикации" || exit 0
+          for i in 1 2 3 4 5; do git push origin HEAD:state && exit 0; git pull --rebase origin state; done; exit 1
