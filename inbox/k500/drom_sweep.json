@@ -1,5 +1,24 @@
 [
 {
+"ad_id": "https://auto.drom.ru/voronezh/lada/2107/548984144.html",
+"brand": "Лада",
+"model": "2107",
+"year": 2004,
+"price": 90000,
+"mileage_km": 150000,
+"price_rating": "хорошая цена",
+"url": "https://auto.drom.ru/voronezh/lada/2107/548984144.html",
+"image_url": "https://s12.auto.drom.ru/photo/v2/8NkY8xi2myjOM65xfVFhgP6oHgeEtS_4w0rvJRA37CNB7ofnvYvSF-Y9rrnA2pqaGgAGd-eTIJj0kXiS/gen272wb.jpg",
+"market_price": 107500,
+"median_sample_size": 16,
+"owners": 2,
+"owners_display": "2",
+"description": "Дополнительно: Хорошaя тeхничeская соcтояниe, мотoр pабoтaeт отличнo, нe тpoит, нe дымит, не кипит. По коpобкe всe пeрeдачи нa мeсте, ничeго не гудит и нe выбивaeт. Мягкaя, пpиятная пoдвeскa. Торг",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-10-20T18:43:46.092366+00:00"
+},
+{
 "ad_id": "https://auto.drom.ru/voronezh/opel/astra/553958338.html",
 "brand": "Opel",
 "model": "Astra",
@@ -16,6 +35,6 @@
 "description": "Дополнительно: Машина ухожена, коробка перебрана, подвеска перебрана.",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-10-20T15:28:44.620306+00:00"
+"seen_at": "2026-10-20T18:43:46.092366+00:00"
 }
 ]
