@@ -112,6 +112,8 @@ def main():
         msg_id = send(item, qdir)
         if msg_id:
             posted[item["id"]] = msg_id
+            for other in item.get("also_ids") or []:   # «последний шанс» закрывает и обычный горящий пост
+                posted.setdefault(other, msg_id)
             n += 1
             fails = 0
             posted_file.write_text(json.dumps(posted, ensure_ascii=False, indent=0))

@@ -223,18 +223,20 @@ def cdt_detail(item):
 def mets_list():
     s = requests.Session()
     s.headers["User-Agent"] = UA
-    s.get("https://m-ets.ru/search", timeout=60)
-    form = [("search_category", "1"),          # Легковой автомобиль
-            ("isbankr", "on"), ("ispub", "on"),  # банкротство, публичное предложение
-            ("stat", "0"), ("stat", "1"), ("stat", "2"),  # объявлены / приём заявок / идут
-            ("lotst", "2"), ("sortby", "1")]
-    html_pages = [s.post("https://m-ets.ru/search", data=form, timeout=120).text]
-    last = max([int(x) for x in re.findall(r'href="/search\?page=(\d+)"', html_pages[0])] or [1])
-    for p in range(2, last + 1):
-        html_pages.append(s.get("https://m-ets.ru/search", params={"page": p}, timeout=120).text)
-        # ссылки на страницы показываются окном, догружаем, пока появляются новые
-        more = [int(x) for x in re.findall(r'href="/search\?page=(\d+)"', html_pages[-1])]
-        last = max([last] + more)
+    # С 10.2026 поиск МЭТС — GET /search?q=<base64(JSON фильтра)>&page=N (форма POST больше
+    # не фильтрует категорию). Ключи как в SearchForm.js: отсортированы, категория — строка.
+    flt = {"isbankr": "on", "ispub": "on", "search_category": "1", "stat[]": ["0", "1", "2"]}
+    q = base64.b64encode(json.dumps(dict(sorted(flt.items())), separators=(",", ":")).encode()).decode().rstrip("=")
+    first = s.get("https://m-ets.ru/search", params={"q": q}, timeout=120).text
+    html_pages = [first]
+    last = max([int(x) for x in re.findall(r"[?&]page=(\d+)", first)] or [1])
+    if last > 200:   # фильтр категории не сработал — не тащим всю площадку
+        raise requests.RequestException(f"МЭТС: фильтр категории не применился ({last} страниц)")
+    p = 2
+    while p <= last:
+        html_pages.append(s.get("https://m-ets.ru/search", params={"q": q, "page": p}, timeout=120).text)
+        last = max([last] + [int(x) for x in re.findall(r"[?&]page=(\d+)", html_pages[-1])])
+        p += 1
     lots, seen = [], set()
     for page in html_pages:
         for card in re.split(r'<div data-topid=', page)[1:]:
@@ -890,7 +892,8 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None):
                     (qdir / img).write_bytes(r.content)
             except requests.RequestException as e:
                 log(f"фото не скачалось ({d['id']}): {e}")
-        items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img})
+        items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img,
+                      "also_ids": d.get("also_ids", [])})
     (qdir / "queue.json").write_text(json.dumps(
         {"created": time.strftime("%Y-%m-%d %H:%M"), "items": items}, ensure_ascii=False, indent=1))
     log(f"Очередь для GitHub: {len(items)} постов (фото: {sum(1 for i in items if i['image'])}) → {qdir}")
@@ -1041,9 +1044,12 @@ def main():
                     mets_start_price(d)
             hot = sorted((d for d in deals if is_hot(d)), key=lambda d: hot_info(d)["end"])
             # «последний шанс» — отдельные посты с ключом <id>#last, идут первыми
-            last = [dict(d, id=d["id"] + "#last", last_call=True) for d in hot if is_last_call(d)]
+            # also_ids: при публикации «последнего шанса» лот отмечается и как обычный горящий,
+            # чтобы в тот же или следующий день не вышел второй пост о том же лоте
+            last = [dict(d, id=d["id"] + "#last", last_call=True, also_ids=[d["id"]]) for d in hot if is_last_call(d)]
             log(f"Из них «последний шанс» (≤ {LAST_CALL_DAYS} дн., заявок нет): {len(last)}")
-            hot = last + hot
+            last_base = {d["id"] for d in hot if is_last_call(d)}
+            hot = last + [d for d in hot if d["id"] not in last_base]
             log(f"Горящих лотов (до конца {HOT_MIN_DAYS}–{HOT_MAX_DAYS} дн., цена ≤ {HOT_MAX_PRICE_RATIO}× мин.): {len(hot)}")
             hp = os.environ.get("TORGI_HOT_POSTED_FILE")
             write_queue(hot, Path(hot_dir), 0, Path(hp) if hp else DATA / "torgi_hot_posted.json", hot_caption)
