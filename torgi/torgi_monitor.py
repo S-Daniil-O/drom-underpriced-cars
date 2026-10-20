@@ -52,6 +52,10 @@ MIN_RATIO = 0.05
 # Публикация: пачками по BATCH_SIZE постов, между пачками пауза BATCH_PAUSE_MIN минут.
 # Публикуется всё подходящее, что ещё не выкладывали.
 BATCH_SIZE = 20
+# Не больше стольких новых постов в основной канал за один день (лучшие — первыми:
+# Воронеж, Черноземье, большая скидка); остальное уйдёт в следующие дни. 0 — без лимита.
+# Горящие («Крайние предложения торги») не ограничиваются — у них короткий срок.
+MAIN_DAILY_LIMIT = 100
 BATCH_PAUSE_MIN = 15
 # Пауза между отдельными постами, сек (Telegram ограничивает ~20 постов/мин в канал).
 POST_PAUSE_SEC = 4
@@ -780,7 +784,7 @@ def hot_caption(d):
         f"🔥 Минимальная цена ниже рынка на {disc}%",
         f"Начальная цена была: {money(d['start_price'])}" if d.get("start_price") else None,
         "",
-        "📝 " + (d["title"] if d["source"] == "ЦДТ" else d.get("description") or d["title"])[:300],
+        "📝 " + (d.get("description") or d["title"] if d["source"] == "МЭТС" else d["title"])[:300],
         "",
         f"VIN: {d['vin']}" if d.get("vin") else None,
         f"Площадка: {d['source']}",
@@ -805,7 +809,7 @@ def caption(d):
         + (f": {d['market']['matched']})" if d["market"].get("matched") else ", только марка/модель/год)"),
         f"🔥 Ниже рынка на {disc}%",
         "",
-        "📝 " + (d["title"] if d["source"] == "ЦДТ" else d.get("description") or d["title"])[:350],
+        "📝 " + (d.get("description") or d["title"] if d["source"] == "МЭТС" else d["title"])[:350],
         "",
         f"Тип: публичное предложение (торги на понижение), {d['status'] or ''}".rstrip(", "),
         (f"{'Текущий период цены до' if d['source'] == 'МЭТС' else 'Приём заявок до'}: {d['end_date']}"
@@ -1036,7 +1040,7 @@ def main():
 
     queue_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue=")), None)
     if queue_dir:
-        write_queue(deals, Path(queue_dir), limit)
+        write_queue(deals, Path(queue_dir), limit or MAIN_DAILY_LIMIT)
         hot_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue-hot=")), None)
         if hot_dir:
             for d in deals:   # график МЭТС есть только в карточке лота
