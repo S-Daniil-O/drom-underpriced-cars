@@ -1,0 +1,38 @@
+name: torgi-dedupe
+# Разово (20.10.2026): удалить повторные посты в @torgi_vrn_ss (у каждого лота
+# остаётся первый пост) и поправить номера сообщений в posted.json.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  dedupe:
+    runs-on: ubuntu-latest
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: state, path: _state}
+      - run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse, urllib.error
+          T = os.environ["TORGI_BOT_TOKEN"]
+          # лот -> [первый пост, повтор]
+          DUPS = {"cdt-384544": [370, 441], "cdt-384862": [387, 414], "cdt-384795": [389, 415],
+                  "cdt-384846": [399, 416], "cdt-384637": [368, 400], "cdt-373492": [369, 410],
+                  "cdt-384610": [367, 384], "cdt-383964": [366, 371]}
+          pf = "_state/torgi/posted.json"; posted = json.load(open(pf))
+          for lot, (keep, dup) in DUPS.items():
+              req = urllib.request.Request(f"https://api.telegram.org/bot{T}/deleteMessage",
+                    data=urllib.parse.urlencode({"chat_id": "@torgi_vrn_ss", "message_id": dup}).encode())
+              try:
+                  r = json.load(urllib.request.urlopen(req, timeout=30))
+              except urllib.error.HTTPError as e:
+                  r = json.load(e)
+              print(lot, "удалён повтор", dup, r.get("ok"), r.get("description", ""))
+              posted[lot] = keep
+          json.dump(posted, open(pf, "w"), ensure_ascii=False, indent=0)
+          PY
+          cd _state
+          git config user.name "monitor-bot"; git config user.email "monitor-bot@users.noreply.github.com"
+          git add torgi/posted.json; git commit -m "state(torgi): номера после удаления дублей" || exit 0
+          for i in 1 2 3 4 5; do git push origin HEAD:state && exit 0; git pull --rebase origin state; done; exit 1
