@@ -5303,5 +5303,35 @@
     "mileage_km": 195000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/t4h6S5DzfYn6gMfbOCLuTqtBUkhrpueln5xFwVt4mdPXpJV2wZYfTytCqnerxMh9V9r0MjS0FKTCtvL2/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/c-class/817511765.html": {
+    "posted_at": "2026-10-20T08:32:43.863362+00:00",
+    "message_id": 401,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 1994,
+    "price": 200000,
+    "median_price": 245000,
+    "median_sample_size": 1201,
+    "price_rating": null,
+    "mileage_km": 340000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/HDKDzhHDVMLR3BrlY-M29wrI1bVJqGM92t6kCH2llsJlDaLvy1oypkHZVp1jTQGF2ligpkwpjyzUbXac/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/bmw/3-series/867224673.html": {
+    "posted_at": "2026-10-20T08:32:46.551171+00:00",
+    "message_id": 402,
+    "deleted_at": null,
+    "brand": "BMW",
+    "model": "3-Series",
+    "year": 1992,
+    "price": 170000,
+    "median_price": 200000,
+    "median_sample_size": 239,
+    "price_rating": "отличная цена",
+    "mileage_km": 470000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/nAxa_lkZiiwNchKx-bxr1SJNrjXqh9tMf-T8P1wvjOjO2fPq9iqzxefDE-yd2ttgUOK19yI_UbQ5r55z/gen272wb.jpg"
   }
 }
