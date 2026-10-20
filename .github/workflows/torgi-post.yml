@@ -26,6 +26,7 @@ jobs:
     env:
       TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
       PYTHONUNBUFFERED: "1"
+      TORGI_STATE_PUSH: "1"   # post_queue.py сохраняет posted.json в state после каждой пачки
     steps:
       - uses: actions/checkout@v4
         with:
