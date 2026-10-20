@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:42:30.127869+00:00"
+"seen_at": "2026-10-20T22:53:53.429172+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:42:30.127845+00:00"
+"seen_at": "2026-10-20T22:53:53.429139+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:42:30.127829+00:00"
+"seen_at": "2026-10-20T22:53:53.429120+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:42:30.127792+00:00"
+"seen_at": "2026-10-20T22:53:53.429077+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -77,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-20T22:42:11.082534+00:00"
+"seen_at": "2026-10-20T22:53:31.730662+00:00"
+},
+{
+"ad_id": "autoru_1160328718-eac52ea3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 490000,
+"market_price": 292000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
+"mileage_km": 63000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ямное",
+"seen_at": "2026-10-20T22:53:31.730585+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
@@ -94,22 +110,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-20T22:42:11.082458+00:00"
-},
-{
-"ad_id": "autoru_1160328718-eac52ea3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 490000,
-"market_price": 292000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
-"mileage_km": 63000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ямное",
-"seen_at": "2026-10-20T22:30:53.368514+00:00"
 },
 {
 "ad_id": "autoru_1160411868-7f4cca93",
