@@ -5423,5 +5423,20 @@
     "mileage_km": 150000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/8NkY8xi2myjOM65xfVFhgP6oHgeEtS_4w0rvJRA37CNB7ofnvYvSF-Y9rrnA2pqaGgAGd-eTIJj0kXiS/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/vectra/731508023.html": {
+    "posted_at": "2026-10-20T21:30:41.065886+00:00",
+    "message_id": 409,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Vectra",
+    "year": 2007,
+    "price": 250000,
+    "median_price": 419000.0,
+    "median_sample_size": 1164,
+    "price_rating": null,
+    "mileage_km": 306734,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/7iaDY9EfuDyc9TD5RaKuLKPQGyZPzeH-JMdJJ6x67mP-E2rmP28KmeE9KdTiQt32sdJHj4Ssb_BqUYOp/gen272wb.jpg"
   }
 }
