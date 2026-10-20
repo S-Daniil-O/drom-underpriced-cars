@@ -85,9 +85,9 @@ NET_RETRY_PAUSE_MIN = 10
 # по минимальной цене осталось от HOT_MIN_DAYS до HOT_MAX_DAYS дней, а текущая цена
 # не выше HOT_MAX_PRICE_RATIO × минимальной. Отбираются из тех же лотов (2010+, не битые,
 # ниже рынка > 50%).
-HOT_MAX_DAYS = 30
+HOT_MAX_DAYS = 14
 HOT_MIN_DAYS = 2
-HOT_MAX_PRICE_RATIO = 1.5
+HOT_MAX_PRICE_RATIO = 1.2
 # «Последний шанс»: горящий лот, у которого до конца приёма заявок ≤ LAST_CALL_DAYS дней
 # и заявок по данным площадки нет. Публикуется отдельным постом (даже если лот уже был
 # в канале как горящий), с пометкой 🚨 и хэштегом #беззаявок.
@@ -99,6 +99,7 @@ NEAR_REGIONS = ["Воронежская", "Белгородская", "Липе�
 # Площадки и категории
 USE_CDT = True     # torgi.cdtrf.ru
 USE_METS = True    # m-ets.ru
+USE_TG = True      # bankrot.torggroup.org (ТоргГрупп)
 # ======================================================================
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
@@ -288,6 +289,89 @@ def mets_start_price(lot):
     m = re.search(r"Количество заявок:?\s*(\d+)", t)
     if m:
         lot["requests"] = int(m.group(1))
+
+
+# ---------------------------------------------------------------- ТоргГрупп
+TG_BASE = "https://bankrot.torggroup.org"
+TG_STATUSES = {"32": "Объявлены", "34": "Приём заявок"}   # LotStateId: подтверждён / приём заявок
+
+
+def _tg_get(s, url, **kw):
+    for attempt in range(3):
+        try:
+            r = s.get(url, timeout=60, **kw)
+            if r.ok:
+                return r.text
+        except requests.RequestException:
+            pass
+        time.sleep(5)
+    raise requests.RequestException(f"ТоргГрупп не ответил: {url}")
+
+
+def tg_list():
+    """Публичные предложения ТоргГрупп (по 20 на страницу, категории в списке нет —
+    машины отбираем по названию лота, точно — по категории «Легковые» в карточке)."""
+    s = requests.Session()
+    s.headers.update({"User-Agent": UA, "X-Requested-With": "XMLHttpRequest"})
+    rows, seen = [], set()
+    for st, st_name in TG_STATUSES.items():
+        page, pages = 1, 1
+        while page <= pages:
+            t = _tg_get(s, TG_BASE + "/Trade/AllSearch", params={
+                "pageSize": 20, "currentPage": page, "sortBy": "TradeId", "asc": "False",
+                "types": 33, "LotStateId": st, "HasSearchCriteria": "True"})
+            pages = max([pages] + [int(x) for x in re.findall(r"TotalPages=(\d+)", t)])
+            for r in re.findall(r"<tr.*?</tr>", t, re.S):
+                m = re.search(r'href="/TradeLot/View/(\d+)">([^<]{6,})</a>', r)
+                if not m or m.group(1) in seen:
+                    continue
+                seen.add(m.group(1))
+                rows.append({"lot_id": m.group(1), "name": html.unescape(m.group(2)).strip(), "status": st_name})
+            page += 1
+            time.sleep(0.3)
+    log(f"ТоргГрупп: {len(rows)} лотов публичного предложения (все категории)")
+    return rows
+
+
+def tg_detail(row):
+    """Карточка лота ТоргГрупп: категория, регион, график, заявки, фото, задаток."""
+    if not parse_car(row["name"]):
+        return None              # не машина по названию — карточку не грузим
+    url = f"{TG_BASE}/TradeLot/View/{row['lot_id']}"
+    try:
+        s = requests.get(url, headers={"User-Agent": UA}, timeout=60).text
+    except requests.RequestException:
+        return None
+    t = strip_html(re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S))
+    field = lambda name: (re.search(re.escape(name) + r":?\s*(.*?)\s+(?=[А-ЯЁ][а-яё ,()]{3,60}:)", t) or [None, ""])[1]
+    if "легков" not in field("Категория").lower():
+        return None
+    sched = []
+    blk = t[t.find("Интервалы снижения цены"):t.find("Документы", t.find("Интервалы снижения цены"))]
+    for m in re.finditer(r"(\d\d\.\d\d\.\d{4} \d\d:\d\d) (\d\d\.\d\d\.\d{4} \d\d:\d\d) (\d\d\.\d\d\.\d{4} \d\d:\d\d) "
+                         r"(\d\d\.\d\d\.\d{4} \d\d:\d\d) ([\d ]+,\d\d) ([\d ]+,\d\d) ([\d ]+,\d\d)", blk):
+        # начало приёма заявок на интервале, окончание приёма, цена, задаток
+        sched.append([m.group(2), m.group(3), to_float(m.group(7)), to_float(m.group(6))])
+    if not sched:
+        return None
+    prices = [x[2] for x in sched]
+    cur = (hot_info({"schedule": sched}) or {}).get("current_price")
+    req = re.search(r"Количество предоставленных заявок на участие в торгах:\s*(\d+)", t)
+    pics = re.findall(r'/Picture/Show/(\d+)', s)
+    desc = field("Сведения об имуществе, его составе, характеристиках, описание")
+    return {
+        "source": "ТоргГрупп", "id": f"tg-{row['lot_id']}", "url": url,
+        "title": row["name"], "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
+        "start_price": to_float(field("Начальная цена продажи имущества, руб")) or prices[0],
+        "current_price": cur or prices[0], "min_price": min(prices),
+        "end_date": sched[-1][1][:10], "status": row["status"],
+        "region": field("Регион местонахождения имущества"),
+        "region_name": field("Регион местонахождения имущества"),
+        "image": f"{TG_BASE}/Picture/Show/{pics[0]}" if pics else None,
+        "schedule": sched,
+        "requests": int(req.group(1)) if req else None,
+        "deposit_info": (field("Размер задатка, %") + "% от цены на интервале") if field("Размер задатка, %") else "",
+    }
 
 
 # ---------------------------------------------------------------- марка/модель/год
@@ -770,7 +854,7 @@ def tg_send(d):
 
 
 # ---------------------------------------------------------------- фото лотов
-IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru")
+IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru", "bankrot.torggroup.org")
 
 
 def image_url_ok(url):
@@ -857,6 +941,19 @@ def main():
                     lots += [x for x in ex.map(cdt_detail, items) if x]
         if USE_METS:
             lots += with_retries("МЭТС", mets_list) or []
+        if USE_TG:
+            rows = with_retries("ТоргГрупп", tg_list) or []
+            with ThreadPoolExecutor(4) as ex:
+                tg = [x for x in ex.map(tg_detail, rows) if x]
+            log(f"ТоргГрупп: легковых с графиком снижения: {len(tg)}")
+            lots += tg
+        # один лот — одна запись (списки площадок постраничные и могут повторять лоты)
+        uniq = {}
+        for lot in lots:
+            uniq.setdefault(lot["id"], lot)
+        if len(uniq) != len(lots):
+            log(f"Убраны повторы лотов: {len(lots) - len(uniq)}")
+        lots = list(uniq.values())
         if not lots:
             log("Ни одна площадка не ответила — сбор пропущен. Проверьте интернет/VPN "
                 "(площадки торгов не открываются с зарубежных IP).")

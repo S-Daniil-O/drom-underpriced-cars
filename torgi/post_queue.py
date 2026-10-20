@@ -10,6 +10,7 @@
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -55,6 +56,26 @@ def send(item, qdir):
     return None
 
 
+def save_state(posted_file):
+    """Сохранить posted.json в ветку state сразу (после каждой пачки), чтобы отмена или
+    сбой запуска не приводили к повторной публикации. Включается TORGI_STATE_PUSH=1."""
+    if os.environ.get("TORGI_STATE_PUSH") != "1":
+        return
+    repo = posted_file.parent.parent
+    g = lambda *a: subprocess.run(["git", "-C", str(repo), *a], capture_output=True, text=True)
+    g("config", "user.name", "monitor-bot")
+    g("config", "user.email", "monitor-bot@users.noreply.github.com")
+    g("add", str(posted_file.relative_to(repo)))
+    if g("diff", "--cached", "--quiet").returncode == 0:
+        return
+    g("commit", "-q", "-m", f"state({posted_file.parent.name}): posted")
+    for _ in range(5):
+        if g("push", "-q", "origin", "HEAD:state").returncode == 0:
+            return
+        g("pull", "-q", "--rebase", "origin", "state")
+    log("не удалось сохранить posted.json в state (сохранится в конце)")
+
+
 def main():
     qdir, posted_file = Path(sys.argv[1]), Path(sys.argv[2])
     if not TOKEN:
@@ -76,10 +97,18 @@ def main():
     todo = [i for i in queue["items"] if i["id"] not in posted]
     log(f"очередь от {queue.get('created')}: {len(queue['items'])}, новых: {len(todo)}")
     n = fails = 0
+    done_urls = set()
     for k, item in enumerate(todo):
         if k and k % BATCH_SIZE == 0:
             log(f"пачка опубликована ({n}), пауза {BATCH_PAUSE_MIN} мин")
+            save_state(posted_file)
             time.sleep(BATCH_PAUSE_MIN * 60)
+        # защита от дублей: тот же лот второй раз в очереди или та же ссылка в этом запуске
+        url_key = (item.get("url"), item["id"].endswith("#last"))
+        if item["id"] in posted or url_key in done_urls:
+            log(f"пропуск повтора: {item['id']}")
+            continue
+        done_urls.add(url_key)
         msg_id = send(item, qdir)
         if msg_id:
             posted[item["id"]] = msg_id
@@ -92,6 +121,7 @@ def main():
                 log("3 ошибки подряд — останавливаюсь, остальное уйдёт в следующий раз")
                 break
         time.sleep(POST_PAUSE_SEC)
+    save_state(posted_file)
     log(f"опубликовано в {CHAT}: {n}")
 
 
