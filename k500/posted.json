@@ -5228,5 +5228,35 @@
     "mileage_km": 190000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/KeqYE8i0W7BcDVeQVt3kwY7omYlWL031PnsNA5m7p5KSKKJ8tgjpkRf4dcqANc4EbFMRfAqqawCpvZKl/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/149397279.html": {
+    "posted_at": "2026-10-20T02:43:44.677574+00:00",
+    "message_id": 396,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2010,
+    "price": 345000,
+    "median_price": 450000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 260000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HjJpP2vJjNtM6yzUd9xV3sV21YsUREShOVPTusRGJ3IDpxG00Mqd0bZq4-3IKs7wmZTkX2OfiViKgOh5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/202314569.html": {
+    "posted_at": "2026-10-20T02:43:46.814754+00:00",
+    "message_id": 397,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2010,
+    "price": 330000,
+    "median_price": 450000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 185000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/v3TaFR6a2feFoFFkn2CKEZasTZapApChWgsdM-Q66uWUJeqVzil9T6XiiyhzZRp5Jxr4ZpOld6n_Erkd/gen272wb.jpg"
   }
 }
