@@ -5408,5 +5408,20 @@
     "mileage_km": 150000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/rLOPW_6n73zPLIKwDU5rdVy5JuoxqN9G2VHlke6Ylxf63W_D2-3rMnmllk-XerE5DmO0tynaO4lFDF3W/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/548984144.html": {
+    "posted_at": "2026-10-20T19:00:02.753576+00:00",
+    "message_id": 408,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2004,
+    "price": 90000,
+    "median_price": 107500,
+    "median_sample_size": 16,
+    "price_rating": "хорошая цена",
+    "mileage_km": 150000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/8NkY8xi2myjOM65xfVFhgP6oHgeEtS_4w0rvJRA37CNB7ofnvYvSF-Y9rrnA2pqaGgAGd-eTIJj0kXiS/gen272wb.jpg"
   }
 }
