@@ -13,23 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:08:22.800600+00:00"
+"seen_at": "2026-10-20T22:19:50.793770+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2105",
+"brand": "Mercedes-Benz",
+"model": "190 (W201)",
 "year": 1997,
 "price": 150000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2105/1160418199-e29cc36f/",
+"url": "https://auto.ru/cars/used/sale/mercedes/w201/1160403252-75550af4/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20784906/295d6285a9a6eae08e1e498eb9a35973/1200x900n",
 "mileage_km": 120000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:08:22.800544+00:00"
+"seen_at": "2026-10-20T22:19:50.793746+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:08:22.800503+00:00"
+"seen_at": "2026-10-20T22:19:50.793732+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T22:08:02.484495+00:00"
+"seen_at": "2026-10-20T22:19:50.793694+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -77,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-20T22:08:02.484481+00:00"
+"seen_at": "2026-10-20T22:19:31.102377+00:00"
+},
+{
+"ad_id": "autoru_1160393160-cecf45b4",
+"source": "autoru",
+"brand": "Renault",
+"model": "Kangoo",
+"year": 2002,
+"price": 355000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
+"mileage_km": 257000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-20T22:19:31.102301+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -142,22 +158,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-20T21:56:48.396081+00:00"
-},
-{
-"ad_id": "autoru_1160393160-cecf45b4",
-"source": "autoru",
-"brand": "Renault",
-"model": "Kangoo",
-"year": 2002,
-"price": 355000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
-"mileage_km": 257000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-20T21:45:07.698907+00:00"
 },
 {
 "ad_id": "autoru_1160399076-80caffb0",
