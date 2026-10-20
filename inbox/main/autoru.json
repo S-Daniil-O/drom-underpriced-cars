@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижний Ольшан",
-"seen_at": "2026-10-20T06:11:27.842332+00:00"
+"seen_at": "2026-10-20T06:22:43.550596+00:00"
 },
 {
 "ad_id": "autoru_1160398997-2d9c39cd",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:27.842301+00:00"
+"seen_at": "2026-10-20T06:22:43.550574+00:00"
 },
 {
 "ad_id": "autoru_1160399673-b4ca7771",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:27.842290+00:00"
+"seen_at": "2026-10-20T06:22:43.550561+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:27.842269+00:00"
+"seen_at": "2026-10-20T06:22:43.550539+00:00"
 },
 {
 "ad_id": "autoru_1160367581-0d7e8928",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:27.842245+00:00"
+"seen_at": "2026-10-20T06:22:43.550511+00:00"
 },
 {
 "ad_id": "autoru_1160403419-4657cf78",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-10-20T06:11:27.842234+00:00"
+"seen_at": "2026-10-20T06:22:43.550498+00:00"
 },
 {
 "ad_id": "autoru_1160001980-20d2d70e",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-20T06:11:27.842221+00:00"
+"seen_at": "2026-10-20T06:22:43.550482+00:00"
 },
 {
 "ad_id": "autoru_1160405820-290cfa52",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:27.842173+00:00"
+"seen_at": "2026-10-20T06:22:43.550429+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -141,39 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.941084+00:00"
-},
-{
-"ad_id": "autoru_1160184537-ea0b50ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva Travel",
-"year": 2023,
-"price": 1050777,
-"market_price": 822500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
-"mileage_km": 56000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новая Усмань",
-"seen_at": "2026-10-20T06:11:05.941075+00:00"
-},
-{
-"ad_id": "autoru_1160157737-0f3a2888",
-"source": "autoru",
-"brand": "Ford",
-"model": "Focus",
-"year": 2019,
-"price": 1500000,
-"market_price": 1111500,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160157737-0f3a2888/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/817d1191112085ef5c98f60f40800ee7/1200x900n",
-"mileage_km": 176000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.941053+00:00"
+"seen_at": "2026-10-20T06:22:27.631366+00:00"
 },
 {
 "ad_id": "autoru_1160413473-47536861",
@@ -189,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.941042+00:00"
+"seen_at": "2026-10-20T06:22:27.631345+00:00"
 },
 {
 "ad_id": "autoru_1160413601-c0d3d07f",
@@ -200,12 +168,12 @@
 "price": 1440000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160413601-c0d3d07f/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20410536/lGsKSA4Hwlib6dyb-Dkvhiv2tjEkHtOog_Fh8OPBmFMX0sDkkBwUK4tiUdLmLKMWlLGS_EDUVvj3zU-hYcAufI6B4k2PS9-g_b7GH_tsCV8lZO2HzRKKbNWodty0ZGWFZ2Zx9lVe-YnR5-o2JnoVmri6sKmT2k8SumwBazODGtPCfA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20410536/XchbASIG8QRqh6JBf3pguQgZNvp156SBw3FSErPzCAd5JijYdgaWNTON49kfYmornZulQWNIUVRv87kdExTZwoMQ6sEVS4Q0DWzr-k5Jv45alI1GJ-Xr8fr4DeBj5JpxfeQjCt9U5viukitB_QBo9RuOVP_tKigSYM7sGQbrjUxiasw/1200x900n",
 "mileage_km": 900,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Староживотинное",
-"seen_at": "2026-10-20T06:11:05.941032+00:00"
+"seen_at": "2026-10-20T06:22:27.631336+00:00"
 },
 {
 "ad_id": "autoru_1160414475-da6d5c82",
@@ -221,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.941016+00:00"
+"seen_at": "2026-10-20T06:22:27.631322+00:00"
 },
 {
 "ad_id": "autoru_1160414629-f91f96a5",
@@ -237,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.940996+00:00"
+"seen_at": "2026-10-20T06:22:27.631309+00:00"
 },
 {
 "ad_id": "autoru_1160414685-c20b69bd",
@@ -253,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-10-20T06:11:05.940985+00:00"
+"seen_at": "2026-10-20T06:22:27.631299+00:00"
 },
 {
 "ad_id": "autoru_1160414709-56070544",
@@ -264,12 +232,12 @@
 "price": 1210000,
 "market_price": 871000,
 "url": "https://auto.ru/cars/used/sale/ford/focus/1160414709-56070544/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/_IVJR7KagwxcS5buIa4j4zzcmtTxot0960U1_4PFmL1Gw_IaE7cB95Gvy512HlQu_EPxp3e7WfvI4ZKwUqZCiqdvk8o3_pI3_M6byqsAnUTuN2Kdb-7713oUIdJ_6HV1ZzliCBwTSMbRhHYDuNDXMKrPo7gau1kiSMe-6R-VObo7MQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/l67ZAZAZFVz_QQu1pmj-PyklAC06IdIfi0kSgZiITpBDytJ3SeOc4JS4_G3lveSvvGp6rSoKvmD1FQBW7EwaOXeJkAzuCtJLSwWRsx47ia8zBI9Or2hENQu2Wc_GEoyx9RNQBinlO-sZuEoI6LhJ56b08h1gmfRFPO95yitcXnQr-Fs/1200x900n",
 "mileage_km": 68917,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.940975+00:00"
+"seen_at": "2026-10-20T06:22:27.631287+00:00"
 },
 {
 "ad_id": "autoru_1160390188-44a471ad",
@@ -285,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.940961+00:00"
+"seen_at": "2026-10-20T06:22:27.631275+00:00"
 },
 {
 "ad_id": "autoru_1160417106-30369453",
@@ -296,12 +264,44 @@
 "price": 1250000,
 "market_price": 932000,
 "url": "https://auto.ru/cars/used/sale/hyundai/ix35/1160417106-30369453/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/mUVrbsZVqvAxb9gCx1ICTTmFWNikHgPUcJpSS1y8VLRkL1QSw6DPezBrONyS6Ds4oCd6Xc_KbgAvbqdA1VuzKDUaVH4Y8w2NGtmD3TIosyaNt6Jipj1vtGpHj1qnvL2P7rnM_emVB2FXrkwi2DG8xw7IRcwOcSs-5HYmRPED0UwV/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/Mnk5KDmqWAHAW7RlmBRXLDOChzPMoVKD47FnSCvUFGzMlgYp94na31e8esKLSSOJq2LdHKLRwagCNHAWOTb71S1ze7-kwOZCI3NwUToEpL5brQTSBgw34Na9aLefSq2deW19icwGfhAd9j6rFZyw8fWu74OlV53GDhKiny-_Cn4u0eI/1200x900n",
 "mileage_km": 270000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-20T06:11:05.940946+00:00"
+"seen_at": "2026-10-20T06:22:27.631263+00:00"
+},
+{
+"ad_id": "autoru_1160157737-0f3a2888",
+"source": "autoru",
+"brand": "Ford",
+"model": "Focus",
+"year": 2019,
+"price": 1500000,
+"market_price": 1111500,
+"url": "https://auto.ru/cars/used/sale/ford/focus/1160157737-0f3a2888/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/817d1191112085ef5c98f60f40800ee7/1200x900n",
+"mileage_km": 176000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-20T06:22:27.631239+00:00"
+},
+{
+"ad_id": "autoru_1160184537-ea0b50ee",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva Travel",
+"year": 2023,
+"price": 1050777,
+"market_price": 822500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
+"mileage_km": 56000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новая Усмань",
+"seen_at": "2026-10-20T06:22:27.631179+00:00"
 },
 {
 "ad_id": "autoru_1132906100-2c951b37",
