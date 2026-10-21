@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-21T06:18:51.770179+00:00"
+"seen_at": "2026-10-21T06:30:23.612260+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:51.770163+00:00"
+"seen_at": "2026-10-21T06:30:23.612244+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:51.770151+00:00"
+"seen_at": "2026-10-21T06:30:23.612234+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:51.770129+00:00"
+"seen_at": "2026-10-21T06:30:23.612212+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:51.770116+00:00"
+"seen_at": "2026-10-21T06:30:23.612199+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:51.770102+00:00"
+"seen_at": "2026-10-21T06:30:23.612183+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,23 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-21T06:18:51.770061+00:00"
+"seen_at": "2026-10-21T06:30:23.612145+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
 "source": "autoru",
-"brand": "Ford",
-"model": "Focus",
+"brand": "Daewoo",
+"model": "Nexia",
 "year": 2010,
 "price": 185000,
 "market_price": 105500,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160429213-18f4a0a5/",
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160434496-a3b3252e/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20181844/66f54f3242736a13619a164456fd8b82/1200x900n",
 "mileage_km": 162000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T06:18:29.691963+00:00"
+"seen_at": "2026-10-21T06:30:01.083320+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -141,7 +141,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T06:18:29.691950+00:00"
+"seen_at": "2026-10-21T06:30:01.083303+00:00"
+},
+{
+"ad_id": "autoru_1160393160-cecf45b4",
+"source": "autoru",
+"brand": "Renault",
+"model": "Kangoo",
+"year": 2002,
+"price": 355000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
+"mileage_km": 257000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T06:30:01.083268+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -158,22 +174,6 @@
 "seller_type": "PRIVATE",
 "city": "Ямное",
 "seen_at": "2026-10-21T06:18:29.691919+00:00"
-},
-{
-"ad_id": "autoru_1160393160-cecf45b4",
-"source": "autoru",
-"brand": "Renault",
-"model": "Kangoo",
-"year": 2002,
-"price": 355000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
-"mileage_km": 257000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T05:32:57.235705+00:00"
 },
 {
 "ad_id": "autoru_1160400492-b0cc6466",
