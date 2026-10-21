@@ -1,35 +1,19 @@
 [
 {
-"ad_id": "autoru_1160413872-5ff210fd",
+"ad_id": "autoru_1160411868-7f4cca93",
 "source": "autoru",
-"brand": "Datsun",
-"model": "on-DO",
-"year": 2015,
-"price": 320000,
-"market_price": 263000,
-"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413872-5ff210fd/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/c2b2e3dd5a2395ac55a2c93022df248c/1200x900n",
-"mileage_km": 188000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T07:38:42.231193+00:00"
-},
-{
-"ad_id": "autoru_1160413927-8dc4e6c4",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 2003,
-"price": 270000,
-"market_price": 94500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160413927-8dc4e6c4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/aad3c5a7530ce8e1dfdcfc13a182bb04/1200x900n",
-"mileage_km": 126523,
+"brand": "Chevrolet",
+"model": "Niva",
+"year": 2012,
+"price": 450000,
+"market_price": 374000,
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160411868-7f4cca93/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19851294/e682c46da4d254a1a33b5a35ec8e1364/1200x900n",
+"mileage_km": 175000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T07:38:42.231181+00:00"
+"city": "Бутурлиновка",
+"seen_at": "2026-10-21T08:11:01.428761+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:38:42.231156+00:00"
+"seen_at": "2026-10-21T08:11:01.428745+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:38:42.231143+00:00"
+"seen_at": "2026-10-21T08:11:01.428733+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -77,23 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:38:42.231128+00:00"
+"seen_at": "2026-10-21T08:11:01.428721+00:00"
 },
 {
-"ad_id": "autoru_1160411868-7f4cca93",
+"ad_id": "autoru_1160413872-5ff210fd",
 "source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2012,
-"price": 450000,
-"market_price": 374000,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160411868-7f4cca93/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19851294/e682c46da4d254a1a33b5a35ec8e1364/1200x900n",
-"mileage_km": 175000,
+"brand": "Datsun",
+"model": "on-DO",
+"year": 2015,
+"price": 320000,
+"market_price": 263000,
+"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413872-5ff210fd/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/c2b2e3dd5a2395ac55a2c93022df248c/1200x900n",
+"mileage_km": 188000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T08:11:01.428701+00:00"
+},
+{
+"ad_id": "autoru_1160413927-8dc4e6c4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 2003,
+"price": 270000,
+"market_price": 94500,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160413927-8dc4e6c4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/aad3c5a7530ce8e1dfdcfc13a182bb04/1200x900n",
+"mileage_km": 126523,
 "owners_display": "1",
 "seller_type": "PRIVATE",
-"city": "Бутурлиновка",
-"seen_at": "2026-10-21T07:38:42.231098+00:00"
+"city": "Воронеж",
+"seen_at": "2026-10-21T08:11:01.428687+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-21T07:38:42.231060+00:00"
+"seen_at": "2026-10-21T08:11:01.428644+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:38:24.385896+00:00"
+"seen_at": "2026-10-21T08:10:40.084594+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T07:38:24.385884+00:00"
+"seen_at": "2026-10-21T08:10:40.084581+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T07:38:24.385848+00:00"
+"seen_at": "2026-10-21T08:10:40.084544+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
