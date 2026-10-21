@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160411868-7f4cca93",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2012,
-"price": 450000,
-"market_price": 374000,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160411868-7f4cca93/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19851294/e682c46da4d254a1a33b5a35ec8e1364/1200x900n",
-"mileage_km": 175000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Бутурлиновка",
-"seen_at": "2026-10-21T14:15:59.611535+00:00"
-},
-{
 "ad_id": "autoru_1160413872-5ff210fd",
 "source": "autoru",
 "brand": "Datsun",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:59.611518+00:00"
+"seen_at": "2026-10-21T14:27:21.335323+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
@@ -45,23 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:59.611505+00:00"
-},
-{
-"ad_id": "autoru_1160419793-c5453061",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Lancer",
-"year": 2004,
-"price": 450000,
-"market_price": 283500,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
-"mileage_km": 251836,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T14:15:59.611489+00:00"
+"seen_at": "2026-10-21T14:27:21.335311+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -77,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:59.611437+00:00"
+"seen_at": "2026-10-21T14:27:21.335286+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -93,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:59.611400+00:00"
+"seen_at": "2026-10-21T14:27:21.335270+00:00"
+},
+{
+"ad_id": "autoru_1160419793-c5453061",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Lancer",
+"year": 2004,
+"price": 450000,
+"market_price": 283500,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
+"mileage_km": 251836,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T14:27:21.335236+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:41.258472+00:00"
+"seen_at": "2026-10-21T14:27:01.499356+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -118,14 +102,14 @@
 "model": "Kalina",
 "year": 2012,
 "price": 350000,
-"market_price": 240500,
+"market_price": 254000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160435485-4cc61232/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
 "mileage_km": 105000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T14:15:41.258463+00:00"
+"seen_at": "2026-10-21T14:27:01.499346+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -141,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:41.258438+00:00"
+"seen_at": "2026-10-21T14:27:01.499320+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -157,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T14:15:41.258426+00:00"
+"seen_at": "2026-10-21T14:27:01.499306+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -173,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T14:15:41.258379+00:00"
+"seen_at": "2026-10-21T14:27:01.499252+00:00"
+},
+{
+"ad_id": "autoru_1160411868-7f4cca93",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Niva",
+"year": 2012,
+"price": 450000,
+"market_price": 374000,
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160411868-7f4cca93/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19851294/e682c46da4d254a1a33b5a35ec8e1364/1200x900n",
+"mileage_km": 175000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Бутурлиновка",
+"seen_at": "2026-10-21T14:15:59.611535+00:00"
 },
 {
 "ad_id": "autoru_1160444296-94ee69fb",
