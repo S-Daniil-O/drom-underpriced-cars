@@ -13,55 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-21T07:15:54.666856+00:00"
-},
-{
-"ad_id": "autoru_1160418199-e29cc36f",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2105",
-"year": 1997,
-"price": 150000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2105/1160418199-e29cc36f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20784906/295d6285a9a6eae08e1e498eb9a35973/1200x900n",
-"mileage_km": 120000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T07:15:54.666839+00:00"
-},
-{
-"ad_id": "autoru_1160419484-b0b6fe01",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2106",
-"year": 1990,
-"price": 120000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2106/1160419484-b0b6fe01/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17697421/da01c4eb8235cb544c6e02616823b862/1200x900n",
-"mileage_km": 50000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T07:15:54.666827+00:00"
-},
-{
-"ad_id": "autoru_1160419793-c5453061",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Lancer",
-"year": 2004,
-"price": 450000,
-"market_price": 283500,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
-"mileage_km": 251836,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T07:15:54.666815+00:00"
+"seen_at": "2026-10-21T07:27:23.816140+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
@@ -77,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:15:54.666796+00:00"
+"seen_at": "2026-10-21T07:27:23.816123+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
@@ -93,7 +45,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:15:54.666782+00:00"
+"seen_at": "2026-10-21T07:27:23.816110+00:00"
+},
+{
+"ad_id": "autoru_1160418199-e29cc36f",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2105",
+"year": 1997,
+"price": 150000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2105/1160418199-e29cc36f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20784906/295d6285a9a6eae08e1e498eb9a35973/1200x900n",
+"mileage_km": 120000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T07:27:23.816085+00:00"
+},
+{
+"ad_id": "autoru_1160419484-b0b6fe01",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2106",
+"year": 1990,
+"price": 120000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2106/1160419484-b0b6fe01/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17697421/da01c4eb8235cb544c6e02616823b862/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T07:27:23.816072+00:00"
+},
+{
+"ad_id": "autoru_1160419793-c5453061",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Lancer",
+"year": 2004,
+"price": 450000,
+"market_price": 283500,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
+"mileage_km": 251836,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T07:27:23.816056+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-21T07:15:54.666737+00:00"
+"seen_at": "2026-10-21T07:27:23.816016+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T07:15:33.390311+00:00"
+"seen_at": "2026-10-21T07:27:08.098072+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -136,12 +136,12 @@
 "price": 350000,
 "market_price": 240500,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160435485-4cc61232/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17777984/a914fa60bf8f8361561f0fa982db561c/1200x900n",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
 "mileage_km": 105000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T07:15:33.390299+00:00"
+"seen_at": "2026-10-21T07:27:08.098058+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T07:15:33.390262+00:00"
+"seen_at": "2026-10-21T07:27:08.098007+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
