@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T17:06:55.132116+00:00"
+"seen_at": "2026-10-21T17:18:17.242665+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T17:06:55.132100+00:00"
+"seen_at": "2026-10-21T17:18:17.242649+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T17:06:55.132063+00:00"
+"seen_at": "2026-10-21T17:18:17.242611+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -61,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T17:06:36.988110+00:00"
+"seen_at": "2026-10-21T17:17:57.889802+00:00"
+},
+{
+"ad_id": "autoru_1160435485-4cc61232",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2012,
+"price": 350000,
+"market_price": 254000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160435485-4cc61232/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
+"mileage_km": 105000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Средний Икорец",
+"seen_at": "2026-10-21T17:17:57.889789+00:00"
+},
+{
+"ad_id": "autoru_1160328718-eac52ea3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 480000,
+"market_price": 292000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
+"mileage_km": 63000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ямное",
+"seen_at": "2026-10-21T17:17:57.889743+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -96,22 +128,6 @@
 "seen_at": "2026-10-21T17:06:36.988086+00:00"
 },
 {
-"ad_id": "autoru_1160435485-4cc61232",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2012,
-"price": 350000,
-"market_price": 254000,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160444329-b2fa5235/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
-"mileage_km": 105000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Средний Икорец",
-"seen_at": "2026-10-21T17:06:36.988071+00:00"
-},
-{
 "ad_id": "autoru_1160444403-045640ed",
 "source": "autoru",
 "brand": "Kia",
@@ -126,22 +142,6 @@
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
 "seen_at": "2026-10-21T17:06:36.988047+00:00"
-},
-{
-"ad_id": "autoru_1160328718-eac52ea3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 480000,
-"market_price": 292000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
-"mileage_km": 63000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ямное",
-"seen_at": "2026-10-21T17:06:36.988004+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
