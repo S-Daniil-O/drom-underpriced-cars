@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T02:30:18.170605+00:00"
+"seen_at": "2026-10-21T02:41:38.608954+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T02:30:18.170581+00:00"
+"seen_at": "2026-10-21T02:41:38.608930+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T02:30:18.170565+00:00"
+"seen_at": "2026-10-21T02:41:38.608914+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T02:30:18.170527+00:00"
+"seen_at": "2026-10-21T02:41:38.608876+00:00"
 },
 {
 "ad_id": "autoru_1134075323-e101d297",
@@ -77,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Подгорное",
-"seen_at": "2026-10-21T02:29:55.404071+00:00"
+"seen_at": "2026-10-21T02:41:24.413334+00:00"
+},
+{
+"ad_id": "autoru_1160393160-cecf45b4",
+"source": "autoru",
+"brand": "Renault",
+"model": "Kangoo",
+"year": 2002,
+"price": 355000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
+"mileage_km": 257000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T02:41:24.413260+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -94,22 +110,6 @@
 "seller_type": "PRIVATE",
 "city": "Ямное",
 "seen_at": "2026-10-21T02:29:55.403998+00:00"
-},
-{
-"ad_id": "autoru_1160393160-cecf45b4",
-"source": "autoru",
-"brand": "Renault",
-"model": "Kangoo",
-"year": 2002,
-"price": 355000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/renault/kangoo/1160393160-cecf45b4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17435526/4d46dc52d1ab96383dee51aa311ae956/1200x900n",
-"mileage_km": 257000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T02:18:24.747347+00:00"
 },
 {
 "ad_id": "autoru_1160411868-7f4cca93",
