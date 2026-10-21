@@ -2478,5 +2478,35 @@
     "mileage_km": 182340,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/bf55bde9364762256803ae9d19047d3e/1200x900n"
+  },
+  "autoru_1160449756-530ce9a8": {
+    "posted_at": "2026-10-21T20:33:22.371342+00:00",
+    "message_id": 191,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Vesta",
+    "year": 2016,
+    "price": 620000,
+    "median_price": 730000,
+    "median_sample_size": 11,
+    "price_rating": null,
+    "mileage_km": 215000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17750173/2fdbae6bf2b2e18cb1c0c80f5d87b34e/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta/894714842.html": {
+    "posted_at": "2026-10-21T20:33:25.127708+00:00",
+    "message_id": 192,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста",
+    "year": 2016,
+    "price": 620000,
+    "median_price": 755000.0,
+    "median_sample_size": 1812,
+    "price_rating": "нормальная цена",
+    "mileage_km": 215000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ZDrpnh49d31L-BSG_r6nXOLRVAUvL7-FRStyAZMcALF4SH_AzlModd5BDnuIuevRNSzXDkRFo4uzKmub/gen272wb.jpg"
   }
 }
