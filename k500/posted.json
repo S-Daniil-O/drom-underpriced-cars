@@ -4977,7 +4977,7 @@
   "autoru_1160391249-9328791b": {
     "posted_at": "2026-10-18T06:08:04.941585+00:00",
     "message_id": 379,
-    "deleted_at": null,
+    "deleted_at": "2026-10-21T06:21:39.198406+00:00",
     "brand": "Lada (ВАЗ)",
     "model": "Granta",
     "year": 2013,
@@ -5453,5 +5453,20 @@
     "mileage_km": 400000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19849727/f1cf5fb351c7fd81c639cfbc29d3ee67/1200x900n"
+  },
+  "autoru_1160434496-a3b3252e": {
+    "posted_at": "2026-10-21T06:24:42.773047+00:00",
+    "message_id": 411,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2010,
+    "price": 185000,
+    "median_price": 450000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 162000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20181844/66f54f3242736a13619a164456fd8b82/1200x900n"
   }
 }
