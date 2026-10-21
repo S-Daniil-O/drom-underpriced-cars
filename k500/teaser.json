@@ -1378,21 +1378,14 @@
     "vk_post_id": 149,
     "vk_deleted_at": "2026-10-21T16:24:45.638152+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/kalina/522575912.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-10-18T21:26:01.688638+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2107/129626194.html": {
     "posted_at": "2026-10-18T21:28:25.570296+00:00",
     "message_id": 194,
-    "deleted_at": null,
+    "deleted_at": "2026-10-21T21:29:59.331852+00:00",
     "rejected": false,
     "checked_at": "2026-10-18T21:28:25.570296+00:00",
     "vk_post_id": 150,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-21T21:29:59.331852+00:00"
   },
   "https://auto.drom.ru/voronezh/nissan/terrano/325162374.html": {
     "posted_at": null,
@@ -1528,5 +1521,12 @@
     "checked_at": "2026-10-21T12:10:33.628302+00:00",
     "vk_post_id": 161,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/522575912.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-10-21T21:33:22.653890+00:00"
   }
 }
