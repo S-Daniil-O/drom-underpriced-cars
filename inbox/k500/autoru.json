@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-21T10:05:16.149949+00:00"
+"seen_at": "2026-10-21T10:16:40.862099+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T10:05:16.149929+00:00"
+"seen_at": "2026-10-21T10:16:40.862083+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T10:05:16.149914+00:00"
+"seen_at": "2026-10-21T10:16:40.862072+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T10:05:16.149888+00:00"
+"seen_at": "2026-10-21T10:16:40.862048+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T10:05:16.149871+00:00"
+"seen_at": "2026-10-21T10:16:40.862033+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -93,39 +93,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T10:05:16.149835+00:00"
-},
-{
-"ad_id": "autoru_1160328718-eac52ea3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 480000,
-"market_price": 292000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
-"mileage_km": 63000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ямное",
-"seen_at": "2026-10-21T10:04:55.798697+00:00"
+"seen_at": "2026-10-21T10:16:40.861997+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
 "source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
 "year": 2010,
 "price": 185000,
 "market_price": 105500,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160434496-a3b3252e/",
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160432196-bd4ec90c/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20181844/66f54f3242736a13619a164456fd8b82/1200x900n",
 "mileage_km": 162000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T09:53:23.298336+00:00"
+"seen_at": "2026-10-21T10:16:20.380125+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -141,7 +125,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T09:53:23.298325+00:00"
+"seen_at": "2026-10-21T10:16:20.380112+00:00"
+},
+{
+"ad_id": "autoru_1160328718-eac52ea3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 480000,
+"market_price": 292000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
+"mileage_km": 63000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ямное",
+"seen_at": "2026-10-21T10:16:20.380061+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
