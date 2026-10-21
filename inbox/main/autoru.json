@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T03:03:50.950751+00:00"
+"seen_at": "2026-10-21T03:15:06.343222+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -24,12 +24,12 @@
 "price": 790000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/xMr43pmiBHlMg6OGto6XcRw2oZNu6v6TKEL63pquLYO5S4aGnFf1tKyzsmrae9bMMhS5H9ZyAfzvYVouaXFFheVw5xb8ksrTvlTdtsj9ywMpLn225Ee4dtFiTnFo-6V8OHGw7xHtmnU0A_Gohykl1nQPsgcwjai9fCmod47SUbvZhqc/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/xu2GXQPDS6IskuU-2ltk53mV1HhoQUKeTbhie5MJ9Zz8n_dUb50gYGp36V9-L21Q5QlL-6ooqy9bLBTEoCU3J245Wnqjo7NcDWkBy-k_I4HrwjifH4CDqs_Qs0z4rR-rY2v4R5k8KrLF5MyXrWitKMhTUhFiT8GfvMwoi_5gx7LB-E0/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T03:03:50.950714+00:00"
+"seen_at": "2026-10-21T03:15:06.343185+00:00"
 },
 {
 "ad_id": "autoru_1160013989-8d9b50c3",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T03:03:33.139850+00:00"
+"seen_at": "2026-10-21T03:14:45.157202+00:00"
 },
 {
 "ad_id": "autoru_1160423059-738a6b03",
@@ -61,7 +61,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T03:03:33.139840+00:00"
+"seen_at": "2026-10-21T03:14:45.157191+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -77,7 +77,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-21T03:03:33.139828+00:00"
+"seen_at": "2026-10-21T03:14:45.157177+00:00"
+},
+{
+"ad_id": "autoru_1160390188-44a471ad",
+"source": "autoru",
+"brand": "Ford",
+"model": "Focus",
+"year": 2014,
+"price": 1250000,
+"market_price": 877500,
+"url": "https://auto.ru/cars/used/sale/ford/focus/1134208305-9e626ff1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18090779/b5cf3ff6ec4bfb6e604ee4ace33a2e0a/1200x900n",
+"mileage_km": 107000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T03:14:45.157162+00:00"
+},
+{
+"ad_id": "autoru_1160184537-ea0b50ee",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva Travel",
+"year": 2023,
+"price": 1050777,
+"market_price": 822500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
+"mileage_km": 56000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новая Усмань",
+"seen_at": "2026-10-21T03:14:45.157098+00:00"
 },
 {
 "ad_id": "autoru_1160424139-02e76d8c",
@@ -94,22 +126,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-21T03:03:33.139812+00:00"
-},
-{
-"ad_id": "autoru_1160184537-ea0b50ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva Travel",
-"year": 2023,
-"price": 1050777,
-"market_price": 822500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva_travel/1160184537-ea0b50ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/18e63555699d8d73b12c624a9e131bab/1200x900n",
-"mileage_km": 56000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новая Усмань",
-"seen_at": "2026-10-21T03:03:33.139792+00:00"
 },
 {
 "ad_id": "autoru_1132906100-2c951b37",
@@ -142,22 +158,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-21T03:03:33.139725+00:00"
-},
-{
-"ad_id": "autoru_1160390188-44a471ad",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2014,
-"price": 1250000,
-"market_price": 877500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160390188-44a471ad/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18090779/b5cf3ff6ec4bfb6e604ee4ace33a2e0a/1200x900n",
-"mileage_km": 107000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T03:03:33.139666+00:00"
 },
 {
 "ad_id": "autoru_1160413473-47536861",
