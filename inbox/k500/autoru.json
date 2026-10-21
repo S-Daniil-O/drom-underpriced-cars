@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:49:43.696408+00:00"
+"seen_at": "2026-10-21T19:01:13.984915+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:49:43.696394+00:00"
+"seen_at": "2026-10-21T19:01:13.984889+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:49:43.696360+00:00"
+"seen_at": "2026-10-21T19:01:13.984845+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:49:25.338098+00:00"
+"seen_at": "2026-10-21T19:00:50.044820+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -77,23 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T18:49:25.338085+00:00"
-},
-{
-"ad_id": "autoru_1160328718-eac52ea3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 480000,
-"market_price": 292000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
-"mileage_km": 63000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ямное",
-"seen_at": "2026-10-21T18:49:25.338035+00:00"
+"seen_at": "2026-10-21T19:00:50.044810+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:37:55.923333+00:00"
+"seen_at": "2026-10-21T19:00:50.044785+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:37:55.923321+00:00"
+"seen_at": "2026-10-21T19:00:50.044775+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -136,12 +120,28 @@
 "price": 480000,
 "market_price": 459500,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/mZMKrD0AV8BbjVAh9ImjUBQ8lPdkkXMNMAxFlV_2TdFxSR-vgSk5YVRa5nDKbHkoL5P6L75MlDCKAyCIZQMIYsi4cN9fGIbrplYh79G2aKU_TTC0eEahGC0huUyjRHGqt3rbcIeMDWwt6oc0tsbrB_x6m1fT7pWZ9jBUssZyBjGUqVg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/VcKkUfQuPIqeQuy5q4fsNJpcDVnM4SABuWMLfg0cJ2fyjANu_pS2S_zmZgyjkM0lBg-zELRs-73u5vN0lN44p-VL2jLLi5nx6F1EttF7l9t5TtYJV-IXUucS5bdji5yxqFsk5WApxpncrIcJEwTqF-Af1rF_x7U_KM9nWkjWLHkSikI/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-21T18:37:55.923302+00:00"
+"seen_at": "2026-10-21T19:00:50.044757+00:00"
+},
+{
+"ad_id": "autoru_1160328718-eac52ea3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 480000,
+"market_price": 292000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160328718-eac52ea3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20410536/7df8f01eb6732256ed4e5911ad005839/1200x900n",
+"mileage_km": 63000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ямное",
+"seen_at": "2026-10-21T19:00:50.044714+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
