@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:35.483512+00:00"
+"seen_at": "2026-10-21T17:06:55.132116+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:35.483495+00:00"
+"seen_at": "2026-10-21T17:06:55.132100+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:35.483458+00:00"
+"seen_at": "2026-10-21T17:06:55.132063+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -61,23 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:12.845095+00:00"
-},
-{
-"ad_id": "autoru_1160435485-4cc61232",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2012,
-"price": 350000,
-"market_price": 254000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160435485-4cc61232/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
-"mileage_km": 105000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Средний Икорец",
-"seen_at": "2026-10-21T16:55:12.845086+00:00"
+"seen_at": "2026-10-21T17:06:36.988110+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:12.845063+00:00"
+"seen_at": "2026-10-21T17:06:36.988095+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +93,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T16:55:12.845052+00:00"
+"seen_at": "2026-10-21T17:06:36.988086+00:00"
+},
+{
+"ad_id": "autoru_1160435485-4cc61232",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Corolla",
+"year": 2012,
+"price": 350000,
+"market_price": 254000,
+"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160444329-b2fa5235/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
+"mileage_km": 105000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Средний Икорец",
+"seen_at": "2026-10-21T17:06:36.988071+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -120,12 +120,12 @@
 "price": 480000,
 "market_price": 459500,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/b_USuUjgsabEKkl8iW3ptKJgZJm-2neL6Z9DfIJNBG9PIHJL3YI4IyOwTRXxCm9HR8UMYOKQdZ98hUQOA5Z3oSGCTLPWymGPs-nDRisYP_-bnF7Gk3y7OE518KR7yqJ9S75OR7hXKgtzCsbl7OGii-fTH_vW0IUd5FtOE2-ZBMD2Y1g/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/aoEBKSnptLhcEcmuSEN0KVI-qu4x0-Ia6piUlHokRwn3NSAalMj0-0pDa3y7PvxsgpFK8xKLpkd9V7qsUAnxBrt0eSPX8XzeXZt49WD5WQU1_5YUsMl2KSzTA0ywrpJW3GQicqxIzP9sFgnlCutQIcFNr3yv-Gu3UJwGVKfkj8wAZ5Q/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-21T16:55:12.845035+00:00"
+"seen_at": "2026-10-21T17:06:36.988047+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T16:55:12.844993+00:00"
+"seen_at": "2026-10-21T17:06:36.988004+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
