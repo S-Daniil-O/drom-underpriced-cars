@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T20:55:17.683347+00:00"
+"seen_at": "2026-10-21T21:06:27.738700+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T20:55:17.683308+00:00"
+"seen_at": "2026-10-21T21:06:27.738685+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T20:54:56.894091+00:00"
+"seen_at": "2026-10-21T21:06:27.738589+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -61,23 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T20:54:56.894081+00:00"
-},
-{
-"ad_id": "autoru_1160449602-88233599",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2011,
-"price": 355000,
-"market_price": 260000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160449602-88233599/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17683531/9HXle6DKXnTPtzqnMyoN9ALHkiDtXvatkLgLY-N2_lw2mjQ6Zntoh0QbvhiBgs9g8JZMz69GzPFZd9QPTIDS3436Rkq-wmo99-iJzwjQwGmfgYkyFsS7C80m_jTH1ME3Tx4q9NrxYHox_-Tgyjn_lcuGR8KQ_MtQvdCIwAzdHY2lCw/1200x900n",
-"mileage_km": 50200,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T20:54:56.894059+00:00"
+"seen_at": "2026-10-21T21:06:14.614349+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T20:54:56.894040+00:00"
+"seen_at": "2026-10-21T21:06:14.614327+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T20:54:56.894028+00:00"
+"seen_at": "2026-10-21T21:06:14.614318+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -120,12 +104,44 @@
 "price": 480000,
 "market_price": 459500,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/eTtb9T4xKg50ydHr6Lly5GHAJcXuuCeXpkAHevxBJNXkalDaA0Wad2YRmF4yippqfwRTFduP4hPBkO--zaKBiXFdMaCsP7aHkIKDXMztVYqsRjNNEvT2Gs8UuQX66g5J2qjhzUquojgFBlH_bh2vi3rFT2YkY8jf9wupPuRX291HnHU/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/MDKKttcsyTObCPoPn0ZxsSURKAKuyCCZZhqN0Wu77MKzl4Tsd7lJXIgKNCRIl4BfKug-GPm5wGlQesYCHtOnY25F_TG8t-FQCQDGY8HBM56GnzKjLYfmIE0XWyA31ZbqkwhNhKN_JD86_Pt-iYEJlMRB-l5yaPeMSmfPok75cd_eCN0/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-21T20:54:56.894008+00:00"
+"seen_at": "2026-10-21T21:06:14.614303+00:00"
+},
+{
+"ad_id": "autoru_1160449602-88233599",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2011,
+"price": 355000,
+"market_price": 260000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160449602-88233599/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17683531/I-Nm1L1Mox3e2tZEI9EmN0t_TOiYKMktx3HCaFvqFYKVTKkopegG4E3uoAPy8DUYG_C_em6tgr4VaiuPq2jduX3SRfju_StwQ47INk757a8aBUPVn4PBJjmXDsmqFtv5PPAHBVoQtoAk27FZRZzTUz5vwvPAmo759jlZgdIiaHRqJ6E/1200x900n",
+"mileage_km": 50200,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T21:06:14.614279+00:00"
+},
+{
+"ad_id": "autoru_1160449925-c1db7bec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 2000,
+"price": 130000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160449925-c1db7bec/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/8e4f256d31d83b6d4f4ea7544df9da23/1200x900n",
+"mileage_km": 96000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T21:06:14.614263+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -141,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T20:54:56.893965+00:00"
+"seen_at": "2026-10-21T21:06:14.614230+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -190,21 +206,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-21T15:13:03.602264+00:00"
-},
-{
-"ad_id": "autoru_1160445412-130746c5",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2012,
-"price": 160000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160445412-130746c5/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20467659/27cec38f90716046395a95a2a58dc999/1200x900n",
-"mileage_km": 93562,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T15:01:16.939809+00:00"
 }
 ]
