@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160413927-8dc4e6c4",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 2003,
-"price": 270000,
-"market_price": 94500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160413927-8dc4e6c4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/aad3c5a7530ce8e1dfdcfc13a182bb04/1200x900n",
-"mileage_km": 126523,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T15:24:27.924535+00:00"
-},
-{
 "ad_id": "autoru_1160418199-e29cc36f",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:27.924509+00:00"
+"seen_at": "2026-10-21T15:35:45.743357+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:27.924476+00:00"
+"seen_at": "2026-10-21T15:35:45.743343+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:27.924440+00:00"
+"seen_at": "2026-10-21T15:35:45.743307+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:06.474457+00:00"
+"seen_at": "2026-10-21T15:35:26.131914+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -93,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T15:24:06.474448+00:00"
+"seen_at": "2026-10-21T15:35:26.131903+00:00"
+},
+{
+"ad_id": "autoru_1160444403-045640ed",
+"source": "autoru",
+"brand": "Kia",
+"model": "Rio",
+"year": 2010,
+"price": 480000,
+"market_price": 459500,
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/Q9hhbEIaBPjMO2tYufafdzCvDcDBwG_EYyRYVvDT3ZTcmN2kEso9dSyFDuUP9Bn9p1yo5CcbISB8wgT34PdaP1sDS3rI39h6vatLRVgzCe6RDs1MIkvF-fwXhh3hU2QrQ6zX26nM373r3VnbH-ucCh53AvNSydfe_N3UhqA7hHAFEaU/1200x900n",
+"mileage_km": 210000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новоподклетное",
+"seen_at": "2026-10-21T15:35:26.131879+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:06.474422+00:00"
+"seen_at": "2026-10-21T15:35:26.131853+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,23 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T15:24:06.474411+00:00"
-},
-{
-"ad_id": "autoru_1160444403-045640ed",
-"source": "autoru",
-"brand": "Kia",
-"model": "Rio",
-"year": 2010,
-"price": 480000,
-"market_price": 459500,
-"url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/OMx62XMhMR_4fDPORGv_hFoGhfFFFMEyr8kW-PEeYRbtdMBLoh-JiMIB4zjB-Z1LrdF14CuCRbeLkgeMhHvt3PdSx_NKymfCcrp69zLS1JBTETdvrpmfNEo2t17rBX7yMrodOGNAE_cmgIPYJW1WKeHdsfxE0d136znTI6nSZO1I5TM/1200x900n",
-"mileage_km": 210000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новоподклетное",
-"seen_at": "2026-10-21T15:24:06.474394+00:00"
+"seen_at": "2026-10-21T15:35:26.131840+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -157,7 +141,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T15:24:06.474353+00:00"
+"seen_at": "2026-10-21T15:35:26.131805+00:00"
+},
+{
+"ad_id": "autoru_1160413927-8dc4e6c4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 2003,
+"price": 270000,
+"market_price": 94500,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160413927-8dc4e6c4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/aad3c5a7530ce8e1dfdcfc13a182bb04/1200x900n",
+"mileage_km": 126523,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T15:24:27.924535+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
