@@ -2418,5 +2418,35 @@
     "mileage_km": 66196,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/5303452/8f557b5aeb4f2252e80c2037536450d7/1200x900n"
+  },
+  "autoru_1134284208-74a39e8b": {
+    "posted_at": "2026-10-21T07:10:26.318059+00:00",
+    "message_id": 187,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2020,
+    "price": 790000,
+    "median_price": 1339000.0,
+    "median_sample_size": 8,
+    "price_rating": null,
+    "mileage_km": 9400,
+    "owners_display": "1",
+    "image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/-AOTbV8IKeZ8rCNF07EFGYvAZJBR67Nu5y2J6-LAAPC5f6XcUHj4zV_0H9sNg83AjokNF_8PNtGPfMB30-cZr_C3WLN1I3V0OQVqMT1Nq9vhdS8k4sXxGvNjKrApjj1uq597TnGTkG33KustMPTrwtVAlNqDCZgwxze1NfDDTihRyII/1200x900n"
+  },
+  "autoru_1160436333-2902d6a2": {
+    "posted_at": "2026-10-21T07:10:30.796202+00:00",
+    "message_id": 188,
+    "deleted_at": null,
+    "brand": "Suzuki",
+    "model": "Grand Vitara",
+    "year": 2012,
+    "price": 580000,
+    "median_price": 1016000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 219183,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/6477cbbea63012d2a7adc54718df6253/1200x900n"
   }
 }
