@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:20.865291+00:00"
+"seen_at": "2026-10-21T18:26:49.924218+00:00"
 },
 {
 "ad_id": "autoru_1160419484-b0b6fe01",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:20.865275+00:00"
+"seen_at": "2026-10-21T18:26:49.924204+00:00"
 },
 {
 "ad_id": "autoru_1160419793-c5453061",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:20.865238+00:00"
+"seen_at": "2026-10-21T18:26:49.924169+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -61,23 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:04.233732+00:00"
-},
-{
-"ad_id": "autoru_1160435485-4cc61232",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2012,
-"price": 350000,
-"market_price": 254000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160435485-4cc61232/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
-"mileage_km": 105000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Средний Икорец",
-"seen_at": "2026-10-21T18:15:04.233722+00:00"
+"seen_at": "2026-10-21T18:26:26.182582+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:04.233708+00:00"
+"seen_at": "2026-10-21T18:26:26.182563+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,23 +93,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T18:15:04.233698+00:00"
+"seen_at": "2026-10-21T18:26:26.182550+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
+"brand": "Kia",
+"model": "Rio",
 "year": 2010,
 "price": 480000,
 "market_price": 459500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160440112-ad17e97c/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/H8wdlkBi0xZyf5PwhGl_og9Vkgpwlpf3dBS-2-7zO_PQ57WZ7gAY0FWu4VENq4UdBRRngeH9h2i7Rx89Kj6tNpLZS0rHisRgXoTFOlAYiEpAC198m8gV-BCphTP6uuhXfOXVYQFqfqfVQzel2pnH1aERK95eCTMpm2V1nisKLkATMg/1200x900n",
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/Q0HZVh6VVlhF6JFcXRJAICfUXt7h2cn9XDGeGglZVXfWVTw6A83nOntGmaw65MRo7TXClGqM0iQvj8wyy6Tl_VsRIoW_W2K4jHef4bi8kqZSqRDCoi-eO_p5q7ERWJBtmdgyeuffpLfRtRUyVwNZJtyKf6sJYqKrQE5EERFYzqCwnWE/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-21T18:15:04.233669+00:00"
+"seen_at": "2026-10-21T18:26:26.182528+00:00"
+},
+{
+"ad_id": "autoru_1160435485-4cc61232",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2012,
+"price": 350000,
+"market_price": 254000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160447483-2d3d802c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/5c65bed438863c588df408628f0b1c65/1200x900n",
+"mileage_km": 105000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Средний Икорец",
+"seen_at": "2026-10-21T18:26:26.182499+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T18:15:04.233623+00:00"
+"seen_at": "2026-10-21T18:26:26.182435+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
