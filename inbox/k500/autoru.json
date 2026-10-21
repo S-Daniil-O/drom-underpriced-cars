@@ -13,55 +13,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-21T09:30:54.950033+00:00"
-},
-{
-"ad_id": "autoru_1160419484-b0b6fe01",
-"source": "autoru",
-"brand": "Datsun",
-"model": "on-DO",
-"year": 1990,
-"price": 120000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413872-5ff210fd/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17697421/da01c4eb8235cb544c6e02616823b862/1200x900n",
-"mileage_km": 50000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T09:30:54.950015+00:00"
-},
-{
-"ad_id": "autoru_1160419793-c5453061",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Lancer",
-"year": 2004,
-"price": 450000,
-"market_price": 283500,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
-"mileage_km": 251836,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-21T09:30:54.950001+00:00"
+"seen_at": "2026-10-21T09:42:12.749758+00:00"
 },
 {
 "ad_id": "autoru_1160413872-5ff210fd",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Datsun",
+"model": "on-DO",
 "year": 2015,
 "price": 320000,
 "market_price": 263000,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160423108-1b052ab6/",
+"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160413872-5ff210fd/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/c2b2e3dd5a2395ac55a2c93022df248c/1200x900n",
 "mileage_km": 188000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T09:30:54.949979+00:00"
+"seen_at": "2026-10-21T09:42:12.749740+00:00"
 },
 {
 "ad_id": "autoru_1160413927-8dc4e6c4",
@@ -77,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T09:30:54.949963+00:00"
+"seen_at": "2026-10-21T09:42:12.749727+00:00"
 },
 {
 "ad_id": "autoru_1160418199-e29cc36f",
@@ -93,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T09:30:54.949911+00:00"
+"seen_at": "2026-10-21T09:42:12.749702+00:00"
+},
+{
+"ad_id": "autoru_1160419484-b0b6fe01",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2106",
+"year": 1990,
+"price": 120000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2106/1160419484-b0b6fe01/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17697421/da01c4eb8235cb544c6e02616823b862/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T09:42:12.749687+00:00"
+},
+{
+"ad_id": "autoru_1160419793-c5453061",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Lancer",
+"year": 2004,
+"price": 450000,
+"market_price": 283500,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160419793-c5453061/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21167286/9350d955d15bfc1f89ed8b087cc37b0a/1200x900n",
+"mileage_km": 251836,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-21T09:42:12.749649+00:00"
 },
 {
 "ad_id": "autoru_1160434496-a3b3252e",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-21T09:30:38.129252+00:00"
+"seen_at": "2026-10-21T09:41:55.486740+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-21T09:30:38.129238+00:00"
+"seen_at": "2026-10-21T09:41:55.486727+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-21T09:30:38.129188+00:00"
+"seen_at": "2026-10-21T09:41:55.486669+00:00"
 },
 {
 "ad_id": "autoru_1160393160-cecf45b4",
