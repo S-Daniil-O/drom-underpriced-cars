@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:46.986102+00:00"
+"seen_at": "2026-10-22T16:23:59.541716+00:00"
 },
 {
 "ad_id": "autoru_1160435485-4cc61232",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Средний Икорец",
-"seen_at": "2026-10-22T16:12:46.986088+00:00"
+"seen_at": "2026-10-22T16:23:59.541704+00:00"
 },
 {
 "ad_id": "autoru_1160441688-3b93a48f",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:46.986047+00:00"
+"seen_at": "2026-10-22T16:23:59.541673+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:46.986013+00:00"
+"seen_at": "2026-10-22T16:23:59.541640+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -72,12 +72,12 @@
 "price": 480000,
 "market_price": 459500,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/lLKwYjO9yTtMzM6pFtlNsSs5lkHIexHcyetyubfhVlRublHZHYBv9wlvJRz8exJ4qC3s0PglVRN6WtE9Rmhov4mmP-V_J1IVrrIWpsiG6ryUhz2m8TjzgW3GA9xRdMlZuiytb8P1-xPmNQ73dpilLBmoJBGQTNOCsF2HUW8D_0F0sSI/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/q-Bs9MAb46WZd3R0micrl-Ww_TJxboxJ_IFenuaH-1SbXyece9zpVeY7HchsiqnNxnuQ22mY9K1De8oIqGLt6skcOZFtZjYgIB7rDGg4X7gAjHeYqODAB0v48TsQx5vtayaHgJxolOfYafghCyyZgZ14rxduwHe2LKOnbNoYnQ-czg/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-22T16:12:30.423349+00:00"
+"seen_at": "2026-10-22T16:23:38.978761+00:00"
 },
 {
 "ad_id": "autoru_1160449602-88233599",
@@ -88,12 +88,12 @@
 "price": 355000,
 "market_price": 280000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160449602-88233599/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/uiqoBkHYpystIS5a7Ndt_r173QD4n7_1EjrZplUY8OHEYVBvgrNRNikyBt6cLfEDtoNIr9HKQUNDnIIYQ3G6FtjNBaaOGQpRSwncreZJWhpSmw1DcC2XwOfdc8pYaGkmxWbrcExXv-33QWR3-W09a0CEBZwAOdU8m1mdmuSVJOCZI4Q/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/mQ4XgU2XZb8b9lYFUQ9zcrUCNX6yGBYvc-k_p6moqXWi7EjUNg2oCKdh3-Rjv150G_yXYIz-G_ADMC3bMLpEkCzr4redYUgPcfqWXihi4CpTKvFAfB7g-Fxg-O12MtsQoAmyLwkaaq-HnJ3Q0qu8Z4f44PRFwhgWhuEaCtYx0NZl5g/1200x900n",
 "mileage_km": 50200,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:30.423328+00:00"
+"seen_at": "2026-10-22T16:23:38.978735+00:00"
 },
 {
 "ad_id": "autoru_1160449925-c1db7bec",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:30.423316+00:00"
+"seen_at": "2026-10-22T16:23:38.978721+00:00"
 },
 {
 "ad_id": "autoru_1160461755-53be2e30",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-22T16:12:30.423289+00:00"
+"seen_at": "2026-10-22T16:23:38.978690+00:00"
+},
+{
+"ad_id": "autoru_1160465087-e6677010",
+"source": "autoru",
+"brand": "Opel",
+"model": "Zafira",
+"year": 2008,
+"price": 420000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/opel/zafira/1160465087-e6677010/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20671634/378b0d891177c1d2a7297166a063d632/1200x900n",
+"mileage_km": 220000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-22T16:23:38.978667+00:00"
 },
 {
 "ad_id": "autoru_1160328718-eac52ea3",
@@ -141,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-10-22T16:12:30.423254+00:00"
+"seen_at": "2026-10-22T16:23:38.978635+00:00"
 },
 {
 "ad_id": "autoru_1160461159-d91e3e81",
