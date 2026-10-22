@@ -5543,5 +5543,20 @@
     "mileage_km": 320000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/_LyD0XGGVOmznchrhzKlPiMVz3vLRhdGy2uecRe1OQUCQ38GbWNsw6Y15w7aCzO_OFJJFFst5y07vH89/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/escort/199989667.html": {
+    "posted_at": "2026-10-22T15:19:33.994730+00:00",
+    "message_id": 417,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Escort",
+    "year": 1988,
+    "price": 95000,
+    "median_price": 199000.0,
+    "median_sample_size": 414,
+    "price_rating": null,
+    "mileage_km": 78600,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/AErw3jh9_Sr3gf8goY9-nFXEZFSjkW1mV9Zt3ftIOf3P3DPtmaNiiNIOUQf9H0lXZTu_ZjcJyxwvlrT6/gen272wb.jpg"
   }
 }
