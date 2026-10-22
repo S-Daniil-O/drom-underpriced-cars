@@ -678,17 +678,41 @@ CITY_STEMS = {"Воронежская": "воронеж", "Белгородск�
               "Курская": "курск", "Тамбовская": "тамбов", "Орловская": "орел"}
 
 
-def tags(d):
-    """#Воронеж, #Черноземье, #суперцена — по региону лота и скидке к рынку."""
+PRICE_TAGS = [(100_000, "#до100тыс"), (300_000, "#до300тыс"), (500_000, "#до500тыс"), (1_000_000, "#до1млн")]
+SOURCE_TAGS = {"ЦДТ": "#ЦДТ", "МЭТС": "#МЭТС", "ТоргГрупп": "#ТоргГрупп"}
+
+
+def _is_moscow_city(d):
+    rn = (d.get("region_name") or "").lower().replace(" ", "")
+    if rn:
+        return rn.startswith(("г.москва", "москва"))
+    return bool(re.search(r"(^|[\s,])г\.?\s*москва\b", (d.get("region") or "").lower()))
+
+
+def tags(d, hot=False):
+    """Хэштеги поста (по ним работает поиск из закреплённого сообщения):
+    регион, ценовой диапазон минимальной цены, площадка, суперцена;
+    для горящих — #горящие, #беззаявок (заявок нет), #последнийшанс."""
     out = []
     if _region_hits(d, [HOME_REGION]):
         out.append("#Воронеж")
     if _region_hits(d, NEAR_REGIONS):
         out.append("#Черноземье")
+    if _is_moscow_city(d):
+        out.append("#Москва")
+    elif _region_hits(d, ["Московская"]):
+        out.append("#МосковскаяОбласть")
     if discount(d) >= SUPER_DISCOUNT:
         out.append("#суперцена")
-    if d.get("last_call"):
-        out.append("#беззаявок")
+    out.append(next((t for lim, t in PRICE_TAGS if d["min_price"] <= lim), "#от1млн"))
+    if d.get("source") in SOURCE_TAGS:
+        out.append(SOURCE_TAGS[d["source"]])
+    if hot:
+        out.append("#горящие")
+        if d.get("requests") == 0:
+            out.append("#беззаявок")
+        if d.get("last_call"):
+            out.append("#последнийшанс")
     return out
 
 
@@ -766,7 +790,7 @@ def hot_caption(d):
         super_line(d),
         f"🔨 {d['car_name']}",
         f"📍 {d['region']}" if d.get("region") else None,
-        " ".join(tags(d)) or None,
+        " ".join(tags(d, hot=True)) or None,
         "",
         f"Минимальная цена: {money(h['min_price'])}",
         (f"✅ Действует сейчас — заявку можно подать до {h['end']:%d.%m.%Y %H:%M}"
