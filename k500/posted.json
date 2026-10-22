@@ -5112,7 +5112,7 @@
   "https://auto.drom.ru/voronezh/lada/2114/814557771.html": {
     "posted_at": "2026-10-19T12:33:50.285176+00:00",
     "message_id": 388,
-    "deleted_at": null,
+    "deleted_at": "2026-10-22T12:35:18.684444+00:00",
     "brand": "Лада",
     "model": "2114 Самара",
     "year": 2007,
@@ -5127,7 +5127,7 @@
   "https://auto.drom.ru/voronezh/daewoo/nexia/763902887.html": {
     "posted_at": "2026-10-19T12:33:52.242530+00:00",
     "message_id": 389,
-    "deleted_at": null,
+    "deleted_at": "2026-10-22T12:35:20.032671+00:00",
     "brand": "Daewoo",
     "model": "Nexia",
     "year": 2011,
@@ -5513,5 +5513,20 @@
     "mileage_km": 250000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/rmQ0SXJLWh8hvy7xL1Vn-nQfbYtTTgRJdqvmJ4wGq1PumtlP1dc0wTn69VTrJnsafzHi4gmLjA7yZHSe/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/206/220560022.html": {
+    "posted_at": "2026-10-22T12:38:40.628244+00:00",
+    "message_id": 415,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "206",
+    "year": 2007,
+    "price": 130000,
+    "median_price": 160000,
+    "median_sample_size": 1459,
+    "price_rating": null,
+    "mileage_km": 235000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/1P4f-4_0kfvi7wWpoHX6bJoGiyUj1DzCC2UYH-gKyyw3sQkgiBf569DLtZd8WnwxyVl6lYFtude7ZT88/gen272wb.jpg"
   }
 }
