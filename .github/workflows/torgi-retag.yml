@@ -1,0 +1,55 @@
+name: torgi-retag
+# Разово (22.10.2026): новые хэштеги в старых постах + закреплённая навигация в обоих каналах.
+on: workflow_dispatch
+jobs:
+  retag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+      HOT: ${{ vars.TORGI_HOT_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.parse, urllib.error
+          T = os.environ["TORGI_BOT_TOKEN"]
+          def call(method, data):
+              req = urllib.request.Request(f"https://api.telegram.org/bot{T}/{method}", data=urllib.parse.urlencode(data).encode())
+              for _ in range(5):
+                  try:
+                      return json.load(urllib.request.urlopen(req, timeout=30))
+                  except urllib.error.HTTPError as e:
+                      r = json.load(e)
+                      if r.get("error_code") == 429:
+                          time.sleep(r.get("parameters", {}).get("retry_after", 5) + 1); continue
+                      return r
+          # 1. навигация: отправить и закрепить
+          for chat, f in (("@torgi_vrn_ss", "torgi/once/pin_main.txt"), (os.environ["HOT"], "torgi/once/pin_hot.txt")):
+              r = call("sendMessage", {"chat_id": chat, "text": open(f).read(), "disable_notification": "true"})
+              if not r.get("ok"):
+                  print("навигация не отправлена", chat, r.get("description")); continue
+              mid = r["result"]["message_id"]
+              p = call("pinChatMessage", {"chat_id": chat, "message_id": mid, "disable_notification": "true"})
+              print("навигация", chat, "сообщение", mid, "закреплено:", p.get("ok"), p.get("description", ""))
+          # 2. хэштеги в старых постах
+          ok = skip = fail = 0
+          for e in json.load(open("torgi/once/retag_edits.json")):
+              base = {"chat_id": e["chat"], "message_id": e["message_id"]}
+              for _ in range(2):
+                  if e["photo"]:
+                      r = call("editMessageCaption", {**base, "caption": e["text"]})
+                  else:
+                      r = call("editMessageText", {**base, "text": e["text"], "disable_web_page_preview": "true"})
+                  d = r.get("description", "")
+                  if not r.get("ok") and "no caption" in d: e["photo"] = False; continue
+                  if not r.get("ok") and "text in the message to edit" in d: e["photo"] = True; continue
+                  break
+              if r.get("ok"): ok += 1
+              elif "not modified" in d: skip += 1
+              else:
+                  fail += 1
+                  if fail <= 15: print("ошибка", e["chat"], e["message_id"], d)
+              time.sleep(1.1)
+          print(f"хэштеги: исправлено {ok}, без изменений {skip}, ошибок {fail}")
+          PY
