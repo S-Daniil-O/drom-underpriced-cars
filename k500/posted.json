@@ -5172,7 +5172,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/836481046.html": {
     "posted_at": "2026-10-19T18:10:31.891822+00:00",
     "message_id": 392,
-    "deleted_at": null,
+    "deleted_at": "2026-10-22T18:23:56.812555+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2007,
@@ -5558,5 +5558,20 @@
     "mileage_km": 78600,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/AErw3jh9_Sr3gf8goY9-nFXEZFSjkW1mV9Zt3ftIOf3P3DPtmaNiiNIOUQf9H0lXZTu_ZjcJyxwvlrT6/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/326649410.html": {
+    "posted_at": "2026-10-22T18:27:03.590940+00:00",
+    "message_id": 418,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2011,
+    "price": 350000,
+    "median_price": 450000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 326000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/ULitHAbQhCLUJtqnXtOC4qi5ldXgSH0Be7wjbbJfG-Geg91kVBbmI68qzSXX0lkn82vh2bdMPbmq9nv1/gen272wb.jpg"
   }
 }
