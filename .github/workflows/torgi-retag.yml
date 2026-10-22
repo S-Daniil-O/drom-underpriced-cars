@@ -1,5 +1,5 @@
 name: torgi-retag
-# Разово (22.10.2026): новые хэштеги в старых постах + закреплённая навигация в обоих каналах.
+# Разово (22.10.2026): новые хэштеги в старых постах (навигация уже закреплена).
 on: workflow_dispatch
 jobs:
   retag:
@@ -16,7 +16,7 @@ jobs:
           T = os.environ["TORGI_BOT_TOKEN"]
           def call(method, data):
               req = urllib.request.Request(f"https://api.telegram.org/bot{T}/{method}", data=urllib.parse.urlencode(data).encode())
-              for _ in range(5):
+              for _ in range(6):
                   try:
                       return json.load(urllib.request.urlopen(req, timeout=30))
                   except urllib.error.HTTPError as e:
@@ -24,14 +24,9 @@ jobs:
                       if r.get("error_code") == 429:
                           time.sleep(r.get("parameters", {}).get("retry_after", 5) + 1); continue
                       return r
-          # 1. навигация: отправить и закрепить
-          for chat, f in (("@torgi_vrn_ss", "torgi/once/pin_main.txt"), (os.environ["HOT"], "torgi/once/pin_hot.txt")):
-              r = call("sendMessage", {"chat_id": chat, "text": open(f).read(), "disable_notification": "true"})
-              if not r.get("ok"):
-                  print("навигация не отправлена", chat, r.get("description")); continue
-              mid = r["result"]["message_id"]
-              p = call("pinChatMessage", {"chat_id": chat, "message_id": mid, "disable_notification": "true"})
-              print("навигация", chat, "сообщение", mid, "закреплено:", p.get("ok"), p.get("description", ""))
+                  except (urllib.error.URLError, OSError):
+                      time.sleep(10)   # обрыв сети — повторить
+              return {"ok": False, "description": "сеть"}
           # 2. хэштеги в старых постах
           ok = skip = fail = 0
           for e in json.load(open("torgi/once/retag_edits.json")):
@@ -49,7 +44,7 @@ jobs:
               elif "not modified" in d: skip += 1
               else:
                   fail += 1
-                  if fail <= 15: print("ошибка", e["chat"], e["message_id"], d)
+                  if fail <= 15: print("ошибка", e["message_id"], d)
               time.sleep(1.1)
           print(f"хэштеги: исправлено {ok}, без изменений {skip}, ошибок {fail}")
           PY
