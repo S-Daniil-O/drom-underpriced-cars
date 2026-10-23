@@ -5337,7 +5337,7 @@
   "https://auto.drom.ru/voronezh/lada/2106/326853844.html": {
     "posted_at": "2026-10-20T09:02:37.138608+00:00",
     "message_id": 403,
-    "deleted_at": null,
+    "deleted_at": "2026-10-23T09:13:07.076448+00:00",
     "brand": "Лада",
     "model": "2106",
     "year": 1990,
@@ -5633,5 +5633,20 @@
     "mileage_km": 10000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/b29a2ea9d018d785516b735bc23910ab/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/174859167.html": {
+    "posted_at": "2026-10-23T09:16:29.981877+00:00",
+    "message_id": 423,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2022,
+    "price": 445000,
+    "median_price": 495000.0,
+    "median_sample_size": 1502,
+    "price_rating": "отличная цена",
+    "mileage_km": 180000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/k_JZO3nTyd8SnB2AZfeVFLl6beCYjNQ75rhhpE034FpdT7OkLUVtbaZ3rIEb7pI8KzoZLN_3xBXuR_VJ/gen272wb.jpg"
   }
 }
