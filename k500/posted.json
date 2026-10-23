@@ -5588,5 +5588,35 @@
     "mileage_km": 385000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/Hi3zW0H3DR4i0nJ48Dsz_otaI30EP9T0FXoJTSe3Gy9ewXe0TWqECny8D_Gbb-nQRnybGh4ku5T8FN3b/gen272wb.jpg"
+  },
+  "autoru_1160470775-d376ae00": {
+    "posted_at": "2026-10-23T08:01:10.939346+00:00",
+    "message_id": 420,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2115",
+    "year": 2004,
+    "price": 145000,
+    "median_price": 195000,
+    "median_sample_size": 13,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20306952/0d65fe96d2f2dd29e4794b0532c05213/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/chrysler/pacifica/939911271.html": {
+    "posted_at": "2026-10-23T08:01:16.655053+00:00",
+    "message_id": 421,
+    "deleted_at": null,
+    "brand": "Chrysler",
+    "model": "Pacifica",
+    "year": 2005,
+    "price": 380000,
+    "median_price": 440000.0,
+    "median_sample_size": 854,
+    "price_rating": "отличная цена",
+    "mileage_km": 199000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/PNTOGp9F_-zwz_ITyxVcic9jhxHkrxeh4m75TXr8APIi_xQwpXiE7jJxXqKu5--zlcOzTPSYfdJk18Hp/gen272wb.jpg"
   }
 }
