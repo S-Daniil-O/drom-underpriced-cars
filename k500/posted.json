@@ -5573,5 +5573,20 @@
     "mileage_km": 326000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/ULitHAbQhCLUJtqnXtOC4qi5ldXgSH0Be7wjbbJfG-Geg91kVBbmI68qzSXX0lkn82vh2bdMPbmq9nv1/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/512033924.html": {
+    "posted_at": "2026-10-23T07:46:25.876366+00:00",
+    "message_id": 419,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2002,
+    "price": 360000,
+    "median_price": 430000,
+    "median_sample_size": 861,
+    "price_rating": "хорошая цена",
+    "mileage_km": 385000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Hi3zW0H3DR4i0nJ48Dsz_otaI30EP9T0FXoJTSe3Gy9ewXe0TWqECny8D_Gbb-nQRnybGh4ku5T8FN3b/gen272wb.jpg"
   }
 }
