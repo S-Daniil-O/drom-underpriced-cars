@@ -5678,5 +5678,35 @@
     "mileage_km": 106200,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/CUOiCz6EMVscNdWqlPjFV68RDFJey5Hx2UMe8OgADM8qT29BkAD6QVa5kWm124F1vRFm76ag-J2FrttL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/cresta/482129658.html": {
+    "posted_at": "2026-10-23T21:27:19.093247+00:00",
+    "message_id": 426,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Cresta",
+    "year": 1993,
+    "price": 330000,
+    "median_price": 410000.0,
+    "median_sample_size": 682,
+    "price_rating": "нормальная цена",
+    "mileage_km": 40000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/O4fpxoUmUxi89ugrUpvOqsN1_6XJtsm0qeLXjr9qcRYUX4kPWyyZtsGJhvsXTXxtyv6E4_gKe8srguYe/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2108/430916706.html": {
+    "posted_at": "2026-10-23T21:27:30.183559+00:00",
+    "message_id": 427,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2108",
+    "year": 1993,
+    "price": 65000,
+    "median_price": 115000.0,
+    "median_sample_size": 648,
+    "price_rating": null,
+    "mileage_km": 10000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/nEx0_7WYb8zuwztmB_bvaLftjEL-xlCHRbxfPZr4nnS1nv5DvM3qoj4uNwz7gP8lOYfLW5EfbEcAOzBU/gen272wb.jpg"
   }
 }
