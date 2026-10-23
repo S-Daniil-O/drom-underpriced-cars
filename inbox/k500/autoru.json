@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-23T14:20:05.094461+00:00"
+"seen_at": "2026-10-23T14:31:16.258018+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -24,12 +24,12 @@
 "price": 480000,
 "market_price": 459500,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160444403-045640ed/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/XM93jbl-HU6Awunpavs58K94OrjStcmnN-K5OrI8OXMiqWyJjO3P63KKV-FrBiVAu2Lv0pTG5-r2TQkwzJBG3AkeWY_19_2BKLyST7SNBIa8aexI2nCmJ61xtGDNnd8AqV7quHi7okgEy3EknrpKfi-M6JdfU07BLU_VwHTWbkWeymQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21083893/M3BAFqj6vkuCISJ7NOAOnffQ6JpcMY_b72QHkRr7SgCLwWon0-ng8_OEK3ikPBz40ZxjvsZ4Tu8fhqgV_qKcQngOKEdRGDLimIlPSfFZmeYsD_P-xb_ri7t0G7Mcsy5yazB2WyYidqvQIgI4DXqUBvObuUMcGcC9XGDVGPvsAKCQBm0/1200x900n",
 "mileage_km": 210000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-10-23T14:20:05.094441+00:00"
+"seen_at": "2026-10-23T14:31:16.258000+00:00"
 },
 {
 "ad_id": "autoru_1160449602-88233599",
@@ -40,12 +40,12 @@
 "price": 355000,
 "market_price": 280000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160449602-88233599/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/BAtXESlo4JRdi-mZpOPNH7eLuavvFa2IOx_-uImd91OVxP4-HYvHhCl5mlfbDk74DheARETggkNMhJ5uUwJhtgiHCe_CcB20QoScH-h61fphoGGquzYcI7JNMlbTb0e_UFL8DTFL_jzQbhbtRL8pSu1YCqXfTfJsDbsIK0x-6UpuAMI/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/UsBPP-kkGUgoQPDpuPrUIYY4tgyB-XtPQxvrjZTtSDS6jsXKhd3PSNcOaxwoMNAsnRD9Ymd_oVT_zLehTktxS-AGlxIkNomibdA1kLv2zUy1KS4QF4bmBuhHbPoZPRYf3msMSsKboKybrS1fvgzB_vkvyVlv9FzjKoxLgv_uCZSGb2A/1200x900n",
 "mileage_km": 50200,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-23T14:20:05.094410+00:00"
+"seen_at": "2026-10-23T14:31:16.257972+00:00"
 },
 {
 "ad_id": "autoru_1160449925-c1db7bec",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-23T14:20:05.094374+00:00"
+"seen_at": "2026-10-23T14:31:16.257936+00:00"
 },
 {
 "ad_id": "autoru_1160461755-53be2e30",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-23T14:19:45.849472+00:00"
+"seen_at": "2026-10-23T14:31:02.014457+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-23T14:19:45.849441+00:00"
+"seen_at": "2026-10-23T14:31:02.014428+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-23T14:19:45.849426+00:00"
+"seen_at": "2026-10-23T14:31:02.014416+00:00"
 },
 {
 "ad_id": "autoru_1160471677-8d23f83e",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-23T14:19:45.849387+00:00"
+"seen_at": "2026-10-23T14:31:02.014399+00:00"
+},
+{
+"ad_id": "autoru_1160477877-4983c962",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2008,
+"price": 220000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160477877-4983c962/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/9e9ce7ccf1e9aa70dc12f9a6b24ed704/1200x900n",
+"mileage_km": 94000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-23T14:31:02.014353+00:00"
 },
 {
 "ad_id": "autoru_1160473871-f3967e71",
