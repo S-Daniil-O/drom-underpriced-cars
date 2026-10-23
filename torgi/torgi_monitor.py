@@ -766,11 +766,30 @@ def is_last_call(d):
 
 
 def deposit_short(text):
-    """«…задаток в размере 10% начальной цены… реквизиты…» → «10% от начальной цены» (без реквизитов)."""
-    m = re.search(r"(\d+(?:[.,]\d+)?)\s*%(?:\s*\([^)]*\))?\s*(от\s+)?((?:начальной|текущей|цены)[^.,;:]{0,60})?", text)
+    """«…задаток в размере 10% начальной цены… реквизиты…» → «10% от начальной цены продажи».
+    Исходный текст никогда не выводится (там бывают ФИО получателя и номера счетов)."""
+    text = re.sub(r"\s+", " ", text or "")
+    m = re.search(r"(\d+(?:[.,]\d+)?)\s*(?:\([^)]*\)\s*)?(?:%|процент\w*)\s*(?:\([^)]*\)\s*)?(?:от\s+)?((?:начальн|текущ|цен)[а-яё]*(?:\s+[а-яё]+){0,2})?", text, re.I)
     if m:
-        return f"{m.group(1)}% от " + " ".join((m.group(3) or "цены").split()[:3])
-    return text[:80].rstrip() + "…"
+        return f"{m.group(1)}% от " + (m.group(2) or "цены")
+    return "по условиям торгов (см. карточку лота)"
+
+
+# Платёжные реквизиты и данные получателей в посты не попадают никогда.
+PII_LINE = re.compile(r"\b\d{20}\b|\bр/с\b|\bБИК\b|\bИНН\b|получател|на имя|реквизит|"
+                      r"корр?\.?\s*сч|л/с|наименование банка|назначение платеж", re.I)
+
+
+def scrub(text):
+    """Убрать из текста поста строки с реквизитами (страховка поверх deposit_short)."""
+    out = []
+    for l in text.split("\n"):
+        m = PII_LINE.search(l)
+        if not m or l.startswith(("Лот:", "VIN:")):
+            out.append(l)
+        elif l.startswith("📝") and m.start() > 25:     # описание — обрезать до реквизитов
+            out.append(l[:m.start()].rstrip(" ,;:–-") + "…")
+    return "\n".join(out)
 
 
 def requests_line(d):
@@ -814,7 +833,7 @@ def hot_caption(d):
         f"Площадка: {d['source']}",
         f"Лот: {d['url']}",
     ]
-    return "\n".join(x for x in lines if x is not None)[:1024]
+    return scrub("\n".join(x for x in lines if x is not None))[:1024]
 
 
 # ---------------------------------------------------------------- Telegram
@@ -842,7 +861,7 @@ def caption(d):
         f"Площадка: {d['source']}",
         f"Лот: {d['url']}",
     ]
-    return "\n".join(x for x in lines if x is not None)[:1024]
+    return scrub("\n".join(x for x in lines if x is not None))[:1024]
 
 
 def _tg_error(e):
