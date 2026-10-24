@@ -8,12 +8,12 @@
 "price": 355000,
 "market_price": 280000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160449602-88233599/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/kDAiG3jYRYdnNpEqBRRBMr8KcsnlWA0gYQnwLJpb6l26D-lGHyj_eU3sRaIlb9ReCaNMr3v33ULjLVm9ldDd2rLuwiAdsOpMKmyCCOyw89kmN9sLprm6KnTm-ovRF9ImCqytbFOqaY3KnT6FEf90ld6r9MXMFO-GeVYsplby7Q-0wg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20360782/VZaIM4rKnDezEaBqrCXM3VbYLSj2liPdX-KZhKAD2Ti9tDuKnzJV2e4HQbYLoVB-CGGeA1IdOLzdt0ng3wCmFhVi6HPnDgc7ekIUbWm0atgcYgYVyAfP-fqeOQeiBHMkXyZ9FzdxYKe3HlUS561vOFrwQgEvrGe1BZmFszmdCbvYUVU/1200x900n",
 "mileage_km": 50200,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-24T10:45:17.880781+00:00"
+"seen_at": "2026-10-24T10:56:27.299158+00:00"
 },
 {
 "ad_id": "autoru_1160449925-c1db7bec",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-24T10:45:17.880766+00:00"
+"seen_at": "2026-10-24T10:56:27.299144+00:00"
 },
 {
 "ad_id": "autoru_1160461755-53be2e30",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-24T10:45:17.880739+00:00"
+"seen_at": "2026-10-24T10:56:27.299115+00:00"
 },
 {
 "ad_id": "autoru_1160466858-4f259554",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-24T10:45:17.880711+00:00"
+"seen_at": "2026-10-24T10:56:27.299089+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-24T10:45:17.880689+00:00"
+"seen_at": "2026-10-24T10:56:27.299068+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-24T10:45:17.880652+00:00"
+"seen_at": "2026-10-24T10:56:27.299031+00:00"
 },
 {
 "ad_id": "autoru_1160471677-8d23f83e",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-24T10:45:03.145028+00:00"
+"seen_at": "2026-10-24T10:56:11.865653+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-24T10:45:03.144954+00:00"
+"seen_at": "2026-10-24T10:56:11.865587+00:00"
 },
 {
 "ad_id": "autoru_1160444403-045640ed",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
 "seen_at": "2026-10-24T07:56:57.361632+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 190000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-24T04:45:47.408693+00:00"
 }
 ]
