@@ -1,0 +1,19 @@
+name: torgi-rights
+# Разово: права бота в каналах (может ли удалять посты).
+on: workflow_dispatch
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    env:
+      T: ${{ secrets.TORGI_BOT_TOKEN }}
+      HOT: ${{ vars.TORGI_HOT_CHAT_ID }}
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse
+          T = os.environ["T"]
+          me = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{T}/getMe"))["result"]["id"]
+          for name, chat in (("основной", "@torgi_vrn_ss"), ("горящие", os.environ["HOT"])):
+              m = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{T}/getChatMember?chat_id={urllib.parse.quote(chat)}&user_id={me}"))["result"]
+              print(name, {k: m.get(k) for k in ("status", "can_post_messages", "can_edit_messages", "can_delete_messages")})
+          PY
