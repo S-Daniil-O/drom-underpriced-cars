@@ -10,10 +10,17 @@ jobs:
     steps:
       - run: |
           python3 - <<'PY'
-          import json, os, urllib.request, urllib.parse
+          import json, os, urllib.request, urllib.parse, urllib.error
           T = os.environ["T"]
           me = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{T}/getMe"))["result"]["id"]
           for name, chat in (("основной", "@torgi_vrn_ss"), ("горящие", os.environ["HOT"])):
               m = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{T}/getChatMember?chat_id={urllib.parse.quote(chat)}&user_id={me}"))["result"]
               print(name, {k: m.get(k) for k in ("status", "can_post_messages", "can_edit_messages", "can_delete_messages")})
+          # проверка: удалить старый дубль (пост 441 от 13.10, оригинал — 370)
+          try:
+              r = json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.telegram.org/bot{T}/deleteMessage",
+                  data=urllib.parse.urlencode({"chat_id": "@torgi_vrn_ss", "message_id": 441}).encode())))
+          except urllib.error.HTTPError as e:
+              r = json.load(e)
+          print("удаление старого поста:", r.get("ok"), r.get("description", ""))
           PY
