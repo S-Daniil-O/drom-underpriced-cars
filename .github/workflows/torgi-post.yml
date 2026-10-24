@@ -44,14 +44,13 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - name: cleanup — убрать неактуальные посты (торги закончились / лот снят / далеко)
-        if: always()
         env:
           HOT: ${{ vars.TORGI_HOT_CHAT_ID }}
         run: |
           A=_inbox/inbox/torgi/active.json
           if [ -f "$A" ]; then
-            [ -n "$HOT" ] && [ -f _state/torgi_hot/posted.json ] && TORGI_CHAT_ID="$HOT" python torgi/post_queue.py --cleanup $A _state/torgi_hot/posted.json || true
-            python torgi/post_queue.py --cleanup $A _state/torgi/posted.json || true
+            [ -n "$HOT" ] && [ -f _state/torgi_hot/posted.json ] && TORGI_CHAT_ID="$HOT" python torgi/post_queue.py --cleanup "$A" _state/torgi_hot/posted.json || true
+            python torgi/post_queue.py --cleanup "$A" _state/torgi/posted.json || true
           fi
       - name: publish hot (Крайние предложения торги)
         if: vars.TORGI_HOT_CHAT_ID != ''
