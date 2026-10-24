@@ -5738,5 +5738,20 @@
     "mileage_km": 345000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/h-QwuEHZmCtmL0-HoMDUC9bUFfbAQx2-k9d4jU39o8_mV3SMhmC7UA7KnuvKbuxtZn2rYCJ2eaiQPYHu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/vista/265349547.html": {
+    "posted_at": "2026-10-24T12:50:22.357277+00:00",
+    "message_id": 430,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Vista",
+    "year": 1991,
+    "price": 240000,
+    "median_price": 299000.0,
+    "median_sample_size": 642,
+    "price_rating": "нормальная цена",
+    "mileage_km": 215000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/TlnGgc4rxhwiukYecZNOA-lOndzkotCLIf2s6D2bN60jejGgiZ6tODSo6nTB9c-PMQzS7UiaGw4Q5xf4/gen272wb.jpg"
   }
 }
