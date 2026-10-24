@@ -1472,25 +1472,25 @@
   "https://auto.drom.ru/voronezh/lada/granta/652457698.html": {
     "posted_at": "2026-10-21T08:57:12.861485+00:00",
     "message_id": 207,
-    "deleted_at": null,
+    "deleted_at": "2026-10-24T09:09:31.528827+00:00",
     "rejected": false,
     "checked_at": "2026-10-21T08:57:12.861485+00:00",
     "vk_post_id": 159,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-24T09:09:31.528827+00:00"
   },
   "https://auto.drom.ru/voronezh/hyundai/accent/710597935.html": {
     "posted_at": "2026-10-21T08:57:33.163786+00:00",
     "message_id": 208,
-    "deleted_at": null,
+    "deleted_at": "2026-10-24T09:09:31.528827+00:00",
     "rejected": false,
     "checked_at": "2026-10-21T08:57:33.163786+00:00",
     "vk_post_id": 160,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-24T09:09:31.528827+00:00"
   },
   "_pitch_2026-10-21": {
     "posted_at": "2026-10-21T09:07:32.949816+00:00",
     "message_id": 210,
-    "deleted_at": null
+    "deleted_at": "2026-10-24T09:09:31.528827+00:00"
   },
   "https://auto.drom.ru/voronezh/volkswagen/passat/727110573.html": {
     "posted_at": "2026-10-21T12:10:33.628302+00:00",
@@ -1625,5 +1625,10 @@
     "checked_at": "2026-10-24T07:44:42.141534+00:00",
     "vk_post_id": 173,
     "vk_deleted_at": null
+  },
+  "_pitch_2026-10-24": {
+    "posted_at": "2026-10-24T09:09:36.552914+00:00",
+    "message_id": 228,
+    "deleted_at": null
   }
 }
