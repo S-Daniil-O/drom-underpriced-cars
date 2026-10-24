@@ -5,6 +5,7 @@
 то, чего ещё нет в posted.json (ветка state: torgi/posted.json), пачками.
 
     python torgi/post_queue.py <папка очереди> <posted.json>
+    python torgi/post_queue.py --cleanup <active.json> <posted.json>   # убрать неактуальные
 Переменные: TORGI_BOT_TOKEN, TORGI_CHAT_ID (по умолчанию @torgi_vrn_ss).
 """
 import json
@@ -76,7 +77,67 @@ def save_state(posted_file):
     log("не удалось сохранить posted.json в state (сохранится в конце)")
 
 
+SOURCES = {"cdt": "ЦДТ", "mets": "МЭТС", "tg": "ТоргГрупп"}
+
+
+def cleanup(active_file, posted_file):
+    """Убрать неактуальные посты: торги закончились, лот снят с площадки, регион дальше
+    max_km. Telegram даёт ботам удалять только посты моложе 48 часов — более старые
+    заменяются короткой пометкой без хэштегов (пропадают из поиска по хэштегам)."""
+    from datetime import datetime
+    if not active_file.exists():
+        log("нет списка живых лотов — очистку пропускаю")
+        return
+    act = json.loads(active_file.read_text())
+    lots, ok_src, max_km = act["lots"], set(act.get("sources_ok", [])), act.get("max_km", 1000)
+    posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
+    done_file = posted_file.with_name("cleaned.json")
+    done = json.loads(done_file.read_text()) if done_file.exists() else {}
+    now = datetime.now()
+    todo = {}
+    for lid, mid in posted.items():
+        if not isinstance(mid, int) or str(mid) in done:
+            continue
+        base = lid.split("#")[0]
+        info = lots.get(base)
+        src = SOURCES.get(base.split("-")[0])
+        if info is None:
+            why = "лот снят с торгов" if src in ok_src else None
+        elif info.get("km") is None or info["km"] > max_km:
+            why = f"регион дальше {max_km} км от Воронежа"
+        elif info.get("end") and datetime.fromisoformat(info["end"]) < now:
+            why = "приём заявок закончился"
+        else:
+            why = None
+        if why:
+            todo[mid] = why
+    log(f"неактуальных постов: {len(todo)}")
+    n_del = n_stub = 0
+    for mid, why in sorted(todo.items()):
+        r = requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": mid}, timeout=30).json()
+        if r.get("ok"):
+            done[str(mid)] = "deleted"; n_del += 1
+        else:
+            stub = f"⛔ Неактуально: {why}."
+            r = requests.post(f"{API}/editMessageCaption", data={"chat_id": CHAT, "message_id": mid, "caption": stub}, timeout=30).json()
+            if not r.get("ok") and "no caption" in r.get("description", ""):
+                r = requests.post(f"{API}/editMessageText", data={"chat_id": CHAT, "message_id": mid, "text": stub}, timeout=30).json()
+            if r.get("ok") or "not modified" in r.get("description", "") or "not found" in r.get("description", ""):
+                done[str(mid)] = "stub"; n_stub += 1
+            elif r.get("error_code") == 429:
+                time.sleep(int(r.get("parameters", {}).get("retry_after", 10)) + 1)
+        if (n_del + n_stub) % 50 == 0:
+            done_file.write_text(json.dumps(done))
+        time.sleep(1.1)
+    done_file.write_text(json.dumps(done))
+    log(f"удалено: {n_del}, помечено «неактуально»: {n_stub}")
+
+
 def main():
+    if sys.argv[1] == "--cleanup":
+        cleanup(Path(sys.argv[2]), Path(sys.argv[3]))
+        save_state(Path(sys.argv[3]).with_name("cleaned.json"))
+        return
     qdir, posted_file = Path(sys.argv[1]), Path(sys.argv[2])
     if not TOKEN:
         sys.exit("TORGI_BOT_TOKEN не задан (секрет репозитория)")

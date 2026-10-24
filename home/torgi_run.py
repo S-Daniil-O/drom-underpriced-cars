@@ -68,7 +68,8 @@ def main():
     shutil.rmtree(QUEUE_HOT, ignore_errors=True)
     env = dict(os.environ, TORGI_POSTED_FILE=POSTED, TORGI_HOT_POSTED_FILE=POSTED_HOT)
     r = subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"),
-                        f"--queue={QUEUE}", f"--queue-hot={QUEUE_HOT}"], cwd=WORK, env=env)
+                        f"--queue={QUEUE}", f"--queue-hot={QUEUE_HOT}",
+                        f"--active={os.path.join(QUEUE, 'active.json')}"], cwd=WORK, env=env)
     if r.returncode != 0 or not os.path.exists(os.path.join(QUEUE, "queue.json")):
         log(f"сбор не удался (код {r.returncode}) — очередь не отправлена")
         sys.exit(1)
