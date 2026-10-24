@@ -78,6 +78,7 @@ def save_state(posted_file):
 
 
 SOURCES = {"cdt": "ЦДТ", "mets": "МЭТС", "tg": "ТоргГрупп"}
+CLEANUP_MAX = 400   # не больше стольких постов за один запуск (остальное — в следующий)
 
 
 def cleanup(active_file, posted_file):
@@ -89,7 +90,12 @@ def cleanup(active_file, posted_file):
         log("нет списка живых лотов — очистку пропускаю")
         return
     act = json.loads(active_file.read_text())
-    lots, ok_src, max_km = act["lots"], set(act.get("sources_ok", [])), act.get("max_km", 1000)
+    lots, ok_src, max_km = act.get("lots") or {}, set(act.get("sources_ok", [])), int(act.get("max_km", 1000))
+    # защита: список должен быть свежим и непустым, иначе ничего не удаляем
+    age_h = (datetime.now() - datetime.fromisoformat(act.get("created", "2000-01-01T00:00"))).total_seconds() / 3600
+    if age_h > 36 or not ok_src or len(lots) < 100:
+        log(f"список живых лотов неполный или старый ({age_h:.0f} ч, лотов {len(lots)}) — очистку пропускаю")
+        return
     posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
     done_file = posted_file.with_name("cleaned.json")
     done = json.loads(done_file.read_text()) if done_file.exists() else {}
@@ -103,7 +109,7 @@ def cleanup(active_file, posted_file):
         src = SOURCES.get(base.split("-")[0])
         if info is None:
             why = "лот снят с торгов" if src in ok_src else None
-        elif info.get("km") is None or info["km"] > max_km:
+        elif info.get("km") is not None and info["km"] > max_km:   # регион не распознан — не трогаем
             why = f"регион дальше {max_km} км от Воронежа"
         elif info.get("end") and datetime.fromisoformat(info["end"]) < now:
             why = "приём заявок закончился"
@@ -111,7 +117,8 @@ def cleanup(active_file, posted_file):
             why = None
         if why:
             todo[mid] = why
-    log(f"неактуальных постов: {len(todo)}")
+    log(f"неактуальных постов: {len(todo)}" + (f", за этот запуск — первые {CLEANUP_MAX}" if len(todo) > CLEANUP_MAX else ""))
+    todo = dict(sorted(todo.items())[:CLEANUP_MAX])
     n_del = n_stub = 0
     for mid, why in sorted(todo.items()):
         r = requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": mid}, timeout=30).json()
