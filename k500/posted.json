@@ -5723,5 +5723,20 @@
     "mileage_km": 370000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/sktZGpcrtIU-pAf2ZHIRW8hLDRLHjgXe4WsC3it0_gsHevODVYDnI4s4b2-cLCOEsIXVIuMYOWwGqWGs/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/710597935.html": {
+    "posted_at": "2026-10-24T12:20:06.168880+00:00",
+    "message_id": 429,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 1996,
+    "price": 75000,
+    "median_price": 90000,
+    "median_sample_size": 1011,
+    "price_rating": "хорошая цена",
+    "mileage_km": 345000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/h-QwuEHZmCtmL0-HoMDUC9bUFfbAQx2-k9d4jU39o8_mV3SMhmC7UA7KnuvKbuxtZn2rYCJ2eaiQPYHu/gen272wb.jpg"
   }
 }
