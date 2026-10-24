@@ -9,7 +9,7 @@ name: torgi-post
 on:
   push:
     branches: [inbox]
-    paths: ["inbox/torgi/queue.json", "inbox/torgi_hot/queue.json"]
+    paths: ["inbox/torgi/queue.json", "inbox/torgi_hot/queue.json", "inbox/torgi/active.json"]
   workflow_dispatch:
 
 permissions:
@@ -43,6 +43,16 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
+      - name: cleanup — убрать неактуальные посты (торги закончились / лот снят / далеко)
+        if: always()
+        env:
+          HOT: ${{ vars.TORGI_HOT_CHAT_ID }}
+        run: |
+          A=_inbox/inbox/torgi/active.json
+          if [ -f "$A" ]; then
+            [ -n "$HOT" ] && [ -f _state/torgi_hot/posted.json ] && TORGI_CHAT_ID="$HOT" python torgi/post_queue.py --cleanup $A _state/torgi_hot/posted.json || true
+            python torgi/post_queue.py --cleanup $A _state/torgi/posted.json || true
+          fi
       - name: publish hot (Крайние предложения торги)
         if: vars.TORGI_HOT_CHAT_ID != ''
         env:
@@ -61,12 +71,13 @@ jobs:
         if: always()
         run: |
           cd _state
-          git add -N torgi_hot/posted.json 2>/dev/null || true
-          if git status --porcelain torgi/posted.json torgi_hot/posted.json | grep -q .; then
+          git add -N torgi_hot/posted.json torgi/cleaned.json torgi_hot/cleaned.json 2>/dev/null || true
+          if git status --porcelain torgi torgi_hot | grep -q .; then
             git config user.name "monitor-bot"
             git config user.email "monitor-bot@users.noreply.github.com"
             git add torgi/posted.json
             [ -f torgi_hot/posted.json ] && git add torgi_hot/posted.json || true
+            git add torgi/cleaned.json torgi_hot/cleaned.json 2>/dev/null || true
             git commit -m "state(torgi): posted"
             for i in 1 2 3 4 5; do
               git push origin HEAD:state && exit 0
