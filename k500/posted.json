@@ -5753,5 +5753,20 @@
     "mileage_km": 215000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/TlnGgc4rxhwiukYecZNOA-lOndzkotCLIf2s6D2bN60jejGgiZ6tODSo6nTB9c-PMQzS7UiaGw4Q5xf4/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/822750625.html": {
+    "posted_at": "2026-10-24T13:06:38.108649+00:00",
+    "message_id": 431,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2009,
+    "price": 310000,
+    "median_price": 470000,
+    "median_sample_size": 1213,
+    "price_rating": null,
+    "mileage_km": 306500,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/bXaQS8ZHSmGB6uA735hNeTd4VAzw6gLgSle2CJ83-9xg8qpFoXQ6iUv6kklQ2b6kiP3qPvDdWJPYQRtP/gen272wb.jpg"
   }
 }
