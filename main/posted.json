@@ -2422,7 +2422,7 @@
   "autoru_1134284208-74a39e8b": {
     "posted_at": "2026-10-21T07:10:26.318059+00:00",
     "message_id": 187,
-    "deleted_at": null,
+    "deleted_at": "2026-10-24T07:24:14.020218+00:00",
     "brand": "Ford",
     "model": "Focus",
     "year": 2020,
@@ -2437,7 +2437,7 @@
   "autoru_1160436333-2902d6a2": {
     "posted_at": "2026-10-21T07:10:30.796202+00:00",
     "message_id": 188,
-    "deleted_at": null,
+    "deleted_at": "2026-10-24T07:24:15.373899+00:00",
     "brand": "Suzuki",
     "model": "Grand Vitara",
     "year": 2012,
@@ -2538,5 +2538,20 @@
     "mileage_km": 23000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/21177414/822ba3eecf8ab312caf1b497b0fe5eab/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/kia/sportage/876451643.html": {
+    "posted_at": "2026-10-24T07:27:56.682949+00:00",
+    "message_id": 195,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2013,
+    "price": 710000,
+    "median_price": 1290000,
+    "median_sample_size": 1755,
+    "price_rating": null,
+    "mileage_km": 220000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/_3Oo4b-FJer8Ax5TC_hvS_SQzfu-qlPDyRVNI3p7OXkmbfZxpGCS2rOkOLcQMd-WhFbbEdGdBgn-S50R/gen272wb.jpg"
   }
 }
