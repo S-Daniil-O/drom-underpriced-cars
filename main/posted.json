@@ -2553,5 +2553,20 @@
     "mileage_km": 220000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/_3Oo4b-FJer8Ax5TC_hvS_SQzfu-qlPDyRVNI3p7OXkmbfZxpGCS2rOkOLcQMd-WhFbbEdGdBgn-S50R/gen272wb.jpg"
+  },
+  "autoru_1160486910-6bc5d98a": {
+    "posted_at": "2026-10-24T09:43:23.282594+00:00",
+    "message_id": 196,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "year": 2016,
+    "price": 800000,
+    "median_price": 1019000.0,
+    "median_sample_size": 12,
+    "price_rating": null,
+    "mileage_km": 189500,
+    "owners_display": "2",
+    "image_url": "https://photo.auto.ru/photo/get-autoru-vos/2003162/fuD7ZZjjgyMxKmpDQN__AeBkECH1L3QyONgMuzz55p8VKQ0i6PGyQ_HHyay4sCANDxZpfErRhUzQ6DE-asIUGGEDLgJZ-7EB-BVrdfAiuk4EUfFsoU2tVhO8386gFCc2ZmejMPodXH7TMUEX380HepogEYmzM2HrSECdMozlR04E-7I/1200x900n"
   }
 }
