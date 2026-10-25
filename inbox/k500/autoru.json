@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T13:31:26.339316+00:00"
+"seen_at": "2026-10-25T13:42:38.387309+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T13:31:26.339290+00:00"
+"seen_at": "2026-10-25T13:42:38.387294+00:00"
 },
 {
 "ad_id": "autoru_1160471677-8d23f83e",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T13:31:26.339260+00:00"
+"seen_at": "2026-10-25T13:42:38.387277+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T13:31:26.339164+00:00"
+"seen_at": "2026-10-25T13:42:38.387200+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T13:31:09.016156+00:00"
+"seen_at": "2026-10-25T13:42:19.172045+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T13:31:09.016102+00:00"
+"seen_at": "2026-10-25T13:42:19.172003+00:00"
 },
 {
 "ad_id": "autoru_1160498187-76351fe0",
@@ -206,21 +206,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-25T08:05:06.767566+00:00"
-},
-{
-"ad_id": "autoru_1160461755-53be2e30",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2114",
-"year": 2009,
-"price": 238000,
-"market_price": 115000,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1160461755-53be2e30/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1567935/e73bae1f0e69123c50a9ca8fce4bc2ad/1200x900n",
-"mileage_km": 195000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T07:42:54.808733+00:00"
 }
 ]
