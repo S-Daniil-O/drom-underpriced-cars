@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T17:50:05.346036+00:00"
+"seen_at": "2026-10-25T18:01:18.580227+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T17:50:05.345958+00:00"
+"seen_at": "2026-10-25T18:01:18.580149+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:49:45.331791+00:00"
+"seen_at": "2026-10-25T18:01:02.834473+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:49:45.331767+00:00"
+"seen_at": "2026-10-25T18:01:02.834450+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -72,12 +72,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20410536/KTJMKMxl13PxXXzLTLjwuXHQ8NpuUFjG0ggnDlTAtRKu5ibjloZIYA5-roB5CvNBYP69QcmHnFYn_jOkFH2r8kXwlgLpGLjRHfzDJHocQwO9F76z3UzFmC8d4BCxkKhzJm2iGawATon6baO1Ma5yPLRcOKdFvFnjKscs3els17NPgQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/o5j4mOTL2czSVJDyse-WUBXCvqvFdPa8fBV4pIu4rBr59NU8pHcYMW28RAHP4AF9t7iluKsORVAVkeKcf6H5s2sve3vvn6ZH61EYbqP5QdG-rILmy2anmbNJev8VGTomvQJXfEczFKk2vKCDG9O7_jwHxhkifRh6FGmwB6s1v-llsO0/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:49:45.331744+00:00"
+"seen_at": "2026-10-25T18:01:02.834429+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-25T17:49:45.331713+00:00"
+"seen_at": "2026-10-25T18:01:02.834398+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-25T12:01:43.963610+00:00"
-},
-{
-"ad_id": "autoru_1160466858-4f259554",
-"source": "autoru",
-"brand": "Ford",
-"model": "Escort",
-"year": 1988,
-"price": 99999,
-"market_price": 78000,
-"url": "https://auto.ru/cars/used/sale/ford/escort/1160466858-4f259554/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18790574/fba423826ac38a7673e71b984890bc01/1200x900n",
-"mileage_km": 78000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T11:50:47.419792+00:00"
 }
 ]
