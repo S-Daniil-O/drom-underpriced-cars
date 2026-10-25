@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160466858-4f259554",
-"source": "autoru",
-"brand": "Ford",
-"model": "Escort",
-"year": 1988,
-"price": 99999,
-"market_price": 78000,
-"url": "https://auto.ru/cars/used/sale/ford/escort/1160466858-4f259554/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18790574/fba423826ac38a7673e71b984890bc01/1200x900n",
-"mileage_km": 78000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T11:50:47.419792+00:00"
-},
-{
 "ad_id": "autoru_1127782717-f90eb8ed",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T11:50:47.419771+00:00"
+"seen_at": "2026-10-25T12:01:58.603051+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -45,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T11:50:47.419757+00:00"
+"seen_at": "2026-10-25T12:01:58.603034+00:00"
 },
 {
 "ad_id": "autoru_1160471677-8d23f83e",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T11:50:47.419740+00:00"
+"seen_at": "2026-10-25T12:01:58.603014+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T11:50:47.419659+00:00"
+"seen_at": "2026-10-25T12:01:58.602927+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -93,7 +77,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T11:50:32.561519+00:00"
+"seen_at": "2026-10-25T12:01:43.963655+00:00"
+},
+{
+"ad_id": "autoru_1160498187-76351fe0",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2109",
+"year": 1999,
+"price": 85000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2109/1160498187-76351fe0/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2052311/a174c6fe85ac386d1475916d8579d918/1200x900n",
+"mileage_km": 120000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-25T12:01:43.963610+00:00"
+},
+{
+"ad_id": "autoru_1160466858-4f259554",
+"source": "autoru",
+"brand": "Ford",
+"model": "Escort",
+"year": 1988,
+"price": 99999,
+"market_price": 78000,
+"url": "https://auto.ru/cars/used/sale/ford/escort/1160466858-4f259554/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18790574/fba423826ac38a7673e71b984890bc01/1200x900n",
+"mileage_km": 78000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-25T11:50:47.419792+00:00"
 },
 {
 "ad_id": "autoru_1160496836-f8e30e4a",
@@ -190,21 +206,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-25T07:42:54.808733+00:00"
-},
-{
-"ad_id": "autoru_1160494698-0797174b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2108",
-"year": 1993,
-"price": 80000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2108/1160494698-0797174b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20444157/cb0c89703da005cff5fba8cfc6da2df7/1200x900n",
-"mileage_km": 10000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T06:02:01.870341+00:00"
 }
 ]
