@@ -18,12 +18,12 @@ jobs:
               except urllib.error.HTTPError as e:
                   return json.load(e)
           NEW = "Когда торги по лоту заканчиваются, пост остаётся с пометкой #завершено (в поиске по остальным хэштегам его уже не будет). Лоты из регионов дальше 1000 км удаляются или помечаются #далеко."
-          for name, chat, mid in (("основной", "@torgi_vrn_ss", 852), ("горящие", os.environ["HOT"], 245)):
+          for name, chat, mid in (("горящие", os.environ["HOT"], 245),):
               r = call("forwardMessage", {"chat_id": chat, "from_chat_id": chat, "message_id": mid, "disable_notification": "true"})
               if not r.get("ok"):
                   print(name, "не прочитать текст", r.get("description")); continue
               text = r["result"].get("text", ""); call("deleteMessage", {"chat_id": chat, "message_id": r["result"]["message_id"]})
-              text = re.sub(r"Когда (торги по лоту|приём заявок) заканчиваю?тся[^\n]*", NEW, text)
+              text = re.sub(r"Когда (торги по лоту|приём заявок) заканчива\w*[^\n]*", NEW, text)
               e = call("editMessageText", {"chat_id": chat, "message_id": mid, "text": text})
               print(name, e.get("ok"), e.get("description", ""))
           PY
