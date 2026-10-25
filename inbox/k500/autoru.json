@@ -13,23 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T21:46:04.984228+00:00"
-},
-{
-"ad_id": "autoru_1160498825-c57ac88b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2012,
-"price": 300000,
-"market_price": 258000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
-"mileage_km": 165000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T21:45:51.428745+00:00"
+"seen_at": "2026-10-25T21:57:15.455440+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -45,7 +29,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T21:45:51.428716+00:00"
+"seen_at": "2026-10-25T21:57:00.392846+00:00"
+},
+{
+"ad_id": "autoru_1160498825-c57ac88b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2012,
+"price": 300000,
+"market_price": 258000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
+"mileage_km": 165000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-25T21:57:00.392819+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -56,12 +56,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/TxB2DRiOrXLvFkI1Mhgyoi95VgYpwyqSYE11lwez_Xiew52Pw0WhYPuQ3LxSAO4n5i77YKqTt8V3WGEUEpWgt2qnhlWhZuWHqeOCG3o1yREY8cmyxALFkLVpj7WdRdKgmR-9u8A_zdSe5zNkY8DUPp-6psKSINP8lP1eDiSeUD5G7mk/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/ovYqnKlcDs51hXYywgOiAFxq8nxJWFprtfsu-BmTwANl8rZLIIg_VZ9vF31YU_1JgNAvMc8Yh6mjMdGsOqGbwijela4ertIY6ULUKyW_9NYhcoQaV-amap9_y16H8dsMB7MWTE3YP-4_iJ79R6EN2ELCP_oHzClyGFtP97WVENtdZ04/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T21:45:51.428697+00:00"
+"seen_at": "2026-10-25T21:57:00.392796+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-25T21:45:51.428666+00:00"
+"seen_at": "2026-10-25T21:57:00.392763+00:00"
 },
 {
 "ad_id": "autoru_1160502003-c356a29e",
