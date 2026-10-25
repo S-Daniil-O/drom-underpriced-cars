@@ -5768,5 +5768,35 @@
     "mileage_km": 306500,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/bXaQS8ZHSmGB6uA735hNeTd4VAzw6gLgSle2CJ83-9xg8qpFoXQ6iUv6kklQ2b6kiP3qPvDdWJPYQRtP/gen272wb.jpg"
+  },
+  "autoru_1160495526-78cffd09": {
+    "posted_at": "2026-10-25T08:14:41.801089+00:00",
+    "message_id": 432,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2115",
+    "year": 2011,
+    "price": 225000,
+    "median_price": 470000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 41324,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2165636/4683fc41e558fd08e264ba32d61bd3c6/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/582266407.html": {
+    "posted_at": "2026-10-25T08:15:05.374518+00:00",
+    "message_id": 433,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2003,
+    "price": 350000,
+    "median_price": 450000,
+    "median_sample_size": 1647,
+    "price_rating": "хорошая цена",
+    "mileage_km": 420000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jfe9pqq4CBdL2uz5SZyt07Mfrgm7m-Sz7pY7O4IDm0v_1LX6MLzcbggYFOHH7euU63WgXsQD34hC_KyA/gen272wb.jpg"
   }
 }
