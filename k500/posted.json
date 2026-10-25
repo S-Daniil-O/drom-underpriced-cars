@@ -5798,5 +5798,20 @@
     "mileage_km": 420000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/jfe9pqq4CBdL2uz5SZyt07Mfrgm7m-Sz7pY7O4IDm0v_1LX6MLzcbggYFOHH7euU63WgXsQD34hC_KyA/gen272wb.jpg"
+  },
+  "autoru_1160496572-bd979e6b": {
+    "posted_at": "2026-10-25T10:03:04.327747+00:00",
+    "message_id": 434,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Spectra",
+    "year": 2008,
+    "price": 125000,
+    "median_price": 299000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 310000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2088079/ad011de1aca87c009a6d7c5cf385e14d/1200x900n"
   }
 }
