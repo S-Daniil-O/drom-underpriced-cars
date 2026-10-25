@@ -113,7 +113,7 @@ def cleanup(active_file, posted_file):
         if info is None:
             why = "лот снят с торгов" if src in ok_src else None
         elif info.get("km") is not None and info["km"] > max_km:   # регион не распознан — не трогаем
-            why = f"регион дальше {max_km} км от Воронежа"
+            why = f"регион вне зоны (дальше {max_km} км от Воронежа или исключён)"
         elif info.get("end") and datetime.fromisoformat(info["end"]) < now:
             why = "приём заявок закончился"
         else:
