@@ -67,6 +67,9 @@ def save_state(posted_file):
     g("config", "user.name", "monitor-bot")
     g("config", "user.email", "monitor-bot@users.noreply.github.com")
     g("add", str(posted_file.relative_to(repo)))
+    cap = posted_file.with_name("captions.json")
+    if cap.exists():
+        g("add", str(cap.relative_to(repo)))
     if g("diff", "--cached", "--quiet").returncode == 0:
         return
     g("commit", "-q", "-m", f"state({posted_file.parent.name}): posted")
@@ -119,25 +122,41 @@ def cleanup(active_file, posted_file):
             todo[mid] = why
     log(f"неактуальных постов: {len(todo)}" + (f", за этот запуск — первые {CLEANUP_MAX}" if len(todo) > CLEANUP_MAX else ""))
     todo = dict(sorted(todo.items())[:CLEANUP_MAX])
+    captions = json.loads(posted_file.with_name("captions.json").read_text()) if posted_file.with_name("captions.json").exists() else {}
     n_del = n_stub = 0
-    for mid, why in sorted(todo.items()):
-        r = requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": mid}, timeout=30).json()
-        if r.get("ok"):
-            done[str(mid)] = "deleted"; n_del += 1
+    for mid, why in todo.items():
+        far = why.startswith("регион")
+        if far:   # дальний регион — удалить (бот может только посты моложе 48 ч)
+            r = requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": mid}, timeout=30).json()
+            if r.get("ok"):
+                done[str(mid)] = "deleted"; n_del += 1
+                time.sleep(1.1)
+                continue
+        # торги прошли / лот снят (или старый дальний пост): оставить текст, пометить хэштегом
+        tag, head = ("#далеко", f"⛔ НЕАКТУАЛЬНО: {why}") if far else ("#завершено", f"⛔ ТОРГИ ЗАВЕРШЕНЫ ({why})")
+        cap = captions.get(str(mid))
+        if cap:
+            lines = [l for l in cap["text"].split("\n") if not l.startswith("#")]
+            text = (head + "\n" + tag + "\n\n" + "\n".join(lines))[:1024]
+            photo = cap.get("photo", True)
         else:
-            stub = f"⛔ Неактуально: {why}."
-            r = requests.post(f"{API}/editMessageCaption", data={"chat_id": CHAT, "message_id": mid, "caption": stub}, timeout=30).json()
-            if not r.get("ok") and "no caption" in r.get("description", ""):
-                r = requests.post(f"{API}/editMessageText", data={"chat_id": CHAT, "message_id": mid, "text": stub}, timeout=30).json()
-            if r.get("ok") or "not modified" in r.get("description", "") or "not found" in r.get("description", ""):
-                done[str(mid)] = "stub"; n_stub += 1
-            elif r.get("error_code") == 429:
-                time.sleep(int(r.get("parameters", {}).get("retry_after", 10)) + 1)
+            text, photo = f"{head}\n{tag}", True
+        method, key = ("editMessageCaption", "caption") if photo else ("editMessageText", "text")
+        r = requests.post(f"{API}/{method}", data={"chat_id": CHAT, "message_id": mid, key: text}, timeout=30).json()
+        d = r.get("description", "")
+        if not r.get("ok") and ("no caption" in d or "text in the message" in d):
+            method, key = ("editMessageText", "text") if photo else ("editMessageCaption", "caption")
+            r = requests.post(f"{API}/{method}", data={"chat_id": CHAT, "message_id": mid, key: text}, timeout=30).json()
+            d = r.get("description", "")
+        if r.get("ok") or "not modified" in d or "not found" in d:
+            done[str(mid)] = tag; n_stub += 1
+        elif r.get("error_code") == 429:
+            time.sleep(int(r.get("parameters", {}).get("retry_after", 10)) + 1)
         if (n_del + n_stub) % 50 == 0:
             done_file.write_text(json.dumps(done))
         time.sleep(1.1)
     done_file.write_text(json.dumps(done))
-    log(f"удалено: {n_del}, помечено «неактуально»: {n_stub}")
+    log(f"удалено: {n_del}, помечено #завершено/#далеко: {n_stub}")
 
 
 def main():
@@ -164,6 +183,8 @@ def main():
     posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
     todo = [i for i in queue["items"] if i["id"] not in posted]
     log(f"очередь от {queue.get('created')}: {len(queue['items'])}, новых: {len(todo)}")
+    cap_file = posted_file.with_name("captions.json")
+    captions = json.loads(cap_file.read_text()) if cap_file.exists() else {}
     n = fails = 0
     done_urls = set()
     for k, item in enumerate(todo):
@@ -180,11 +201,13 @@ def main():
         msg_id = send(item, qdir)
         if msg_id:
             posted[item["id"]] = msg_id
+            captions[str(msg_id)] = {"text": item["caption"], "photo": bool(item.get("image"))}
             for other in item.get("also_ids") or []:   # «последний шанс» закрывает и обычный горящий пост
                 posted.setdefault(other, msg_id)
             n += 1
             fails = 0
             posted_file.write_text(json.dumps(posted, ensure_ascii=False, indent=0))
+            cap_file.write_text(json.dumps(captions, ensure_ascii=False))
         else:
             fails += 1
             if fails >= 3:

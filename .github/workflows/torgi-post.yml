@@ -70,13 +70,13 @@ jobs:
         if: always()
         run: |
           cd _state
-          git add -N torgi_hot/posted.json torgi/cleaned.json torgi_hot/cleaned.json 2>/dev/null || true
+          git add -N torgi_hot/posted.json torgi/cleaned.json torgi_hot/cleaned.json torgi/captions.json torgi_hot/captions.json 2>/dev/null || true
           if git status --porcelain torgi torgi_hot | grep -q .; then
             git config user.name "monitor-bot"
             git config user.email "monitor-bot@users.noreply.github.com"
             git add torgi/posted.json
             [ -f torgi_hot/posted.json ] && git add torgi_hot/posted.json || true
-            git add torgi/cleaned.json torgi_hot/cleaned.json 2>/dev/null || true
+            git add torgi/cleaned.json torgi_hot/cleaned.json torgi/captions.json torgi_hot/captions.json 2>/dev/null || true
             git commit -m "state(torgi): posted"
             for i in 1 2 3 4 5; do
               git push origin HEAD:state && exit 0
