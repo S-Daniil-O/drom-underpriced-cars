@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160471677-8d23f83e",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2007,
-"price": 135000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160471677-8d23f83e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/b29a2ea9d018d785516b735bc23910ab/1200x900n",
-"mileage_km": 10000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Павловск",
-"seen_at": "2026-10-25T18:01:18.580227+00:00"
-},
-{
 "ad_id": "autoru_1160485720-7cca24d5",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T18:01:18.580149+00:00"
+"seen_at": "2026-10-25T18:12:37.093502+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -45,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T18:01:02.834473+00:00"
+"seen_at": "2026-10-25T18:12:20.423522+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T18:01:02.834450+00:00"
+"seen_at": "2026-10-25T18:12:20.423498+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -72,12 +56,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/o5j4mOTL2czSVJDyse-WUBXCvqvFdPa8fBV4pIu4rBr59NU8pHcYMW28RAHP4AF9t7iluKsORVAVkeKcf6H5s2sve3vvn6ZH61EYbqP5QdG-rILmy2anmbNJev8VGTomvQJXfEczFKk2vKCDG9O7_jwHxhkifRh6FGmwB6s1v-llsO0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/wsU_6WLtK4_DSDxyTkZjwnnfFPSHYANs8wrorM78Mj8i12gW948dN9qc82SxaRNGwtSdxeUKY3iVgQHZAu1VR6KGrVu301ZcjF6mTRVZkFzOUeegAV_utOiTso55T7KTcHqJsoh2t_2OP1RcQYqyzQTowPNGRRcLqcVWb2d3dlAsq9I/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T18:01:02.834429+00:00"
+"seen_at": "2026-10-25T18:12:20.423476+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -93,7 +77,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-25T18:01:02.834398+00:00"
+"seen_at": "2026-10-25T18:12:20.423463+00:00"
+},
+{
+"ad_id": "autoru_1160502003-c356a29e",
+"source": "autoru",
+"brand": "Citroen",
+"model": "Xsara",
+"year": 2002,
+"price": 177500,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/citroen/xsara/1160502003-c356a29e/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19849727/pg6HerKe9krpfU8yyF0acQtAjY7rrziluQeSV-JZc2fSYGS6X-qCa42LCj55Gimf30iT6kgANW2wusLsAunfdotSlAHnt2YlRJQwYHW9jjqap8E_fZ5kSAQ-QpHZWN8GK0CtIfw7ORAaquesk1FipZDc2PPcn1qwccLIXTaFnKZnB5A/1200x900n",
+"mileage_km": 305331,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-25T18:12:20.423430+00:00"
+},
+{
+"ad_id": "autoru_1160471677-8d23f83e",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2007,
+"price": 135000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160471677-8d23f83e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/b29a2ea9d018d785516b735bc23910ab/1200x900n",
+"mileage_km": 10000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-10-25T18:01:18.580227+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
@@ -126,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-25T15:23:50.348367+00:00"
-},
-{
-"ad_id": "autoru_1160498187-76351fe0",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2109",
-"year": 1999,
-"price": 85000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2109/1160498187-76351fe0/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2052311/a174c6fe85ac386d1475916d8579d918/1200x900n",
-"mileage_km": 120000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T12:01:43.963610+00:00"
 }
 ]
