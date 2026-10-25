@@ -5873,5 +5873,35 @@
     "mileage_km": 300000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/dGHQl037lybGAULjM8zPBHTn1ugDXXv_rGJ-gC2hwHOJEzJCPGjCbqCVX5pGhhSyVyBhb1s5ZqWiujjO/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/100/557932597.html": {
+    "posted_at": "2026-10-25T21:30:20.743457+00:00",
+    "message_id": 439,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "100",
+    "year": 1985,
+    "price": 80000,
+    "median_price": 100000.0,
+    "median_sample_size": 666,
+    "price_rating": null,
+    "mileage_km": 300000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/udDSNdcqwPaLqyWSsLLE1hTBuZbZyuf9RzNqcaYCegWoROwtZteb1lWXRmcalAfqdt3r11Ptj1WoUQK5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/359198098.html": {
+    "posted_at": "2026-10-25T21:31:08.348377+00:00",
+    "message_id": 440,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lanos",
+    "year": 2007,
+    "price": 200000,
+    "median_price": 275000.0,
+    "median_sample_size": 2172,
+    "price_rating": "нормальная цена",
+    "mileage_km": 260000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/__GWLjWk6wpeUoaLGTYZSGOztCJQMw1YPCg1lDVPCzIvgWC29dgeLXeTemgHTA8g-aVlkp5mNBgeY-h0/gen272wb.jpg"
   }
 }
