@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-10-25T17:16:13.825598+00:00"
+"seen_at": "2026-10-25T17:27:29.350422+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-25T17:16:13.825511+00:00"
+"seen_at": "2026-10-25T17:27:29.350345+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:15:54.987050+00:00"
+"seen_at": "2026-10-25T17:27:14.537389+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:15:54.987023+00:00"
+"seen_at": "2026-10-25T17:27:14.537366+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -72,12 +72,28 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20410536/vUpixo9_isohrjXgyMtWcexATJp6EBYTIyeqRX25QbVS6zLx-czNGN7JlR6QQg8D1slH_Zcm7liCZTP3yvtWaKuW0bAqR6-RtbV8he7F4NI0mveDbhHKB6HqeqyaBrAiRidie4Pd2UZW5MyxyHYB5CPHuOe0DkWcRtZmTVRFt9mNZQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20410536/WyH9LR0ZNuZbqaT1nQEXgh3JjjomBSFFHuK15_BZeD-gq5kpk1pXYTdR7_fX0QkMgynsYm4UN8pwn-fiXjotzfPU_8a6tbS9isjklt0XvlzUSg_dsX0xTyZJO86x3c5Ca28Lyg3FQs2L_KDKvv7ZyYVs2m9aMLL2Lsf6ASHzSbln7Q/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-25T17:15:54.986981+00:00"
+"seen_at": "2026-10-25T17:27:14.537343+00:00"
+},
+{
+"ad_id": "autoru_1160501679-43257f67",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1991,
+"price": 190000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160501679-43257f67/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/69da96176443f428664b4bdb0a613a82/1200x900n",
+"mileage_km": 46000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Нижнемарьино",
+"seen_at": "2026-10-25T17:27:14.537311+00:00"
 },
 {
 "ad_id": "autoru_1160469562-8c68826d",
