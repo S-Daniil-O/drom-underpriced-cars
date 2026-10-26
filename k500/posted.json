@@ -5682,7 +5682,7 @@
   "https://auto.drom.ru/voronezh/toyota/cresta/482129658.html": {
     "posted_at": "2026-10-23T21:27:19.093247+00:00",
     "message_id": 426,
-    "deleted_at": null,
+    "deleted_at": "2026-10-26T21:33:45.479570+00:00",
     "brand": "Toyota",
     "model": "Cresta",
     "year": 1993,
@@ -5697,7 +5697,7 @@
   "https://auto.drom.ru/voronezh/lada/2108/430916706.html": {
     "posted_at": "2026-10-23T21:27:30.183559+00:00",
     "message_id": 427,
-    "deleted_at": null,
+    "deleted_at": "2026-10-26T21:33:46.844658+00:00",
     "brand": "Лада",
     "model": "2108",
     "year": 1993,
@@ -5978,5 +5978,20 @@
     "mileage_km": 224000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/KOQieTpDfDX9eLfob-TtL7k0ZDRofob8yfX7KcXs4NeWzT_EA5FyFbmbOXZ5NJeY--SetmhCVdqSbTDt/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/407/760628061.html": {
+    "posted_at": "2026-10-26T21:37:44.350876+00:00",
+    "message_id": 446,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "407",
+    "year": 2005,
+    "price": 345000,
+    "median_price": 420000,
+    "median_sample_size": 1331,
+    "price_rating": "нормальная цена",
+    "mileage_km": 364115,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/aIxq0WF8YRCt3g-QwlbvK9usc9X0gOtD2BHnl2E-5ZmMTruWyDYADNVOLzers621MVQZWq8GBup925pS/gen272wb.jpg"
   }
 }
