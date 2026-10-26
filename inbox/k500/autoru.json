@@ -13,23 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-26T00:45:33.613679+00:00"
-},
-{
-"ad_id": "autoru_1160498825-c57ac88b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2012,
-"price": 300000,
-"market_price": 258000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
-"mileage_km": 165000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-26T00:45:19.138145+00:00"
+"seen_at": "2026-10-26T00:56:38.150672+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -45,7 +29,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T00:45:19.138115+00:00"
+"seen_at": "2026-10-26T00:56:25.135861+00:00"
+},
+{
+"ad_id": "autoru_1160498825-c57ac88b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2012,
+"price": 300000,
+"market_price": 258000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
+"mileage_km": 165000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-26T00:56:25.135834+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -56,12 +56,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/RZvnZhynNqno3JryeBBwLa08Rn6hkh7Xue42CMhOs3YpCB3cxb8ebNoRq364WII6bLXrLQ9NuqCeOb_nste04BGH2hcch1dS8YGADPFI85eXbq-62ej3E5ghEWADWydbTWwHygGbj__Ofuxs47xwn_BO8E44ShXKmHFMUpyKMce5wqI/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/1BGsddxR4YqvJMmHqXMSpaJn8lZGMMU3CDF7UoNayfmBI76jswPqYRdE4peSGK9yLEEbHB79Rj5tndbq9IcfTpS23MCxQAUiOhZUL9Gvr33Ys0XQv0pzsfMVvDtzO0Sg_-FbYSjYZ_G-IwqLlAuyCBfMhPwv3_kPy8PllW_QmvSJCB4/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T00:45:19.138096+00:00"
+"seen_at": "2026-10-26T00:56:25.135809+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -77,22 +77,6 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-26T00:45:19.138063+00:00"
-},
-{
-"ad_id": "autoru_1160502003-c356a29e",
-"source": "autoru",
-"brand": "Citroen",
-"model": "Xsara",
-"year": 2002,
-"price": 177500,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/citroen/xsara/1160502003-c356a29e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19849727/7v3VxJTQjIqiJP2zEyUb0PEfc-53t3SpzCXLb7sAnaaQGI4MV4iqeUwvyxXt4TQlOh30QXPiMxG0AwtFHFwbYZ1K-t75QWbebDtk6omazTnYGz3uDeECi2i5PnKSUy4UKjudKntRgfKREfTiByR8VV6qD1hCluusVArWlhiHhNr7QkA/1200x900n",
-"mileage_km": 305331,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-25T18:45:58.657807+00:00"
+"seen_at": "2026-10-26T00:56:25.135775+00:00"
 }
 ]
