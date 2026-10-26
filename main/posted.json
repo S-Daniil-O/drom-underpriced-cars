@@ -2643,5 +2643,35 @@
     "mileage_km": 267600,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/4479447/caca1964ea2fb68deb3060c1fb7dd89c/1200x900n"
+  },
+  "autoru_1160492049-f42eb88c": {
+    "posted_at": "2026-10-26T10:04:49.769189+00:00",
+    "message_id": 202,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2017,
+    "price": 720000,
+    "median_price": 950000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 110000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2176257/adb7cba43985296c2775bb6e81f761ed/1200x900n"
+  },
+  "autoru_1160507478-a30d8d76": {
+    "posted_at": "2026-10-26T10:04:52.597819+00:00",
+    "message_id": 203,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Mondeo",
+    "year": 2012,
+    "price": 630000,
+    "median_price": 803000,
+    "median_sample_size": 15,
+    "price_rating": null,
+    "mileage_km": 168000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/1778510/7f8351ab8b6256eef5a96fc626fcce17/1200x900n"
   }
 }
