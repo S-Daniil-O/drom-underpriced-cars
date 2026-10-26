@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-26T16:56:07.719261+00:00"
+"seen_at": "2026-10-26T17:07:28.471208+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -29,23 +29,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T16:56:07.719181+00:00"
+"seen_at": "2026-10-26T17:07:28.471124+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
 "source": "autoru",
-"brand": "Renault",
-"model": "Logan",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
 "year": 2012,
 "price": 300000,
 "market_price": 258000,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160507620-8a97262e/",
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
 "mileage_km": 165000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T16:55:53.226439+00:00"
+"seen_at": "2026-10-26T17:07:08.324029+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -56,12 +56,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/J3MXuqyABKjdUeuAkQHus7euWjYf4RueThkGXZnAmCMwZiWqz7JzLOPYYR7q9gDcgsa63E9Ubaz6hXZQlm5skU4RkPfQjdK_E0NMs1ig03ep01PvuVjNh-obvlOKnCqXV8HLxHlY4V_ZFad1utskFysxb1lQanhF_TDTD2b1d73OGA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/299Bf2h4EnmzvNFrhXknpByss2BDpvD6ttZE0DTwhxnhP3izl6eCy93aI6A6rYeJGSJfcHZQWOeCA08jTocSMtpPyRZM1hwFi_iNbb0mf9vZ7hrz99H7eLby9dUnP_BMPXXcFsvRbAQma8rS-qJCkYbnt4Dl3XzhnntiW_S6euz1KoY/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T16:55:53.226421+00:00"
+"seen_at": "2026-10-26T17:07:08.324008+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-26T16:55:53.226408+00:00"
+"seen_at": "2026-10-26T17:07:08.323993+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -93,6 +93,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T16:55:53.226372+00:00"
+"seen_at": "2026-10-26T17:07:08.323917+00:00"
 }
 ]
