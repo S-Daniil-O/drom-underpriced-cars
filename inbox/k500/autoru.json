@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-26T10:19:27.151331+00:00"
+"seen_at": "2026-10-26T10:30:39.682120+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -29,39 +29,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T10:19:27.151249+00:00"
-},
-{
-"ad_id": "autoru_1160498825-c57ac88b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2012,
-"price": 300000,
-"market_price": 258000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
-"mileage_km": 165000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-26T10:19:06.049469+00:00"
+"seen_at": "2026-10-26T10:30:39.682035+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
 "source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
 "year": 2002,
 "price": 420000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/gqI3Vwq467YNzE1xpPqq9ziABS6drqsNJolBHMrq9CIoHdkOCbpVs1TmFUZkjm7PBNjR5FKpK_iYnLc6q1r_OdyeuH9hW9DBnES-9KB2vG24BVSTGbHNBV4qvoFBvGW3LGDjBUCXGVd97KpVxgItkyYnXiRtxPXTMuWzDNHi4CHTbw/1200x900n",
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160497789-cbcc469b/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/Sdue03NwptMZMii_S9JQMVxv3UwEI5f15MwDtfp_pYpmf-BOavFbml3SIxwYSIfGsOAod-Ow-hkEk5PiamLKj79lCywI5eLkz3S81VE8-h3IZyKzGn7h9fLSJl7GBm9hg68yH9O9Q3WEIinAexsqQuOq6ygbBM1EjYMpLtkdxPQRag/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T10:19:06.049446+00:00"
+"seen_at": "2026-10-26T10:30:24.091328+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -77,7 +61,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-26T10:19:06.049412+00:00"
+"seen_at": "2026-10-26T10:30:24.091317+00:00"
+},
+{
+"ad_id": "autoru_1160498825-c57ac88b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2012,
+"price": 300000,
+"market_price": 258000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
+"mileage_km": 165000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-26T10:30:24.091277+00:00"
 },
 {
 "ad_id": "autoru_1160506338-17d84fff",
