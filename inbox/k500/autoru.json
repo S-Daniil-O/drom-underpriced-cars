@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-26T11:50:02.779407+00:00"
+"seen_at": "2026-10-26T12:01:17.379142+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
@@ -29,39 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T11:50:02.779331+00:00"
-},
-{
-"ad_id": "autoru_1160501307-c676ddbe",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "Vito",
-"year": 2002,
-"price": 420000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/mercedes/vito/1160328648-211912ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/boMVmb3_mTihaXbc7eqYCccq8FAKeV7UqV0nqQzfU5V7pSLFw6zyN7jJACRRDF_WL1ylePLxx-EiYSN1PP6TMfDOoc7YI11HzURYMXXO34VHG0W_LNSXGI9TEIRbWyh1SEyG_eLM0nHmoAceX_bmHCGlbKPKUH9Q_bcrGWzTtnZuAw/1200x900n",
-"mileage_km": 350000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-26T11:38:20.919463+00:00"
-},
-{
-"ad_id": "autoru_1160501679-43257f67",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 190000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160501679-43257f67/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2027711/86423bdf51f85f8ff9523dd55645b91d/1200x900n",
-"mileage_km": 46000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Нижнемарьино",
-"seen_at": "2026-10-26T11:38:20.919453+00:00"
+"seen_at": "2026-10-26T12:01:17.379058+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -77,7 +45,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T11:38:20.919429+00:00"
+"seen_at": "2026-10-26T12:00:59.280082+00:00"
+},
+{
+"ad_id": "autoru_1160501307-c676ddbe",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Passat",
+"year": 2002,
+"price": 420000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/5AAZMt0IwgCgFs3Cb2TSRkHZ0S4JgVNXogGlJvVM0m7mIhqjlciOGRQbnCA_ByZhPOJ9Inw84ovIA9J8aD9ZoGxDsfGcjBo0d8Nl98NO0uu6s3oL3UI8ZRwQnaAxdloFfLqb7XYAvAPaWYdT0MiV499sxn0qG0xnJFiW3OBNjDmLFaM/1200x900n",
+"mileage_km": 350000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-26T12:00:59.280063+00:00"
+},
+{
+"ad_id": "autoru_1160501679-43257f67",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1997,
+"price": 190000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160501679-43257f67/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2027711/86423bdf51f85f8ff9523dd55645b91d/1200x900n",
+"mileage_km": 46000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Нижнемарьино",
+"seen_at": "2026-10-26T12:00:59.280049+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -86,14 +86,14 @@
 "model": "Kalina",
 "year": 2011,
 "price": 290000,
-"market_price": null,
+"market_price": 178500,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160509344-c728d687/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17723823/a001e4354b26e96bc8bf7f453feb11b0/1200x900n",
 "mileage_km": 135606,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T11:38:20.919376+00:00"
+"seen_at": "2026-10-26T12:00:59.279996+00:00"
 },
 {
 "ad_id": "autoru_1160506338-17d84fff",
