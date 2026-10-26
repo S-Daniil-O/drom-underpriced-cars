@@ -5918,5 +5918,20 @@
     "mileage_km": 234000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/QwaG9qgLhYjSaMOSXzT06kVgHuKcLUYCv1kHf0y41VJJzcx0swO_zeybP86SUWiG5-nnR87i4tXEhaJd/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/260012421.html": {
+    "posted_at": "2026-10-26T13:33:54.883221+00:00",
+    "message_id": 442,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2115 Самара",
+    "year": 2004,
+    "price": 110000,
+    "median_price": 145000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 178000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/FXNWfybEOrFASjlNdPQdiA6f3Bb99SFhL6HtUAfyB5CfrBNbD1vlihuy2daFpBExZuvQgF-ZgyDC28Hy/gen272wb.jpg"
   }
 }
