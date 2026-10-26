@@ -13,23 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-26T00:00:41.453279+00:00"
-},
-{
-"ad_id": "autoru_1160495526-78cffd09",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
-"year": 2011,
-"price": 225000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160495526-78cffd09/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2165636/4683fc41e558fd08e264ba32d61bd3c6/1200x900n",
-"mileage_km": 41324,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-26T00:00:22.341864+00:00"
+"seen_at": "2026-10-26T00:12:05.126646+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -45,7 +29,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T00:00:22.341838+00:00"
+"seen_at": "2026-10-26T00:11:47.434306+00:00"
+},
+{
+"ad_id": "autoru_1160495526-78cffd09",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2011,
+"price": 225000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160495526-78cffd09/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2165636/4683fc41e558fd08e264ba32d61bd3c6/1200x900n",
+"mileage_km": 41324,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-26T00:11:47.434278+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -56,12 +56,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/TVkICRGjiQS_aYlGDZkeIPOvQAPy1CXE2H7RlNnPLb0UYmFf5_cyZN0fdi-ejCOH9zqKmf0_jxvPVrn8WMNb5gyvyaoJy45i1LjchCkVMrx0I1i3MaeCdlvCTq4_rNIr34HPwPogXIrXu-ctIFTCML3KHGQnjBP2ZtGW3PGoAZvYVf8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/5IUtNyoKMp4Zj2JKZ_VXujL93WZGq6whcz5G1svUhOKKAuzFu5K5SdMUfCPW8GoOo98EAmk1zBgY6wSPTnsxsAdNqnpv5XslkuudWdZ8M0cpMzsrq8266eU-3CMOi3UEKpjNUz5YEDibYkKOFkQr1BDkOiOcY50klQd-UqsnCFrcGU0/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T00:00:22.341813+00:00"
+"seen_at": "2026-10-26T00:11:47.434258+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-26T00:00:22.341779+00:00"
+"seen_at": "2026-10-26T00:11:47.434224+00:00"
 },
 {
 "ad_id": "autoru_1160502003-c356a29e",
@@ -94,21 +94,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-25T18:45:58.657807+00:00"
-},
-{
-"ad_id": "autoru_1160471677-8d23f83e",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2007,
-"price": 135000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160471677-8d23f83e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/b29a2ea9d018d785516b735bc23910ab/1200x900n",
-"mileage_km": 10000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Павловск",
-"seen_at": "2026-10-25T18:01:18.580227+00:00"
 }
 ]
