@@ -5963,5 +5963,20 @@
     "mileage_km": 275000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/ec_wBX-mTi2JGixVPv7PV9swTVXEXd2hqwvLSS9xL8gV_S1vnWkgGcGDqOskSpBEJzoyP7Pu2GCMe4o8/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lifan/x60/238717126.html": {
+    "posted_at": "2026-10-26T18:00:44.809417+00:00",
+    "message_id": 445,
+    "deleted_at": null,
+    "brand": "Lifan",
+    "model": "X60",
+    "year": 2013,
+    "price": 270000,
+    "median_price": 400000.0,
+    "median_sample_size": 2910,
+    "price_rating": null,
+    "mileage_km": 224000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/KOQieTpDfDX9eLfob-TtL7k0ZDRofob8yfX7KcXs4NeWzT_EA5FyFbmbOXZ5NJeY--SetmhCVdqSbTDt/gen272wb.jpg"
   }
 }
