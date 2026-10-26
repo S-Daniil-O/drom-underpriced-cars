@@ -2,18 +2,18 @@
 {
 "ad_id": "autoru_1160495526-78cffd09",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Daewoo",
+"model": "Matiz",
 "year": 2011,
 "price": 225000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160495526-78cffd09/",
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160489739-6c51c2a4/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2165636/4683fc41e558fd08e264ba32d61bd3c6/1200x900n",
 "mileage_km": 41324,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T18:48:40.477362+00:00"
+"seen_at": "2026-10-26T18:59:56.126123+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -29,39 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T18:48:40.477309+00:00"
-},
-{
-"ad_id": "autoru_1160501307-c676ddbe",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
-"year": 2002,
-"price": 420000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/sVyWTWAvV5fsreKZPjEbeQyVymHoo0p-Bcjd7jt6VT2xXfk5fU-q7vIyRJEWN3di-OLcBw1HpqzRhQ1MZn0w9TptmomFSYlNqaPl1l_6pcdVe7i7junru8wAypOAaZpBUhm1onNgJdz0nnX8pqoXpeCWIz-9NOPW3sY2XhI98ZTO6sk/1200x900n",
-"mileage_km": 350000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-26T18:48:20.487430+00:00"
-},
-{
-"ad_id": "autoru_1160501679-43257f67",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 190000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160501679-43257f67/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2027711/86423bdf51f85f8ff9523dd55645b91d/1200x900n",
-"mileage_km": 46000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Нижнемарьино",
-"seen_at": "2026-10-26T18:48:20.487418+00:00"
+"seen_at": "2026-10-26T18:59:56.126066+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -77,7 +45,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-26T18:48:20.487368+00:00"
+"seen_at": "2026-10-26T18:59:37.373250+00:00"
+},
+{
+"ad_id": "autoru_1160501307-c676ddbe",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Passat",
+"year": 2002,
+"price": 420000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/XY0Gc_SvBWgf-kmgfm5Jv2brS4bG00VT9iMDdV3lOqh_gQ8RpmkhZbRwZ2jgWb0K4w3jeLlH92ciyOgNYGkTzQeDwcpMAiyzSuNsm0rfiXTYISHo3UKQLe2nrdB7KFmKnALLREYJt2NxPZub5AOTtiIo798IVt6oRbFDJ7lOjl9WSbA/1200x900n",
+"mileage_km": 350000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-26T18:59:37.373229+00:00"
+},
+{
+"ad_id": "autoru_1160501679-43257f67",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1997,
+"price": 190000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160501679-43257f67/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2027711/86423bdf51f85f8ff9523dd55645b91d/1200x900n",
+"mileage_km": 46000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Нижнемарьино",
+"seen_at": "2026-10-26T18:59:37.373194+00:00"
 },
 {
 "ad_id": "autoru_1160485720-7cca24d5",
