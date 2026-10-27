@@ -5993,5 +5993,20 @@
     "mileage_km": 364115,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/aIxq0WF8YRCt3g-QwlbvK9usc9X0gOtD2BHnl2E-5ZmMTruWyDYADNVOLzers621MVQZWq8GBup925pS/gen272wb.jpg"
+  },
+  "autoru_1160523666-ee44a919": {
+    "posted_at": "2026-10-27T09:31:03.517051+00:00",
+    "message_id": 447,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Priora",
+    "year": 2008,
+    "price": 145000,
+    "median_price": 264500.0,
+    "median_sample_size": 18,
+    "price_rating": null,
+    "mileage_km": 230000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/e9e58712738419c4d5bf9e5385eece41/1200x900n"
   }
 }
