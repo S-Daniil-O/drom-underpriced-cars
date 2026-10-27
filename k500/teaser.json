@@ -1627,11 +1627,11 @@
   "https://auto.drom.ru/voronezh/volkswagen/passat/466948338.html": {
     "posted_at": "2026-10-24T15:23:16.085895+00:00",
     "message_id": 230,
-    "deleted_at": null,
+    "deleted_at": "2026-10-27T15:37:34.787959+00:00",
     "rejected": false,
     "checked_at": "2026-10-24T15:23:16.085895+00:00",
     "vk_post_id": 174,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-10-27T15:37:34.787959+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2104/622461663.html": {
     "posted_at": "2026-10-24T18:59:41.974854+00:00",
@@ -1773,5 +1773,14 @@
     "posted_at": "2026-10-27T09:06:18.314324+00:00",
     "message_id": 250,
     "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/609093252.html": {
+    "posted_at": "2026-10-27T15:42:20.254663+00:00",
+    "message_id": 251,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-10-27T15:42:20.254663+00:00",
+    "vk_post_id": 189,
+    "vk_deleted_at": null
   }
 }

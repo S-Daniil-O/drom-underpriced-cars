@@ -6023,5 +6023,20 @@
     "mileage_km": 140000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/8ZQV-doRO_2-MFekrVX_yEL10viMldjDHawOTodXgfNNKBfGL01OfWdYJrK8OCzAOZEqeLHd5l8_yJeU/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/609093252.html": {
+    "posted_at": "2026-10-27T15:41:41.034766+00:00",
+    "message_id": 449,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Logan",
+    "year": 2010,
+    "price": 185000,
+    "median_price": 450000.0,
+    "median_sample_size": 1680,
+    "price_rating": null,
+    "mileage_km": 400000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Q52LJrbe7Qh8byWvMD9kfsh1Lj3RKICJSjDIVyXr2NMcmsp_CdJ1Ns4-o5uZJO6Z__oyhXMh5GlegGxg/gen272wb.jpg"
   }
 }
