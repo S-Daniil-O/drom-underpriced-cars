@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-27T05:39:52.888879+00:00"
+"seen_at": "2026-10-27T05:51:12.117415+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-27T05:39:52.888823+00:00"
+"seen_at": "2026-10-27T05:51:12.117364+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -40,12 +40,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/HNo3jl7i7LOAWKDblxPBGqSFzhzwpJqhfGXKGMNwM8QdyLS6-G5Tq8iQxCSQG5EW9Wc3eGJdkqZbK2Ldk9zCL1CLLaAb9aHMzfBNY7yfrWwtqS-3bapmoLS1b1mYKH_6GKMQNvI7td58eyGYmdrg0oIRqoF7JR-ypeKHbFwdVc_SUg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/dIjP7u00aC7ub5cDSCl-Fm2sCJ31p5FVJcHYGJOZI5ib6wfZPsyJZu43ALMBckOPuOv74lhs5wwsCtjsfi9-JC0mpFB0CUefpoCPaotleRw76sONHKOq6fN8KyTgxJUwDCV8fbvhpXlO9ZZ85wdhUKTYGCmWV9lTRoLjTaIKdegDWtc/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-27T05:39:32.603465+00:00"
+"seen_at": "2026-10-27T05:50:55.048551+00:00"
 },
 {
 "ad_id": "autoru_1160501679-43257f67",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Нижнемарьино",
-"seen_at": "2026-10-27T05:39:32.603452+00:00"
+"seen_at": "2026-10-27T05:50:55.048540+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -77,6 +77,22 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-27T05:39:32.603405+00:00"
+"seen_at": "2026-10-27T05:50:55.048511+00:00"
+},
+{
+"ad_id": "autoru_1160521364-f2a506ab",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2105",
+"year": 1999,
+"price": 100000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2105/1160521364-f2a506ab/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1629149/6ebaa232c4e04e36791293ee3f076302/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-27T05:50:55.048461+00:00"
 }
 ]
