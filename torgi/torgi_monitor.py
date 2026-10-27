@@ -14,6 +14,7 @@
     .venv/bin/python torgi/torgi_monitor.py --post --cached   # без нового сбора
 """
 import base64
+import collections
 import html
 import json
 import os
@@ -976,7 +977,7 @@ def write_active(lots, path):
 
 
 # ---------------------------------------------------------------- очередь для GitHub
-def write_queue(deals, qdir, limit=0, posted_file=None, cap=None):
+def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
     """Режим iMac: Telegram из дома недоступен, поэтому посты (текст + фото) кладутся
     в папку очереди, iMac отправляет её в ветку inbox, а GitHub Actions публикует.
     В очередь попадают только ещё не опубликованные лоты (по TORGI_POSTED_FILE)."""
@@ -1004,7 +1005,7 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None):
         items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img,
                       "also_ids": d.get("also_ids", [])})
     (qdir / "queue.json").write_text(json.dumps(
-        {"created": time.strftime("%Y-%m-%d %H:%M"), "items": items}, ensure_ascii=False, indent=1))
+        {"created": time.strftime("%Y-%m-%d %H:%M"), "stats": stats or {}, "items": items}, ensure_ascii=False, indent=1))
     log(f"Очередь для GitHub: {len(items)} постов (фото: {sum(1 for i in items if i['image'])}) → {qdir}")
 
 
@@ -1173,7 +1174,20 @@ def main():
             hot = last + [d for d in hot if d["id"] not in last_base]
             log(f"Горящих лотов (до конца {HOT_MIN_DAYS}–{HOT_MAX_DAYS} дн., цена ≤ {HOT_MAX_PRICE_RATIO}× мин.): {len(hot)}")
             hp = os.environ.get("TORGI_HOT_POSTED_FILE")
-            write_queue(hot, Path(hot_dir), 0, Path(hp) if hp else DATA / "torgi_hot_posted.json", hot_caption)
+            hp = Path(hp) if hp else DATA / "torgi_hot_posted.json"
+            # статистика отбора — видна в inbox/torgi_hot/queue.json на GitHub (без доступа к iMac)
+            infos = [(d, hot_info(d)) for d in deals]
+            with_s = [(d, h) for d, h in infos if h and h["current_price"] is not None]
+            in_days = [(d, h) for d, h in with_s if HOT_MIN_DAYS <= h["days_left"] <= HOT_MAX_DAYS]
+            price_ok = [(d, h) for d, h in in_days if h["current_price"] <= h["min_price"] * HOT_MAX_PRICE_RATIO]
+            posted_hot = json.loads(hp.read_text()) if hp.exists() else {}
+            stats = {"выгодных_лотов": len(deals), "с_графиком": len(with_s),
+                     f"до_конца_{HOT_MIN_DAYS}_{HOT_MAX_DAYS}_дн": len(in_days),
+                     f"цена_не_выше_{HOT_MAX_PRICE_RATIO}_мин": len(price_ok),
+                     "уже_были_в_канале": sum(1 for d, _ in price_ok if d["id"] in posted_hot),
+                     "по_площадкам": dict(collections.Counter(d["source"] for d, _ in price_ok))}
+            log(f"Горящие — статистика: {stats}")
+            write_queue(hot, Path(hot_dir), 0, hp, hot_caption, stats=stats)
         return
 
     if post:
