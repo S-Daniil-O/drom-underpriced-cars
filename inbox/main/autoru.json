@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189887+00:00"
+"seen_at": "2026-10-28T14:50:47.384365+00:00"
 },
 {
 "ad_id": "autoru_1160510538-4ba06676",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189870+00:00"
+"seen_at": "2026-10-28T14:50:47.384349+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -45,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189859+00:00"
-},
-{
-"ad_id": "autoru_1160013989-8d9b50c3",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Rapid",
-"year": 2021,
-"price": 1350000,
-"market_price": 1282500,
-"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
-"mileage_km": 150072,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189843+00:00"
-},
-{
-"ad_id": "autoru_1160529370-1dbad144",
-"source": "autoru",
-"brand": "Ford",
-"model": "EcoSport",
-"year": 2017,
-"price": 1400000,
-"market_price": 676000,
-"url": "https://auto.ru/cars/used/sale/ford/ecosport/1160529370-1dbad144/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/61738d8c863047a4392d8db57a6294d6/1200x900n",
-"mileage_km": 293000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-28T14:39:26.189830+00:00"
+"seen_at": "2026-10-28T14:50:47.384336+00:00"
 },
 {
 "ad_id": "autoru_1160517920-f27f51fe",
@@ -93,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Таловая",
-"seen_at": "2026-10-28T14:39:26.189793+00:00"
+"seen_at": "2026-10-28T14:50:47.384307+00:00"
 },
 {
 "ad_id": "autoru_1160518846-2e79e30d",
@@ -109,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Рамонь",
-"seen_at": "2026-10-28T14:39:26.189782+00:00"
+"seen_at": "2026-10-28T14:50:47.384293+00:00"
 },
 {
 "ad_id": "autoru_1160522260-2790fbdd",
@@ -125,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189769+00:00"
+"seen_at": "2026-10-28T14:50:47.384279+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -136,12 +104,44 @@
 "price": 785000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/aIg3n5iucQvjyY1ylh0FZgyjkjc2Y8BW_pQSxVvbPhO0CL-eAv5MOkuDwJQZkfGU5rhitnulY9vzrHzwQHoInSx4-nuOSBd4ZyYOUUJwTMrECzbEqSxQpSy7rhihyU2WcwRiYJVzUQrxLN0C1txt6exym7j63xFyJkpflNhtOtRxPVM/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/QYex3cYVBmQIMuYdWfUxrcIYHbwVG-R1Fhitxtp2i2MLZI90TlMJq-EbQjXZCVKF0N9_evfBnnvLYamPLzeLva0XtDAA_WbEM3XxJSy622pWJv1ZNASYopt1vyOemeBPelkGUEaW0cvL2LqHCfY1Yleiv8TZv-y57Ei6UtycUIlxSy8/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:26.189735+00:00"
+"seen_at": "2026-10-28T14:50:47.384262+00:00"
+},
+{
+"ad_id": "autoru_1160013989-8d9b50c3",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Rapid",
+"year": 2021,
+"price": 1350000,
+"market_price": 1282500,
+"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
+"mileage_km": 150072,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T14:50:47.384230+00:00"
+},
+{
+"ad_id": "autoru_1160529370-1dbad144",
+"source": "autoru",
+"brand": "Ford",
+"model": "EcoSport",
+"year": 2017,
+"price": 1400000,
+"market_price": 676000,
+"url": "https://auto.ru/cars/used/sale/ford/ecosport/1160529370-1dbad144/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/61738d8c863047a4392d8db57a6294d6/1200x900n",
+"mileage_km": 293000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-28T14:50:47.384190+00:00"
 },
 {
 "ad_id": "autoru_1160390188-44a471ad",
@@ -157,23 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303909+00:00"
-},
-{
-"ad_id": "autoru_1160450387-b64afbcb",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Octavia",
-"year": 2014,
-"price": 1300000,
-"market_price": 1076500,
-"url": "https://auto.ru/cars/used/sale/skoda/octavia/1160450387-b64afbcb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18790574/6e527f2e53d0501907dc6758b054a4b8/1200x900n",
-"mileage_km": 184000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303898+00:00"
+"seen_at": "2026-10-28T14:50:28.999550+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -189,7 +173,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303889+00:00"
+"seen_at": "2026-10-28T14:50:28.999539+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -205,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303875+00:00"
+"seen_at": "2026-10-28T14:50:28.999527+00:00"
 },
 {
 "ad_id": "autoru_1160541156-46f3893b",
@@ -221,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303860+00:00"
+"seen_at": "2026-10-28T14:50:28.999514+00:00"
 },
 {
 "ad_id": "autoru_1160367581-0d7e8928",
@@ -237,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303850+00:00"
+"seen_at": "2026-10-28T14:50:28.999504+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -253,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303840+00:00"
+"seen_at": "2026-10-28T14:50:28.999495+00:00"
 },
 {
 "ad_id": "autoru_1160543310-6e8f8ff8",
@@ -264,12 +248,12 @@
 "price": 530000,
 "market_price": 327000,
 "url": "https://auto.ru/cars/used/sale/lifan/x60/1160543310-6e8f8ff8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/fRe2Q57-wVbAA7nmFJDH2t0cTDBwSpzEdUJk9jGo_yXaoL0n1tvRgDmTg6EtuAPFX1BwuTGnlY8JxGdENAyrAGTgF9cGxq--h1Z9wYF-YqCj-zvSSoAHlew2eazMEwOmUj7PFLVn5eb_Qn4GniUPhGB9RbBPm4pW4TqSTrpsH1a1EP0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20894132/GI6wI-WnTNcPpyhgkAF3xLhce1DOSmmecR2lw16rprn27LSGOZWEYwVrmfui95tCvd6WQRlM7RbN24b7HjrwQAV1O-u7mOgCotHW7a26y5mFo_Xro1IGQ0USNzATvvK93voJIV-LUvk5dbKm7xdaWYwUsKpx3S6mxrt1lZDKpjTm2CU/1200x900n",
 "mileage_km": 120000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303829+00:00"
+"seen_at": "2026-10-28T14:50:28.999484+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -285,7 +269,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-28T14:39:05.303819+00:00"
+"seen_at": "2026-10-28T14:50:28.999472+00:00"
 },
 {
 "ad_id": "autoru_1160543683-d2663ac8",
@@ -301,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T14:39:05.303800+00:00"
+"seen_at": "2026-10-28T14:50:28.999459+00:00"
 },
 {
 "ad_id": "autoru_1160543912-2b3171fd",
@@ -317,7 +301,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T14:39:05.303787+00:00"
+"seen_at": "2026-10-28T14:50:28.999441+00:00"
 },
 {
 "ad_id": "autoru_1160388680-d712b392",
@@ -333,7 +317,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303767+00:00"
+"seen_at": "2026-10-28T14:50:28.999426+00:00"
 },
 {
 "ad_id": "autoru_1160548323-dcc5b343",
@@ -349,7 +333,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T14:39:05.303701+00:00"
+"seen_at": "2026-10-28T14:50:28.999400+00:00"
+},
+{
+"ad_id": "autoru_1160450387-b64afbcb",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Octavia",
+"year": 2014,
+"price": 1300000,
+"market_price": 1076500,
+"url": "https://auto.ru/cars/used/sale/skoda/octavia/1160450387-b64afbcb/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18790574/6e527f2e53d0501907dc6758b054a4b8/1200x900n",
+"mileage_km": 184000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T14:50:28.999339+00:00"
 },
 {
 "ad_id": "autoru_1160546725-c9ce9a0f",
