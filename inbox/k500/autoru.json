@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160501307-c676ddbe",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
-"year": 2002,
-"price": 420000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/i2hItgdiRkzt2ZMPYoT0gOiDLW8gnr2C4k2TZNhCdFLLyDlCxf6gara07XcPUdwAzKFWqMVxvuWBUrgk-a2gf77dCYZVlBIZgGak892CRLC20deZUdbPjdQ5P7luZa1YnWAAuqDxCVYEXTIHLL223233KYPZrUcQgJgHDKWryMxZzw/1200x900n",
-"mileage_km": 350000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T10:43:41.868972+00:00"
-},
-{
 "ad_id": "autoru_1160509344-c728d687",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T10:43:41.868939+00:00"
+"seen_at": "2026-10-28T10:54:56.556703+00:00"
+},
+{
+"ad_id": "autoru_1160501307-c676ddbe",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "E-Класс",
+"year": 2002,
+"price": 420000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160518945-e1fa9d58/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/3jsjbhLGXgq0XK8Ok6dV5_NHuBCXqIJFxC9pVkALFLRJ_U0QswsE7uWibwW33bUnpZTortQHaWxN6BHwohHvG67nv8eAVLJPDu9OyfomTpAVn4eyBoljbmH8ve5OpJLhe6HFCF-sr6IXXN0wgEQFgi9cjGdo5kYLT_Rj3n8bVvm7_a8/1200x900n",
+"mileage_km": 350000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T10:54:56.556674+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T10:43:41.868905+00:00"
+"seen_at": "2026-10-28T10:54:56.556633+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T10:43:41.868867+00:00"
+"seen_at": "2026-10-28T10:54:56.556595+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T10:43:26.751373+00:00"
+"seen_at": "2026-10-28T10:54:37.406276+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T10:43:26.751358+00:00"
+"seen_at": "2026-10-28T10:54:37.406262+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T10:43:26.751341+00:00"
+"seen_at": "2026-10-28T10:54:37.406246+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T10:43:26.751312+00:00"
+"seen_at": "2026-10-28T10:54:37.406216+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
