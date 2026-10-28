@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:17:37.476620+00:00"
+"seen_at": "2026-10-28T05:29:01.664900+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -24,12 +24,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/TwM_bylUROuzEEuH2OaFwgu9dXQCESCMed-9lfsti2J9bUMwWlqdan4VZ7lFk5he2JbJ-0J5n-wahT7Ra6umIBggVaSfzCjA0t3jPvMOy5ZWeEm-2eNlMqWoX-7QukBkx76nGeXk8bHrNOeXFYMdMJz4hUuUdFrJAxdx1U_G6w9xLwA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/-v1qkgORYi8cO4QPjLbs3G3RIJh4px8fU7gS37RnRAkkje3H9QfUhtW6mSfy94VvWoqeSgGiaRbCElQLnP-Ra37uzwI7CSCEu0LTJunpYercqlj-bfga4nvAV__1ZBLhbonJ1wgcEN-TqPEHkkcxBZhHO6ueehZrVjvnqhJlY1BPGQ/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:17:37.476596+00:00"
+"seen_at": "2026-10-28T05:29:01.664877+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -45,55 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:17:37.476535+00:00"
-},
-{
-"ad_id": "autoru_1160522346-551ff3bb",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Matiz",
-"year": 2008,
-"price": 179000,
-"market_price": 106500,
-"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160522346-551ff3bb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/814ef4643ae58ae85a4dd3cb9cde7e14/1200x900n",
-"mileage_km": 95000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T05:17:18.408673+00:00"
-},
-{
-"ad_id": "autoru_1160523626-1166b783",
-"source": "autoru",
-"brand": "Chery",
-"model": "Amulet (A15)",
-"year": 2007,
-"price": 100000,
-"market_price": 61000,
-"url": "https://auto.ru/cars/used/sale/chery/amulet/1160523626-1166b783/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20981853/d8ebd1ae6fa4e9d608e60c92b71d24ef/1200x900n",
-"mileage_km": 160000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Бобров",
-"seen_at": "2026-10-28T05:17:18.408662+00:00"
-},
-{
-"ad_id": "autoru_1160523666-ee44a919",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 145000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160523666-ee44a919/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/e9e58712738419c4d5bf9e5385eece41/1200x900n",
-"mileage_km": 230000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T05:17:18.408652+00:00"
+"seen_at": "2026-10-28T05:29:01.664818+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -109,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:17:18.408616+00:00"
+"seen_at": "2026-10-28T05:28:40.709723+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,6 +77,54 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:17:18.408587+00:00"
+"seen_at": "2026-10-28T05:28:40.709713+00:00"
+},
+{
+"ad_id": "autoru_1160522346-551ff3bb",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Matiz",
+"year": 2008,
+"price": 179000,
+"market_price": 106500,
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160522346-551ff3bb/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/814ef4643ae58ae85a4dd3cb9cde7e14/1200x900n",
+"mileage_km": 95000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T05:28:40.709700+00:00"
+},
+{
+"ad_id": "autoru_1160523626-1166b783",
+"source": "autoru",
+"brand": "Chery",
+"model": "Amulet (A15)",
+"year": 2007,
+"price": 100000,
+"market_price": 61000,
+"url": "https://auto.ru/cars/used/sale/chery/amulet/1160523626-1166b783/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20981853/d8ebd1ae6fa4e9d608e60c92b71d24ef/1200x900n",
+"mileage_km": 160000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Бобров",
+"seen_at": "2026-10-28T05:28:40.709687+00:00"
+},
+{
+"ad_id": "autoru_1160523666-ee44a919",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2008,
+"price": 145000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160523666-ee44a919/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/e9e58712738419c4d5bf9e5385eece41/1200x900n",
+"mileage_km": 230000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T05:28:40.709655+00:00"
 }
 ]
