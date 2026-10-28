@@ -8,12 +8,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/jPQ3s8kqUbSGva8dHIrGy5Ftr54UWrR7XAXSwdMJQhA4WjNqjFxkCA2FvRu1B9SBSXI-tfXGULjn5go2dobNfiRq0ZtASU80fXIjUvcOExPdvNW0PbernwtqtK4jTknXXcI9ugsKJnPw1E1F5TUjCs3LqtozTydH0bBJhxunpBRzDIU/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/VXO9lpte82D_9o8oV6M_CrWJQhShWIwJt3wNrNp5z-BWiaZkjRghk4YS_ocHltI4YLaPQ7ma7gchjwDzM1PWnhxmE0YODoZ1Mr7qc89ct1Z_dTWwiPX1NqA7tNyxVbPeSH60sMOoy4V0iqj3MDA8MbDVfcVgCu3sunojSgFH7MN5Dw/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:25:00.414652+00:00"
+"seen_at": "2026-10-28T12:36:18.662943+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:25:00.414613+00:00"
+"seen_at": "2026-10-28T12:36:18.662905+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T12:25:00.414573+00:00"
+"seen_at": "2026-10-28T12:36:18.662864+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:25:00.414536+00:00"
+"seen_at": "2026-10-28T12:36:18.662825+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:24:47.539976+00:00"
+"seen_at": "2026-10-28T12:35:58.270071+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:24:47.539963+00:00"
+"seen_at": "2026-10-28T12:35:58.270057+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T12:24:47.539948+00:00"
+"seen_at": "2026-10-28T12:35:58.270041+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:24:47.539936+00:00"
+"seen_at": "2026-10-28T12:35:58.270028+00:00"
 },
 {
 "ad_id": "autoru_1160545355-6ddcaba6",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:24:47.539895+00:00"
+"seen_at": "2026-10-28T12:35:58.269986+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
@@ -158,21 +158,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-28T10:32:33.414863+00:00"
-},
-{
-"ad_id": "autoru_1160522346-551ff3bb",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Matiz",
-"year": 2008,
-"price": 179000,
-"market_price": 106500,
-"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160522346-551ff3bb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/814ef4643ae58ae85a4dd3cb9cde7e14/1200x900n",
-"mileage_km": 95000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T06:36:11.864005+00:00"
 }
 ]
