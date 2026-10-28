@@ -5862,7 +5862,7 @@
   "https://auto.drom.ru/voronezh/kia/spectra/135589371.html": {
     "posted_at": "2026-10-25T21:00:04.907334+00:00",
     "message_id": 438,
-    "deleted_at": null,
+    "deleted_at": "2026-10-28T21:04:36.948192+00:00",
     "brand": "Kia",
     "model": "Spectra",
     "year": 2008,
@@ -6203,5 +6203,20 @@
     "mileage_km": 200000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/eubzy1d-i-Nhx5YyW3_mklR6Vd0kgSnlZkuuMQEol1AQIMj46IUscDhmtqEL9pbBpJTAtPtJ4Lo8qYrW/gen272wb.jpg"
+  },
+  "autoru_1160554127-7bcbcec9": {
+    "posted_at": "2026-10-28T21:08:33.787763+00:00",
+    "message_id": 461,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Granta",
+    "year": 2016,
+    "price": 270000,
+    "median_price": 415000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 240000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/c41c7355e8fdb7774146be02f5504a83/1200x900n"
   }
 }
