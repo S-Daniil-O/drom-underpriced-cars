@@ -2748,5 +2748,20 @@
     "mileage_km": 240000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2155444/d4a39120d272b63dec34b019d6b90f70/1200x900n"
+  },
+  "autoru_1160537753-7dd7c3a0": {
+    "posted_at": "2026-10-28T04:27:51.626567+00:00",
+    "message_id": 209,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2015,
+    "price": 1100000,
+    "median_price": 1314500.0,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 174520,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17757189/15ab50a0f5415f7f369c92ce3fcec26e/1200x900n"
   }
 }
