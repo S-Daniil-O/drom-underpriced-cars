@@ -8,12 +8,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/mQa_ujgbbfC1ZXGRyHG-BrMNdU84sFxHwzRZNLS6w1RkqT6I4vq-JiXBxz_KN6iC6gIXU3167PJJKq2vFARcyDs7A0oZxORVmI7vp0yKxqEDHO4oPUMtA6j2Jlafhraxx1N14qYFlwv8vd0O35YUBoyKhUOYVBSneMc_wyhgb0MX4-g/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/jPQ3s8kqUbSGva8dHIrGy5Ftr54UWrR7XAXSwdMJQhA4WjNqjFxkCA2FvRu1B9SBSXI-tfXGULjn5go2dobNfiRq0ZtASU80fXIjUvcOExPdvNW0PbernwtqtK4jTknXXcI9ugsKJnPw1E1F5TUjCs3LqtozTydH0bBJhxunpBRzDIU/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:51.627071+00:00"
+"seen_at": "2026-10-28T12:25:00.414652+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:51.627040+00:00"
+"seen_at": "2026-10-28T12:25:00.414613+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T12:13:51.627004+00:00"
+"seen_at": "2026-10-28T12:25:00.414573+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:51.626966+00:00"
+"seen_at": "2026-10-28T12:25:00.414536+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:36.350388+00:00"
+"seen_at": "2026-10-28T12:24:47.539976+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:36.350375+00:00"
+"seen_at": "2026-10-28T12:24:47.539963+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T12:13:36.350359+00:00"
+"seen_at": "2026-10-28T12:24:47.539948+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T12:13:36.350328+00:00"
+"seen_at": "2026-10-28T12:24:47.539936+00:00"
+},
+{
+"ad_id": "autoru_1160545355-6ddcaba6",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2019,
+"price": 400000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160545355-6ddcaba6/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20556383/1b82b3b3a28a21a55bdbb512599321c4/1200x900n",
+"mileage_km": 265111,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T12:24:47.539895+00:00"
 },
 {
 "ad_id": "autoru_1160498825-c57ac88b",
