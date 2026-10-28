@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:51:29.035016+00:00"
+"seen_at": "2026-10-28T06:02:45.560925+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -24,12 +24,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/37Qafv7ELuaVyyYEiMmS7DVQoCTzB8f7yBWuOHaITKQI5q1lX9bntvrz4KB48aV5jdLGxvMwxA9v6qhdyy55U_UO4tWqNT9Aucs0HN03tq0TZDMcbo5eNutTyPQxWsHdiyHSbgHwm6gr-zypGSxp-Zd30cw8VArVZQJHZlFLYo-DqQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/DCMEQ41ZlfPWJUCiqhUbl2nDt3YpafAui0PrK0N7JJiIqhqDpHqOAL3i5tVLPhDZ2xYLy8v24BR8GYcEedWFilzR-Xer9_8rnL9trERzil-1MmdqLUv8pLCHn2e4eSq6qA8oJ6WiwnnC9erbRkqE9ViT5v4lUAVibQcCCBBseGw2N3w/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:51:29.034992+00:00"
+"seen_at": "2026-10-28T06:02:45.560901+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -45,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:51:29.034930+00:00"
-},
-{
-"ad_id": "autoru_1160536975-568bc913",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2010,
-"price": 360000,
-"market_price": 169000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160536975-568bc913/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2127639/96e718e88fa62b3592bf00b8f14a2e1e/1200x900n",
-"mileage_km": 356000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T05:51:07.738300+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 180000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T05:51:07.738291+00:00"
+"seen_at": "2026-10-28T06:02:45.560841+00:00"
 },
 {
 "ad_id": "autoru_1160522346-551ff3bb",
@@ -93,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:51:07.738273+00:00"
+"seen_at": "2026-10-28T06:02:30.866081+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -109,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T05:51:07.738260+00:00"
+"seen_at": "2026-10-28T06:02:30.866069+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -125,6 +93,38 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T05:51:07.738226+00:00"
+"seen_at": "2026-10-28T06:02:30.866058+00:00"
+},
+{
+"ad_id": "autoru_1160536975-568bc913",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2010,
+"price": 360000,
+"market_price": 169000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160536975-568bc913/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2127639/96e718e88fa62b3592bf00b8f14a2e1e/1200x900n",
+"mileage_km": 356000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T06:02:30.866019+00:00"
+},
+{
+"ad_id": "autoru_1160315473-914cc928",
+"source": "autoru",
+"brand": "Renault",
+"model": "Logan",
+"year": 2006,
+"price": 180000,
+"market_price": 228500,
+"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
+"mileage_km": 190000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T06:02:30.865987+00:00"
 }
 ]
