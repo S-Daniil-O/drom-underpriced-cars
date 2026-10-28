@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160498825-c57ac88b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2012,
-"price": 300000,
-"market_price": 258000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
-"mileage_km": 165000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T00:36:54.188147+00:00"
-},
-{
-"ad_id": "autoru_1160501307-c676ddbe",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
-"year": 2002,
-"price": 420000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/LkXcmOoLXsLyOtMIjgCsvzJavl148EPS1cwh7TkJo62HjU1_LActd__TzAfwmnp6qDX3uS7WIns_NpxhZ3fz79RZZgGC9ClZ-ecLuv74Jw00k-P_GycUoGq5SEoOYlj_OI1iqgTz9k3h1FdWZ5ZJZComMHm8dw2ynUvJQIgLyF80v8g/1200x900n",
-"mileage_km": 350000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T00:36:54.188120+00:00"
-},
-{
 "ad_id": "autoru_1160509344-c728d687",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -45,7 +13,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T00:36:54.188053+00:00"
+"seen_at": "2026-10-28T00:48:09.906742+00:00"
+},
+{
+"ad_id": "autoru_1160498825-c57ac88b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2012,
+"price": 300000,
+"market_price": 258000,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160498825-c57ac88b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20770109/fcfc070dd446045850a5ef84c9bee7db/1200x900n",
+"mileage_km": 165000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T00:48:09.906722+00:00"
+},
+{
+"ad_id": "autoru_1160501307-c676ddbe",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Passat",
+"year": 2002,
+"price": 420000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/HRiEzfbtFaZrWBe5JJSnFa34CYXtX57QBaPkJq1WsJIa0LENCD_wxJl9NXN2XPLdt3iaa_tCScTb1kbTJ_bJB43P-5AFIux3xTsx23tMRlIUFMfOXhXKTgz12UUsUqRsbNiKRQaGqKisdBKtyrk0Cr9H-BeretZS0iglk-6WAvS6MI4/1200x900n",
+"mileage_km": 350000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T00:48:09.906671+00:00"
 },
 {
 "ad_id": "autoru_1160522346-551ff3bb",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T00:36:36.343394+00:00"
+"seen_at": "2026-10-28T00:47:51.533849+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T00:36:36.343383+00:00"
+"seen_at": "2026-10-28T00:47:51.533838+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T00:36:36.343371+00:00"
+"seen_at": "2026-10-28T00:47:51.533826+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T00:36:36.343315+00:00"
+"seen_at": "2026-10-28T00:47:51.533771+00:00"
 },
 {
 "ad_id": "autoru_1160495526-78cffd09",
