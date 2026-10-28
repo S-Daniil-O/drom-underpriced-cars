@@ -6173,5 +6173,35 @@
     "mileage_km": 143000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/SzUKanJEEID1oEWWbzWzPX6y01X-Sgb0NNSGN2U4qHmDeUTM-7ltEDoBdaEIQnf5jZ_NPckJaejj_dRJ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/471412825.html": {
+    "posted_at": "2026-10-28T19:45:35.042569+00:00",
+    "message_id": 459,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2003,
+    "price": 70000,
+    "median_price": 113500,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 240000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/p-9omYJ8S33-e3Z39rhWiB-epc5xjTJz72RQSsFY40j-6BWI6fGzLdaCIhhkPNmkz6hKGqdKElerWlYF/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/542259601.html": {
+    "posted_at": "2026-10-28T19:45:38.027726+00:00",
+    "message_id": 460,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2011,
+    "price": 250000,
+    "median_price": 252500,
+    "median_sample_size": 16,
+    "price_rating": "отличная цена",
+    "mileage_km": 200000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/eubzy1d-i-Nhx5YyW3_mklR6Vd0kgSnlZkuuMQEol1AQIMj46IUscDhmtqEL9pbBpJTAtPtJ4Lo8qYrW/gen272wb.jpg"
   }
 }
