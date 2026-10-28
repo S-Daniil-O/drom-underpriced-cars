@@ -8,44 +8,12 @@
 "price": 785000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/wyEx6PXwKj0I1UHAshNwLtn_GNPJ6wOGd4nFive2eKfP2_DpKJk2n03y9IJtvTTdBQ4IbJX7tqAoY0Dzs7evQVrGmD_2JWSZEOZuca6hmG3RIEN7ArTIwokp_GK0MaVrknn7g5Y8-tHRm_9VcBIYv8R9uo_lojp4ISF-Bnwk6EpVQQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/qW1oHznxvLafVCZQPIj48PJuSutHbYXSA2jFFAvzH5ys2CcrMtjvDEQir7-lyu-v8GkERQMVpta90vZaUW4gcz-xC6TkiXm25d7Y67tbU5qsOqBbp5iBvwoWmG5WNDyRSU87rlu_Pz7YCF8fJ2f0XBwzMxS0RY_OpRjs_yq3eNR8ldM/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610560+00:00"
-},
-{
-"ad_id": "autoru_1160013989-8d9b50c3",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Rapid",
-"year": 2021,
-"price": 1350000,
-"market_price": 1282500,
-"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
-"mileage_km": 150072,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610538+00:00"
-},
-{
-"ad_id": "autoru_1160529370-1dbad144",
-"source": "autoru",
-"brand": "Ford",
-"model": "EcoSport",
-"year": 2017,
-"price": 1400000,
-"market_price": 676000,
-"url": "https://auto.ru/cars/used/sale/ford/ecosport/1160529370-1dbad144/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/61738d8c863047a4392d8db57a6294d6/1200x900n",
-"mileage_km": 293000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-10-28T21:24:32.610524+00:00"
+"seen_at": "2026-10-28T21:35:48.220095+00:00"
 },
 {
 "ad_id": "autoru_1160390188-44a471ad",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610488+00:00"
+"seen_at": "2026-10-28T21:35:48.220063+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -77,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610474+00:00"
+"seen_at": "2026-10-28T21:35:48.220042+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -93,7 +61,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610461+00:00"
+"seen_at": "2026-10-28T21:35:48.220024+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -109,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610445+00:00"
+"seen_at": "2026-10-28T21:35:48.220000+00:00"
 },
 {
 "ad_id": "autoru_1160541156-46f3893b",
@@ -125,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610427+00:00"
+"seen_at": "2026-10-28T21:35:48.219980+00:00"
 },
 {
 "ad_id": "autoru_1160367581-0d7e8928",
@@ -141,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610412+00:00"
+"seen_at": "2026-10-28T21:35:48.219962+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -157,7 +125,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610397+00:00"
+"seen_at": "2026-10-28T21:35:48.219946+00:00"
+},
+{
+"ad_id": "autoru_1160013989-8d9b50c3",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Rapid",
+"year": 2021,
+"price": 1350000,
+"market_price": 1282500,
+"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
+"mileage_km": 150072,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T21:35:48.219927+00:00"
+},
+{
+"ad_id": "autoru_1160529370-1dbad144",
+"source": "autoru",
+"brand": "Ford",
+"model": "EcoSport",
+"year": 2017,
+"price": 1400000,
+"market_price": 676000,
+"url": "https://auto.ru/cars/used/sale/ford/ecosport/1160529370-1dbad144/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/61738d8c863047a4392d8db57a6294d6/1200x900n",
+"mileage_km": 293000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-10-28T21:35:48.219903+00:00"
 },
 {
 "ad_id": "autoru_1160543310-6e8f8ff8",
@@ -168,12 +168,12 @@
 "price": 530000,
 "market_price": 327000,
 "url": "https://auto.ru/cars/used/sale/lifan/x60/1160543310-6e8f8ff8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/8t43lfitPczOlTSs4SAoAJoKueeeS5fr60_fNiYAbBaUTx0JKzuYX1BnqzFTt95fp2p_qKq58zRHjOwCvF-k-o5k4p41F-3VU2qd6uJp0HpUkA10y3tPoOpf0JDN2EQ5aCCY73Qa3mWUCIPj0Wdgw2KVO84nGqjyB5OyZALp5sAMog/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/sZDqGv9kkxWFcyWtsJnc2hH07PoxiJnM6NmhDmHgUpexaagXeABkgme9yxe9nMxHXHAFfNyvSNGFKJuMCRSvKCnuwuamcJyHEe6Y4VvFIgoTSBuauLctS6VF-eAhk_2uLaKTSyogZYHGl7vSZOhmrYF4HgYhAyGly6c_mTT5AgQot4U/1200x900n",
 "mileage_km": 120000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:32.610358+00:00"
+"seen_at": "2026-10-28T21:35:48.219850+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-28T21:24:11.396738+00:00"
+"seen_at": "2026-10-28T21:35:48.219796+00:00"
 },
 {
 "ad_id": "autoru_1160543683-d2663ac8",
@@ -205,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T21:24:11.396724+00:00"
+"seen_at": "2026-10-28T21:35:29.474672+00:00"
 },
 {
 "ad_id": "autoru_1160543912-2b3171fd",
@@ -221,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T21:24:11.396711+00:00"
+"seen_at": "2026-10-28T21:35:29.474660+00:00"
 },
 {
 "ad_id": "autoru_1160388680-d712b392",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:11.396696+00:00"
+"seen_at": "2026-10-28T21:35:29.474646+00:00"
 },
 {
 "ad_id": "autoru_1133735127-50323504",
@@ -253,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-28T21:24:11.396673+00:00"
+"seen_at": "2026-10-28T21:35:29.474627+00:00"
 },
 {
 "ad_id": "autoru_1160552466-73820e17",
@@ -269,7 +269,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:11.396609+00:00"
+"seen_at": "2026-10-28T21:35:29.474596+00:00"
+},
+{
+"ad_id": "autoru_1160554079-170d1192",
+"source": "autoru",
+"brand": "Ford",
+"model": "Explorer",
+"year": 2005,
+"price": 830000,
+"market_price": 505500,
+"url": "https://auto.ru/cars/used/sale/ford/explorer/1160554079-170d1192/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17750516/d829b9565031381a25a96a10b4c30f32/1200x900n",
+"mileage_km": 262300,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T21:35:29.474532+00:00"
 },
 {
 "ad_id": "autoru_1160522260-2790fbdd",

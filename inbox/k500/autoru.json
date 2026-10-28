@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:25:09.803043+00:00"
+"seen_at": "2026-10-28T21:36:18.418446+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T21:25:09.803007+00:00"
+"seen_at": "2026-10-28T21:36:18.418405+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:25:09.802969+00:00"
+"seen_at": "2026-10-28T21:36:18.418363+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -61,39 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:49.244952+00:00"
-},
-{
-"ad_id": "autoru_1160553357-ec75ce60",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2111",
-"year": 2006,
-"price": 430000,
-"market_price": 89000,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
-"mileage_km": 118600,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T21:24:49.244931+00:00"
-},
-{
-"ad_id": "autoru_1160554208-54357f55",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2008,
-"price": 435000,
-"market_price": 259500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/vRc_vlIPLU_Cl6pyow9QYwWk8Oz2KByVs1_nAXThRjk-mZvyl-LCLPWlLC1dz5Q4xgFU5ymq_W_fuubBVdAmYeFMeYc-ANVGeIj6N5Y49CnzUxYdx_f3IU4YfX-DlQxzyCVMeHDMz0WMF_sTAoyLQk34eDtr85YTmK1ZhlFZMtQ5T1A/1200x900n",
-"mileage_km": 133000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T21:24:49.244919+00:00"
+"seen_at": "2026-10-28T21:36:03.166295+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -109,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:49.244907+00:00"
+"seen_at": "2026-10-28T21:36:03.166264+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -125,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T21:24:49.244892+00:00"
+"seen_at": "2026-10-28T21:36:03.166232+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -141,7 +109,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T21:24:49.244863+00:00"
+"seen_at": "2026-10-28T21:36:03.166207+00:00"
+},
+{
+"ad_id": "autoru_1160553357-ec75ce60",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2111",
+"year": 2006,
+"price": 430000,
+"market_price": 89000,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
+"mileage_km": 118600,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T21:36:03.166134+00:00"
+},
+{
+"ad_id": "autoru_1160554208-54357f55",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Niva",
+"year": 2008,
+"price": 435000,
+"market_price": 259500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/d-E8Xg62uc6Ctyk0MZp5X1bV9hUylz7RgsZHuO2yZZ0f1QyaIPTX3Gp8ec4XJ2Qg3GRSfDPkgGy6aVttc8XGLex8UKQI-lItJqk1LRX1hkZhSGzcYWsEq__MM7128tgkL0UDfykmunSJEImIat8rT0jED5sm2bKu4-7u-Y0YdTDcv9Y/1200x900n",
+"mileage_km": 133000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T21:36:03.166068+00:00"
 },
 {
 "ad_id": "autoru_1160554127-7bcbcec9",
