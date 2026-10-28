@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:40.435301+00:00"
+"seen_at": "2026-10-28T09:02:51.327321+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
@@ -24,12 +24,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/JV7IdTNhdZF0o0ka5ulr9bP4MTm3eo0RvYeVES8Zs6VazwLPT3kD2DdgV8XSgcWZVAS55vo1D7GjlA_pwn39v-CEGHMdwqFVXmiTCULi-CtwatbgF55JJn0GaJmSBxhZokcK-Kqt8dtS3oSgKZvqWrURTgGz5hnDrJsWlbskPtXR9VE/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/X2JnhG5F8Lu-PB6lWi40j9dp7o6gGNcGTr0KwaEm6r7AWoYW6azGiZWeAQHA0CqxAMK-Uj608cmO-YpHsYi2FnHqajj6jSrjzFx76ao0BXM9UgHcnFFNc3pQzDov1NHjSfH4nwLmv0Jlke10MNvWU8dVIENNs8QxGuLGEH5SuCPVSA/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:40.435275+00:00"
+"seen_at": "2026-10-28T09:02:51.327296+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:40.435210+00:00"
+"seen_at": "2026-10-28T09:02:51.327231+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T08:51:22.708569+00:00"
+"seen_at": "2026-10-28T09:02:36.407684+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:22.708560+00:00"
+"seen_at": "2026-10-28T09:02:36.407675+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:22.708527+00:00"
+"seen_at": "2026-10-28T09:02:36.407642+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:22.708514+00:00"
+"seen_at": "2026-10-28T09:02:36.407631+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T08:51:22.708479+00:00"
+"seen_at": "2026-10-28T09:02:36.407615+00:00"
+},
+{
+"ad_id": "autoru_1160541482-53a4fd95",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 385000,
+"market_price": 238000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160541482-53a4fd95/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/6018726/d022007e895da00c30b74e06491021d6/1200x900n",
+"mileage_km": 115500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Бутурлиновка",
+"seen_at": "2026-10-28T09:02:36.407581+00:00"
 },
 {
 "ad_id": "autoru_1160522346-551ff3bb",
