@@ -8,12 +8,12 @@
 "price": 420000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160501307-c676ddbe/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/y0hs7E9SxnpQJVr8fIH2HLNH2SQVDmnI78IxQL8g3ouoCXjHaiUYynUCdQmrTknfYUZGF7tsLgt3wHPN-kYTm4hD5Ub5pLnpkZxt9iHskH3_YGAjySfN13jERiYZDX61fO05rCdPqQxv2fuwzaYNkpPNSFkoTtXBPNY_8dTTtH-EEgk/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20035467/arX-mh47YQfXtxa6nZXwW1wJqv1X5SJykN-F4net_c6i0hYmuK86mUtO4pu6KnRsSE_Dl1bPxcH2VbC9Wy6H1yzwg0P9Jo5Ng6gUBz5hwQDuHWBP4JUpUKr-4Lkx_UTHhnfye_lsLpC9GVpvYZ2EB1IKfEoi8mghkj1T2uxfeMIZL30/1200x900n",
 "mileage_km": 350000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:10:10.511266+00:00"
+"seen_at": "2026-10-28T13:21:25.546087+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:10:10.511252+00:00"
+"seen_at": "2026-10-28T13:21:25.546074+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T13:10:10.511186+00:00"
+"seen_at": "2026-10-28T13:21:25.546014+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:10:10.511126+00:00"
+"seen_at": "2026-10-28T13:21:25.545978+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:09:53.607116+00:00"
+"seen_at": "2026-10-28T13:21:06.708439+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:09:53.607103+00:00"
+"seen_at": "2026-10-28T13:21:06.708420+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T13:09:53.607090+00:00"
+"seen_at": "2026-10-28T13:21:06.708403+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T13:09:53.607080+00:00"
+"seen_at": "2026-10-28T13:21:06.708387+00:00"
+},
+{
+"ad_id": "autoru_1160546192-f7d381ca",
+"source": "autoru",
+"brand": "Chery",
+"model": "Tiggo (T11)",
+"year": 2012,
+"price": 400000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chery/tiggo/1160546192-f7d381ca/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/6366444b41e828b506c2868af5b70493/1200x900n",
+"mileage_km": 117490,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T13:21:06.708337+00:00"
 },
 {
 "ad_id": "autoru_1160546088-159b44bb",
@@ -142,22 +158,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-28T13:09:53.607062+00:00"
-},
-{
-"ad_id": "autoru_1160546192-f7d381ca",
-"source": "autoru",
-"brand": "Chery",
-"model": "Tiggo (T11)",
-"year": 2012,
-"price": 400000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chery/tiggo/1160546192-f7d381ca/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/6366444b41e828b506c2868af5b70493/1200x900n",
-"mileage_km": 117490,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T13:09:53.607028+00:00"
 },
 {
 "ad_id": "autoru_1160545355-6ddcaba6",
