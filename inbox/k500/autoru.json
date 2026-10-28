@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T15:02:40.271273+00:00"
+"seen_at": "2026-10-28T15:13:49.487767+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-28T15:02:40.271236+00:00"
+"seen_at": "2026-10-28T15:13:49.487732+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -45,7 +45,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T15:02:40.271198+00:00"
+"seen_at": "2026-10-28T15:13:49.487696+00:00"
+},
+{
+"ad_id": "autoru_1160315473-914cc928",
+"source": "autoru",
+"brand": "Chery",
+"model": "Tiggo (T11)",
+"year": 2006,
+"price": 180000,
+"market_price": 228500,
+"url": "https://auto.ru/cars/used/sale/chery/tiggo/1160534776-9678cb13/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
+"mileage_km": 190000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-28T15:13:36.300238+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -61,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T15:02:23.587972+00:00"
+"seen_at": "2026-10-28T15:13:36.300199+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -77,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-28T15:02:23.587959+00:00"
+"seen_at": "2026-10-28T15:13:36.300181+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -93,23 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-28T15:02:23.587943+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 180000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-28T15:02:23.587912+00:00"
+"seen_at": "2026-10-28T15:13:36.300144+00:00"
 },
 {
 "ad_id": "autoru_1160501307-c676ddbe",
