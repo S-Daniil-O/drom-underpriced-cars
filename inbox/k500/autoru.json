@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-29T07:54:29.780402+00:00"
+"seen_at": "2026-10-29T08:05:44.668000+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T07:54:29.780388+00:00"
+"seen_at": "2026-10-29T08:05:44.667977+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T07:54:29.780319+00:00"
+"seen_at": "2026-10-29T08:05:44.667850+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -61,55 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T07:54:08.918916+00:00"
-},
-{
-"ad_id": "autoru_1160553357-ec75ce60",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2111",
-"year": 2006,
-"price": 430000,
-"market_price": 109000,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
-"mileage_km": 118600,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T07:54:08.918897+00:00"
-},
-{
-"ad_id": "autoru_1160554208-54357f55",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2008,
-"price": 435000,
-"market_price": 259500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/opcsHi7HM1GLBMmc5imzjCicWmeRtOXisQZ7rA6ha7cQCvXfLvM3nyVyz_eapBsZnjCLFbXvEFr-b91WbAWUhRJah5jN5auQeLdcUnex4rf0tu6kBnX5jswhAmW8ocJO5W7-f_mNywtY4rdVIxXE1HCaWR6NB5FsyvErxEZZWASlmS8/1200x900n",
-"mileage_km": 133000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T07:54:08.918884+00:00"
-},
-{
-"ad_id": "autoru_1160555742-10e21c26",
-"source": "autoru",
-"brand": "Lifan",
-"model": "Breez (520)",
-"year": 2010,
-"price": 350000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/lifan/breez/1160555742-10e21c26/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/a790fd0c19ba70a337707bb3a1eef837/1200x900n",
-"mileage_km": 73923,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T07:54:08.918866+00:00"
+"seen_at": "2026-10-29T08:05:28.655115+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -125,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T07:54:08.918851+00:00"
+"seen_at": "2026-10-29T08:05:28.655102+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -141,7 +93,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T07:54:08.918818+00:00"
+"seen_at": "2026-10-29T08:05:28.655092+00:00"
+},
+{
+"ad_id": "autoru_1160553357-ec75ce60",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2111",
+"year": 2006,
+"price": 430000,
+"market_price": 109000,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
+"mileage_km": 118600,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T08:05:28.655062+00:00"
+},
+{
+"ad_id": "autoru_1160554208-54357f55",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Niva",
+"year": 2008,
+"price": 435000,
+"market_price": 259500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/Vl6lZqTRjc_57nqw0AWYkTXRc0FktOEOBKLy4xChPo1M_rJDLI_kglu6ClCyk6ORmi6MHJH2lziwxff0ere5BE0j7EKL78U59tsDedW9wlqOWofYfFgrcGEQvOja6WrJALqGauujsQejFQAFpp1dyOdZzo0lR0vbZA97G9NhCETFJg/1200x900n",
+"mileage_km": 133000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T08:05:28.655045+00:00"
+},
+{
+"ad_id": "autoru_1160555742-10e21c26",
+"source": "autoru",
+"brand": "Lifan",
+"model": "Breez (520)",
+"year": 2010,
+"price": 350000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/lifan/breez/1160555742-10e21c26/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/a790fd0c19ba70a337707bb3a1eef837/1200x900n",
+"mileage_km": 73923,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T08:05:28.655001+00:00"
 },
 {
 "ad_id": "autoru_1160509344-c728d687",
