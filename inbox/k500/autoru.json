@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-29T09:47:12.602619+00:00"
+"seen_at": "2026-10-29T09:58:26.903681+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:47:12.602608+00:00"
+"seen_at": "2026-10-29T09:58:26.903667+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:47:12.602566+00:00"
+"seen_at": "2026-10-29T09:58:26.903619+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:47:12.602549+00:00"
+"seen_at": "2026-10-29T09:58:26.903601+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T09:47:12.602528+00:00"
+"seen_at": "2026-10-29T09:58:26.903578+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:47:12.602490+00:00"
+"seen_at": "2026-10-29T09:58:26.903537+00:00"
 },
 {
 "ad_id": "autoru_1160553357-ec75ce60",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:46:51.250889+00:00"
+"seen_at": "2026-10-29T09:58:08.045208+00:00"
 },
 {
 "ad_id": "autoru_1160554208-54357f55",
@@ -120,12 +120,12 @@
 "price": 435000,
 "market_price": 259500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/ygX2ErJE9qFA8HDgbblP4PHAEc5kpNO6zdamZ6TErS0Yl0A9rqxFIfZBVcWlLcW_kkvh1G-0O-1_aU5ZHt57HrNqYuzHk_xrEUzqb122hqX8tSJgJO0N4lHpmEznsDbow0ie6H_BVSjPkKPRJqDhgzxaLYWW82RhrDJAG8jivQ6qAp8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/chHGjUZestghX74iyLReJj1kEJ5qJfDr_WskXvfBcG3ARUn3eTXthaOW9Me3TVFQ5396kDKh8HaTuH8w1IgSGTH4I5NlHSW5EMcEezDBzXEDEJEP-JoN1oAjA5G_UNUTQETHz_NfzVOWINCO8psF9IYv35EPdhoHWtubxQ_upI8h864/1200x900n",
 "mileage_km": 133000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:46:51.250871+00:00"
+"seen_at": "2026-10-29T09:58:08.045193+00:00"
 },
 {
 "ad_id": "autoru_1160555742-10e21c26",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T09:46:51.250828+00:00"
+"seen_at": "2026-10-29T09:58:08.045155+00:00"
 },
 {
 "ad_id": "autoru_1160560229-2a401f35",
@@ -174,21 +174,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-10-29T05:06:01.606514+00:00"
-},
-{
-"ad_id": "autoru_1160555333-2d34d03b",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Tiida",
-"year": 2005,
-"price": 450000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/nissan/tiida/1160555333-2d34d03b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16019815/0f9d6bb424ff81e733df11610c455f6d/1200x900n",
-"mileage_km": 190000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T03:58:17.141157+00:00"
 }
 ]
