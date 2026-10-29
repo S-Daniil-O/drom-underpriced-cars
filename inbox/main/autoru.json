@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:54.760664+00:00"
+"seen_at": "2026-10-29T10:54:06.763554+00:00"
 },
 {
 "ad_id": "autoru_1160529370-1dbad144",
@@ -29,39 +29,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-10-29T10:42:54.760648+00:00"
-},
-{
-"ad_id": "autoru_1160541156-46f3893b",
-"source": "autoru",
-"brand": "SsangYong",
-"model": "Actyon",
-"year": 2014,
-"price": 1108000,
-"market_price": 960000,
-"url": "https://auto.ru/cars/used/sale/ssang_yong/actyon/1160541156-46f3893b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21092119/3b711c6286a4b8886155bc854599b3fa/1200x900n",
-"mileage_km": 197502,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T10:42:54.760602+00:00"
+"seen_at": "2026-10-29T10:54:06.763539+00:00"
 },
 {
 "ad_id": "autoru_1160543310-6e8f8ff8",
 "source": "autoru",
-"brand": "Lifan",
-"model": "X60",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
 "year": 2013,
 "price": 530000,
 "market_price": 327000,
-"url": "https://auto.ru/cars/used/sale/lifan/x60/1160543310-6e8f8ff8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/I2GJ1VKgauKTsJYOlqwYqWUeRKMZ4N2WZbrXSvXeusRFGcKUqS9gLmXtKcTcAf2zpRMOchQnNxEvPgZxyZrmLMIlA4gnO5uOjNlaNTgW8hAFTSE7vkypIod-STv8Q1PkSgVd0l2X6nvXnf1FGzaue3Wfqs1mcLf8wBcm-XAC4WMU8A/1200x900n",
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1133219307-be33ac0b/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/lZCkz-wrxHHS8iMJUdrGI_jgQIWtjnxxeaJLsz3n81T6PoCwTz8YfM7C6r2MztoeoaVkwLZN3ZG5uLSbuYkJ02idPJSFvfmi1Zpz6MnZcDAriCU4Hew8yuH9RC9NAkfk1BTXuNwYmSeZ0C5uaPUDAo0RSiOb3v_H7kzzsNjnNfYKZC0/1200x900n",
 "mileage_km": 120000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:54.760587+00:00"
+"seen_at": "2026-10-29T10:54:06.763525+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -77,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-29T10:42:54.760570+00:00"
+"seen_at": "2026-10-29T10:54:06.763510+00:00"
 },
 {
 "ad_id": "autoru_1160543683-d2663ac8",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T10:42:54.760549+00:00"
+"seen_at": "2026-10-29T10:54:06.763491+00:00"
 },
 {
 "ad_id": "autoru_1160543912-2b3171fd",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-29T10:42:54.760531+00:00"
+"seen_at": "2026-10-29T10:54:06.763476+00:00"
 },
 {
 "ad_id": "autoru_1160388680-d712b392",
@@ -125,7 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:54.760492+00:00"
+"seen_at": "2026-10-29T10:54:06.763455+00:00"
+},
+{
+"ad_id": "autoru_1160541156-46f3893b",
+"source": "autoru",
+"brand": "SsangYong",
+"model": "Actyon",
+"year": 2014,
+"price": 1108000,
+"market_price": 960000,
+"url": "https://auto.ru/cars/used/sale/ssang_yong/actyon/1160541156-46f3893b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21092119/3b711c6286a4b8886155bc854599b3fa/1200x900n",
+"mileage_km": 197502,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T10:54:06.763386+00:00"
 },
 {
 "ad_id": "autoru_1133735127-50323504",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-10-29T10:42:40.091500+00:00"
+"seen_at": "2026-10-29T10:53:47.892230+00:00"
 },
 {
 "ad_id": "autoru_1160552466-73820e17",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091478+00:00"
+"seen_at": "2026-10-29T10:53:47.892211+00:00"
 },
 {
 "ad_id": "autoru_1160554079-170d1192",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091443+00:00"
+"seen_at": "2026-10-29T10:53:47.892195+00:00"
 },
 {
 "ad_id": "autoru_1160390188-44a471ad",
@@ -189,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091426+00:00"
+"seen_at": "2026-10-29T10:53:47.892183+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091414+00:00"
+"seen_at": "2026-10-29T10:53:47.892172+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -221,7 +221,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091400+00:00"
+"seen_at": "2026-10-29T10:53:47.892163+00:00"
 },
 {
 "ad_id": "autoru_1160555923-c745f20a",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091379+00:00"
+"seen_at": "2026-10-29T10:53:47.892151+00:00"
 },
 {
 "ad_id": "autoru_1160557336-d5e959b6",
@@ -253,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091358+00:00"
+"seen_at": "2026-10-29T10:53:47.892138+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -269,7 +269,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091346+00:00"
+"seen_at": "2026-10-29T10:53:47.892127+00:00"
 },
 {
 "ad_id": "autoru_1160367581-0d7e8928",
@@ -285,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091317+00:00"
+"seen_at": "2026-10-29T10:53:47.892109+00:00"
 },
 {
 "ad_id": "autoru_1160561429-899ce64d",
@@ -301,7 +301,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091264+00:00"
+"seen_at": "2026-10-29T10:53:47.892096+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -317,7 +317,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:42:40.091203+00:00"
+"seen_at": "2026-10-29T10:53:47.892079+00:00"
 },
 {
 "ad_id": "autoru_1160556978-bf71fdcd",
