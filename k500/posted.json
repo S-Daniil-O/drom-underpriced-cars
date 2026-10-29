@@ -6308,5 +6308,20 @@
     "mileage_km": 350000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/-uymgb1d9e5ACygOJoUQ4kpz1xy-2z4uKnSIYMy9WkT4bzKJpXPR7YNWA6lLyi78bAmsJMPGlAUJw6tL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/primera/187849559.html": {
+    "posted_at": "2026-10-29T17:30:39.958175+00:00",
+    "message_id": 468,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Primera",
+    "year": 2005,
+    "price": 270000,
+    "median_price": 469000,
+    "median_sample_size": 463,
+    "price_rating": null,
+    "mileage_km": 161000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5mWdjHC-GeFW0Q9won9B7BoVR-mFLT2Hbu4y_9JdRv9tr5Koep4Yz2T1_KRPkrBL4jc4RweB0f9yWyHo/gen272wb.jpg"
   }
 }
