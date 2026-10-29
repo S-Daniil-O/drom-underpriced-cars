@@ -2868,5 +2868,20 @@
     "mileage_km": 230000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/4338488/62118e4a83ed6cdfb9fdcbd2642d0ebf/1200x900n"
+  },
+  "autoru_1160563383-cf51dbb9": {
+    "posted_at": "2026-10-29T11:37:39.523930+00:00",
+    "message_id": 217,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "XRAY",
+    "year": 2019,
+    "price": 669000,
+    "median_price": 879500.0,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 183000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/3f6e912330e3334be678f62065f68538/1200x900n"
   }
 }
