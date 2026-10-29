@@ -2823,5 +2823,20 @@
     "mileage_km": 208000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/45c1e37be048010b8d1b351842b50b94/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/ford/focus/890411536.html": {
+    "posted_at": "2026-10-29T07:01:10.547040+00:00",
+    "message_id": 214,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2011,
+    "price": 530000,
+    "median_price": 650000,
+    "median_sample_size": 6333,
+    "price_rating": "нормальная цена",
+    "mileage_km": 275000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/g-DYXQeccJXD_uEYD8nods8az-WGwjH5H4YntaYgdsVPHbUIWMme-Aaosm5xsQIJ1ypHfxj4FZwCAMVl/gen272wb.jpg"
   }
 }
