@@ -2913,5 +2913,20 @@
     "mileage_km": 37000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/53195f19e67d69fa055cde989e4caef4/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/kia/cee~d/321881766.html": {
+    "posted_at": "2026-10-29T16:45:50.336255+00:00",
+    "message_id": 220,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Ceed",
+    "year": 2012,
+    "price": 800000,
+    "median_price": 980000.0,
+    "median_sample_size": 4122,
+    "price_rating": "отличная цена",
+    "mileage_km": 95000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/XQX0OOrVbJZzV7Sb_iMHn3OyeDmHMYgMSU9AUozszO-iyXMmUg8l8DKIZl6Hu-4qDcFqxaTIfhGhdXme/gen272wb.jpg"
   }
 }
