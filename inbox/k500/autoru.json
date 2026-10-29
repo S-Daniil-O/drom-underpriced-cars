@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T00:36:19.348681+00:00"
+"seen_at": "2026-10-29T00:47:38.684794+00:00"
 },
 {
 "ad_id": "autoru_1160523626-1166b783",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-29T00:36:19.348644+00:00"
+"seen_at": "2026-10-29T00:47:38.684756+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T00:36:19.348607+00:00"
+"seen_at": "2026-10-29T00:47:38.684719+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -61,55 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T00:36:01.612473+00:00"
-},
-{
-"ad_id": "autoru_1160553357-ec75ce60",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2111",
-"year": 2006,
-"price": 430000,
-"market_price": 89000,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
-"mileage_km": 118600,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T00:36:01.612451+00:00"
-},
-{
-"ad_id": "autoru_1160554208-54357f55",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2008,
-"price": 435000,
-"market_price": 259500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/ZvWQcEfgmnGhlE7NAUo-dpRT7ewDgKktRAfjnIwqTa5UkO3u1hlDBfT49VolOKJfv5F04iJ4F987lv3MIXGg_doM62JsGY3fjFDreKCiUBocm7sYtIkY9bK845GWb7_qb7DSOxhccxL5qXPLm3wmTvE09TLKjYWQOn-xKIC-10kRSg/1200x900n",
-"mileage_km": 133000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-10-29T00:36:01.612439+00:00"
+"seen_at": "2026-10-29T00:47:20.515739+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
 "source": "autoru",
-"brand": "Hyundai",
-"model": "Sonata",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
 "year": 2008,
 "price": 335000,
 "market_price": 121000,
-"url": "https://auto.ru/cars/used/sale/hyundai/sonata/1160400867-4d610dbc/",
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160539966-3f1941f3/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2091571/45c762580aa23864bc72a169343a8895/1200x900n",
 "mileage_km": 165000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T00:36:01.612427+00:00"
+"seen_at": "2026-10-29T00:47:20.515726+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -125,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T00:36:01.612412+00:00"
+"seen_at": "2026-10-29T00:47:20.515713+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -141,7 +109,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T00:36:01.612382+00:00"
+"seen_at": "2026-10-29T00:47:20.515701+00:00"
+},
+{
+"ad_id": "autoru_1160553357-ec75ce60",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2111",
+"year": 2006,
+"price": 430000,
+"market_price": 89000,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160553357-ec75ce60/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20673651/ff1a721ccd3791d7691acccadcfa13fb/1200x900n",
+"mileage_km": 118600,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T00:47:20.515667+00:00"
+},
+{
+"ad_id": "autoru_1160554208-54357f55",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Niva",
+"year": 2008,
+"price": 435000,
+"market_price": 259500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/iY7eXV0YhxFPB5uxKlPCYE1AycOVxOpVDePXrcmyyvtCtmir0AwUE2cenQ3KUHw_nF9KFpLdmisZWTkMup1zYDCax6aBwPCiIrX-smI4jwkWgF5NjePc2bA9FCEvhXKloGn4QzEMzsR_jDJ69cu0KHv6mBaSG2PsSFgB9UPLM3l4u24/1200x900n",
+"mileage_km": 133000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T00:47:20.515630+00:00"
 },
 {
 "ad_id": "autoru_1160554127-7bcbcec9",
