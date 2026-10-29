@@ -6278,5 +6278,20 @@
     "mileage_km": 198523,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/EuKrVllcnpQG9yEW3TM6hAkyYx_wZcubG2iuTnihByXXnPnqdBsSCIe8qfcfI-7QVXL79bdYX6ZWMkQ3/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/895514614.html": {
+    "posted_at": "2026-10-29T16:08:33.308549+00:00",
+    "message_id": 466,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lacetti",
+    "year": 2009,
+    "price": 330000,
+    "median_price": 437000,
+    "median_sample_size": 853,
+    "price_rating": null,
+    "mileage_km": 173668,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/FR2u9KzUB011SKdWHn8Rlrh-7TRMBNTbpTXXG-YMrWguu-djUNvyZksK9hEmGBKZmj_0Nxjj5LZkMpSL/gen272wb.jpg"
   }
 }
