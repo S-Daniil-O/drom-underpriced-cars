@@ -6323,5 +6323,20 @@
     "mileage_km": 161000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/5mWdjHC-GeFW0Q9won9B7BoVR-mFLT2Hbu4y_9JdRv9tr5Koep4Yz2T1_KRPkrBL4jc4RweB0f9yWyHo/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/492064239.html": {
+    "posted_at": "2026-10-29T19:17:06.337573+00:00",
+    "message_id": 469,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2012,
+    "price": 155000,
+    "median_price": 335000.0,
+    "median_sample_size": 6616,
+    "price_rating": null,
+    "mileage_km": 260000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/uqrU8Px8DPuV2467vQ4ygb2QogsKsgH9N3Z6Hv0sRj2pb1W9Xmq5708w2rdaFJjh1yL6ThN0b1_JbNoanOyFE5-a5cvZ4Yr7fyg/default.jpg"
   }
 }
