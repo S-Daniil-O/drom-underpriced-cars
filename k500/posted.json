@@ -6293,5 +6293,20 @@
     "mileage_km": 173668,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/FR2u9KzUB011SKdWHn8Rlrh-7TRMBNTbpTXXG-YMrWguu-djUNvyZksK9hEmGBKZmj_0Nxjj5LZkMpSL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/844747564.html": {
+    "posted_at": "2026-10-29T17:00:36.900817+00:00",
+    "message_id": 467,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera",
+    "year": 2001,
+    "price": 160000,
+    "median_price": 230000.0,
+    "median_sample_size": 194,
+    "price_rating": "хорошая цена",
+    "mileage_km": 350000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/-uymgb1d9e5ACygOJoUQ4kpz1xy-2z4uKnSIYMy9WkT4bzKJpXPR7YNWA6lLyi78bAmsJMPGlAUJw6tL/gen272wb.jpg"
   }
 }
