@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бобров",
-"seen_at": "2026-10-29T10:32:17.113439+00:00"
+"seen_at": "2026-10-29T10:43:29.764984+00:00"
 },
 {
 "ad_id": "autoru_1160523666-ee44a919",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:17.113427+00:00"
+"seen_at": "2026-10-29T10:43:29.764973+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:17.113382+00:00"
+"seen_at": "2026-10-29T10:43:29.764928+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:17.113365+00:00"
+"seen_at": "2026-10-29T10:43:29.764912+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T10:32:17.113345+00:00"
+"seen_at": "2026-10-29T10:43:29.764893+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:17.113308+00:00"
+"seen_at": "2026-10-29T10:43:29.764859+00:00"
 },
 {
 "ad_id": "autoru_1160553357-ec75ce60",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:01.184507+00:00"
+"seen_at": "2026-10-29T10:43:12.058856+00:00"
 },
 {
 "ad_id": "autoru_1160554208-54357f55",
@@ -120,12 +120,12 @@
 "price": 435000,
 "market_price": 259500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/jTyTBgVvgR0NwG1qBYPfGQHhkPYojM-tV_HHPQjwvuew4D1clVYNZUudFaSFHeItehhk0eAAJHyNVU8PZdaoUTnsVjzUPMyCfopW_C0MfXy12WJRXSeaEPJr7thlN9iJIYvZZDrObhYh9YvStjAR-kQkxp03q4HLRPMEG28YQUPv3oE/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/1dAF6WcizNppUFy6Yguzjy01rhhpETlUEI4cT0HfIXD0yEgSmZw7HLVKJNJ4uj3FoLjp-EWvwcPTSBWtH0R3ZJX2LyTaR82DOeDkBxjcBGReMaUepDLsHxzTInh95JTCN1EU8x9eJPj2w_8nMxcFKSuklyykUUNn-i7DiTrc9p5kQq8/1200x900n",
 "mileage_km": 133000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:01.184489+00:00"
+"seen_at": "2026-10-29T10:43:12.058844+00:00"
 },
 {
 "ad_id": "autoru_1160555742-10e21c26",
@@ -141,7 +141,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T10:32:01.184444+00:00"
+"seen_at": "2026-10-29T10:43:12.058826+00:00"
+},
+{
+"ad_id": "autoru_1160562508-55a9cd64",
+"source": "autoru",
+"brand": "Chery",
+"model": "Kimo (A1)",
+"year": 2009,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chery/kimo/1160562508-55a9cd64/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/o7JLfyaZ0CajlQoMncufcWEC6cIdsTPkYPG2IbkUZOYlmNoM-DCENUTJo2zqvqA8p_CNHZs2iweuirg-MvP3Q4mZMxP9grmE60elwI7yEeLV3zBZ2aBrI0J3X24949Snl0P7gbUqddPb7-BvZKtgfOzwYTpzAbYq8Xc6vjFnPGiI6tU/1200x900n",
+"mileage_km": 175000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T10:43:12.058807+00:00"
+},
+{
+"ad_id": "autoru_1160562519-1dd4e87e",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Nexia",
+"year": 2014,
+"price": 150000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160562519-1dd4e87e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/4338488/1e0df586a34584808ea8c76d5ea540a7/1200x900n",
+"mileage_km": 150000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-10-29T10:43:12.058777+00:00"
 },
 {
 "ad_id": "autoru_1160560229-2a401f35",
