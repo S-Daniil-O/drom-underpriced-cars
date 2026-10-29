@@ -6353,5 +6353,20 @@
     "mileage_km": 106000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/14564401/090be2096d884e4cdf8cc15dc3cce17f/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/560676966.html": {
+    "posted_at": "2026-10-29T21:27:29.428475+00:00",
+    "message_id": 471,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 1997,
+    "price": 80000,
+    "median_price": 85000.0,
+    "median_sample_size": 2034,
+    "price_rating": "отличная цена",
+    "mileage_km": 94444,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/qkOInT9d06ZKTfOzORWGtDIIgj0uxig9V9YaLY1IoH63VH_rjNKlVePaDUv5Sz82Jnxj67RepppXQ6F9/gen272wb.jpg"
   }
 }
