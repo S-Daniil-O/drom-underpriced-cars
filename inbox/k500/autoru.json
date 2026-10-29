@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160523626-1166b783",
-"source": "autoru",
-"brand": "Chery",
-"model": "Amulet (A15)",
-"year": 2007,
-"price": 100000,
-"market_price": 61000,
-"url": "https://auto.ru/cars/used/sale/chery/amulet/1160523626-1166b783/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20981853/d8ebd1ae6fa4e9d608e60c92b71d24ef/1200x900n",
-"mileage_km": 160000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Бобров",
-"seen_at": "2026-10-29T11:50:49.008182+00:00"
-},
-{
 "ad_id": "autoru_1160523666-ee44a919",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:49.008171+00:00"
+"seen_at": "2026-10-29T12:01:57.613251+00:00"
+},
+{
+"ad_id": "autoru_1160535297-722b3f9d",
+"source": "autoru",
+"brand": "Opel",
+"model": "Vectra",
+"year": 1997,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/opel/vectra/1160535297-722b3f9d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/c8afe5fe92d70caa8b34722e7419bbc2/1200x900n",
+"mileage_km": 350000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-10-29T12:01:57.613212+00:00"
 },
 {
 "ad_id": "autoru_1160536975-568bc913",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:49.008132+00:00"
+"seen_at": "2026-10-29T12:01:57.613196+00:00"
 },
 {
 "ad_id": "autoru_1160539966-3f1941f3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:49.008116+00:00"
+"seen_at": "2026-10-29T12:01:57.613179+00:00"
 },
 {
 "ad_id": "autoru_1160541482-53a4fd95",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-10-29T11:50:49.008097+00:00"
+"seen_at": "2026-10-29T12:01:57.613160+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:49.008062+00:00"
+"seen_at": "2026-10-29T12:01:57.613125+00:00"
 },
 {
 "ad_id": "autoru_1160553357-ec75ce60",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:31.475504+00:00"
+"seen_at": "2026-10-29T12:01:42.921867+00:00"
 },
 {
 "ad_id": "autoru_1160554208-54357f55",
@@ -120,12 +120,12 @@
 "price": 435000,
 "market_price": 259500,
 "url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160554208-54357f55/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/9UsDbB3Lrsfoyfin_ogeSrCr3Wqix-3_X44lPJbOQGch7ekOwzaz7B2JtDEZealcHHYiTS5xP0JgmQGBVQPmuOvlibjAaLkrZy5m5VAJDsF17s_5RL_sfHhuEhsWV8G5C28ALd_mKwYRgq5fSZd6vDjG8FoglLJW8O47b8r5AG-En1o/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17674678/iL2BON9caazUepMegO04aopZ32RGRL1rkjI5vOtkMPMjn0JXHXuzzajmYWmmZYX9kL5ilDvfEf74PHxalYdBp-AC97x9Qo8zQqb17l9OLycXnzW6HNXHYbUMbkIZsuFw0tHirTK-l372Oc_4EnxvMm7qHLOufyY_vAA9oAhXG0zBz7E/1200x900n",
 "mileage_km": 133000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:31.475491+00:00"
+"seen_at": "2026-10-29T12:01:42.921855+00:00"
 },
 {
 "ad_id": "autoru_1160555742-10e21c26",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:31.475475+00:00"
+"seen_at": "2026-10-29T12:01:42.921840+00:00"
 },
 {
 "ad_id": "autoru_1160562508-55a9cd64",
@@ -152,12 +152,12 @@
 "price": 155000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/chery/kimo/1160562508-55a9cd64/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/XhvfgCqlUrPUoE434ZxcdMRmdrvoap6tgFPT4khqEvZ0pPZAOcn7U6bWHeTtH40mtwxb6XALBUz_9jodB2zr02qtXLsqpw-pwy5RltgsARYOaals1oduhjDHMBhYQ42axG43XKf7FjxmwuhrXzXC0jMcYkqdzZHL3yQ7i1jPO4puyys/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/-hPZ8NNtl4zfuFS4wZB2BhDO81SS_BZZlXoA3av1NEZ9RuMs4VtOgYxWPe9n34yV9DPK__L_0L4vb0yLbECljyEx6IT4U9LlvLhrLVDOaKz3PPNtJX1f-_AHzMz4iEX3Q5V3tWvEKhKG9ovGI60rexwcrs_im4GRs0wt4RBMY0mHui8/1200x900n",
 "mileage_km": 175000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:31.475457+00:00"
+"seen_at": "2026-10-29T12:01:42.921821+00:00"
 },
 {
 "ad_id": "autoru_1160562519-1dd4e87e",
@@ -173,7 +173,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-10-29T11:50:31.475427+00:00"
+"seen_at": "2026-10-29T12:01:42.921791+00:00"
+},
+{
+"ad_id": "autoru_1160523626-1166b783",
+"source": "autoru",
+"brand": "Chery",
+"model": "Amulet (A15)",
+"year": 2007,
+"price": 100000,
+"market_price": 61000,
+"url": "https://auto.ru/cars/used/sale/chery/amulet/1160523626-1166b783/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20981853/d8ebd1ae6fa4e9d608e60c92b71d24ef/1200x900n",
+"mileage_km": 160000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Бобров",
+"seen_at": "2026-10-29T11:50:49.008182+00:00"
 },
 {
 "ad_id": "autoru_1160560229-2a401f35",
