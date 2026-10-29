@@ -6218,5 +6218,20 @@
     "mileage_km": 240000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/c41c7355e8fdb7774146be02f5504a83/1200x900n"
+  },
+  "autoru_1160560229-2a401f35": {
+    "posted_at": "2026-10-29T09:31:14.793852+00:00",
+    "message_id": 462,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2009,
+    "price": 275000,
+    "median_price": 407000.0,
+    "median_sample_size": 8,
+    "price_rating": null,
+    "mileage_km": 180000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2122798/91baf36bb1d31656bd452a2ce9cf2501/1200x900n"
   }
 }
