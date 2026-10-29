@@ -2883,5 +2883,20 @@
     "mileage_km": 183000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17693554/3f6e912330e3334be678f62065f68538/1200x900n"
+  },
+  "https://auto.drom.ru/novaya-usman/ford/mondeo/880470621.html": {
+    "posted_at": "2026-10-29T12:52:48.985449+00:00",
+    "message_id": 218,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Mondeo",
+    "year": 2012,
+    "price": 630000,
+    "median_price": 811500,
+    "median_sample_size": 8,
+    "price_rating": "хорошая цена",
+    "mileage_km": 168000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/87VSdLro2rd6in2fXFJk2RKmSQyF8XKliPHF7ZmGYsDMaLynutyM_U2Q6aGZldD7sKSHOD0kX4wCsX6R/gen272wb.jpg"
   }
 }
