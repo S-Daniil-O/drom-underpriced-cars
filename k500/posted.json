@@ -6012,7 +6012,7 @@
   "https://auto.drom.ru/voronezh/lada/2110/204379619.html": {
     "posted_at": "2026-10-27T14:00:07.807706+00:00",
     "message_id": 448,
-    "deleted_at": null,
+    "deleted_at": "2026-10-30T14:04:00.027945+00:00",
     "brand": "Лада",
     "model": "2110",
     "year": 2006,
@@ -6398,5 +6398,35 @@
     "mileage_km": 176250,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20829654/0bc94940a4b899daa10224320ac5b56e/1200x900n"
+  },
+  "autoru_1160581927-5a91fd16": {
+    "posted_at": "2026-10-30T14:08:05.007152+00:00",
+    "message_id": 474,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2012,
+    "price": 490000,
+    "median_price": 646500,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 178000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20951031/987e0af28df79abee001b840a0e1985c/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/sonata/518592715.html": {
+    "posted_at": "2026-10-30T14:08:21.684775+00:00",
+    "message_id": 475,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Sonata",
+    "year": 2004,
+    "price": 380000,
+    "median_price": 450000,
+    "median_sample_size": 945,
+    "price_rating": "нормальная цена",
+    "mileage_km": 183000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/EB4Zj2pv9vimGTOi64mhU-riLv5zemUfls2QLTlpLqliSNI2m-7De4DFnLJ9NfvczdBEBwm4Uz3zNGHi/gen272wb.jpg"
   }
 }
