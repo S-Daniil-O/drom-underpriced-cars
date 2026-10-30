@@ -6473,5 +6473,20 @@
     "mileage_km": 266700,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/1cjDAsyLyTUdmxWwNm629L4VN74GEFTSQ7LK3bHiczan92gXFfzja9dWvr8ApSbP7A_rQ08Qt5_oNFOQ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2108/187794356.html": {
+    "posted_at": "2026-10-30T21:18:56.880660+00:00",
+    "message_id": 479,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2108",
+    "year": 1990,
+    "price": 120000,
+    "median_price": 500000.0,
+    "median_sample_size": 1480,
+    "price_rating": "хорошая цена",
+    "mileage_km": 100000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/zuDx4s0xLlVeUGUnU6qlSvJldPi9NkUWRVEZnh87LyPmXldYgFd-ZFl9RjjK88dEZFb4h772_8gmnB6U/gen272wb.jpg"
   }
 }
