@@ -6102,7 +6102,7 @@
   "https://auto.drom.ru/voronezh/rover/75/426692227.html": {
     "posted_at": "2026-10-28T09:21:30.342162+00:00",
     "message_id": 454,
-    "deleted_at": null,
+    "deleted_at": "2026-10-31T09:33:43.674772+00:00",
     "brand": "Rover",
     "model": "75",
     "year": 2003,
@@ -6503,5 +6503,20 @@
     "mileage_km": 100000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/xUQHMh5jYnSDrcVWcT3ruv1dTPQNTDPD60lNsub-qCoZSbNCOL9OR6nJg6VohAlAQNsBpDlo5YHqsjB1/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/taunus/705937669.html": {
+    "posted_at": "2026-10-31T09:37:08.596388+00:00",
+    "message_id": 481,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Taunus",
+    "year": 1982,
+    "price": 100000,
+    "median_price": 190000,
+    "median_sample_size": 1107,
+    "price_rating": null,
+    "mileage_km": 77000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/J14u3ni5haEKI_QvK9vnJryCJggJECJX3mHNNhuGeceYrWzUr1UOmgTzjIfn3504_IoVpPZySL-P73gB/gen272wb.jpg"
   }
 }
