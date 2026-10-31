@@ -6593,5 +6593,20 @@
     "mileage_km": 230000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/N2nV6ZCUMgMAPPJXsAAqf--h6NEsnfyHpVeGpRx5KWH3b0Hb0FlwfgqfcH81vy6OvLLYen4CBwbGeOzL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/e-class/798790771.html": {
+    "posted_at": "2026-10-31T21:41:51.085291+00:00",
+    "message_id": 487,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 1989,
+    "price": 110000,
+    "median_price": 150000.0,
+    "median_sample_size": 2344,
+    "price_rating": null,
+    "mileage_km": 111111,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/00RtSe85wcl35GJ3OnoPZxoZFLBjzV-wlG61RgyWtcw-Mnn3U9hiOgKza2U3VWYjDx76dOkHCN0oYabf/gen272wb.jpg"
   }
 }
