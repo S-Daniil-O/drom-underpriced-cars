@@ -6147,7 +6147,7 @@
   "https://auto.drom.ru/voronezh/renault/megane/429847091.html": {
     "posted_at": "2026-10-28T15:29:57.874965+00:00",
     "message_id": 457,
-    "deleted_at": null,
+    "deleted_at": "2026-10-31T15:36:01.621739+00:00",
     "brand": "Renault",
     "model": "Megane",
     "year": 2008,
@@ -6548,5 +6548,20 @@
     "mileage_km": 201000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/ezbyjKfM3G8xnsGCcR4mwrmZnzUv2rfzIxmEOgrN9622st8ONDZvZiyvimnX8AQRIN1c4afs9zBCWfu9/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/671326113.html": {
+    "posted_at": "2026-10-31T15:39:28.080796+00:00",
+    "message_id": 484,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2006,
+    "price": 180000,
+    "median_price": 225000,
+    "median_sample_size": 833,
+    "price_rating": "нормальная цена",
+    "mileage_km": 340000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/dToKGve2Jc7qO4vTjhu4Y9PA82Sf_wJSoGZMRU5wtWJ7yMRsrpeNzdUys1CdmH_CaQgF2WURae8C68pJ/gen272wb.jpg"
   }
 }
