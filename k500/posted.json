@@ -6578,5 +6578,20 @@
     "mileage_km": 295876,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/rf_zfl_gNT-h6jHFpndXaHdVwVA468YseA1bi0y6FSF4H4lgqCNZCdSO8EOlQQZtCMjsUXVYMr-ECEu2/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/279693969.html": {
+    "posted_at": "2026-10-31T19:11:52.794546+00:00",
+    "message_id": 486,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2005,
+    "price": 130000,
+    "median_price": 160000,
+    "median_sample_size": 5533,
+    "price_rating": null,
+    "mileage_km": 230000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/N2nV6ZCUMgMAPPJXsAAqf--h6NEsnfyHpVeGpRx5KWH3b0Hb0FlwfgqfcH81vy6OvLLYen4CBwbGeOzL/gen272wb.jpg"
   }
 }
