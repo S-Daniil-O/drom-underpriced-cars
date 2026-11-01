@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160565256-c4155faa",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2105",
-"year": 2005,
-"price": 130000,
-"market_price": 63500,
-"url": "https://auto.ru/cars/used/sale/vaz/2105/1160565256-c4155faa/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/14564401/090be2096d884e4cdf8cc15dc3cce17f/1200x900n",
-"mileage_km": 106000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Бутурлиновка",
-"seen_at": "2026-11-01T13:25:20.416330+00:00"
-},
-{
 "ad_id": "autoru_1160571600-4cf9f9b0",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -24,12 +8,12 @@
 "price": 370000,
 "market_price": 147500,
 "url": "https://auto.ru/cars/used/sale/vaz/2114/1160571600-4cf9f9b0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/aN4Am04edOmEYzfo-JAJHnWh7A6uF8XP1udIwOATlmvUsfX5p2Iz7ejwJ1bzN6XS2CAVFaW1BdeScGqjLDMQLvDhT_h-pqH4sm25gq9frCzZ8GgIseKxVTmt2ufKBrKMvnvNATxlUsnZFTVnVwlq9Bch6mdU5SV0Uit217EMB_HzQQk/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/mdbEH7D69b-EKywtj4gPLQNXQqBaAuSG8kEK_stl2fsN9R0kuPWvWI_0JPFF27wWWIDhTPReR3MP3EQ3WPVrhHOjbQw1TPgCgLII6sIm6mLE1d0qiGvXfCe9RD_CM8ywAkN3Xap1fv1HgNpJTql-UIGCxs38IeQQoDlGzFu-Q-FB4kc/1200x900n",
 "mileage_km": 106033,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T13:25:20.416308+00:00"
+"seen_at": "2026-11-01T13:36:42.201782+00:00"
 },
 {
 "ad_id": "autoru_1160572363-3e30e626",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T13:25:20.416293+00:00"
+"seen_at": "2026-11-01T13:36:42.201764+00:00"
 },
 {
 "ad_id": "autoru_1160577133-48651238",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T13:25:20.416269+00:00"
+"seen_at": "2026-11-01T13:36:42.201736+00:00"
 },
 {
 "ad_id": "autoru_1160581927-5a91fd16",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T13:25:20.416224+00:00"
+"seen_at": "2026-11-01T13:36:42.201689+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -93,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-01T13:25:01.568600+00:00"
+"seen_at": "2026-11-01T13:36:23.628466+00:00"
 },
 {
 "ad_id": "autoru_1160602069-dce4b9ad",
@@ -109,7 +93,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-01T13:25:01.568568+00:00"
+"seen_at": "2026-11-01T13:36:23.628432+00:00"
+},
+{
+"ad_id": "autoru_1160565256-c4155faa",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2105",
+"year": 2005,
+"price": 130000,
+"market_price": 63500,
+"url": "https://auto.ru/cars/used/sale/vaz/2105/1160565256-c4155faa/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/14564401/090be2096d884e4cdf8cc15dc3cce17f/1200x900n",
+"mileage_km": 106000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Бутурлиновка",
+"seen_at": "2026-11-01T13:25:20.416330+00:00"
 },
 {
 "ad_id": "autoru_1160562508-55a9cd64",
