@@ -8,12 +8,12 @@
 "price": 370000,
 "market_price": 147500,
 "url": "https://auto.ru/cars/used/sale/vaz/2114/1160571600-4cf9f9b0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/Ex47u8m0doSlD8WTq08zqhbKtZVdZ7kJHM3kbzRNL-QkxfCqbsySsxmF8ib8FwTkwURsrUWrPu3N57Z5LBF5cQ0BWpDLPjuo62-bAHY2To5GydXiCBDRvfzeN1el1daB5l5TIs6CVFeG34P0b9kuZvsB1mciIhB3CuBZINN9pdu5-g/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/0u0SSVL7OG1dGF_WHVzbvX_IjlDOxDYvJ-k97b3dPX-deyPvrKD_vmMyHoOy3Gc_qxmF0c85Otbo49NvO4wObHv_maP43Q6odlHR6018I-53ItZxSAWUqxrLc2v8eOZTbUG1qKgKOxuZAL_9e5_3G0FWL6lW9pYDNViPMREABDZmT7g/1200x900n",
 "mileage_km": 106033,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T14:10:27.816281+00:00"
+"seen_at": "2026-11-01T14:21:48.008271+00:00"
 },
 {
 "ad_id": "autoru_1160572363-3e30e626",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T14:10:27.816264+00:00"
+"seen_at": "2026-11-01T14:21:48.008255+00:00"
 },
 {
 "ad_id": "autoru_1160577133-48651238",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T14:10:27.816238+00:00"
+"seen_at": "2026-11-01T14:21:48.008230+00:00"
 },
 {
 "ad_id": "autoru_1160581927-5a91fd16",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T14:10:27.816191+00:00"
+"seen_at": "2026-11-01T14:21:48.008185+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-01T14:10:14.276193+00:00"
+"seen_at": "2026-11-01T14:21:28.121681+00:00"
 },
 {
 "ad_id": "autoru_1160602069-dce4b9ad",
@@ -93,7 +93,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-01T14:10:14.276162+00:00"
+"seen_at": "2026-11-01T14:21:28.121667+00:00"
+},
+{
+"ad_id": "autoru_1160605337-a4b4fa0a",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2007,
+"price": 249000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160605337-a4b4fa0a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2161236/4d60a22019af1d22cfb980656f5a0b1d/1200x900n",
+"mileage_km": 149000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-01T14:21:28.121614+00:00"
 },
 {
 "ad_id": "autoru_1160565256-c4155faa",
