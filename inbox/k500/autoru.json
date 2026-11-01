@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160555742-10e21c26",
-"source": "autoru",
-"brand": "Lifan",
-"model": "Breez (520)",
-"year": 2010,
-"price": 250000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/lifan/breez/1160555742-10e21c26/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/a790fd0c19ba70a337707bb3a1eef837/1200x900n",
-"mileage_km": 73923,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-01T08:55:50.589223+00:00"
-},
-{
 "ad_id": "autoru_1160562508-55a9cd64",
 "source": "autoru",
 "brand": "Chery",
@@ -24,12 +8,12 @@
 "price": 155000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/chery/kimo/1160562508-55a9cd64/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/XHsudu-r2mLKDWLkaY0OPmTrliMyz-ZrgRzZVetXujjPeLTOmkJGLJmJBcl9Dw4ydjQHcM9gI9tvSqeJoTQ4vldF-uYHwetVJAB6Ih1H6nCi_Z88wxkS2Cp6l257IntW4EJHIVIrVp2mDAzN8MimPwlwd8AXuCEJsrnbc1RskZ8pfQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17737319/mH-hDnU7tarfwFen7114MRIQrV474TirRuxg2w9Z11hwW_sBy84XvLU5BjgwwUno51Ho1qMrr9bk1mU5xrckDIp8jnlh62JOKhjzPZNj20bQlAGrHMah7dK4ra78Ee2eaUIRlwWvPZyLnDybdmLnORsbf3iu740NVSJZGskRdFwFJPk/1200x900n",
 "mileage_km": 175000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T08:55:50.589197+00:00"
+"seen_at": "2026-11-01T09:07:02.294322+00:00"
 },
 {
 "ad_id": "autoru_1160565256-c4155faa",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-11-01T08:55:50.589172+00:00"
+"seen_at": "2026-11-01T09:07:02.294298+00:00"
 },
 {
 "ad_id": "autoru_1160571600-4cf9f9b0",
@@ -56,12 +40,12 @@
 "price": 370000,
 "market_price": 147500,
 "url": "https://auto.ru/cars/used/sale/vaz/2114/1160571600-4cf9f9b0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/vuf9a8chLZ27XZ9tcp0n_MZ1hHR-Si2Dz_mseQ-cDORU_UxmQYo003VCJHO7nuOYsA6Xv4qhDxIvY-FhhILFLxp8GCFJMIzAGIDuFOFAcyoC3DqEYMDoSP5iO6vZOz7iw6cUxbwmi9fiaCIDoZICiXEMm_xG_0_blp7RFHZseWh1tA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/16673081/PBIm4LtsFHREqlxPbxJqCtVOzC16jlLaVS7hGDz881lDNBJeMr5qx9D06kiXszWXz19WRUL2XEyXBMCdLIuI8mZPuqI8OerluTJ4RNUx1hIrW9L9B3oNUK7X3RSbaFb5Pmixuxd7mYN4ADrNsLNC7opte0o7EBx_M2tar1LH0v8icio/1200x900n",
 "mileage_km": 106033,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T08:55:50.589146+00:00"
+"seen_at": "2026-11-01T09:07:02.294270+00:00"
 },
 {
 "ad_id": "autoru_1160572363-3e30e626",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T08:55:50.589128+00:00"
+"seen_at": "2026-11-01T09:07:02.294253+00:00"
 },
 {
 "ad_id": "autoru_1160577133-48651238",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T08:55:50.589080+00:00"
+"seen_at": "2026-11-01T09:07:02.294224+00:00"
 },
 {
 "ad_id": "autoru_1160581927-5a91fd16",
@@ -109,7 +93,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T08:55:36.489158+00:00"
+"seen_at": "2026-11-01T09:07:02.294175+00:00"
+},
+{
+"ad_id": "autoru_1160601969-c6c8a65c",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "21099",
+"year": 2000,
+"price": 215000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/21099/1160601969-c6c8a65c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20369579/5a792107c71676d656e6c2d6f5bc8754/1200x900n",
+"mileage_km": 164000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-01T09:06:45.261306+00:00"
+},
+{
+"ad_id": "autoru_1160555742-10e21c26",
+"source": "autoru",
+"brand": "Lifan",
+"model": "Breez (520)",
+"year": 2010,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/lifan/breez/1160555742-10e21c26/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17410390/a790fd0c19ba70a337707bb3a1eef837/1200x900n",
+"mileage_km": 73923,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-01T08:55:50.589223+00:00"
 },
 {
 "ad_id": "autoru_1160601154-14cdbdc6",
