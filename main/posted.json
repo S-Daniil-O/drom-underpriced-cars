@@ -2958,5 +2958,20 @@
     "mileage_km": 1,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20467659/f7cd7ba478549d82052a2c24e0cdf57a/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/c-class/789426245.html": {
+    "posted_at": "2026-11-01T06:59:57.589542+00:00",
+    "message_id": 223,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2011,
+    "price": 1100000,
+    "median_price": 1420000,
+    "median_sample_size": 1281,
+    "price_rating": "хорошая цена",
+    "mileage_km": 138000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/3eALxi3Cxm3ox2YKtJ8NQ0AlizAsvdRNTSnelCQL5leUxzZUUGlIKV9F2l94UpxqE6CuDMM6tcWjV6TU/gen272wb.jpg"
   }
 }
