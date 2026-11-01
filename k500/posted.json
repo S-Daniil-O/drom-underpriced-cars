@@ -6728,5 +6728,20 @@
     "mileage_km": 270000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/0ytFuOJGFnvBKMBgULn9uov__BxuEBTHxpIqNvaukjc1LBdxhKduQuTrdjmDLt7CKyaLIGlGagSCASAh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/novaya-usman/lada/priora/222597033.html": {
+    "posted_at": "2026-11-01T21:50:59.409553+00:00",
+    "message_id": 496,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2007,
+    "price": 225000,
+    "median_price": 280000,
+    "median_sample_size": 11,
+    "price_rating": "хорошая цена",
+    "mileage_km": 210000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/PH03ZXEn68b6Ibz80e3AdaPOXPV7vhu6cRbrLcBE-hNQlSfiJsjiH8W9lZsGXYlvJf81tdZ25yEZXqqo/gen272wb.jpg"
   }
 }
