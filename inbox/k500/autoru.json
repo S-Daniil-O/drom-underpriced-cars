@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T20:20:58.055437+00:00"
+"seen_at": "2026-11-01T20:32:09.324486+00:00"
 },
 {
 "ad_id": "autoru_1160581927-5a91fd16",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T20:20:58.055392+00:00"
+"seen_at": "2026-11-01T20:32:09.324418+00:00"
 },
 {
 "ad_id": "autoru_1160601154-14cdbdc6",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-01T20:20:42.202787+00:00"
+"seen_at": "2026-11-01T20:31:56.170850+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-01T20:20:42.202773+00:00"
+"seen_at": "2026-11-01T20:31:56.170837+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T20:20:42.202755+00:00"
+"seen_at": "2026-11-01T20:31:56.170818+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T20:20:42.202709+00:00"
+"seen_at": "2026-11-01T20:31:56.170771+00:00"
 },
 {
 "ad_id": "autoru_1160608073-0bf469d2",
@@ -158,21 +158,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-01T16:25:03.147697+00:00"
-},
-{
-"ad_id": "autoru_1160605337-a4b4fa0a",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2114",
-"year": 2007,
-"price": 249000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1160605337-a4b4fa0a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2161236/4d60a22019af1d22cfb980656f5a0b1d/1200x900n",
-"mileage_km": 149000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-01T14:21:28.121614+00:00"
 }
 ]
