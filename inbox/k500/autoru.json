@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T23:42:41.149669+00:00"
+"seen_at": "2026-11-01T23:53:52.973084+00:00"
 },
 {
 "ad_id": "autoru_1160601154-14cdbdc6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-01T23:42:41.149575+00:00"
+"seen_at": "2026-11-01T23:53:52.972991+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-01T23:42:26.713989+00:00"
+"seen_at": "2026-11-01T23:53:33.632560+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T23:42:26.713964+00:00"
+"seen_at": "2026-11-01T23:53:33.632543+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-01T23:42:26.713855+00:00"
+"seen_at": "2026-11-01T23:53:33.632493+00:00"
 },
 {
 "ad_id": "autoru_1160608576-454746a7",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
 "seen_at": "2026-11-01T18:17:08.389209+00:00"
-},
-{
-"ad_id": "autoru_1160572363-3e30e626",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "21099",
-"year": 2003,
-"price": 99999,
-"market_price": 81000,
-"url": "https://auto.ru/cars/used/sale/vaz/21099/1160572363-3e30e626/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709739/a61c64f5208e6561ecc4d2c2be91290d/1200x900n",
-"mileage_km": 111111,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-01T17:43:37.503161+00:00"
 }
 ]
