@@ -13,23 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T06:36:38.319441+00:00"
-},
-{
-"ad_id": "autoru_1160595135-d0c183ff",
-"source": "autoru",
-"brand": "Hyundai",
-"model": "Solaris",
-"year": 2013,
-"price": 965000,
-"market_price": 696000,
-"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160595135-d0c183ff/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20189162/623a8e9ba253407ae941cb97d9b26d16/1200x900n",
-"mileage_km": 178000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T06:36:38.319423+00:00"
+"seen_at": "2026-11-02T06:47:57.031317+00:00"
 },
 {
 "ad_id": "autoru_1160079726-839f733c",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T06:36:38.319386+00:00"
+"seen_at": "2026-11-02T06:47:57.031301+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -61,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:38.319370+00:00"
+"seen_at": "2026-11-02T06:47:57.031285+00:00"
 },
 {
 "ad_id": "autoru_1160316686-6c934fdd",
@@ -77,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:38.319339+00:00"
+"seen_at": "2026-11-02T06:47:57.031256+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -93,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:38.319302+00:00"
+"seen_at": "2026-11-02T06:47:57.031239+00:00"
+},
+{
+"ad_id": "autoru_1160595135-d0c183ff",
+"source": "autoru",
+"brand": "Hyundai",
+"model": "Solaris",
+"year": 2013,
+"price": 965000,
+"market_price": 696000,
+"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160595135-d0c183ff/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20189162/623a8e9ba253407ae941cb97d9b26d16/1200x900n",
+"mileage_km": 178000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T06:47:57.031198+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -109,71 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T06:36:21.394555+00:00"
-},
-{
-"ad_id": "autoru_1160608503-9d9e279b",
-"source": "autoru",
-"brand": "Audi",
-"model": "A8",
-"year": 2017,
-"price": 1350000,
-"market_price": 3142500,
-"url": "https://auto.ru/cars/used/sale/audi/a8/1160608503-9d9e279b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/zD11fzSDCBZxIAL-Gj8VgYZo_8lMEzjJ3iudulOkLN6g73xoM4_8k2B4G6R1ZxmWg8XXyteB0hM4-5CHZ6y2KPiN1-7QK9wIhrSbsyQnl_fNVzAJZVnmiKavfJ4DYmvunf90Cc658HgFK0gvTb8ccTR64klQOaLWViQxKpHH9m3Ne7Y/1200x900n",
-"mileage_km": 65000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394536+00:00"
-},
-{
-"ad_id": "autoru_1160450391-b441a29b",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2021,
-"price": 1300000,
-"market_price": 1210500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
-"mileage_km": 92000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394520+00:00"
-},
-{
-"ad_id": "autoru_1160365458-fa81f6d7",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Roomy",
-"year": 2025,
-"price": 1099999,
-"market_price": 1361500,
-"url": "https://auto.ru/cars/used/sale/toyota/roomy/1160365458-fa81f6d7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/bece98328c7c1cdb763fcde48afb85cb/1200x900n",
-"mileage_km": 1000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394509+00:00"
+"seen_at": "2026-11-02T06:47:36.184622+00:00"
 },
 {
 "ad_id": "autoru_1160603568-9d0a6011",
 "source": "autoru",
-"brand": "Hyundai",
-"model": "Solaris",
+"brand": "Volkswagen",
+"model": "Polo",
 "year": 2011,
 "price": 676000,
 "market_price": 641500,
-"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160388680-d712b392/",
+"url": "https://auto.ru/cars/used/sale/volkswagen/polo/1160603568-9d0a6011/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/76f9e7e146a574ac2d704f8ccea39adc/1200x900n",
 "mileage_km": 115000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394495+00:00"
+"seen_at": "2026-11-02T06:47:36.184608+00:00"
 },
 {
 "ad_id": "autoru_1160604323-59c67c7b",
@@ -189,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394481+00:00"
+"seen_at": "2026-11-02T06:47:36.184596+00:00"
 },
 {
 "ad_id": "autoru_1160604441-17e290de",
@@ -205,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-02T06:36:21.394470+00:00"
+"seen_at": "2026-11-02T06:47:36.184587+00:00"
 },
 {
 "ad_id": "autoru_1160605221-8823b95a",
@@ -221,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Верхняя Хава",
-"seen_at": "2026-11-02T06:36:21.394455+00:00"
+"seen_at": "2026-11-02T06:47:36.184573+00:00"
 },
 {
 "ad_id": "autoru_1160605343-53c72ae7",
@@ -237,7 +189,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394439+00:00"
+"seen_at": "2026-11-02T06:47:36.184563+00:00"
+},
+{
+"ad_id": "autoru_1160608503-9d9e279b",
+"source": "autoru",
+"brand": "Audi",
+"model": "A8",
+"year": 2017,
+"price": 1350000,
+"market_price": 3142500,
+"url": "https://auto.ru/cars/used/sale/audi/a8/1160608503-9d9e279b/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/5UZxzKS7gr_7eBXx4-FSau4qShAWLzSfZKxIETgA1i1E5oSAdM-udwCXlKRp_huT--YTGfqYEcOr1kiRdP1T71d-TNECy4MxSEwvE1PAYm0Ey1lUbecfK8GidoyFRDGL9BxI2u_8T-Dq3gRfPIV9Pcj6zvu-V0XlmrggkJTalpSaXA/1200x900n",
+"mileage_km": 65000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T06:47:36.184541+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -253,7 +221,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T06:36:21.394368+00:00"
+"seen_at": "2026-11-02T06:47:36.184522+00:00"
+},
+{
+"ad_id": "autoru_1160450391-b441a29b",
+"source": "autoru",
+"brand": "Opel",
+"model": "Astra",
+"year": 2021,
+"price": 1300000,
+"market_price": 1210500,
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
+"mileage_km": 92000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T06:47:36.184505+00:00"
+},
+{
+"ad_id": "autoru_1160365458-fa81f6d7",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Roomy",
+"year": 2025,
+"price": 1099999,
+"market_price": 1361500,
+"url": "https://auto.ru/cars/used/sale/toyota/roomy/1160365458-fa81f6d7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/bece98328c7c1cdb763fcde48afb85cb/1200x900n",
+"mileage_km": 1000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T06:47:36.184450+00:00"
 },
 {
 "ad_id": "autoru_1160590322-36e317de",
