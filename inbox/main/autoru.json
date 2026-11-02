@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160079726-839f733c",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera Classic",
-"year": 2011,
-"price": 600000,
-"market_price": 462500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160079726-839f733c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20793990/f6cfe6c0d9357fdbd857ab5de907d3d8/1200x900n",
-"mileage_km": 183000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-02T10:21:01.551257+00:00"
-},
-{
-"ad_id": "autoru_1160316686-6c934fdd",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Lavida",
-"year": 2023,
-"price": 1380032,
-"market_price": 1551500,
-"url": "https://auto.ru/cars/used/sale/volkswagen/lavida/1160316686-6c934fdd/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/03458f70256764a1c8673be8d966beeb/1200x900n",
-"mileage_km": 25000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T10:21:01.551232+00:00"
-},
-{
 "ad_id": "autoru_1160422889-9a203a8b",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -45,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T10:21:01.551211+00:00"
+"seen_at": "2026-11-02T10:32:08.596035+00:00"
 },
 {
 "ad_id": "autoru_1160603568-9d0a6011",
@@ -61,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:21:01.551189+00:00"
+"seen_at": "2026-11-02T10:32:08.596019+00:00"
 },
 {
 "ad_id": "autoru_1160604323-59c67c7b",
@@ -77,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:21:01.551166+00:00"
+"seen_at": "2026-11-02T10:32:08.596002+00:00"
 },
 {
 "ad_id": "autoru_1160604441-17e290de",
@@ -93,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-02T10:21:01.551149+00:00"
+"seen_at": "2026-11-02T10:32:08.595992+00:00"
+},
+{
+"ad_id": "autoru_1160079726-839f733c",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera Classic",
+"year": 2011,
+"price": 600000,
+"market_price": 462500,
+"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160079726-839f733c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20793990/f6cfe6c0d9357fdbd857ab5de907d3d8/1200x900n",
+"mileage_km": 183000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-11-02T10:32:08.595970+00:00"
+},
+{
+"ad_id": "autoru_1160316686-6c934fdd",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Lavida",
+"year": 2023,
+"price": 1380032,
+"market_price": 1551500,
+"url": "https://auto.ru/cars/used/sale/volkswagen/lavida/1160316686-6c934fdd/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20263483/03458f70256764a1c8673be8d966beeb/1200x900n",
+"mileage_km": 25000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T10:32:08.595944+00:00"
 },
 {
 "ad_id": "autoru_1160605221-8823b95a",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Верхняя Хава",
-"seen_at": "2026-11-02T10:21:01.551103+00:00"
+"seen_at": "2026-11-02T10:32:08.595900+00:00"
 },
 {
 "ad_id": "autoru_1160608503-9d9e279b",
@@ -120,12 +120,12 @@
 "price": 1350000,
 "market_price": 3142500,
 "url": "https://auto.ru/cars/used/sale/audi/a8/1160608503-9d9e279b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/KM2KMtxtwGEERawgwn8G4rY-X1aIWC3NGnjAxSGC9uMc2tVxONYcJyZ_bAbg7H1RE3Mz7Vp_XbSULonCxGSUjQNdQjN6OGEM4Hgk2VoqGyH-JjYAQZhPwbHl5eKb9KUlMN-FcfWdEZbsrH6_ypKtPOrL5U6n1e0mh9Oxxst4Dp_OM-c/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/iJD8K1LOQupSiPpw0-Y9dt13NekngaFoJZfhKXYuLDiQndNgqHDWA99tQkcjG2gVhaYzIG5hT6tqPgOG_khWKBUZmSDzhhhHoIIW9ybk7hm8KXBauQarc3ke8V2LhxiYlsVirL0s2J7d559fb3AvtCNBiuUBEl9xbw2OG4OPoBRiDws/1200x900n",
 "mileage_km": 65000,
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378904+00:00"
+"seen_at": "2026-11-02T10:31:54.849892+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -141,23 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378889+00:00"
-},
-{
-"ad_id": "autoru_1160450391-b441a29b",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2021,
-"price": 1300000,
-"market_price": 1210500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
-"mileage_km": 92000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378878+00:00"
+"seen_at": "2026-11-02T10:31:54.849870+00:00"
 },
 {
 "ad_id": "autoru_1160365458-fa81f6d7",
@@ -173,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378868+00:00"
+"seen_at": "2026-11-02T10:31:54.849858+00:00"
 },
 {
 "ad_id": "autoru_1160610948-996ed7f6",
@@ -189,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378853+00:00"
+"seen_at": "2026-11-02T10:31:54.849839+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -205,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378841+00:00"
+"seen_at": "2026-11-02T10:31:54.849813+00:00"
 },
 {
 "ad_id": "autoru_1160457183-50532f13",
@@ -221,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378825+00:00"
+"seen_at": "2026-11-02T10:31:54.849793+00:00"
 },
 {
 "ad_id": "autoru_1160613949-a64c19a0",
@@ -237,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378800+00:00"
+"seen_at": "2026-11-02T10:31:54.849768+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -253,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:20:43.378743+00:00"
+"seen_at": "2026-11-02T10:31:54.849754+00:00"
 },
 {
 "ad_id": "autoru_1160614073-8ebf6ce6",
@@ -262,14 +246,30 @@
 "model": "A6",
 "year": 2010,
 "price": 1050000,
-"market_price": null,
+"market_price": 911000,
 "url": "https://auto.ru/cars/used/sale/audi/a6/1160614073-8ebf6ce6/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/1999239/25e6c72d4332ed41f3fba149f78a5f29/1200x900n",
 "mileage_km": 197000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-02T10:09:35.730228+00:00"
+"seen_at": "2026-11-02T10:31:54.849735+00:00"
+},
+{
+"ad_id": "autoru_1160450391-b441a29b",
+"source": "autoru",
+"brand": "Opel",
+"model": "Astra",
+"year": 2021,
+"price": 1300000,
+"market_price": 1210500,
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
+"mileage_km": 92000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T10:31:54.849655+00:00"
 },
 {
 "ad_id": "autoru_1160595135-d0c183ff",
