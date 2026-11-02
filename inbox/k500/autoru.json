@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T15:46:53.625575+00:00"
+"seen_at": "2026-11-02T15:58:04.634681+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:46:53.625546+00:00"
+"seen_at": "2026-11-02T15:58:04.634655+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:46:53.625483+00:00"
+"seen_at": "2026-11-02T15:58:04.634597+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:46:35.240573+00:00"
+"seen_at": "2026-11-02T15:57:48.465659+00:00"
+},
+{
+"ad_id": "autoru_1160621596-a9aa6502",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2011,
+"price": 160000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160621596-a9aa6502/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20444157/6ff92882461b6bf307fdc44c4531c14a/1200x900n",
+"mileage_km": 195000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T15:57:48.465624+00:00"
 },
 {
 "ad_id": "autoru_1160620729-ee909882",
