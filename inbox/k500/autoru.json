@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T10:10:24.657720+00:00"
+"seen_at": "2026-11-02T10:21:36.223208+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-02T10:10:24.657702+00:00"
+"seen_at": "2026-11-02T10:21:36.223185+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:10:24.657634+00:00"
+"seen_at": "2026-11-02T10:21:36.223095+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:10:10.434369+00:00"
+"seen_at": "2026-11-02T10:21:21.084863+00:00"
+},
+{
+"ad_id": "autoru_1160614508-a789fef0",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2109",
+"year": 1996,
+"price": 135000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2109/1160614508-a789fef0/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/tBH3SUfypvsIgZLK3Kn9w2nZhoqVVwUrODx2xXdFDwDgSGITXGkH7uRjpKDBJpT034of8tbOOi6hwHOgLmRM2YMad5yBF_nbYXGqkWNJlVbseYOkdScJMLMCvrOSDpir6dgLwYXNx0F7qYb7iWX2WfEFJ2Gqajv5H9p5fz1mWhiByg/1200x900n",
+"mileage_km": 80000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T10:21:21.084790+00:00"
 },
 {
 "ad_id": "autoru_1160581927-5a91fd16",
