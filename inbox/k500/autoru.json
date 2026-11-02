@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T15:01:48.327590+00:00"
+"seen_at": "2026-11-02T15:13:04.550285+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:01:48.327537+00:00"
+"seen_at": "2026-11-02T15:13:04.550255+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -45,7 +45,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:01:32.260997+00:00"
+"seen_at": "2026-11-02T15:13:04.550194+00:00"
+},
+{
+"ad_id": "autoru_1160620729-ee909882",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2012,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160620729-ee909882/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17750173/cfeeca60376f8f9c2052a4d28dbbc43a/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T15:12:46.233057+00:00"
+},
+{
+"ad_id": "autoru_1160620927-3ef34180",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Matiz",
+"year": 2010,
+"price": 130000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160620927-3ef34180/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/84bb95c9d284562122c510674299501e/1200x900n",
+"mileage_km": 151000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T15:12:46.233027+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
