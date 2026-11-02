@@ -45,8 +45,19 @@
    "added": "2026-11-02T16:04",
    "end": null,
    "sent": {}
+  },
+  "cdt-383751": {
+   "n": 5,
+   "url": "https://torgi.cdtrf.ru/trades/383751",
+   "name": "Renault Logan, 2015",
+   "vin": "X7L4SRAV452422345",
+   "target": 64350,
+   "card": 104,
+   "added": "2026-11-02T16:08",
+   "end": null,
+   "sent": {}
   }
  },
- "offset": 177673398,
- "seq": 4
+ "offset": 177673399,
+ "seq": 5
 }
