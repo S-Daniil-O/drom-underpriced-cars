@@ -1,0 +1,47 @@
+name: torgi-fav
+# «Мои лоты»: бот (команды в личке) + уведомления по срокам и ценам избранных лотов.
+# Работает почти 6 часов подряд и запускает себя заново; cron — страховка, если цепочка оборвётся.
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: torgi-fav
+  cancel-in-progress: false
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      TORGI_BOT_TOKEN: ${{ secrets.TORGI_BOT_TOKEN }}
+      TORGI_FAV_CHAT_ID: ${{ vars.TORGI_FAV_CHAT_ID }}
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          ref: state
+          path: _state
+      - uses: actions/checkout@v4
+        with:
+          ref: inbox
+          path: _inbox
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: bot + уведомления
+        run: python torgi/favorites.py _state/torgi_fav/favs.json _inbox/inbox/torgi_fav/lots.json 330
+      - name: следующий запуск
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run torgi-fav.yml --repo "${{ github.repository }}" --ref main

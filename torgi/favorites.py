@@ -1,0 +1,280 @@
+"""Канал «Мои лоты»: избранные лоты, их карточки и уведомления (работает в GitHub Actions).
+
+Как пользоваться (в личке с ботом):
+  • переслать пост из @torgi_vrn_ss / «Крайние предложения торги» или прислать ссылку на лот,
+    можно с текстом «цена 350000» — лот добавится в «Мои лоты»;
+  • /цена <номер> <сумма> — задать свою цену (номер — из списка);
+  • /убрать <номер> — убрать лот из отслеживания;
+  • /список — что отслеживается.
+Команды принимаются только от администраторов канала «Мои лоты».
+
+Уведомления (ответом на карточку лота):
+  📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;
+  ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
+График торгов берётся из inbox/torgi_fav/lots.json — его каждое утро обновляет домашний iMac
+(площадки не открываются с серверов GitHub). Пока графика нет — срок берётся из текста поста.
+
+Состояние: ветка state, torgi_fav/favs.json.
+Запуск: python torgi/favorites.py <favs.json> <lots.json> [минут работы]
+"""
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+from datetime import datetime, timedelta
+from pathlib import Path
+
+import requests
+
+TOKEN = os.environ["TORGI_BOT_TOKEN"]
+CHAT = os.environ["TORGI_FAV_CHAT_ID"]
+API = f"https://api.telegram.org/bot{TOKEN}"
+WARN_HOURS = 24          # предупреждение за столько часов до окончания приёма заявок
+CHECK_EVERY_MIN = 30     # как часто проверять сроки
+LOT_URL = re.compile(r"https?://(?:torgi\.cdtrf\.ru/trades/(\d+)|m-ets\.ru/(\d+-\d+)|"
+                     r"bankrot\.torggroup\.org/TradeLot/View/(\d+))")
+
+
+def log(msg):
+    print(time.strftime("%H:%M:%S"), msg, flush=True)
+
+
+def tg(method, **data):
+    for _ in range(4):
+        try:
+            r = requests.post(f"{API}/{method}", data=data, timeout=70).json()
+        except requests.RequestException:
+            time.sleep(5)
+            continue
+        if r.get("error_code") == 429:
+            time.sleep(int(r.get("parameters", {}).get("retry_after", 5)) + 1)
+            continue
+        return r
+    return {"ok": False}
+
+
+def money(v):
+    return f"{int(round(v)):,}".replace(",", " ") + " ₽"
+
+
+def parse_dt(s):
+    for fmt in ("%Y-%m-%dT%H:%M", "%d.%m.%Y %H:%M", "%d.%m.%Y %H:%M:%S", "%d.%m.%Y"):
+        try:
+            return datetime.strptime(s.strip(), fmt)
+        except (ValueError, AttributeError):
+            pass
+    return None
+
+
+def now_msk():
+    return datetime.utcnow() + timedelta(hours=3)   # сроки на площадках — по Москве
+
+
+# ---------------------------------------------------------------- состояние
+class State:
+    def __init__(self, path):
+        self.path = Path(path)
+        self.d = json.loads(self.path.read_text()) if self.path.exists() else {}
+        self.d.setdefault("lots", {})
+        self.d.setdefault("offset", 0)
+        self.d.setdefault("seq", 0)
+        self.dirty = False
+
+    def save(self):
+        if not self.dirty:
+            return
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.path.write_text(json.dumps(self.d, ensure_ascii=False, indent=1))
+        repo = self.path.parent.parent
+        g = lambda *a: subprocess.run(["git", "-C", str(repo), *a], capture_output=True, text=True)
+        g("config", "user.name", "monitor-bot")
+        g("config", "user.email", "monitor-bot@users.noreply.github.com")
+        g("add", str(self.path.relative_to(repo)))
+        if g("diff", "--cached", "--quiet").returncode != 0:
+            g("commit", "-q", "-m", "state(torgi_fav): избранное")
+            for _ in range(5):
+                if g("push", "-q", "origin", "HEAD:state").returncode == 0:
+                    break
+                g("pull", "-q", "--rebase", "origin", "state")
+        self.dirty = False
+
+
+def lot_id(url):
+    m = LOT_URL.search(url or "")
+    if not m:
+        return None
+    return "cdt-" + m.group(1) if m.group(1) else "mets-" + m.group(2) if m.group(2) else "tg-" + m.group(3)
+
+
+# ---------------------------------------------------------------- команды
+def admins():
+    r = tg("getChatAdministrators", chat_id=CHAT)
+    return {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
+
+
+def handle(st, msg, allowed):
+    user = msg.get("from", {}).get("id")
+    chat = msg["chat"]["id"]
+    if msg["chat"].get("type") != "private":
+        return
+    if user not in allowed:
+        tg("sendMessage", chat_id=chat, text="Бот принимает команды только от администраторов канала «Мои лоты».")
+        return
+    text = msg.get("text") or msg.get("caption") or ""
+    ents = (msg.get("entities") or []) + (msg.get("caption_entities") or [])
+    urls = [e.get("url") for e in ents if e.get("url")] + re.findall(r"https?://\S+", text)
+    lots = st.d["lots"]
+
+    if text.startswith("/start") or text.startswith("/help"):
+        tg("sendMessage", chat_id=chat, text=__doc__.split("Уведомления")[0].split("Как пользоваться")[1].strip())
+        return
+    if text.startswith("/список"):
+        act = [(v["n"], k, v) for k, v in lots.items() if not v.get("ended")]
+        if not act:
+            tg("sendMessage", chat_id=chat, text="Список пуст.")
+            return
+        lines = [f"№{n} {v.get('name', k)} — до {v.get('end') or '?'}"
+                 + (f", ваша цена {money(v['target'])}" if v.get("target") else "") for n, k, v in sorted(act)]
+        tg("sendMessage", chat_id=chat, text="\n".join(lines))
+        return
+    m = re.match(r"/(убрать|цена)\s+(\d+)(?:\s+([\d\s]+))?", text)
+    if m:
+        key = next((k for k, v in lots.items() if v.get("n") == int(m.group(2))), None)
+        if not key:
+            tg("sendMessage", chat_id=chat, text="Нет лота с таким номером. /список — номера.")
+            return
+        if m.group(1) == "убрать":
+            lots[key]["ended"] = True
+            lots[key]["removed"] = True
+            tg("sendMessage", chat_id=CHAT, text="🗑 Убран из отслеживания.", reply_to_message_id=lots[key]["card"])
+            tg("sendMessage", chat_id=chat, text=f"№{m.group(2)} убран.")
+        else:
+            lots[key]["target"] = int(re.sub(r"\D", "", m.group(3) or "0")) or None
+            lots[key].pop("hit_target", None)
+            tg("sendMessage", chat_id=chat, text=f"№{m.group(2)}: ваша цена {money(lots[key]['target'])}" if lots[key]["target"] else "Цена сброшена.")
+        st.dirty = True
+        return
+
+    lid = next((lot_id(u) for u in urls if lot_id(u)), None)
+    if not lid:
+        tg("sendMessage", chat_id=chat, text="Не нашёл ссылку на лот (ЦДТ, МЭТС, ТоргГрупп). Перешлите пост из канала или пришлите ссылку.")
+        return
+    url = next(u for u in urls if lot_id(u) == lid)
+    pm = re.search(r"цена\s*[:=]?\s*([\d\s]{4,})", text, re.I)
+    target = int(re.sub(r"\D", "", pm.group(1))) if pm else None
+    if lid in lots and not lots[lid].get("removed"):
+        if target:
+            lots[lid]["target"] = target
+            lots[lid].pop("hit_target", None)
+            st.dirty = True
+        tg("sendMessage", chat_id=chat, text=f"Уже в «Моих лотах» (№{lots[lid]['n']})" + (f", цена обновлена: {money(target)}" if target else "."))
+        return
+
+    st.d["seq"] += 1
+    n = st.d["seq"]
+    name = (re.search(r"🔨 ([^\n]+)", text) or [None, ""])[1] or url
+    vin = (re.search(r"VIN[:\s-]*([A-HJ-NPR-Z0-9]{17})", text, re.I) or [None, None])[1]
+    end = None
+    em = re.search(r"(?:Приём заявок до|подать до)[:\s]*(\d\d\.\d\d\.\d{4}(?: \d\d:\d\d)?)", text)
+    if em:
+        e = parse_dt(em.group(1))
+        if e and len(em.group(1)) == 10:
+            e = e.replace(hour=23, minute=59)
+        end = e.strftime("%Y-%m-%dT%H:%M") if e else None
+    head = f"⭐ МОЙ ЛОТ №{n}" + (f" — моя цена {money(target)}" if target else "") + f"\n#лот{n}"
+    # карточка: копия поста (с фото) или текст со ссылкой
+    if msg.get("forward_origin") or msg.get("forward_from_chat"):
+        r = tg("copyMessage", chat_id=CHAT, from_chat_id=chat, message_id=msg["message_id"])
+        card = r.get("result", {}).get("message_id")
+        if card:
+            tg("sendMessage", chat_id=CHAT, text=head + "\nДокументы и письма по лоту — ответами на этот пост.", reply_to_message_id=card)
+    else:
+        r = tg("sendMessage", chat_id=CHAT, text=f"{head}\n{url}")
+        card = r.get("result", {}).get("message_id")
+    if not card:
+        tg("sendMessage", chat_id=chat, text="Не удалось создать карточку в канале — проверьте, что бот там администратор.")
+        st.d["seq"] -= 1
+        return
+    lots[lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
+                 "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {}}
+    st.dirty = True
+    tg("sendMessage", chat_id=chat, text=f"✅ Добавлено: №{n} {name}"
+       + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик торгов подтянется с площадки при утреннем обновлении (10:00).")
+
+
+# ---------------------------------------------------------------- уведомления
+def check(st, live):
+    now = now_msk()
+    for lid, v in st.d["lots"].items():
+        if v.get("ended"):
+            continue
+        info = live.get(lid) or {}
+        sched = [r for r in info.get("schedule") or [] if parse_dt(r[0]) and parse_dt(r[1]) and r[2]]
+        if sched:
+            v["end"] = max(parse_dt(r[1]) for r in sched).strftime("%Y-%m-%dT%H:%M")
+            v["min_price"] = min(r[2] for r in sched)
+            if info.get("requests") is not None:
+                v["requests"] = info["requests"]
+            st.dirty = True
+        end = parse_dt(v["end"]) if v.get("end") else None
+        sent = v.setdefault("sent", {})
+        say = lambda t: tg("sendMessage", chat_id=CHAT, text=t, reply_to_message_id=v["card"])
+        cur = next((r for r in sched if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
+        if cur:
+            key = f"period:{cur[0]}"
+            first = next(iter(sched))
+            if key not in sent and cur is not first:
+                req = v.get("requests")
+                say(f"📉 Лот №{v['n']}: новый период — цена {money(cur[2])} до {cur[1]}"
+                    + (f"\nМинимальная по графику: {money(v['min_price'])}" if v.get("min_price") else "")
+                    + ("" if req is None else "\n📭 Заявок нет" if req == 0 else f"\n📨 Заявок: {req}"))
+                sent[key] = 1
+                st.dirty = True
+            if v.get("target") and cur[2] <= v["target"] and not v.get("hit_target"):
+                say(f"🎯 Лот №{v['n']}: цена {money(cur[2])} — дошла до вашей ({money(v['target'])}). Заявки до {cur[1]}.")
+                v["hit_target"] = True
+                st.dirty = True
+        if end and "warn" not in sent and timedelta(0) < end - now <= timedelta(hours=WARN_HOURS):
+            say(f"⏰ Лот №{v['n']} {v.get('name', '')}: приём заявок заканчивается {end:%d.%m.%Y %H:%M} МСК — меньше чем через {WARN_HOURS} ч.\n{v['url']}")
+            sent["warn"] = 1
+            st.dirty = True
+        if end and now >= end:
+            say(f"🏁 Лот №{v['n']}: приём заявок закончился ({end:%d.%m.%Y %H:%M}).\n#завершено")
+            v["ended"] = True
+            st.dirty = True
+
+
+def main():
+    st = State(sys.argv[1])
+    lots_file = Path(sys.argv[2])
+    minutes = int(sys.argv[3]) if len(sys.argv) > 3 else 330
+    stop = time.time() + minutes * 60
+    allowed = admins()
+    log(f"администраторов канала: {len(allowed)}, лотов в избранном: {len(st.d['lots'])}")
+    next_check = 0
+    while time.time() < stop:
+        if time.time() >= next_check:
+            subprocess.run(["git", "-C", str(lots_file.parent.parent.parent), "pull", "-q", "origin", "inbox"],
+                           capture_output=True)
+            live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
+            check(st, live)
+            st.save()
+            allowed = admins() or allowed
+            next_check = time.time() + CHECK_EVERY_MIN * 60
+        r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message"]')
+        for u in r.get("result", []):
+            st.d["offset"] = u["update_id"] + 1
+            st.dirty = True
+            if "message" in u:
+                try:
+                    handle(st, u["message"], allowed)
+                except Exception as e:  # noqa: BLE001 — одна плохая команда не должна ронять бота
+                    log(f"ошибка обработки: {e}")
+        st.save()
+    log("время работы вышло")
+
+
+if __name__ == "__main__":
+    main()

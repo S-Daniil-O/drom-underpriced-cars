@@ -24,6 +24,8 @@ QUEUE = os.path.join(WORK, "queue")
 QUEUE_HOT = os.path.join(WORK, "queue_hot")     # горящие лоты → канал «Крайние предложения торги»
 POSTED = os.path.join(WORK, "data", "posted_from_state.json")
 POSTED_HOT = os.path.join(WORK, "data", "posted_hot_from_state.json")
+FAVS = os.path.join(WORK, "data", "favs_from_state.json")          # «Мои лоты»
+FAV_LOTS = os.path.join(WORK, "queue_fav", "lots.json")
 
 
 def log(msg):
@@ -62,6 +64,12 @@ def main():
         hot_posted = "{}"
     with open(POSTED_HOT, "w") as f:
         f.write(hot_posted)
+    try:
+        favs = git("show", "origin/state:torgi_fav/favs.json")
+    except subprocess.CalledProcessError:
+        favs = "{}"
+    with open(FAVS, "w") as f:
+        f.write(favs)
     log("списки опубликованного взяты из ветки state")
 
     shutil.rmtree(QUEUE, ignore_errors=True)
@@ -70,6 +78,9 @@ def main():
     r = subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"),
                         f"--queue={QUEUE}", f"--queue-hot={QUEUE_HOT}",
                         f"--active={os.path.join(QUEUE, 'active.json')}"], cwd=WORK, env=env)
+    # «Мои лоты»: график и заявки по избранным — для уведомлений на GitHub
+    subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), f"--fav-lots={FAVS},{FAV_LOTS}"],
+                   cwd=WORK, env=env)
     if r.returncode != 0 or not os.path.exists(os.path.join(QUEUE, "queue.json")):
         log(f"сбор не удался (код {r.returncode}) — очередь не отправлена")
         sys.exit(1)
@@ -81,12 +92,13 @@ def main():
     fcntl.flock(lock, fcntl.LOCK_EX)  # autoru_collect.py и drom_sweep.py пишут в тот же клон
     git("fetch", "-q", "origin", "inbox")
     git("reset", "-q", "--hard", "origin/inbox")
-    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot")):
+    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot"), (os.path.dirname(FAV_LOTS), "torgi_fav")):
         dest = os.path.join(INBOX_REPO, "inbox", name)
         shutil.rmtree(dest, ignore_errors=True)
         if os.path.exists(src):
             shutil.copytree(src, dest)
-    git("add", "-A", "inbox/torgi", "inbox/torgi_hot")
+    git("add", "-A", *[p for p in ("inbox/torgi", "inbox/torgi_hot", "inbox/torgi_fav")
+                         if os.path.exists(os.path.join(INBOX_REPO, p)) or git("ls-files", p).strip()])
     if git("status", "--porcelain").strip():
         git("commit", "-q", "-m", "inbox: torgi")
         git("push", "-q", "origin", "HEAD:inbox")

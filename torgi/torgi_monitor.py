@@ -380,9 +380,9 @@ def tg_list():
     return rows
 
 
-def tg_detail(row):
+def tg_detail(row, any_lot=False):
     """Карточка лота ТоргГрупп: категория, регион, график, заявки, фото, задаток."""
-    if not parse_car(row["name"]):
+    if not any_lot and not parse_car(row["name"]):
         return None              # не машина по названию — карточку не грузим
     url = f"{TG_BASE}/TradeLot/View/{row['lot_id']}"
     try:
@@ -391,7 +391,7 @@ def tg_detail(row):
         return None
     t = strip_html(re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S))
     field = lambda name: (re.search(re.escape(name) + r":?\s*(.*?)\s+(?=[А-ЯЁ][а-яё ,()]{3,60}:)", t) or [None, ""])[1]
-    if "легков" not in field("Категория").lower():
+    if not any_lot and "легков" not in field("Категория").lower():
         return None
     sched = []
     blk = t[t.find("Интервалы снижения цены"):t.find("Документы", t.find("Интервалы снижения цены"))]
@@ -976,6 +976,33 @@ def write_active(lots, path):
     log(f"Живые лоты для автоудаления: {len(lots)} ({', '.join(data['sources_ok'])}) → {path}")
 
 
+# ---------------------------------------------------------------- «Мои лоты»
+def fav_lots(favs_path, out_path):
+    """График, заявки и цены по лотам из «Моих лотов» (ветка state: torgi_fav/favs.json) —
+    для уведомлений на GitHub (площадки не открываются с серверов GitHub)."""
+    favs = json.loads(Path(favs_path).read_text()).get("lots", {}) if Path(favs_path).exists() else {}
+    out = {}
+    for lid, v in favs.items():
+        if v.get("ended"):
+            continue
+        d = None
+        try:
+            if lid.startswith("cdt-"):
+                d = cdt_detail({"tradeId": lid[4:], "priceBegin": None})
+            elif lid.startswith("mets-"):
+                d = {"url": f"https://m-ets.ru/{lid[5:]}", "source": "МЭТС"}
+                mets_start_price(d)
+            elif lid.startswith("tg-"):
+                d = tg_detail({"lot_id": lid[3:], "name": v.get("name", ""), "status": ""}, any_lot=True)
+        except Exception as e:  # noqa: BLE001
+            log(f"«Мои лоты»: {lid} не загрузился ({e})")
+        if d and d.get("schedule"):
+            out[lid] = {"schedule": [[r[0], r[1], r[2]] for r in d["schedule"]], "requests": d.get("requests")}
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    Path(out_path).write_text(json.dumps({"created": time.strftime("%Y-%m-%dT%H:%M"), "lots": out}, ensure_ascii=False))
+    log(f"«Мои лоты»: обновлено {len(out)} из {len(favs)}")
+
+
 # ---------------------------------------------------------------- очередь для GitHub
 def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
     """Режим iMac: Telegram из дома недоступен, поэтому посты (текст + фото) кладутся
@@ -1026,6 +1053,10 @@ def with_retries(name, fn):
 
 
 def main():
+    fav = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--fav-lots=")), None)
+    if fav:
+        fav_lots(*fav.split(","))
+        return
     if "--log" in sys.argv:  # для launchd: лог пишет сам скрипт (launchd не может писать в ~/Downloads)
         f = open(DATA / "torgi.log", "a", buffering=1, encoding="utf-8")
         sys.stdout = sys.stderr = f
