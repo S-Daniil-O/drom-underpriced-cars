@@ -3108,5 +3108,35 @@
     "mileage_km": 242000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/HpifDiiWk_HH0B4vbe7Ni9NBd48eHN9d0WU4w5lf4n9KAnm3P2161RMDvh6mCnoPiicNhhzY1bzPqQ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/163850605.html": {
+    "posted_at": "2026-11-02T09:42:22.979782+00:00",
+    "message_id": 233,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2013,
+    "price": 600000,
+    "median_price": 820000.0,
+    "median_sample_size": 2638,
+    "price_rating": "нормальная цена",
+    "mileage_km": 331021,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/2x_myuCDGCdKFzy12I8K-6COQaaHtbe1bOvi4vHpDXEQAV_DLaYe0FiXvxttAUaUUN2Z69i7pIEp98Ws/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/651263825.html": {
+    "posted_at": "2026-11-02T09:42:28.527745+00:00",
+    "message_id": 234,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2013,
+    "price": 600000,
+    "median_price": 820000,
+    "median_sample_size": 2639,
+    "price_rating": "нормальная цена",
+    "mileage_km": 331021,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/VfHzEM1C5AhHSxwDUedh5ZXSRdxFWE06SsBpPCe3HNHdT2D993CCIgR5ppuRUcGuuNiv6QJ_6NMLBS2K/gen272wb.jpg"
   }
 }
