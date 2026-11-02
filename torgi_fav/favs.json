@@ -1,5 +1,17 @@
 {
- "lots": {},
- "offset": 177673393,
- "seq": 0
+ "lots": {
+  "cdt-387921": {
+   "n": 1,
+   "url": "https://torgi.cdtrf.ru/trades/387921",
+   "name": "Chevrolet Niva, 2015",
+   "vin": "X9L212300F0557580",
+   "target": 167100,
+   "card": 3,
+   "added": "2026-11-02T14:52",
+   "end": "2026-11-02T18:00",
+   "sent": {}
+  }
+ },
+ "offset": 177673394,
+ "seq": 1
 }
