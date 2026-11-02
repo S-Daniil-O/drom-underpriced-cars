@@ -1,0 +1,23 @@
+name: torgi-find-chat
+# Разово: id каналов, куда недавно добавили бота (лог удаляется после просмотра).
+on: workflow_dispatch
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    env:
+      T: ${{ secrets.TORGI_BOT_TOKEN }}
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          u = json.load(urllib.request.urlopen(f"https://api.telegram.org/bot{os.environ['T']}/getUpdates?allowed_updates=%5B%22my_chat_member%22%2C%22channel_post%22%5D&limit=100"))
+          seen = {}
+          for x in u.get("result", []):
+              for k in ("my_chat_member", "channel_post"):
+                  if k in x:
+                      c = x[k]["chat"]; st = x[k].get("new_chat_member", {}).get("status", "")
+                      seen[c["id"]] = (c.get("title"), c.get("type"), st)
+          print("найдено:", len(seen))
+          for i, v in seen.items():
+              print("CHAT", i, v)
+          PY
