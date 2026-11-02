@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160601154-14cdbdc6",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2014,
-"price": 450000,
-"market_price": 337000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160601154-14cdbdc6/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/6313114/b589dc42ae80f8cb3179b863cc7ac030/1200x900n",
-"mileage_km": 166945,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Богучар",
-"seen_at": "2026-11-02T13:54:19.852676+00:00"
-},
-{
 "ad_id": "autoru_1160602770-7d9114b2",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T13:54:19.852625+00:00"
+"seen_at": "2026-11-02T14:05:36.450988+00:00"
+},
+{
+"ad_id": "autoru_1160601154-14cdbdc6",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2014,
+"price": 450000,
+"market_price": 337000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160601154-14cdbdc6/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/6313114/b589dc42ae80f8cb3179b863cc7ac030/1200x900n",
+"mileage_km": 166945,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Богучар",
+"seen_at": "2026-11-02T14:05:36.450913+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T13:54:04.515980+00:00"
+"seen_at": "2026-11-02T14:05:19.941967+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
