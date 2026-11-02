@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T21:46:04.581107+00:00"
+"seen_at": "2026-11-02T21:57:19.084734+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -29,39 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T21:46:04.581045+00:00"
-},
-{
-"ad_id": "autoru_1160620927-3ef34180",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Matiz",
-"year": 2010,
-"price": 130000,
-"market_price": 85000,
-"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160620927-3ef34180/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20761562/518de9f5b95bd66a6908c131aa6795ea/1200x900n",
-"mileage_km": 151000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T21:45:46.137597+00:00"
-},
-{
-"ad_id": "autoru_1160622306-56335cc4",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2012,
-"price": 170000,
-"market_price": 201000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/0zlTBwK0FVaX7DYZwggu6PTHhuDT03nKSMO-lj2BSRT_-IN0xYCgzlxLxwMkcrwVDRla6-wahvIyLJ_PcQIOrHt5TqilQW3UvAQ1KguZ2FdT5O4KgmWHTbrC6gI-_YhK6dI59NmWuf131ABZHSqFhs_2mef4OrLiMPWAYmfmEVjtkWw/1200x900n",
-"mileage_km": 160700,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T21:45:46.137578+00:00"
+"seen_at": "2026-11-02T21:57:19.084673+00:00"
 },
 {
 "ad_id": "autoru_1160614508-a789fef0",
@@ -72,12 +40,12 @@
 "price": 135000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/2109/1160614508-a789fef0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/VTqBb3BM-wkNLRtdOeX527wa6jHLsMUmIZATelYPH7Z1GWnWOPexQnS8GHW8wTEz2QeX9p09DCFZ1JFwOPuiiE4BYlExUV-OmZdiKcO2q_ifcUFsyynverDluQDktp5zcP_5Ll1lp-wTD6Xlj5J4aqElRwtq9zCR1ocFMdigYYGr3oQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/jhqylvYG94hUMKkt_n01a9wzOvEQjp7kZbk_TZhOIHDpbW5JmKpOeMi2ap6DO313hoHfHItRNV-h9iBKKYCfJc32ajg02hRIH6or_PPTc8La_Pqgbe-t8q_DbbqbtLZ_oIYnJP5DVsUIDsJjxqiBN1x3AokcuFbN_xEJQ_kuZWEdDg/1200x900n",
 "mileage_km": 80000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T21:45:46.137551+00:00"
+"seen_at": "2026-11-02T21:56:58.471258+00:00"
 },
 {
 "ad_id": "autoru_1160618776-a38b5e10",
@@ -93,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T21:45:46.137513+00:00"
+"seen_at": "2026-11-02T21:56:58.471241+00:00"
+},
+{
+"ad_id": "autoru_1160620927-3ef34180",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Matiz",
+"year": 2010,
+"price": 130000,
+"market_price": 85000,
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160620927-3ef34180/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20761562/518de9f5b95bd66a6908c131aa6795ea/1200x900n",
+"mileage_km": 151000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T21:56:58.471224+00:00"
+},
+{
+"ad_id": "autoru_1160622306-56335cc4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2012,
+"price": 170000,
+"market_price": 201000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/zGP2B51pICZOtGbV-wckoEHLUCBA8KU-mVM3t9AWu3oC-v_JHRo589kl0LJJOORfBNh-eCVQIBo04QInlnVt3mJz4jUgq7A6CyCKWav3CoqGaW5leCPdajzvVLAj0LZI1JXYqr8rbKjNJj9GkqVgSQucK5GTiRYwBN1B-Z1M3menbw/1200x900n",
+"mileage_km": 160700,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T21:56:58.471186+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
