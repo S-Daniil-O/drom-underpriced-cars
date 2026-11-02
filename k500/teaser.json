@@ -1972,20 +1972,20 @@
   "https://auto.drom.ru/voronezh/lada/2108/187794356.html": {
     "posted_at": "2026-10-30T21:19:04.136107+00:00",
     "message_id": 277,
-    "deleted_at": null,
+    "deleted_at": "2026-11-02T21:21:07.604244+00:00",
     "rejected": false,
     "checked_at": "2026-10-30T21:19:04.136107+00:00",
     "vk_post_id": 209,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-02T21:21:07.604244+00:00"
   },
   "https://auto.drom.ru/voronezh/audi/80/115766094.html": {
     "posted_at": "2026-10-30T21:20:56.779373+00:00",
     "message_id": 278,
-    "deleted_at": null,
+    "deleted_at": "2026-11-02T21:21:07.604244+00:00",
     "rejected": false,
     "checked_at": "2026-10-30T21:20:56.779373+00:00",
     "vk_post_id": 210,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-02T21:21:07.604244+00:00"
   },
   "https://auto.drom.ru/voronezh/nissan/almera/539932656.html": {
     "posted_at": "2026-10-30T21:34:02.136047+00:00",
@@ -2149,6 +2149,15 @@
     "rejected": false,
     "checked_at": "2026-11-02T18:16:39.472355+00:00",
     "vk_post_id": 226,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/kia/avella/432456937.html": {
+    "posted_at": "2026-11-02T21:23:53.677182+00:00",
+    "message_id": 301,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-02T21:23:53.677182+00:00",
+    "vk_post_id": 227,
     "vk_deleted_at": null
   }
 }
