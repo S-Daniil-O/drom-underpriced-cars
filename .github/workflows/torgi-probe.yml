@@ -1,0 +1,10 @@
+name: torgi-probe
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://torgi.cdtrf.ru/trades/385589 https://m-ets.ru/238088-1 https://bankrot.torggroup.org/TradeLot/View/20923; do
+            curl -s -m 30 -o /dev/null -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36" -w "$u %{http_code} %{size_download}\n" "$u" || echo "$u FAIL"
+          done
