@@ -3168,5 +3168,20 @@
     "mileage_km": 131000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/JexGK9fUVNMgkndgZ-rf71I6hubKxX9borTREc9jX3o_bNLd8md0Nkbe9IRLDEbqgYilcFhK0eqRoaNt/gen272wb.jpg"
+  },
+  "autoru_1160623970-17830d3a": {
+    "posted_at": "2026-11-02T18:47:22.966041+00:00",
+    "message_id": 237,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2015,
+    "price": 750000,
+    "median_price": 984000,
+    "median_sample_size": 17,
+    "price_rating": null,
+    "mileage_km": 225560,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2106781/1cfd5e8cc6177ba219b5fa18c71d1df0/1200x900n"
   }
 }
