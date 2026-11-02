@@ -6432,7 +6432,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/250759122.html": {
     "posted_at": "2026-10-30T15:23:26.099182+00:00",
     "message_id": 476,
-    "deleted_at": null,
+    "deleted_at": "2026-11-02T15:28:24.556250+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2015,
@@ -6863,5 +6863,20 @@
     "mileage_km": 485000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/FaPkwaTZVRTba8v7OrZreYxHS3hwS3wZPhhJmr_32FxqEVD0T-6x5HL1FxBpvxB2eqT2e-5lCvrRdy5w/gen272wb.jpg"
+  },
+  "autoru_1160620927-3ef34180": {
+    "posted_at": "2026-11-02T15:31:09.587948+00:00",
+    "message_id": 505,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Matiz",
+    "year": 2010,
+    "price": 130000,
+    "median_price": 207500.0,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 151000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/84bb95c9d284562122c510674299501e/1200x900n"
   }
 }
