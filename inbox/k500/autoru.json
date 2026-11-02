@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T10:54:59.099635+00:00"
+"seen_at": "2026-11-02T11:06:14.856828+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-02T10:54:59.099615+00:00"
+"seen_at": "2026-11-02T11:06:14.856811+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:54:59.099566+00:00"
+"seen_at": "2026-11-02T11:06:14.856767+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T10:54:39.433193+00:00"
+"seen_at": "2026-11-02T11:05:56.829221+00:00"
+},
+{
+"ad_id": "autoru_1160615144-905fb36e",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Nexia",
+"year": 2008,
+"price": 185000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160615144-905fb36e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19815194/527230f2b48cb351d46ab13afee33689/1200x900n",
+"mileage_km": 218000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T11:05:56.829130+00:00"
 },
 {
 "ad_id": "autoru_1160614508-a789fef0",
