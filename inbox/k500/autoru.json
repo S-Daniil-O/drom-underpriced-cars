@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T17:05:21.300290+00:00"
+"seen_at": "2026-11-02T17:16:32.702855+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T17:05:21.300259+00:00"
+"seen_at": "2026-11-02T17:16:32.702827+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T17:05:21.300198+00:00"
+"seen_at": "2026-11-02T17:16:32.702766+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T17:05:03.647689+00:00"
+"seen_at": "2026-11-02T17:16:16.620510+00:00"
 },
 {
 "ad_id": "autoru_1160622306-56335cc4",
@@ -70,14 +70,14 @@
 "model": "Kalina",
 "year": 2012,
 "price": 170000,
-"market_price": null,
+"market_price": 201000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/YO-3pEep-NNxENhLi8xtIZP12rLv7FiPyPHVi5QZm_wq-gEXIG4a81qXINKnr4R0U-idMAkfleYjr5bYkPT4-CYREKmYTbof48riaYY7FHrYIx26cTZXxa16GfWsU8107la4csVZFeWgpvbSWkavaAlNf6CvcBDFoPDZcwMH3QL4LoY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/6pRYMwsJ_u4q8nYNHc5y-DUsDNnyYwQV3qazzG_nZuA5ezd0BhfNdLZEWSuXUVZdnilTsZ7GDjjdLsJOmm3IaolUMrimNJ4HBXfGjQyixYkylcSiy55azzeru0BXLoehmFYqKJEhiLQIpXQhhpTslLgo0kcP8nVFAtegg-87oBpdvw/1200x900n",
 "mileage_km": 160700,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T17:05:03.647644+00:00"
+"seen_at": "2026-11-02T17:16:16.620470+00:00"
 },
 {
 "ad_id": "autoru_1160622113-116b1fc4",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Острогожск",
 "seen_at": "2026-11-02T11:39:53.622316+00:00"
-},
-{
-"ad_id": "autoru_1160615144-905fb36e",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2008,
-"price": 185000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160615144-905fb36e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19815194/527230f2b48cb351d46ab13afee33689/1200x900n",
-"mileage_km": 218000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T11:05:56.829130+00:00"
 }
 ]
