@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T16:20:42.459152+00:00"
+"seen_at": "2026-11-02T16:31:57.443299+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T16:20:42.459123+00:00"
+"seen_at": "2026-11-02T16:31:57.443267+00:00"
 },
 {
 "ad_id": "autoru_1160607095-136bd110",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T16:20:42.459061+00:00"
+"seen_at": "2026-11-02T16:31:57.443204+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T16:20:23.953974+00:00"
+"seen_at": "2026-11-02T16:31:43.682048+00:00"
+},
+{
+"ad_id": "autoru_1160622113-116b1fc4",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Camry",
+"year": 1994,
+"price": 200000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/toyota/camry/1160622113-116b1fc4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5013756/065072d9058fd2a4c59d4f02418f1c8e/1200x900n",
+"mileage_km": 412735,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T16:31:43.682008+00:00"
 },
 {
 "ad_id": "autoru_1160621596-a9aa6502",
@@ -126,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-02T11:05:56.829130+00:00"
-},
-{
-"ad_id": "autoru_1160614508-a789fef0",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2109",
-"year": 1996,
-"price": 135000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2109/1160614508-a789fef0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/tBH3SUfypvsIgZLK3Kn9w2nZhoqVVwUrODx2xXdFDwDgSGITXGkH7uRjpKDBJpT034of8tbOOi6hwHOgLmRM2YMad5yBF_nbYXGqkWNJlVbseYOkdScJMLMCvrOSDpir6dgLwYXNx0F7qYb7iWX2WfEFJ2Gqajv5H9p5fz1mWhiByg/1200x900n",
-"mileage_km": 80000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T10:21:21.084790+00:00"
 }
 ]
