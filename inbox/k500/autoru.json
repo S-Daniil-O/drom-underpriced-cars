@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160607095-136bd110",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 2008,
+"price": 410000,
+"market_price": 254000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160607095-136bd110/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17690098/87d83481ea9a7ee2242cafc278d98bd6/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T15:24:20.042711+00:00"
+},
+{
 "ad_id": "autoru_1160601154-14cdbdc6",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -13,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-02T15:13:04.550285+00:00"
+"seen_at": "2026-11-02T15:24:20.042692+00:00"
 },
 {
 "ad_id": "autoru_1160602770-7d9114b2",
@@ -29,23 +45,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:13:04.550255+00:00"
+"seen_at": "2026-11-02T15:24:20.042641+00:00"
 },
 {
-"ad_id": "autoru_1160607095-136bd110",
+"ad_id": "autoru_1160620927-3ef34180",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2008,
-"price": 410000,
-"market_price": 254000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160607095-136bd110/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17690098/87d83481ea9a7ee2242cafc278d98bd6/1200x900n",
-"mileage_km": 130000,
+"brand": "Daewoo",
+"model": "Matiz",
+"year": 2010,
+"price": 130000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160620927-3ef34180/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/84bb95c9d284562122c510674299501e/1200x900n",
+"mileage_km": 151000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T15:13:04.550194+00:00"
+"seen_at": "2026-11-02T15:24:02.219137+00:00"
 },
 {
 "ad_id": "autoru_1160620729-ee909882",
@@ -62,22 +78,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-02T15:12:46.233057+00:00"
-},
-{
-"ad_id": "autoru_1160620927-3ef34180",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Matiz",
-"year": 2010,
-"price": 130000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160620927-3ef34180/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20961665/84bb95c9d284562122c510674299501e/1200x900n",
-"mileage_km": 151000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T15:12:46.233027+00:00"
 },
 {
 "ad_id": "autoru_1160601969-c6c8a65c",
