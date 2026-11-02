@@ -13,23 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T05:29:08.263015+00:00"
-},
-{
-"ad_id": "autoru_1160595135-d0c183ff",
-"source": "autoru",
-"brand": "Hyundai",
-"model": "Solaris",
-"year": 2013,
-"price": 965000,
-"market_price": 696000,
-"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160595135-d0c183ff/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20189162/623a8e9ba253407ae941cb97d9b26d16/1200x900n",
-"mileage_km": 178000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-02T05:29:08.262997+00:00"
+"seen_at": "2026-11-02T05:40:19.947127+00:00"
 },
 {
 "ad_id": "autoru_1160079726-839f733c",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T05:29:08.262962+00:00"
+"seen_at": "2026-11-02T05:40:19.947111+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -61,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:29:08.262947+00:00"
+"seen_at": "2026-11-02T05:40:19.947095+00:00"
 },
 {
 "ad_id": "autoru_1160316686-6c934fdd",
@@ -77,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:29:08.262917+00:00"
+"seen_at": "2026-11-02T05:40:19.947067+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -93,7 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:29:08.262877+00:00"
+"seen_at": "2026-11-02T05:40:19.947051+00:00"
+},
+{
+"ad_id": "autoru_1160595135-d0c183ff",
+"source": "autoru",
+"brand": "Hyundai",
+"model": "Solaris",
+"year": 2013,
+"price": 965000,
+"market_price": 696000,
+"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160595135-d0c183ff/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20189162/623a8e9ba253407ae941cb97d9b26d16/1200x900n",
+"mileage_km": 178000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-02T05:40:19.947010+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-02T05:28:49.812120+00:00"
+"seen_at": "2026-11-02T05:40:04.236089+00:00"
 },
 {
 "ad_id": "autoru_1160603568-9d0a6011",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812102+00:00"
+"seen_at": "2026-11-02T05:40:04.236070+00:00"
 },
 {
 "ad_id": "autoru_1129609387-1a8fb9f9",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812091+00:00"
+"seen_at": "2026-11-02T05:40:04.236060+00:00"
 },
 {
 "ad_id": "autoru_1160604323-59c67c7b",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812079+00:00"
+"seen_at": "2026-11-02T05:40:04.236048+00:00"
 },
 {
 "ad_id": "autoru_1160604441-17e290de",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-02T05:28:49.812070+00:00"
+"seen_at": "2026-11-02T05:40:04.236038+00:00"
 },
 {
 "ad_id": "autoru_1160605221-8823b95a",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Верхняя Хава",
-"seen_at": "2026-11-02T05:28:49.812056+00:00"
+"seen_at": "2026-11-02T05:40:04.236026+00:00"
 },
 {
 "ad_id": "autoru_1160605343-53c72ae7",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812046+00:00"
+"seen_at": "2026-11-02T05:40:04.236016+00:00"
 },
 {
 "ad_id": "autoru_1160608503-9d9e279b",
@@ -216,12 +216,12 @@
 "price": 1350000,
 "market_price": 3142500,
 "url": "https://auto.ru/cars/used/sale/audi/a8/1160608503-9d9e279b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/jZ4YHtFC3cYc734lxmL4E5yZknMbvKOfoBQqltvTdOi7W8okuq7vZwxn-p3CX3hhmY8T4HVDVA8Zrq3lXizh6uLUqFTBdYU3YfnrYlSgsEtRSyMCjA0lpDHGe1v0f52dEOzBOSj8qw0M8aA1Grm899R8zi30qk7KIV6ORgbXtlbe9Q/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/11748220/n3d4KIvWZ0642HZoFgb40mLWchjVtVCu8U_KrP70D1XTPiB2j85DPCXMSqAAI9iEFzyB1tDL8wdyybBH_7V5IciL-Y7l2stbdyUO2aLfv89xEQLtAFfCwWRPpxnKzkCNDh5hLR-UpJDkggyyO7HAFxgTGbkiaTszLwIyjBXQ1KYyNqE/1200x900n",
 "mileage_km": 65000,
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812022+00:00"
+"seen_at": "2026-11-02T05:40:04.235993+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.812003+00:00"
+"seen_at": "2026-11-02T05:40:04.235975+00:00"
 },
 {
 "ad_id": "autoru_1160365458-fa81f6d7",
@@ -253,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.811990+00:00"
+"seen_at": "2026-11-02T05:40:04.235962+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -269,7 +269,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-02T05:28:49.811903+00:00"
+"seen_at": "2026-11-02T05:40:04.235878+00:00"
 },
 {
 "ad_id": "autoru_1160590322-36e317de",
