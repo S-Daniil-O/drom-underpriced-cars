@@ -57,8 +57,19 @@
    "added": "2026-11-02T16:08",
    "end": null,
    "sent": {}
+  },
+  "cdt-380409": {
+   "n": 6,
+   "url": "https://torgi.cdtrf.ru/trades/380409",
+   "name": "Lada Priora, 2011",
+   "vin": "XTA217030B0323821",
+   "target": 66960,
+   "card": 109,
+   "added": "2026-11-03T10:51",
+   "end": null,
+   "sent": {}
   }
  },
- "offset": 177673400,
- "seq": 5
+ "offset": 177673401,
+ "seq": 6
 }
