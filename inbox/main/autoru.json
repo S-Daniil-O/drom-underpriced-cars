@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749430+00:00"
+"seen_at": "2026-11-03T17:01:57.300564+00:00"
 },
 {
 "ad_id": "autoru_1160610948-996ed7f6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749414+00:00"
+"seen_at": "2026-11-03T17:01:57.300548+00:00"
 },
 {
 "ad_id": "autoru_1160457183-50532f13",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749399+00:00"
+"seen_at": "2026-11-03T17:01:57.300533+00:00"
 },
 {
 "ad_id": "autoru_1160613214-cbd5cceb",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749382+00:00"
+"seen_at": "2026-11-03T17:01:57.300516+00:00"
 },
 {
 "ad_id": "autoru_1160616052-804830b3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749352+00:00"
+"seen_at": "2026-11-03T17:01:57.300486+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749338+00:00"
+"seen_at": "2026-11-03T17:01:57.300473+00:00"
 },
 {
 "ad_id": "autoru_1160620583-59fd5af5",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749311+00:00"
+"seen_at": "2026-11-03T17:01:57.300456+00:00"
 },
 {
 "ad_id": "autoru_1160623765-0938036a",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:45.749249+00:00"
+"seen_at": "2026-11-03T17:01:57.300411+00:00"
 },
 {
 "ad_id": "autoru_1160623970-17830d3a",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Подгоренский",
-"seen_at": "2026-11-03T16:50:26.721271+00:00"
+"seen_at": "2026-11-03T17:01:41.423729+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -157,23 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721254+00:00"
-},
-{
-"ad_id": "autoru_1160450391-b441a29b",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2021,
-"price": 1250000,
-"market_price": 1210500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
-"mileage_km": 92000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721245+00:00"
+"seen_at": "2026-11-03T17:01:41.423713+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -189,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721235+00:00"
+"seen_at": "2026-11-03T17:01:41.423703+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -205,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721225+00:00"
+"seen_at": "2026-11-03T17:01:41.423694+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -216,60 +200,12 @@
 "price": 780000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/b1JgBFADXR8SN5sFHzsz-V_9Vs4dXXP42kqJbNGFUxFF_50wjpxUtyO2yHVL77m2VcwjRwq0DrB_B8bk9KITtuWNbBn-SYG6OaGd_8LZcZe5ynwtcBHWY04wXagVnj0tqDVuyVkszNo36gWS72uatU1A41Xp_a7jk-UTcIN7Gk4_dQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/PkvcS1J7hNjpuwnCoct4oaG6P97ABXmQDcko75Lkzft1nXQruwxFioJpPPg3KHwvAcE0M2537Fl67oQ4ZLFElE9hfQuGfmCNqEPYIQsHFPZQoT4SbMJFyqTXbzbTCy3E8Mg1VgxByiTJxgxQh6GwY1rP_Pu7JTvU5S82HN5bmqpNTi4/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721212+00:00"
-},
-{
-"ad_id": "autoru_1160632446-defe36ee",
-"source": "autoru",
-"brand": "Honda",
-"model": "Fit",
-"year": 2023,
-"price": 1250000,
-"market_price": 1202500,
-"url": "https://auto.ru/cars/used/sale/honda/fit/1160632446-defe36ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2072137/17b53da25aed5f5b7ad57909ab585cf2/1200x900n",
-"mileage_km": 33200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721187+00:00"
-},
-{
-"ad_id": "autoru_1160633413-8277c50d",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "GL-Класс",
-"year": 2009,
-"price": 1450000,
-"market_price": 1229500,
-"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
-"mileage_km": 349999,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721174+00:00"
-},
-{
-"ad_id": "autoru_1160637812-08f16da1",
-"source": "autoru",
-"brand": "Chrysler",
-"model": "Pacifica",
-"year": 2003,
-"price": 945000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20606978/8797ab26952f5c76c51f1351beb75f3c/1200x900n",
-"mileage_km": 180000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721148+00:00"
+"seen_at": "2026-11-03T17:01:41.423682+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -285,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T16:50:26.721130+00:00"
+"seen_at": "2026-11-03T17:01:41.423667+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -301,7 +237,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-03T16:50:26.721076+00:00"
+"seen_at": "2026-11-03T17:01:41.423649+00:00"
+},
+{
+"ad_id": "autoru_1160632446-defe36ee",
+"source": "autoru",
+"brand": "Honda",
+"model": "Fit",
+"year": 2023,
+"price": 1250000,
+"market_price": 1202500,
+"url": "https://auto.ru/cars/used/sale/honda/fit/1160632446-defe36ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2072137/17b53da25aed5f5b7ad57909ab585cf2/1200x900n",
+"mileage_km": 33200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-03T17:01:41.423637+00:00"
+},
+{
+"ad_id": "autoru_1160633413-8277c50d",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "GL-Класс",
+"year": 2009,
+"price": 1450000,
+"market_price": 1229500,
+"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
+"mileage_km": 349999,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-03T17:01:41.423623+00:00"
+},
+{
+"ad_id": "autoru_1160637812-08f16da1",
+"source": "autoru",
+"brand": "Chrysler",
+"model": "Pacifica",
+"year": 2003,
+"price": 945000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20606978/8797ab26952f5c76c51f1351beb75f3c/1200x900n",
+"mileage_km": 180000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-03T17:01:41.423593+00:00"
+},
+{
+"ad_id": "autoru_1160450391-b441a29b",
+"source": "autoru",
+"brand": "Opel",
+"model": "Astra",
+"year": 2021,
+"price": 1250000,
+"market_price": 1210500,
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
+"mileage_km": 92000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-03T17:01:41.423534+00:00"
 },
 {
 "ad_id": "autoru_1160608503-9d9e279b",
