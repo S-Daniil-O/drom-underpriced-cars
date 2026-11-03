@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160607095-136bd110",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2008,
-"price": 410000,
-"market_price": 254000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160607095-136bd110/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17690098/87d83481ea9a7ee2242cafc278d98bd6/1200x900n",
-"mileage_km": 130000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-03T14:03:02.575614+00:00"
-},
-{
 "ad_id": "autoru_1160614508-a789fef0",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -24,12 +8,12 @@
 "price": 135000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/2109/1160614508-a789fef0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/i1a52NgVpVKIZZo7qLx6CS09lZxjhDtJa7hIhK8aXe8iaTufcyf_p8jK4vnoMKhwKBLWIQzrIFMk9T-c-U7H0ntEmN8q6Ez98hd-qd7xEzIBf36gb08TTu3M1hlIT_zzFcKxe0zXxI7WZ9OI4-Z6Q2echjdS9pKHKG9zsWh3BGubi3k/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/RiiWfM9mxjJk7S5U9gzaVK88-qJWJVgu5xathtu4oSTvJ-Jhy_tHYvr1CI4664k6c_k8q6u7dKnmmLnGCS1srNJKNCQvQZhJl0PFTKs2N1PXM5HGUTk2EQ_XUENLvT5xidINoLdlbwqD7iABJCdUJsr9kYrIc_aq9BPjQFin96ccYrw/1200x900n",
 "mileage_km": 80000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T14:03:02.575554+00:00"
+"seen_at": "2026-11-03T14:14:22.007603+00:00"
 },
 {
 "ad_id": "autoru_1160618776-a38b5e10",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T14:03:02.575508+00:00"
+"seen_at": "2026-11-03T14:14:22.007581+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T14:02:43.363049+00:00"
+"seen_at": "2026-11-03T14:14:22.007535+00:00"
 },
 {
 "ad_id": "autoru_1160622306-56335cc4",
@@ -72,12 +56,28 @@
 "price": 170000,
 "market_price": 201000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/9ol2Tm9t3tRuu1xWGKaY7FwWZpiOyLZRcItbSwD7lF3LDe36gKHjpBYuP-7xD8M7pFZ05uZeGpHriBeqdZxRld7zgglSIwBcljNGs1c2YQk5UlxI1ki7ju7McpMKJ-EEQNUg50rNG9HleGIxRO96SDqrrzsJHsnYBUEqoHlZr0z32zs/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/8TROx32c81zzDSMe7gh-Zn28JSn7-VPn1ZDQUkhMRhcom6zngo37bwnr4mI_gVQyDBcEbsc2H9afx6PWt5n556Wq-nnnYtSqI6Eu2fwG2gzqrYeRfXBvMNB9-CBTmV8x2Uy0M4JKxzlR9pLdN7AjXklxEvSQaNPLGYMg2ySyN8JZxVM/1200x900n",
 "mileage_km": 160700,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-03T14:02:43.363012+00:00"
+"seen_at": "2026-11-03T14:14:07.571832+00:00"
+},
+{
+"ad_id": "autoru_1160607095-136bd110",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 2008,
+"price": 410000,
+"market_price": 254000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160607095-136bd110/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17690098/87d83481ea9a7ee2242cafc278d98bd6/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-03T14:03:02.575614+00:00"
 },
 {
 "ad_id": "autoru_1160635321-a36ff52f",
