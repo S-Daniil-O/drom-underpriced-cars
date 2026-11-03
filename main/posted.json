@@ -3243,5 +3243,20 @@
     "mileage_km": 320000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/y6b4F23DRr-CMMIsndzuVhJQuWa97D-5rwqjQP6JseH_oyVpr8ynyF318FFwgYjtAeJTayaGz-RsNyEw/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/octavia/422271134.html": {
+    "posted_at": "2026-11-03T21:24:37.128970+00:00",
+    "message_id": 242,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Octavia",
+    "year": 2014,
+    "price": 980000,
+    "median_price": 1294000,
+    "median_sample_size": 5493,
+    "price_rating": "хорошая цена",
+    "mileage_km": 253500,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/hFc8M50ZWCnloQwT8t__iWz0BDC3PZZQgUgggbIEIPKsc0QK882RjoUFkFlaFbwX1VhES5HLnsTnnxD3/gen272wb.jpg"
   }
 }
