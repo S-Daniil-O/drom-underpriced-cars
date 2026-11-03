@@ -6582,7 +6582,7 @@
   "https://auto.drom.ru/voronezh/lada/2112/279693969.html": {
     "posted_at": "2026-10-31T19:11:52.794546+00:00",
     "message_id": 486,
-    "deleted_at": null,
+    "deleted_at": "2026-11-03T19:18:42.081643+00:00",
     "brand": "Лада",
     "model": "2112",
     "year": 2005,
@@ -6983,5 +6983,20 @@
     "mileage_km": 107321,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19816019/1be94e158834b9878c092f0140f50165/1200x900n"
+  },
+  "autoru_1160639860-d9392f60": {
+    "posted_at": "2026-11-03T19:21:20.399331+00:00",
+    "message_id": 513,
+    "deleted_at": null,
+    "brand": "ЗАЗ",
+    "model": "Chance",
+    "year": 2010,
+    "price": 90000,
+    "median_price": 105000,
+    "median_sample_size": null,
+    "price_rating": null,
+    "mileage_km": 209000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2035927/3119fe27adc8153fab6ab27e2943f7c7/1200x900n"
   }
 }

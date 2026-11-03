@@ -2013,11 +2013,11 @@
   "https://auto.drom.ru/voronezh/lada/2112/279693969.html": {
     "posted_at": "2026-10-31T19:12:10.187260+00:00",
     "message_id": 283,
-    "deleted_at": null,
+    "deleted_at": "2026-11-03T19:18:43.087593+00:00",
     "rejected": false,
     "checked_at": "2026-10-31T19:12:10.187260+00:00",
     "vk_post_id": 213,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-03T19:18:43.087593+00:00"
   },
   "https://auto.drom.ru/voronezh/mercedes-benz/e-class/798790771.html": {
     "posted_at": "2026-10-31T21:42:31.482930+00:00",
@@ -2206,6 +2206,15 @@
     "rejected": false,
     "checked_at": "2026-11-03T16:16:23.384568+00:00",
     "vk_post_id": 231,
+    "vk_deleted_at": null
+  },
+  "autoru_1160639860-d9392f60": {
+    "posted_at": "2026-11-03T19:21:36.051073+00:00",
+    "message_id": 308,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-03T19:21:36.051073+00:00",
+    "vk_post_id": 232,
     "vk_deleted_at": null
   }
 }
