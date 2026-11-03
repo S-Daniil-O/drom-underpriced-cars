@@ -68,8 +68,19 @@
    "added": "2026-11-03T10:51",
    "end": null,
    "sent": {}
+  },
+  "cdt-387811": {
+   "n": 7,
+   "url": "https://torgi.cdtrf.ru/trades/387811",
+   "name": "Ford Focus, 2012",
+   "vin": "X9FMXXEEBMCY55587",
+   "target": 325620,
+   "card": 112,
+   "added": "2026-11-03T11:00",
+   "end": null,
+   "sent": {}
   }
  },
- "offset": 177673401,
- "seq": 6
+ "offset": 177673402,
+ "seq": 7
 }
