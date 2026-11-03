@@ -101,8 +101,19 @@
    "added": "2026-11-03T11:09",
    "end": null,
    "sent": {}
+  },
+  "cdt-390604": {
+   "n": 10,
+   "url": "https://torgi.cdtrf.ru/trades/390604",
+   "name": "https://torgi.cdtrf.ru/trades/390604",
+   "vin": null,
+   "target": null,
+   "card": 118,
+   "added": "2026-11-03T15:50",
+   "end": null,
+   "sent": {}
   }
  },
- "offset": 177673405,
- "seq": 9
+ "offset": 177673406,
+ "seq": 10
 }
