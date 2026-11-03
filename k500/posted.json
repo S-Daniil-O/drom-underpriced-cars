@@ -6938,5 +6938,20 @@
     "mileage_km": 150000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/vuzlInis0007ke7ceryKOSncQjW-qnFfBOUmWASkBVGic4txhtD1amGkDzzAMwNiiwLoQf7dCUDEw1Ce/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/183322966.html": {
+    "posted_at": "2026-11-03T05:40:40.082233+00:00",
+    "message_id": 510,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2011,
+    "price": 135000,
+    "median_price": 289000,
+    "median_sample_size": 11767,
+    "price_rating": null,
+    "mileage_km": 179000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/OoVdMZduxMFLCOe5JIN0oy-pBMDqkXwr2d55n9Zr-GHk5k2V-ycUbQTWv1JSh3q5b6s7kNyfAO511oC1/gen272wb.jpg"
   }
 }
