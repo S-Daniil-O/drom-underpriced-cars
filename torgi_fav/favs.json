@@ -22,8 +22,12 @@
    "target": null,
    "card": 5,
    "added": "2026-11-02T14:57",
-   "end": null,
-   "sent": {}
+   "end": "2026-12-09T10:00",
+   "sent": {
+    "period:27.10.2026 10:00": 1
+   },
+   "min_price": 90000.0,
+   "requests": 0
   },
   "cdt-383958": {
    "n": 3,
@@ -88,8 +92,13 @@
    "target": 103574,
    "card": 114,
    "added": "2026-11-03T11:08",
-   "end": null,
-   "sent": {}
+   "end": "2026-11-11T10:00",
+   "sent": {
+    "period:04.11.2026 10:00": 1
+   },
+   "min_price": 103573.8,
+   "requests": 0,
+   "hit_target": true
   },
   "mets-237658-1": {
    "n": 9,
@@ -99,8 +108,13 @@
    "target": 960000,
    "card": 116,
    "added": "2026-11-03T11:09",
-   "end": null,
-   "sent": {}
+   "end": "2026-11-11T09:00",
+   "sent": {
+    "period:04.11.2026 09:00": 1
+   },
+   "min_price": 960000.0,
+   "requests": 11,
+   "hit_target": true
   },
   "cdt-390604": {
    "n": 10,
