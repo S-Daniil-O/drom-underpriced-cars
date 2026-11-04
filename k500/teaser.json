@@ -2078,13 +2078,6 @@
     "vk_post_id": 219,
     "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/granta/702274414.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-01T18:49:44.238087+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2115/838645391.html": {
     "posted_at": null,
     "message_id": null,
@@ -2246,5 +2239,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-04T18:24:46.447831+00:00"
+  },
+  "https://auto.drom.ru/voronezh/audi/a4/532561525.html": {
+    "posted_at": "2026-11-04T18:54:53.766141+00:00",
+    "message_id": 313,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-04T18:54:53.766141+00:00",
+    "vk_post_id": 235,
+    "vk_deleted_at": null
   }
 }

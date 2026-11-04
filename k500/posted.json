@@ -7088,5 +7088,20 @@
     "mileage_km": 238000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/GKYrxZ4HGHe00h7OsoOadfX2vtpz9XXZTUvAxf9ua0HY1wob9VQS1l6G9S5sqz7VSynp-RfSd39VZTBl/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/a4/532561525.html": {
+    "posted_at": "2026-11-04T18:54:48.674611+00:00",
+    "message_id": 520,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2001,
+    "price": 475000,
+    "median_price": 495000.0,
+    "median_sample_size": 198,
+    "price_rating": "отличная цена",
+    "mileage_km": 340000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/nls3Xw7k1D-o0r2PygFX6hneuTUCbS3Wbh48LVdiuRqbQCZiWLUYYKxp_DKtI5U3vFNMZuNz_Vv231zt/gen272wb.jpg"
   }
 }
