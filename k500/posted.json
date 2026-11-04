@@ -6612,7 +6612,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/492707466.html": {
     "posted_at": "2026-11-01T15:04:20.852332+00:00",
     "message_id": 488,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:43.847458+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2010,
@@ -6627,7 +6627,7 @@
   "https://auto.drom.ru/voronezh/daewoo/nexia/750728917.html": {
     "posted_at": "2026-11-01T15:04:26.104014+00:00",
     "message_id": 489,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:45.188697+00:00",
     "brand": "Daewoo",
     "model": "Nexia",
     "year": 2007,
@@ -6642,7 +6642,7 @@
   "autoru_1160602069-dce4b9ad": {
     "posted_at": "2026-11-01T15:04:39.769804+00:00",
     "message_id": 490,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:46.486324+00:00",
     "brand": "Lada (ВАЗ)",
     "model": "2107",
     "year": 2007,
@@ -6657,7 +6657,7 @@
   "autoru_1160602770-7d9114b2": {
     "posted_at": "2026-11-01T15:05:02.513264+00:00",
     "message_id": 491,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:47.868208+00:00",
     "brand": "Lada (ВАЗ)",
     "model": "Kalina",
     "year": 2012,
@@ -6672,7 +6672,7 @@
   "https://auto.drom.ru/voronezh/lada/2113/826210534.html": {
     "posted_at": "2026-11-01T15:05:05.279378+00:00",
     "message_id": 492,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:49.175229+00:00",
     "brand": "Лада",
     "model": "2113 Самара",
     "year": 2009,
@@ -6687,7 +6687,7 @@
   "https://auto.drom.ru/voronezh/lada/2107/712329204.html": {
     "posted_at": "2026-11-01T15:33:32.708072+00:00",
     "message_id": 493,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:50.461971+00:00",
     "brand": "Лада",
     "model": "2107",
     "year": 2006,
@@ -6702,7 +6702,7 @@
   "https://auto.drom.ru/voronezh/lada/2111/368311786.html": {
     "posted_at": "2026-11-01T15:33:37.573742+00:00",
     "message_id": 494,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:51.748825+00:00",
     "brand": "Лада",
     "model": "2111",
     "year": 2001,
@@ -7028,5 +7028,50 @@
     "mileage_km": 298080,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/7Zd2jW75lDU9ygWXBdfxXmtKzTr1-VMNQzz8TWuUaXdCd5OgJV8eaiV53wlldbFvlBf8gT59GoqBQ9B-/gen272wb.jpg"
+  },
+  "autoru_1160650289-a00170d9": {
+    "posted_at": "2026-11-04T17:39:59.059495+00:00",
+    "message_id": 516,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Priora",
+    "year": 2011,
+    "price": 250000,
+    "median_price": 325000,
+    "median_sample_size": 23,
+    "price_rating": null,
+    "mileage_km": 131000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/18101889/72b960aede4cc9fae56706aa15817ac1/1200x900n"
+  },
+  "autoru_1160648896-5e1d7636": {
+    "posted_at": "2026-11-04T17:40:01.730916+00:00",
+    "message_id": 517,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2110",
+    "year": 2002,
+    "price": 74000,
+    "median_price": 90000,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 414000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17737319/b2ebe15874325910bdf08dc6205d958f/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/884730096.html": {
+    "posted_at": "2026-11-04T17:40:12.257510+00:00",
+    "message_id": 518,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2012,
+    "price": 250000,
+    "median_price": 335000,
+    "median_sample_size": 7399,
+    "price_rating": "нормальная цена",
+    "mileage_km": 270000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/63TSq2bZv65Wdrtw5gO77mMwodqVaXItYnUqxWg6BxtdDN884LeibagL9Oh9cwOsX1ebQzBk5pPJzoYr/gen272wb.jpg"
   }
 }

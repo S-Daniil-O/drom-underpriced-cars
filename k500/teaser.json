@@ -2031,52 +2031,52 @@
   "_pitch_2026-11-01": {
     "posted_at": "2026-11-01T15:00:20.744546+00:00",
     "message_id": 286,
-    "deleted_at": null
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "https://auto.drom.ru/voronezh/daewoo/nexia/750728917.html": {
     "posted_at": "2026-11-01T15:04:34.405930+00:00",
     "message_id": 287,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00",
     "rejected": false,
     "checked_at": "2026-11-01T15:04:34.405930+00:00",
     "vk_post_id": 215,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "autoru_1160602069-dce4b9ad": {
     "posted_at": "2026-11-01T15:04:58.196511+00:00",
     "message_id": 288,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00",
     "rejected": false,
     "checked_at": "2026-11-01T15:04:58.196511+00:00",
     "vk_post_id": 216,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2113/826210534.html": {
     "posted_at": "2026-11-01T15:05:23.077497+00:00",
     "message_id": 289,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00",
     "rejected": false,
     "checked_at": "2026-11-01T15:05:23.077497+00:00",
     "vk_post_id": 217,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2112/657228652.html": {
     "posted_at": "2026-11-01T15:05:40.345265+00:00",
     "message_id": 290,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00",
     "rejected": false,
     "checked_at": "2026-11-01T15:05:40.345265+00:00",
     "vk_post_id": 218,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2111/368311786.html": {
     "posted_at": "2026-11-01T15:34:50.079002+00:00",
     "message_id": 291,
-    "deleted_at": null,
+    "deleted_at": "2026-11-04T17:36:52.756256+00:00",
     "rejected": false,
     "checked_at": "2026-11-01T15:34:50.079002+00:00",
     "vk_post_id": 219,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-04T17:36:52.756256+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/granta/702274414.html": {
     "posted_at": null,
@@ -2221,5 +2221,23 @@
     "posted_at": "2026-11-04T09:00:40.361748+00:00",
     "message_id": 309,
     "deleted_at": null
+  },
+  "autoru_1160648896-5e1d7636": {
+    "posted_at": "2026-11-04T17:40:09.295950+00:00",
+    "message_id": 311,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-04T17:40:09.295950+00:00",
+    "vk_post_id": 233,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2109/648370683.html": {
+    "posted_at": "2026-11-04T17:40:26.485591+00:00",
+    "message_id": 312,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-04T17:40:26.485591+00:00",
+    "vk_post_id": 234,
+    "vk_deleted_at": null
   }
 }
