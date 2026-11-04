@@ -6998,5 +6998,20 @@
     "mileage_km": 209000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2035927/3119fe27adc8153fab6ab27e2943f7c7/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/c-class/179409142.html": {
+    "posted_at": "2026-11-04T06:32:39.299927+00:00",
+    "message_id": 514,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2002,
+    "price": 390000,
+    "median_price": 490000.0,
+    "median_sample_size": 874,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/fT7jqxB2wX5IxYiI_SSMwtHUOhmj8v_bYbFGu47Rm9dKmLeoImHeVeA0useAk6ZXWbDT22JrqX1ix7SX/gen272wb.jpg"
   }
 }
