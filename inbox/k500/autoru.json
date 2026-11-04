@@ -8,12 +8,12 @@
 "price": 135000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/2109/1160614508-a789fef0/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/TJv9b278d16V-Z-gGVOkGO7Bd6963TlDARtXH33LRfYXNogs8SJ-aNcc_j87kFoY0Ifh_q6jDt0tXEbAhh5-p8qUsj-rpJTQAg05bfA4PQkv3yb7FeWrxSzsA7LE-b39PmfwTX2er2V9O0sFBh9dVRFBXldDTCHSdunFZem1Uwei2g/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21167286/K36NB8irNtIYfKPQuaLhWwUkQqOS5WkqV42OBnj2xsWz_Xw2BNwHVaNXfwZCn62t10IxOyG3yGsZsKdZ9aUaI1fgEvHz5QUT06wHIG3sqxJ5Nwz0nT7wF_rE2KDOB2WHgVlH_oFlsew15VZYvVs1-jR-cGqDefBIz5oqd4Z8KNShfQ/1200x900n",
 "mileage_km": 80000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:14:00.626455+00:00"
+"seen_at": "2026-11-04T08:25:17.008858+00:00"
 },
 {
 "ad_id": "autoru_1160618776-a38b5e10",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:14:00.626434+00:00"
+"seen_at": "2026-11-04T08:25:17.008839+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:14:00.626412+00:00"
+"seen_at": "2026-11-04T08:25:17.008818+00:00"
 },
 {
 "ad_id": "autoru_1160622306-56335cc4",
@@ -56,12 +56,12 @@
 "price": 170000,
 "market_price": 201000,
 "url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/MHfdntHEAdQeMmHr_FhzXJ_-L4ZrWPa6vUQADz67Fshs3ktRJEiZRwCqynHOHin_rw5exNVNucA3H2bY4rLXlWoSUU8GfDqHwBMgptFN-kbtHaZk3P0bAxGARFJHDfQcyw-sN8cN6JwxF1VP0-uLO3b1x1Kyvv_UwxadRIhj9DfzmA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/AKwLFvyICCwgvs_9IIdSiEzCPSDFkXDLERIJLz-1j43GnDjaFMK-NPTWPlFoIkxmwJGj2Pq5JVQXhHYsS2ce9h9VlIAc6vdo9ZMez_IFXpYWKkjPFdlavkVD5J8KpBDPBfcJiobr-mbPKlad_DSvCqEBqy9mf6Hwth23lj8UGQ2p0g/1200x900n",
 "mileage_km": 160700,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:14:00.626370+00:00"
+"seen_at": "2026-11-04T08:25:17.008777+00:00"
 },
 {
 "ad_id": "autoru_1160635321-a36ff52f",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:13:45.930190+00:00"
+"seen_at": "2026-11-04T08:24:57.651264+00:00"
 },
 {
 "ad_id": "autoru_1160636024-5e6ff553",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:13:45.930177+00:00"
+"seen_at": "2026-11-04T08:24:57.651253+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-04T08:13:45.930158+00:00"
+"seen_at": "2026-11-04T08:24:57.651221+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -125,6 +125,22 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T08:13:45.930105+00:00"
+"seen_at": "2026-11-04T08:24:57.651199+00:00"
+},
+{
+"ad_id": "autoru_1160643923-2fef0435",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera Classic",
+"year": 2010,
+"price": 465000,
+"market_price": 411000,
+"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160643923-2fef0435/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/7194de6aba5d8fbb10f8f44b85cf5db6/1200x900n",
+"mileage_km": 239000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T08:24:57.651161+00:00"
 }
 ]
