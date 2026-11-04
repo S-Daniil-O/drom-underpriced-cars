@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160622306-56335cc4",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2012,
+"price": 170000,
+"market_price": 201000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/gSJ7J2jLWSYhMgw9c-XNOgdyxlFEDR9cmw3j8YxOx68Nr9f_iv2lgkOVAjsM3REPtOr7AJeL9QxVa4M3e_4GUvZDQHkBXHkTmRasFiO5f4lMXU42SehPEXpHVinI3bPTGfI9gKV9LLY3HD_2s-jAXZ17WByg4tMlp4r-jsD65vUkEdQ/1200x900n",
+"mileage_km": 160700,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T14:38:39.979958+00:00"
+},
+{
 "ad_id": "autoru_1160618776-a38b5e10",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -13,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:26.921366+00:00"
+"seen_at": "2026-11-04T14:38:39.979927+00:00"
 },
 {
 "ad_id": "autoru_1160620927-3ef34180",
@@ -29,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:26.921347+00:00"
-},
-{
-"ad_id": "autoru_1160622306-56335cc4",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2012,
-"price": 170000,
-"market_price": 201000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160622306-56335cc4/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/18185687/iRxmC78rSR8KFO8mSEIe1i7U8QbvbwhceTmqw3TSl7R6-K6L2DL973DuWL7CVapd91sH5XSaIgis5Cq5fmqb3lBVSbWQd-m5gnpgpiqnrgkIBdSrzWIF-13FbBxN187OPWSU0qHxvYIol7EiJ34vbGi-XpGtWbamz4SOanDgUuLswg/1200x900n",
-"mileage_km": 160700,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T14:27:26.921307+00:00"
-},
-{
-"ad_id": "autoru_1160636024-5e6ff553",
-"source": "autoru",
-"brand": "Chery",
-"model": "Kimo (A1)",
-"year": 2012,
-"price": 249999,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chery/kimo/1160632333-fcac06f2/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2158853/3add26e13068978693dc3252deae8511/1200x900n",
-"mileage_km": 107321,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T14:27:05.874686+00:00"
+"seen_at": "2026-11-04T14:38:39.979886+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
@@ -77,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-04T14:27:05.874663+00:00"
+"seen_at": "2026-11-04T14:38:25.810948+00:00"
 },
 {
 "ad_id": "autoru_1160635321-a36ff52f",
@@ -93,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:05.874601+00:00"
+"seen_at": "2026-11-04T14:38:25.810920+00:00"
+},
+{
+"ad_id": "autoru_1160636024-5e6ff553",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 249999,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160636024-5e6ff553/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2158853/3add26e13068978693dc3252deae8511/1200x900n",
+"mileage_km": 107321,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T14:38:25.810906+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:05.874508+00:00"
+"seen_at": "2026-11-04T14:38:25.810886+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:05.874478+00:00"
+"seen_at": "2026-11-04T14:38:25.810867+00:00"
 },
 {
 "ad_id": "autoru_1160645506-74c3705b",
@@ -136,12 +136,12 @@
 "price": 420000,
 "market_price": 568000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160645506-74c3705b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17709910/j_L9r30fdNbYVFLMoAcDgZybxmemcRlME3dLZhoZTGZiopEgmkCwpvugHi9Dm8j4khHk5CxRW1CRuV_aHiQfUH36nwpqFRSl3UUVfNi6s9FtQBOvn7Do4Q9UX5M-RaDJTVMD3iwsr_OEPmg67FydxK28mSOTKvfKShlv8VM2OnNNRNo/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17709910/_tygGY5SrapOhYpd6yKDRtuXYBClnztcrt7ww5Tf27vjIv4-TzUKnOr9WFSRORdAYFpTqxkJtYkZ04bsoBRsyTCXXsbC6Th7uB1CATZ_LDvDZoAroFf3odTiFdYEA9mnAeGGz-XSb9Bz4tnrCdWB2O52jpZ2WYn12c8GBlwYTfEYwEg/1200x900n",
 "mileage_km": 90000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T14:27:05.874410+00:00"
+"seen_at": "2026-11-04T14:38:25.810828+00:00"
 },
 {
 "ad_id": "autoru_1160614508-a789fef0",
