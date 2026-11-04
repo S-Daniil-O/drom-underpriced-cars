@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685291+00:00"
+"seen_at": "2026-11-04T04:39:40.070927+00:00"
 },
 {
 "ad_id": "autoru_1160457183-50532f13",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685276+00:00"
+"seen_at": "2026-11-04T04:39:40.070913+00:00"
 },
 {
 "ad_id": "autoru_1160613214-cbd5cceb",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685259+00:00"
+"seen_at": "2026-11-04T04:39:40.070897+00:00"
 },
 {
 "ad_id": "autoru_1160616052-804830b3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685230+00:00"
+"seen_at": "2026-11-04T04:39:40.070871+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685217+00:00"
+"seen_at": "2026-11-04T04:39:40.070857+00:00"
 },
 {
 "ad_id": "autoru_1160620583-59fd5af5",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685202+00:00"
+"seen_at": "2026-11-04T04:39:40.070842+00:00"
 },
 {
 "ad_id": "autoru_1160623765-0938036a",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685183+00:00"
+"seen_at": "2026-11-04T04:39:40.070824+00:00"
 },
 {
 "ad_id": "autoru_1160623970-17830d3a",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Подгоренский",
-"seen_at": "2026-11-04T04:28:19.685168+00:00"
+"seen_at": "2026-11-04T04:39:40.070807+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -141,71 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:19.685123+00:00"
-},
-{
-"ad_id": "autoru_1160632446-defe36ee",
-"source": "autoru",
-"brand": "Honda",
-"model": "Fit",
-"year": 2023,
-"price": 1250000,
-"market_price": 1202500,
-"url": "https://auto.ru/cars/used/sale/honda/fit/1160632446-defe36ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2072137/17b53da25aed5f5b7ad57909ab585cf2/1200x900n",
-"mileage_km": 33200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617495+00:00"
-},
-{
-"ad_id": "autoru_1160632922-74c2ddfb",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Passat",
-"year": 2002,
-"price": 710000,
-"market_price": 344500,
-"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160632922-74c2ddfb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20172247/df01078d8aa4e9eea59f44be1077c68c/1200x900n",
-"mileage_km": 126743,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617487+00:00"
-},
-{
-"ad_id": "autoru_1160633413-8277c50d",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "GL-Класс",
-"year": 2009,
-"price": 1450000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
-"mileage_km": 349999,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617476+00:00"
-},
-{
-"ad_id": "autoru_1160637812-08f16da1",
-"source": "autoru",
-"brand": "Chrysler",
-"model": "Pacifica",
-"year": 2003,
-"price": 945000,
-"market_price": 322500,
-"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/583267254fbeb25c509161ce937e64a9/1200x900n",
-"mileage_km": 180000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617452+00:00"
+"seen_at": "2026-11-04T04:39:40.070761+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -221,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617426+00:00"
+"seen_at": "2026-11-04T04:39:18.895301+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -232,28 +168,92 @@
 "price": 780000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/5tllPC-VYCh5qNjgBqMJ81SeQTSiu6qg2t-ocfa1h6j5MJB_ikWatRtGWxakdSzOZE_szGbRRxWcEixLAYC_l90xWA-OIjvIkKQn_MbxvY7oixESzgR76dsMIIoyyR6KV-GIspnlNp0xWeWHtcMVvG83QnTpDUDM0pUbU-IE5kJVKtc/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/P9eCNrtzX5FqH-tMceD6KY99b4ouIXj6-htemE8wyGOWa6Y65uOkKjT2s_LB89MrEIjqRGC7c7cqm25MsNyJmHOzaXD01RgmxtFNQK51ehwHDiXOZScpCVjxJHbaFzBhHtyMsmG8Uhgz9OQETWbtD2uxnMYkrMw2vV_uKFavEoF__fA/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617412+00:00"
+"seen_at": "2026-11-04T04:39:18.895289+00:00"
+},
+{
+"ad_id": "autoru_1160632446-defe36ee",
+"source": "autoru",
+"brand": "Honda",
+"model": "Fit",
+"year": 2023,
+"price": 1250000,
+"market_price": 1202500,
+"url": "https://auto.ru/cars/used/sale/honda/fit/1160632446-defe36ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2072137/17b53da25aed5f5b7ad57909ab585cf2/1200x900n",
+"mileage_km": 33200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T04:39:18.895270+00:00"
+},
+{
+"ad_id": "autoru_1160632922-74c2ddfb",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Passat",
+"year": 2002,
+"price": 710000,
+"market_price": 344500,
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160632922-74c2ddfb/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20172247/df01078d8aa4e9eea59f44be1077c68c/1200x900n",
+"mileage_km": 126743,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T04:39:18.895261+00:00"
+},
+{
+"ad_id": "autoru_1160633413-8277c50d",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "GL-Класс",
+"year": 2009,
+"price": 1450000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
+"mileage_km": 349999,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T04:39:18.895250+00:00"
+},
+{
+"ad_id": "autoru_1160637812-08f16da1",
+"source": "autoru",
+"brand": "Chrysler",
+"model": "Pacifica",
+"year": 2003,
+"price": 945000,
+"market_price": 322500,
+"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/583267254fbeb25c509161ce937e64a9/1200x900n",
+"mileage_km": 180000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T04:39:18.895225+00:00"
 },
 {
 "ad_id": "autoru_1160639586-cc1ea87a",
 "source": "autoru",
-"brand": "Citroen",
-"model": "C5",
+"brand": "Renault",
+"model": "Scenic",
 "year": 2010,
 "price": 797000,
 "market_price": 501500,
-"url": "https://auto.ru/cars/used/sale/citroen/c5/1160630898-f4276cbc/",
+"url": "https://auto.ru/cars/used/sale/renault/scenic/1160639586-cc1ea87a/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/5c889ee6c70f82c410f4c5be1fed11e6/1200x900n",
 "mileage_km": 339950,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617398+00:00"
+"seen_at": "2026-11-04T04:39:18.895213+00:00"
 },
 {
 "ad_id": "autoru_1160640195-7a482847",
@@ -269,7 +269,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617386+00:00"
+"seen_at": "2026-11-04T04:39:18.895200+00:00"
 },
 {
 "ad_id": "autoru_1160640286-49d28f25",
@@ -285,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-04T04:28:01.617374+00:00"
+"seen_at": "2026-11-04T04:39:18.895189+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -301,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617355+00:00"
+"seen_at": "2026-11-04T04:39:18.895174+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -317,7 +317,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617342+00:00"
+"seen_at": "2026-11-04T04:39:18.895154+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -333,7 +333,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T04:28:01.617323+00:00"
+"seen_at": "2026-11-04T04:39:18.895133+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -349,6 +349,6 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-04T04:28:01.617266+00:00"
+"seen_at": "2026-11-04T04:39:18.895076+00:00"
 }
 ]
