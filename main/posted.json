@@ -3303,5 +3303,20 @@
     "mileage_km": 198000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20997557/e4d48f0eab3669e89a3b0e9c1fcc8da5/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/vesta/335597784.html": {
+    "posted_at": "2026-11-04T21:11:39.871606+00:00",
+    "message_id": 246,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Веста",
+    "year": 2023,
+    "price": 1100000,
+    "median_price": 1300000,
+    "median_sample_size": 12,
+    "price_rating": "хорошая цена",
+    "mileage_km": 33920,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Pm0vtyBhiF7VniCsYy3IvFcgNp45uz3FteIMcBUfUN1nXWxn4qujMdAS2n35i3mBRUY8onKd5RhLmwrp/gen272wb.jpg"
   }
 }
