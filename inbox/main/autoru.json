@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545877+00:00"
+"seen_at": "2026-11-04T21:45:20.056976+00:00"
 },
 {
 "ad_id": "autoru_1160623970-17830d3a",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Подгоренский",
-"seen_at": "2026-11-04T21:34:08.545865+00:00"
+"seen_at": "2026-11-04T21:45:20.056962+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -45,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545847+00:00"
-},
-{
-"ad_id": "autoru_1160633413-8277c50d",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Octavia",
-"year": 2009,
-"price": 1450000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/skoda/octavia/1160627738-e64e3605/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
-"mileage_km": 349999,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545836+00:00"
-},
-{
-"ad_id": "autoru_1160637812-08f16da1",
-"source": "autoru",
-"brand": "Chrysler",
-"model": "Pacifica",
-"year": 2003,
-"price": 945000,
-"market_price": 322500,
-"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/583267254fbeb25c509161ce937e64a9/1200x900n",
-"mileage_km": 180000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545811+00:00"
+"seen_at": "2026-11-04T21:45:20.056941+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -88,12 +56,12 @@
 "price": 780000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/V_uHxgjwvSMlPzYuxhsBIGdUWxCqzZOXqnCDo54Bo4msYOWL0gZYCJC8Vkt-qnfYyepj33H7dncZIofT7LNJxx0xFy1SdkSYDlpPT1ZQgwGvH_nXGDfuK-8aOOInkc7WWDnqj0o-S9FlJYg49de01EWkqpFB_hc2THwqY5IqsU1-L5Y/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/sFKoXzvOeC7Vi0kFsbe84XKHBLnFHGiZa6EUcIrWJxbYbEXsixmH74joltHNxrE_ry-qyNx075ZAnQ2nsOl5oB2YYfXeTYGgX0xKhL-953sL68ndGqrNcfRUzsKQ93yNL55yiBqHXNc4g1v_UHHYSLeNrnBXIYaupcLdaXBrqUeRU7o/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545796+00:00"
+"seen_at": "2026-11-04T21:45:20.056928+00:00"
 },
 {
 "ad_id": "autoru_1160632922-74c2ddfb",
@@ -109,23 +77,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545776+00:00"
+"seen_at": "2026-11-04T21:45:20.056908+00:00"
+},
+{
+"ad_id": "autoru_1160633413-8277c50d",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "GL-Класс",
+"year": 2009,
+"price": 1450000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
+"mileage_km": 349999,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T21:45:20.056896+00:00"
+},
+{
+"ad_id": "autoru_1160637812-08f16da1",
+"source": "autoru",
+"brand": "Chrysler",
+"model": "Pacifica",
+"year": 2003,
+"price": 945000,
+"market_price": 322500,
+"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160637812-08f16da1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/583267254fbeb25c509161ce937e64a9/1200x900n",
+"mileage_km": 180000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T21:45:20.056869+00:00"
 },
 {
 "ad_id": "autoru_1160639586-cc1ea87a",
 "source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "GL-Класс",
+"brand": "Renault",
+"model": "Scenic",
 "year": 2010,
 "price": 797000,
 "market_price": 501500,
-"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
+"url": "https://auto.ru/cars/used/sale/renault/scenic/1160639586-cc1ea87a/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/5c889ee6c70f82c410f4c5be1fed11e6/1200x900n",
 "mileage_km": 339950,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545766+00:00"
+"seen_at": "2026-11-04T21:45:20.056856+00:00"
 },
 {
 "ad_id": "autoru_1160640195-7a482847",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545752+00:00"
+"seen_at": "2026-11-04T21:45:20.056842+00:00"
 },
 {
 "ad_id": "autoru_1160640286-49d28f25",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-04T21:34:08.545742+00:00"
+"seen_at": "2026-11-04T21:45:20.056830+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545727+00:00"
+"seen_at": "2026-11-04T21:45:20.056815+00:00"
 },
 {
 "ad_id": "autoru_1160450391-b441a29b",
@@ -189,7 +189,7 @@
 "owners_display": null,
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545713+00:00"
+"seen_at": "2026-11-04T21:45:20.056799+00:00"
 },
 {
 "ad_id": "autoru_1160642242-cfd260d1",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:34:08.545678+00:00"
+"seen_at": "2026-11-04T21:45:20.056763+00:00"
 },
 {
 "ad_id": "autoru_1160013989-8d9b50c3",
@@ -221,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:33:54.956275+00:00"
+"seen_at": "2026-11-04T21:45:02.161021+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -237,39 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:33:54.956261+00:00"
-},
-{
-"ad_id": "autoru_1160646750-7cafd668",
-"source": "autoru",
-"brand": "Honda",
-"model": "Life",
-"year": 2022,
-"price": 1490000,
-"market_price": 1384000,
-"url": "https://auto.ru/cars/used/sale/honda/life/1160646750-7cafd668/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/1d2a80f722d599683e55890192f902fe/1200x900n",
-"mileage_km": 36000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T21:33:54.956239+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-04T21:33:54.956217+00:00"
+"seen_at": "2026-11-04T21:45:02.161008+00:00"
 },
 {
 "ad_id": "autoru_1160645885-f84c7f9a",
@@ -285,23 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-04T21:33:54.956205+00:00"
-},
-{
-"ad_id": "autoru_1160422889-9a203a8b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2020,
-"price": 990000,
-"market_price": 886000,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160422889-9a203a8b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n",
-"mileage_km": 95000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-04T21:33:54.956194+00:00"
+"seen_at": "2026-11-04T21:45:02.160990+00:00"
 },
 {
 "ad_id": "autoru_1160646450-99e91ac8",
@@ -317,7 +269,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-04T21:33:54.956178+00:00"
+"seen_at": "2026-11-04T21:45:02.160976+00:00"
+},
+{
+"ad_id": "autoru_1160646750-7cafd668",
+"source": "autoru",
+"brand": "Honda",
+"model": "Life",
+"year": 2022,
+"price": 1490000,
+"market_price": 1384000,
+"url": "https://auto.ru/cars/used/sale/honda/life/1160646750-7cafd668/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/1d2a80f722d599683e55890192f902fe/1200x900n",
+"mileage_km": 36000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T21:45:02.160962+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-04T21:45:02.160933+00:00"
+},
+{
+"ad_id": "autoru_1160422889-9a203a8b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2020,
+"price": 990000,
+"market_price": 886000,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160422889-9a203a8b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n",
+"mileage_km": 95000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-11-04T21:45:02.160879+00:00"
 },
 {
 "ad_id": "autoru_1160491303-cfcba7ab",
