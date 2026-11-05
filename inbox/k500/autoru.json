@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:29.311089+00:00"
+"seen_at": "2026-11-05T18:43:39.649312+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-05T18:32:29.311066+00:00"
+"seen_at": "2026-11-05T18:43:39.649288+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:29.311047+00:00"
+"seen_at": "2026-11-05T18:43:39.649267+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:29.311029+00:00"
+"seen_at": "2026-11-05T18:43:39.649250+00:00"
 },
 {
 "ad_id": "autoru_1160645506-74c3705b",
@@ -72,12 +72,12 @@
 "price": 427000,
 "market_price": 568000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160645506-74c3705b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/gtBOQZWFFDf8J3gI5pAv4IaQfqx_2ropDs195P8yCgV7YvZcSNIswQ_ww4p8h0ffFq2lkJjPI4JOCDUoo5HYBPE32kzxnHsLLFOZe1r5MaylpKkpdwDZSNz6JkvpFadl1mDlM-ga0xObEWs6sv-G4K8-s9P5XA-4XSq4deSxGIijCnM/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/Uz72IhBVUrBVs379ljKlMnAzd_Ft67IC52HroRdlM91nl41gSkyNW2ViXY2dzO9qoE8M_aandY5BpZzMp9dZ4ATWYOiCT8Rij9opVn1xIoB0ewnasOfRaB5jrb8eBoh9lZqFYLSC9c36SS7qZB3cKky4SuvKaGk3YnM0O8QshOpwkQ/1200x900n",
 "mileage_km": 90000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:29.310992+00:00"
+"seen_at": "2026-11-05T18:43:39.649236+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:14.343792+00:00"
+"seen_at": "2026-11-05T18:43:39.649175+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-05T18:32:14.343778+00:00"
+"seen_at": "2026-11-05T18:43:24.047221+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:14.343763+00:00"
+"seen_at": "2026-11-05T18:43:24.047209+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -141,7 +141,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T18:32:14.343724+00:00"
+"seen_at": "2026-11-05T18:43:24.047192+00:00"
+},
+{
+"ad_id": "autoru_1160666354-f8b9ae5d",
+"source": "autoru",
+"brand": "Chery",
+"model": "Kimo (A1)",
+"year": 2009,
+"price": 300000,
+"market_price": 127500,
+"url": "https://auto.ru/cars/used/sale/chery/kimo/1160666354-f8b9ae5d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2079997/ae555cd27b7caa6db6c0ad54b99a1930/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-05T18:43:24.047143+00:00"
 },
 {
 "ad_id": "autoru_1160660420-9b038499",
