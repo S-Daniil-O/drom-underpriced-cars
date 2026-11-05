@@ -4,7 +4,7 @@
   • переслать пост из @torgi_vrn_ss / «Крайние предложения торги» или прислать ссылку на лот,
     можно с текстом «цена 350000» — лот добавится в «Мои лоты»;
   • /цена <номер> <сумма> — задать свою цену (номер — из списка);
-  • /убрать <номер> — убрать лот из отслеживания;
+  • /убрать <номер> или кнопка «🗑 Удалить лот» на карточке — удалить лот и всё по нему из канала;
   • /список — что отслеживается.
 Команды принимаются только от администраторов канала «Мои лоты».
 
@@ -108,6 +108,81 @@ def lot_id(url):
     return "cdt-" + m.group(1) if m.group(1) else "mets-" + m.group(2) if m.group(2) else "tg-" + m.group(3)
 
 
+# ---------------------------------------------------------------- кнопки и удаление лота
+def kb(*rows):
+    return json.dumps({"inline_keyboard": [[{"text": t, "callback_data": d} for t, d in row] for row in rows]}, ensure_ascii=False)
+
+
+def kb_main(n):
+    return kb([("🗑 Удалить лот", f"del:{n}")])
+
+
+def kb_confirm(n):
+    return kb([("✅ Да, удалить всё", f"yes:{n}"), ("Отмена", f"no:{n}")])
+
+
+def remove_lot(st, key):
+    """Удалить из канала всё, что отправил бот по лоту, и прекратить отслеживание.
+    Письма удаляет скрипт Gmail: он видит пометку removed в favs.json (в течение ~15 минут).
+    Telegram не даёт боту удалять посты старше 48 часов — такие заменяются пометкой."""
+    v = st.d["lots"][key]
+    ids = sorted({v["card"], *(v.get("msgs") or []), *([v["head"]] if v.get("head") else [])})
+    deleted = marked = 0
+    for mid in ids:
+        r = tg("deleteMessage", chat_id=CHAT, message_id=mid)
+        if r.get("ok"):
+            deleted += 1
+            continue
+        if "not found" in r.get("description", ""):
+            continue
+        stub = f"🗑 Лот №{v['n']} удалён"
+        r = tg("editMessageCaption", chat_id=CHAT, message_id=mid, caption=stub, reply_markup='{"inline_keyboard":[]}')
+        if not r.get("ok"):
+            r = tg("editMessageText", chat_id=CHAT, message_id=mid, text=stub, reply_markup='{"inline_keyboard":[]}')
+        marked += bool(r.get("ok"))
+    v["ended"] = True
+    v["removed"] = True
+    st.dirty = True
+    log(f"лот №{v['n']} удалён: сообщений {deleted}, помечено {marked}")
+    return deleted, marked
+
+
+def handle_button(st, q, allowed):
+    if q.get("from", {}).get("id") not in allowed:
+        tg("answerCallbackQuery", callback_query_id=q["id"], text="Только для администраторов канала", show_alert="true")
+        return
+    m = re.fullmatch(r"(del|yes|no):(\d+)", q.get("data") or "")
+    msg = q.get("message") or {}
+    key = next((k for k, v in st.d["lots"].items() if m and v.get("n") == int(m.group(2))), None)
+    if not m or not key or st.d["lots"][key].get("removed"):
+        tg("answerCallbackQuery", callback_query_id=q["id"], text="Лот уже удалён")
+        return
+    n = int(m.group(2))
+    if m.group(1) == "del":
+        tg("editMessageReplyMarkup", chat_id=CHAT, message_id=msg.get("message_id"), reply_markup=kb_confirm(n))
+        tg("answerCallbackQuery", callback_query_id=q["id"], text="Подтвердите удаление")
+    elif m.group(1) == "no":
+        tg("editMessageReplyMarkup", chat_id=CHAT, message_id=msg.get("message_id"), reply_markup=kb_main(n))
+        tg("answerCallbackQuery", callback_query_id=q["id"], text="Отменено")
+    else:
+        tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Удаляю лот №{n}…")
+        remove_lot(st, key)
+
+
+def add_buttons(st):
+    """Кнопка на карточках лотов, добавленных до появления кнопок."""
+    for v in st.d["lots"].values():
+        if v.get("removed") or v.get("btn"):
+            continue
+        r = tg("editMessageReplyMarkup", chat_id=CHAT, message_id=v["card"], reply_markup=kb_main(v["n"]))
+        v["btn"] = True
+        st.dirty = True
+        # у карточек из пересланных постов следом идёт строка «МОЙ ЛОТ»
+        if v.get("vin") or v.get("forwarded") or not str(v.get("name", "")).startswith("http"):
+            v["head"] = v["card"] + 1
+        log(f"кнопка на карточке №{v['n']}: {r.get('ok')} {r.get('description', '')}")
+
+
 # ---------------------------------------------------------------- команды
 def admins():
     r = tg("getChatAdministrators", chat_id=CHAT)
@@ -146,10 +221,8 @@ def handle(st, msg, allowed):
             tg("sendMessage", chat_id=chat, text="Нет лота с таким номером. /список — номера.")
             return
         if m.group(1) == "убрать":
-            lots[key]["ended"] = True
-            lots[key]["removed"] = True
-            tg("sendMessage", chat_id=CHAT, text="🗑 Убран из отслеживания.", reply_to_message_id=lots[key]["card"])
-            tg("sendMessage", chat_id=chat, text=f"№{m.group(2)} убран.")
+            remove_lot(st, key)
+            tg("sendMessage", chat_id=chat, text=f"№{m.group(2)} удалён из канала. Письма по нему исчезнут в течение 15 минут.")
         else:
             lots[key]["target"] = int(re.sub(r"\D", "", m.group(3) or "0")) or None
             lots[key].pop("hit_target", None)
@@ -186,19 +259,23 @@ def handle(st, msg, allowed):
     head = f"⭐ МОЙ ЛОТ №{n}" + (f" — моя цена {money(target)}" if target else "") + f"\n#лот{n}"
     # карточка: копия поста (с фото) или текст со ссылкой
     if msg.get("forward_origin") or msg.get("forward_from_chat"):
-        r = tg("copyMessage", chat_id=CHAT, from_chat_id=chat, message_id=msg["message_id"])
+        r = tg("copyMessage", chat_id=CHAT, from_chat_id=chat, message_id=msg["message_id"], reply_markup=kb_main(n))
         card = r.get("result", {}).get("message_id")
+        head_id = None
         if card:
-            tg("sendMessage", chat_id=CHAT, text=head + "\nДокументы и письма по лоту — ответами на этот пост.", reply_to_message_id=card)
+            hr = tg("sendMessage", chat_id=CHAT, text=head + "\nДокументы и письма по лоту — ответами на этот пост.", reply_to_message_id=card)
+            head_id = hr.get("result", {}).get("message_id")
     else:
-        r = tg("sendMessage", chat_id=CHAT, text=f"{head}\n{url}")
+        r = tg("sendMessage", chat_id=CHAT, text=f"{head}\n{url}", reply_markup=kb_main(n))
         card = r.get("result", {}).get("message_id")
+        head_id = None
     if not card:
         tg("sendMessage", chat_id=chat, text="Не удалось создать карточку в канале — проверьте, что бот там администратор.")
         st.d["seq"] -= 1
         return
     lots[lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
-                 "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {}}
+                 "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
+                 "btn": True, "head": head_id, "msgs": []}
     st.dirty = True
     tg("sendMessage", chat_id=chat, text=f"✅ Добавлено: №{n} {name}"
        + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик торгов подтянется с площадки при утреннем обновлении (10:00).")
@@ -220,7 +297,11 @@ def check(st, live):
             st.dirty = True
         end = parse_dt(v["end"]) if v.get("end") else None
         sent = v.setdefault("sent", {})
-        say = lambda t: tg("sendMessage", chat_id=CHAT, text=t, reply_to_message_id=v["card"])
+        def say(t, v=v):
+            r = tg("sendMessage", chat_id=CHAT, text=t, reply_to_message_id=v["card"])
+            if r.get("ok"):
+                v.setdefault("msgs", []).append(r["result"]["message_id"])
+            return r
         cur = next((r for r in sched if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
         if cur:
             key = f"period:{cur[0]}"
@@ -253,6 +334,8 @@ def main():
     stop = time.time() + minutes * 60
     allowed = admins()
     log(f"администраторов канала: {len(allowed)}, лотов в избранном: {len(st.d['lots'])}")
+    add_buttons(st)
+    st.save()
     next_check = 0
     while time.time() < stop:
         if time.time() >= next_check:
@@ -263,15 +346,17 @@ def main():
             st.save()
             allowed = admins() or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
-        r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message"]')
+        r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message","callback_query"]')
         for u in r.get("result", []):
             st.d["offset"] = u["update_id"] + 1
             st.dirty = True
-            if "message" in u:
-                try:
+            try:
+                if "message" in u:
                     handle(st, u["message"], allowed)
-                except Exception as e:  # noqa: BLE001 — одна плохая команда не должна ронять бота
-                    log(f"ошибка обработки: {e}")
+                elif "callback_query" in u:
+                    handle_button(st, u["callback_query"], allowed)
+            except Exception as e:  # noqa: BLE001 — одна плохая команда не должна ронять бота
+                log(f"ошибка обработки: {e}")
         st.save()
     log("время работы вышло")
 
