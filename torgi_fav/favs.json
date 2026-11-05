@@ -49,7 +49,8 @@
    "msgs": [
     315
    ],
-   "ended": true
+   "ended": true,
+   "removed": true
   },
   "cdt-387637": {
    "n": 4,
@@ -189,6 +190,6 @@
    "requests": 0
   }
  },
- "offset": 177673411,
+ "offset": 177673412,
  "seq": 10
 }
