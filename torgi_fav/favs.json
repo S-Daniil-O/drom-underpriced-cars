@@ -12,7 +12,9 @@
    "sent": {
     "warn": 1
    },
-   "ended": true
+   "ended": true,
+   "btn": true,
+   "head": 4
   },
   "tg-16839": {
    "n": 2,
@@ -28,7 +30,8 @@
     "period:05.11.2026 10:00": 1
    },
    "min_price": 90000.0,
-   "requests": 0
+   "requests": 0,
+   "btn": true
   },
   "cdt-383958": {
    "n": 3,
@@ -39,7 +42,8 @@
    "card": 60,
    "added": "2026-11-02T15:37",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true
   },
   "cdt-387637": {
    "n": 4,
@@ -50,7 +54,9 @@
    "card": 102,
    "added": "2026-11-02T16:04",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true,
+   "head": 103
   },
   "cdt-383751": {
    "n": 5,
@@ -61,7 +67,9 @@
    "card": 104,
    "added": "2026-11-02T16:08",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true,
+   "head": 105
   },
   "cdt-380409": {
    "n": 6,
@@ -72,7 +80,9 @@
    "card": 109,
    "added": "2026-11-03T10:51",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true,
+   "head": 110
   },
   "cdt-387811": {
    "n": 7,
@@ -83,7 +93,9 @@
    "card": 112,
    "added": "2026-11-03T11:00",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true,
+   "head": 113
   },
   "mets-231529-1": {
    "n": 8,
@@ -99,7 +111,9 @@
    },
    "min_price": 103573.8,
    "requests": 0,
-   "hit_target": true
+   "hit_target": true,
+   "btn": true,
+   "head": 115
   },
   "mets-237658-1": {
    "n": 9,
@@ -115,7 +129,9 @@
    },
    "min_price": 960000.0,
    "requests": 11,
-   "hit_target": true
+   "hit_target": true,
+   "btn": true,
+   "head": 117
   },
   "cdt-390604": {
    "n": 10,
@@ -126,7 +142,8 @@
    "card": 118,
    "added": "2026-11-03T15:50",
    "end": null,
-   "sent": {}
+   "sent": {},
+   "btn": true
   }
  },
  "offset": 177673406,
