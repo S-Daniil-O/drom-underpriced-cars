@@ -126,14 +126,17 @@ def remove_lot(st, key):
     Письма удаляет скрипт Gmail: он видит пометку removed в favs.json (в течение ~15 минут).
     Telegram не даёт боту удалять посты старше 48 часов — такие заменяются пометкой."""
     v = st.d["lots"][key]
-    ids = sorted({v["card"], *(v.get("msgs") or []), *([v["head"]] if v.get("head") else [])})
+    # чужие сообщения не трогаем: id, записанные за другими лотами, исключаются
+    other = {i for o in st.d["lots"].values() if o is not v
+             for i in (o.get("card"), o.get("head"), *(o.get("msgs") or [])) if i}
+    ids = sorted({v["card"], *(v.get("msgs") or []), *([v["head"]] if v.get("head") else [])} - other)
     deleted = marked = 0
     for mid in ids:
         r = tg("deleteMessage", chat_id=CHAT, message_id=mid)
         if r.get("ok"):
             deleted += 1
             continue
-        if "not found" in r.get("description", ""):
+        if "message to delete not found" in r.get("description", ""):
             continue
         stub = f"🗑 Лот №{v['n']} удалён"
         r = tg("editMessageCaption", chat_id=CHAT, message_id=mid, caption=stub, reply_markup='{"inline_keyboard":[]}')
@@ -153,6 +156,9 @@ def handle_button(st, q, allowed):
         return
     m = re.fullmatch(r"(del|yes|no):(\d+)", q.get("data") or "")
     msg = q.get("message") or {}
+    if str(msg.get("chat", {}).get("id")) != str(CHAT) or not msg.get("message_id"):
+        tg("answerCallbackQuery", callback_query_id=q["id"], text="Недоступно")
+        return
     key = next((k for k, v in st.d["lots"].items() if m and v.get("n") == int(m.group(2))), None)
     if not m or not key or st.d["lots"][key].get("removed"):
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Лот уже удалён")
