@@ -6867,7 +6867,7 @@
   "autoru_1160620927-3ef34180": {
     "posted_at": "2026-11-02T15:31:09.587948+00:00",
     "message_id": 505,
-    "deleted_at": null,
+    "deleted_at": "2026-11-05T15:44:36.643024+00:00",
     "brand": "Daewoo",
     "model": "Matiz",
     "year": 2010,
@@ -7133,5 +7133,20 @@
     "mileage_km": 270000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/gl5W9o9Bgbpz2VPXS3qPV-GYhJtKr3BluKucqiViYpDoOQ3hbcDXS0qcidvz6f9efBaCJLxU8Pn-xwJd/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/peugeot/308/314904542.html": {
+    "posted_at": "2026-11-05T15:47:29.686594+00:00",
+    "message_id": 523,
+    "deleted_at": null,
+    "brand": "Peugeot",
+    "model": "308",
+    "year": 2008,
+    "price": 280000,
+    "median_price": 420000.0,
+    "median_sample_size": 518,
+    "price_rating": "хорошая цена",
+    "mileage_km": 233000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/xYOc2ebyQSjGATl_09UxStFDVNuhaKY-69daGIR9vKAI4eVXeNzI8Vtd4feLmr5WrY2tDzAySVLlp7b0/gen272wb.jpg"
   }
 }
