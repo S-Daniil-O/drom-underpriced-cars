@@ -7208,5 +7208,20 @@
     "mileage_km": 70000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ZyUYz4UqW19SspFQjrJTcNAVKHfzrBzX-3N3JG27sLAN1s1piPHZe5-horyZEXcXYhriXYFdYDsR_cg_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/mirage/747352531.html": {
+    "posted_at": "2026-11-05T21:39:27.636146+00:00",
+    "message_id": 528,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Mirage",
+    "year": 1998,
+    "price": 202000,
+    "median_price": 240000,
+    "median_sample_size": 853,
+    "price_rating": "нормальная цена",
+    "mileage_km": 182278,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/_uVzlMzGAIbF0XQJXKsXII-RBhMH0bn56PHCqobB4T3TJZGiNspIN5RTfLIAY0UdvpiwDOGyoUMrQq5A/gen272wb.jpg"
   }
 }
