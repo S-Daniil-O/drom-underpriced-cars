@@ -189,8 +189,22 @@
    "btn": true,
    "min_price": 232200.0,
    "requests": 0
+  },
+  "tg-13596": {
+   "n": 11,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/13596",
+   "name": "https://bankrot.torggroup.org/TradeLot/View/13596",
+   "vin": null,
+   "target": null,
+   "card": 438,
+   "added": "2026-11-05T16:42",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": []
   }
  },
- "offset": 177673415,
- "seq": 10
+ "offset": 177673416,
+ "seq": 11
 }
