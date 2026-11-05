@@ -91,7 +91,9 @@
     317,
     318
    ],
-   "hit_target": true
+   "hit_target": true,
+   "ended": true,
+   "removed": true
   },
   "cdt-380409": {
    "n": 6,
@@ -187,6 +189,6 @@
    "requests": 0
   }
  },
- "offset": 177673409,
+ "offset": 177673410,
  "seq": 10
 }
