@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:37:09.607208+00:00"
+"seen_at": "2026-11-05T08:48:18.211988+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-05T08:37:09.607157+00:00"
+"seen_at": "2026-11-05T08:48:18.211962+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:36:52.257045+00:00"
+"seen_at": "2026-11-05T08:48:18.211914+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:36:52.257033+00:00"
+"seen_at": "2026-11-05T08:48:04.081237+00:00"
 },
 {
 "ad_id": "autoru_1160645506-74c3705b",
@@ -72,12 +72,12 @@
 "price": 427000,
 "market_price": 568000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160645506-74c3705b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/2o1WpyCyJc86IrAjR0R0lyoasmlqrrUSG86WJIK1BeRiXbvuOVEMCWw19ESs-D1TbUuM7pwv80VmYMXnlXyEEWNb-iXAWf_B_2TqmFOyqmEKRGWo9BfzhRNavwHdUOn_b5FY012ei7nDrj2cUg2dcQNRTVcRoYBfG_qTZawiqdj0Ylw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/G0-2BTOE6yBWTJfZjFcyz2FmYxmb4edUm7L2vVi3jLyQkPC-Ub2otHYKZUaOzVhzlahvpU_0rr-eepwOK5Qnrt4HvTmFE3ZtmlbaCQCtKhcrv_olUwY-SITAFUxKsB_1Rn9L4QeHP8h-bM7pNr_hTo-kluYGyXrA14eGR_TU3yT3pJ4/1200x900n",
 "mileage_km": 90000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:36:52.257023+00:00"
+"seen_at": "2026-11-05T08:48:04.081227+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:36:52.256998+00:00"
+"seen_at": "2026-11-05T08:48:04.081202+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-05T08:36:52.256981+00:00"
+"seen_at": "2026-11-05T08:48:04.081187+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-05T08:36:52.256948+00:00"
+"seen_at": "2026-11-05T08:48:04.081169+00:00"
+},
+{
+"ad_id": "autoru_1160655673-0b29bc18",
+"source": "autoru",
+"brand": "Audi",
+"model": "80",
+"year": 1991,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/audi/80/1160655673-0b29bc18/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20360782/232f9881794d92cd13fc50d42b080311/1200x900n",
+"mileage_km": 250000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-05T08:48:04.081125+00:00"
 },
 {
 "ad_id": "autoru_1160636024-5e6ff553",
