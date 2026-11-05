@@ -14,7 +14,8 @@
    },
    "ended": true,
    "btn": true,
-   "head": 4
+   "head": 4,
+   "removed": true
   },
   "tg-16839": {
    "n": 2,
@@ -190,6 +191,6 @@
    "requests": 0
   }
  },
- "offset": 177673414,
+ "offset": 177673415,
  "seq": 10
 }
