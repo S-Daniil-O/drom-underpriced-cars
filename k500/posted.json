@@ -7178,5 +7178,20 @@
     "mileage_km": 357000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/GzStp7uVb6s3pCUH5B0ZsPoIFJuFyH5eUF5A5xwgQ3rKii6z0j88yiTZONBm0YVzA7WX_mZaq7b1mFyy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/bmw/7-series/319703279.html": {
+    "posted_at": "2026-11-05T20:39:12.542987+00:00",
+    "message_id": 526,
+    "deleted_at": null,
+    "brand": "BMW",
+    "model": "7-Series",
+    "year": 2004,
+    "price": 350000,
+    "median_price": 450000,
+    "median_sample_size": 851,
+    "price_rating": null,
+    "mileage_km": 436000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/mCkQLYKr_hDeNSY-tZYAhGs0m5_gnTni0NRIqoaUE109meZSM6X-wYqoR3v7HZUzaqW_qf8ceFFXw24C/gen272wb.jpg"
   }
 }
