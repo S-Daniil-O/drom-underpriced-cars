@@ -30,7 +30,7 @@
     "period:05.11.2026 10:00": 1
    },
    "min_price": 90000.0,
-   "requests": 0,
+   "requests": 2,
    "btn": true
   },
   "cdt-383958": {
@@ -41,9 +41,15 @@
    "target": null,
    "card": 60,
    "added": "2026-11-02T15:37",
-   "end": null,
+   "end": "2026-11-02T10:00",
    "sent": {},
-   "btn": true
+   "btn": true,
+   "min_price": 459360.0,
+   "requests": 0,
+   "msgs": [
+    315
+   ],
+   "ended": true
   },
   "cdt-387637": {
    "n": 4,
@@ -53,10 +59,17 @@
    "target": 237600,
    "card": 102,
    "added": "2026-11-02T16:04",
-   "end": null,
-   "sent": {},
+   "end": "2026-11-08T12:00",
+   "sent": {
+    "period:03.11.2026 12:00": 1
+   },
    "btn": true,
-   "head": 103
+   "head": 103,
+   "min_price": 237600.0,
+   "requests": 0,
+   "msgs": [
+    316
+   ]
   },
   "cdt-383751": {
    "n": 5,
@@ -66,10 +79,19 @@
    "target": 64350,
    "card": 104,
    "added": "2026-11-02T16:08",
-   "end": null,
-   "sent": {},
+   "end": "2026-11-07T12:00",
+   "sent": {
+    "period:04.11.2026 12:00": 1
+   },
    "btn": true,
-   "head": 105
+   "head": 105,
+   "min_price": 64350.0,
+   "requests": 0,
+   "msgs": [
+    317,
+    318
+   ],
+   "hit_target": true
   },
   "cdt-380409": {
    "n": 6,
@@ -79,10 +101,21 @@
    "target": 66960,
    "card": 109,
    "added": "2026-11-03T10:51",
-   "end": null,
-   "sent": {},
+   "end": "2026-11-06T10:00",
+   "sent": {
+    "period:03.11.2026 10:00": 1,
+    "warn": 1
+   },
    "btn": true,
-   "head": 110
+   "head": 110,
+   "min_price": 66960.0,
+   "requests": 1,
+   "msgs": [
+    319,
+    320,
+    321
+   ],
+   "hit_target": true
   },
   "cdt-387811": {
    "n": 7,
@@ -92,10 +125,16 @@
    "target": 325620,
    "card": 112,
    "added": "2026-11-03T11:00",
-   "end": null,
+   "end": "2026-11-04T23:59",
    "sent": {},
    "btn": true,
-   "head": 113
+   "head": 113,
+   "min_price": 325620.0,
+   "requests": 0,
+   "msgs": [
+    322
+   ],
+   "ended": true
   },
   "mets-231529-1": {
    "n": 8,
@@ -128,7 +167,7 @@
     "period:04.11.2026 09:00": 1
    },
    "min_price": 960000.0,
-   "requests": 11,
+   "requests": 10,
    "hit_target": true,
    "btn": true,
    "head": 117
@@ -141,9 +180,11 @@
    "target": null,
    "card": 118,
    "added": "2026-11-03T15:50",
-   "end": null,
+   "end": "2026-12-03T23:59",
    "sent": {},
-   "btn": true
+   "btn": true,
+   "min_price": 232200.0,
+   "requests": 0
   }
  },
  "offset": 177673406,
