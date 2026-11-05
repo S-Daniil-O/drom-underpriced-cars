@@ -2081,7 +2081,7 @@
   "_pitch_2026-11-02": {
     "posted_at": "2026-11-02T09:08:29.296767+00:00",
     "message_id": 294,
-    "deleted_at": null
+    "deleted_at": "2026-11-05T09:12:02.610571+00:00"
   },
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/808421694.html": {
     "posted_at": "2026-11-02T09:14:30.291269+00:00",
@@ -2241,5 +2241,10 @@
     "checked_at": "2026-11-04T18:54:53.766141+00:00",
     "vk_post_id": 235,
     "vk_deleted_at": null
+  },
+  "_pitch_2026-11-05": {
+    "posted_at": "2026-11-05T09:12:04.004636+00:00",
+    "message_id": 314,
+    "deleted_at": null
   }
 }
