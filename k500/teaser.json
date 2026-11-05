@@ -2122,20 +2122,20 @@
   "autoru_1160621596-a9aa6502": {
     "posted_at": "2026-11-02T16:16:49.437823+00:00",
     "message_id": 299,
-    "deleted_at": null,
+    "deleted_at": "2026-11-05T18:21:10.492759+00:00",
     "rejected": false,
     "checked_at": "2026-11-02T16:16:49.437823+00:00",
     "vk_post_id": 225,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-05T18:21:10.492759+00:00"
   },
   "https://auto.drom.ru/voronezh/daewoo/matiz/913638558.html": {
     "posted_at": "2026-11-02T18:16:39.472355+00:00",
     "message_id": 300,
-    "deleted_at": null,
+    "deleted_at": "2026-11-05T18:21:10.492759+00:00",
     "rejected": false,
     "checked_at": "2026-11-02T18:16:39.472355+00:00",
     "vk_post_id": 226,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-05T18:21:10.492759+00:00"
   },
   "https://auto.drom.ru/voronezh/kia/avella/432456937.html": {
     "posted_at": "2026-11-02T21:23:53.677182+00:00",
@@ -2254,6 +2254,15 @@
     "rejected": false,
     "checked_at": "2026-11-05T14:48:09.414623+00:00",
     "vk_post_id": 236,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/772888403.html": {
+    "posted_at": "2026-11-05T18:24:14.175612+00:00",
+    "message_id": 317,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-05T18:24:14.175612+00:00",
+    "vk_post_id": 237,
     "vk_deleted_at": null
   }
 }
