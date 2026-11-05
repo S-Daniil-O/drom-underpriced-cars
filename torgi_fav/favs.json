@@ -195,7 +195,7 @@
    "url": "https://bankrot.torggroup.org/TradeLot/View/13596",
    "name": "https://bankrot.torggroup.org/TradeLot/View/13596",
    "vin": null,
-   "target": null,
+   "target": 250000,
    "card": 438,
    "added": "2026-11-05T16:42",
    "end": null,
@@ -205,6 +205,6 @@
    "msgs": []
   }
  },
- "offset": 177673416,
+ "offset": 177673417,
  "seq": 11
 }
