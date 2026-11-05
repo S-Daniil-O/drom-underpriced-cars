@@ -7103,5 +7103,20 @@
     "mileage_km": 340000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/nls3Xw7k1D-o0r2PygFX6hneuTUCbS3Wbh48LVdiuRqbQCZiWLUYYKxp_DKtI5U3vFNMZuNz_Vv231zt/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/377506775.html": {
+    "posted_at": "2026-11-05T04:29:19.614071+00:00",
+    "message_id": 521,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lacetti",
+    "year": 2008,
+    "price": 300000,
+    "median_price": 375000,
+    "median_sample_size": 4297,
+    "price_rating": "нормальная цена",
+    "mileage_km": 450000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/adWg0-uJBZuIoAUAYnMeW8QMqsQCba8j7CbbV0OjxuA4Fvq-A_rqC8-_NsANTf1Igsj-Q6bniO4Asy4Q/gen272wb.jpg"
   }
 }
