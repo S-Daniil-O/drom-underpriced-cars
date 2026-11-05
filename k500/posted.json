@@ -6837,7 +6837,7 @@
   "https://auto.drom.ru/voronezh/lada/2109/833917424.html": {
     "posted_at": "2026-11-02T11:45:22.705059+00:00",
     "message_id": 503,
-    "deleted_at": null,
+    "deleted_at": "2026-11-05T11:59:01.944196+00:00",
     "brand": "Лада",
     "model": "2109",
     "year": 1996,
@@ -6852,7 +6852,7 @@
   "https://auto.drom.ru/voronezh/audi/100/621437672.html": {
     "posted_at": "2026-11-02T11:45:44.230330+00:00",
     "message_id": 504,
-    "deleted_at": null,
+    "deleted_at": "2026-11-05T11:59:03.452657+00:00",
     "brand": "Audi",
     "model": "100",
     "year": 1992,
@@ -7118,5 +7118,20 @@
     "mileage_km": 450000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/adWg0-uJBZuIoAUAYnMeW8QMqsQCba8j7CbbV0OjxuA4Fvq-A_rqC8-_NsANTf1Igsj-Q6bniO4Asy4Q/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/303469178.html": {
+    "posted_at": "2026-11-05T12:02:02.528993+00:00",
+    "message_id": 522,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2110",
+    "year": 2006,
+    "price": 165000,
+    "median_price": 195000.0,
+    "median_sample_size": 7004,
+    "price_rating": "нормальная цена",
+    "mileage_km": 270000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/gl5W9o9Bgbpz2VPXS3qPV-GYhJtKr3BluKucqiViYpDoOQ3hbcDXS0qcidvz6f9efBaCJLxU8Pn-xwJd/gen272wb.jpg"
   }
 }
