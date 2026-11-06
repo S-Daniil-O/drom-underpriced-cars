@@ -432,6 +432,9 @@ def heal(st):
             log(f"лот №{v['n']}: карточка не восстановлена: {c.get('description')}")
             continue
         # фото могли уцелеть: заново отправляем, только если от прежних сообщений лота ничего нет
+        for old in (v.get("sched_msg"), v.get("market_msg")):   # старые график и рынок заменятся новыми
+            if old:
+                tg("deleteMessage", chat_id=FORUM, message_id=old)
         alive = [m for m in (v.get("msgs") or []) if m not in (v.get("sched_msg"), v.get("market_msg")) and msg_exists(FORUM, m)]
         if not alive:
             v.update({"photos_done": False, "no_photos": False})
@@ -731,6 +734,7 @@ def update_market(st, v, mk, sched, now):
             log(f"рынок лота №{v['n']}: {r.get('description')}")
             if "not found" in r.get("description", ""):
                 v["market_msg"] = None      # сообщение удалили — создадим заново при следующей проверке
+                v["market_text"] = None
                 st.dirty = True
             return
     else:
