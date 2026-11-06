@@ -193,7 +193,9 @@
    "requests": 0,
    "msgs": [
     440
-   ]
+   ],
+   "ended": true,
+   "removed": true
   },
   "tg-13596": {
    "n": 11,
@@ -210,6 +212,6 @@
    "msgs": []
   }
  },
- "offset": 177673418,
+ "offset": 177673419,
  "seq": 11
 }
