@@ -320,6 +320,8 @@ def audit_text(st):
             miss.append("нет графика")
         if not v.get("photos_done"):
             miss.append("нет фото" + (" (придут после 10:00)" if k.startswith("mets-") else ""))
+        elif v.get("no_photos"):
+            miss.append("на площадке фото нет")
         if not v.get("vin"):
             miss.append("нет VIN — письма сложнее привязать")
         title = v["name"] if has_name(v) else f"лот {k}"
@@ -583,6 +585,10 @@ def check(st, live, img_dir):
             update_schedule(st, v, sched, now, info.get("requests"))
         if info.get("photos") and not v.get("photos_done"):
             send_photos(st, v, info["photos"], photos_dir)
+        elif "photos" in info and not info["photos"] and not v.get("photos_done"):
+            v["photos_done"] = True        # на площадке у лота фото нет — ждать нечего
+            v["no_photos"] = True
+            st.dirty = True
         end = parse_dt(v["end"]) if v.get("end") else None
         sent = v.setdefault("sent", {})
         def say(t, v=v):
