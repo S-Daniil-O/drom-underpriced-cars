@@ -14,8 +14,9 @@ jobs:
           import json, os, re, urllib.request
           raw = os.environ.get("U", "")
           u = re.sub(r"\s+", "", raw)
-          print("адрес задан:", bool(u), "| лишних символов:", len(raw) - len(u), "| вид /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u)))
-          if not re.fullmatch(r"https://script\.google\.com/macros/s/[\w-]+/exec\?key=[\w-]+", u):
+          print("адрес задан:", bool(u), "| лишних символов:", len(raw) - len(u), "| вид /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u)),
+                "| есть /u/ или /a/:", bool(re.search(r"google\.com/(u|a)/", u)))
+          if not re.fullmatch(r"https://script\.google\.com/[\w./-]+/exec\?key=[\w-]+", u):
               raise SystemExit("адрес неверного вида — запрос не выполняется")
           try:
               r = urllib.request.urlopen(u, timeout=60)
@@ -26,7 +27,7 @@ jobs:
                   good = [x for x in refs if isinstance(x, str) and re.fullmatch(r"(cdt|tg|tgtrade)-[0-9]{1,12}|mets-[0-9]{1,12}-[0-9]{1,12}", x)]
                   print("ЛОТОВ В ОЧЕРЕДИ:", len(refs), "| правильных:", len(good))
               except ValueError:
-                  print("ответ не JSON (нет доступа «Все» или старое развертывание)")
+                  print("ответ не JSON (нет доступа «Все» или старое развертывание); начало страницы вход Google:", "accounts.google" in b[:3000] or "signin" in b[:3000].lower())
           except Exception as e:
               print("ошибка:", type(e).__name__)
           PY

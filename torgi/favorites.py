@@ -473,7 +473,7 @@ def resolve_ref(st, ref):
 
 def poll_mail_refs(st):
     """Спросить у скрипта Gmail, по каким лотам пришли письма, и создать для них темы."""
-    if not re.fullmatch(r"https://script\.google\.com/macros/s/[\w-]+/exec\?key=[\w-]+", MAIL_URL):
+    if not re.fullmatch(r"https://script\.google\.com/[\w./-]+/exec\?key=[\w-]+", MAIL_URL):
         return False          # адрес не задан или неверного вида — обращаться некуда
     try:
         refs = requests.get(MAIL_URL, timeout=60).json().get("refs", [])
