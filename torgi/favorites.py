@@ -5,7 +5,8 @@
     можно с текстом «цена 350000» — лот добавится в «Мои лоты»;
   • /цена <номер> <сумма> — задать свою цену (номер — из списка);
   • /убрать <номер> или кнопка «🗑 Удалить лот» на карточке — удалить лот и всё по нему из канала;
-  • /список — что отслеживается.
+  • /список — что отслеживается;
+  • /check или /проверка — у каких лотов всё на месте и чего не хватает.
 В группе с темами команда /link переносит лоты в отдельные темы (одна тема — один лот).
 Команды принимаются только от администраторов канала «Мои лоты».
 
@@ -25,11 +26,14 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
 import requests
+
+import torgi_monitor as tm    # разбор площадок (ЦДТ и ТоргГрупп открываются с GitHub, МЭТС — нет)
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
 CHAT = os.environ["TORGI_FAV_CHAT_ID"]
@@ -55,16 +59,20 @@ def place(v):
     return {"chat_id": CHAT, "reply_to_message_id": v["card"], "allow_sending_without_reply": "true"}
 
 
+def has_name(v):
+    return bool(v.get("name")) and not str(v["name"]).startswith("http")
+
+
 def topic_title(v):
-    """Название темы: по списку тем видно машину, минимальную цену и срок."""
-    name = str(v.get("name") or "")
-    name = f"лот {v['n']}" if name.startswith("http") else name
-    t = f"№{v['n']} {name}"
+    """Название темы: марка и модель, минимальная цена, срок, номер лота."""
+    t = v["name"] if has_name(v) else f"Лот №{v['n']}"
     if v.get("min_price"):
         t += f" · мин {int(round(v['min_price'] / 1000))} т.р."
     e = parse_dt(v["end"]) if v.get("end") else None
     if e:
         t += f" · до {e:%d.%m}"
+    if has_name(v):
+        t += f" · №{v['n']}"
     return ("🏁 " + t if v.get("ended") else t)[:128]
 
 
@@ -293,6 +301,34 @@ def add_buttons(st):
         log(f"кнопка на карточке №{v['n']}: {r.get('ok')} {r.get('description', '')}")
 
 
+# ---------------------------------------------------------------- проверка
+def audit_text(st):
+    """Отчёт: у каких лотов всё на месте и чего не хватает."""
+    ok, bad, done = [], [], 0
+    for k, v in sorted(st.d["lots"].items(), key=lambda x: x[1]["n"]):
+        if v.get("removed"):
+            continue
+        if v.get("ended"):
+            done += 1
+            continue
+        miss = []
+        if FORUM and not v.get("topic"):
+            miss.append("нет темы")
+        if not has_name(v):
+            miss.append("нет марки и модели")
+        if not v.get("sched_msg"):
+            miss.append("нет графика")
+        if not v.get("photos_done"):
+            miss.append("нет фото" + (" (придут после 10:00)" if k.startswith("mets-") else ""))
+        if not v.get("vin"):
+            miss.append("нет VIN — письма сложнее привязать")
+        title = v["name"] if has_name(v) else f"лот {k}"
+        (bad if miss else ok).append(f"{'⚠️' if miss else '✅'} №{v['n']} {title}" + (": " + ", ".join(miss) if miss else ""))
+    lines = [f"🔎 Проверка «Моих лотов»: в работе {len(ok) + len(bad)}, всё на месте у {len(ok)}, завершённых {done}.", ""] + bad + ok
+    lines += ["", "Письма проверяет скрипт Gmail: функция auditMail."]
+    return "\n".join(lines)[:4000]
+
+
 # ---------------------------------------------------------------- команды
 def admins(st):
     """Кто управляет ботом: администраторы канала «Мои лоты». Их список запоминается при /link,
@@ -322,6 +358,12 @@ def handle(st, msg, allowed):
     urls = [e.get("url") for e in ents if e.get("url")] + re.findall(r"https?://\S+", text)
     lots = st.d["lots"]
 
+    if re.match(r"/(check|проверка)\b", text):
+        DIRECT.clear()
+        st.d["want_check"] = chat
+        st.dirty = True
+        tg("sendMessage", chat_id=chat, text="Проверяю лоты, это займёт минуту…")
+        return
     if text.startswith("/start") or text.startswith("/help"):
         tg("sendMessage", chat_id=chat, text=__doc__.split("Уведомления")[0].split("Как пользоваться")[1].strip())
         return
@@ -491,12 +533,46 @@ def send_photos(st, v, names, img_dir):
 
 
 # ---------------------------------------------------------------- уведомления
+DIRECT = {}                                  # данные, загруженные ботом прямо с площадок
+DIRECT_DIR = Path(tempfile.mkdtemp())
+
+
+def direct_info(lid, v):
+    """ЦДТ и ТоргГрупп: если от iMac ещё нет данных — загрузить самому (один раз за запуск)."""
+    if lid.startswith("mets-"):
+        return {}
+    if lid not in DIRECT:
+        try:
+            DIRECT[lid] = tm.fav_fetch(lid, v, DIRECT_DIR) or {}
+        except Exception as e:  # noqa: BLE001 — сбой площадки не должен ронять бота
+            log(f"лот {lid}: не загрузился с площадки ({e})")
+            return {}
+    return DIRECT[lid]
+
+
 def check(st, live, img_dir):
     now = now_msk()
     for lid, v in st.d["lots"].items():
         if v.get("ended"):
             continue
         info = live.get(lid) or {}
+        photos_dir = img_dir
+        need_more = not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
+        if need_more:
+            extra = direct_info(lid, v)
+            if extra:
+                if not info.get("photos") and extra.get("photos"):
+                    photos_dir = DIRECT_DIR
+                info = {**extra, **{k: x for k, x in info.items() if x}}
+        if info.get("name") and not has_name(v):
+            v["name"] = info["name"]
+            st.dirty = True
+        if info.get("vin") and not v.get("vin"):
+            v["vin"] = info["vin"]
+            st.dirty = True
+        if info.get("trade") and not v.get("trade"):
+            v["trade"] = info["trade"]
+            st.dirty = True
         sched = [r for r in info.get("schedule") or [] if parse_dt(r[0]) and parse_dt(r[1]) and r[2]]
         if sched:
             v["end"] = max(parse_dt(r[1]) for r in sched).strftime("%Y-%m-%dT%H:%M")
@@ -506,7 +582,7 @@ def check(st, live, img_dir):
             st.dirty = True
             update_schedule(st, v, sched, now, info.get("requests"))
         if info.get("photos") and not v.get("photos_done"):
-            send_photos(st, v, info["photos"], img_dir)
+            send_photos(st, v, info["photos"], photos_dir)
         end = parse_dt(v["end"]) if v.get("end") else None
         sent = v.setdefault("sent", {})
         def say(t, v=v):
@@ -540,6 +616,13 @@ def check(st, live, img_dir):
         update_topic(st, v)
 
 
+def u_new(st):
+    """Появился лот без графика или запрошена проверка — проверить сразу, не ждать 30 минут."""
+    return bool(st.d.get("want_check")) or any(
+        not v.get("ended") and not v.get("sched_msg") and not v.get("tried") and not k.startswith("mets-")
+        for k, v in st.d["lots"].items())
+
+
 def main():
     global FORUM
     st = State(sys.argv[1])
@@ -559,6 +642,12 @@ def main():
             subprocess.run(["git", "-C", inbox, "reset", "-q", "--hard", "FETCH_HEAD"], capture_output=True)
             live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
             check(st, live, lots_file.parent / "img")
+            for k, v in st.d["lots"].items():
+                if not v.get("ended") and not v.get("sched_msg"):
+                    v["tried"] = True      # не повторять проверку сразу: следующая — через полчаса
+            if st.d.get("want_check"):
+                tg("sendMessage", chat_id=st.d.pop("want_check"), text=audit_text(st))
+                st.dirty = True
             st.save()
             allowed = admins(st) or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
@@ -573,6 +662,8 @@ def main():
                     handle_button(st, u["callback_query"], allowed)
             except Exception as e:  # noqa: BLE001 — одна плохая команда не должна ронять бота
                 log(f"ошибка обработки: {e}")
+        if u_new(st):
+            next_check = 0
         st.save()
     log("время работы вышло")
 

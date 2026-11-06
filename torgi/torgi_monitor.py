@@ -326,7 +326,11 @@ def mets_start_price(lot):
     lot["photos"] = [urljoin("https://m-ets.ru/", u) for u in dict.fromkeys(
         re.findall(r'["\'(]((?:https?://m-ets\.ru/|/)?download/\d+/[^"\')\s]+\.(?:jpe?g|png|webp))', t, re.I))
         if "_thumb_" not in u]
+    og = re.search(r'og:title" content="(?:Купить\s+)?([^"]*?)(?:\.\s*Лот:[^"]*)?"', t)
+    if og and not lot.get("title"):
+        lot["title"] = strip_html(og.group(1))
     t = strip_html(re.sub(r"<script.*?</script>", "", t, flags=re.S))
+    lot["page_vin"] = parse_vin(t)[0]
     m = re.search(r"Начальная цена продажи имущества, руб\.\s*([\d\s\xa0]+)", t) or \
         re.search(r"([\d\xa0 ]{4,})\s*₽\s*Начальная цена", t)
     if m:
@@ -415,7 +419,9 @@ def tg_detail(row, any_lot=False):
     desc = field("Сведения об имуществе, его составе, характеристиках, описание")
     return {
         "source": "ТоргГрупп", "id": f"tg-{row['lot_id']}", "url": url,
-        "title": row["name"], "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
+        "title": re.split(r"\s+Дата и время", field("Наименование"))[0] if any_lot else row["name"],
+        "trade": (re.search(r"публичном предложении\s*№\s*(\d+)", t) or [None, None])[1],
+        "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
         "start_price": to_float(field("Начальная цена продажи имущества, руб")) or prices[0],
         "current_price": cur or prices[0], "min_price": min(prices),
         "end_date": sched[-1][1][:10], "status": row["status"],
@@ -988,10 +994,63 @@ def write_active(lots, path):
 FAV_MAX_PHOTOS = 20      # сколько фото лота загружать в «Мои лоты» (Telegram: по 10 в альбоме)
 
 
+def car_title(text):
+    """«Lada Priora, 2011» из текста лота."""
+    car = parse_car(text or "")
+    if not car:
+        return None
+    brand, models, year = car
+    models = [models] if isinstance(models, str) else [m for m in models if m]
+    model = models[-1]
+    if model in ("land", "grand", "range") and len(models) > 1:
+        model = models[-2]
+    return f"{brand.replace('_', ' ').title()} {model.replace('_', ' ').replace('-', ' ').title()}" + (f", {car[2]}" if car[2] else "")
+
+
+def fav_fetch(lid, v, img_dir):
+    """Всё по одному лоту: график, заявки, название, VIN, фото (если ещё не отправлены)."""
+    d = None
+    if lid.startswith("cdt-"):
+        d = cdt_detail({"tradeId": lid[4:], "priceBegin": None})
+    elif lid.startswith("mets-"):
+        d = {"url": f"https://m-ets.ru/{lid[5:]}", "source": "МЭТС"}
+        mets_start_price(d)
+    elif lid.startswith("tg-"):
+        d = tg_detail({"lot_id": lid[3:], "name": v.get("name", ""), "status": ""}, any_lot=True)
+    if not d or not d.get("schedule"):
+        return None
+    text = (d.get("title") or "") + " " + (d.get("description") or "")
+    vin, vin_year = parse_vin(text)
+    if d.get("page_vin"):
+        vin, vin_year = parse_vin(d["page_vin"])
+    name = car_title(d.get("title") or "") or car_title(text)
+    if name and vin_year and not re.search(r", \d{4}$", name):   # год не указан текстом — по VIN
+        name += f", {vin_year}"
+    out = {"schedule": [list(r[:4]) for r in d["schedule"]], "requests": d.get("requests"),
+           "name": name, "vin": vin, "trade": d.get("trade")}
+    if v.get("photos_done"):
+        return out
+    names = []
+    for url in (d.get("photos") or [])[:FAV_MAX_PHOTOS]:
+        if not image_url_ok(url):
+            continue
+        try:
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
+        except requests.RequestException:
+            continue
+        if r.ok and r.headers.get("content-type", "").startswith("image") and 5_000 < len(r.content) < 9_000_000:
+            img_dir.mkdir(parents=True, exist_ok=True)
+            name = f"{re.sub(r'[^A-Za-z0-9_-]', '_', lid)}_{len(names):02d}.jpg"
+            (img_dir / name).write_bytes(r.content)
+            names.append(name)
+    out["photos"] = names
+    return out
+
+
 def fav_lots(favs_path, out_path):
-    """График, заявки и фото по лотам из «Моих лотов» (ветка state: torgi_fav/favs.json) —
-    для GitHub (площадки не открываются с его серверов). Фото скачиваются один раз:
-    пока бот не отметил лот как photos_done."""
+    """График, заявки, название и фото по лотам из «Моих лотов» (ветка state: torgi_fav/favs.json).
+    Нужно прежде всего для МЭТС: она не открывается с серверов GitHub. ЦДТ и ТоргГрупп бот
+    может загрузить и сам. Фото скачиваются, пока бот не отметил лот как photos_done."""
     favs = json.loads(Path(favs_path).read_text()).get("lots", {}) if Path(favs_path).exists() else {}
     out = {}
     img_dir = Path(out_path).parent / "img"
@@ -999,36 +1058,13 @@ def fav_lots(favs_path, out_path):
     for lid, v in favs.items():
         if v.get("ended"):
             continue
-        d = None
         try:
-            if lid.startswith("cdt-"):
-                d = cdt_detail({"tradeId": lid[4:], "priceBegin": None})
-            elif lid.startswith("mets-"):
-                d = {"url": f"https://m-ets.ru/{lid[5:]}", "source": "МЭТС"}
-                mets_start_price(d)
-            elif lid.startswith("tg-"):
-                d = tg_detail({"lot_id": lid[3:], "name": v.get("name", ""), "status": ""}, any_lot=True)
+            d = fav_fetch(lid, v, img_dir)
         except Exception as e:  # noqa: BLE001
             log(f"«Мои лоты»: {lid} не загрузился ({e})")
-        if not d or not d.get("schedule"):
             continue
-        out[lid] = {"schedule": [list(r[:4]) for r in d["schedule"]], "requests": d.get("requests")}
-        if v.get("photos_done"):
-            continue
-        names = []
-        for url in (d.get("photos") or [])[:FAV_MAX_PHOTOS]:
-            if not image_url_ok(url):
-                continue
-            try:
-                r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
-            except requests.RequestException:
-                continue
-            if r.ok and r.headers.get("content-type", "").startswith("image") and 5_000 < len(r.content) < 9_000_000:
-                img_dir.mkdir(parents=True, exist_ok=True)
-                name = f"{re.sub(r'[^A-Za-z0-9_-]', '_', lid)}_{len(names):02d}.jpg"
-                (img_dir / name).write_bytes(r.content)
-                names.append(name)
-        out[lid]["photos"] = names
+        if d:
+            out[lid] = d
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     Path(out_path).write_text(json.dumps({"created": time.strftime("%Y-%m-%dT%H:%M"), "lots": out}, ensure_ascii=False))
     log(f"«Мои лоты»: обновлено {len(out)} из {len(favs)}, фото: {sum(len(x.get('photos') or []) for x in out.values())}")
