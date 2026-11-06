@@ -132,7 +132,7 @@ def link_forum(st, chat_id, allowed):
             continue
         v["card"] = mid
         # график и фото придут в тему заново
-        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False})
+        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False, "no_photos": False})
         moved += 1
         time.sleep(3)
     tg("sendMessage", chat_id=FORUM, text=f"✅ Группа подключена. Лотов перенесено в темы: {moved}.\n"
@@ -320,15 +320,19 @@ def audit_text(st):
             miss.append("нет графика")
         if not v.get("photos_done"):
             miss.append("нет фото" + (" (придут после 10:00)" if k.startswith("mets-") else ""))
-        elif v.get("no_photos"):
-            miss.append("на площадке фото нет")
         if not v.get("vin"):
             miss.append("нет VIN — письма сложнее привязать")
         title = v["name"] if has_name(v) else f"лот {k}"
+        if v.get("no_photos"):
+            title += " (на площадке фото нет)"
         (bad if miss else ok).append(f"{'⚠️' if miss else '✅'} №{v['n']} {title}" + (": " + ", ".join(miss) if miss else ""))
-    lines = [f"🔎 Проверка «Моих лотов»: в работе {len(ok) + len(bad)}, всё на месте у {len(ok)}, завершённых {done}.", ""] + bad + ok
-    lines += ["", "Письма проверяет скрипт Gmail: функция auditMail."]
-    return "\n".join(lines)[:4000]
+    head = [f"🔎 Проверка «Моих лотов»: в работе {len(ok) + len(bad)}, всё на месте у {len(ok)}, завершённых {done}.", ""]
+    tail = ["", "Письма проверяет скрипт Gmail: функция auditMail."]
+    rows = bad + ok      # сначала проблемы; если не влезает — видно, сколько строк скрыто
+    while rows and len("\n".join(head + rows + tail)) > 3900:
+        rows = rows[:-1]
+    hidden = len(bad) + len(ok) - len(rows)
+    return "\n".join(head + rows + ([f"…ещё лотов: {hidden}"] if hidden else []) + tail)
 
 
 # ---------------------------------------------------------------- команды
@@ -530,6 +534,7 @@ def send_photos(st, v, names, img_dir):
         time.sleep(2)
     if ok:
         v["photos_done"] = True
+        v.pop("no_photos", None)
     st.dirty = True
     log(f"фото лота №{v['n']}: {len(paths)}, успешно: {ok}")
 
@@ -585,8 +590,8 @@ def check(st, live, img_dir):
             update_schedule(st, v, sched, now, info.get("requests"))
         if info.get("photos") and not v.get("photos_done"):
             send_photos(st, v, info["photos"], photos_dir)
-        elif "photos" in info and not info["photos"] and not v.get("photos_done"):
-            v["photos_done"] = True        # на площадке у лота фото нет — ждать нечего
+        elif info.get("photos_total") == 0 and not v.get("photos_done"):
+            v["photos_done"] = True        # площадка сообщила: фото у лота нет. Сбой скачивания сюда не попадает
             v["no_photos"] = True
             st.dirty = True
         end = parse_dt(v["end"]) if v.get("end") else None

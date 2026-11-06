@@ -1044,6 +1044,7 @@ def fav_fetch(lid, v, img_dir):
             (img_dir / name).write_bytes(r.content)
             names.append(name)
     out["photos"] = names
+    out["photos_total"] = len(d.get("photos") or [])   # сколько фото указано на площадке
     return out
 
 
