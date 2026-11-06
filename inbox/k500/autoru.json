@@ -13,39 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:46.122390+00:00"
-},
-{
-"ad_id": "autoru_1160650329-78cb51c9",
-"source": "autoru",
-"brand": "BYD",
-"model": "Flyer",
-"year": 2006,
-"price": 60000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
-"mileage_km": 140000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T15:07:46.122372+00:00"
-},
-{
-"ad_id": "autoru_1160651646-9f8434da",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 1994,
-"price": 450000,
-"market_price": 189000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160651646-9f8434da/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/d7c60a38afa991e1825b993d01f69909/1200x900n",
-"mileage_km": 45000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Слобода Подгорное",
-"seen_at": "2026-11-06T15:07:46.122354+00:00"
+"seen_at": "2026-11-06T15:18:54.254284+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -61,7 +29,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:46.122334+00:00"
+"seen_at": "2026-11-06T15:18:54.254250+00:00"
+},
+{
+"ad_id": "autoru_1160650329-78cb51c9",
+"source": "autoru",
+"brand": "BYD",
+"model": "Flyer",
+"year": 2006,
+"price": 60000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
+"mileage_km": 140000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T15:18:54.254215+00:00"
+},
+{
+"ad_id": "autoru_1160651646-9f8434da",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 1994,
+"price": 450000,
+"market_price": 189000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160651646-9f8434da/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/d7c60a38afa991e1825b993d01f69909/1200x900n",
+"mileage_km": 45000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Слобода Подгорное",
+"seen_at": "2026-11-06T15:18:54.254195+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:46.122301+00:00"
+"seen_at": "2026-11-06T15:18:54.254174+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:46.122256+00:00"
+"seen_at": "2026-11-06T15:18:54.254126+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:31.446806+00:00"
+"seen_at": "2026-11-06T15:18:41.076415+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:31.446786+00:00"
+"seen_at": "2026-11-06T15:18:41.076393+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -136,12 +136,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/I4mRl2INXrgEKUUU9fe8da8Q8sv_xmKO4IeuGlf6y5w3Xzl_urpn9qgkrU7AcHlVN2WifOIp7hh7z8AxcxwqKOpAig9aElmuyckdCCKkVRGbmt6zWg2kKXxXusvWXnEuWam3ljAQ7kJ-gBs9fmCAkYtEIZcwxzEdhgg5LM65NlHVGrg/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/reWpRWO1QqlzkxavdHr0IRbeNRfpK6rwQS4UL886bir4enFLxkSTpdbjv9v6ySmFUszAIMRVlGOJXVhUiKnr37QLnRCZ1EvV-otyFjFIeQkTaCUM2r1ZrQ18u27avYZXUEsGi5TGoJqREVp_8DirqbfVMiOVQniKrdDK_-LkV7NRrvc/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T15:07:31.446738+00:00"
+"seen_at": "2026-11-06T15:18:41.076342+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
