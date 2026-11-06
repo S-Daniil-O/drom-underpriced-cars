@@ -212,8 +212,22 @@
    "msgs": [],
    "ended": true,
    "removed": true
+  },
+  "cdt-391227": {
+   "n": 12,
+   "url": "https://torgi.cdtrf.ru/trades/391227",
+   "name": "https://torgi.cdtrf.ru/trades/391227",
+   "vin": null,
+   "target": null,
+   "card": 441,
+   "added": "2026-11-06T09:27",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": 442,
+   "msgs": []
   }
  },
- "offset": 177673422,
- "seq": 11
+ "offset": 177673423,
+ "seq": 12
 }
