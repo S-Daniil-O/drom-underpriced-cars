@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:56.431947+00:00"
+"seen_at": "2026-11-06T14:34:16.254890+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:56.431929+00:00"
+"seen_at": "2026-11-06T14:34:16.254875+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:56.431895+00:00"
+"seen_at": "2026-11-06T14:34:16.254844+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-06T14:22:56.431875+00:00"
+"seen_at": "2026-11-06T14:34:16.254827+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:56.431852+00:00"
+"seen_at": "2026-11-06T14:34:16.254808+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -93,23 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:56.431803+00:00"
-},
-{
-"ad_id": "autoru_1160666354-f8b9ae5d",
-"source": "autoru",
-"brand": "Chery",
-"model": "Kimo (A1)",
-"year": 2009,
-"price": 300000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chery/kimo/1160666354-f8b9ae5d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2003768/e2b040f3ae7d3c768f2f8f515b3bcfa1/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T14:22:36.839736+00:00"
+"seen_at": "2026-11-06T14:34:16.254763+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -125,7 +109,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T14:22:36.839697+00:00"
+"seen_at": "2026-11-06T14:33:55.511223+00:00"
+},
+{
+"ad_id": "autoru_1160666354-f8b9ae5d",
+"source": "autoru",
+"brand": "Chery",
+"model": "Kimo (A1)",
+"year": 2009,
+"price": 300000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chery/kimo/1160666354-f8b9ae5d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2003768/e2b040f3ae7d3c768f2f8f515b3bcfa1/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T14:33:55.511171+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
