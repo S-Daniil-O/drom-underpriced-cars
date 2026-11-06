@@ -391,13 +391,14 @@ def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=No
 MAIL_URL = os.environ.get("TORGI_MAIL_URL", "")   # веб-адрес скрипта Gmail: номера лотов из новых писем
 REF = re.compile(r"(cdt-[0-9]+|mets-[0-9]+-[0-9]+|tg-[0-9]+|tgtrade-[0-9]+)")
 _ref_failed = set()
+AUTO_LOTS_PER_DAY = 20   # не больше стольких тем в день создаётся автоматически по письмам
 
 
 def resolve_ref(st, ref):
     """Номер из письма → номер лота. У ТоргГрупп в письме номер торгов — лот берём со страницы торгов."""
     if not ref.startswith("tgtrade-"):
-        return ref, None
-    trade = ref[8:]
+        return re.sub(r"[0-9]+", lambda m: str(int(m.group())), ref), None   # единый вид номера
+    trade = str(int(ref[8:]))
     known = next((k for k, v in st.d["lots"].items() if str(v.get("trade")) == trade), None)
     if known:
         return known, trade
@@ -429,12 +430,23 @@ def poll_mail_refs(st):
             continue
         if lid in st.d["lots"]:         # уже есть или удалён владельцем — заново не создаём
             continue
+        today = now_msk().strftime("%Y-%m-%d")
+        if st.d.get("auto_day") != today:
+            st.d["auto_day"], st.d["auto_count"] = today, 0
+        if st.d["auto_count"] >= AUTO_LOTS_PER_DAY:
+            log("лимит автоматических лотов за день исчерпан")
+            break
         info = direct_info(lid, {})
+        if not lid.startswith("mets-") and not info.get("schedule"):   # лота нет на площадке — тему не создаём
+            _ref_failed.add(ref)
+            log(f"письмо: {lid} не подтвердился на площадке")
+            continue
         n = create_lot(st, lid, info.get("name"), info.get("vin"), note="\n📩 Создан автоматически по письму.")
         if not n:
             _ref_failed.add(ref)
             continue
         st.d["lots"][lid]["trade"] = trade or info.get("trade")
+        st.d["auto_count"] += 1
         log(f"лот №{n} создан по письму: {lid}")
         created = True
     return created
