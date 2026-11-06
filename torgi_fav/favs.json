@@ -814,10 +814,11 @@
    "photos_done": true,
    "no_photos": true,
    "ended": true,
-   "closed": true
+   "closed": true,
+   "removed": true
   }
  },
- "offset": 177673730,
+ "offset": 177673731,
  "seq": 28,
  "forum": -1004498088083,
  "owners": [
