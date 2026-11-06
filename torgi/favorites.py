@@ -352,6 +352,94 @@ def admins(st):
     return ids | set(st.d.get("owners", []))
 
 
+def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=None, note=""):
+    """Новый лот: тема (если подключена группа) и карточка. График и фото придут при проверке."""
+    url = canonical_url(lid)
+    st.d["seq"] += 1
+    n = st.d["seq"]
+    name = name or url
+    head = f"⭐ МОЙ ЛОТ №{n}" + (f" — моя цена {money(target)}" if target else "") + f"\n#лот{n}" + note
+    draft = {"n": n, "name": name, "end": end}
+    if FORUM and not make_topic(draft):
+        st.d["seq"] -= 1
+        return None
+    where = {"chat_id": FORUM, "message_thread_id": draft["topic"]} if FORUM else {"chat_id": CHAT}
+    head_id = None
+    if copy_from:
+        r = tg("copyMessage", from_chat_id=copy_from[0], message_id=copy_from[1], reply_markup=kb_main(n), **where)
+        card = r.get("result", {}).get("message_id")
+        if card:
+            hr = tg("sendMessage", text=head + "\nГрафик, фото и письма по лоту придут сюда.", **{**where, "reply_to_message_id": card})
+            head_id = hr.get("result", {}).get("message_id")
+    else:
+        r = tg("sendMessage", text=f"{head}\n{url}", reply_markup=kb_main(n), **where)
+        card = r.get("result", {}).get("message_id")
+    if not card:
+        if draft.get("topic"):
+            tg("deleteForumTopic", chat_id=FORUM, message_thread_id=draft["topic"])
+        st.d["seq"] -= 1
+        return None
+    st.d["lots"][lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
+                         "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
+                         "btn": True, "head": head_id, "msgs": [],
+                         "topic": draft.get("topic"), "title": draft.get("title")}
+    st.dirty = True
+    return n
+
+
+# ---------------------------------------------------------------- лоты из писем
+MAIL_URL = os.environ.get("TORGI_MAIL_URL", "")   # веб-адрес скрипта Gmail: номера лотов из новых писем
+REF = re.compile(r"(cdt-[0-9]+|mets-[0-9]+-[0-9]+|tg-[0-9]+|tgtrade-[0-9]+)")
+_ref_failed = set()
+
+
+def resolve_ref(st, ref):
+    """Номер из письма → номер лота. У ТоргГрупп в письме номер торгов — лот берём со страницы торгов."""
+    if not ref.startswith("tgtrade-"):
+        return ref, None
+    trade = ref[8:]
+    known = next((k for k, v in st.d["lots"].items() if str(v.get("trade")) == trade), None)
+    if known:
+        return known, trade
+    r = requests.get(f"{tm.TG_BASE}/Trade/View/{trade}", headers={"User-Agent": tm.UA}, timeout=60)
+    m = re.search(r"/TradeLot/View/([0-9]+)", r.text) if r.ok else None
+    return (f"tg-{int(m.group(1))}", trade) if m else (None, trade)
+
+
+def poll_mail_refs(st):
+    """Спросить у скрипта Gmail, по каким лотам пришли письма, и создать для них темы."""
+    if not MAIL_URL:
+        return False
+    try:
+        refs = requests.get(MAIL_URL, timeout=60).json().get("refs", [])
+    except (requests.RequestException, ValueError) as e:
+        log(f"скрипт Gmail не ответил: {type(e).__name__}")
+        return False
+    created = False
+    for ref in refs[:5]:
+        if not (isinstance(ref, str) and REF.fullmatch(ref)) or ref in _ref_failed:
+            continue
+        try:
+            lid, trade = resolve_ref(st, ref)
+        except requests.RequestException:
+            continue
+        if not lid:
+            _ref_failed.add(ref)
+            log(f"письмо: лот {ref} не найден на площадке")
+            continue
+        if lid in st.d["lots"]:         # уже есть или удалён владельцем — заново не создаём
+            continue
+        info = direct_info(lid, {})
+        n = create_lot(st, lid, info.get("name"), info.get("vin"), note="\n📩 Создан автоматически по письму.")
+        if not n:
+            _ref_failed.add(ref)
+            continue
+        st.d["lots"][lid]["trade"] = trade or info.get("trade")
+        log(f"лот №{n} создан по письму: {lid}")
+        created = True
+    return created
+
+
 def is_editor(st, who):
     """Имя из EDITORS привязывается к номеру пользователя при первом обращении: дальше доступ
     определяет номер. Смена имени доступ не отнимает, а занявший чужое имя доступа не получит."""
@@ -460,8 +548,6 @@ def handle(st, msg, allowed):
         tg("sendMessage", chat_id=chat, text=f"Уже в «Моих лотах» (№{lots[lid]['n']})" + (f", цена обновлена: {money(target)}" if target else "."))
         return
 
-    st.d["seq"] += 1
-    n = st.d["seq"]
     name = (re.search(r"🔨 ([^\n]+)", text) or [None, ""])[1] or url
     vin = (re.search(r"VIN[:\s-]*([A-HJ-NPR-Z0-9]{17})", text, re.I) or [None, None])[1]
     end = None
@@ -471,36 +557,13 @@ def handle(st, msg, allowed):
         if e and len(em.group(1)) == 10:
             e = e.replace(hour=23, minute=59)
         end = e.strftime("%Y-%m-%dT%H:%M") if e else None
-    head = f"⭐ МОЙ ЛОТ №{n}" + (f" — моя цена {money(target)}" if target else "") + f"\n#лот{n}"
-    # карточка: копия поста (с фото) или текст со ссылкой; в группе — в отдельной теме лота
-    draft = {"n": n, "name": name, "end": end}
-    if FORUM and not make_topic(draft):
-        tg("sendMessage", chat_id=chat, text="Не удалось создать тему — проверьте, что у бота есть право «Управление темами».")
-        st.d["seq"] -= 1
+    forwarded = bool(msg.get("forward_origin") or msg.get("forward_from_chat"))
+    n = create_lot(st, lid, name, vin, target, end, (chat, msg["message_id"]) if forwarded else None)
+    if not n:
+        tg("sendMessage", chat_id=chat, text="Не удалось создать тему или карточку — проверьте права бота в группе.")
         return
-    where = {"chat_id": FORUM, "message_thread_id": draft["topic"]} if FORUM else {"chat_id": CHAT}
-    head_id = None
-    if msg.get("forward_origin") or msg.get("forward_from_chat"):
-        r = tg("copyMessage", from_chat_id=chat, message_id=msg["message_id"], reply_markup=kb_main(n), **where)
-        card = r.get("result", {}).get("message_id")
-        if card:
-            hr = tg("sendMessage", text=head + "\nГрафик, фото и письма по лоту придут сюда.",
-                    **({**where, "reply_to_message_id": card}))
-            head_id = hr.get("result", {}).get("message_id")
-    else:
-        r = tg("sendMessage", text=f"{head}\n{url}", reply_markup=kb_main(n), **where)
-        card = r.get("result", {}).get("message_id")
-    if not card:
-        tg("sendMessage", chat_id=chat, text="Не удалось создать карточку — проверьте, что бот администратор.")
-        st.d["seq"] -= 1
-        return
-    lots[lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
-                 "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
-                 "btn": True, "head": head_id, "msgs": [],
-                 "topic": draft.get("topic"), "title": draft.get("title")}
-    st.dirty = True
     tg("sendMessage", chat_id=chat, text=f"✅ Добавлено: №{n} {name}"
-       + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик торгов подтянется с площадки при утреннем обновлении (10:00).")
+       + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик и фото придут в течение нескольких минут (лоты МЭТС — после 10:00).")
 
 
 # ---------------------------------------------------------------- график и фото
@@ -692,7 +755,7 @@ def main():
     log(f"администраторов канала: {len(allowed)}, лотов в избранном: {len(st.d['lots'])}")
     add_buttons(st)
     st.save()
-    next_check = 0
+    next_check = next_refs = 0
     while time.time() < stop:
         if time.time() >= next_check:
             inbox = str(lots_file.parent.parent.parent)
@@ -709,6 +772,11 @@ def main():
             st.save()
             allowed = admins(st) or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
+        if time.time() >= next_refs:
+            next_refs = time.time() + 300
+            if poll_mail_refs(st):
+                next_check = 0
+            st.save()
         r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message","callback_query"]')
         for u in r.get("result", []):
             st.d["offset"] = u["update_id"] + 1
