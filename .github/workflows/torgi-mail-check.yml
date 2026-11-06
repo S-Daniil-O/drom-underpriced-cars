@@ -16,6 +16,9 @@ jobs:
           u = re.sub(r"\s+", "", raw)
           print("адрес задан:", bool(u), "| лишних символов:", len(raw) - len(u), "| вид /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u)),
                 "| есть /u/ или /a/:", bool(re.search(r"google\.com/(u|a)/", u)))
+          print("начало https://script.google.com/:", u.startswith("https://script.google.com/"), "| начинается с https:", u.startswith("https://"),
+                "| https:// встречается раз:", u.count("https://"), "| кириллица в адресе:", bool(re.search("[а-яА-Я]", u)),
+                "| символов до https:", max(u.find("https://"), -1), "| ?key= раз:", u.count("?key="))
           if not re.fullmatch(r"https://script\.google\.com/[\w./-]+/exec\?key=[\w-]+", u):
               raise SystemExit("адрес неверного вида — запрос не выполняется")
           try:
