@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160650329-78cb51c9",
-"source": "autoru",
-"brand": "BYD",
-"model": "Flyer",
-"year": 2006,
-"price": 60000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
-"mileage_km": 140000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T12:53:05.897093+00:00"
-},
-{
-"ad_id": "autoru_1160651646-9f8434da",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 1994,
-"price": 450000,
-"market_price": 189000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160651646-9f8434da/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/d7c60a38afa991e1825b993d01f69909/1200x900n",
-"mileage_km": 45000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Слобода Подгорное",
-"seen_at": "2026-11-06T12:53:05.897075+00:00"
-},
-{
 "ad_id": "autoru_1160315473-914cc928",
 "source": "autoru",
 "brand": "Renault",
@@ -45,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:53:05.897061+00:00"
+"seen_at": "2026-11-06T13:04:15.564044+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -61,7 +29,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:53:05.897042+00:00"
+"seen_at": "2026-11-06T13:04:15.564029+00:00"
+},
+{
+"ad_id": "autoru_1160650329-78cb51c9",
+"source": "autoru",
+"brand": "BYD",
+"model": "Flyer",
+"year": 2006,
+"price": 60000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
+"mileage_km": 140000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T13:04:15.563995+00:00"
+},
+{
+"ad_id": "autoru_1160651646-9f8434da",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 1994,
+"price": 450000,
+"market_price": 189000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160651646-9f8434da/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/d7c60a38afa991e1825b993d01f69909/1200x900n",
+"mileage_km": 45000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Слобода Подгорное",
+"seen_at": "2026-11-06T13:04:15.563978+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:53:05.897009+00:00"
+"seen_at": "2026-11-06T13:04:15.563958+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:53:05.896962+00:00"
+"seen_at": "2026-11-06T13:04:15.563913+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:52:51.402281+00:00"
+"seen_at": "2026-11-06T13:03:59.248104+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T12:52:51.402240+00:00"
+"seen_at": "2026-11-06T13:03:59.248064+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
