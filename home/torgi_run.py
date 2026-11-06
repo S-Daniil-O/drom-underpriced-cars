@@ -45,7 +45,13 @@ def self_update():
         subprocess.run(["git", "-C", CODE_REPO, "pull", "-q", "--ff-only", "origin", "main"],
                        check=True, capture_output=True, text=True, timeout=120)
         shutil.copy2(os.path.join(CODE_REPO, "torgi", "torgi_monitor.py"), os.path.join(WORK, "torgi_monitor.py"))
-        shutil.copy2(os.path.join(CODE_REPO, "home", "torgi_run.py"), os.path.join(HERE, "torgi_run.py"))
+        new_run = os.path.join(CODE_REPO, "home", "torgi_run.py")
+        me = os.path.join(HERE, "torgi_run.py")
+        changed = open(new_run, "rb").read() != open(me, "rb").read()
+        shutil.copy2(new_run, me)
+        if changed:                # новая версия этого скрипта должна работать уже в этом запуске
+            log("скрипт запуска обновлён — перезапускаюсь")
+            os.execv(sys.executable, [sys.executable, "-u", me] + [a for a in sys.argv[1:]])
         rev = subprocess.run(["git", "-C", CODE_REPO, "log", "--oneline", "-1"], capture_output=True, text=True).stdout.strip()
         log(f"скрипты обновлены из GitHub: {rev}")
     except (subprocess.SubprocessError, OSError) as e:
