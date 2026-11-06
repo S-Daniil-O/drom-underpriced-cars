@@ -540,18 +540,29 @@
   "cdt-388601": {
    "n": 21,
    "url": "https://torgi.cdtrf.ru/trades/388601",
-   "name": "https://torgi.cdtrf.ru/trades/388601",
-   "vin": null,
+   "name": "Hyundai Solaris, 2013",
+   "vin": "Z94CT41DADR206126",
    "target": null,
    "card": 346,
    "added": "2026-11-06T12:18",
-   "end": null,
-   "sent": {},
+   "end": "2026-11-10T10:00",
+   "sent": {
+    "period:05.11.2026 10:00": 1
+   },
    "btn": true,
    "head": null,
-   "msgs": [],
+   "msgs": [
+    347,
+    348
+   ],
    "topic": 345,
-   "title": "Лот №21"
+   "title": "Hyundai Solaris, 2013 · мин 300 т.р. · до 10.11 · №21",
+   "min_price": 300000.0,
+   "requests": 0,
+   "sched_msg": 347,
+   "sched_text": "📊 <b>График снижения цены — лот №21</b>\nHyundai Solaris, 2013\n\n<pre>✔️ 26.10–31.10     324 000 ₽\n✔️ 31.10–05.11     312 000 ₽\n▶️ 05.11–10.11     300 000 ₽</pre>\nСейчас: <b>300 000 ₽</b> до 10.11.2026 10:00\nМинимальная: <b>300 000 ₽</b>, приём заявок до 10.11.2026 10:00\n📭 Заявок нет",
+   "photos_done": true,
+   "no_photos": true
   }
  },
  "offset": 177673566,
