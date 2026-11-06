@@ -254,10 +254,26 @@
    "sched_msg": null,
    "sched_text": null,
    "photos_done": false
+  },
+  "tg-14191": {
+   "n": 13,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/14191",
+   "name": "https://bankrot.torggroup.org/TradeLot/View/14191",
+   "vin": null,
+   "target": null,
+   "card": 94,
+   "added": "2026-11-06T10:11",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 93,
+   "title": "№13 лот 13"
   }
  },
- "offset": 177673441,
- "seq": 12,
+ "offset": 177673442,
+ "seq": 13,
  "forum": -1004498088083,
  "owners": [
   1188456401
