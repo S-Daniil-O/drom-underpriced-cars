@@ -1,67 +1,19 @@
 [
 {
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 175000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T03:42:12.698593+00:00"
-},
-{
-"ad_id": "autoru_1160643923-2fef0435",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera Classic",
-"year": 2010,
-"price": 465000,
-"market_price": 352500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160643923-2fef0435/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/dc3c48887dc76a65a5d4480ef5ad9808/1200x900n",
-"mileage_km": 239000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T03:42:12.698575+00:00"
-},
-{
-"ad_id": "autoru_1160645506-74c3705b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2021,
-"price": 427000,
-"market_price": 568000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160645506-74c3705b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/kfa_0aoR_Jgg6-XsvdZqPWa0yGEY6H7Zwygr4wlF4lt0Sr5jQvI4bTxZrcEnKp2MwZ_C9URQK2MKHhAYNoK6k0zhpXN3zfeZvpPXrnqz9p_8B-gv-EAOdwflZRsZkJo7o1fzisYW06f6jrkGIIWyDBfcAlhvO8-_tkRtP72dxTR-cg/1200x900n",
-"mileage_km": 90000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T03:42:12.698560+00:00"
-},
-{
 "ad_id": "autoru_1160635321-a36ff52f",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2114",
+"model": "2121 (4x4)",
 "year": 2017,
 "price": 499000,
 "market_price": 427000,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1160647244-2d366a87/",
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160635321-a36ff52f/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/5517881/6cdde57c20bcc7832e633f81d1fe522b/1200x900n",
 "mileage_km": 137000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T03:42:12.698542+00:00"
+"seen_at": "2026-11-06T03:53:23.525684+00:00"
 },
 {
 "ad_id": "autoru_1160639692-1f4a70f7",
@@ -77,7 +29,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-06T03:42:12.698512+00:00"
+"seen_at": "2026-11-06T03:53:23.525657+00:00"
+},
+{
+"ad_id": "autoru_1160315473-914cc928",
+"source": "autoru",
+"brand": "Renault",
+"model": "Logan",
+"year": 2006,
+"price": 175000,
+"market_price": 228500,
+"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
+"mileage_km": 190000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T03:53:23.525634+00:00"
+},
+{
+"ad_id": "autoru_1160643923-2fef0435",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera Classic",
+"year": 2010,
+"price": 465000,
+"market_price": 352500,
+"url": "https://auto.ru/cars/used/sale/nissan/almera_classic/1160643923-2fef0435/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/dc3c48887dc76a65a5d4480ef5ad9808/1200x900n",
+"mileage_km": 239000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T03:53:23.525616+00:00"
+},
+{
+"ad_id": "autoru_1160645506-74c3705b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2021,
+"price": 427000,
+"market_price": 568000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160645506-74c3705b/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17672043/xjmZytsAIgM4wdxhUBNtSlSspdux87ruK-dVdz8x5un1m9U2jfv0D-eOmvh9SlAmXSSOcuCW-hYVrmuwSiKlAAwuRzXuliGAiKuLSniVMbQ9MjQbf3G4_jPeB--5-izCKnQV7527iYVdTFVP2FXDmhdvViTzG5uapEo0eoz6q5-peDQ/1200x900n",
+"mileage_km": 90000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T03:53:23.525599+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T03:42:12.698450+00:00"
+"seen_at": "2026-11-06T03:53:23.525536+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-06T03:41:55.182274+00:00"
+"seen_at": "2026-11-06T03:53:08.775261+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T03:41:55.182259+00:00"
+"seen_at": "2026-11-06T03:53:08.775247+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T03:41:55.182239+00:00"
+"seen_at": "2026-11-06T03:53:08.775225+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -157,6 +157,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T03:41:55.182189+00:00"
+"seen_at": "2026-11-06T03:53:08.775171+00:00"
 }
 ]
