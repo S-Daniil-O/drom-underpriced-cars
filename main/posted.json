@@ -3378,5 +3378,20 @@
     "mileage_km": 125000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2204403/c6fdac303291359d27a3cb8e514e7fa0/1200x900n"
+  },
+  "autoru_1160422889-9a203a8b": {
+    "posted_at": "2026-11-06T07:32:53.883347+00:00",
+    "message_id": 251,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2020,
+    "price": 990000,
+    "median_price": 1329000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 95000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n"
   }
 }
