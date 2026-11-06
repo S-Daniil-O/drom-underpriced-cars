@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160635321-a36ff52f",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2017,
-"price": 499000,
-"market_price": 427000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160635321-a36ff52f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5517881/6cdde57c20bcc7832e633f81d1fe522b/1200x900n",
-"mileage_km": 137000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T07:37:36.012419+00:00"
-},
-{
-"ad_id": "autoru_1160639692-1f4a70f7",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 320000,
-"market_price": 197500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160639692-1f4a70f7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5233721/8468846fcc15209a56de2c0580b68db2/1200x900n",
-"mileage_km": 114000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Калач",
-"seen_at": "2026-11-06T07:37:36.012395+00:00"
-},
-{
 "ad_id": "autoru_1160315473-914cc928",
 "source": "autoru",
 "brand": "Renault",
@@ -45,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:36.012374+00:00"
+"seen_at": "2026-11-06T07:48:59.383308+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -61,7 +29,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:36.012354+00:00"
+"seen_at": "2026-11-06T07:48:59.383291+00:00"
+},
+{
+"ad_id": "autoru_1160635321-a36ff52f",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Octavia",
+"year": 2017,
+"price": 499000,
+"market_price": 427000,
+"url": "https://auto.ru/cars/used/sale/skoda/octavia/1160648292-be9f345e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5517881/6cdde57c20bcc7832e633f81d1fe522b/1200x900n",
+"mileage_km": 137000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T07:48:59.383270+00:00"
+},
+{
+"ad_id": "autoru_1160639692-1f4a70f7",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2008,
+"price": 320000,
+"market_price": 197500,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160639692-1f4a70f7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5233721/8468846fcc15209a56de2c0580b68db2/1200x900n",
+"mileage_km": 114000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Калач",
+"seen_at": "2026-11-06T07:48:59.383243+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -77,23 +77,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:36.012292+00:00"
+"seen_at": "2026-11-06T07:48:59.383184+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
+"brand": "Opel",
+"model": "Corsa",
 "year": 1994,
 "price": 450000,
 "market_price": 189000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160651646-9f8434da/",
+"url": "https://auto.ru/cars/used/sale/opel/corsa/1160665018-7bccd15e/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20439065/d7c60a38afa991e1825b993d01f69909/1200x900n",
 "mileage_km": 45000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-06T07:37:19.248315+00:00"
+"seen_at": "2026-11-06T07:48:39.976961+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:19.248300+00:00"
+"seen_at": "2026-11-06T07:48:39.976947+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:19.248279+00:00"
+"seen_at": "2026-11-06T07:48:39.976927+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T07:37:19.248225+00:00"
+"seen_at": "2026-11-06T07:48:39.976890+00:00"
 },
 {
 "ad_id": "autoru_1160645506-74c3705b",
