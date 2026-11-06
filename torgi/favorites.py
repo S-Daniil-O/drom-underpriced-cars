@@ -505,6 +505,11 @@ def poll_mail_refs(st):
             _ref_failed.add(ref)
             log(f"письмо: {lid} не подтвердился на площадке")
             continue
+        ends = [parse_dt(r[1]) for r in info.get("schedule") or [] if parse_dt(r[1])]
+        if ends and max(ends) <= now_msk():      # торги уже закончились — тема не нужна, письмо уйдёт в общую тему
+            _ref_failed.add(ref)
+            log(f"письмо: торги по {lid} уже закончились, тему не создаю")
+            continue
         n = create_lot(st, lid, info.get("name"), info.get("vin"), note="\n📩 Создан автоматически по письму.")
         if not n:
             _ref_failed.add(ref)
