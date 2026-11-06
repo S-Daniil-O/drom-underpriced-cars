@@ -262,10 +262,26 @@
    "msgs": [],
    "topic": 93,
    "title": "№13 лот 13"
+  },
+  "cdt-390735": {
+   "n": 15,
+   "url": "https://torgi.cdtrf.ru/trades/390735",
+   "name": "https://torgi.cdtrf.ru/trades/390735",
+   "vin": null,
+   "target": null,
+   "card": 98,
+   "added": "2026-11-06T10:14",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 97,
+   "title": "№15 лот 15"
   }
  },
- "offset": 177673446,
- "seq": 14,
+ "offset": 177673447,
+ "seq": 15,
  "forum": -1004498088083,
  "owners": [
   1188456401
