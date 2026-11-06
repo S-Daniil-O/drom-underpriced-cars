@@ -84,28 +84,20 @@
    "photos_done": false
   },
   "cdt-383751": {
-   "n": 5,
+   "n": 14,
    "url": "https://torgi.cdtrf.ru/trades/383751",
-   "name": "Renault Logan, 2015",
-   "vin": "X7L4SRAV452422345",
-   "target": 64350,
-   "card": 104,
-   "added": "2026-11-02T16:08",
-   "end": "2026-11-07T12:00",
-   "sent": {
-    "period:04.11.2026 12:00": 1
-   },
+   "name": "https://torgi.cdtrf.ru/trades/383751",
+   "vin": null,
+   "target": null,
+   "card": 96,
+   "added": "2026-11-06T10:12",
+   "end": null,
+   "sent": {},
    "btn": true,
-   "head": 105,
-   "min_price": 64350.0,
-   "requests": 0,
-   "msgs": [
-    317,
-    318
-   ],
-   "hit_target": true,
-   "ended": true,
-   "removed": true
+   "head": null,
+   "msgs": [],
+   "topic": 95,
+   "title": "№14 лот 14"
   },
   "cdt-380409": {
    "n": 6,
@@ -272,8 +264,8 @@
    "title": "№13 лот 13"
   }
  },
- "offset": 177673443,
- "seq": 13,
+ "offset": 177673444,
+ "seq": 14,
  "forum": -1004498088083,
  "owners": [
   1188456401
