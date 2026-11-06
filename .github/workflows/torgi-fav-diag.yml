@@ -1,0 +1,41 @@
+name: torgi-fav-diag
+# Разово, только чтение: есть ли в группе темы и карточки лотов. В лог — только номера лотов и результат.
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    env:
+      T: ${{ secrets.TORGI_BOT_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: state, path: _state}
+      - run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.parse, urllib.error
+          T = os.environ["T"]
+          def call(m, **d):
+              try:
+                  return json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.telegram.org/bot{T}/{m}", data=urllib.parse.urlencode(d).encode()), timeout=30))
+              except urllib.error.HTTPError as e:
+                  return json.load(e)
+          st = json.load(open("_state/torgi_fav/favs.json"))
+          F = st["forum"]
+          c = call("getChat", chat_id=F)
+          r = c.get("result", {})
+          print("группа доступна:", c.get("ok"), c.get("description", ""), "| тип:", r.get("type"), "| темы включены:", r.get("is_forum"))
+          print("участников:", call("getChatMemberCount", chat_id=F).get("result"))
+          me = call("getMe")["result"]["id"]
+          m = call("getChatMember", chat_id=F, user_id=me).get("result", {})
+          print("бот:", m.get("status"), "| темы:", m.get("can_manage_topics"), "| удаление:", m.get("can_delete_messages"))
+          for k, v in sorted(st["lots"].items(), key=lambda x: x[1]["n"]):
+              if v.get("removed") or v.get("ended") or not v.get("topic"):
+                  continue
+              a = call("sendChatAction", chat_id=F, message_thread_id=v["topic"], action="typing")
+              b = call("editMessageReplyMarkup", chat_id=F, message_id=v["card"],
+                       reply_markup=json.dumps({"inline_keyboard": [[{"text": "🗑 Удалить лот", "callback_data": f"del:{v['n']}"}]]}))
+              g = call("editMessageReplyMarkup", chat_id=F, message_id=v["sched_msg"]) if v.get("sched_msg") else {}
+              print(f"№{v['n']}: тема {'есть' if a.get('ok') else 'НЕТ: ' + a.get('description','')} | карточка: {'есть' if b.get('ok') or 'not modified' in b.get('description','') else b.get('description')} | график: {'есть' if g.get('ok') or 'not modified' in g.get('description','') or 'there is no' in g.get('description','') else g.get('description','—')}")
+              time.sleep(0.5)
+          PY
