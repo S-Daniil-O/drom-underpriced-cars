@@ -458,10 +458,26 @@
    "sched_msg": 304,
    "sched_text": "📊 <b>График снижения цены — лот №17</b>\nChevrolet Cruze, 2011\n\n<pre>▶️ 22.10–26.11     378 000 ₽\n   27.11–03.12     302 400 ₽\n   04.12–10.12     241 920 ₽\n   11.12–17.12     193 536 ₽\n   18.12–24.12     168 000 ₽</pre>\nСейчас: <b>378 000 ₽</b> до 26.11.2026 23:59\nМинимальная: <b>168 000 ₽</b>, приём заявок до 24.12.2026 23:59\n📭 Заявок нет",
    "photos_done": true
+  },
+  "cdt-390500": {
+   "n": 18,
+   "url": "https://torgi.cdtrf.ru/trades/390500",
+   "name": "https://torgi.cdtrf.ru/trades/390500",
+   "vin": null,
+   "target": null,
+   "card": 327,
+   "added": "2026-11-06T12:04",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 326,
+   "title": "Лот №18"
   }
  },
- "offset": 177673549,
- "seq": 17,
+ "offset": 177673550,
+ "seq": 18,
  "forum": -1004498088083,
  "owners": [
   1188456401
