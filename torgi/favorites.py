@@ -387,9 +387,62 @@ def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=No
     return n
 
 
+# ---------------------------------------------------------------- самопроверка группы
+def msg_exists(chat, mid):
+    """Есть ли сообщение. editMessageLiveLocation ничего не меняет в обычных сообщениях."""
+    r = tg("editMessageLiveLocation", chat_id=chat, message_id=mid, latitude="0", longitude="0")
+    return "not found" not in r.get("description", "")
+
+
+def card_text(v):
+    name = v["name"] if has_name(v) else f"Лот №{v['n']}"
+    return (f"⭐ МОЙ ЛОТ №{v['n']} — {name}" + (f"\nМоя цена: {money(v['target'])}" if v.get("target") else "")
+            + f"\n#лот{v['n']}\n{v['url']}" + (f"\nVIN: {v['vin']}" if v.get("vin") else ""))
+
+
+def heal(st):
+    """Найти лоты, у которых в группе пропала тема или карточка, и восстановить их.
+    График и фото после этого приходят заново при проверке; письма досылает скрипт Gmail."""
+    if not FORUM:
+        return 0
+    fixed = []
+    for v in sorted(st.d["lots"].values(), key=lambda x: x["n"]):
+        if v.get("removed") or v.get("ended") or not v.get("topic"):
+            continue
+        r = tg("sendChatAction", chat_id=FORUM, message_thread_id=v["topic"], action="typing")
+        topic_gone = "thread not found" in r.get("description", "").lower()
+        if topic_gone and not make_topic(v):
+            continue
+        if not topic_gone and msg_exists(FORUM, v["card"]):
+            if v.get("sched_msg") and not msg_exists(FORUM, v["sched_msg"]):
+                v["sched_msg"] = None           # пропал только график — придёт заново
+                v["sched_text"] = None
+                st.dirty = True
+            continue
+        c = tg("sendMessage", chat_id=FORUM, message_thread_id=v["topic"], text=card_text(v), reply_markup=kb_main(v["n"]))
+        mid = c.get("result", {}).get("message_id")
+        if not mid:
+            log(f"лот №{v['n']}: карточка не восстановлена: {c.get('description')}")
+            continue
+        # фото могли уцелеть: заново отправляем, только если от прежних сообщений лота ничего нет
+        alive = [m for m in (v.get("msgs") or []) if m != v.get("sched_msg") and msg_exists(FORUM, m)]
+        if not alive:
+            v.update({"photos_done": False, "no_photos": False})
+        v.update({"card": mid, "head": None, "msgs": alive, "sched_msg": None, "sched_text": None})
+        fixed.append(v["n"])
+        st.dirty = True
+        time.sleep(3)
+    if fixed:
+        DIRECT.clear()
+        log(f"восстановлены карточки лотов: {fixed}")
+        tg("sendMessage", chat_id=FORUM, text=f"♻️ Восстановлены пропавшие карточки лотов: {', '.join('№' + str(n) for n in fixed)}. "
+           "График и фото придут в темы в течение нескольких минут (лоты МЭТС — после 10:00).")
+    return len(fixed)
+
+
 # ---------------------------------------------------------------- лоты из писем
 MAIL_URL = os.environ.get("TORGI_MAIL_URL", "")   # веб-адрес скрипта Gmail: номера лотов из новых писем
-REF = re.compile(r"(cdt-[0-9]+|mets-[0-9]+-[0-9]+|tg-[0-9]+|tgtrade-[0-9]+)")
+REF = re.compile(r"(cdt-[0-9]{1,12}|mets-[0-9]{1,12}-[0-9]{1,12}|tg-[0-9]{1,12}|tgtrade-[0-9]{1,12})")
 _ref_failed = set()
 AUTO_LOTS_PER_DAY = 20   # не больше стольких тем в день создаётся автоматически по письмам
 
@@ -422,7 +475,7 @@ def poll_mail_refs(st):
             continue
         try:
             lid, trade = resolve_ref(st, ref)
-        except requests.RequestException:
+        except (requests.RequestException, ValueError):
             continue
         if not lid:
             _ref_failed.add(ref)
@@ -504,6 +557,7 @@ def handle(st, msg, allowed):
 
     if re.match(r"/(check|проверка)\b", text):
         DIRECT.clear()
+        heal(st)
         st.d["want_check"] = chat
         st.dirty = True
         tg("sendMessage", chat_id=chat, text="Проверяю лоты, это займёт минуту…")
@@ -766,6 +820,7 @@ def main():
     allowed = admins(st)
     log(f"администраторов канала: {len(allowed)}, лотов в избранном: {len(st.d['lots'])}")
     add_buttons(st)
+    heal(st)
     st.save()
     next_check = next_refs = 0
     while time.time() < stop:
