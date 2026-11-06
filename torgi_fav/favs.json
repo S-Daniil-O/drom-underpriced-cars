@@ -760,10 +760,26 @@
    "no_photos": false,
    "sched_msg": null,
    "sched_text": null
+  },
+  "cdt-390709": {
+   "n": 27,
+   "url": "https://torgi.cdtrf.ru/trades/390709",
+   "name": "https://torgi.cdtrf.ru/trades/390709",
+   "vin": null,
+   "target": null,
+   "card": 837,
+   "added": "2026-11-06T16:26",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 836,
+   "title": "Лот №27"
   }
  },
- "offset": 177673690,
- "seq": 26,
+ "offset": 177673691,
+ "seq": 27,
  "forum": -1004498088083,
  "owners": [
   1188456401
