@@ -787,15 +787,34 @@
    "sched_text": "📊 <b>График снижения цены — лот №27</b>\nHaval F7X, 2021\n\n<pre>✔️ 30.10–03.11   1 350 000 ₽\n▶️ 05.11–09.11     877 500 ₽\n   10.11–12.11     450 000 ₽</pre>\nСейчас: <b>877 500 ₽</b> до 09.11.2026 18:00\nМинимальная: <b>450 000 ₽</b>, приём заявок до 12.11.2026 18:00\n📭 Заявок нет",
    "photos_done": true,
    "no_photos": true
+  },
+  "cdt-382112": {
+   "n": 28,
+   "url": "https://torgi.cdtrf.ru/trades/382112",
+   "name": "Kia Rio, 2013",
+   "vin": "Z94CC41BBDR135037",
+   "target": null,
+   "card": 880,
+   "added": "2026-11-06T21:56",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 879,
+   "title": "Kia Rio, 2013 · №28",
+   "trade": null
   }
  },
  "offset": 177673726,
- "seq": 27,
+ "seq": 28,
  "forum": -1004498088083,
  "owners": [
   1188456401
  ],
  "editors": {
   "taninaichuk": 748309276
- }
+ },
+ "auto_day": "2026-11-06",
+ "auto_count": 1
 }
