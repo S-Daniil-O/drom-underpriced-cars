@@ -347,6 +347,29 @@ def admins(st):
     return ids | set(st.d.get("owners", []))
 
 
+def is_editor(st, who):
+    """Имя из EDITORS привязывается к номеру пользователя при первом обращении: дальше доступ
+    определяет номер. Смена имени доступ не отнимает, а занявший чужое имя доступа не получит."""
+    pinned = st.d.setdefault("editors", {})
+    if who.get("id") in pinned.values():
+        return True
+    name = (who.get("username") or "").lower()
+    if name not in EDITORS or name in pinned:
+        return False
+    pinned[name] = who.get("id")
+    st.dirty = True
+    return True
+
+
+def canonical_url(lid):
+    """Ссылка на лот собирается из его номера, а не берётся из присланного текста."""
+    if lid.startswith("cdt-"):
+        return f"https://torgi.cdtrf.ru/trades/{lid[4:]}"
+    if lid.startswith("mets-"):
+        return f"https://m-ets.ru/{lid[5:]}"
+    return f"https://bankrot.torggroup.org/TradeLot/View/{lid[3:]}"
+
+
 def handle(st, msg, allowed):
     user = msg.get("from", {}).get("id")
     chat = msg["chat"]["id"]
@@ -360,7 +383,7 @@ def handle(st, msg, allowed):
                 link_forum(st, chat, allowed)
         return
     owner = user in allowed
-    if not owner and (msg.get("from", {}).get("username") or "").lower() not in EDITORS:
+    if not owner and not is_editor(st, msg.get("from", {})):
         tg("sendMessage", chat_id=chat, text="У вас нет доступа к этому боту.")
         return
     text = msg.get("text") or msg.get("caption") or ""
@@ -386,7 +409,7 @@ def handle(st, msg, allowed):
                  + (f", ваша цена {money(v['target'])}" if v.get("target") else "") for n, k, v in sorted(act)]
         tg("sendMessage", chat_id=chat, text="\n".join(lines))
         return
-    m = re.match(r"/(убрать|цена)\s+(\d+)(?:\s+([\d\s]+))?", text)
+    m = re.match(r"/(убрать|цена)\s+(\d+)(?:\s+([\d\s]+))?", text, re.I)
     if m and not owner:
         tg("sendMessage", chat_id=chat, text="Удалять лоты и менять цену может только владелец. Вы можете добавлять лоты.")
         return
@@ -395,7 +418,7 @@ def handle(st, msg, allowed):
         if not key:
             tg("sendMessage", chat_id=chat, text="Нет лота с таким номером. /список — номера.")
             return
-        if m.group(1) == "убрать":
+        if m.group(1).lower() == "убрать":
             remove_lot(st, key)
             tg("sendMessage", chat_id=chat, text=f"№{m.group(2)} удалён из канала. Письма по нему исчезнут в течение 15 минут.")
         else:
@@ -409,10 +432,16 @@ def handle(st, msg, allowed):
     if not lid:
         tg("sendMessage", chat_id=chat, text="Не нашёл ссылку на лот (ЦДТ, МЭТС, ТоргГрупп). Перешлите пост из канала или пришлите ссылку.")
         return
-    url = next(u for u in urls if lot_id(u) == lid)
+    url = canonical_url(lid)
     pm = re.search(r"цена\s*[:=]?\s*([\d\s]{4,})", text, re.I)
     target = int(re.sub(r"\D", "", pm.group(1))) if pm else None
+    if lid in lots and lots[lid].get("removed") and not owner:
+        tg("sendMessage", chat_id=chat, text="Этот лот удалён владельцем. Вернуть его может только владелец.")
+        return
     if lid in lots and not lots[lid].get("removed"):
+        if target and not owner:
+            tg("sendMessage", chat_id=chat, text=f"Уже в «Моих лотах» (№{lots[lid]['n']}). Цену может менять только владелец.")
+            return
         if target:
             lots[lid]["target"] = target
             lots[lid].pop("hit_target", None)
