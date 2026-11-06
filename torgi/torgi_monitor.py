@@ -39,7 +39,7 @@ ROOT = Path(__file__).resolve().parent.parent
 load_dotenv(ROOT / ".env")
 DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
-DEALS_FILE = DATA / "torgi_deals.json"
+DEALS_FILE = DATA / ("torgi_nis_deals.json" if "--source=nis" in sys.argv else "torgi_deals.json")
 POSTED_FILE = Path(os.environ.get("TORGI_POSTED_FILE") or DATA / "torgi_posted.json")
 MARKET_CACHE_FILE = DATA / "torgi_market_cache.json"
 
@@ -433,6 +433,92 @@ def tg_detail(row, any_lot=False):
         "schedule": sched,
         "requests": int(req.group(1)) if req else None,
         "deposit_info": (field("Размер задатка, %") + "% от цены на интервале") if field("Размер задатка, %") else "",
+    }
+
+
+# ---------------------------------------------------------------- НИС (nistp.ru)
+NIS_BASE = "https://nistp.ru/bankrot"
+NIS_FILTER = [("trade_type[]", "Публичное предложение"), ("trade_state[]", "Торги объявлены"),
+              ("trade_state[]", "Прием заявок"), ("trade_state[]", "Идут торги"), ("view_type", "lot")]
+
+
+def nis_list():
+    """Лоты публичного предложения НИС. Фильтры по категории и региону у площадки только для
+    премиум-аккаунта, поэтому машины отбираем по описанию лота, точно — по категории в карточке."""
+    rows, seen, page = [], set(), 1
+    s = requests.Session()
+    s.headers["User-Agent"] = UA
+    while page < 300:
+        r = s.get(NIS_BASE + "/trade_list.php", params=NIS_FILTER + [("pagenum", str(page))], timeout=90)
+        r.raise_for_status()
+        found = 0
+        for row in re.findall(r"<tr><td>.*?</tr>", r.text, re.S):
+            m = re.search(r"trade_nid=(\d+)#lot(\d+)", row)
+            if not m or m.groups() in seen:
+                continue
+            seen.add(m.groups())
+            found += 1
+            cells = re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)
+            rows.append({"trade": m.group(1), "lot": m.group(2), "code": strip_html(cells[0]) if cells else "",
+                         "text": strip_html(cells[2]) if len(cells) > 2 else strip_html(row),
+                         "status": strip_html(cells[-1]) if cells else ""})
+        if not found:
+            break
+        page += 1
+        time.sleep(0.5)
+    log(f"НИС: {len(rows)} лотов публичного предложения (все категории), страниц {page - 1}")
+    return rows
+
+
+def nis_cards(rows):
+    """Карточки торгов с машинами. На одной странице торгов может быть несколько лотов."""
+    by_trade = {}
+    for row in rows:
+        if parse_car(row["text"]):       # не машина по описанию — страницу не грузим
+            by_trade.setdefault(row["trade"], []).append(row)
+    lots = []
+    for trade, items in by_trade.items():
+        try:
+            page = requests.get(f"{NIS_BASE}/trade_view.php?trade_nid={trade}", headers={"User-Agent": UA}, timeout=60).text
+        except requests.RequestException:
+            continue
+        time.sleep(0.5)
+        region = strip_html((re.search(r"<td class='label'>Регион</td><td>(.*?)</td>", page, re.S) or [None, ""])[1])
+        blocks = {m.group(1): m.group(0) for m in re.finditer(
+            r"<table class='data ' id='table_lot_\d+'>.*?<a name='lot(\d+)'>.*?(?=<table class='data ' id='table_lot_|\Z)", page, re.S)}
+        for row in items:
+            b = blocks.get(row["lot"])
+            lot = nis_detail(row, b, region) if b else None
+            if lot:
+                lots.append(lot)
+    log(f"НИС: легковых с графиком снижения: {len(lots)}")
+    return lots
+
+
+def nis_detail(row, b, region):
+    field = lambda name: strip_html((re.search(r"<td class='label'>" + name + r"[^<]*</td>\s*<td[^>]*>(.*?)</td>", b, re.S) or [None, ""])[1])
+    if "легков" not in field("Категории лота").lower():
+        return None
+    sched = []
+    for m in re.finditer(r"class='discount_row'[^>]*><td>([\d. :]+)</td><td>([\d. :]+)</td><td>([\d .]+)</td><td>([\d .]*)</td>", b):
+        price = to_float(m.group(3))
+        if price:
+            sched.append([m.group(1).strip(), m.group(2).strip(), price, to_float(m.group(4))])
+    if not sched:
+        return None
+    pics = list(dict.fromkeys(re.findall(r"href='(https://nistp\.ru/files/[^']+\.(?:jpe?g|png|webp))'", b, re.I)))
+    title = field("Наименование имущества")
+    desc = field("Cведения об имуществе")
+    prices = [x[2] for x in sched]
+    now = time.time()
+    cur = next((x[2] for x in sched if _dt(x[0]) and _dt(x[1]) and _dt(x[0]).timestamp() <= now < _dt(x[1]).timestamp()), prices[0])
+    return {
+        "source": "НИС", "id": f"nis-{row['trade']}-{row['lot']}",
+        "url": f"{NIS_BASE}/trade_view.php?trade_nid={row['trade']}#lot{row['lot']}",
+        "title": desc[:300] or title, "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
+        "start_price": to_float(field("Начальная цена")) or prices[0], "current_price": cur, "min_price": min(prices),
+        "end_date": sched[-1][1][:10], "status": row.get("status"), "region": region, "region_name": region,
+        "image": pics[0] if pics else None, "photos": pics, "schedule": sched, "code": row["code"],
     }
 
 
@@ -850,7 +936,7 @@ CITY_STEMS = {"Воронежская": "воронеж", "Белгородск�
 
 
 PRICE_TAGS = [(100_000, "#до100тыс"), (300_000, "#до300тыс"), (500_000, "#до500тыс"), (1_000_000, "#до1млн")]
-SOURCE_TAGS = {"ЦДТ": "#ЦДТ", "МЭТС": "#МЭТС", "ТоргГрупп": "#ТоргГрупп"}
+SOURCE_TAGS = {"ЦДТ": "#ЦДТ", "МЭТС": "#МЭТС", "ТоргГрупп": "#ТоргГрупп", "НИС": "#НИС"}
 
 
 def _is_moscow_city(d):
@@ -1074,7 +1160,7 @@ def tg_send(d):
 
 
 # ---------------------------------------------------------------- фото лотов
-IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru", "bankrot.torggroup.org")
+IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru", "bankrot.torggroup.org", "nistp.ru")
 
 
 def image_url_ok(url):
@@ -1267,14 +1353,17 @@ def main():
         deals = [d for d in deals if not re.search(r"\bдол[ьяиеюей]\b|\d/\d\s*дол", (d["title"] + " " + d.get("description", "")).lower())]
     else:
         lots = []
-        if USE_CDT:
+        only_nis = "--source=nis" in sys.argv      # отдельный канал «ТОРГИ НИС»
+        if only_nis:
+            lots = nis_cards(with_retries("НИС", nis_list) or [])
+        if USE_CDT and not only_nis:
             items = with_retries("ЦДТ", cdt_list)
             if items:
                 with ThreadPoolExecutor(6) as ex:
                     lots += [x for x in ex.map(cdt_detail, items) if x]
-        if USE_METS:
+        if USE_METS and not only_nis:
             lots += with_retries("МЭТС", mets_list) or []
-        if USE_TG:
+        if USE_TG and not only_nis:
             rows = with_retries("ТоргГрупп", tg_list) or []
             with ThreadPoolExecutor(4) as ex:
                 tg = [x for x in ex.map(tg_detail, rows) if x]

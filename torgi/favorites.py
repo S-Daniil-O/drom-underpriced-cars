@@ -922,7 +922,7 @@ def main():
             if poll_mail_refs(st):
                 next_check = 0
             st.save()
-        r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message","callback_query"]')
+        r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message","callback_query","channel_post"]')
         for u in r.get("result", []):
             st.d["offset"] = u["update_id"] + 1
             st.dirty = True
@@ -931,6 +931,11 @@ def main():
                     handle(st, u["message"], allowed)
                 elif "callback_query" in u:
                     handle_button(st, u["callback_query"], allowed)
+                elif "channel_post" in u:       # запоминаем каналы бота (нужны номера закрытых каналов)
+                    c = u["channel_post"]["chat"]
+                    if st.d.setdefault("channels", {}).get(str(c["id"])) != c.get("title"):
+                        st.d["channels"][str(c["id"])] = c.get("title")
+                        st.dirty = True
             except Exception as e:  # noqa: BLE001 — одна плохая команда не должна ронять бота
                 log(f"ошибка обработки: {e}")
         if u_new(st):
