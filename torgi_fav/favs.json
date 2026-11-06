@@ -156,7 +156,8 @@
    "title": "🏁 №6 Lada Priora, 2011 · мин 67 т.р. · до 06.11",
    "photos_done": false,
    "ended": true,
-   "closed": true
+   "closed": true,
+   "removed": true
   },
   "cdt-387811": {
    "n": 7,
@@ -410,7 +411,7 @@
    "photos_done": true
   }
  },
- "offset": 177673498,
+ "offset": 177673499,
  "seq": 16,
  "forum": -1004498088083,
  "owners": [
