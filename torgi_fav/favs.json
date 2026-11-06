@@ -764,18 +764,29 @@
   "cdt-390709": {
    "n": 27,
    "url": "https://torgi.cdtrf.ru/trades/390709",
-   "name": "https://torgi.cdtrf.ru/trades/390709",
-   "vin": null,
+   "name": "Haval F7X, 2021",
+   "vin": "XZGEF04A7MA615900",
    "target": null,
    "card": 837,
    "added": "2026-11-06T16:26",
-   "end": null,
-   "sent": {},
+   "end": "2026-11-12T18:00",
+   "sent": {
+    "period:05.11.2026 09:00": 1
+   },
    "btn": true,
    "head": null,
-   "msgs": [],
+   "msgs": [
+    838,
+    839
+   ],
    "topic": 836,
-   "title": "Лот №27"
+   "title": "Haval F7X, 2021 · мин 450 т.р. · до 12.11 · №27",
+   "min_price": 450000.0,
+   "requests": 0,
+   "sched_msg": 838,
+   "sched_text": "📊 <b>График снижения цены — лот №27</b>\nHaval F7X, 2021\n\n<pre>✔️ 30.10–03.11   1 350 000 ₽\n▶️ 05.11–09.11     877 500 ₽\n   10.11–12.11     450 000 ₽</pre>\nСейчас: <b>877 500 ₽</b> до 09.11.2026 18:00\nМинимальная: <b>450 000 ₽</b>, приём заявок до 12.11.2026 18:00\n📭 Заявок нет",
+   "photos_done": true,
+   "no_photos": true
   }
  },
  "offset": 177673691,
