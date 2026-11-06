@@ -3393,5 +3393,20 @@
     "mileage_km": 95000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n"
+  },
+  "autoru_1160659324-3141d587": {
+    "posted_at": "2026-11-06T13:34:41.855578+00:00",
+    "message_id": 252,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Jetta",
+    "year": 2013,
+    "price": 790000,
+    "median_price": 960000,
+    "median_sample_size": 11,
+    "price_rating": null,
+    "mileage_km": 76500,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/4338488/de7d54993484589119b7bde399411296/1200x900n"
   }
 }
