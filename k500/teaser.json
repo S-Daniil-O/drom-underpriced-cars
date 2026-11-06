@@ -2146,13 +2146,6 @@
     "vk_post_id": 227,
     "vk_deleted_at": "2026-11-05T21:36:34.290966+00:00"
   },
-  "https://auto.drom.ru/voronezh/daewoo/matiz/183595650.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-03T01:38:44.222114+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/kalina/183322966.html": {
     "posted_at": "2026-11-03T05:40:56.109523+00:00",
     "message_id": 302,
@@ -2264,5 +2257,12 @@
     "checked_at": "2026-11-05T18:24:14.175612+00:00",
     "vk_post_id": 237,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/daewoo/matiz/183595650.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-06T01:46:57.852727+00:00"
   }
 }
