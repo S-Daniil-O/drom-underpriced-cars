@@ -11,12 +11,14 @@
 Уведомления (ответом на карточку лота):
   📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;
   ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
-График торгов берётся из inbox/torgi_fav/lots.json — его каждое утро обновляет домашний iMac
+К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота.
+График и фото берутся из inbox/torgi_fav/ (lots.json, img/) — его каждое утро обновляет домашний iMac
 (площадки не открываются с серверов GitHub). Пока графика нет — срок берётся из текста поста.
 
 Состояние: ветка state, torgi_fav/favs.json.
 Запуск: python torgi/favorites.py <favs.json> <lots.json> [минут работы]
 """
+import html
 import json
 import os
 import re
@@ -41,10 +43,10 @@ def log(msg):
     print(time.strftime("%H:%M:%S"), msg, flush=True)
 
 
-def tg(method, **data):
+def tg(method, files=None, **data):
     for _ in range(4):
         try:
-            r = requests.post(f"{API}/{method}", data=data, timeout=70).json()
+            r = requests.post(f"{API}/{method}", data=data, files=files, timeout=120).json()
         except requests.RequestException:
             time.sleep(5)
             continue
@@ -287,8 +289,92 @@ def handle(st, msg, allowed):
        + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик торгов подтянется с площадки при утреннем обновлении (10:00).")
 
 
+# ---------------------------------------------------------------- график и фото
+def schedule_text(v, sched, now, req):
+    """График снижения цены: прошедшие периоды, текущий (▶️), будущие, минимум."""
+    rows = sorted(sched, key=lambda r: parse_dt(r[0]))
+    mn = min(r[2] for r in rows)
+    name = v.get("name") if not str(v.get("name", "")).startswith("http") else ""
+    lines = [f"📊 <b>График снижения цены — лот №{v['n']}</b>" + (f"\n{html.escape(name)}" if name else ""), ""]
+    body, cur = [], None
+    for r in rows:
+        a, b = parse_dt(r[0]), parse_dt(r[1])
+        active = a <= now < b
+        mark = "▶️" if active else "✔️" if b <= now else "  "
+        body.append(f"{mark} {a:%d.%m}–{b:%d.%m}  {int(round(r[2])):>10,} ₽".replace(",", " "))
+        if active:
+            cur = r
+    lines.append("<pre>" + "\n".join(body) + "</pre>")
+    if cur:
+        lines.append(f"Сейчас: <b>{money(cur[2])}</b> до {cur[1]}")
+    lines.append(f"Минимальная: <b>{money(mn)}</b>, приём заявок до {max(parse_dt(r[1]) for r in rows):%d.%m.%Y %H:%M}")
+    dep = next((r[3] for r in reversed(rows) if len(r) > 3 and r[3]), None)
+    if dep:
+        lines.append(f"Задаток на минимальной цене: {money(dep)}")
+    if v.get("target"):
+        hit = next((r for r in rows if r[2] <= v["target"]), None)
+        lines.append(f"🎯 Ваша цена {money(v['target'])}: " + (f"с {parse_dt(hit[0]):%d.%m.%Y}" if hit else "по графику не достигается"))
+    if req is not None:
+        lines.append("📭 Заявок нет" if req == 0 else f"📨 Заявок: {req}")
+    return "\n".join(lines)
+
+
+def update_schedule(st, v, sched, now, req):
+    """Одно сообщение с графиком на лот: создаётся один раз, дальше обновляется."""
+    text = schedule_text(v, sched, now, req)
+    if v.get("sched_text") == text:
+        return
+    if v.get("sched_msg"):
+        r = tg("editMessageText", chat_id=CHAT, message_id=v["sched_msg"], text=text, parse_mode="HTML")
+        if not r.get("ok") and "not modified" not in r.get("description", ""):
+            log(f"график лота №{v['n']}: {r.get('description')}")
+            return
+    else:
+        r = tg("sendMessage", chat_id=CHAT, text=text, parse_mode="HTML", reply_to_message_id=v["card"],
+               allow_sending_without_reply="true", disable_notification="true")
+        if not r.get("ok"):
+            log(f"график лота №{v['n']}: {r.get('description')}")
+            return
+        v["sched_msg"] = r["result"]["message_id"]
+        v.setdefault("msgs", []).append(v["sched_msg"])
+    v["sched_text"] = text
+    st.dirty = True
+
+
+def send_photos(st, v, names, img_dir):
+    """Все фото лота альбомами по 10, ответом на карточку. Один раз на лот."""
+    paths = [img_dir / n for n in names if (img_dir / n).is_file()]
+    if not paths:
+        return
+    ok = True
+    for i in range(0, len(paths), 10):
+        part = paths[i:i + 10]
+        if len(part) == 1:
+            with open(part[0], "rb") as f:
+                r = tg("sendPhoto", files={"photo": f.read()}, chat_id=CHAT, reply_to_message_id=v["card"],
+                       allow_sending_without_reply="true", disable_notification="true")
+            sent = [r["result"]] if r.get("ok") else []
+        else:
+            media = [{"type": "photo", "media": f"attach://f{k}"} for k in range(len(part))]
+            if i == 0:
+                media[0]["caption"] = f"📷 Фото лота №{v['n']} ({len(paths)} шт.)"
+            r = tg("sendMediaGroup", files={f"f{k}": p.read_bytes() for k, p in enumerate(part)}, chat_id=CHAT,
+                   media=json.dumps(media, ensure_ascii=False), reply_to_message_id=v["card"],
+                   allow_sending_without_reply="true", disable_notification="true")
+            sent = r.get("result", []) if r.get("ok") else []
+        if not r.get("ok"):
+            ok = False
+            log(f"фото лота №{v['n']}: {r.get('description')}")
+        v.setdefault("msgs", []).extend(x["message_id"] for x in sent)
+        time.sleep(2)
+    if ok:
+        v["photos_done"] = True
+    st.dirty = True
+    log(f"фото лота №{v['n']}: {len(paths)}, успешно: {ok}")
+
+
 # ---------------------------------------------------------------- уведомления
-def check(st, live):
+def check(st, live, img_dir):
     now = now_msk()
     for lid, v in st.d["lots"].items():
         if v.get("ended"):
@@ -301,6 +387,9 @@ def check(st, live):
             if info.get("requests") is not None:
                 v["requests"] = info["requests"]
             st.dirty = True
+            update_schedule(st, v, sched, now, info.get("requests"))
+        if info.get("photos") and not v.get("photos_done"):
+            send_photos(st, v, info["photos"], img_dir)
         end = parse_dt(v["end"]) if v.get("end") else None
         sent = v.setdefault("sent", {})
         def say(t, v=v):
@@ -345,10 +434,11 @@ def main():
     next_check = 0
     while time.time() < stop:
         if time.time() >= next_check:
-            subprocess.run(["git", "-C", str(lots_file.parent.parent.parent), "pull", "-q", "origin", "inbox"],
-                           capture_output=True)
+            inbox = str(lots_file.parent.parent.parent)
+            subprocess.run(["git", "-C", inbox, "fetch", "-q", "--depth=1", "origin", "inbox"], capture_output=True)
+            subprocess.run(["git", "-C", inbox, "reset", "-q", "--hard", "FETCH_HEAD"], capture_output=True)
             live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
-            check(st, live)
+            check(st, live, lots_file.parent / "img")
             st.save()
             allowed = admins() or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
