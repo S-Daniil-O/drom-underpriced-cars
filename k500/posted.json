@@ -7253,5 +7253,35 @@
     "mileage_km": 250000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/tgutkl2EbcuCPr_qSHTa1NwmI5Hh4vBYkdlmDksGZDLcejpat6NtCFQmovUpyPkNGRTd86fTWlxValsU/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/niva/323452117.html": {
+    "posted_at": "2026-11-06T21:21:02.829572+00:00",
+    "message_id": 531,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Niva",
+    "year": 2007,
+    "price": 379000,
+    "median_price": 450000.0,
+    "median_sample_size": 1618,
+    "price_rating": "нормальная цена",
+    "mileage_km": 166000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/-1sROq6OC5PS0x9acebcTAVR4u8wwEs4jpVy_-cUEcfJ0U-sjSlI0tv0WfTHO1MMt39Vfru2xun-ZCv3/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/fabia/206164580.html": {
+    "posted_at": "2026-11-06T21:21:05.193384+00:00",
+    "message_id": 532,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Fabia",
+    "year": 2002,
+    "price": 150000,
+    "median_price": 200000.0,
+    "median_sample_size": 768,
+    "price_rating": null,
+    "mileage_km": 210000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/8kKZeDBLTPw3YtAnQGn_oIgulNbCBISL0sN2qa1JwOnSdQoHg3CUeF3Lw1lSgMnSxBXcu4Nd-MkA0Wdr/gen272wb.jpg"
   }
 }
