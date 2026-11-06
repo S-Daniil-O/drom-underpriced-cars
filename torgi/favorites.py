@@ -37,6 +37,9 @@ import torgi_monitor as tm    # разбор площадок (ЦДТ и Тор�
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
 CHAT = os.environ["TORGI_FAV_CHAT_ID"]
+# Кому ещё можно присылать лоты боту (имена Telegram через запятую, переменная репозитория).
+# Они могут только добавлять лоты и смотреть список; удалять лоты и менять цены — владельцы.
+EDITORS = {u.strip().lstrip("@").lower() for u in os.environ.get("TORGI_FAV_EDITORS", "").split(",") if u.strip()}
 API = f"https://api.telegram.org/bot{TOKEN}"
 WARN_HOURS = 24          # предупреждение за столько часов до окончания приёма заявок
 CHECK_EVERY_MIN = 30     # как часто проверять сроки
@@ -356,8 +359,9 @@ def handle(st, msg, allowed):
             else:
                 link_forum(st, chat, allowed)
         return
-    if user not in allowed:
-        tg("sendMessage", chat_id=chat, text="Бот принимает команды только от администраторов канала «Мои лоты».")
+    owner = user in allowed
+    if not owner and (msg.get("from", {}).get("username") or "").lower() not in EDITORS:
+        tg("sendMessage", chat_id=chat, text="У вас нет доступа к этому боту.")
         return
     text = msg.get("text") or msg.get("caption") or ""
     ents = (msg.get("entities") or []) + (msg.get("caption_entities") or [])
@@ -383,6 +387,9 @@ def handle(st, msg, allowed):
         tg("sendMessage", chat_id=chat, text="\n".join(lines))
         return
     m = re.match(r"/(убрать|цена)\s+(\d+)(?:\s+([\d\s]+))?", text)
+    if m and not owner:
+        tg("sendMessage", chat_id=chat, text="Удалять лоты и менять цену может только владелец. Вы можете добавлять лоты.")
+        return
     if m:
         key = next((k for k, v in lots.items() if v.get("n") == int(m.group(2))), None)
         if not key:
