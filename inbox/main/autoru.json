@@ -13,135 +13,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470906+00:00"
-},
-{
-"ad_id": "autoru_1160640286-49d28f25",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "GL-Класс",
-"year": 2012,
-"price": 710000,
-"market_price": 709500,
-"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21009869/c465e7456b9c04b269a6f588054d1a25/1200x900n",
-"mileage_km": 114560,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-06T00:08:15.470893+00:00"
-},
-{
-"ad_id": "autoru_1160450391-b441a29b",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2021,
-"price": 1250000,
-"market_price": 1210500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
-"mileage_km": 92000,
-"owners_display": null,
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470877+00:00"
-},
-{
-"ad_id": "autoru_1160642242-cfd260d1",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2018,
-"price": 700000,
-"market_price": 521000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160642242-cfd260d1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/15a93f8551d30737ff9338ead3cdb094/1200x900n",
-"mileage_km": 58000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470865+00:00"
-},
-{
-"ad_id": "autoru_1160013989-8d9b50c3",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Rapid",
-"year": 2021,
-"price": 1350000,
-"market_price": 1282500,
-"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
-"mileage_km": 150072,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470850+00:00"
-},
-{
-"ad_id": "autoru_1160645885-f84c7f9a",
-"source": "autoru",
-"brand": "Land Rover",
-"model": "Freelander",
-"year": 2006,
-"price": 520000,
-"market_price": 355500,
-"url": "https://auto.ru/cars/used/sale/land_rover/freelander/1160645885-f84c7f9a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1918194/ab1dd226fcfbb70c82707b8b0e46cf6e/1200x900n",
-"mileage_km": 295000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-06T00:08:15.470827+00:00"
-},
-{
-"ad_id": "autoru_1160646450-99e91ac8",
-"source": "autoru",
-"brand": "Renault",
-"model": "Duster",
-"year": 2013,
-"price": 750000,
-"market_price": 638500,
-"url": "https://auto.ru/cars/used/sale/renault/duster/1160646450-99e91ac8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17890514/815aba7a2b9170385492883f4c497d0c/1200x900n",
-"mileage_km": 178000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470812+00:00"
-},
-{
-"ad_id": "autoru_1160646750-7cafd668",
-"source": "autoru",
-"brand": "Honda",
-"model": "Life",
-"year": 2022,
-"price": 1490000,
-"market_price": 1384000,
-"url": "https://auto.ru/cars/used/sale/honda/life/1160646750-7cafd668/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/1d2a80f722d599683e55890192f902fe/1200x900n",
-"mileage_km": 36000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470797+00:00"
+"seen_at": "2026-11-06T00:19:26.752394+00:00"
 },
 {
 "ad_id": "autoru_1160633413-8277c50d",
 "source": "autoru",
-"brand": "Toyota",
-"model": "Mark II",
+"brand": "Mercedes-Benz",
+"model": "GL-Класс",
 "year": 2009,
 "price": 1450000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/toyota/mark_ii/1160650650-dcefad8a/",
+"url": "https://auto.ru/cars/used/sale/mercedes/gl_klasse/1160633413-8277c50d/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/19297093/61851f326d7591e3136f49881d7c26c3/1200x900n",
 "mileage_km": 349999,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470773+00:00"
+"seen_at": "2026-11-06T00:19:26.752384+00:00"
 },
 {
 "ad_id": "autoru_1160637812-08f16da1",
@@ -157,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470745+00:00"
+"seen_at": "2026-11-06T00:19:26.752362+00:00"
 },
 {
 "ad_id": "autoru_1160639586-cc1ea87a",
@@ -173,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470727+00:00"
+"seen_at": "2026-11-06T00:19:26.752350+00:00"
 },
 {
 "ad_id": "autoru_1160640195-7a482847",
@@ -189,7 +77,119 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:08:15.470688+00:00"
+"seen_at": "2026-11-06T00:19:26.752339+00:00"
+},
+{
+"ad_id": "autoru_1160640286-49d28f25",
+"source": "autoru",
+"brand": "Renault",
+"model": "Duster",
+"year": 2012,
+"price": 710000,
+"market_price": 709500,
+"url": "https://auto.ru/cars/used/sale/renault/duster/1160640286-49d28f25/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21009869/c465e7456b9c04b269a6f588054d1a25/1200x900n",
+"mileage_km": 114560,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-06T00:19:26.752329+00:00"
+},
+{
+"ad_id": "autoru_1160450391-b441a29b",
+"source": "autoru",
+"brand": "Opel",
+"model": "Astra",
+"year": 2021,
+"price": 1250000,
+"market_price": 1210500,
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160450391-b441a29b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16872780/3735803378c41c3d06277a3c5d1d9349/1200x900n",
+"mileage_km": 92000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T00:19:26.752317+00:00"
+},
+{
+"ad_id": "autoru_1160642242-cfd260d1",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 2018,
+"price": 700000,
+"market_price": 521000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160642242-cfd260d1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/15a93f8551d30737ff9338ead3cdb094/1200x900n",
+"mileage_km": 58000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T00:19:26.752307+00:00"
+},
+{
+"ad_id": "autoru_1160013989-8d9b50c3",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Rapid",
+"year": 2021,
+"price": 1350000,
+"market_price": 1282500,
+"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160013989-8d9b50c3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f7a974a4e9a5466e17672bb7d863a352/1200x900n",
+"mileage_km": 150072,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T00:19:26.752295+00:00"
+},
+{
+"ad_id": "autoru_1160645885-f84c7f9a",
+"source": "autoru",
+"brand": "Land Rover",
+"model": "Freelander",
+"year": 2006,
+"price": 520000,
+"market_price": 355500,
+"url": "https://auto.ru/cars/used/sale/land_rover/freelander/1160645885-f84c7f9a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1918194/ab1dd226fcfbb70c82707b8b0e46cf6e/1200x900n",
+"mileage_km": 295000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-06T00:19:26.752275+00:00"
+},
+{
+"ad_id": "autoru_1160646450-99e91ac8",
+"source": "autoru",
+"brand": "Renault",
+"model": "Duster",
+"year": 2013,
+"price": 750000,
+"market_price": 638500,
+"url": "https://auto.ru/cars/used/sale/renault/duster/1160646450-99e91ac8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17890514/815aba7a2b9170385492883f4c497d0c/1200x900n",
+"mileage_km": 178000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T00:19:26.752261+00:00"
+},
+{
+"ad_id": "autoru_1160646750-7cafd668",
+"source": "autoru",
+"brand": "Honda",
+"model": "Life",
+"year": 2022,
+"price": 1490000,
+"market_price": 1384000,
+"url": "https://auto.ru/cars/used/sale/honda/life/1160646750-7cafd668/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/1d2a80f722d599683e55890192f902fe/1200x900n",
+"mileage_km": 36000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T00:19:26.752227+00:00"
 },
 {
 "ad_id": "autoru_1160651504-e35c40c5",
@@ -200,12 +200,12 @@
 "price": 1450000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/vaz/vesta/1160651504-e35c40c5/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20606978/EzdPzECW4fEvoFEoPmQkgl1oRtpIjJMPFuQQKOI8xWQrVaZQlejNVNCXNeHKherSzwV1T1d2BWRZqdIYYexq7a4LpRlrBMugR-sE_aQYV_XPzAkuWeI8pxKfe4W2V1v7s8bpuJ8NZWr-KuKOaGXH03NsTa5Bsfp_B7kSLC1xFMTG_qk/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20606978/IHwbdJDWkCxgrZ-tdGSM_EQHUbiRjRTnsjpH0Rpq4WRf8UtO4eM3l_V1g3aEip6atdJgyVtypoXfsoLcicaXhVpxo2e6Bk0apNIRuhIx5iSPk7gjqSpakhUqhROmbBsJ6JdRGwKedHPq_3iZdQQhUw0OKF2sjbqWPRAGCc8-ER2VfQ/1200x900n",
 "mileage_km": 26,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461582+00:00"
+"seen_at": "2026-11-06T00:19:10.833980+00:00"
 },
 {
 "ad_id": "autoru_1160652212-8409c480",
@@ -221,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461567+00:00"
+"seen_at": "2026-11-06T00:19:10.833964+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461556+00:00"
+"seen_at": "2026-11-06T00:19:10.833953+00:00"
 },
 {
 "ad_id": "autoru_1160654693-86dced2c",
@@ -253,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Медовка",
-"seen_at": "2026-11-06T00:07:57.461546+00:00"
+"seen_at": "2026-11-06T00:19:10.833944+00:00"
 },
 {
 "ad_id": "autoru_1160655347-0fb7c2c7",
@@ -269,7 +269,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461535+00:00"
+"seen_at": "2026-11-06T00:19:10.833932+00:00"
 },
 {
 "ad_id": "autoru_1160657279-7ae5570c",
@@ -285,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461523+00:00"
+"seen_at": "2026-11-06T00:19:10.833920+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -301,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-06T00:07:57.461508+00:00"
+"seen_at": "2026-11-06T00:19:10.833909+00:00"
 },
 {
 "ad_id": "autoru_1160658892-bd3e9e4d",
@@ -317,7 +317,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461495+00:00"
+"seen_at": "2026-11-06T00:19:10.833891+00:00"
 },
 {
 "ad_id": "autoru_1160658946-5e4eb259",
@@ -333,7 +333,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461486+00:00"
+"seen_at": "2026-11-06T00:19:10.833881+00:00"
 },
 {
 "ad_id": "autoru_1160659324-3141d587",
@@ -349,7 +349,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461476+00:00"
+"seen_at": "2026-11-06T00:19:10.833871+00:00"
 },
 {
 "ad_id": "autoru_1160659892-063a9f3b",
@@ -365,7 +365,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461462+00:00"
+"seen_at": "2026-11-06T00:19:10.833858+00:00"
 },
 {
 "ad_id": "autoru_1160665052-37f77e54",
@@ -381,7 +381,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461442+00:00"
+"seen_at": "2026-11-06T00:19:10.833837+00:00"
 },
 {
 "ad_id": "autoru_1160491303-cfcba7ab",
@@ -392,12 +392,12 @@
 "price": 1350000,
 "market_price": 1036000,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/g4ByU580dx_Kx8X0Wl6FZXlPEm1tiWoC_x9_wm8f5R3pBx2BXTLbOWdu7nbVCW0cTXQn7qlt0wSHP8baLD36uwRNzWU9J6ASpC-KreO6IWiSV-2IkVFg5xifB4PT5aQMzV-VV6dXhhClo4_pO6n21MdQq3H8TFS6NrwDMorVhrR6wcI/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/fHYc8RxdeIeTA2Eu7kslzPceAOztV6a5MMImqlcLQxH0KiyCdUh7QgEXDXbhP7gzrZkqhgCE0L_k1yKjSjvvd82VznZAw9SXFIZzb454LSCLV69X6l9Yy7jPM7VU_ubBqMhy_ofI3VvoKA8mVSPdhQ1hOFCGzuowG7BY86ggjIqlJQ/1200x900n",
 "mileage_km": 215000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461428+00:00"
+"seen_at": "2026-11-06T00:19:10.833824+00:00"
 },
 {
 "ad_id": "autoru_1160665465-dd183cfd",
@@ -413,7 +413,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461416+00:00"
+"seen_at": "2026-11-06T00:19:10.833811+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -429,7 +429,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461396+00:00"
+"seen_at": "2026-11-06T00:19:10.833790+00:00"
 },
 {
 "ad_id": "autoru_1160450387-b64afbcb",
@@ -445,7 +445,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T00:07:57.461340+00:00"
+"seen_at": "2026-11-06T00:19:10.833735+00:00"
 },
 {
 "ad_id": "autoru_1160666342-093cee9a",
