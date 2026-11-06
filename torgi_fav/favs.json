@@ -103,7 +103,9 @@
    "title": "Uaz Patriot, 2013 · мин 238 т.р. · до 08.11 · №4",
    "photos_done": true,
    "no_photos": true,
-   "hit_target": true
+   "hit_target": true,
+   "ended": true,
+   "removed": true
   },
   "cdt-383751": {
    "n": 14,
@@ -604,7 +606,7 @@
    "photos_done": true
   }
  },
- "offset": 177673575,
+ "offset": 177673576,
  "seq": 22,
  "forum": -1004498088083,
  "owners": [
