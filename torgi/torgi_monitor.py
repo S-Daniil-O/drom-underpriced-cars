@@ -721,7 +721,10 @@ def autoru_state(url):
     if not heads or len(parts) > 7:
         return None
     rest = [k for k in parts if k != heads[0]]
+    deadline = time.time() + 15       # перебор порядка кусков не должен затягиваться
     for perm in itertools.permutations(rest):
+        if time.time() > deadline:
+            return None
         try:
             return json.loads(parts[heads[0]] + "".join(parts[k] for k in perm))
         except ValueError:
@@ -1100,7 +1103,7 @@ def car_title(text):
     return f"{brand.replace('_', ' ').title()} {model.replace('_', ' ').replace('-', ' ').title()}" + (f", {car[2]}" if car[2] else "")
 
 
-def fav_fetch(lid, v, img_dir):
+def fav_fetch(lid, v, img_dir, market=True):
     """Всё по одному лоту: график, заявки, название, VIN, фото (если ещё не отправлены)."""
     d = None
     if lid.startswith("cdt-"):
@@ -1120,7 +1123,9 @@ def fav_fetch(lid, v, img_dir):
     if name and vin_year and not re.search(r", \d{4}$", name):   # год не указан текстом — по VIN
         name += f", {vin_year}"
     out = {"schedule": [list(r[:4]) for r in d["schedule"]], "requests": d.get("requests"),
-           "name": name, "vin": vin, "trade": d.get("trade"), "market": lot_market(d)}
+           "name": name, "vin": vin, "trade": d.get("trade")}
+    if market:            # долго (паузы между запросами), поэтому только на iMac, не в боте
+        out["market"] = lot_market(d)
     if v.get("photos_done"):
         return out
     names = []

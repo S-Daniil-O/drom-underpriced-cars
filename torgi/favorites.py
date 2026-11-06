@@ -328,7 +328,7 @@ def audit_text(st):
         if not v.get("sched_msg"):
             miss.append("нет графика")
         if not v.get("market_msg"):
-            miss.append("нет рыночной цены")
+            miss.append("нет рыночной цены (придёт после 10:00)")
         if not v.get("photos_done"):
             miss.append("нет фото" + (" (придут после 10:00)" if k.startswith("mets-") else ""))
         if not v.get("vin"):
@@ -788,7 +788,7 @@ def direct_info(lid, v):
         return {}
     if lid not in DIRECT:
         try:
-            DIRECT[lid] = tm.fav_fetch(lid, v, DIRECT_DIR) or {}
+            DIRECT[lid] = tm.fav_fetch(lid, v, DIRECT_DIR, market=False) or {}
         except Exception as e:  # noqa: BLE001 — сбой площадки не должен ронять бота
             log(f"лот {lid}: не загрузился с площадки ({e})")
             return {}
@@ -802,8 +802,7 @@ def check(st, live, img_dir):
             continue
         info = live.get(lid) or {}
         photos_dir = img_dir
-        need_more = (not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
-                     or (not info.get("market") and not v.get("market_msg")))
+        need_more = not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
         if need_more:
             extra = direct_info(lid, v)
             if extra:
