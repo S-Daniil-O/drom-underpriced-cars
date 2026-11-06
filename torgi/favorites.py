@@ -43,8 +43,8 @@ EDITORS = {u.strip().lstrip("@").lower() for u in os.environ.get("TORGI_FAV_EDIT
 API = f"https://api.telegram.org/bot{TOKEN}"
 WARN_HOURS = 24          # предупреждение за столько часов до окончания приёма заявок
 CHECK_EVERY_MIN = 30     # как часто проверять сроки
-LOT_URL = re.compile(r"https?://(?:torgi\.cdtrf\.ru/trades/(\d+)|m-ets\.ru/(\d+-\d+)|"
-                     r"bankrot\.torggroup\.org/TradeLot/View/(\d+))")
+LOT_URL = re.compile(r"https?://(?:www\.)?(?:torgi\.cdtrf\.ru/trades/([0-9]+)|m-ets\.ru/([0-9]+-[0-9]+)|"
+                     r"bankrot\.torggroup\.org/TradeLot/View/([0-9]+))")
 
 
 FORUM = None   # id группы с темами (после /link): у каждого лота своя тема
@@ -208,10 +208,15 @@ class State:
 
 
 def lot_id(url):
-    m = LOT_URL.search(url or "")
+    """Единый номер лота: только ссылка на саму площадку, без ведущих нулей."""
+    m = LOT_URL.match((url or "").strip())
     if not m:
         return None
-    return "cdt-" + m.group(1) if m.group(1) else "mets-" + m.group(2) if m.group(2) else "tg-" + m.group(3)
+    if m.group(1):
+        return f"cdt-{int(m.group(1))}"
+    if m.group(2):
+        return "mets-" + "-".join(str(int(x)) for x in m.group(2).split("-"))
+    return f"tg-{int(m.group(3))}"
 
 
 # ---------------------------------------------------------------- кнопки и удаление лота
@@ -350,13 +355,19 @@ def admins(st):
 def is_editor(st, who):
     """Имя из EDITORS привязывается к номеру пользователя при первом обращении: дальше доступ
     определяет номер. Смена имени доступ не отнимает, а занявший чужое имя доступа не получит."""
+    uid = who.get("id")
+    if uid is None:
+        return False
     pinned = st.d.setdefault("editors", {})
-    if who.get("id") in pinned.values():
+    for stale in [k for k in pinned if k not in EDITORS]:   # убрали из списка — доступ пропадает
+        pinned.pop(stale)
+        st.dirty = True
+    if uid in pinned.values():
         return True
     name = (who.get("username") or "").lower()
     if name not in EDITORS or name in pinned:
         return False
-    pinned[name] = who.get("id")
+    pinned[name] = uid
     st.dirty = True
     return True
 
