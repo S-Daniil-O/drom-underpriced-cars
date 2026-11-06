@@ -6,6 +6,7 @@
   • /цена <номер> <сумма> — задать свою цену (номер — из списка);
   • /убрать <номер> или кнопка «🗑 Удалить лот» на карточке — удалить лот и всё по нему из канала;
   • /список — что отслеживается.
+В группе с темами команда /link переносит лоты в отдельные темы (одна тема — один лот).
 Команды принимаются только от администраторов канала «Мои лоты».
 
 Уведомления (ответом на карточку лота):
@@ -37,6 +38,87 @@ WARN_HOURS = 24          # предупреждение за столько ча
 CHECK_EVERY_MIN = 30     # как часто проверять сроки
 LOT_URL = re.compile(r"https?://(?:torgi\.cdtrf\.ru/trades/(\d+)|m-ets\.ru/(\d+-\d+)|"
                      r"bankrot\.torggroup\.org/TradeLot/View/(\d+))")
+
+
+FORUM = None   # id группы с темами (после /link): у каждого лота своя тема
+
+
+def home(v):
+    """Чат, где лежат сообщения лота."""
+    return FORUM if FORUM and v.get("topic") else CHAT
+
+
+def place(v):
+    """Куда отправлять сообщения о лоте: в его тему или ответом на карточку в канале."""
+    if FORUM and v.get("topic"):
+        return {"chat_id": FORUM, "message_thread_id": v["topic"]}
+    return {"chat_id": CHAT, "reply_to_message_id": v["card"], "allow_sending_without_reply": "true"}
+
+
+def topic_title(v):
+    """Название темы: по списку тем видно машину, минимальную цену и срок."""
+    name = str(v.get("name") or "")
+    name = f"лот {v['n']}" if name.startswith("http") else name
+    t = f"№{v['n']} {name}"
+    if v.get("min_price"):
+        t += f" · мин {int(round(v['min_price'] / 1000))} т.р."
+    e = parse_dt(v["end"]) if v.get("end") else None
+    if e:
+        t += f" · до {e:%d.%m}"
+    return ("🏁 " + t if v.get("ended") else t)[:128]
+
+
+def update_topic(st, v):
+    """Обновить название темы; завершённую тему закрыть."""
+    if not (FORUM and v.get("topic")):
+        return
+    t = topic_title(v)
+    if v.get("title") != t:
+        r = tg("editForumTopic", chat_id=FORUM, message_thread_id=v["topic"], name=t)
+        if r.get("ok") or "NOT_MODIFIED" in r.get("description", ""):
+            v["title"] = t
+            st.dirty = True
+    if v.get("ended") and not v.get("closed"):
+        tg("closeForumTopic", chat_id=FORUM, message_thread_id=v["topic"])
+        v["closed"] = True
+        st.dirty = True
+
+
+def make_topic(v):
+    r = tg("createForumTopic", chat_id=FORUM, name=topic_title(v))
+    if r.get("ok"):
+        v["topic"] = r["result"]["message_thread_id"]
+        v["title"] = topic_title(v)
+        return True
+    log(f"тема лота №{v.get('n')}: {r.get('description')}")
+    return False
+
+
+def link_forum(st, chat_id):
+    """/link в группе с темами: перенести активные лоты в отдельные темы."""
+    global FORUM
+    FORUM = chat_id
+    st.d["forum"] = chat_id
+    st.dirty = True
+    moved = 0
+    for v in st.d["lots"].values():
+        if v.get("ended") or v.get("topic"):
+            continue
+        old_card = v["card"]
+        if not make_topic(v):
+            continue
+        r = tg("copyMessage", chat_id=FORUM, from_chat_id=CHAT, message_id=old_card,
+               message_thread_id=v["topic"], reply_markup=kb_main(v["n"]))
+        if not r.get("ok"):
+            r = tg("sendMessage", chat_id=FORUM, message_thread_id=v["topic"], text=f"⭐ Лот №{v['n']}\n{v['url']}", reply_markup=kb_main(v["n"]))
+        v["card"] = r.get("result", {}).get("message_id", old_card)
+        # график и фото придут в тему заново
+        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False})
+        moved += 1
+        time.sleep(3)
+    tg("sendMessage", chat_id=FORUM, text=f"✅ Группа подключена. Лотов перенесено в темы: {moved}.\n"
+       "График появится в течение получаса, фото — после утреннего обновления (10:00).")
+    log(f"группа подключена, лотов в темах: {moved}")
 
 
 def log(msg):
@@ -128,22 +210,30 @@ def remove_lot(st, key):
     Письма удаляет скрипт Gmail: он видит пометку removed в favs.json (в течение ~15 минут).
     Telegram не даёт боту удалять посты старше 48 часов — такие заменяются пометкой."""
     v = st.d["lots"][key]
+    if FORUM and v.get("topic"):     # тема удаляется целиком — вместе с письмами, фото и старыми сообщениями
+        r = tg("deleteForumTopic", chat_id=FORUM, message_thread_id=v["topic"])
+        log(f"лот №{v['n']}: тема удалена: {r.get('ok')} {r.get('description', '')}")
+        if r.get("ok"):
+            v["ended"] = True
+            v["removed"] = True
+            st.dirty = True
+            return 1, 0
     # чужие сообщения не трогаем: id, записанные за другими лотами, исключаются
     other = {i for o in st.d["lots"].values() if o is not v
              for i in (o.get("card"), o.get("head"), *(o.get("msgs") or [])) if i}
     ids = sorted({v["card"], *(v.get("msgs") or []), *([v["head"]] if v.get("head") else [])} - other)
     deleted = marked = 0
     for mid in ids:
-        r = tg("deleteMessage", chat_id=CHAT, message_id=mid)
+        r = tg("deleteMessage", chat_id=home(v), message_id=mid)
         if r.get("ok"):
             deleted += 1
             continue
         if "message to delete not found" in r.get("description", ""):
             continue
         stub = f"🗑 Лот №{v['n']} удалён"
-        r = tg("editMessageCaption", chat_id=CHAT, message_id=mid, caption=stub, reply_markup='{"inline_keyboard":[]}')
+        r = tg("editMessageCaption", chat_id=home(v), message_id=mid, caption=stub, reply_markup='{"inline_keyboard":[]}')
         if not r.get("ok"):
-            r = tg("editMessageText", chat_id=CHAT, message_id=mid, text=stub, reply_markup='{"inline_keyboard":[]}')
+            r = tg("editMessageText", chat_id=home(v), message_id=mid, text=stub, reply_markup='{"inline_keyboard":[]}')
         marked += bool(r.get("ok"))
     v["ended"] = True
     v["removed"] = True
@@ -158,7 +248,8 @@ def handle_button(st, q, allowed):
         return
     m = re.fullmatch(r"(del|yes|no):(\d+)", q.get("data") or "")
     msg = q.get("message") or {}
-    if str(msg.get("chat", {}).get("id")) != str(CHAT) or not msg.get("message_id"):
+    origin = msg.get("chat", {}).get("id")
+    if str(origin) not in (str(CHAT), str(FORUM)) or not msg.get("message_id"):
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Недоступно")
         return
     key = next((k for k, v in st.d["lots"].items() if m and v.get("n") == int(m.group(2))), None)
@@ -167,10 +258,10 @@ def handle_button(st, q, allowed):
         return
     n = int(m.group(2))
     if m.group(1) == "del":
-        tg("editMessageReplyMarkup", chat_id=CHAT, message_id=msg.get("message_id"), reply_markup=kb_confirm(n))
+        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_confirm(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Подтвердите удаление")
     elif m.group(1) == "no":
-        tg("editMessageReplyMarkup", chat_id=CHAT, message_id=msg.get("message_id"), reply_markup=kb_main(n))
+        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_main(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Отменено")
     else:
         tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Удаляю лот №{n}…")
@@ -182,7 +273,7 @@ def add_buttons(st):
     for v in st.d["lots"].values():
         if v.get("removed") or v.get("btn"):
             continue
-        r = tg("editMessageReplyMarkup", chat_id=CHAT, message_id=v["card"], reply_markup=kb_main(v["n"]))
+        r = tg("editMessageReplyMarkup", chat_id=home(v), message_id=v["card"], reply_markup=kb_main(v["n"]))
         v["btn"] = True
         st.dirty = True
         # у карточек из пересланных постов следом идёт строка «МОЙ ЛОТ»
@@ -193,14 +284,24 @@ def add_buttons(st):
 
 # ---------------------------------------------------------------- команды
 def admins():
-    r = tg("getChatAdministrators", chat_id=CHAT)
-    return {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
+    ids = set()
+    for chat in filter(None, (CHAT, FORUM)):
+        r = tg("getChatAdministrators", chat_id=chat)
+        ids |= {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
+    return ids
 
 
 def handle(st, msg, allowed):
     user = msg.get("from", {}).get("id")
     chat = msg["chat"]["id"]
     if msg["chat"].get("type") != "private":
+        if re.match(r"/link(@\w+)?\s*$", msg.get("text") or ""):
+            if user not in allowed:
+                tg("sendMessage", chat_id=chat, text="Подключить группу может только администратор канала «Мои лоты».")
+            elif not msg["chat"].get("is_forum"):
+                tg("sendMessage", chat_id=chat, text="В этой группе не включены темы: настройки группы → «Темы».")
+            else:
+                link_forum(st, chat)
         return
     if user not in allowed:
         tg("sendMessage", chat_id=chat, text="Бот принимает команды только от администраторов канала «Мои лоты».")
@@ -265,25 +366,32 @@ def handle(st, msg, allowed):
             e = e.replace(hour=23, minute=59)
         end = e.strftime("%Y-%m-%dT%H:%M") if e else None
     head = f"⭐ МОЙ ЛОТ №{n}" + (f" — моя цена {money(target)}" if target else "") + f"\n#лот{n}"
-    # карточка: копия поста (с фото) или текст со ссылкой
+    # карточка: копия поста (с фото) или текст со ссылкой; в группе — в отдельной теме лота
+    draft = {"n": n, "name": name, "end": end}
+    if FORUM and not make_topic(draft):
+        tg("sendMessage", chat_id=chat, text="Не удалось создать тему — проверьте, что у бота есть право «Управление темами».")
+        st.d["seq"] -= 1
+        return
+    where = {"chat_id": FORUM, "message_thread_id": draft["topic"]} if FORUM else {"chat_id": CHAT}
+    head_id = None
     if msg.get("forward_origin") or msg.get("forward_from_chat"):
-        r = tg("copyMessage", chat_id=CHAT, from_chat_id=chat, message_id=msg["message_id"], reply_markup=kb_main(n))
+        r = tg("copyMessage", from_chat_id=chat, message_id=msg["message_id"], reply_markup=kb_main(n), **where)
         card = r.get("result", {}).get("message_id")
-        head_id = None
         if card:
-            hr = tg("sendMessage", chat_id=CHAT, text=head + "\nДокументы и письма по лоту — ответами на этот пост.", reply_to_message_id=card)
+            hr = tg("sendMessage", text=head + "\nГрафик, фото и письма по лоту придут сюда.",
+                    **({**where, "reply_to_message_id": card}))
             head_id = hr.get("result", {}).get("message_id")
     else:
-        r = tg("sendMessage", chat_id=CHAT, text=f"{head}\n{url}", reply_markup=kb_main(n))
+        r = tg("sendMessage", text=f"{head}\n{url}", reply_markup=kb_main(n), **where)
         card = r.get("result", {}).get("message_id")
-        head_id = None
     if not card:
-        tg("sendMessage", chat_id=chat, text="Не удалось создать карточку в канале — проверьте, что бот там администратор.")
+        tg("sendMessage", chat_id=chat, text="Не удалось создать карточку — проверьте, что бот администратор.")
         st.d["seq"] -= 1
         return
     lots[lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
                  "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
-                 "btn": True, "head": head_id, "msgs": []}
+                 "btn": True, "head": head_id, "msgs": [],
+                 "topic": draft.get("topic"), "title": draft.get("title")}
     st.dirty = True
     tg("sendMessage", chat_id=chat, text=f"✅ Добавлено: №{n} {name}"
        + (f", ваша цена {money(target)}" if target else "") + ".\nГрафик торгов подтянется с площадки при утреннем обновлении (10:00).")
@@ -314,7 +422,7 @@ def schedule_text(v, sched, now, req):
     if v.get("target"):
         hit = next((r for r in rows if r[2] <= v["target"]), None)
         lines.append(f"🎯 Ваша цена {money(v['target'])}: " + (f"с {parse_dt(hit[0]):%d.%m.%Y}" if hit else "по графику не достигается"))
-    if req is not None:
+    if isinstance(req, int):
         lines.append("📭 Заявок нет" if req == 0 else f"📨 Заявок: {req}")
     return "\n".join(lines)
 
@@ -325,13 +433,12 @@ def update_schedule(st, v, sched, now, req):
     if v.get("sched_text") == text:
         return
     if v.get("sched_msg"):
-        r = tg("editMessageText", chat_id=CHAT, message_id=v["sched_msg"], text=text, parse_mode="HTML")
+        r = tg("editMessageText", chat_id=home(v), message_id=v["sched_msg"], text=text, parse_mode="HTML")
         if not r.get("ok") and "not modified" not in r.get("description", ""):
             log(f"график лота №{v['n']}: {r.get('description')}")
             return
     else:
-        r = tg("sendMessage", chat_id=CHAT, text=text, parse_mode="HTML", reply_to_message_id=v["card"],
-               allow_sending_without_reply="true", disable_notification="true")
+        r = tg("sendMessage", text=text, parse_mode="HTML", disable_notification="true", **place(v))
         if not r.get("ok"):
             log(f"график лота №{v['n']}: {r.get('description')}")
             return
@@ -343,7 +450,8 @@ def update_schedule(st, v, sched, now, req):
 
 def send_photos(st, v, names, img_dir):
     """Все фото лота альбомами по 10, ответом на карточку. Один раз на лот."""
-    paths = [img_dir / n for n in names if (img_dir / n).is_file()]
+    safe = [n for n in names if re.fullmatch(r"[A-Za-z0-9_-]+\.jpg", str(n))][:30]   # только свои файлы из img/
+    paths = [img_dir / n for n in safe if (img_dir / n).is_file()]
     if not paths:
         return
     ok = True
@@ -351,16 +459,14 @@ def send_photos(st, v, names, img_dir):
         part = paths[i:i + 10]
         if len(part) == 1:
             with open(part[0], "rb") as f:
-                r = tg("sendPhoto", files={"photo": f.read()}, chat_id=CHAT, reply_to_message_id=v["card"],
-                       allow_sending_without_reply="true", disable_notification="true")
+                r = tg("sendPhoto", files={"photo": f.read()}, disable_notification="true", **place(v))
             sent = [r["result"]] if r.get("ok") else []
         else:
             media = [{"type": "photo", "media": f"attach://f{k}"} for k in range(len(part))]
             if i == 0:
                 media[0]["caption"] = f"📷 Фото лота №{v['n']} ({len(paths)} шт.)"
-            r = tg("sendMediaGroup", files={f"f{k}": p.read_bytes() for k, p in enumerate(part)}, chat_id=CHAT,
-                   media=json.dumps(media, ensure_ascii=False), reply_to_message_id=v["card"],
-                   allow_sending_without_reply="true", disable_notification="true")
+            r = tg("sendMediaGroup", files={f"f{k}": p.read_bytes() for k, p in enumerate(part)},
+                   media=json.dumps(media, ensure_ascii=False), disable_notification="true", **place(v))
             sent = r.get("result", []) if r.get("ok") else []
         if not r.get("ok"):
             ok = False
@@ -393,7 +499,7 @@ def check(st, live, img_dir):
         end = parse_dt(v["end"]) if v.get("end") else None
         sent = v.setdefault("sent", {})
         def say(t, v=v):
-            r = tg("sendMessage", chat_id=CHAT, text=t, reply_to_message_id=v["card"])
+            r = tg("sendMessage", text=t, **place(v))
             if r.get("ok"):
                 v.setdefault("msgs", []).append(r["result"]["message_id"])
             return r
@@ -420,10 +526,13 @@ def check(st, live, img_dir):
             say(f"🏁 Лот №{v['n']}: приём заявок закончился ({end:%d.%m.%Y %H:%M}).\n#завершено")
             v["ended"] = True
             st.dirty = True
+        update_topic(st, v)
 
 
 def main():
+    global FORUM
     st = State(sys.argv[1])
+    FORUM = st.d.get("forum")
     lots_file = Path(sys.argv[2])
     minutes = int(sys.argv[3]) if len(sys.argv) > 3 else 330
     stop = time.time() + minutes * 60
