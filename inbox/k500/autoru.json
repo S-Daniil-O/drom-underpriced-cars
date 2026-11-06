@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-06T09:30:38.085686+00:00"
+"seen_at": "2026-11-06T09:41:44.237652+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:38.085668+00:00"
+"seen_at": "2026-11-06T09:41:44.237633+00:00"
 },
 {
 "ad_id": "autoru_1160643923-2fef0435",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:38.085652+00:00"
+"seen_at": "2026-11-06T09:41:44.237616+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:38.085616+00:00"
+"seen_at": "2026-11-06T09:41:44.237580+00:00"
 },
 {
 "ad_id": "autoru_1160651646-9f8434da",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Слобода Подгорное",
-"seen_at": "2026-11-06T09:30:38.085574+00:00"
+"seen_at": "2026-11-06T09:41:44.237537+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:20.556803+00:00"
+"seen_at": "2026-11-06T09:41:28.862743+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:20.556782+00:00"
+"seen_at": "2026-11-06T09:41:28.862724+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -125,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-06T09:30:20.556724+00:00"
+"seen_at": "2026-11-06T09:41:28.862690+00:00"
+},
+{
+"ad_id": "autoru_1160673466-be0bb3b1",
+"source": "autoru",
+"brand": "Ford",
+"model": "Aerostar",
+"year": 1993,
+"price": 110000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/ford/aerostar/1160673466-be0bb3b1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/e270be39fb32b8fc5e0ac407916d3c2f/1200x900n",
+"mileage_km": 175000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-06T09:41:28.862642+00:00"
 },
 {
 "ad_id": "autoru_1160635321-a36ff52f",
