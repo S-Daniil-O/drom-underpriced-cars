@@ -16,6 +16,7 @@
 import base64
 import collections
 import html
+import itertools
 import json
 import os
 import re
@@ -699,6 +700,98 @@ def market_price(car, specs=None):
     return None
 
 
+# ---------------------------------------------------------------- рынок по Авто.ру
+AUTORU_MARK = {"lada": "vaz", "mercedes-benz": "mercedes", "great_wall": "great_wall"}
+
+
+def autoru_slugs(brand, model):
+    mark = AUTORU_MARK.get(brand, brand).replace("-", "_")
+    model = re.sub(r"^mazda(?=\d)", "", str(model)).replace("-", "_")
+    return mark, model
+
+
+def autoru_state(url):
+    """Данные выдачи Авто.ру: несколько <script class="RIS">, первый начинается с «{»,
+    остальные — продолжения в неизвестном порядке. Закрыто для серверов, работает с домашнего IP."""
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=40)
+    if "showcaptcha" in r.url or r.status_code != 200:
+        return None
+    parts = dict(re.findall(r'<script[^>]*class="RIS"[^>]*data-webpack-chunk-id="(\d+)"[^>]*>(.*?)</script>', r.text, re.S))
+    heads = [k for k, v in parts.items() if v.startswith("{")]
+    if not heads or len(parts) > 7:
+        return None
+    rest = [k for k in parts if k != heads[0]]
+    for perm in itertools.permutations(rest):
+        try:
+            return json.loads(parts[heads[0]] + "".join(parts[k] for k in perm))
+        except ValueError:
+            continue
+    return None
+
+
+def autoru_market(brand, models, year):
+    """Рынок по Авто.ру: медиана цен и собственная оценка Авто.ру (predicted_price_ranges.q4060)
+    по объявлениям той же марки, модели и года по всей России."""
+    models = [models] if isinstance(models, str) else list(models)
+    for model in models:
+        mark, code = autoru_slugs(brand, model)
+        url = f"https://auto.ru/cars/{mark}/{code}/" + (f"{year}-year/" if year else "") + "used/"
+        try:
+            st = autoru_state(url)
+        except requests.RequestException:
+            return None
+        offers = ((st or {}).get("listing") or {}).get("data", {}).get("offers") or []
+        prices, est = [], []
+        for o in offers:
+            vi = o.get("vehicle_info") or {}
+            if str((vi.get("model_info") or {}).get("code", "")).lower() != code.lower():
+                continue                 # Авто.ру подмешивает похожие модели
+            if year and (o.get("documents") or {}).get("year") != year:
+                continue
+            rur = (o.get("price_info") or {}).get("RUR")
+            if rur:
+                prices.append(rur)
+            rng = (o.get("predicted_price_ranges") or {}).get("q4060") or {}
+            if rng.get("from") and rng.get("to"):
+                est.append((rng["from"] + rng["to"]) / 2)
+        if len(prices) >= 3:
+            return {"price": statistics.median(prices), "estimate": statistics.median(est) if est else None,
+                    "n": len(prices), "url": url}
+        time.sleep(2)
+    return None
+
+
+def lot_market(d):
+    """Рыночная цена лота: Дром (похожие по двигателю, коробке, пробегу) и Авто.ру."""
+    text = (d.get("title") or "") + " " + (d.get("description") or "")
+    car = parse_car(d.get("title") or "") or parse_car(text)
+    if not car:
+        return None
+    if not car[2]:
+        car = (car[0], car[1], parse_vin(text)[1])
+    specs = parse_specs(text)
+    out = {}
+    try:
+        drom = market_price(car, specs)
+    except Exception as e:  # noqa: BLE001 — сбой одного источника не мешает другому
+        log(f"рынок Дром: {e}")
+        drom = None
+    if drom:
+        out["drom"] = {k: drom.get(k) for k in ("price", "n", "matched", "url")}
+    try:
+        au = autoru_market(car[0], car[1], car[2])
+    except Exception as e:  # noqa: BLE001
+        log(f"рынок Авто.ру: {e}")
+        au = None
+    if au:
+        out["autoru"] = au
+    if not out:
+        return None
+    vals = [x["price"] for x in out.values()]
+    out["avg"] = sum(vals) / len(vals)
+    return out
+
+
 # ---------------------------------------------------------------- фильтр битых
 def bad_reason(lot):
     """Возвращает найденное «плохое» выражение или None."""
@@ -1027,7 +1120,7 @@ def fav_fetch(lid, v, img_dir):
     if name and vin_year and not re.search(r", \d{4}$", name):   # год не указан текстом — по VIN
         name += f", {vin_year}"
     out = {"schedule": [list(r[:4]) for r in d["schedule"]], "requests": d.get("requests"),
-           "name": name, "vin": vin, "trade": d.get("trade")}
+           "name": name, "vin": vin, "trade": d.get("trade"), "market": lot_market(d)}
     if v.get("photos_done"):
         return out
     names = []

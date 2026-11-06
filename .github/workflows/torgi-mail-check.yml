@@ -12,10 +12,11 @@ jobs:
       - run: |
           python3 - <<'PY'
           import json, os, re, urllib.request
-          u = os.environ.get("U", "")
-          print("адрес задан:", bool(u), "| оканчивается на /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u.strip())))
+          raw = os.environ.get("U", "")
+          u = re.sub(r"\s+", "", raw)
+          print("адрес задан:", bool(u), "| лишних символов:", len(raw) - len(u), "| вид /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u)))
           try:
-              r = urllib.request.urlopen(u.strip(), timeout=60)
+              r = urllib.request.urlopen(u, timeout=60)
               b = r.read().decode("utf8", "replace")
               print("ответ:", r.status, r.headers.get("content-type"), "| длина", len(b))
               try:
@@ -24,5 +25,5 @@ jobs:
               except ValueError:
                   print("ответ не JSON (нет доступа «Все» или старое развертывание)")
           except Exception as e:
-              print("ошибка:", type(e).__name__, str(e)[:100])
+              print("ошибка:", type(e).__name__)
           PY
