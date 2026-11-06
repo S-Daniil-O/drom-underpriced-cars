@@ -209,9 +209,11 @@
    "sent": {},
    "btn": true,
    "head": null,
-   "msgs": []
+   "msgs": [],
+   "ended": true,
+   "removed": true
   }
  },
- "offset": 177673420,
+ "offset": 177673421,
  "seq": 11
 }
