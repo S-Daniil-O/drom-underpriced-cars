@@ -718,7 +718,7 @@ def autoru_state(url):
         return None
     parts = dict(re.findall(r'<script[^>]*class="RIS"[^>]*data-webpack-chunk-id="(\d+)"[^>]*>(.*?)</script>', r.text, re.S))
     heads = [k for k, v in parts.items() if v.startswith("{")]
-    if not heads or len(parts) > 7:
+    if not heads or len(parts) > 6 or sum(map(len, parts.values())) > 8_000_000:
         return None
     rest = [k for k in parts if k != heads[0]]
     deadline = time.time() + 15       # перебор порядка кусков не должен затягиваться
@@ -730,6 +730,21 @@ def autoru_state(url):
         except ValueError:
             continue
     return None
+
+
+def rub(x):
+    """Цена из чужих данных: только правдоподобное число."""
+    try:
+        f = float(x)
+    except (TypeError, ValueError):
+        return None
+    return f if 30_000 <= f <= 100_000_000 else None
+
+
+def trimmed(values):
+    """Без выбросов: цены вне 0.4–2.5 от медианы (ошибки, битые, «цена для обмена»)."""
+    med = statistics.median(values)
+    return [x for x in values if 0.4 * med <= x <= 2.5 * med]
 
 
 def autoru_market(brand, models, year):
@@ -751,13 +766,15 @@ def autoru_market(brand, models, year):
                 continue                 # Авто.ру подмешивает похожие модели
             if year and (o.get("documents") or {}).get("year") != year:
                 continue
-            rur = (o.get("price_info") or {}).get("RUR")
+            rur = rub((o.get("price_info") or {}).get("RUR"))
             if rur:
                 prices.append(rur)
             rng = (o.get("predicted_price_ranges") or {}).get("q4060") or {}
-            if rng.get("from") and rng.get("to"):
-                est.append((rng["from"] + rng["to"]) / 2)
-        if len(prices) >= 3:
+            lo, hi = rub(rng.get("from")), rub(rng.get("to"))
+            if lo and hi:
+                est.append((lo + hi) / 2)
+        prices = trimmed(prices) if prices else []
+        if len(prices) >= 5:
             return {"price": statistics.median(prices), "estimate": statistics.median(est) if est else None,
                     "n": len(prices), "url": url}
         time.sleep(2)
@@ -777,21 +794,24 @@ def lot_market(d):
     try:
         drom = market_price(car, specs)
     except Exception as e:  # noqa: BLE001 — сбой одного источника не мешает другому
-        log(f"рынок Дром: {e}")
+        log(f"рынок Дром: {type(e).__name__}")
         drom = None
     if drom:
         out["drom"] = {k: drom.get(k) for k in ("price", "n", "matched", "url")}
     try:
         au = autoru_market(car[0], car[1], car[2])
     except Exception as e:  # noqa: BLE001
-        log(f"рынок Авто.ру: {e}")
+        log(f"рынок Авто.ру: {type(e).__name__}")
         au = None
     if au:
         out["autoru"] = au
     if not out:
         return None
-    vals = [x["price"] for x in out.values()]
+    vals = [x["price"] for x in out.values() if isinstance(x.get("price"), (int, float))]
+    if not vals:
+        return None
     out["avg"] = sum(vals) / len(vals)
+    out["spread"] = round((max(vals) / min(vals) - 1) * 100)   # насколько расходятся площадки, %
     return out
 
 

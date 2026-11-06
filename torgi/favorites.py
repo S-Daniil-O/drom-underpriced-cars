@@ -712,6 +712,8 @@ def market_text(v, mk, sched, now):
     avg = mk.get("avg")
     if avg:
         lines += ["", f"<b>Среднерыночная: ~{money(avg)}</b>"]
+        if (mk.get("spread") or 0) > 30:
+            lines.append(f"⚠️ Дром и Авто.ру расходятся на {int(mk['spread'])}% — проверьте вручную")
     if avg and sched:
         mn = min(r[2] for r in sched)
         cur = next((r for r in sched if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
@@ -831,7 +833,10 @@ def check(st, live, img_dir):
             st.dirty = True
             update_schedule(st, v, sched, now, info.get("requests"))
             if info.get("market"):
-                update_market(st, v, info["market"], sched, now)
+                try:
+                    update_market(st, v, info["market"], sched, now)
+                except (TypeError, ValueError, KeyError, AttributeError) as e:
+                    log(f"рынок лота №{v['n']}: неверные данные ({type(e).__name__})")
         if info.get("photos") and not v.get("photos_done"):
             send_photos(st, v, info["photos"], photos_dir)
         elif info.get("photos_total") == 0 and not v.get("photos_done"):
