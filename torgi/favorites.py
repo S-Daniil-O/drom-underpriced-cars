@@ -11,6 +11,7 @@
 Команды принимаются только от администраторов канала «Мои лоты».
 
 Уведомления (ответом на карточку лота):
+  📈 рыночная цена (Дром и Авто.ру), обновляется каждый день;
   📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;
   ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
 К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота.
@@ -326,6 +327,8 @@ def audit_text(st):
             miss.append("нет марки и модели")
         if not v.get("sched_msg"):
             miss.append("нет графика")
+        if not v.get("market_msg"):
+            miss.append("нет рыночной цены")
         if not v.get("photos_done"):
             miss.append("нет фото" + (" (придут после 10:00)" if k.startswith("mets-") else ""))
         if not v.get("vin"):
@@ -414,6 +417,10 @@ def heal(st):
         if topic_gone and not make_topic(v):
             continue
         if not topic_gone and msg_exists(FORUM, v["card"]):
+            if v.get("market_msg") and not msg_exists(FORUM, v["market_msg"]):
+                v["market_msg"] = None
+                v["market_text"] = None
+                st.dirty = True
             if v.get("sched_msg") and not msg_exists(FORUM, v["sched_msg"]):
                 v["sched_msg"] = None           # пропал только график — придёт заново
                 v["sched_text"] = None
@@ -425,10 +432,11 @@ def heal(st):
             log(f"лот №{v['n']}: карточка не восстановлена: {c.get('description')}")
             continue
         # фото могли уцелеть: заново отправляем, только если от прежних сообщений лота ничего нет
-        alive = [m for m in (v.get("msgs") or []) if m != v.get("sched_msg") and msg_exists(FORUM, m)]
+        alive = [m for m in (v.get("msgs") or []) if m not in (v.get("sched_msg"), v.get("market_msg")) and msg_exists(FORUM, m)]
         if not alive:
             v.update({"photos_done": False, "no_photos": False})
-        v.update({"card": mid, "head": None, "msgs": alive, "sched_msg": None, "sched_text": None})
+        v.update({"card": mid, "head": None, "msgs": alive, "sched_msg": None, "sched_text": None,
+                  "market_msg": None, "market_text": None})
         fixed.append(v["n"])
         st.dirty = True
         time.sleep(3)
@@ -683,6 +691,60 @@ def update_schedule(st, v, sched, now, req):
     st.dirty = True
 
 
+def market_text(v, mk, sched, now):
+    """Сообщение о рыночной цене: Дром, Авто.ру, средняя и выгода к цене лота."""
+    lines = [f"📈 <b>Рыночная цена — лот №{v['n']}</b>", ""]
+    if mk.get("drom"):
+        d = mk["drom"]
+        lines.append(f"Дром: ~{money(d['price'])} (медиана {d['n']} объявл." + (f", похожие: {html.escape(d['matched'])}" if d.get("matched") else "") + ")")
+    else:
+        lines.append("Дром: нет данных")
+    if mk.get("autoru"):
+        a = mk["autoru"]
+        lines.append(f"Авто.ру: ~{money(a['price'])} (медиана {a['n']} объявл.)")
+        if a.get("estimate"):
+            lines.append(f"Оценка Авто.ру: ~{money(a['estimate'])}")
+    else:
+        lines.append("Авто.ру: нет данных")
+    avg = mk.get("avg")
+    if avg:
+        lines += ["", f"<b>Среднерыночная: ~{money(avg)}</b>"]
+    if avg and sched:
+        mn = min(r[2] for r in sched)
+        cur = next((r for r in sched if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
+        if cur:
+            lines.append(f"Цена сейчас {money(cur[2])}: ниже рынка на {round((1 - cur[2] / avg) * 100)}%")
+        lines.append(f"Минимальная {money(mn)}: ниже рынка на {round((1 - mn / avg) * 100)}%")
+    lines += ["", "Рынок — объявления той же модели и года по всей России, состояние машины не учитывается."]
+    return "\n".join(lines)
+
+
+def update_market(st, v, mk, sched, now):
+    """Одно сообщение о рынке на лот: создаётся один раз, дальше обновляется."""
+    text = market_text(v, mk, sched, now)
+    if v.get("market_text") == text:
+        return
+    if v.get("market_msg"):
+        r = tg("editMessageText", chat_id=home(v), message_id=v["market_msg"], text=text, parse_mode="HTML",
+               disable_web_page_preview="true")
+        if not r.get("ok") and "not modified" not in r.get("description", ""):
+            log(f"рынок лота №{v['n']}: {r.get('description')}")
+            if "not found" in r.get("description", ""):
+                v["market_msg"] = None      # сообщение удалили — создадим заново при следующей проверке
+                st.dirty = True
+            return
+    else:
+        r = tg("sendMessage", text=text, parse_mode="HTML", disable_notification="true",
+               disable_web_page_preview="true", **place(v))
+        if not r.get("ok"):
+            log(f"рынок лота №{v['n']}: {r.get('description')}")
+            return
+        v["market_msg"] = r["result"]["message_id"]
+        v.setdefault("msgs", []).append(v["market_msg"])
+    v["market_text"] = text
+    st.dirty = True
+
+
 def send_photos(st, v, names, img_dir):
     """Все фото лота альбомами по 10, ответом на карточку. Один раз на лот."""
     safe = [n for n in names if re.fullmatch(r"[A-Za-z0-9_-]+\.jpg", str(n))][:30]   # только свои файлы из img/
@@ -740,7 +802,8 @@ def check(st, live, img_dir):
             continue
         info = live.get(lid) or {}
         photos_dir = img_dir
-        need_more = not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
+        need_more = (not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
+                     or (not info.get("market") and not v.get("market_msg")))
         if need_more:
             extra = direct_info(lid, v)
             if extra:
@@ -764,6 +827,8 @@ def check(st, live, img_dir):
                 v["requests"] = info["requests"]
             st.dirty = True
             update_schedule(st, v, sched, now, info.get("requests"))
+            if info.get("market"):
+                update_market(st, v, info["market"], sched, now)
         if info.get("photos") and not v.get("photos_done"):
             send_photos(st, v, info["photos"], photos_dir)
         elif info.get("photos_total") == 0 and not v.get("photos_done"):
