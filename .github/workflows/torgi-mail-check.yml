@@ -1,0 +1,28 @@
+name: torgi-mail-check
+# Разово: отвечает ли адрес скрипта Gmail (в лог — только код ответа и число лотов, адрес не печатается).
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  m:
+    runs-on: ubuntu-latest
+    env:
+      U: ${{ secrets.TORGI_MAIL_URL }}
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+          u = os.environ.get("U", "")
+          print("адрес задан:", bool(u), "| оканчивается на /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u.strip())))
+          try:
+              r = urllib.request.urlopen(u.strip(), timeout=60)
+              b = r.read().decode("utf8", "replace")
+              print("ответ:", r.status, r.headers.get("content-type"), "| длина", len(b))
+              try:
+                  refs = json.loads(b).get("refs", [])
+                  print("ЛОТОВ В ОЧЕРЕДИ:", len(refs), [x.split("-")[0] for x in refs])
+              except ValueError:
+                  print("ответ не JSON (нет доступа «Все» или старое развертывание)")
+          except Exception as e:
+              print("ошибка:", type(e).__name__, str(e)[:100])
+          PY
