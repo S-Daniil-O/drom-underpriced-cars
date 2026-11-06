@@ -796,14 +796,25 @@
    "target": null,
    "card": 880,
    "added": "2026-11-06T21:56",
-   "end": null,
+   "end": "2026-10-31T10:00",
    "sent": {},
    "btn": true,
    "head": null,
-   "msgs": [],
+   "msgs": [
+    881,
+    882
+   ],
    "topic": 879,
-   "title": "Kia Rio, 2013 · №28",
-   "trade": null
+   "title": "🏁 Kia Rio, 2013 · мин 397 т.р. · до 31.10 · №28",
+   "trade": null,
+   "min_price": 397125.0,
+   "requests": 2,
+   "sched_msg": 881,
+   "sched_text": "📊 <b>График снижения цены — лот №28</b>\nKia Rio, 2013\n\n<pre>✔️ 01.10–06.10     794 250 ₽\n✔️ 06.10–11.10     714 825 ₽\n✔️ 11.10–16.10     635 400 ₽\n✔️ 16.10–21.10     555 975 ₽\n✔️ 21.10–26.10     476 550 ₽\n✔️ 26.10–31.10     397 125 ₽</pre>\nМинимальная: <b>397 125 ₽</b>, приём заявок до 31.10.2026 10:00\n📨 Заявок: 2",
+   "photos_done": true,
+   "no_photos": true,
+   "ended": true,
+   "closed": true
   }
  },
  "offset": 177673727,
