@@ -563,10 +563,26 @@
    "sched_text": "📊 <b>График снижения цены — лот №21</b>\nHyundai Solaris, 2013\n\n<pre>✔️ 26.10–31.10     324 000 ₽\n✔️ 31.10–05.11     312 000 ₽\n▶️ 05.11–10.11     300 000 ₽</pre>\nСейчас: <b>300 000 ₽</b> до 10.11.2026 10:00\nМинимальная: <b>300 000 ₽</b>, приём заявок до 10.11.2026 10:00\n📭 Заявок нет",
    "photos_done": true,
    "no_photos": true
+  },
+  "cdt-381705": {
+   "n": 22,
+   "url": "https://torgi.cdtrf.ru/trades/381705",
+   "name": "https://torgi.cdtrf.ru/trades/381705",
+   "vin": null,
+   "target": null,
+   "card": 352,
+   "added": "2026-11-06T12:22",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 351,
+   "title": "Лот №22"
   }
  },
- "offset": 177673569,
- "seq": 21,
+ "offset": 177673570,
+ "seq": 22,
  "forum": -1004498088083,
  "owners": [
   1188456401
