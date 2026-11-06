@@ -15,13 +15,16 @@ jobs:
           raw = os.environ.get("U", "")
           u = re.sub(r"\s+", "", raw)
           print("адрес задан:", bool(u), "| лишних символов:", len(raw) - len(u), "| вид /exec?key:", bool(re.search(r"/exec\?key=[\w-]+$", u)))
+          if not re.fullmatch(r"https://script\.google\.com/macros/s/[\w-]+/exec\?key=[\w-]+", u):
+              raise SystemExit("адрес неверного вида — запрос не выполняется")
           try:
               r = urllib.request.urlopen(u, timeout=60)
-              b = r.read().decode("utf8", "replace")
-              print("ответ:", r.status, r.headers.get("content-type"), "| длина", len(b))
+              b = r.read(262144).decode("utf8", "replace")
+              print("ответ:", r.status)
               try:
                   refs = json.loads(b).get("refs", [])
-                  print("ЛОТОВ В ОЧЕРЕДИ:", len(refs), [x.split("-")[0] for x in refs])
+                  good = [x for x in refs if isinstance(x, str) and re.fullmatch(r"(cdt|tg|tgtrade)-[0-9]{1,12}|mets-[0-9]{1,12}-[0-9]{1,12}", x)]
+                  print("ЛОТОВ В ОЧЕРЕДИ:", len(refs), "| правильных:", len(good))
               except ValueError:
                   print("ответ не JSON (нет доступа «Все» или старое развертывание)")
           except Exception as e:
