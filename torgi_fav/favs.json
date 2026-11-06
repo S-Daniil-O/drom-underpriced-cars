@@ -818,7 +818,7 @@
    "removed": true
   }
  },
- "offset": 177673731,
+ "offset": 177673732,
  "seq": 28,
  "forum": -1004498088083,
  "owners": [
@@ -828,5 +828,8 @@
   "taninaichuk": 748309276
  },
  "auto_day": "2026-11-06",
- "auto_count": 1
+ "auto_count": 1,
+ "channels": {
+  "-1003901499895": "ТОРГИ НИС"
+ }
 }
