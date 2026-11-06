@@ -94,11 +94,15 @@ def make_topic(v):
     return False
 
 
-def link_forum(st, chat_id):
+def link_forum(st, chat_id, allowed):
     """/link в группе с темами: перенести активные лоты в отдельные темы."""
     global FORUM
+    if st.d.get("forum") and str(st.d["forum"]) != str(chat_id):
+        tg("sendMessage", chat_id=chat_id, text="Бот уже подключён к другой группе. Сменить группу можно только вручную.")
+        return
     FORUM = chat_id
     st.d["forum"] = chat_id
+    st.d["owners"] = sorted(allowed)
     st.dirty = True
     moved = 0
     for v in st.d["lots"].values():
@@ -111,7 +115,14 @@ def link_forum(st, chat_id):
                message_thread_id=v["topic"], reply_markup=kb_main(v["n"]))
         if not r.get("ok"):
             r = tg("sendMessage", chat_id=FORUM, message_thread_id=v["topic"], text=f"⭐ Лот №{v['n']}\n{v['url']}", reply_markup=kb_main(v["n"]))
-        v["card"] = r.get("result", {}).get("message_id", old_card)
+        mid = r.get("result", {}).get("message_id")
+        if not mid:     # карточка не создалась — лот остаётся в канале, пустую тему убираем
+            tg("deleteForumTopic", chat_id=FORUM, message_thread_id=v["topic"])
+            v.pop("topic", None)
+            v.pop("title", None)
+            log(f"лот №{v['n']} не перенесён: {r.get('description')}")
+            continue
+        v["card"] = mid
         # график и фото придут в тему заново
         v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False})
         moved += 1
@@ -283,12 +294,12 @@ def add_buttons(st):
 
 
 # ---------------------------------------------------------------- команды
-def admins():
-    ids = set()
-    for chat in filter(None, (CHAT, FORUM)):
-        r = tg("getChatAdministrators", chat_id=chat)
-        ids |= {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
-    return ids
+def admins(st):
+    """Кто управляет ботом: администраторы канала «Мои лоты». Их список запоминается при /link,
+    чтобы канал можно было потом удалить. Администраторы группы прав не получают."""
+    r = tg("getChatAdministrators", chat_id=CHAT)
+    ids = {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
+    return ids | set(st.d.get("owners", []))
 
 
 def handle(st, msg, allowed):
@@ -301,7 +312,7 @@ def handle(st, msg, allowed):
             elif not msg["chat"].get("is_forum"):
                 tg("sendMessage", chat_id=chat, text="В этой группе не включены темы: настройки группы → «Темы».")
             else:
-                link_forum(st, chat)
+                link_forum(st, chat, allowed)
         return
     if user not in allowed:
         tg("sendMessage", chat_id=chat, text="Бот принимает команды только от администраторов канала «Мои лоты».")
@@ -536,7 +547,7 @@ def main():
     lots_file = Path(sys.argv[2])
     minutes = int(sys.argv[3]) if len(sys.argv) > 3 else 330
     stop = time.time() + minutes * 60
-    allowed = admins()
+    allowed = admins(st)
     log(f"администраторов канала: {len(allowed)}, лотов в избранном: {len(st.d['lots'])}")
     add_buttons(st)
     st.save()
@@ -549,7 +560,7 @@ def main():
             live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
             check(st, live, lots_file.parent / "img")
             st.save()
-            allowed = admins() or allowed
+            allowed = admins(st) or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
         r = tg("getUpdates", offset=st.d["offset"], timeout=50, allowed_updates='["message","callback_query"]')
         for u in r.get("result", []):
