@@ -278,10 +278,26 @@
    "msgs": [],
    "topic": 97,
    "title": "№15 лот 15"
+  },
+  "tg-18890": {
+   "n": 16,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/18890",
+   "name": "https://bankrot.torggroup.org/TradeLot/View/18890",
+   "vin": null,
+   "target": null,
+   "card": 100,
+   "added": "2026-11-06T10:16",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 99,
+   "title": "№16 лот 16"
   }
  },
- "offset": 177673451,
- "seq": 15,
+ "offset": 177673452,
+ "seq": 16,
  "forum": -1004498088083,
  "owners": [
   1188456401
