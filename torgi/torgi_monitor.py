@@ -1236,6 +1236,7 @@ def write_active(lots, path):
 
 
 # ---------------------------------------------------------------- «Мои лоты»
+FAV_MAX_FILE = 40_000_000  # файл лота больше этого не скачиваем (бот может отправить до 50 МБ)
 FAV_MAX_PHOTOS = 20      # сколько фото лота загружать в «Мои лоты» (Telegram: по 10 в альбоме)
 
 
@@ -1277,14 +1278,22 @@ def fav_fetch(lid, v, img_dir, market=True, files=False):
     if files and not v.get("files_done"):    # файлы лота (большие PDF) — только бот: ТоргГрупп открывается с GitHub
         got = []
         for i, f in enumerate((d.get("files") or [])[:8]):
+            buf = bytearray()
             try:
-                r = requests.get(f["url"], headers={"User-Agent": UA}, timeout=120)
+                with requests.get(f["url"], headers={"User-Agent": UA}, timeout=120, stream=True) as r:
+                    if not r.ok or int(r.headers.get("content-length") or 0) > FAV_MAX_FILE:
+                        continue
+                    for chunk in r.iter_content(65536):
+                        buf += chunk
+                        if len(buf) > FAV_MAX_FILE:     # слишком большой файл — смотреть на площадке
+                            buf = None
+                            break
             except requests.RequestException:
                 continue
-            if r.ok and 1_000 < len(r.content) < 45_000_000:
+            if buf and len(buf) > 1_000:
                 img_dir.mkdir(parents=True, exist_ok=True)
                 safe = f"{re.sub(r'[^A-Za-z0-9_-]', '_', lid)}_file{i}.bin"
-                (img_dir / safe).write_bytes(r.content)
+                (img_dir / safe).write_bytes(bytes(buf))
                 got.append({"file": safe, "name": f["name"][:100]})
         out["files"] = got
         out["files_total"] = len(d.get("files") or [])

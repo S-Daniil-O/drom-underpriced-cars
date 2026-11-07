@@ -764,8 +764,18 @@ def send_files(st, v, files, img_dir):
     if not items:
         return
     ok = True
-    for i in range(0, len(items), 10):
-        part = items[i:i + 10]
+    # альбомы не больше 10 файлов и 40 МБ суммарно, чтобы не держать много в памяти
+    batches, cur, size = [], [], 0
+    for x in items:
+        n = (img_dir / x["file"]).stat().st_size
+        if cur and (len(cur) >= 10 or size + n > 40_000_000):
+            batches.append(cur)
+            cur, size = [], 0
+        cur.append(x)
+        size += n
+    if cur:
+        batches.append(cur)
+    for part in batches:
         up = {f"f{k}": (x["name"], (img_dir / x["file"]).read_bytes()) for k, x in enumerate(part)}
         if len(part) == 1:
             r = tg("sendDocument", files={"document": up["f0"]}, caption=f"📎 Файлы лота №{v['n']} с площадки",
