@@ -18,6 +18,7 @@ jobs:
       T: ${{ secrets.TORGI_BOT_TOKEN }}
       TMP_CHAT: ${{ vars.TORGI_FAV_CHAT_ID }}
       APPLY: ${{ github.event.inputs.apply }}
+      REPO: ${{ github.repository }}
     steps:
       - uses: actions/checkout@v4
         with: {ref: state, path: _state}
@@ -48,7 +49,8 @@ jobs:
           if not F or len(active) < 3 or not all(v.get("card") for v in active):
               raise SystemExit("учёт лотов неполный — ничего не делаю")
           last = max(keep) + 400        # верхняя граница поиска; новее неё не трогаем
-          bot, human, service, deleted, old = [], 0, 0, 0, 0
+          me = call("getMe")["result"]["id"]
+          bot, human, service, deleted, old, other_text = [], 0, 0, 0, 0, 0
           for mid in range(2, last):
               if mid in keep:
                   continue
@@ -59,15 +61,27 @@ jobs:
               if not r.get("ok"):
                   service += 1; continue
               res = r["result"]
-              call("deleteMessage", chat_id=TMP, message_id=res["message_id"])
+              if not call("deleteMessage", chat_id=TMP, message_id=res["message_id"]).get("ok"):
+                  raise SystemExit("служебная копия не удалилась — останавливаюсь")
               su = (res.get("forward_origin") or {}).get("sender_user") or res.get("forward_from") or {}
-              if not su.get("is_bot"):
+              if su.get("id") != me:
                   human += 1; continue
+              txt = res.get("text")
+              if txt is not None and not txt.startswith(("📩", "📬")):
+                  other_text += 1; continue      # текст бота, но не письмо: не трогаем
               bot.append(mid)
               time.sleep(2.5)
-          print(f"ИТОГ в учёте: {len(keep)} | сообщений бота вне учёта (старые письма): {len(bot)} | людей: {human} | служебных: {service}")
+          print(f"ИТОГ в учёте: {len(keep)} | сообщений бота вне учёта (старые письма): {len(bot)} | людей: {human} | служебных: {service} | другой текст бота: {other_text}")
           if APPLY:
+              # лоты могли добавить во время проверки: учёт перечитываем прямо перед удалением
+              fresh = json.load(urllib.request.urlopen(f"https://raw.githubusercontent.com/{os.environ['REPO']}/state/torgi_fav/favs.json?t={int(time.time())}", timeout=30))["lots"]
+              for v in fresh.values():
+                  for k in ("topic", "card", "head", "sched_msg", "market_msg"):
+                      if v.get(k): keep.add(v[k])
+                  keep.update(v.get("msgs") or [])
               for mid in bot:
+                  if mid in keep:
+                      continue
                   r = call("deleteMessage", chat_id=F, message_id=mid)
                   if r.get("ok"): deleted += 1
                   else: old += 1
