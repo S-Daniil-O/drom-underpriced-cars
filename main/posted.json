@@ -3468,5 +3468,20 @@
     "mileage_km": 122500,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/3F_m9ckRC7CZlnzX1LpexKofG9cHZ8VPy0aPy3bnF1Jo8n8NYu1pinqgdi3XnLyLCK9DV-6cpU01ge8a/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/antara/729035648.html": {
+    "posted_at": "2026-11-07T17:25:01.796551+00:00",
+    "message_id": 257,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Antara",
+    "year": 2012,
+    "price": 838000,
+    "median_price": 1180000,
+    "median_sample_size": 5,
+    "price_rating": "хорошая цена",
+    "mileage_km": 216000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/zKsPSlCzXt4NrJdQxF7bNkxs4d0q_QQ-ogyxG8SJmLX4BNX6Yo5WcWfQZEr7XGpE1_mqJ58MPt4t-Zof/gen272wb.jpg"
   }
 }
