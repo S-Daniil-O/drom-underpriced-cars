@@ -885,10 +885,26 @@
    "msgs": [],
    "topic": 936,
    "title": "Hyundai Sonata, 2019 · №30"
+  },
+  "tg-19480": {
+   "n": 31,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/19480",
+   "name": "Nissan Almera, 2013",
+   "vin": "Z8NAJL00049659460",
+   "target": 396000,
+   "card": 940,
+   "added": "2026-11-07T12:05",
+   "end": "2027-01-18T23:59",
+   "sent": {},
+   "btn": true,
+   "head": 941,
+   "msgs": [],
+   "topic": 939,
+   "title": "Nissan Almera, 2013 · до 18.01 · №31"
   }
  },
- "offset": 177673772,
- "seq": 30,
+ "offset": 177673773,
+ "seq": 31,
  "forum": -1004498088083,
  "owners": [
   1188456401
