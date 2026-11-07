@@ -8,13 +8,17 @@
     python torgi/post_queue.py --cleanup <active.json> <posted.json>   # убрать неактуальные
 Переменные: TORGI_BOT_TOKEN, TORGI_CHAT_ID (по умолчанию @torgi_vrn_ss).
 """
+import colorsys
+import io
 import json
 import os
 import re
 import subprocess
 import sys
 import time
+import zipfile
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 
@@ -31,21 +35,145 @@ def log(msg):
     print(time.strftime("%H:%M:%S"), msg, flush=True)
 
 
+# ---------------------------------------------------------------- фото из вложений лота (PDF, ZIP)
+ALBUM_MAX = 6            # в начале файла — сама машина; документы, если они есть, лежат в конце
+PHOTO_MAX_SIDE = 1280
+DOC_MAX_BYTES = 40_000_000
+PHOTO_HOSTS = ("nistp.ru",)
+NOT_CAR_FILE = re.compile(r"птс|стс|паспорт|документ|свидетельств|договор|pts|sts", re.I)
+ARCHIVE_IMAGE = re.compile(r"\.(jpe?g|png|webp)$", re.I)
+
+
+def looks_like_document(page, pymupdf):
+    """Сфотографированный СТС/ПТС: большая часть кадра — светлая розовато-бежевая бумага.
+    Лишний отсев (пятно на кузове, стол) не страшен, а данные владельца публиковать нельзя."""
+    z = 120 / max(page.rect.width, page.rect.height)
+    s = page.get_pixmap(matrix=pymupdf.Matrix(z, z), alpha=False, colorspace=pymupdf.csRGB).samples
+    pixels = [s[i:i + 3] for i in range(0, len(s), 3)]
+    paper = 0
+    for r, g, b in pixels:
+        h, sat, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
+        paper += v > 0.6 and 0.04 < sat < 0.45 and (h < 0.12 or h > 0.85)
+    return paper / max(1, len(pixels)) >= 0.45
+
+
+def page_jpeg(page, pymupdf):
+    """Страница → JPEG, обрезанный по снимку (без белых полей). None, если это текст, а не фото."""
+    infos = page.get_image_info()
+    if not infos or len(page.get_text().strip()) > 200 or looks_like_document(page, pymupdf):
+        return None
+    clip = pymupdf.Rect()
+    for x in infos:
+        clip |= pymupdf.Rect(x["bbox"])
+    clip &= page.rect
+    if clip.is_empty:
+        return None
+    z = min(PHOTO_MAX_SIDE / max(clip.width, clip.height), 4)
+    return page.get_pixmap(matrix=pymupdf.Matrix(z, z), clip=clip, alpha=False,
+                           colorspace=pymupdf.csRGB).tobytes("jpeg", jpg_quality=82)
+
+
+def archive_images(data):
+    """Картинки из ZIP (кроме файлов с документами), пока не наберётся ALBUM_MAX."""
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        for info in z.infolist():
+            name = info.filename
+            if not info.flag_bits & 0x800:      # имена в архивах с Windows — в cp866
+                name = name.encode("cp437", "replace").decode("cp866", "replace")
+            if ARCHIVE_IMAGE.search(name) and not NOT_CAR_FILE.search(name) and info.file_size < 15_000_000:
+                yield name, z.read(info)
+
+
+def doc_photos(url, limit, pymupdf):
+    """JPEG-снимки одного вложения. Сбой файла не мешает опубликовать пост."""
+    u = urlparse(url)
+    if u.scheme != "https" or u.hostname not in PHOTO_HOSTS:
+        log(f"фото: чужой адрес пропущен: {url}")
+        return []
+    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=120)
+    if not r.ok or len(r.content) > DOC_MAX_BYTES:
+        log(f"фото: {url} — ответ {r.status_code}, {len(r.content)} байт")
+        return []
+    ext = u.path.rsplit(".", 1)[-1].lower()
+    if ext == "zip":
+        docs = [pymupdf.open(stream=b, filetype=n.rsplit(".", 1)[-1].lower()) for n, b in archive_images(r.content)]
+    else:
+        docs = [pymupdf.open(stream=r.content, filetype=ext)]
+    out = []
+    for doc in docs:
+        # в PDF документы лежат в конце, поэтому страницы дальше первых ALBUM_MAX не смотрим
+        for i in range(min(doc.page_count, ALBUM_MAX)):
+            if len(out) < limit:
+                jpg = page_jpeg(doc[i], pymupdf)
+                if jpg:
+                    out.append(jpg)
+    return out
+
+
+def lot_photos(item):
+    """Снимки лота из вложений (photo_docs в очереди)."""
+    if not item.get("photo_docs"):
+        return []
+    try:
+        import pymupdf
+    except ImportError:
+        log("фото: нет библиотеки pymupdf — пост уйдёт без фото из файлов")
+        return []
+    photos = []
+    for d in item["photo_docs"]:
+        if len(photos) >= ALBUM_MAX:
+            break
+        try:
+            photos += doc_photos(d["url"], ALBUM_MAX - len(photos), pymupdf)
+        except Exception as e:  # noqa: BLE001 — битый файл на площадке не должен останавливать публикацию
+            log(f"фото: {d.get('name')} не разобран: {type(e).__name__}: {str(e)[:150]}")
+    log(f"фото {item['id']}: {len(photos)} из {len(item['photo_docs'])} файл(ов)")
+    return photos
+
+
+def send_album(item, photos):
+    """Несколько снимков одним постом; подпись на первом. Возвращает ответ Telegram."""
+    media = [{"type": "photo", "media": f"attach://p{i}"} for i in range(len(photos))]
+    media[0]["caption"] = item["caption"]
+    return requests.post(f"{API}/sendMediaGroup", data={"chat_id": CHAT, "media": json.dumps(media, ensure_ascii=False)},
+                         files={f"p{i}": (f"p{i}.jpg", b) for i, b in enumerate(photos)}, timeout=180)
+
+
 def send(item, qdir):
+    """Публикует пост. Возвращает {"id", "photo", "album"} или None."""
+    photos = lot_photos(item)
     for attempt in range(3):
         try:
+            if len(photos) > 1:
+                r = send_album(item, photos)
+                if r.ok:
+                    ids = [m["message_id"] for m in r.json()["result"]]
+                    return {"id": ids[0], "photo": True, "album": ids[1:]}
+                log(f"sendMediaGroup {item['id']}: {r.status_code} {r.text[:200]}")
+                if r.status_code == 429:
+                    time.sleep(int(r.json().get("parameters", {}).get("retry_after", 30)) + 1)
+                    continue
+            elif photos:
+                r = requests.post(f"{API}/sendPhoto", data={"chat_id": CHAT, "caption": item["caption"]},
+                                  files={"photo": ("lot.jpg", photos[0])}, timeout=60)
+                if r.ok:
+                    return {"id": r.json()["result"]["message_id"], "photo": True}
+                log(f"sendPhoto {item['id']}: {r.status_code} {r.text[:200]}")
+                if r.status_code == 429:
+                    time.sleep(int(r.json().get("parameters", {}).get("retry_after", 30)) + 1)
+                    continue
             img = item.get("image") or ""
             if re.fullmatch(r"img/[A-Za-z0-9_-]+\.jpg", img) and (qdir / img).is_file():
                 with open(qdir / img, "rb") as f:
                     r = requests.post(f"{API}/sendPhoto", data={"chat_id": CHAT, "caption": item["caption"]},
                                       files={"photo": ("lot.jpg", f)}, timeout=60)
                 if r.ok:
-                    return r.json()["result"]["message_id"]
+                    return {"id": r.json()["result"]["message_id"], "photo": True}
                 log(f"sendPhoto {item['id']}: {r.status_code} {r.text[:200]}")
             r = requests.post(f"{API}/sendMessage", data={"chat_id": CHAT, "text": item["caption"],
                                                          "disable_web_page_preview": "true"}, timeout=60)
             if r.ok:
-                return r.json()["result"]["message_id"]
+                return {"id": r.json()["result"]["message_id"], "photo": False}
             log(f"sendMessage {item['id']}: {r.status_code} {r.text[:200]}")
             if r.status_code == 429:
                 time.sleep(int(r.json().get("parameters", {}).get("retry_after", 30)) + 1)
@@ -129,6 +257,8 @@ def cleanup(active_file, posted_file):
         if far:   # дальний регион — удалить (бот может только посты моложе 48 ч)
             r = requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": mid}, timeout=30).json()
             if r.get("ok"):
+                for extra in (captions.get(str(mid)) or {}).get("album") or []:   # остальные снимки альбома
+                    requests.post(f"{API}/deleteMessage", data={"chat_id": CHAT, "message_id": extra}, timeout=30)
                 done[str(mid)] = "deleted"; n_del += 1
                 time.sleep(1.1)
                 continue
@@ -198,10 +328,13 @@ def main():
             log(f"пропуск повтора: {item['id']}")
             continue
         done_urls.add(url_key)
-        msg_id = send(item, qdir)
-        if msg_id:
+        sent = send(item, qdir)
+        if sent:
+            msg_id = sent["id"]
             posted[item["id"]] = msg_id
-            captions[str(msg_id)] = {"text": item["caption"], "photo": bool(item.get("image"))}
+            captions[str(msg_id)] = {"text": item["caption"], "photo": sent["photo"]}
+            if sent.get("album"):
+                captions[str(msg_id)]["album"] = sent["album"]
             for other in item.get("also_ids") or []:   # «последний шанс» закрывает и обычный горящий пост
                 posted.setdefault(other, msg_id)
             n += 1

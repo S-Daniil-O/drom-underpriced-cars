@@ -42,7 +42,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests
+      - run: pip install requests pymupdf
       - name: cleanup — убрать неактуальные посты (торги закончились / лот снят / далеко)
         env:
           HOT: ${{ vars.TORGI_HOT_CHAT_ID }}
@@ -63,7 +63,7 @@ jobs:
           if [ -f "$A" ]; then python torgi/post_queue.py --cleanup "$A" _state/torgi_nis/posted.json || true; fi
           if [ -f _inbox/inbox/torgi_nis/queue.json ]; then python torgi/post_queue.py _inbox/inbox/torgi_nis _state/torgi_nis/posted.json; fi
       - name: publish hot (Крайние предложения торги)
-        if: vars.TORGI_HOT_CHAT_ID != ''
+        if: always() && vars.TORGI_HOT_CHAT_ID != ''
         env:
           TORGI_CHAT_ID: ${{ vars.TORGI_HOT_CHAT_ID }}
         run: |

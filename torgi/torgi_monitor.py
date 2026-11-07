@@ -453,6 +453,39 @@ NIS_FILTER = [("trade_type[]", "Публичное предложение"), ("t
 
 
 NIS_MAYBE_CAR = re.compile(r"легков|автомоб|транспортн\w* средств|\bтс\b|\bvin\b|седан|хэтчбек|хетчбек|универсал|внедорожник|кроссовер|кузов", re.I)
+# Фото у НИС — вложения вида «Фото ТС.pdf», «Фото автомобиля.zip», обычно в шапке торгов, а не в блоке лота.
+# Файлы, где заявлены документы, не берём: в СТС и ПТС есть ФИО и адрес владельца.
+NIS_PHOTO_NAME = re.compile(r"фото|foto|photo|снимк|изображени", re.I)
+NIS_NOT_PHOTO = re.compile(r"договор|задат|положени|решени|определени|постановлени|заявлени|оценк|отч[её]т|"
+                           r"документ|птс|стс|паспорт|свидетельств|\bакт\b", re.I)
+NIS_PHOTO_EXT = (".pdf", ".zip", ".jpg", ".jpeg", ".png", ".webp")
+_nis_incomplete = [False]   # не все карточки загрузились: «лот пропал» в этот запуск не считается
+
+
+def nis_photo_docs(part):
+    """Вложения с фото из куска страницы НИС: [{"url", "name"}]."""
+    out = []
+    for url, name in re.findall(r"<a class='file_link' href='(https://nistp\.ru/files/[^']+)'[^>]*>(.*?)</a>", part, re.S):
+        name = strip_html(name)
+        if url.lower().endswith(NIS_PHOTO_EXT) and NIS_PHOTO_NAME.search(name) and not NIS_NOT_PHOTO.search(name):
+            out.append({"url": url, "name": name})
+    return out
+
+
+def _same_car(file_name, lot_text):
+    """Файл из шапки торгов с несколькими лотами относится к этому лоту: совпали марка и модель."""
+    a, b = parse_car(re.sub(r"\.\w+$", "", file_name)), parse_car(lot_text)
+    if not a or not b or a[0] != b[0]:
+        return False
+    models = lambda m: {m} if isinstance(m, str) else set(m)
+    return bool(models(a[1]) & models(b[1]))
+
+
+def nis_lot_docs(block, head, lot_text, single_lot):
+    """Фото лота: из его блока и из шапки. В шапке торгов с несколькими лотами общий «Фото ТС.pdf»
+    непонятно к какой машине относится — такой файл не берём."""
+    docs = nis_photo_docs(block) + [d for d in nis_photo_docs(head) if single_lot or _same_car(d["name"], lot_text)]
+    return list({d["url"]: d for d in docs}.values())
 
 
 def nis_list():
@@ -493,11 +526,19 @@ def nis_cards(rows):
             by_trade.setdefault(row["trade"], []).append(row)
     lots = []
     for trade, items in by_trade.items():
-        try:
-            page = requests.get(f"{NIS_BASE}/trade_view.php?trade_nid={trade}", headers={"User-Agent": UA}, timeout=60).text
-        except requests.RequestException:
-            continue
+        page = None
+        for attempt in range(3):
+            try:
+                page = requests.get(f"{NIS_BASE}/trade_view.php?trade_nid={trade}", headers={"User-Agent": UA}, timeout=60).text
+                break
+            except requests.RequestException:
+                time.sleep(5)
         time.sleep(0.5)
+        if page is None or "id='table_lot_" not in page:
+            log(f"НИС: карточка торгов {trade} не загрузилась")
+            _nis_incomplete[0] = True
+            continue
+        head = page[:page.find("id='table_lot_")]
         region = strip_html((re.search(r"<td class='label'>Регион</td><td>(.*?)</td>", page, re.S) or [None, ""])[1])
         blocks = {m.group(1): m.group(0) for m in re.finditer(
             r"<table class='data ' id='table_lot_\d+'>.*?<a name='lot(\d+)'>.*?(?=<table class='data ' id='table_lot_|\Z)", page, re.S)}
@@ -505,8 +546,9 @@ def nis_cards(rows):
             b = blocks.get(row["lot"])
             lot = nis_detail(row, b, region) if b else None
             if lot:
+                lot["photo_docs"] = nis_lot_docs(b, head, lot["title"], len(blocks) == 1)
                 lots.append(lot)
-    log(f"НИС: легковых с графиком снижения: {len(lots)}")
+    log(f"НИС: легковых с графиком снижения: {len(lots)}, с файлом фото: {sum(1 for x in lots if x['photo_docs'])}")
     return lots
 
 
@@ -521,7 +563,6 @@ def nis_detail(row, b, region):
             sched.append([m.group(1).strip(), m.group(2).strip(), price, to_float(m.group(4))])
     if not sched:
         return None
-    pics = list(dict.fromkeys(re.findall(r"href='(https://nistp\.ru/files/[^']+\.(?:jpe?g|png|webp))'", b, re.I)))
     title = field("Наименование имущества")
     desc = field("Cведения об имуществе")
     prices = [x[2] for x in sched]
@@ -530,10 +571,11 @@ def nis_detail(row, b, region):
     return {
         "source": "НИС", "id": f"nis-{row['trade']}-{row['lot']}",
         "url": f"{NIS_BASE}/trade_view.php?trade_nid={row['trade']}#lot{row['lot']}",
-        "title": desc[:300] or title, "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
+        # марка бывает только в «Наименовании имущества», а описание начинается, например, с обременений
+        "title": (desc if parse_car(desc) else f"{title}. {desc}".strip(" .") if title else desc)[:300], "description": (desc + " " + field("Порядок ознакомления с имуществом"))[:3000],
         "start_price": to_float(field("Начальная цена")) or prices[0], "current_price": cur, "min_price": min(prices),
         "end_date": sched[-1][1][:10], "status": row.get("status"), "region": region, "region_name": region,
-        "image": pics[0] if pics else None, "photos": pics, "schedule": sched, "code": row["code"],
+        "schedule": sched, "code": row["code"],
     }
 
 
@@ -1153,6 +1195,8 @@ def caption(d):
         f"🔥 Ниже рынка на {disc}%",
         "",
         "📝 " + (d.get("description") or d["title"] if d["source"] == "МЭТС" else d["title"])[:350],
+        "📷 На площадке нет фото — спросите у организатора торгов (контакты в карточке лота)"
+        if d["source"] == "НИС" and not d.get("photo_docs") else None,
         "",
         f"Тип: публичное предложение (торги на понижение), {d['status'] or ''}".rstrip(", "),
         (f"{'Текущий период цены до' if d['source'] == 'МЭТС' else 'Приём заявок до'}: {d['end_date']}"
@@ -1228,7 +1272,7 @@ def write_active(lots, path):
     GitHub удаляет посты: торги закончились, лот снят с площадки, регион дальше MAX_KM.
     sources_ok — площадки, которые ответили (по остальным «лот пропал» не считается)."""
     data = {"created": time.strftime("%Y-%m-%dT%H:%M"), "max_km": MAX_KM,
-            "sources_ok": sorted({lot["source"] for lot in lots}),
+            "sources_ok": sorted({lot["source"] for lot in lots} - ({"НИС"} if _nis_incomplete[0] else set())),
             "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"]} for lot in lots}}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False))
@@ -1369,10 +1413,10 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
             except requests.RequestException as e:
                 log(f"фото не скачалось ({d['id']}): {e}")
         items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img,
-                      "also_ids": d.get("also_ids", [])})
+                      "photo_docs": d.get("photo_docs", []), "also_ids": d.get("also_ids", [])})
     (qdir / "queue.json").write_text(json.dumps(
         {"created": time.strftime("%Y-%m-%d %H:%M"), "stats": stats or {}, "items": items}, ensure_ascii=False, indent=1))
-    log(f"Очередь для GitHub: {len(items)} постов (фото: {sum(1 for i in items if i['image'])}) → {qdir}")
+    log(f"Очередь для GitHub: {len(items)} постов (фото: {sum(1 for i in items if i['image'] or i['photo_docs'])}) → {qdir}")
 
 
 # ---------------------------------------------------------------- main
