@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160650329-78cb51c9",
-"source": "autoru",
-"brand": "BYD",
-"model": "Flyer",
-"year": 2006,
-"price": 60000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
-"mileage_km": 140000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-07T17:15:54.203560+00:00"
-},
-{
 "ad_id": "autoru_1160654058-1f8368ae",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:54.203535+00:00"
+"seen_at": "2026-11-07T17:27:10.869099+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -45,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:54.203509+00:00"
+"seen_at": "2026-11-07T17:27:10.869075+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:54.203439+00:00"
+"seen_at": "2026-11-07T17:27:10.869014+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:37.165345+00:00"
+"seen_at": "2026-11-07T17:26:49.756037+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:37.165335+00:00"
+"seen_at": "2026-11-07T17:26:49.756026+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:37.165325+00:00"
+"seen_at": "2026-11-07T17:26:49.756014+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -120,12 +104,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/RoY79TyJ4uHnDzsnU6PMDkdHrvcSF50xWS9JoKJ1ZY5Dh-XJbUyuZw-7WuLo8u7y0PCl3rViGxAKrKWIIh4jhny8SV5nYxnmIwkC3irWRyPoBVyrjJziYZJJBnVWui6KDDSK8xXUxnQq_oufg_ji1PA7yqWFZg428bfRuL_okgLbbPA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/DlvUxkfazszkJSmxLNRhFWh8g8AGSjrh-zP5Hk5Gzc1X8zDC8RJWAL-EwbSFoPcNqkuRjV490cGfCaiPfv6EuhvqDX0MSHfWLtCrRpZMIXic_MmxGOeWDWdIox6sQ8n0WHD_Lms7AEOBmN_EjbJwtJXP22g5nCAyQ61v_GeRXeaNTiM/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:37.165305+00:00"
+"seen_at": "2026-11-07T17:26:49.755993+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -141,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-07T17:15:37.165272+00:00"
+"seen_at": "2026-11-07T17:26:49.755959+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -157,6 +141,22 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T17:15:37.165236+00:00"
+"seen_at": "2026-11-07T17:26:49.755921+00:00"
+},
+{
+"ad_id": "autoru_1160650329-78cb51c9",
+"source": "autoru",
+"brand": "BYD",
+"model": "Flyer",
+"year": 2006,
+"price": 60000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
+"mileage_km": 140000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-07T17:15:54.203560+00:00"
 }
 ]
