@@ -442,6 +442,9 @@ NIS_FILTER = [("trade_type[]", "Публичное предложение"), ("t
               ("trade_state[]", "Прием заявок"), ("trade_state[]", "Идут торги"), ("view_type", "lot")]
 
 
+NIS_MAYBE_CAR = re.compile(r"легков|автомоб|транспортн\w* средств|\bтс\b|\bvin\b|седан|хэтчбек|хетчбек|универсал|внедорожник|кроссовер|кузов", re.I)
+
+
 def nis_list():
     """Лоты публичного предложения НИС. Фильтры по категории и региону у площадки только для
     премиум-аккаунта, поэтому машины отбираем по описанию лота, точно — по категории в карточке."""
@@ -474,7 +477,9 @@ def nis_cards(rows):
     """Карточки торгов с машинами. На одной странице торгов может быть несколько лотов."""
     by_trade = {}
     for row in rows:
-        if parse_car(row["text"]):       # не машина по описанию — страницу не грузим
+        # В списке описание обрезано («Легковой автомобиль марки НИССАН . . .»), поэтому открываем
+        # и всё похожее на машину; точно решает категория «Легковой транспорт» в карточке.
+        if parse_car(row["text"]) or NIS_MAYBE_CAR.search(row["text"]):
             by_trade.setdefault(row["trade"], []).append(row)
     lots = []
     for trade, items in by_trade.items():
@@ -531,36 +536,60 @@ BRANDS = {
     "nissan": ["nissan", "ниссан"], "mitsubishi": ["mitsubishi", "мицубиси", "митсубиси"],
     "mazda": ["mazda", "мазда"], "ford": ["ford", "форд"], "chevrolet": ["chevrolet", "шевроле"],
     "daewoo": ["daewoo", "дэу", "деу"], "opel": ["opel", "опель"], "honda": ["honda", "хонда"],
-    "bmw": ["bmw", "бмв"], "mercedes-benz": ["mercedes-benz", "mercedes", "мерседес"],
-    "audi": ["audi", "ауди"], "lexus": ["lexus", "лексус"], "infiniti": ["infiniti"],
+    "bmw": ["bmw", "бмв"], "mercedes-benz": ["mercedes-benz", "mercedes", "мерседес-бенц", "мерседес"],
+    "audi": ["audi", "ауди"], "lexus": ["lexus", "лексус"],
     "subaru": ["subaru", "субару"], "suzuki": ["suzuki", "сузуки"], "peugeot": ["peugeot", "пежо"],
     "citroen": ["citroen", "citroën", "ситроен"], "volvo": ["volvo", "вольво"],
-    "land_rover": ["land rover", "range rover", "ленд ровер"], "porsche": ["porsche", "порше"],
+    "land_rover": ["land rover", "range rover", "ленд ровер", "лэнд ровер", "рейндж ровер"], "porsche": ["porsche", "порше"],
     "haval": ["haval", "хавал", "хавейл"], "chery": ["chery", "черри", "чери"], "geely": ["geely", "джили"],
     "changan": ["changan", "чанган"], "exeed": ["exeed", "эксид"], "omoda": ["omoda", "омода"],
     "jac": ["jac"], "faw": ["faw"], "great_wall": ["great wall", "грейт волл"], "lifan": ["lifan", "лифан"],
     "datsun": ["datsun", "датсун"], "uaz": ["уаз", "uaz"], "gaz": ["газ ", "gaz"], "tank": ["tank "],
     "jetour": ["jetour"], "jeep": ["jeep", "джип"], "cadillac": ["cadillac"], "genesis": ["genesis"],
     "ssangyong": ["ssangyong", "ссангйонг", "санг йонг"], "dongfeng": ["dongfeng"], "zotye": ["zotye"],
-    "ravon": ["ravon", "равон"], "brilliance": ["brilliance"], "moskvich": ["москвич", "moskvich"],
+    "ravon": ["ravon", "равон"], "dodge": ["dodge", "додж"], "fiat": ["fiat", "фиат"], "livan": ["livan", "ливан"], "infiniti": ["infiniti", "инфинити"], "vortex": ["vortex", "вортекс"], "kaiyi": ["kaiyi"], "brilliance": ["brilliance"], "moskvich": ["москвич", "moskvich"],
     "belgee": ["belgee"], "tesla": ["tesla"],
 }
 LADA_MODELS = {"гранта": "granta", "granta": "granta", "веста": "vesta", "vesta": "vesta", "приора": "priora",
                "priora": "priora", "калина": "kalina", "kalina": "kalina", "ларгус": "largus", "largus": "largus",
                "x-ray": "xray", "xray": "xray", "нива": "niva_legend", "niva": "niva_legend", "4x4": "4x4_2121_niva",
                "самара": "2114", "samara": "2114", "iskra": "iskra"}
-CYR_MODELS = {"солярис": "solaris", "рио": "rio", "логан": "logan", "дастер": "duster", "сандеро": "sandero",
+CYR_MODELS = {"дустер": "duster", "астра": "astra", "ноут": "note", "галант": "galant", "ланос": "lanos", "альбеа": "albea",
+              "рейндж": "range_rover", "гольф": "golf", "пассат": "passat", "джетта": "jetta", "тигуан": "tiguan", "мазда": "mazda",
+              "вектра": "vectra", "корса": "corsa", "мокка": "mokka", "инсигния": "insignia", "симбол": "symbol", "меган": "megane",
+              "флюенс": "fluence", "каптюр": "kaptur", "аккорд": "accord", "цивик": "civic", "сивик": "civic", "пежо": "peugeot",
+              "солярис": "solaris", "рио": "rio", "логан": "logan", "дастер": "duster", "сандеро": "sandero",
               "поло": "polo", "октавия": "octavia", "рапид": "rapid", "фокус": "focus", "камри": "camry",
               "королла": "corolla", "аутлендер": "outlander", "лансер": "lancer", "спортейдж": "sportage",
               "крета": "creta", "туссан": "tucson", "кашкай": "qashqai", "икс-трейл": "x-trail", "альмера": "almera",
               "нексия": "nexia", "матиз": "matiz", "джентра": "gentra", "кобальт": "cobalt", "нива": "niva",
               "лачетти": "lacetti", "авео": "aveo", "круз": "cruze", "сид": "ceed", "оптима": "optima"}
-STOP = {"год", "года", "г", "гв", "г.в", "vin", "цвет", "легковой", "автомобиль", "седан", "хэтчбек",
+STOP = {"модели", "марки", "марка:", "модель:", "год", "года", "г", "гв", "г.в", "vin", "цвет", "легковой", "автомобиль", "седан", "хэтчбек",
         "универсал", "модель", "марка", "тип", "лс", "л.с"}
 
 
+_LOOK = str.maketrans("авекмнорстухi", "abekmhopctyxi")          # русские буквы, похожие на латинские
+_LOOK_BACK = str.maketrans("abekmhopctyx", "авекмнорстух")
+_TRANSLIT = str.maketrans({"а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ж": "zh", "з": "z", "и": "i", "й": "y",
+                           "к": "k", "л": "l", "м": "m", "н": "n", "о": "o", "п": "p", "р": "r", "с": "s", "т": "t", "у": "u",
+                           "ф": "f", "х": "h", "ц": "c", "ч": "ch", "ш": "sh", "щ": "sch", "ы": "y", "э": "e", "ю": "yu", "я": "ya",
+                           "ь": "", "ъ": ""})
+
+
+def fix_mixed(t):
+    """Слова, где смешаны русские и латинские буквы («lада», «ланoс»), приводит к одному алфавиту."""
+    def one(m):
+        w = m.group(0)
+        lat, cyr = len(re.findall(r"[a-z]", w)), len(re.findall(r"[а-я]", w))
+        if not lat or not cyr:
+            return w
+        back = w.translate(_LOOK_BACK)
+        return back if cyr > lat and not re.search(r"[a-z]", back) else w.translate(_LOOK)
+    return re.sub(r"[a-zа-я0-9]+", one, t)
+
+
 def parse_car(text):
-    t = " " + text.lower().replace("ё", "е") + " "
+    t = " " + fix_mixed(text.lower().replace("ё", "е")) + " "
     year = None
     for m in re.finditer(r"(?<!\d)(19[89]\d|20[0-2]\d)(?!\d)", t):
         ctx = t[max(0, m.start() - 40): m.end() + 15]
@@ -601,11 +630,13 @@ def parse_car(text):
                     return slug, code, year
         return None
     model = CYR_MODELS.get(tokens[0], tokens[0])
+    if re.search(r"[а-я]", model):      # «примера» → primera; неверное название просто не найдётся на Дроме
+        model = model.translate(_TRANSLIT)
     if slug == "mazda" and re.fullmatch(r"\d", model):
         model = "mazda" + model
     if slug == "land_rover":
         slug, model = "land_rover", "range_rover" if "range" in t else model
-    if not re.fullmatch(r"[a-z0-9\-]+", model):
+    if not re.fullmatch(r"[a-z0-9_\-]+", model):
         return None
     cands = [model]
     for w in tokens[1:3]:
