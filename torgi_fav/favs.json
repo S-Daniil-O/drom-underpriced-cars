@@ -841,10 +841,26 @@
    "ended": true,
    "closed": true,
    "removed": true
+  },
+  "tg-15094": {
+   "n": 29,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/15094",
+   "name": "Hyundai Solaris, 2015",
+   "vin": "Z94CT51DBFR122599",
+   "target": 300000,
+   "card": 931,
+   "added": "2026-11-07T11:53",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": 932,
+   "msgs": [],
+   "topic": 930,
+   "title": "Hyundai Solaris, 2015 · №29"
   }
  },
- "offset": 177673765,
- "seq": 28,
+ "offset": 177673766,
+ "seq": 29,
  "forum": -1004498088083,
  "owners": [
   1188456401
