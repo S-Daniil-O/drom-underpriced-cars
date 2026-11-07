@@ -332,6 +332,9 @@ def mets_start_price(lot):
         lot["title"] = strip_html(og.group(1))
     t = strip_html(re.sub(r"<script.*?</script>", "", t, flags=re.S))
     lot["page_vin"] = parse_vin(t)[0]
+    km = re.search(r"Пробег, км[^0-9]{0,30}(\d[\d \xa0]{2,9})", t)
+    if km:
+        lot["mileage"] = int(re.sub(r"\D", "", km.group(1)))
     m = re.search(r"Начальная цена продажи имущества, руб\.\s*([\d\s\xa0]+)", t) or \
         re.search(r"([\d\xa0 ]{4,})\s*₽\s*Начальная цена", t)
     if m:
@@ -417,6 +420,12 @@ def tg_detail(row, any_lot=False):
     cur = (hot_info({"schedule": sched}) or {}).get("current_price")
     req = re.search(r"Количество предоставленных заявок на участие в торгах:\s*(\d+)", t)
     pics = re.findall(r'/Picture/Show/(\d+)', s)
+    # файлы лота: тип «Изображение» или «фото» в названии (часто фото выложены одним PDF)
+    files = []
+    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", s[s.find('id="divDocuments"'):], re.S):
+        m = re.search(r"""href=['"](/Document/Details/[0-9a-f-]+)['"][^>]*>([^<]+)</a>""", tr)
+        if m and re.search(r"Изображени|фото|photo", strip_html(tr), re.I):
+            files.append({"url": TG_BASE + m.group(1), "name": html.unescape(m.group(2)).strip()})
     desc = field("Сведения об имуществе, его составе, характеристиках, описание")
     return {
         "source": "ТоргГрупп", "id": f"tg-{row['lot_id']}", "url": url,
@@ -430,6 +439,7 @@ def tg_detail(row, any_lot=False):
         "region_name": field("Регион местонахождения имущества"),
         "image": f"{TG_BASE}/Picture/Show/{pics[0]}" if pics else None,
         "photos": [f"{TG_BASE}/Picture/Show/{i}" for i in dict.fromkeys(pics)],
+        "files": files,
         "schedule": sched,
         "requests": int(req.group(1)) if req else None,
         "deposit_info": (field("Размер задатка, %") + "% от цены на интервале") if field("Размер задатка, %") else "",
@@ -1099,6 +1109,7 @@ def hot_caption(d):
         f"📍 {d['region']}" if d.get("region") else None,
         " ".join(tags(d, hot=True)) or None,
         "",
+        f"🛣 Пробег: {d['specs']['mileage']:,} км".replace(",", " ") if (d.get("specs") or {}).get("mileage") else None,
         f"Минимальная цена: {money(h['min_price'])}",
         (f"✅ Действует сейчас — заявку можно подать до {h['end']:%d.%m.%Y %H:%M}"
          if in_min else
@@ -1133,6 +1144,7 @@ def caption(d):
         f"📍 {d['region']}" if d.get("region") else None,
         " ".join(tags(d)) or None,
         "",
+        f"🛣 Пробег: {d['specs']['mileage']:,} км".replace(",", " ") if (d.get("specs") or {}).get("mileage") else None,
         f"Начальная цена: {money(d['start_price'])}" if d.get("start_price") else None,
         f"Текущая цена: {money(d['current_price'])}" if d.get("current_price") else None,
         f"Минимальная (конечная) цена: {money(d['min_price'])}",
@@ -1240,7 +1252,7 @@ def car_title(text):
     return f"{brand.replace('_', ' ').title()} {model.replace('_', ' ').replace('-', ' ').title()}" + (f", {car[2]}" if car[2] else "")
 
 
-def fav_fetch(lid, v, img_dir, market=True):
+def fav_fetch(lid, v, img_dir, market=True, files=False):
     """Всё по одному лоту: график, заявки, название, VIN, фото (если ещё не отправлены)."""
     d = None
     if lid.startswith("cdt-"):
@@ -1260,7 +1272,22 @@ def fav_fetch(lid, v, img_dir, market=True):
     if name and vin_year and not re.search(r", \d{4}$", name):   # год не указан текстом — по VIN
         name += f", {vin_year}"
     out = {"schedule": [list(r[:4]) for r in d["schedule"]], "requests": d.get("requests"),
-           "name": name, "vin": vin, "trade": d.get("trade")}
+           "name": name, "vin": vin, "trade": d.get("trade"),
+           "mileage": d.get("mileage") or parse_specs(text).get("mileage")}
+    if files and not v.get("files_done"):    # файлы лота (большие PDF) — только бот: ТоргГрупп открывается с GitHub
+        got = []
+        for i, f in enumerate((d.get("files") or [])[:8]):
+            try:
+                r = requests.get(f["url"], headers={"User-Agent": UA}, timeout=120)
+            except requests.RequestException:
+                continue
+            if r.ok and 1_000 < len(r.content) < 45_000_000:
+                img_dir.mkdir(parents=True, exist_ok=True)
+                safe = f"{re.sub(r'[^A-Za-z0-9_-]', '_', lid)}_file{i}.bin"
+                (img_dir / safe).write_bytes(r.content)
+                got.append({"file": safe, "name": f["name"][:100]})
+        out["files"] = got
+        out["files_total"] = len(d.get("files") or [])
     if market:            # долго (паузы между запросами), поэтому только на iMac, не в боте
         out["market"] = lot_market(d)
     if v.get("photos_done"):

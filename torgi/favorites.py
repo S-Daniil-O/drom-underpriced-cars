@@ -136,7 +136,7 @@ def link_forum(st, chat_id, allowed):
             continue
         v["card"] = mid
         # график и фото придут в тему заново
-        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False, "no_photos": False})
+        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False, "no_photos": False, "files_done": False})
         moved += 1
         time.sleep(3)
     tg("sendMessage", chat_id=FORUM, text=f"✅ Группа подключена. Лотов перенесено в темы: {moved}.\n"
@@ -437,7 +437,7 @@ def heal(st):
                 tg("deleteMessage", chat_id=FORUM, message_id=old)
         alive = [m for m in (v.get("msgs") or []) if m not in (v.get("sched_msg"), v.get("market_msg")) and msg_exists(FORUM, m)]
         if not alive:
-            v.update({"photos_done": False, "no_photos": False})
+            v.update({"photos_done": False, "no_photos": False, "files_done": False})
         v.update({"card": mid, "head": None, "msgs": alive, "sched_msg": None, "sched_text": None,
                   "market_msg": None, "market_text": None})
         fixed.append(v["n"])
@@ -664,6 +664,8 @@ def schedule_text(v, sched, now, req):
         if active:
             cur = r
     lines.append("<pre>" + "\n".join(body) + "</pre>")
+    if isinstance(v.get("mileage"), int):
+        lines.append(f"🛣 Пробег: {v['mileage']:,} км".replace(",", " "))
     if cur:
         lines.append(f"Сейчас: <b>{money(cur[2])}</b> до {cur[1]}")
     lines.append(f"Минимальная: <b>{money(mn)}</b>, приём заявок до {max(parse_dt(r[1]) for r in rows):%d.%m.%Y %H:%M}")
@@ -756,6 +758,35 @@ def update_market(st, v, mk, sched, now):
     st.dirty = True
 
 
+def send_files(st, v, files, img_dir):
+    """Файлы лота с площадки (например, «Фото ТС.pdf»): альбомом документов в тему."""
+    items = [f for f in files if re.fullmatch(r"[A-Za-z0-9_-]+\.bin", str(f.get("file"))) and (img_dir / f["file"]).is_file()][:8]
+    if not items:
+        return
+    ok = True
+    for i in range(0, len(items), 10):
+        part = items[i:i + 10]
+        up = {f"f{k}": (x["name"], (img_dir / x["file"]).read_bytes()) for k, x in enumerate(part)}
+        if len(part) == 1:
+            r = tg("sendDocument", files={"document": up["f0"]}, caption=f"📎 Файлы лота №{v['n']} с площадки",
+                   disable_notification="true", **place(v))
+            sent = [r["result"]] if r.get("ok") else []
+        else:
+            media = [{"type": "document", "media": f"attach://f{k}"} for k in range(len(part))]
+            media[-1]["caption"] = f"📎 Файлы лота №{v['n']} с площадки"
+            r = tg("sendMediaGroup", files=up, media=json.dumps(media, ensure_ascii=False), disable_notification="true", **place(v))
+            sent = r.get("result", []) if r.get("ok") else []
+        if not r.get("ok"):
+            ok = False
+            log(f"файлы лота №{v['n']}: {r.get('description')}")
+        v.setdefault("msgs", []).extend(x["message_id"] for x in sent)
+        time.sleep(2)
+    if ok:
+        v["files_done"] = True
+    st.dirty = True
+    log(f"файлы лота №{v['n']}: {len(items)}, успешно: {ok}")
+
+
 def send_photos(st, v, names, img_dir):
     """Все фото лота альбомами по 10, ответом на карточку. Один раз на лот."""
     safe = [n for n in names if re.fullmatch(r"[A-Za-z0-9_-]+\.jpg", str(n))][:30]   # только свои файлы из img/
@@ -799,7 +830,7 @@ def direct_info(lid, v):
         return {}
     if lid not in DIRECT:
         try:
-            DIRECT[lid] = tm.fav_fetch(lid, v, DIRECT_DIR, market=False) or {}
+            DIRECT[lid] = tm.fav_fetch(lid, v, DIRECT_DIR, market=False, files=True) or {}
         except Exception as e:  # noqa: BLE001 — сбой площадки не должен ронять бота
             log(f"лот {lid}: не загрузился с площадки ({e})")
             return {}
@@ -813,7 +844,8 @@ def check(st, live, img_dir):
             continue
         info = live.get(lid) or {}
         photos_dir = img_dir
-        need_more = not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
+        need_more = (not info.get("schedule") or not has_name(v) or (not v.get("photos_done") and not info.get("photos"))
+                     or (lid.startswith("tg-") and not v.get("files_done")))
         if need_more:
             extra = direct_info(lid, v)
             if extra:
@@ -825,6 +857,14 @@ def check(st, live, img_dir):
             st.dirty = True
         if info.get("vin") and not v.get("vin"):
             v["vin"] = info["vin"]
+            st.dirty = True
+        if info.get("mileage") and v.get("mileage") != info["mileage"]:
+            v["mileage"] = info["mileage"]
+            st.dirty = True
+        if info.get("files") and not v.get("files_done"):
+            send_files(st, v, info["files"], DIRECT_DIR)
+        elif info.get("files_total") == 0 and not v.get("files_done"):
+            v["files_done"] = True
             st.dirty = True
         if info.get("trade") and not v.get("trade"):
             v["trade"] = info["trade"]
