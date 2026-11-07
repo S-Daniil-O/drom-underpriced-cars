@@ -1288,7 +1288,7 @@ def fav_fetch(lid, v, img_dir, market=True, files=False):
                         if len(buf) > FAV_MAX_FILE:     # слишком большой файл — смотреть на площадке
                             buf = None
                             break
-            except requests.RequestException:
+            except (requests.RequestException, ValueError):    # в т.ч. неверный content-length
                 continue
             if buf and len(buf) > 1_000:
                 img_dir.mkdir(parents=True, exist_ok=True)
