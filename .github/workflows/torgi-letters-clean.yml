@@ -1,0 +1,76 @@
+name: torgi-letters-clean
+# Разово: убрать из группы старые письма перед повторной отправкой из почты.
+# Удаляются только сообщения БОТА, которых нет в учёте лотов (карточки, графики, рынок, фото,
+# файлы, уведомления — в учёте и не трогаются). Сообщения людей не трогаются.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "yes — удалять; иначе только подсчёт"
+        default: "no"
+permissions:
+  contents: read
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      T: ${{ secrets.TORGI_BOT_TOKEN }}
+      TMP_CHAT: ${{ vars.TORGI_FAV_CHAT_ID }}
+      APPLY: ${{ github.event.inputs.apply }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: state, path: _state}
+      - run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.parse, urllib.error
+          T, TMP, APPLY = os.environ["T"], os.environ["TMP_CHAT"], os.environ.get("APPLY") == "yes"
+          def call(m, **d):
+              for _ in range(6):
+                  try:
+                      return json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.telegram.org/bot{T}/{m}", data=urllib.parse.urlencode(d).encode()), timeout=30))
+                  except urllib.error.HTTPError as e:
+                      r = json.load(e)
+                      if r.get("error_code") == 429:
+                          time.sleep(r.get("parameters", {}).get("retry_after", 5) + 1); continue
+                      return r
+                  except (urllib.error.URLError, OSError):
+                      time.sleep(5)
+              return {"ok": False, "description": "сеть"}
+          st = json.load(open("_state/torgi_fav/favs.json"))
+          F, lots = st.get("forum"), st.get("lots", {})
+          keep = set()
+          for v in lots.values():
+              for k in ("topic", "card", "head", "sched_msg", "market_msg"):
+                  if v.get(k): keep.add(v[k])
+              keep.update(v.get("msgs") or [])
+          active = [v for v in lots.values() if v.get("topic") and not v.get("removed")]
+          if not F or len(active) < 3 or not all(v.get("card") for v in active):
+              raise SystemExit("учёт лотов неполный — ничего не делаю")
+          last = max(keep) + 400        # верхняя граница поиска; новее неё не трогаем
+          bot, human, service, deleted, old = [], 0, 0, 0, 0
+          for mid in range(2, last):
+              if mid in keep:
+                  continue
+              d = call("editMessageLiveLocation", chat_id=F, message_id=mid, latitude="0", longitude="0").get("description", "")
+              if "not found" in d:
+                  continue
+              r = call("forwardMessage", chat_id=TMP, from_chat_id=F, message_id=mid, disable_notification="true")
+              if not r.get("ok"):
+                  service += 1; continue
+              res = r["result"]
+              call("deleteMessage", chat_id=TMP, message_id=res["message_id"])
+              su = (res.get("forward_origin") or {}).get("sender_user") or res.get("forward_from") or {}
+              if not su.get("is_bot"):
+                  human += 1; continue
+              bot.append(mid)
+              time.sleep(2.5)
+          print(f"ИТОГ в учёте: {len(keep)} | сообщений бота вне учёта (старые письма): {len(bot)} | людей: {human} | служебных: {service}")
+          if APPLY:
+              for mid in bot:
+                  r = call("deleteMessage", chat_id=F, message_id=mid)
+                  if r.get("ok"): deleted += 1
+                  else: old += 1
+                  time.sleep(0.4)
+              print(f"ИТОГ удалено: {deleted} | не удалось (старше 48 ч): {old}")
+          PY
