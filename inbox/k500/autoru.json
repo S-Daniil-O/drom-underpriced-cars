@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160650329-78cb51c9",
-"source": "autoru",
-"brand": "BYD",
-"model": "Flyer",
-"year": 2006,
-"price": 60000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
-"mileage_km": 140000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-07T03:27:27.517668+00:00"
-},
-{
 "ad_id": "autoru_1160654058-1f8368ae",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:27:27.517643+00:00"
+"seen_at": "2026-11-07T03:38:42.640631+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -45,23 +29,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:27:27.517599+00:00"
+"seen_at": "2026-11-07T03:38:42.640606+00:00"
 },
 {
-"ad_id": "autoru_1160680210-850716ec",
+"ad_id": "autoru_1160650329-78cb51c9",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/lLu7wWq99k6YToT0416JkGfPxZHr8Pzdz9L0qzfqmSYN4WmNdZ9xTjdqVDWyxv5MtO3qTPlMnSXHS485Ho0WTq0KOE5HdA9nxTGXLZmAOUXh0QwqUIFpsafD8WauGsCd7I6wNWFRS6IA1Zy7qoJXljSlxlDcTDMAvEvnQkBZCeFuNQ/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
+"brand": "BYD",
+"model": "Flyer",
+"year": 2006,
+"price": 60000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/byd/flyer/1160650329-78cb51c9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/ceb7c0c25908581548a19a7b0cc7ee14/1200x900n",
+"mileage_km": 140000,
+"owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:27:08.818893+00:00"
+"seen_at": "2026-11-07T03:38:42.640553+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:04:43.400716+00:00"
+"seen_at": "2026-11-07T03:38:25.825380+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:04:43.400698+00:00"
+"seen_at": "2026-11-07T03:38:25.825362+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:04:43.400686+00:00"
+"seen_at": "2026-11-07T03:38:25.825349+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -125,6 +109,22 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:04:43.400674+00:00"
+"seen_at": "2026-11-07T03:38:25.825334+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/lWtSF3SGvDk2VZXt3WumQyHqkEos9OA6YiMsetZrBwsFPnsD2RLlE-VfP_EbxDJ3c1YJ9UdTjlGEi4SQM6l2qrHORY2UBM1vzThjmX7I1Cr0BpoMWVXwp3Lq3BAN0pjJBjvS_mrfBhN0M1q-wNjVBVg7eGN_jRVErO2YtOfVfl8Uug/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-07T03:38:25.825289+00:00"
 }
 ]
