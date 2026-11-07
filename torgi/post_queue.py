@@ -42,31 +42,36 @@ DOC_MAX_BYTES = 40_000_000
 PHOTO_HOSTS = ("nistp.ru",)
 NOT_CAR_FILE = re.compile(r"птс|стс|паспорт|документ|свидетельств|договор|pts|sts", re.I)
 ARCHIVE_IMAGE = re.compile(r"\.(jpe?g|png|webp)$", re.I)
+ARCHIVE_MAX_ENTRIES = 200       # записей в архиве смотрим не больше
+ARCHIVE_MAX_IMAGE_BYTES = 15_000_000
 
 
-def looks_like_document(page, pymupdf):
-    """Сфотографированный СТС/ПТС: большая часть кадра — светлая розовато-бежевая бумага.
-    Лишний отсев (пятно на кузове, стол) не страшен, а данные владельца публиковать нельзя."""
-    z = 120 / max(page.rect.width, page.rect.height)
-    s = page.get_pixmap(matrix=pymupdf.Matrix(z, z), alpha=False, colorspace=pymupdf.csRGB).samples
+def looks_like_document(page, clip, pymupdf):
+    """Сфотографированный СТС/ПТС или серая копия: большая часть публикуемого кадра — светлая
+    розовато-бежевая или белая бумага. Лишний отсев (пятно на кузове, снег) не страшен,
+    а данные владельца публиковать нельзя."""
+    z = 120 / max(clip.width, clip.height)
+    s = page.get_pixmap(matrix=pymupdf.Matrix(z, z), clip=clip, alpha=False, colorspace=pymupdf.csRGB).samples
     pixels = [s[i:i + 3] for i in range(0, len(s), 3)]
-    paper = 0
+    tinted = white = 0
     for r, g, b in pixels:
         h, sat, v = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)
-        paper += v > 0.6 and 0.04 < sat < 0.45 and (h < 0.12 or h > 0.85)
-    return paper / max(1, len(pixels)) >= 0.45
+        tinted += v > 0.6 and 0.04 < sat < 0.45 and (h < 0.12 or h > 0.85)
+        white += v > 0.7 and sat <= 0.08
+    n = max(1, len(pixels))
+    return tinted / n >= 0.45 or white / n >= 0.65
 
 
 def page_jpeg(page, pymupdf):
     """Страница → JPEG, обрезанный по снимку (без белых полей). None, если это текст, а не фото."""
     infos = page.get_image_info()
-    if not infos or len(page.get_text().strip()) > 200 or looks_like_document(page, pymupdf):
+    if not infos or len(page.get_text().strip()) > 200:
         return None
     clip = pymupdf.Rect()
     for x in infos:
         clip |= pymupdf.Rect(x["bbox"])
     clip &= page.rect
-    if clip.is_empty:
+    if clip.is_empty or looks_like_document(page, clip, pymupdf):
         return None
     z = min(PHOTO_MAX_SIDE / max(clip.width, clip.height), 4)
     return page.get_pixmap(matrix=pymupdf.Matrix(z, z), clip=clip, alpha=False,
@@ -74,14 +79,35 @@ def page_jpeg(page, pymupdf):
 
 
 def archive_images(data):
-    """Картинки из ZIP (кроме файлов с документами), пока не наберётся ALBUM_MAX."""
+    """Картинки из ZIP (кроме файлов с документами) по одной, по мере надобности. Размер в заголовке
+    архива может быть ложным, поэтому читаем не больше лимита и слишком большие пропускаем."""
     with zipfile.ZipFile(io.BytesIO(data)) as z:
-        for info in z.infolist():
+        for info in z.infolist()[:ARCHIVE_MAX_ENTRIES]:
             name = info.filename
             if not info.flag_bits & 0x800:      # имена в архивах с Windows — в cp866
                 name = name.encode("cp437", "replace").decode("cp866", "replace")
-            if ARCHIVE_IMAGE.search(name) and not NOT_CAR_FILE.search(name) and info.file_size < 15_000_000:
-                yield name, z.read(info)
+            if not ARCHIVE_IMAGE.search(name) or NOT_CAR_FILE.search(name):
+                continue
+            with z.open(info) as f:
+                body = f.read(ARCHIVE_MAX_IMAGE_BYTES + 1)
+            if len(body) <= ARCHIVE_MAX_IMAGE_BYTES:
+                yield name, body
+
+
+def download(url):
+    """Содержимое файла или None, если ответ с ошибкой или файл больше DOC_MAX_BYTES."""
+    # без перенаправлений: файл должен лежать на самой площадке (адрес проверен в doc_photos)
+    with requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=120, stream=True, allow_redirects=False) as r:
+        if r.status_code != 200:
+            log(f"фото: {url} — ответ {r.status_code}")
+            return None
+        body = bytearray()
+        for chunk in r.iter_content(1 << 16):
+            body += chunk
+            if len(body) > DOC_MAX_BYTES:
+                log(f"фото: {url} — файл больше {DOC_MAX_BYTES} байт")
+                return None
+    return bytes(body)
 
 
 def doc_photos(url, limit, pymupdf):
@@ -90,17 +116,18 @@ def doc_photos(url, limit, pymupdf):
     if u.scheme != "https" or u.hostname not in PHOTO_HOSTS:
         log(f"фото: чужой адрес пропущен: {url}")
         return []
-    r = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=120)
-    if not r.ok or len(r.content) > DOC_MAX_BYTES:
-        log(f"фото: {url} — ответ {r.status_code}, {len(r.content)} байт")
+    data = download(url)
+    if data is None:
         return []
     ext = u.path.rsplit(".", 1)[-1].lower()
     if ext == "zip":
-        docs = [pymupdf.open(stream=b, filetype=n.rsplit(".", 1)[-1].lower()) for n, b in archive_images(r.content)]
+        docs = (pymupdf.open(stream=b, filetype=n.rsplit(".", 1)[-1].lower()) for n, b in archive_images(data))
     else:
-        docs = [pymupdf.open(stream=r.content, filetype=ext)]
+        docs = [pymupdf.open(stream=data, filetype=ext)]
     out = []
     for doc in docs:
+        if len(out) >= limit:
+            break
         # в PDF документы лежат в конце, поэтому страницы дальше первых ALBUM_MAX не смотрим
         for i in range(min(doc.page_count, ALBUM_MAX)):
             if len(out) < limit:
