@@ -50,6 +50,8 @@ jobs:
               raise SystemExit("учёт лотов неполный — ничего не делаю")
           last = max(keep) + 400        # верхняя граница поиска; новее неё не трогаем
           me = call("getMe")["result"]["id"]
+          errors = {}
+          print("служебный канал:", call("getChat", chat_id=TMP).get("ok"), "| защита контента в группе:", call("getChat", chat_id=F).get("result", {}).get("has_protected_content"))
           bot, human, service, deleted, old, other_text = [], 0, 0, 0, 0, 0
           for mid in range(2, last):
               if mid in keep:
@@ -59,7 +61,12 @@ jobs:
                   continue
               r = call("forwardMessage", chat_id=TMP, from_chat_id=F, message_id=mid, disable_notification="true")
               if not r.get("ok"):
-                  service += 1; continue
+                  service += 1
+                  err = r.get("description", "")[:70]
+                  errors[err] = errors.get(err, 0) + 1
+                  if service == 5 and not bot and not human:   # пересылка не работает вообще — считать нечего
+                      raise SystemExit(f"пересылка не работает: {errors}")
+                  continue
               res = r["result"]
               if not call("deleteMessage", chat_id=TMP, message_id=res["message_id"]).get("ok"):
                   raise SystemExit("служебная копия не удалилась — останавливаюсь")
@@ -71,7 +78,7 @@ jobs:
                   other_text += 1; continue      # текст бота, но не письмо: не трогаем
               bot.append(mid)
               time.sleep(2.5)
-          print(f"ИТОГ в учёте: {len(keep)} | сообщений бота вне учёта (старые письма): {len(bot)} | людей: {human} | служебных: {service} | другой текст бота: {other_text}")
+          print(f"ИТОГ в учёте: {len(keep)} | сообщений бота вне учёта (старые письма): {len(bot)} | людей: {human} | служебных: {service} | другой текст бота: {other_text} | ошибки: {errors}")
           if APPLY:
               # лоты могли добавить во время проверки: учёт перечитываем прямо перед удалением
               fresh = json.load(urllib.request.urlopen(f"https://raw.githubusercontent.com/{os.environ['REPO']}/state/torgi_fav/favs.json?t={int(time.time())}", timeout=30))["lots"]
