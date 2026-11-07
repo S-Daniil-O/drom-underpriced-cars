@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:08:06.241954+00:00"
+"seen_at": "2026-11-07T19:19:13.398222+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:08:06.241932+00:00"
+"seen_at": "2026-11-07T19:19:13.398201+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:08:06.241893+00:00"
+"seen_at": "2026-11-07T19:19:13.398164+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:08:06.241844+00:00"
+"seen_at": "2026-11-07T19:19:13.398117+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -77,55 +77,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:07:51.986934+00:00"
+"seen_at": "2026-11-07T19:18:55.328091+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "206",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/peugeot/206/1160675022-169310a3/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/4n0KajcrJmJ_dg2jjAcKsKMksDbYuZPufldbHzFdcDGLoN47GsxRGOtecQdLC7yzYHeoh2WK4eftPwWVI1eNB89wwYFWmLn8nyZt0a6kyOq2eOQwvF78cWAU1iv6HAm0JSc8Ya5JwxSusnvPjLC3fPaP7EuPLhRdp14mIQ2xVRZ0mE4/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-07T19:18:55.328081+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
 "source": "autoru",
-"brand": "Peugeot",
-"model": "206",
+"brand": "ГАЗ",
+"model": "3102 «Волга»",
 "year": 2000,
 "price": 165000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/peugeot/206/1160675022-169310a3/",
+"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2184575/d3ded72897b36ed5cd41732f7f42c8fa/1200x900n",
 "mileage_km": 359000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:07:51.986923+00:00"
-},
-{
-"ad_id": "autoru_1160680210-850716ec",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/nXxV68rvfg_qAhURRucxVNPNSGmcXDfJD3a9ps1rRPJpck6R4GPc9-3xNywCWA8LK4h1OITOOjJBkJlyu0-_xVR8RtoL4zc7XlZtdgt0mSYk-jEyqNemY3pgGrg-eTqLGvjkuUvMQuP12IEyL9OGxVqwftCP1Hyt2B-zkTbNHzCMXos/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-07T19:07:51.986901+00:00"
+"seen_at": "2026-11-07T19:18:55.328051+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
 "source": "autoru",
-"brand": "ГАЗ",
-"model": "3102 «Волга»",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
 "year": 2002,
 "price": 165000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/90ce094e05dd37264c0d47805a4c5206/1200x900n",
 "mileage_km": 135000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-07T19:07:51.986865+00:00"
+"seen_at": "2026-11-07T19:18:55.328031+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T19:07:51.986824+00:00"
+"seen_at": "2026-11-07T19:18:55.327994+00:00"
 },
 {
 "ad_id": "autoru_1160692968-3649ff56",
