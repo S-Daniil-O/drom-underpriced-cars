@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:05:00.184760+00:00"
+"seen_at": "2026-11-07T03:16:15.448394+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:05:00.184736+00:00"
+"seen_at": "2026-11-07T03:16:15.448369+00:00"
 },
 {
 "ad_id": "autoru_1160650329-78cb51c9",
@@ -45,7 +45,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-07T03:05:00.184684+00:00"
+"seen_at": "2026-11-07T03:16:15.448315+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/TANSPpNPlOf-uks4GtTpAJ-jPgJs2uVR9ieGy_M1u-8bbCtrIzc4E7qI0HUG5aVBbRFFUjuVSL4mgIY1XL7_dUE8AhwyC2oV3nTYpdHS0blwVZpo2rxvsicJLm7GsnocrKUqckSFTByx9F2PJMxvW11Plnf-VLr7lcvj23nNCdDD4g/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-07T03:15:59.554324+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
@@ -110,21 +126,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-07T03:04:43.400674+00:00"
-},
-{
-"ad_id": "autoru_1160680210-850716ec",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/6UrHoGc_AhY4gXe5K8NM506idoqA21qe9kUDsMayePWpmuyshY8fWkelm1HJvHigx2le_O5EvZjPocMQ5tQSPuLRTEXx6BaoWOKY0f08PZdhcIzM60Zn-_hkQFZqKOimEn9HPDoxCgNo0b8YmmA-kRJa9nKetTYQP_Md-DlxxCytPVo/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-07T03:04:43.400634+00:00"
 }
 ]
