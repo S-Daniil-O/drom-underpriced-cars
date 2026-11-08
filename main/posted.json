@@ -3528,5 +3528,35 @@
     "mileage_km": 170000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/1932996/4969f4c8f81cc99bdb36fc1f4a5d4cb3/1200x900n"
+  },
+  "autoru_1160698851-0ad0c422": {
+    "posted_at": "2026-11-08T13:35:12.783000+00:00",
+    "message_id": 261,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Granta",
+    "year": 2019,
+    "price": 550000,
+    "median_price": 657850.0,
+    "median_sample_size": 14,
+    "price_rating": null,
+    "mileage_km": 127127,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20180167/d0fbf1747ddaf224f99e425314b6d7d4/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/tiguan/642714159.html": {
+    "posted_at": "2026-11-08T13:35:19.681416+00:00",
+    "message_id": 262,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "year": 2013,
+    "price": 1100000,
+    "median_price": 1200000,
+    "median_sample_size": 639,
+    "price_rating": "отличная цена",
+    "mileage_km": 196800,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/FINo41YqLUTPEV-cNcVRPoXZax3er-BbIbv5a-DTZQWQIbuiJqDVBozB2y9MExCEPsjtBtVDaatlfp5k/gen272wb.jpg"
   }
 }
