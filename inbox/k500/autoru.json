@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160680210-850716ec",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/pw4j-gkfJtDEipopLftV0wnhRMiTAC_-KM_0sVxZqtFoHlHtS2TPuA9ig0b1hCKtxry3PAsWblXBtPSC4g1btx_Bo-jZmo1ODCl8-YYLpKggDvppawUS-dKzDkE34WKxJ2y3ota8xjKonSRXIMjme4UhqFUHxnfUdU0FOpSg1vN_BBc/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T18:09:54.291180+00:00"
-},
-{
 "ad_id": "autoru_1160673466-be0bb3b1",
 "source": "autoru",
 "brand": "Ford",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:54.291151+00:00"
+"seen_at": "2026-11-08T18:21:18.953272+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:54.291137+00:00"
+"seen_at": "2026-11-08T18:21:18.953261+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -61,7 +45,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:54.291121+00:00"
+"seen_at": "2026-11-08T18:21:18.953250+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/qEDSLvmSCVkJdgx_sejsBm68ehSrBCyVvkGdn2mBJ8xK4-SGBK2MWL58cMqISFuYJjLdsnDlN4jKkLddBKHCIGcDGXFMwTLNcPDyk12asr-57oJUPbO72PTRCST3vr4_Cy6OyGgAnqQg-ZfA45oBFne1vmkcvj_bb-4olx-bKjFeWg/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T18:21:18.953228+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T18:09:54.291092+00:00"
+"seen_at": "2026-11-08T18:21:18.953195+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:54.291051+00:00"
+"seen_at": "2026-11-08T18:21:18.953154+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529783+00:00"
+"seen_at": "2026-11-08T18:20:58.960787+00:00"
 },
 {
 "ad_id": "autoru_1160696391-754ecaa8",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529763+00:00"
+"seen_at": "2026-11-08T18:20:58.960771+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529742+00:00"
+"seen_at": "2026-11-08T18:20:58.960751+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529726+00:00"
+"seen_at": "2026-11-08T18:20:58.960739+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529709+00:00"
+"seen_at": "2026-11-08T18:20:58.960724+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -189,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-08T18:09:37.529692+00:00"
+"seen_at": "2026-11-08T18:20:58.960710+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -205,7 +205,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T18:09:37.529656+00:00"
+"seen_at": "2026-11-08T18:20:58.960696+00:00"
+},
+{
+"ad_id": "autoru_1160701456-a7504dd9",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Outlander",
+"year": 2004,
+"price": 500000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/outlander/1160701456-a7504dd9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2141620/c843bf83a421e7d048ce9403c591b127/1200x900n",
+"mileage_km": 244000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T18:20:58.960660+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
