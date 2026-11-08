@@ -7313,5 +7313,20 @@
     "mileage_km": 140751,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/pWbQRB76wQbSkc1EocutmO1gBBEpqlhnAzH53NM6rZqKWQuiieulSsc1dqe4-nwydgI8SdnqMsyGxhF5/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/haima/3/712427479.html": {
+    "posted_at": "2026-11-08T05:43:36.685702+00:00",
+    "message_id": 535,
+    "deleted_at": null,
+    "brand": "Haima",
+    "model": "3",
+    "year": 2011,
+    "price": 135000,
+    "median_price": 165000,
+    "median_sample_size": 839,
+    "price_rating": "отличная цена",
+    "mileage_km": 166535,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Qvj1x-DD4RKFQTpIuojkKUCJ2wN1F7QoBnNygnwiE12Y65Jehoga2FxS5Cy1fUpcYAow5O4simgrfgcj/gen272wb.jpg"
   }
 }

@@ -2303,5 +2303,14 @@
     "posted_at": "2026-11-07T09:10:36.673910+00:00",
     "message_id": 325,
     "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/haima/3/712427479.html": {
+    "posted_at": "2026-11-08T05:44:26.639232+00:00",
+    "message_id": 327,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-08T05:44:26.639232+00:00",
+    "vk_post_id": 243,
+    "vk_deleted_at": null
   }
 }
