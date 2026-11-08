@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:40.420231+00:00"
+"seen_at": "2026-11-08T16:50:57.456655+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:40.420215+00:00"
+"seen_at": "2026-11-08T16:50:57.456642+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:40.420200+00:00"
+"seen_at": "2026-11-08T16:50:57.456629+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -56,12 +56,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/tYj64r6VVmgpNlc7pCAdaH548kueq9emDvCs8I0NbntHFT69k8HVPiHKU2rw5hJ5VBf26f2oW-EtVKdvsiIbyRM5xFTTolu68EJqapFY7GB_WCbIX5gWhtXjWspe7GqCraLj89bc7AcquzJ-IYT_1YiSg--hjxapgiV2sfJCNG0HWOo/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/cocQ2PhKXYVO47N6GMTt58zL1axe8A0fxrjSMyPtFNdevdHSPTS7IKY0TgjdXZMG4c-OH3IJ1eojZW7ib_Lc7RpLUY6PNoAhs-mcqGoyFGPdOdBGzFIntUIra-Q1BEqvx6puNDt0He7HMoIDaAFbyF7emZKFArarAaPD9B6tT_LTBBo/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:40.420171+00:00"
+"seen_at": "2026-11-08T16:50:57.456602+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T16:39:40.420125+00:00"
+"seen_at": "2026-11-08T16:50:57.456562+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:40.420078+00:00"
+"seen_at": "2026-11-08T16:50:57.456520+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:25.875037+00:00"
+"seen_at": "2026-11-08T16:50:36.578714+00:00"
 },
 {
 "ad_id": "autoru_1160696391-754ecaa8",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:25.875016+00:00"
+"seen_at": "2026-11-08T16:50:36.578697+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:25.874996+00:00"
+"seen_at": "2026-11-08T16:50:36.578676+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:25.874982+00:00"
+"seen_at": "2026-11-08T16:50:36.578664+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -173,7 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T16:39:25.874967+00:00"
+"seen_at": "2026-11-08T16:50:36.578649+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -189,7 +189,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-08T16:39:25.874933+00:00"
+"seen_at": "2026-11-08T16:50:36.578634+00:00"
+},
+{
+"ad_id": "autoru_1160700818-0fb80260",
+"source": "autoru",
+"brand": "ГАЗ",
+"model": "24 «Волга»",
+"year": 1983,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/gaz/24/1160700818-0fb80260/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/14637477/d837bb8aa4ce3874006dca8cf4b6ec93/1200x900n",
+"mileage_km": 13746,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T16:50:36.578601+00:00"
 },
 {
 "ad_id": "autoru_1160666354-f8b9ae5d",
