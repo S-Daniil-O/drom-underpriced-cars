@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160666354-f8b9ae5d",
-"source": "autoru",
-"brand": "Chery",
-"model": "Kimo (A1)",
-"year": 2009,
-"price": 300000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chery/kimo/1160666354-f8b9ae5d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2003768/e2b040f3ae7d3c768f2f8f515b3bcfa1/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T06:21:38.954020+00:00"
-},
-{
 "ad_id": "autoru_1160655673-0b29bc18",
 "source": "autoru",
 "brand": "Audi",
@@ -29,7 +13,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:38.953993+00:00"
+"seen_at": "2026-11-08T06:32:53.458484+00:00"
+},
+{
+"ad_id": "autoru_1160666354-f8b9ae5d",
+"source": "autoru",
+"brand": "Chery",
+"model": "Kimo (A1)",
+"year": 2009,
+"price": 300000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chery/kimo/1160666354-f8b9ae5d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2003768/e2b040f3ae7d3c768f2f8f515b3bcfa1/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T06:32:53.458443+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:38.953956+00:00"
+"seen_at": "2026-11-08T06:32:53.458416+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:38.953939+00:00"
+"seen_at": "2026-11-08T06:32:53.458400+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:38.953900+00:00"
+"seen_at": "2026-11-08T06:32:53.458360+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -88,12 +88,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/qVtDtc7QbBtIrMSZNP3fg88xb46v9w04hzXIMuV__dU0sOqVFgAN-j8eJCeilWAmmtg9RyaipM5WtoRH_drh60cBQhF3LdEqhYlaaWlEUR-JW-JL-WpGssIlX9YSNOXi5ViNHUNCDcRelFRQJ8IJoCF5i0C4GRKPDklpdv_ZgPZsVQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/SFMwQH-ofQxEwhRDTgvqGIH4jWA0ijOUIAQHXJ3c8z9Pq08UmaOcUGZE-3wTsgQXBK3s5ghNrmnvXts5bq3W2z6EqAGXxo4abTYa8xmDuMepTf_ttIdUEhna6Dy5wzCnQi1N1eLPiXXhJmHr_mZhxLTlj-ByBM6alTb45hyksXgK4gE/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:23.792470+00:00"
+"seen_at": "2026-11-08T06:32:32.642263+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T06:21:23.792441+00:00"
+"seen_at": "2026-11-08T06:32:32.642236+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:23.792423+00:00"
+"seen_at": "2026-11-08T06:32:32.642218+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T06:21:23.792380+00:00"
+"seen_at": "2026-11-08T06:32:32.642178+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
