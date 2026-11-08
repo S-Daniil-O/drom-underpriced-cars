@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:54.391769+00:00"
+"seen_at": "2026-11-08T08:14:14.832876+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:54.391747+00:00"
+"seen_at": "2026-11-08T08:14:14.832852+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:54.391718+00:00"
+"seen_at": "2026-11-08T08:14:14.832819+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:54.391702+00:00"
+"seen_at": "2026-11-08T08:14:14.832804+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:54.391663+00:00"
+"seen_at": "2026-11-08T08:14:14.832765+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -88,12 +88,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/wiogD84U0r5qFSGU78c-F3zv2T7Ojq2rK3m-7XuHLT0ryBtV00GANwBHaZYn07zBwiOvXb8VIcatVi98bRaY-OzeLYj-IAFdN7UbF5US7JjJS6A33o8usddeeRhdWi7Yh7n3p1uWNITi7UuY3D2F3OAMiJ_tGhlXAXBqXnRmkWA1zW0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/SLfaz6UVXHWkpayRnaui1pXc3iTJsZCF9baANDS5RtB-1-wo5NmQuF_qa3p3tdOxcASTxt6hLGZSKJgvAFCSnRXY9PhDVzabSOWKUPMxbN-9zoMIGf4DGjE9UnoVfdxmOaDagjT60yn-amd4tq5KYrq2ykxcGBa4UXiKn23xn17yCxU/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:37.506123+00:00"
+"seen_at": "2026-11-08T08:13:57.358632+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T08:02:37.506097+00:00"
+"seen_at": "2026-11-08T08:13:57.358608+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:37.506080+00:00"
+"seen_at": "2026-11-08T08:13:57.358594+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -141,7 +141,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:02:37.506040+00:00"
+"seen_at": "2026-11-08T08:13:57.358573+00:00"
+},
+{
+"ad_id": "autoru_1160695611-bf808052",
+"source": "autoru",
+"brand": "Audi",
+"model": "100",
+"year": 1983,
+"price": 85000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/audi/100/1160695611-bf808052/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2143601/FDeJEkIyFnunbvcdPVBt0gYq9udfRb3a87y3PK8OpDSxFWwF6OG-sAtjnOvNn0znzWeYBMB7QdLcqoB5CJnxXhhImi0QE9i9DHswbp94pgbnWPwJzQVve4HxhKb8eH8S_gXa7dBhmo1uLd_cI44K-qzX32Y2NfZN5zEOJ8MAz5IrZX0/1200x900n",
+"mileage_km": 220000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-11-08T08:13:57.358535+00:00"
 },
 {
 "ad_id": "autoru_1160654058-1f8368ae",
