@@ -3648,5 +3648,20 @@
     "mileage_km": 210000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20138408/2a4cb9c0eef1271852f7207a97510ea5/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/tiguan/534218325.html": {
+    "posted_at": "2026-11-08T20:17:51.676018+00:00",
+    "message_id": 269,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "year": 2013,
+    "price": 990000,
+    "median_price": 1200000,
+    "median_sample_size": 667,
+    "price_rating": "хорошая цена",
+    "mileage_km": 210000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ur1a1Y58rUF74qH-7v2rf3XPAM08IXKwjMou5N2PDOwLztxMINrN66sGcPhNtSYU5u8JuexQNonP9tFX/gen272wb.jpg"
   }
 }
