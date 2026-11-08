@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:57.879917+00:00"
+"seen_at": "2026-11-08T10:18:04.141240+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:57.879890+00:00"
+"seen_at": "2026-11-08T10:18:04.141212+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:57.879875+00:00"
+"seen_at": "2026-11-08T10:18:04.141196+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:57.879860+00:00"
+"seen_at": "2026-11-08T10:18:04.141177+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -72,28 +72,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/1CuH5hucOO6e_NFKPjA9XKX_dVIIKgUoCoSUe7hEtL-36mEbBXvWnPywmJ8nbYYgPirt7rhyZ4KlQA-wIC0q5OqcfCEwfpxfDsOS0gysrkUirZ2CL51n9NpIzEOXKAJbfK8KXzSsION2JDfC1z2H44tdkvG5ojqAaeJ1nllRjptBuA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/k2KU1KosQBDYg21i0eZIYMFJKkoJePdxtK8fqpnfoYVfuCvnQ-TdhtBy3g0gwsC19U5Y09V3a9FmNn1iJCbAZ0w4xMrmuboW95JeB98QouoIWg_6AYG2d_wnugFOKJZOyOkVvu9XmJbCXiEn-wKWLFoaNhHMtYyrFnQRntCK0WGTEFw/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:57.879808+00:00"
-},
-{
-"ad_id": "autoru_1160690435-5594971a",
-"source": "autoru",
-"brand": "ГАЗ",
-"model": "3102 «Волга»",
-"year": 2002,
-"price": 165000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/90ce094e05dd37264c0d47805a4c5206/1200x900n",
-"mileage_km": 135000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Стрелица",
-"seen_at": "2026-11-08T10:06:39.253755+00:00"
+"seen_at": "2026-11-08T10:18:04.141123+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -109,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:39.253739+00:00"
+"seen_at": "2026-11-08T10:17:50.825410+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -125,7 +109,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:06:39.253700+00:00"
+"seen_at": "2026-11-08T10:17:50.825390+00:00"
+},
+{
+"ad_id": "autoru_1160690435-5594971a",
+"source": "autoru",
+"brand": "ГАЗ",
+"model": "3102 «Волга»",
+"year": 2002,
+"price": 165000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/90ce094e05dd37264c0d47805a4c5206/1200x900n",
+"mileage_km": 135000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Стрелица",
+"seen_at": "2026-11-08T10:17:50.825344+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
