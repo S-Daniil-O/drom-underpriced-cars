@@ -3352,7 +3352,7 @@
   "autoru_1160665465-dd183cfd": {
     "posted_at": "2026-11-05T18:24:16.929783+00:00",
     "message_id": 249,
-    "deleted_at": null,
+    "deleted_at": "2026-11-08T18:28:32.756055+00:00",
     "brand": "Hyundai",
     "model": "Solaris",
     "year": 2017,
@@ -3367,7 +3367,7 @@
   "autoru_1160665541-940f0090": {
     "posted_at": "2026-11-05T18:24:38.098929+00:00",
     "message_id": 250,
-    "deleted_at": null,
+    "deleted_at": "2026-11-08T18:28:34.201329+00:00",
     "brand": "Renault",
     "model": "Logan",
     "year": 2020,
@@ -3588,5 +3588,20 @@
     "mileage_km": 181000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/CLrXUTnt5HwbD8IBQsCeKtSqwvQ8u6yeboieRJcaN9sz-oaybaH4FXEWFwxRT0em0dWuIjYtwzZulH9S/gen272wb.jpg"
+  },
+  "autoru_1160696944-097f8aec": {
+    "posted_at": "2026-11-08T18:32:37.749343+00:00",
+    "message_id": 265,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra",
+    "year": 2014,
+    "price": 650000,
+    "median_price": 990000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 105000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17757189/bd15789ea021e2e807be53c38b0d9934/1200x900n"
   }
 }
