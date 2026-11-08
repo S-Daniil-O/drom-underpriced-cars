@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T09:55:41.454455+00:00"
+"seen_at": "2026-11-08T10:06:57.879917+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T09:55:41.454430+00:00"
+"seen_at": "2026-11-08T10:06:57.879890+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T09:55:41.454417+00:00"
+"seen_at": "2026-11-08T10:06:57.879875+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T09:55:41.454402+00:00"
+"seen_at": "2026-11-08T10:06:57.879860+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -72,44 +72,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/ucr53vvVmmTT6b4THDW7h1RHI8eEvvbCQ5YtVJ3bjXVNjbv6HWRzv-UORvU7Bn05kFEcnn6yOoPnJbwQFtE5ka3yT5gydMIembNCrUKc85hnA2w28h3vwRBVOv9kpyw8vqp-Tly9vtQA2kew4MmG52wC1SDPy2guRGGu8xlVsgaq0k0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/1CuH5hucOO6e_NFKPjA9XKX_dVIIKgUoCoSUe7hEtL-36mEbBXvWnPywmJ8nbYYgPirt7rhyZ4KlQA-wIC0q5OqcfCEwfpxfDsOS0gysrkUirZ2CL51n9NpIzEOXKAJbfK8KXzSsION2JDfC1z2H44tdkvG5ojqAaeJ1nllRjptBuA/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T09:55:41.454356+00:00"
-},
-{
-"ad_id": "autoru_1160692395-ed18006e",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "469",
-"year": 1982,
-"price": 400000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/469/1160692395-ed18006e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/20cac65033957c8c40d4b8f215dc64c8/1200x900n",
-"mileage_km": 50000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T09:55:22.631454+00:00"
-},
-{
-"ad_id": "autoru_1160694183-9f2a8ef3",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Lacetti",
-"year": 2009,
-"price": 425000,
-"market_price": 388500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160694183-9f2a8ef3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21100702/176e1fb42b68199c84da32da8864f5d5/1200x900n",
-"mileage_km": 149000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T09:55:22.631431+00:00"
+"seen_at": "2026-11-08T10:06:57.879808+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -125,7 +93,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T09:55:22.631380+00:00"
+"seen_at": "2026-11-08T10:06:39.253755+00:00"
+},
+{
+"ad_id": "autoru_1160692395-ed18006e",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "469",
+"year": 1982,
+"price": 400000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/469/1160692395-ed18006e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/20cac65033957c8c40d4b8f215dc64c8/1200x900n",
+"mileage_km": 50000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T10:06:39.253739+00:00"
+},
+{
+"ad_id": "autoru_1160694183-9f2a8ef3",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2009,
+"price": 425000,
+"market_price": 388500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160694183-9f2a8ef3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21100702/176e1fb42b68199c84da32da8864f5d5/1200x900n",
+"mileage_km": 149000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T10:06:39.253700+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
