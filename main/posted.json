@@ -3558,5 +3558,35 @@
     "mileage_km": 196800,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/FINo41YqLUTPEV-cNcVRPoXZax3er-BbIbv5a-DTZQWQIbuiJqDVBozB2y9MExCEPsjtBtVDaatlfp5k/gen272wb.jpg"
+  },
+  "autoru_1160701249-3da8ccf4": {
+    "posted_at": "2026-11-08T18:02:15.776808+00:00",
+    "message_id": 263,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2011,
+    "price": 600000,
+    "median_price": 805000.0,
+    "median_sample_size": 12,
+    "price_rating": null,
+    "mileage_km": 149952,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2157011/d0ef88c691fcbdaeed1bddbf229f71c8/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra/142154364.html": {
+    "posted_at": "2026-11-08T18:02:18.355640+00:00",
+    "message_id": 264,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra",
+    "year": 2012,
+    "price": 620000,
+    "median_price": 780000.0,
+    "median_sample_size": 8744,
+    "price_rating": "нормальная цена",
+    "mileage_km": 181000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/CLrXUTnt5HwbD8IBQsCeKtSqwvQ8u6yeboieRJcaN9sz-oaybaH4FXEWFwxRT0em0dWuIjYtwzZulH9S/gen272wb.jpg"
   }
 }
