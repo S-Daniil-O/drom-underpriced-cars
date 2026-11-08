@@ -936,10 +936,26 @@
    "photos_done": true,
    "hit_target": true,
    "files_done": true
+  },
+  "tg-22382": {
+   "n": 32,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/22382",
+   "name": "https://bankrot.torggroup.org/TradeLot/View/22382",
+   "vin": null,
+   "target": null,
+   "card": 965,
+   "added": "2026-11-08T09:50",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 964,
+   "title": "Лот №32"
   }
  },
- "offset": 177673782,
- "seq": 31,
+ "offset": 177673783,
+ "seq": 32,
  "forum": -1004498088083,
  "owners": [
   1188456401
