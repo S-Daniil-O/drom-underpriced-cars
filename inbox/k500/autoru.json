@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:40.318422+00:00"
+"seen_at": "2026-11-08T11:02:57.089597+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:40.318396+00:00"
+"seen_at": "2026-11-08T11:02:57.089573+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:40.318382+00:00"
+"seen_at": "2026-11-08T11:02:57.089560+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:40.318366+00:00"
+"seen_at": "2026-11-08T11:02:57.089546+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -72,28 +72,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/YZHTNmU_ScUS-LgSsfG4leAxKbaDd4uzI1jMUNuJltaO4gmgihag2v1-xe7jL8lugGrOlXBRiYgjJcghOYXmsHQzyf8jcAoXDHUDD5nfEV47vOmlr6q8DbiXXEserNZ1rvmXKiTB4loWMBl_0xQ9u-L2CSw9ykPNVhIUtPcs8D0IqcU/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/YGWqR5C8zxPxabgzTObz6QqyPz_LY5PcEYgom_DgxrEuebAt7UDhL9OEgaF2XaTAA4XRN6lq7yg2z94JnaTlglR1I96o0570zr9F8Sqrh0dPqfjRYnrfrYzzMRHdgaEA0Ka7mdTJU4OuQ6UY-56lPDu_WCWZD9ouDQIZPKVOr6KYNaM/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:40.318316+00:00"
-},
-{
-"ad_id": "autoru_1160694183-9f2a8ef3",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Lacetti",
-"year": 2009,
-"price": 425000,
-"market_price": 388500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160694183-9f2a8ef3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21100702/176e1fb42b68199c84da32da8864f5d5/1200x900n",
-"mileage_km": 149000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T10:51:20.150097+00:00"
+"seen_at": "2026-11-08T11:02:57.089499+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T10:51:20.150066+00:00"
+"seen_at": "2026-11-08T11:02:37.573962+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -125,7 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T10:51:20.150029+00:00"
+"seen_at": "2026-11-08T11:02:37.573945+00:00"
+},
+{
+"ad_id": "autoru_1160694183-9f2a8ef3",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2009,
+"price": 425000,
+"market_price": 388500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160694183-9f2a8ef3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21100702/176e1fb42b68199c84da32da8864f5d5/1200x900n",
+"mileage_km": 149000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T11:02:37.573904+00:00"
 },
 {
 "ad_id": "autoru_1160655673-0b29bc18",
