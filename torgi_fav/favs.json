@@ -940,18 +940,33 @@
   "tg-22382": {
    "n": 32,
    "url": "https://bankrot.torggroup.org/TradeLot/View/22382",
-   "name": "https://bankrot.torggroup.org/TradeLot/View/22382",
-   "vin": null,
+   "name": "Peugeot Traveller, 2021",
+   "vin": "Z8TVEAHXVMM022123",
    "target": null,
    "card": 965,
    "added": "2026-11-08T09:50",
-   "end": null,
+   "end": "2027-02-18T09:00",
    "sent": {},
    "btn": true,
    "head": null,
-   "msgs": [],
+   "msgs": [
+    966,
+    967,
+    968,
+    969,
+    970,
+    971,
+    972
+   ],
    "topic": 964,
-   "title": "Лот №32"
+   "title": "Peugeot Traveller, 2021 · мин 540 т.р. · до 18.02 · №32",
+   "files_done": true,
+   "trade": "22347",
+   "min_price": 540000.0,
+   "requests": 0,
+   "sched_msg": 966,
+   "sched_text": "📊 <b>График снижения цены — лот №32</b>\nPeugeot Traveller, 2021\n\n<pre>   09.11–17.11   1 935 000 ₽\n   17.11–25.11   1 795 500 ₽\n   25.11–03.12   1 656 000 ₽\n   03.12–11.12   1 516 500 ₽\n   11.12–21.12   1 377 000 ₽\n   21.12–29.12   1 237 500 ₽\n   29.12–15.01   1 098 000 ₽\n   15.01–25.01     958 500 ₽\n   25.01–02.02     819 000 ₽\n   02.02–10.02     679 500 ₽\n   10.02–18.02     540 000 ₽</pre>\nМинимальная: <b>540 000 ₽</b>, приём заявок до 18.02.2027 09:00\nЗадаток на минимальной цене: 54 000 ₽\n📭 Заявок нет",
+   "photos_done": true
   }
  },
  "offset": 177673783,
