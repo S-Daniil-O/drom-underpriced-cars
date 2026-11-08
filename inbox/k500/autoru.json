@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:27.532231+00:00"
+"seen_at": "2026-11-08T23:35:43.090286+00:00"
 },
 {
 "ad_id": "autoru_1160680210-850716ec",
@@ -24,12 +24,12 @@
 "price": 120000,
 "market_price": 60000,
 "url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/_Br58LpKvSJI_Z-qCKZT_IbdeTOLOgcc64Ivm7I5gr4bTflBzOoerY9eq75jiPJ8aVTCPbHSKaLDbJOh5SWX-l9m1mSrzNVwvJw9DdcuQYEk35ldBVWEJiMw4ptqARDCWxisyyeBFcrIbnQEveo4YirVwDu5pI6gwaovuR0RgWD9PQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/EWpuLOHpA1KmjbpvCrG2BhQBi23k4IXlf-BLxk_S-U-AR78GIpqtMvwcz2daVxLKVIiAltH22qspWyh-fe9MuYgiGGv4aKKs4Euu8QINrco4NyMWRTRpiDZCP-ix8SeF7mulIpWMZqLxFb7HGizxg_dKeX0hRS_esp6xuhyC9GE9BrQ/1200x900n",
 "mileage_km": 95000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:27.532206+00:00"
+"seen_at": "2026-11-08T23:35:43.090258+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T23:24:27.532173+00:00"
+"seen_at": "2026-11-08T23:35:43.090223+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:27.532152+00:00"
+"seen_at": "2026-11-08T23:35:43.090201+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -77,23 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:27.532105+00:00"
-},
-{
-"ad_id": "autoru_1160696391-754ecaa8",
-"source": "autoru",
-"brand": "Ford",
-"model": "Sierra",
-"year": 1987,
-"price": 155000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
-"mileage_km": 100000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246144+00:00"
+"seen_at": "2026-11-08T23:35:43.090153+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -109,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246125+00:00"
+"seen_at": "2026-11-08T23:35:22.152222+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -125,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246113+00:00"
+"seen_at": "2026-11-08T23:35:22.152210+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -134,14 +118,14 @@
 "model": "2115",
 "year": 2005,
 "price": 150000,
-"market_price": 86000,
+"market_price": 80500,
 "url": "https://auto.ru/cars/used/sale/vaz/2115/1160700059-24a3457e/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/09f10dc0dbae0a2a6ad35aab8546c332/1200x900n",
 "mileage_km": 240000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246100+00:00"
+"seen_at": "2026-11-08T23:35:22.152198+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -157,7 +141,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-08T23:24:11.246089+00:00"
+"seen_at": "2026-11-08T23:35:22.152188+00:00"
+},
+{
+"ad_id": "autoru_1160696391-754ecaa8",
+"source": "autoru",
+"brand": "Ford",
+"model": "Sierra",
+"year": 1987,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
+"mileage_km": 100000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T23:35:22.152171+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246077+00:00"
+"seen_at": "2026-11-08T23:35:22.152152+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -189,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T23:24:11.246059+00:00"
+"seen_at": "2026-11-08T23:35:22.152118+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
