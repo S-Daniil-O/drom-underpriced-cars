@@ -1,51 +1,19 @@
 [
 {
-"ad_id": "autoru_1160673466-be0bb3b1",
-"source": "autoru",
-"brand": "Ford",
-"model": "Aerostar",
-"year": 1993,
-"price": 110000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/aerostar/1160673466-be0bb3b1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/e270be39fb32b8fc5e0ac407916d3c2f/1200x900n",
-"mileage_km": 175000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T20:02:10.319389+00:00"
-},
-{
-"ad_id": "autoru_1160680210-850716ec",
+"ad_id": "autoru_1160674965-7e6c99ea",
 "source": "autoru",
 "brand": "Ford",
 "model": "Fiesta",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/ford/fiesta/1160674965-7e6c99ea/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/ONscg6YIyoQ6aw7eCiJbksAceyhh7K3Tk_kuL8u0gZ1KIOccJiPk93-wEC7zI5Oxug5tHMJPYQKzGbaHVrTqq5xEvJKEtgpixGrUPrk7fdEnRffh9AQ5lEgndBkArB6YXPe-YthXVpgF8HxN2x2uo-hEo3ekUWz7QYHdowgh-duxX2M/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T20:02:10.319358+00:00"
-},
-{
-"ad_id": "autoru_1160674965-7e6c99ea",
-"source": "autoru",
-"brand": "ГАЗ",
-"model": "3102 «Волга»",
 "year": 2008,
 "price": 370000,
 "market_price": 322500,
-"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
+"url": "https://auto.ru/cars/used/sale/ford/fiesta/1160674965-7e6c99ea/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2128077/c1f2e410b9df01703642f91fed082c9c/1200x900n",
 "mileage_km": 142000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:02:10.319322+00:00"
+"seen_at": "2026-11-08T20:13:19.633355+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -61,23 +29,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:02:10.319306+00:00"
+"seen_at": "2026-11-08T20:13:19.633341+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/tKzH4dWxU_DjCNKjTclTj-vmRBnCOIUQPr7XPD-hK1f30ln5ZvPRTCjrajaosxmyc22wcu81b9ogFSZNZE5CWm2WWrK7wmgTDqs_veHUBWiM0JM6yEqyuXOGSLbUSstSq72zfyzUaB3dqmUUDhrqnCTXFnKF869wYBMLII-HMHM1Iw/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T20:13:19.633313+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
+"brand": "ГАЗ",
+"model": "3102 «Волга»",
 "year": 2002,
 "price": 165000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
+"url": "https://auto.ru/cars/used/sale/gaz/3102/1160690435-5594971a/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/5482631/90ce094e05dd37264c0d47805a4c5206/1200x900n",
 "mileage_km": 135000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T20:02:10.319279+00:00"
+"seen_at": "2026-11-08T20:13:19.633276+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -93,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:02:10.319237+00:00"
+"seen_at": "2026-11-08T20:13:19.633252+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -109,23 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908494+00:00"
-},
-{
-"ad_id": "autoru_1160696391-754ecaa8",
-"source": "autoru",
-"brand": "Ford",
-"model": "Sierra",
-"year": 1987,
-"price": 155000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
-"mileage_km": 100000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908477+00:00"
+"seen_at": "2026-11-08T20:13:19.633202+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -141,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908456+00:00"
+"seen_at": "2026-11-08T20:13:03.640347+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -157,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908444+00:00"
+"seen_at": "2026-11-08T20:13:03.640322+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -173,23 +141,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908430+00:00"
+"seen_at": "2026-11-08T20:13:03.640279+00:00"
+},
+{
+"ad_id": "autoru_1160696391-754ecaa8",
+"source": "autoru",
+"brand": "Ford",
+"model": "Sierra",
+"year": 1987,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
+"mileage_km": 100000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T20:13:03.640253+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2111",
+"model": "21099",
 "year": 2010,
 "price": 170000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
+"url": "https://auto.ru/cars/used/sale/vaz/21099/1160697283-8524a555/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
 "mileage_km": 300000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-08T20:01:55.908418+00:00"
+"seen_at": "2026-11-08T20:13:03.640190+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -205,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908402+00:00"
+"seen_at": "2026-11-08T20:13:03.640175+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -221,7 +205,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T20:01:55.908364+00:00"
+"seen_at": "2026-11-08T20:13:03.640113+00:00"
+},
+{
+"ad_id": "autoru_1160673466-be0bb3b1",
+"source": "autoru",
+"brand": "Ford",
+"model": "Aerostar",
+"year": 1993,
+"price": 110000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/ford/aerostar/1160673466-be0bb3b1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/e270be39fb32b8fc5e0ac407916d3c2f/1200x900n",
+"mileage_km": 175000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T20:02:10.319389+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
