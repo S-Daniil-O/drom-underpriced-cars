@@ -3603,5 +3603,50 @@
     "mileage_km": 105000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17757189/bd15789ea021e2e807be53c38b0d9934/1200x900n"
+  },
+  "autoru_1160700231-3a59f126": {
+    "posted_at": "2026-11-08T20:02:47.834959+00:00",
+    "message_id": 266,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Largus",
+    "year": 2024,
+    "price": 880000,
+    "median_price": 1320000.0,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 48000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20315033/4c868d897270d4a885b717baa1c4f4f7/1200x900n"
+  },
+  "autoru_1160702026-b71d93a0": {
+    "posted_at": "2026-11-08T20:02:55.693983+00:00",
+    "message_id": 267,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Granta",
+    "year": 2023,
+    "price": 550000,
+    "median_price": 799000,
+    "median_sample_size": 33,
+    "price_rating": null,
+    "mileage_km": 10000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/6adf23b1f521e938425fcf991f1f2fd1/1200x900n"
+  },
+  "autoru_1160702045-c3f7a1b9": {
+    "posted_at": "2026-11-08T20:03:00.462740+00:00",
+    "message_id": 268,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Tiguan",
+    "year": 2013,
+    "price": 990000,
+    "median_price": 1250000,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 210000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20138408/2a4cb9c0eef1271852f7207a97510ea5/1200x900n"
   }
 }
