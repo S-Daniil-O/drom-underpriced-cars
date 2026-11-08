@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160655673-0b29bc18",
+"source": "autoru",
+"brand": "Audi",
+"model": "80",
+"year": 1991,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/audi/80/1160655673-0b29bc18/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20360782/232f9881794d92cd13fc50d42b080311/1200x900n",
+"mileage_km": 250000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T08:48:04.503065+00:00"
+},
+{
 "ad_id": "autoru_1160666354-f8b9ae5d",
 "source": "autoru",
 "brand": "Chery",
@@ -13,39 +29,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:51.221713+00:00"
-},
-{
-"ad_id": "autoru_1160655673-0b29bc18",
-"source": "autoru",
-"brand": "Ford",
-"model": "Aerostar",
-"year": 1991,
-"price": 250000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/aerostar/1160673466-be0bb3b1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20360782/232f9881794d92cd13fc50d42b080311/1200x900n",
-"mileage_km": 250000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T08:36:51.221690+00:00"
+"seen_at": "2026-11-08T08:48:04.503026+00:00"
 },
 {
 "ad_id": "autoru_1160673466-be0bb3b1",
 "source": "autoru",
 "brand": "Ford",
-"model": "Focus",
+"model": "Aerostar",
 "year": 1993,
 "price": 110000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160663702-70ac5c63/",
+"url": "https://auto.ru/cars/used/sale/ford/aerostar/1160673466-be0bb3b1/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20394542/e270be39fb32b8fc5e0ac407916d3c2f/1200x900n",
 "mileage_km": 175000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:51.221662+00:00"
+"seen_at": "2026-11-08T08:48:04.502999+00:00"
 },
 {
 "ad_id": "autoru_1160674965-7e6c99ea",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:51.221647+00:00"
+"seen_at": "2026-11-08T08:48:04.502984+00:00"
 },
 {
 "ad_id": "autoru_1160675022-169310a3",
@@ -77,23 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:51.221608+00:00"
-},
-{
-"ad_id": "autoru_1160680210-850716ec",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2003,
-"price": 120000,
-"market_price": 60000,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160680210-850716ec/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/_gvo7TUDLpoZslN0Xkq6dhy2D7Ep5Y_3W4rUD25w0ZFbE3r-jC7Ca0P0C7P-yeXfvhto_fpzaLJJA6J73dFOB0nRsBgyVEB2YjR7exdnVkGO7lksBYGgWWnj--mjHqun5rGdiD1f-Ylr4D_3iWEJn9SgqD75gaor3AmG3pfa-1NocMg/1200x900n",
-"mileage_km": 95000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-08T08:36:32.619267+00:00"
+"seen_at": "2026-11-08T08:48:04.502944+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Стрелица",
-"seen_at": "2026-11-08T08:36:32.619240+00:00"
+"seen_at": "2026-11-08T08:47:44.512862+00:00"
 },
 {
 "ad_id": "autoru_1160692395-ed18006e",
@@ -125,7 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:32.619222+00:00"
+"seen_at": "2026-11-08T08:47:44.512848+00:00"
+},
+{
+"ad_id": "autoru_1160680210-850716ec",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2109",
+"year": 2003,
+"price": 120000,
+"market_price": 60000,
+"url": "https://auto.ru/cars/used/sale/vaz/2109/1160693590-60547caf/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21020305/fTws9u-zRNlLSFquEOnSO9uWIIfaQB-S-dzqHZlG12VI69EYaVEq-GTpmjZPAWfop28IFhKwtrNP21tfABpCLVbgje0UrYlqdPGKsbvUAlzWxX3di-jjunJHoG58lVX7iK3Ru2CMzv0_Y44ltWh870_5KFqZAa7Az2dWoVjIHFD9rXw/1200x900n",
+"mileage_km": 95000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-08T08:47:44.512829+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-08T08:36:32.619178+00:00"
+"seen_at": "2026-11-08T08:47:44.512781+00:00"
 },
 {
 "ad_id": "autoru_1160695611-bf808052",
