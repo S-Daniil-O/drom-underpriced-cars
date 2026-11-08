@@ -1017,10 +1017,26 @@
    "msgs": [],
    "topic": 987,
    "title": "Лот №34"
+  },
+  "tg-20973": {
+   "n": 35,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/20973",
+   "name": "https://bankrot.torggroup.org/TradeLot/View/20973",
+   "vin": null,
+   "target": null,
+   "card": 990,
+   "added": "2026-11-08T09:57",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 989,
+   "title": "Лот №35"
   }
  },
- "offset": 177673790,
- "seq": 34,
+ "offset": 177673791,
+ "seq": 35,
  "forum": -1004498088083,
  "owners": [
   1188456401
