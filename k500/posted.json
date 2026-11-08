@@ -7343,5 +7343,50 @@
     "mileage_km": 230000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/87Bt6MyqY-Mtc-ef9B5FOUjglVQlR5LVW4Dxlz1kyNGLYl1Ovtc2bpDASjSE1LLnr3_WZHfJDWBx5i11/gen272wb.jpg"
+  },
+  "autoru_1160699034-7709f8c8": {
+    "posted_at": "2026-11-08T14:05:24.744205+00:00",
+    "message_id": 537,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Kalina",
+    "year": 2011,
+    "price": 230000,
+    "median_price": 290000.0,
+    "median_sample_size": 22,
+    "price_rating": null,
+    "mileage_km": 170000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17890514/16c64738d8acf7578a1ca8d208f613ce/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/509203300.html": {
+    "posted_at": "2026-11-08T14:05:27.397288+00:00",
+    "message_id": 538,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2012,
+    "price": 198000,
+    "median_price": 347500,
+    "median_sample_size": 16,
+    "price_rating": null,
+    "mileage_km": 166000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Ln4BAiZR69wBvoMRKwN7bfls1UdIuC_mm-U7pn5LZlBjwqL-_g8ZMLG_YHAVD6Gu0Y9Fv6vQDDafsXgN/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/346444820.html": {
+    "posted_at": "2026-11-08T14:05:30.347832+00:00",
+    "message_id": 539,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2007,
+    "price": 99000,
+    "median_price": 290000.0,
+    "median_sample_size": 7158,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/hz7EWTzSwTGgQ7JcIltJxWoOsSNJp9Amkv471HRTT_aY8T1xRaOb352fBsM-QVkv_fAwUe_NDmv7iaQW/gen272wb.jpg"
   }
 }
