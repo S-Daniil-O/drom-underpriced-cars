@@ -2585,5 +2585,51 @@
     "checked_at": "2026-11-09T22:04:56.194550+00:00",
     "vk_post_id": 259,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/toyota/carina/938118426.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T22:18:44.348906+00:00"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/848031134.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T22:18:44.348906+00:00"
+  },
+  "https://auto.drom.ru/voronezh/ford/ecosport/392383487.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T22:18:44.348906+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/287770319.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T22:18:44.348906+00:00"
+  },
+  "https://auto.drom.ru/voronezh/mazda/xedos_9/728190246.html": {
+    "posted_at": "2026-11-09T22:19:02.464037+00:00",
+    "message_id": 348,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-09T22:19:02.464037+00:00",
+    "vk_post_id": 260,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/434687137.html": {
+    "posted_at": "2026-11-09T22:19:10.735421+00:00",
+    "message_id": 349,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-09T22:19:10.735421+00:00",
+    "vk_post_id": 261,
+    "vk_deleted_at": null
   }
 }
