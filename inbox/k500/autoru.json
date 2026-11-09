@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373134+00:00"
+"seen_at": "2026-11-09T16:25:57.719618+00:00"
 },
 {
 "ad_id": "autoru_1160694183-9f2a8ef3",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373110+00:00"
+"seen_at": "2026-11-09T16:25:57.719595+00:00"
 },
 {
 "ad_id": "autoru_1160696391-754ecaa8",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373083+00:00"
+"seen_at": "2026-11-09T16:25:57.719571+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373056+00:00"
+"seen_at": "2026-11-09T16:25:57.719547+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373040+00:00"
+"seen_at": "2026-11-09T16:25:57.719533+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:46.373019+00:00"
+"seen_at": "2026-11-09T16:25:57.719516+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-09T16:14:46.372978+00:00"
+"seen_at": "2026-11-09T16:25:57.719499+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:32.955681+00:00"
+"seen_at": "2026-11-09T16:25:57.719461+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:32.955668+00:00"
+"seen_at": "2026-11-09T16:25:38.772037+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-09T16:14:32.955636+00:00"
+"seen_at": "2026-11-09T16:25:38.772008+00:00"
 },
 {
 "ad_id": "autoru_1160690435-5594971a",
@@ -222,21 +222,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-09T11:34:19.231038+00:00"
-},
-{
-"ad_id": "autoru_1160708355-72ad43a9",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160708355-72ad43a9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/22099016/11e2628f2360eba43209c95b3298c655/1200x900n",
-"mileage_km": 200000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Богучар",
-"seen_at": "2026-11-09T10:15:20.801720+00:00"
 }
 ]
