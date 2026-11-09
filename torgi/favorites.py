@@ -453,13 +453,24 @@ def heal(st):
 
 # ---------------------------------------------------------------- лоты из писем
 MAIL_URL = re.sub(r"\s+", "", os.environ.get("TORGI_MAIL_URL", ""))   # веб-адрес скрипта Gmail: номера лотов из писем
-REF = re.compile(r"(cdt-[0-9]{1,12}|mets-[0-9]{1,12}-[0-9]{1,12}|tg-[0-9]{1,12}|tgtrade-[0-9]{1,12})")
+REF = re.compile(r"(cdt-[0-9]{1,12}|mets-[0-9]{1,12}-[0-9]{1,12}|tg-[0-9]{1,12}|tgtrade-[0-9]{1,12}|vin-[A-HJ-NPR-Z0-9]{17})")
+ACTIVE_FILE = None     # inbox/torgi/active.json от iMac: все лоты площадок с VIN
 _ref_failed = set()
 AUTO_LOTS_PER_DAY = 20   # не больше стольких тем в день создаётся автоматически по письмам
 
 
 def resolve_ref(st, ref):
     """Номер из письма → номер лота. У ТоргГрупп в письме номер торгов — лот берём со страницы торгов."""
+    if ref.startswith("vin-"):          # в письме только VIN — ищем лот среди всех лотов площадок
+        vin = ref[4:]
+        known = next((k for k, v in st.d["lots"].items() if v.get("vin") == vin), None)
+        if known:
+            return known, None
+        try:
+            act = json.loads(ACTIVE_FILE.read_text()).get("lots", {}) if ACTIVE_FILE and ACTIVE_FILE.exists() else {}
+        except ValueError:
+            act = {}
+        return next((k for k, v in act.items() if v.get("vin") == vin and REF.fullmatch(k)), None), None
     if not ref.startswith("tgtrade-"):
         return re.sub(r"[0-9]+", lambda m: str(int(m.group())), ref), None   # единый вид номера
     trade = str(int(ref[8:]))
@@ -931,6 +942,20 @@ def check(st, live, img_dir):
         update_topic(st, v)
 
 
+def daily_audit(st):
+    """Раз в день (после 11:30 МСК): восстановить пропавшее и, если что-то не в порядке, написать в общую тему."""
+    now = now_msk()
+    today = now.strftime("%Y-%m-%d")
+    if st.d.get("audit_day") == today or now.hour * 60 + now.minute < 11 * 60 + 30 or not FORUM:
+        return
+    st.d["audit_day"] = today
+    st.dirty = True
+    fixed = heal(st)
+    text = audit_text(st)
+    if fixed or "⚠️" in text:
+        tg("sendMessage", chat_id=FORUM, text="🗓 Ежедневная проверка\n" + text)
+
+
 def u_new(st):
     """Появился лот без графика или запрошена проверка — проверить сразу, не ждать 30 минут."""
     return bool(st.d.get("want_check")) or any(
@@ -943,6 +968,8 @@ def main():
     st = State(sys.argv[1])
     FORUM = st.d.get("forum")
     lots_file = Path(sys.argv[2])
+    global ACTIVE_FILE
+    ACTIVE_FILE = lots_file.parent.parent / "torgi" / "active.json"
     minutes = int(sys.argv[3]) if len(sys.argv) > 3 else 330
     stop = time.time() + minutes * 60
     allowed = admins(st)
@@ -961,6 +988,7 @@ def main():
             for k, v in st.d["lots"].items():
                 if not v.get("ended") and not v.get("sched_msg"):
                     v["tried"] = True      # не повторять проверку сразу: следующая — через полчаса
+            daily_audit(st)
             if st.d.get("want_check"):
                 tg("sendMessage", chat_id=st.d.pop("want_check"), text=audit_text(st))
                 st.dirty = True

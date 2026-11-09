@@ -1273,7 +1273,9 @@ def write_active(lots, path):
     sources_ok — площадки, которые ответили (по остальным «лот пропал» не считается)."""
     data = {"created": time.strftime("%Y-%m-%dT%H:%M"), "max_km": MAX_KM,
             "sources_ok": sorted({lot["source"] for lot in lots} - ({"НИС"} if _nis_incomplete[0] else set())),
-            "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"]} for lot in lots}}
+            "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"],
+                                 "vin": parse_vin((lot.get("title") or "") + " " + (lot.get("description") or ""))[0]}
+                     for lot in lots}}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False))
     log(f"Живые лоты для автоудаления: {len(lots)} ({', '.join(data['sources_ok'])}) → {path}")
