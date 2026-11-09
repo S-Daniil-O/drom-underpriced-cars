@@ -463,14 +463,16 @@ def resolve_ref(st, ref):
     """Номер из письма → номер лота. У ТоргГрупп в письме номер торгов — лот берём со страницы торгов."""
     if ref.startswith("vin-"):          # в письме только VIN — ищем лот среди всех лотов площадок
         vin = ref[4:]
-        known = next((k for k, v in st.d["lots"].items() if v.get("vin") == vin), None)
+        # VIN должен указывать ровно на один лот: машину, выставленную повторно, по VIN не угадываем
+        known = [k for k, v in st.d["lots"].items() if v.get("vin") == vin]
         if known:
-            return known, None
+            return (known[0] if len(known) == 1 else None), None
         try:
             act = json.loads(ACTIVE_FILE.read_text()).get("lots", {}) if ACTIVE_FILE and ACTIVE_FILE.exists() else {}
         except ValueError:
             act = {}
-        return next((k for k, v in act.items() if v.get("vin") == vin and REF.fullmatch(k)), None), None
+        found = [k for k, v in act.items() if v.get("vin") == vin and REF.fullmatch(k)]
+        return (found[0] if len(found) == 1 else None), None
     if not ref.startswith("tgtrade-"):
         return re.sub(r"[0-9]+", lambda m: str(int(m.group())), ref), None   # единый вид номера
     trade = str(int(ref[8:]))
