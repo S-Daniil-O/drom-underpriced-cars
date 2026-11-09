@@ -90,7 +90,7 @@ def sweep(prof, rejected, dry):
     for it in listings:
         if it.get("brand") and it.get("year") and it.get("price"):
             market[it["ad_id"]] = {"b": it["brand"], "m": it.get("model") or "", "y": it["year"],
-                                   "p": it["price"], "t": now_iso}
+                                   "p": it["price"], "t": now_iso, "k": it.get("mileage_km")}
     # Авто.ру — в тот же рынок (медиана по обеим площадкам): берём из ветки inbox, что собрал сборщик
     git("fetch", "-q", "origin", "inbox")
     for name in ("autoru.json", "autoru_sweep.json"):
@@ -98,7 +98,8 @@ def sweep(prof, rejected, dry):
             for it in json.loads(git("show", f"origin/inbox:inbox/{prof}/{name}")):
                 if it.get("brand") and it.get("year") and it.get("price"):
                     market[it["ad_id"]] = {"b": it["brand"], "m": it.get("model") or "", "y": it["year"],
-                                           "p": it["price"], "t": it.get("seen_at") or now_iso}
+                                           "p": it["price"], "t": it.get("seen_at") or now_iso,
+                                           "k": it.get("mileage_km")}
         except (subprocess.CalledProcessError, ValueError):
             pass
     cutoff = datetime.now(timezone.utc) - timedelta(days=MARKET_DAYS)
@@ -108,16 +109,18 @@ def sweep(prof, rejected, dry):
 
     by_model = {}
     for ad_id, v in market.items():
-        by_model.setdefault(monitor.market_key(v["b"], v["m"]), []).append((v["y"], v["p"], ad_id))
+        by_model.setdefault(monitor.market_key(v["b"], v["m"]), []).append((v["y"], v["p"], ad_id, v.get("k")))
 
     def median_for(it):
-        """Медиана без самого объявления: сначала тот же год, при нехватке — годы ±1."""
+        """Медиана без самого объявления: сначала тот же год, при нехватке — годы ±1.
+        (медиана, число объявлений, типичный пробег похожих или None)."""
         rows = by_model.get(monitor.market_key(it["brand"], it.get("model") or ""), [])
         for spread in (0, 1):
-            prices = [p for y, p, a in rows if abs(y - it["year"]) <= spread and a != it["ad_id"]]
-            if len(prices) >= MIN_GROUP:
-                return statistics.median(prices), len(prices)
-        return None, 0
+            same = [(p, k) for y, p, a, k in rows if abs(y - it["year"]) <= spread and a != it["ad_id"]]
+            if len(same) >= MIN_GROUP:
+                return (statistics.median(p for p, _ in same), len(same),
+                        monitor.ref_mileage([{"km": k} for _, k in same]))
+        return None, 0, None
     log(f"{prof}: в базе рынка {len(market)} объявлений за {MARKET_DAYS} дн.")
 
     posted, teaser = already_shown(prof)
@@ -131,20 +134,23 @@ def sweep(prof, rejected, dry):
             continue
         if not (it.get("brand") and it.get("year") and it.get("price")):
             continue
-        med, n = median_for(it)
+        raw, n, ref_km = median_for(it)
+        # рынок с поправкой на пробег (владельцы известны только после проверки — их учтёт monitor.py)
+        med = raw * monitor.condition_factor(it, ref_km) if raw else None
         disc = 1 - it["price"] / med if med else 0
         # метка Drom без медианы не годится: в посте всегда должна быть сумма выгоды
         good_rating = it.get("price_rating") in cfg.GOOD_PRICE_RATINGS and med and it["price"] < med
         if disc >= CANDIDATE_DISCOUNT or good_rating:
             if disc < 1 - cfg.UNDERPRICED_THRESHOLD and not good_rating and it["ad_id"] in teaser:
                 continue  # слабая находка, уже была в тизере
-            cands.append({**it, "market_price": round(med) if med else None, "median_sample_size": n or None,
-                          "_disc": disc})
+            cands.append({**it, "market_price": round(raw) if raw else None, "market_ref_km": ref_km,
+                          "median_sample_size": n or None, "_disc": disc})
     cands.sort(key=lambda i: i["_disc"], reverse=True)
     log(f"{prof}: с медианой {sum(1 for i in listings if i.get('year') and median_for(i)[0])} из {len(listings)}, "
+        f"с пробегом {sum(1 for i in listings if i.get('mileage_km'))}, "
         f"кандидатов {len(cands)}")
     for c in cands[:15]:
-        log(f"   {c['brand']} {c.get('model')} {c.get('year')}: {c['price']} при медиане {c['market_price']} "
+        log(f"   {c['brand']} {c.get('model')} {c.get('year')}, {c.get('mileage_km') or '?'} км: {c['price']} при медиане {c['market_price']} "
             f"({round(c['_disc'] * 100)}%, {c['median_sample_size']} объявл.) {c.get('price_rating') or ''}")
     if dry:
         return None

@@ -103,6 +103,9 @@ def load_inbox():
 
 def source_suffix(item):
     """Пометка площадки в посте и база сравнения цены."""
+    if item.get("market_raw"):
+        base = "рынка с учётом пробега и владельцев (Drom + Авто.ру)"
+        return ("\n📍 Объявление с Авто.ру" if item.get("source") == "autoru" else ""), base
     if item.get("source") == "autoru":
         base = "медианы рынка (Drom + Авто.ру)" if item.get("market_kind") == "median" else "оценки Авто.ру"
         return "\n📍 Объявление с Авто.ру", base
@@ -151,12 +154,66 @@ def market_median(history, item):
                     prev = latest.get(e["url"])
                     if not prev or e["seen_at"] > prev["seen_at"]:
                         latest[e["url"]] = e
-        return [e["price"] for e in latest.values()]
+        return list(latest.values())
     for years in ((item["year"],), (item["year"] - 1, item["year"], item["year"] + 1)):
-        prices = latest_prices(years)
-        if len(prices) >= config.MIN_SAMPLES_FOR_MEDIAN:
-            return statistics.median(prices), len(prices)
-    return None, 0
+        rows = latest_prices(years)
+        if len(rows) >= config.MIN_SAMPLES_FOR_MEDIAN:
+            return statistics.median(e["price"] for e in rows), len(rows), ref_mileage(rows)
+    return None, 0, None
+
+
+def ref_mileage(entries):
+    """Типичный пробег похожих машин — медиана по тем, у кого пробег известен (от MIN_SAMPLES_FOR_MEDIAN),
+    иначе None: тогда condition_factor берёт норму по возрасту (KM_PER_YEAR в год)."""
+    kms = [e["km"] for e in entries if isinstance(e.get("km"), int) and e["km"] > 0]
+    return statistics.median(kms) if len(kms) >= config.MIN_SAMPLES_FOR_MEDIAN else None
+
+
+def owners_count(item):
+    if isinstance(item.get("owners"), int):
+        return item["owners"]
+    m = re.match(r"\s*(\d+)", str(item.get("owners_display") or ""))
+    return int(m.group(1)) if m else None
+
+
+def condition_factor(item, ref_km=None):
+    """Поправка рыночной цены на пробег и число владельцев (2026-11-10).
+
+    Медиана — цена «типичной» машины этой модели и года. Машина с пробегом выше типичного стоит
+    меньше, ниже — дороже: MILEAGE_ADJ_PER_10K за каждые 10 тыс. км разницы (с ограничением).
+    Типичный пробег — медиана пробега похожих объявлений, а если их мало — KM_PER_YEAR × возраст.
+    Владельцы: OWNERS_ADJ (1 владелец дороже, 3–4 дешевле). Без пробега/владельцев — без поправки."""
+    f = 1.0
+    km, year = item.get("mileage_km"), item.get("year")
+    if isinstance(km, int) and km > 0 and isinstance(year, int):
+        if not ref_km:
+            ref_km = max(datetime.now().year - year + 0.5, 0.5) * getattr(config, "KM_PER_YEAR", 15_000)
+        adj = getattr(config, "MILEAGE_ADJ_PER_10K", 0.015) * (ref_km - km) / 10_000
+        f *= 1 + max(-getattr(config, "MILEAGE_ADJ_MAX_DOWN", 0.30), min(getattr(config, "MILEAGE_ADJ_MAX_UP", 0.15), adj))
+    owners = owners_count(item)
+    if owners:
+        table = getattr(config, "OWNERS_ADJ", {1: 0.03, 2: 0.0, 3: -0.05, 4: -0.10})
+        f *= 1 + table.get(min(owners, max(table)), 0.0)
+    return f
+
+
+def apply_condition(item, threshold=None):
+    """Пересчитывает рынок с учётом пробега/владельцев от сырой медианы (market_raw) — нужно после
+    проверки объявления, когда стали известны владельцы. Возвращает обновлённый item или None,
+    если находка больше не проходит порог своей причины публикации."""
+    raw = item.get("market_raw")
+    if not raw:
+        return item
+    market = raw * condition_factor(item, item.get("market_ref_km"))
+    item = {**item, "median_price": market}
+    reason = item.get("reason")
+    if reason == "median" and item["price"] > market * (threshold or item.get("threshold") or config.UNDERPRICED_THRESHOLD):
+        return None
+    if reason == "drom_rating" and item["price"] >= market:
+        return None
+    if reason == "teaser_only" and item["price"] > market * (1 - getattr(config, "PEREKUP_TEASER_MIN_DISCOUNT", 0.0)):
+        return None
+    return item
 
 
 def prune_old_entries(entries):
@@ -618,10 +675,10 @@ def fallback_median(history, item):
                 prev = latest.get(e["url"])
                 if not prev or e["seen_at"] > prev["seen_at"]:
                     latest[e["url"]] = e
-    prices = [e["price"] for e in latest.values()]
-    if len(prices) >= config.MIN_SAMPLES_FOR_MEDIAN:
-        return statistics.median(prices), len(prices)
-    return None, 0
+    rows = list(latest.values())
+    if len(rows) >= config.MIN_SAMPLES_FOR_MEDIAN:
+        return statistics.median(e["price"] for e in rows), len(rows), ref_mileage(rows)
+    return None, 0, None
 
 
 def update_history_and_find_underpriced(listings, history):
@@ -637,22 +694,29 @@ def update_history_and_find_underpriced(listings, history):
 
         prices_so_far = [e["price"] for e in entries]
         median_price = statistics.median(prices_so_far) if len(prices_so_far) >= config.MIN_SAMPLES_FOR_MEDIAN else None
+        ref_km = ref_mileage(entries) if median_price is not None else None
+        adjust = True  # оценка самого Авто.ру уже учитывает пробег и владельцев — её не поправляем
         threshold = config.UNDERPRICED_THRESHOLD
         if item.get("source") == "autoru" and isinstance(item.get("year"), int):
             # Авто.ру — по общей медиане Drom + Авто.ру, с теми же порогами, что и Drom; если похожих
             # машин меньше MIN_SAMPLES_FOR_MEDIAN — запасной вариант: оценка самого Авто.ру.
-            med, n = market_median(history, item)
+            med, n, ref_km = market_median(history, item)
             if med:
                 median_price, prices_so_far, item = med, [None] * n, {**item, "market_kind": "median"}
             else:
-                median_price, prices_so_far = item.get("market_price"), []
+                median_price, prices_so_far, adjust = item.get("market_price"), [], False
                 threshold = getattr(config, "AUTORU_UNDERPRICED_THRESHOLD", config.UNDERPRICED_THRESHOLD)
         elif item.get("source"):
             median_price, prices_so_far = item.get("market_price"), [None] * (item.get("median_sample_size") or 0)
+            ref_km = item.get("market_ref_km")
         elif median_price is None and isinstance(item.get("year"), int):
-            fb, n = fallback_median(history, item)
+            fb, n, ref_km = fallback_median(history, item)
             if fb:
                 median_price, prices_so_far = fb, [None] * n
+
+        market_raw = median_price if adjust else None
+        if median_price is not None and adjust:
+            median_price = median_price * condition_factor(item, ref_km)
 
         reason = None
         # Собственная медиана считается только по цене — не знает про пробег,
@@ -686,13 +750,17 @@ def update_history_and_find_underpriced(listings, history):
                 "median_price": median_price,
                 "median_sample_size": (len(prices_so_far) or None) if median_price is not None else None,
                 "reason": reason,
+                "market_raw": market_raw,
+                "market_ref_km": ref_km,
+                "threshold": threshold,
             })
 
         if item.get("source") and item.get("source") != "autoru":
             continue  # полный проход Drom — те же объявления, что и в обычной выдаче, не дублируем
         # добавляем текущее наблюдение в историю ПОСЛЕ сравнения с медианой,
         # чтобы объявление не сравнивалось само с собой
-        entries.append({"price": item["price"], "seen_at": now_iso, "url": item["url"]})
+        entries.append({"price": item["price"], "seen_at": now_iso, "url": item["url"],
+                        **({"km": item["mileage_km"]} if isinstance(item.get("mileage_km"), int) else {})})
         history[key] = entries
 
     return underpriced, history
@@ -1241,6 +1309,12 @@ def main():
         skip = {i["ad_id"] for i in deferred}
         new_candidates = [i for i in new_candidates if i["ad_id"] not in skip]
     resale_candidates = enrich_and_filter_for_resale(new_candidates)
+    rechecked = [apply_condition(i) for i in resale_candidates]
+    for before, after in zip(resale_candidates, rechecked):
+        if after is None:
+            log(f"Пропускаю (с учётом пробега и владельцев уже не ниже рынка): {before['brand']} "
+                f"{before.get('model')} {before.get('year')}")
+    resale_candidates = [i for i in rechecked if i]
     log(f"После проверки на владельцев/описание осталось кандидатов: {len(resale_candidates)} из {len(new_candidates)}")
 
     new_posts = 0
@@ -1298,7 +1372,7 @@ def main():
         cands.sort(key=lambda i: 1 - i["price"] / i["median_price"], reverse=True)
         cands = cands[: getattr(config, "PEREKUP_TEASER_MAX_PER_RUN", 6)]
         if cands:
-            ok = enrich_and_filter_for_resale(cands)
+            ok = [i for i in map(apply_condition, enrich_and_filter_for_resale(cands)) if i]
             ok_ids = {i["ad_id"] for i in ok}
             now_iso = datetime.now(timezone.utc).isoformat()
             for it in cands:
