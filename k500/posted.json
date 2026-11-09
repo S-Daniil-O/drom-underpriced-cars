@@ -7493,5 +7493,20 @@
     "mileage_km": 360000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/tKLi5opfnZmDE0LQcBdcWE6dfDzkgKLh_dRMNuUr4zK2tI8UD_nSWwId6__-T9ZgcjnIlZMSYd_8EpjU/gen272wb.jpg"
+  },
+  "autoru_1160713974-423282d4": {
+    "posted_at": "2026-11-09T14:17:54.733726+00:00",
+    "message_id": 547,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2008,
+    "price": 290000,
+    "median_price": 436000,
+    "median_sample_size": 11,
+    "price_rating": null,
+    "mileage_km": 428400,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20180167/9eb251dbc9d209e12ad7a834597d82f9/1200x900n"
   }
 }
