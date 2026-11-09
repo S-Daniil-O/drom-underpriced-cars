@@ -1564,18 +1564,27 @@
   "cdt-391583": {
    "n": 48,
    "url": "https://torgi.cdtrf.ru/trades/391583",
-   "name": "https://torgi.cdtrf.ru/trades/391583",
-   "vin": null,
+   "name": "Land Rover Rendzh, 2008",
+   "vin": "SALLMAM348A284994",
    "target": null,
    "card": 1264,
    "added": "2026-11-09T11:43",
-   "end": null,
+   "end": "2026-12-17T10:00",
    "sent": {},
    "btn": true,
    "head": null,
-   "msgs": [],
+   "msgs": [
+    1265
+   ],
    "topic": 1263,
-   "title": "Лот №48"
+   "title": "Land Rover Rendzh, 2008 · мин 136 т.р. · до 17.12 · №48",
+   "files_done": true,
+   "min_price": 135720.0,
+   "requests": 0,
+   "sched_msg": 1265,
+   "sched_text": "📊 <b>График снижения цены — лот №48</b>\nLand Rover Rendzh, 2008\n\n<pre>▶️ 05.11–12.11   1 357 200 ₽\n   12.11–19.11   1 085 760 ₽\n   19.11–26.11     814 320 ₽\n   26.11–03.12     542 880 ₽\n   03.12–10.12     271 440 ₽\n   10.12–17.12     135 720 ₽</pre>\nСейчас: <b>1 357 200 ₽</b> до 12.11.2026 10:00\nМинимальная: <b>135 720 ₽</b>, приём заявок до 17.12.2026 10:00\n📭 Заявок нет",
+   "photos_done": true,
+   "no_photos": true
   }
  },
  "offset": 177673889,
