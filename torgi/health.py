@@ -22,20 +22,23 @@ CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis
 KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС"}
 
 
-def kind(err):
-    """Вид ошибки — из фиксированного списка (текст с сайта в сообщение не попадает)."""
-    e = str(err or "").lower()
-    if "timed out" in e or "timeout" in e:
+def kind(s):
+    """Вид сбоя по данным сбора (тип ошибки и код ответа), из фиксированного списка."""
+    k, code = s.get("kind"), s.get("status")
+    if k == "tls":
+        return "ошибка защищённого соединения (сертификат) — проверьте интернет на iMac, возможна подмена"
+    if k == "timeout":
         return "не ответила вовремя"
-    if "400" in e:
-        return "отклонила запрос (ошибка 400 — похоже, изменила сайт)"
-    if "403" in e or "429" in e:
-        return "не пускает (ошибка 403/429)"
-    if any(c in e for c in ("500", "502", "503", "504")):
-        return "у площадки сбой на сервере"
-    if "connection" in e or "resolve" in e or "ssl" in e:
+    if k == "http" and isinstance(code, int):
+        if code in (403, 429):
+            return f"не пускает (ошибка {code})"
+        if 400 <= code < 500:
+            return f"отклонила запрос (ошибка {code} — похоже, изменила сайт)"
+        if code >= 500:
+            return f"у площадки сбой на сервере (ошибка {code})"
+    if k == "connection":
         return "нет связи"
-    return "ошибка"
+    return "не ответила"
 
 
 def now_msk():
@@ -66,7 +69,7 @@ def main():
             if not isinstance(s, dict) or src not in KNOWN:
                 continue
             if not s.get("ok"):
-                problems.append(f"❌ {label}: площадка {src} {kind(s.get('error'))}")
+                problems.append(f"❌ {label}: площадка {src} {kind(s)}")
             elif isinstance(prev.get(src), int) and prev[src] >= 50 and s.get("count", 0) < prev[src] / 2:
                 problems.append(f"⚠️ {label}: с площадки {src} пришло {s.get('count')} лотов, в прошлый раз {prev[src]} — "
                                 "возможно, площадка изменила сайт")

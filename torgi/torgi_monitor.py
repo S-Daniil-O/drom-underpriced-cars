@@ -1428,7 +1428,7 @@ SOURCE_STATUS = {}    # площадка → {"ok", "count", "error"} — для
 def with_retries(name, fn):
     """Площадка недоступна (нет сети, VPN с зарубежным IP) — ждём и пробуем ещё,
     потом пропускаем её, не роняя весь запуск. Итог записывается в SOURCE_STATUS."""
-    err = ""
+    err, kind, code = "", "other", None
     for attempt in range(1, NET_RETRIES + 1):
         try:
             res = fn()
@@ -1436,11 +1436,16 @@ def with_retries(name, fn):
             return res
         except requests.RequestException as e:
             err = str(e)[:150]
+            code = getattr(getattr(e, "response", None), "status_code", None)
+            kind = ("tls" if isinstance(e, requests.exceptions.SSLError) else
+                    "timeout" if isinstance(e, requests.Timeout) else
+                    "http" if code else
+                    "connection" if isinstance(e, requests.ConnectionError) else "other")
             log(f"{name}: нет связи (попытка {attempt}/{NET_RETRIES}): {err}")
             if attempt < NET_RETRIES:
                 time.sleep(NET_RETRY_PAUSE_MIN * 60)
     log(f"{name}: площадка недоступна — пропускаю")
-    SOURCE_STATUS[name] = {"ok": False, "count": 0, "error": re.sub(r"https?://\S+", "", err).strip()[:120]}
+    SOURCE_STATUS[name] = {"ok": False, "count": 0, "kind": kind, "status": code}
     return None
 
 
