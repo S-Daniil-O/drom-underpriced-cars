@@ -7242,7 +7242,7 @@
   "https://auto.drom.ru/voronezh/daewoo/nexia/943386790.html": {
     "posted_at": "2026-11-06T21:05:28.176518+00:00",
     "message_id": 530,
-    "deleted_at": null,
+    "deleted_at": "2026-11-09T21:14:21.325657+00:00",
     "brand": "Daewoo",
     "model": "Nexia",
     "year": 2011,
@@ -7523,5 +7523,50 @@
     "mileage_km": 254444,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/_9_2Vx_MHYr7d1clRWoWKyo3Un9PkteVR4PvSV4JH406p9g-HMy0QZvVbCKju45Rxpjtgd9Lg7Josm0o/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/vento/516083795.html": {
+    "posted_at": "2026-11-09T21:18:52.675399+00:00",
+    "message_id": 549,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Vento",
+    "year": 1993,
+    "price": 95000,
+    "median_price": 114712.49999999999,
+    "median_sample_size": 986,
+    "price_rating": "нормальная цена",
+    "mileage_km": 35420,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Tp80R66Q4ofW0djfbqmb53ox46KtpayAshUfppkTTZ9keFmnI1wiiXziqmevW0Uwl3m-rox2Pu-QniQq/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/169482315.html": {
+    "posted_at": "2026-11-09T21:19:01.117829+00:00",
+    "message_id": 550,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2106",
+    "year": 1989,
+    "price": 100000,
+    "median_price": 119024.99999999999,
+    "median_sample_size": 2366,
+    "price_rating": null,
+    "mileage_km": 18000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/RgWUS4jh6_YeQ8nJSwNS72zG8fkkoBBb-MGc5ppt41_ne4LRx76S17M2dC_ZHJQgXaer9eM8aKNWX_pl/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/fabia/656338691.html": {
+    "posted_at": "2026-11-09T21:19:06.936853+00:00",
+    "message_id": 551,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Fabia",
+    "year": 2012,
+    "price": 385000,
+    "median_price": 386872.0625,
+    "median_sample_size": 434,
+    "price_rating": "отличная цена",
+    "mileage_km": 179000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HNrC9lEQ2j7ckEMr7TKZKocP5LWYt1Pb2EQlmL_zL6v17NXws6i5c8yQtFvaX_SazohoQljj6LYCiMQg/gen272wb.jpg"
   }
 }

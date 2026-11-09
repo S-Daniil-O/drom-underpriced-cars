@@ -2268,11 +2268,11 @@
   "https://auto.drom.ru/voronezh/daewoo/nexia/943386790.html": {
     "posted_at": "2026-11-06T21:05:44.108386+00:00",
     "message_id": 322,
-    "deleted_at": null,
+    "deleted_at": "2026-11-09T21:14:22.332921+00:00",
     "rejected": false,
     "checked_at": "2026-11-06T21:05:44.108386+00:00",
     "vk_post_id": 240,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-09T21:14:22.332921+00:00"
   },
   "https://auto.drom.ru/voronezh/toyota/lite_ace/580137277.html": {
     "posted_at": "2026-11-07T06:29:08.006223+00:00",
@@ -2402,6 +2402,52 @@
     "rejected": false,
     "checked_at": "2026-11-09T18:05:05.411550+00:00",
     "vk_post_id": 252,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2111/120009128.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T21:19:47.507669+00:00"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/diamante/299563100.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T21:19:47.507669+00:00"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/sonata/767956110.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T21:19:47.507669+00:00"
+  },
+  "https://auto.drom.ru/voronezh/volvo/s40/105984289.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-09T21:19:47.507669+00:00"
+  },
+  "https://auto.drom.ru/voronezh/gaz/3102_volga/441063904.html": {
+    "posted_at": "2026-11-09T21:20:02.558520+00:00",
+    "message_id": 341,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-09T21:20:02.558520+00:00",
+    "vk_post_id": 253,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2115/485486208.html": {
+    "posted_at": "2026-11-09T21:20:22.784539+00:00",
+    "message_id": 342,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-09T21:20:22.784539+00:00",
+    "vk_post_id": 254,
     "vk_deleted_at": null
   }
 }
