@@ -1422,18 +1422,32 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
 
 
 # ---------------------------------------------------------------- main
+SOURCE_STATUS = {}    # площадка → {"ok", "count", "error"} — для проверки здоровья (status.json)
+
+
 def with_retries(name, fn):
     """Площадка недоступна (нет сети, VPN с зарубежным IP) — ждём и пробуем ещё,
-    потом пропускаем её, не роняя весь запуск."""
+    потом пропускаем её, не роняя весь запуск. Итог записывается в SOURCE_STATUS."""
+    err = ""
     for attempt in range(1, NET_RETRIES + 1):
         try:
-            return fn()
+            res = fn()
+            SOURCE_STATUS[name] = {"ok": True, "count": len(res or [])}
+            return res
         except requests.RequestException as e:
-            log(f"{name}: нет связи (попытка {attempt}/{NET_RETRIES}): {str(e)[:150]}")
+            err = str(e)[:150]
+            log(f"{name}: нет связи (попытка {attempt}/{NET_RETRIES}): {err}")
             if attempt < NET_RETRIES:
                 time.sleep(NET_RETRY_PAUSE_MIN * 60)
     log(f"{name}: площадка недоступна — пропускаю")
+    SOURCE_STATUS[name] = {"ok": False, "count": 0, "error": re.sub(r"https?://\S+", "", err).strip()[:120]}
     return None
+
+
+def write_status(path):
+    """Итоги сбора для проверки здоровья на GitHub: какие площадки ответили и сколько лотов."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"created": time.strftime("%Y-%m-%dT%H:%M"), "sources": SOURCE_STATUS}, ensure_ascii=False))
 
 
 
@@ -1497,6 +1511,7 @@ def main():
         active_path = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--active=")), None)
         if active_path:
             write_active(lots, Path(active_path))
+            write_status(Path(active_path).parent / "status.json")
         lots = [lot for lot in lots if lot["km"] is not None and lot["km"] <= MAX_KM]
         if not lots:
             log("Ни одна площадка не ответила — сбор пропущен. Проверьте интернет/VPN "
