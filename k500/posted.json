@@ -7433,5 +7433,35 @@
     "mileage_km": 140000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/QNYnJtqf_xaZ7r_L7iq_uz1X_83f4rv3Yle0R8a0qc6nQ2CpoPPfsZFi0N4MBkf6WyJ0l-IKyYYpRJAt/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/785382339.html": {
+    "posted_at": "2026-11-09T10:32:29.318338+00:00",
+    "message_id": 543,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2001,
+    "price": 115000,
+    "median_price": 170000,
+    "median_sample_size": 401,
+    "price_rating": null,
+    "mileage_km": 120000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/HpTPT1sZQvrUpkuNpSwVMgOpQSostkXBRctF6X1s1VF6AgVfP3HhkC-HS2L0lVM3l0rg5MaTK_jjN7-u/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/oka/546289896.html": {
+    "posted_at": "2026-11-09T10:32:32.748512+00:00",
+    "message_id": 544,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "1111 Ока",
+    "year": 2007,
+    "price": 174500,
+    "median_price": 210000.0,
+    "median_sample_size": 938,
+    "price_rating": "нормальная цена",
+    "mileage_km": 85000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/L2ornDJbVGSK0ZkEsCRdWrvwXl-vpyyi7exFotvm9ZoD4-_QEvDfoA1D55Qlm-2U5V-UxrWEcz5qxwk8/gen272wb.jpg"
   }
 }
