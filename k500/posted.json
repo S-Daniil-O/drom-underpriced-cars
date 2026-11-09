@@ -7418,5 +7418,20 @@
     "mileage_km": 35000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/PPSNJrSIWcQU2TTQb1YiKWbYNS2cSBqbfuiEoDe8UAGBH4-AsdA0m_HAMjP1Eu96hv_gHyyT6qkj0H8_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/ford/fiesta/266463949.html": {
+    "posted_at": "2026-11-09T05:44:08.136240+00:00",
+    "message_id": 542,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Fiesta",
+    "year": 2008,
+    "price": 375000,
+    "median_price": 450000.0,
+    "median_sample_size": 1890,
+    "price_rating": "нормальная цена",
+    "mileage_km": 140000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/QNYnJtqf_xaZ7r_L7iq_uz1X_83f4rv3Yle0R8a0qc6nQ2CpoPPfsZFi0N4MBkf6WyJ0l-IKyYYpRJAt/gen272wb.jpg"
   }
 }
