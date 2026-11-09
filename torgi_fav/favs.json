@@ -1623,10 +1623,26 @@
    "sched_msg": 1271,
    "sched_text": "📊 <b>График снижения цены — лот №49</b>\nGeely Atlas, 2021\n\n<pre>   10.11–17.11     918 000 ₽\n   17.11–24.11     872 100 ₽\n   24.11–01.12     826 200 ₽\n   01.12–07.12     780 300 ₽</pre>\nМинимальная: <b>780 300 ₽</b>, приём заявок до 07.12.2026 18:00\n📭 Заявок нет",
    "photos_done": true
+  },
+  "cdt-392586": {
+   "n": 50,
+   "url": "https://torgi.cdtrf.ru/trades/392586",
+   "name": "https://torgi.cdtrf.ru/trades/392586",
+   "vin": null,
+   "target": null,
+   "card": 1289,
+   "added": "2026-11-09T11:59",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": null,
+   "msgs": [],
+   "topic": 1288,
+   "title": "Лот №50"
   }
  },
- "offset": 177673898,
- "seq": 49,
+ "offset": 177673899,
+ "seq": 50,
  "forum": -1004498088083,
  "owners": [
   1188456401
