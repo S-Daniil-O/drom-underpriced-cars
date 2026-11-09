@@ -19,6 +19,23 @@ import requests
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
 CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis": "ТОРГИ НИС"}
+KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС"}
+
+
+def kind(err):
+    """Вид ошибки — из фиксированного списка (текст с сайта в сообщение не попадает)."""
+    e = str(err or "").lower()
+    if "timed out" in e or "timeout" in e:
+        return "не ответила вовремя"
+    if "400" in e:
+        return "отклонила запрос (ошибка 400 — похоже, изменила сайт)"
+    if "403" in e or "429" in e:
+        return "не пускает (ошибка 403/429)"
+    if any(c in e for c in ("500", "502", "503", "504")):
+        return "у площадки сбой на сервере"
+    if "connection" in e or "resolve" in e or "ssl" in e:
+        return "нет связи"
+    return "ошибка"
 
 
 def now_msk():
@@ -46,10 +63,10 @@ def main():
             continue
         prev = mem.get("counts", {}).get(folder, {})
         for src, s in (st.get("sources") or {}).items():
-            if not isinstance(s, dict):
+            if not isinstance(s, dict) or src not in KNOWN:
                 continue
             if not s.get("ok"):
-                problems.append(f"❌ {label}: площадка {src} не ответила — {str(s.get('error') or 'ошибка')[:100]}")
+                problems.append(f"❌ {label}: площадка {src} {kind(s.get('error'))}")
             elif isinstance(prev.get(src), int) and prev[src] >= 50 and s.get("count", 0) < prev[src] / 2:
                 problems.append(f"⚠️ {label}: с площадки {src} пришло {s.get('count')} лотов, в прошлый раз {prev[src]} — "
                                 "возможно, площадка изменила сайт")
