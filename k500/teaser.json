@@ -2385,5 +2385,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-09T12:32:48.689326+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/868877028.html": {
+    "posted_at": "2026-11-09T14:03:09.142187+00:00",
+    "message_id": 339,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-09T14:03:09.142187+00:00",
+    "vk_post_id": 251,
+    "vk_deleted_at": null
   }
 }
