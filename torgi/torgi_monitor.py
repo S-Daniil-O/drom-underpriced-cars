@@ -213,7 +213,7 @@ def cdt_list():
             "Categories": 1,       # Легковой транспорт
             "TradeTypeIds": 3,     # Публичное предложение
             "TradeKind": 1,        # Банкротные торги
-            "PageSize": 500, "PageNum": page}, timeout=120)
+            "PageSize": 100, "PageNum": page}, timeout=120)   # с 11.2026 ЦДТ принимает не больше 100
         r.raise_for_status()
         d = r.json()
         items += d["items"]
