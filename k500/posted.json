@@ -7868,5 +7868,50 @@
     "mileage_km": 120000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/5hw6kAMTNEYuWxpgIAce2fobZUNkZs7DqBKfN7yZeYmnLNTu6JEmDL-m9oZvP8K4YcpjQWnR25YYg24p/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/clio/926869272.html": {
+    "posted_at": "2026-11-10T21:31:28.844070+00:00",
+    "message_id": 572,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Clio",
+    "year": 2000,
+    "price": 150000,
+    "median_price": 155250.0,
+    "median_sample_size": 822,
+    "price_rating": "отличная цена",
+    "mileage_km": 230000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/XnTPjyb_nXJKZn0Oh3H3gyItyAYdgYHRKLXRnUCGyIquqQ5W1ObXDA2LK1glf_qrnk6-JOF1DGACNrPn/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/890117999.html": {
+    "posted_at": "2026-11-10T21:33:13.658821+00:00",
+    "message_id": 573,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2013,
+    "price": 280000,
+    "median_price": 350445.52375000005,
+    "median_sample_size": 3329,
+    "price_rating": "нормальная цена",
+    "mileage_km": 197474,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ZKARVmLi5h7G4B3eqVEA_5sNqxQt8BH2na7ZIW8I_MKA76OOFUDrJ1YFFMbplEVVYgWeuyk_dT_0RhFA/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/188244296.html": {
+    "posted_at": "2026-11-10T21:33:16.695861+00:00",
+    "message_id": 574,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera",
+    "year": 2005,
+    "price": 270000,
+    "median_price": 351900.0,
+    "median_sample_size": 2966,
+    "price_rating": "хорошая цена",
+    "mileage_km": 198000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/E92iLuz13I6ro92NlGU9OZmQstTc0JJnUMx-mLg1UThvJ1XgkzOO9bDzULxADc00P3AeEG64ifs2TXRg/gen272wb.jpg"
   }
 }
