@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160696391-754ecaa8",
-"source": "autoru",
-"brand": "Ford",
-"model": "Sierra",
-"year": 1987,
-"price": 155000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
-"mileage_km": 100000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572679+00:00"
-},
-{
 "ad_id": "autoru_1160698138-f6f3feba",
 "source": "autoru",
 "brand": "Иж",
@@ -29,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572654+00:00"
+"seen_at": "2026-11-10T10:57:08.749452+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572639+00:00"
+"seen_at": "2026-11-10T10:57:08.749441+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572623+00:00"
+"seen_at": "2026-11-10T10:57:08.749429+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T10:45:58.572609+00:00"
+"seen_at": "2026-11-10T10:57:08.749418+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -93,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572594+00:00"
+"seen_at": "2026-11-10T10:57:08.749407+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572576+00:00"
+"seen_at": "2026-11-10T10:57:08.749391+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -125,39 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:58.572542+00:00"
-},
-{
-"ad_id": "autoru_1160714229-c6afa1ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2007,
-"price": 180000,
-"market_price": 68500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160714229-c6afa1ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
-"mileage_km": 91300,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T10:45:39.412528+00:00"
-},
-{
-"ad_id": "autoru_1160718259-35a44d7d",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
-"mileage_km": 38200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Грибановский",
-"seen_at": "2026-11-10T10:45:39.412502+00:00"
+"seen_at": "2026-11-10T10:57:08.749359+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -173,7 +125,71 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T10:45:39.412457+00:00"
+"seen_at": "2026-11-10T10:56:54.210925+00:00"
+},
+{
+"ad_id": "autoru_1160727116-cd41926a",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "307",
+"year": 2005,
+"price": 360000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/peugeot/307/1160727116-cd41926a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2162504/c72775a1b9903207892d56279bb026f0/1200x900n",
+"mileage_km": 167469,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T10:56:54.210911+00:00"
+},
+{
+"ad_id": "autoru_1160714229-c6afa1ee",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2007,
+"price": 180000,
+"market_price": 68500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160714229-c6afa1ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
+"mileage_km": 91300,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T10:56:54.210894+00:00"
+},
+{
+"ad_id": "autoru_1160718259-35a44d7d",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1997,
+"price": 280000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
+"mileage_km": 38200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Грибановский",
+"seen_at": "2026-11-10T10:56:54.210844+00:00"
+},
+{
+"ad_id": "autoru_1160696391-754ecaa8",
+"source": "autoru",
+"brand": "Ford",
+"model": "Sierra",
+"year": 1987,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/ford/sierra/1160696391-754ecaa8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/83779556ec90333170b0f4c12fb5438f/1200x900n",
+"mileage_km": 100000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T10:45:58.572679+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
