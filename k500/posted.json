@@ -7838,5 +7838,20 @@
     "mileage_km": 260000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/0GDG4BcrhKTJtsVcfvCAMdehkL3ZxPn_86EPeGg7G6mxHs0KX9kOFjmTigEYrhc_zKVRsCPkLZWhRwP6/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/laguna/417841691.html": {
+    "posted_at": "2026-11-10T19:31:03.697686+00:00",
+    "message_id": 570,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Laguna",
+    "year": 2006,
+    "price": 355000,
+    "median_price": 427500.0,
+    "median_sample_size": 392,
+    "price_rating": "нормальная цена",
+    "mileage_km": 344000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/8UxGJWmeCvoxRJV0s14J74ibrq86vQfoSe38zbLXtyK7bLnhqC7VX2SO7PtEnl5ZBh5S0747htwJ1eI8/gen272wb.jpg"
   }
 }
