@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T21:48:14.822820+00:00"
+"seen_at": "2026-11-10T21:59:30.526723+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T21:48:14.822769+00:00"
+"seen_at": "2026-11-10T21:59:30.526668+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T21:47:55.563412+00:00"
+"seen_at": "2026-11-10T21:59:13.322143+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T21:47:55.563399+00:00"
+"seen_at": "2026-11-10T21:59:13.322128+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T21:47:55.563347+00:00"
+"seen_at": "2026-11-10T21:59:13.322076+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -190,21 +190,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-10T16:56:10.446131+00:00"
-},
-{
-"ad_id": "autoru_1160734728-3f1ee7bb",
-"source": "autoru",
-"brand": "Honda",
-"model": "HR-V",
-"year": 2002,
-"price": 260000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/honda/hr_v/1160734728-3f1ee7bb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16743792/a7111f8b1541f2a5e923ae5fdbfca52b/1200x900n",
-"mileage_km": 380000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T15:59:40.312373+00:00"
 }
 ]
