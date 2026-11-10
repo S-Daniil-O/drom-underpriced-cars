@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T17:07:28.533211+00:00"
+"seen_at": "2026-11-10T17:18:44.286098+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:28.533198+00:00"
+"seen_at": "2026-11-10T17:18:44.286084+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:28.533183+00:00"
+"seen_at": "2026-11-10T17:18:44.286068+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:28.533170+00:00"
+"seen_at": "2026-11-10T17:18:44.286052+00:00"
 },
 {
 "ad_id": "autoru_1160714229-c6afa1ee",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:28.533094+00:00"
+"seen_at": "2026-11-10T17:18:44.285972+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T17:07:09.463076+00:00"
+"seen_at": "2026-11-10T17:18:25.459595+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -102,14 +102,14 @@
 "model": "308",
 "year": 2010,
 "price": 250000,
-"market_price": 285500,
+"market_price": 325000,
 "url": "https://auto.ru/cars/used/sale/peugeot/308/1160725445-93d7c318/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2180111/7c67a44f79d10d3d85f7e816442e1817/1200x900n",
 "mileage_km": 156310,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:09.463056+00:00"
+"seen_at": "2026-11-10T17:18:25.459572+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:09.463041+00:00"
+"seen_at": "2026-11-10T17:18:25.459554+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:07:09.463008+00:00"
+"seen_at": "2026-11-10T17:18:25.459493+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -254,21 +254,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-10T13:11:00.028096+00:00"
-},
-{
-"ad_id": "autoru_1160727288-7b16a6bf",
-"source": "autoru",
-"brand": "Fiat",
-"model": "Albea",
-"year": 2007,
-"price": 255000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/fiat/albea/1160727288-7b16a6bf/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17973062/8c899733958194ed14b26cbf8078429a/1200x900n",
-"mileage_km": 180815,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-10T11:08:04.682221+00:00"
 }
 ]
