@@ -852,13 +852,25 @@ def note_requests(st, v, n, sched=None):
         n = int(n)
     except (TypeError, ValueError):
         return
-    old = v.get("requests")
-    if isinstance(old, int) and n <= old:      # число заявок только растёт: устаревшие данные его не уменьшают
+    if n < 0 or n > 1000:                      # явный мусор с площадки — не храним
+        log(f"заявки: странное значение {n}")
         return
-    v["requests"] = n
+    old = v.get("requests")
+    v["requests"] = n                          # храним самое свежее значение как есть
     st.dirty = True
+    top = v.get("req_max", old)                # максимум, о котором уже сообщили (или видели первым)
+    if not isinstance(top, int):
+        v["req_max"] = n
+        return
+    if n <= top:                               # устаревшие данные с iMac не дают повторных уведомлений
+        return
+    if n > top + 50:                           # неправдоподобный скачок — не верим и не запоминаем
+        log(f"заявки: скачок {top}→{n} пропущен")
+        return
+    v["req_max"] = n
+    old = top
     sent = v.setdefault("sent", {})
-    if not isinstance(old, int) or sent.get(f"req:{n}"):
+    if sent.get(f"req:{n}"):
         return
     sent[f"req:{n}"] = 1
     now = now_msk()
