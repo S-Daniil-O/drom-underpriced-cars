@@ -3723,5 +3723,35 @@
     "mileage_km": 139000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/AwqntoY8f34MKMBLhHK9lDhJ3JO7dIkF3qtd9kkjDDyVuJMufDb_-cHgmcQ3WVq-rUXA0RVGEjrrhlTX/gen272wb.jpg"
+  },
+  "autoru_1160731553-8cd1b7ff": {
+    "posted_at": "2026-11-10T13:50:00.757591+00:00",
+    "message_id": 274,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2018,
+    "price": 900000,
+    "median_price": 1495000.0,
+    "median_sample_size": 7,
+    "price_rating": null,
+    "mileage_km": 230,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2087465/ac049832b1e8bb07c9daa7289a33db89/1200x900n"
+  },
+  "autoru_1160731718-100f216f": {
+    "posted_at": "2026-11-10T13:50:04.691915+00:00",
+    "message_id": 275,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Santa Fe",
+    "year": 2007,
+    "price": 770000,
+    "median_price": 1238882.73825,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 236765,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/2069203/975c5607074b6d853e77527db009fc55/1200x900n"
   }
 }
