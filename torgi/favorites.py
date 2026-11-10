@@ -853,10 +853,14 @@ def note_requests(st, v, n, sched=None):
     except (TypeError, ValueError):
         return
     old = v.get("requests")
+    if isinstance(old, int) and n <= old:      # число заявок только растёт: устаревшие данные его не уменьшают
+        return
     v["requests"] = n
     st.dirty = True
-    if not isinstance(old, int) or n <= old:
+    sent = v.setdefault("sent", {})
+    if not isinstance(old, int) or sent.get(f"req:{n}"):
         return
+    sent[f"req:{n}"] = 1
     now = now_msk()
     rows = [r for r in (sched or []) if parse_dt(r[0]) and parse_dt(r[1])]
     cur = next((r for r in rows if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
@@ -876,17 +880,21 @@ def note_requests(st, v, n, sched=None):
 
 def poll_requests(st):
     """Заявки по лотам ЦДТ и ТоргГрупп — прямо с площадок (МЭТС закрыта для GitHub: раз в день с iMac)."""
-    for lid, v in st.d["lots"].items():
-        if v.get("ended") or v.get("removed") or not (lid.startswith("cdt-") or lid.startswith("tg-")):
-            continue
+    deadline = time.time() + 180          # не дольше 3 минут, чтобы бот не переставал отвечать
+    todo = [(k, v) for k, v in st.d["lots"].items()
+            if not v.get("ended") and not v.get("removed") and (k.startswith("cdt-") or k.startswith("tg-"))]
+    start = st.d.get("req_cursor", 0) % max(len(todo), 1)
+    for lid, v in todo[start:] + todo[:start]:          # по кругу: не успели — продолжим со следующего
+        if time.time() > deadline:
+            break
         try:
             d = (tm.cdt_detail({"tradeId": lid[4:], "priceBegin": None}) if lid.startswith("cdt-") else
                  tm.tg_detail({"lot_id": lid[3:], "name": v.get("name", ""), "status": ""}, any_lot=True))
-        except Exception as e:  # noqa: BLE001 — сбой площадки не должен ронять бота
+            if d and d.get("requests") is not None:
+                note_requests(st, v, d["requests"], d.get("schedule"))
+        except Exception as e:  # noqa: BLE001 — сбой площадки или одного лота не должен ронять бота
             log(f"заявки {lid}: {type(e).__name__}")
-            continue
-        if d and d.get("requests") is not None:
-            note_requests(st, v, d["requests"], d.get("schedule"))
+        st.d["req_cursor"] = st.d.get("req_cursor", 0) + 1
         time.sleep(1)
 
 
