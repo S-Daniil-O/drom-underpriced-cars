@@ -7748,5 +7748,20 @@
     "mileage_km": 91153,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2126383/ca6a942bca8202ee5082fdaddbbbb9ae/1200x900n"
+  },
+  "autoru_1160700059-24a3457e": {
+    "posted_at": "2026-11-10T13:20:01.747797+00:00",
+    "message_id": 564,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2005,
+    "price": 150000,
+    "median_price": 438262.5,
+    "median_sample_size": 7,
+    "price_rating": null,
+    "mileage_km": 240000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/09f10dc0dbae0a2a6ad35aab8546c332/1200x900n"
   }
 }
