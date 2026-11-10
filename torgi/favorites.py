@@ -12,7 +12,7 @@
 
 Уведомления (ответом на карточку лота):
   📈 рыночная цена (Дром и Авто.ру), обновляется каждый день;
-  📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;
+  📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;  🔔 появилась новая заявка (ЦДТ и ТоргГрупп — в течение 15 минут, МЭТС — раз в день);
   ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
 К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота.
 График и фото берутся из inbox/torgi_fav/ (lots.json, img/) — его каждое утро обновляет домашний iMac
@@ -842,6 +842,54 @@ def send_photos(st, v, names, img_dir):
     log(f"фото лота №{v['n']}: {len(paths)}, успешно: {ok}")
 
 
+# ---------------------------------------------------------------- заявки
+REQ_EVERY_MIN = 15      # как часто проверять заявки по лотам ЦДТ и ТоргГрупп
+
+
+def note_requests(st, v, n, sched=None):
+    """Запомнить число заявок; если стало больше — уведомить в теме лота и владельцу в личку."""
+    try:
+        n = int(n)
+    except (TypeError, ValueError):
+        return
+    old = v.get("requests")
+    v["requests"] = n
+    st.dirty = True
+    if not isinstance(old, int) or n <= old:
+        return
+    now = now_msk()
+    rows = [r for r in (sched or []) if parse_dt(r[0]) and parse_dt(r[1])]
+    cur = next((r for r in rows if parse_dt(r[0]) <= now < parse_dt(r[1])), None)
+    name = v["name"] if has_name(v) else f"лот №{v['n']}"
+    text = (f"🔔 Появилась заявка на интересующий вас лот №{v['n']} — {name}\n"
+            f"Заявок было {old}, стало {n}."
+            + (f"\nЦена сейчас {money(cur[2])}, период до {cur[1]}." if cur else "")
+            + (f"\nПриём заявок до {parse_dt(v['end']):%d.%m.%Y %H:%M}." if v.get("end") and parse_dt(v["end"]) else "")
+            + f"\n{v['url']}")
+    r = tg("sendMessage", text=text, **place(v))
+    if r.get("ok"):
+        v.setdefault("msgs", []).append(r["result"]["message_id"])
+    for uid in st.d.get("owners", []):           # и владельцу в личку, чтобы не потерялось в группе
+        tg("sendMessage", chat_id=uid, text=text, disable_web_page_preview="true")
+    log(f"лот №{v['n']}: заявок {old} → {n}")
+
+
+def poll_requests(st):
+    """Заявки по лотам ЦДТ и ТоргГрупп — прямо с площадок (МЭТС закрыта для GitHub: раз в день с iMac)."""
+    for lid, v in st.d["lots"].items():
+        if v.get("ended") or v.get("removed") or not (lid.startswith("cdt-") or lid.startswith("tg-")):
+            continue
+        try:
+            d = (tm.cdt_detail({"tradeId": lid[4:], "priceBegin": None}) if lid.startswith("cdt-") else
+                 tm.tg_detail({"lot_id": lid[3:], "name": v.get("name", ""), "status": ""}, any_lot=True))
+        except Exception as e:  # noqa: BLE001 — сбой площадки не должен ронять бота
+            log(f"заявки {lid}: {type(e).__name__}")
+            continue
+        if d and d.get("requests") is not None:
+            note_requests(st, v, d["requests"], d.get("schedule"))
+        time.sleep(1)
+
+
 # ---------------------------------------------------------------- уведомления
 DIRECT = {}                                  # данные, загруженные ботом прямо с площадок
 DIRECT_DIR = Path(tempfile.mkdtemp())
@@ -897,7 +945,7 @@ def check(st, live, img_dir):
             v["end"] = max(parse_dt(r[1]) for r in sched).strftime("%Y-%m-%dT%H:%M")
             v["min_price"] = min(r[2] for r in sched)
             if info.get("requests") is not None:
-                v["requests"] = info["requests"]
+                note_requests(st, v, info["requests"], sched)
             st.dirty = True
             update_schedule(st, v, sched, now, info.get("requests"))
             if info.get("market"):
@@ -979,7 +1027,7 @@ def main():
     add_buttons(st)
     heal(st)
     st.save()
-    next_check = next_refs = 0
+    next_check = next_refs = next_req = 0
     while time.time() < stop:
         if time.time() >= next_check:
             inbox = str(lots_file.parent.parent.parent)
@@ -997,6 +1045,10 @@ def main():
             st.save()
             allowed = admins(st) or allowed
             next_check = time.time() + CHECK_EVERY_MIN * 60
+        if time.time() >= next_req:
+            next_req = time.time() + REQ_EVERY_MIN * 60
+            poll_requests(st)
+            st.save()
         if time.time() >= next_refs:
             next_refs = time.time() + 300
             if poll_mail_refs(st):
