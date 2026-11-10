@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T16:22:25.491660+00:00"
+"seen_at": "2026-11-10T16:33:49.519195+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T16:22:25.491648+00:00"
+"seen_at": "2026-11-10T16:33:49.519183+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -45,39 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T16:22:25.491633+00:00"
-},
-{
-"ad_id": "autoru_1160701456-a7504dd9",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Outlander",
-"year": 2004,
-"price": 490000,
-"market_price": 479000,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/outlander/1160701456-a7504dd9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1976050/8ba5e8169f1ef1680301ca236227d184/1200x900n",
-"mileage_km": 244000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T16:22:25.491618+00:00"
-},
-{
-"ad_id": "autoru_1160701739-239d8cd8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 1997,
-"price": 94000,
-"market_price": 62500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160701739-239d8cd8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20694092/c3ebc66f4108a485d7d03014081d38ce/1200x900n",
-"mileage_km": 120000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T16:22:25.491601+00:00"
+"seen_at": "2026-11-10T16:33:49.519171+00:00"
 },
 {
 "ad_id": "autoru_1160714229-c6afa1ee",
@@ -93,7 +61,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T16:22:25.491527+00:00"
+"seen_at": "2026-11-10T16:33:49.519139+00:00"
+},
+{
+"ad_id": "autoru_1160701456-a7504dd9",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Outlander",
+"year": 2004,
+"price": 490000,
+"market_price": 479000,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/outlander/1160701456-a7504dd9/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1976050/8ba5e8169f1ef1680301ca236227d184/1200x900n",
+"mileage_km": 244000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T16:33:49.519120+00:00"
+},
+{
+"ad_id": "autoru_1160701739-239d8cd8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 1997,
+"price": 94000,
+"market_price": 62500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160701739-239d8cd8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20694092/c3ebc66f4108a485d7d03014081d38ce/1200x900n",
+"mileage_km": 120000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T16:33:49.519085+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T16:22:10.569902+00:00"
+"seen_at": "2026-11-10T16:33:28.603807+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T16:22:10.569879+00:00"
+"seen_at": "2026-11-10T16:33:28.603783+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T16:22:10.569845+00:00"
+"seen_at": "2026-11-10T16:33:28.603748+00:00"
 },
 {
 "ad_id": "autoru_1160734728-3f1ee7bb",
