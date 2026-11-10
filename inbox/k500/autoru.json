@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862969+00:00"
+"seen_at": "2026-11-10T12:48:57.935095+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862956+00:00"
+"seen_at": "2026-11-10T12:48:57.935080+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862942+00:00"
+"seen_at": "2026-11-10T12:48:57.935064+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T12:37:42.862931+00:00"
+"seen_at": "2026-11-10T12:48:57.935051+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862917+00:00"
+"seen_at": "2026-11-10T12:48:57.935038+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862901+00:00"
+"seen_at": "2026-11-10T12:48:57.935022+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -109,39 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:42.862868+00:00"
-},
-{
-"ad_id": "autoru_1160714229-c6afa1ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2007,
-"price": 180000,
-"market_price": 68500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160714229-c6afa1ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
-"mileage_km": 91300,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T12:37:28.612596+00:00"
-},
-{
-"ad_id": "autoru_1160718259-35a44d7d",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
-"mileage_km": 38200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Грибановский",
-"seen_at": "2026-11-10T12:37:28.612574+00:00"
+"seen_at": "2026-11-10T12:48:57.934987+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -157,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:28.612551+00:00"
+"seen_at": "2026-11-10T12:48:40.141239+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -173,23 +141,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:37:28.612518+00:00"
+"seen_at": "2026-11-10T12:48:40.141226+00:00"
 },
 {
-"ad_id": "autoru_1127782717-f90eb8ed",
+"ad_id": "autoru_1160714229-c6afa1ee",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
 "model": "2114",
 "year": 2007,
+"price": 180000,
+"market_price": 68500,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1127782717-f90eb8ed/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
+"mileage_km": 91300,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T12:48:40.141208+00:00"
+},
+{
+"ad_id": "autoru_1160718259-35a44d7d",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1997,
+"price": 280000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
+"mileage_km": 38200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Грибановский",
+"seen_at": "2026-11-10T12:48:40.141184+00:00"
+},
+{
+"ad_id": "autoru_1127782717-f90eb8ed",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2007,
 "price": 355000,
 "market_price": 102500,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1127782717-f90eb8ed/",
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160721871-f3b3a80c/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2126383/ca6a942bca8202ee5082fdaddbbbb9ae/1200x900n",
 "mileage_km": 91153,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T12:15:06.585178+00:00"
+"seen_at": "2026-11-10T12:48:40.141150+00:00"
 },
 {
 "ad_id": "autoru_1160727288-7b16a6bf",
