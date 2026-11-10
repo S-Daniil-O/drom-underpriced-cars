@@ -10,7 +10,6 @@
 """
 import json
 import os
-import re
 import sys
 import time
 from datetime import datetime, timedelta
@@ -26,12 +25,8 @@ KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС"}
 def kind(s):
     """Вид сбоя по данным сбора (тип ошибки и код ответа), из фиксированного списка."""
     k, code = s.get("kind"), s.get("status")
-    if k is None and s.get("error"):          # отчёт старой версии сборщика: только текст ошибки
-        e = str(s["error"]).lower()
-        k = "tls" if ("ssl" in e or "certificate" in e) else "timeout" if "timed out" in e else None
-        m = re.search(r"\b([45]\d\d)\b", e)
-        if not k and m:
-            k, code = "http", int(m.group(1))
+    if k is None and not s.get("ok"):         # отчёт старой версии сборщика — вид сбоя не угадываем
+        return "не ответила (вид сбоя не определён — посмотрите журнал iMac)"
     if k == "tls":
         return "ошибка защищённого соединения (сертификат) — проверьте интернет на iMac, возможна подмена"
     if k == "timeout":
