@@ -7823,5 +7823,20 @@
     "mileage_km": 100600,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19811519/311d2b8f84ee3f1ddcb82ecb77d30e67/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/179633929.html": {
+    "posted_at": "2026-11-10T19:16:16.718824+00:00",
+    "message_id": 569,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2110",
+    "year": 1999,
+    "price": 100000,
+    "median_price": 123025.0,
+    "median_sample_size": 2122,
+    "price_rating": null,
+    "mileage_km": 260000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/0GDG4BcrhKTJtsVcfvCAMdehkL3ZxPn_86EPeGg7G6mxHs0KX9kOFjmTigEYrhc_zKVRsCPkLZWhRwP6/gen272wb.jpg"
   }
 }
