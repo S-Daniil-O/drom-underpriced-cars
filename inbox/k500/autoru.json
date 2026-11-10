@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T17:41:09.223760+00:00"
+"seen_at": "2026-11-10T17:52:24.759828+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:41:09.223748+00:00"
+"seen_at": "2026-11-10T17:52:24.759813+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:41:09.223734+00:00"
+"seen_at": "2026-11-10T17:52:24.759796+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:41:09.223719+00:00"
+"seen_at": "2026-11-10T17:52:24.759781+00:00"
 },
 {
 "ad_id": "autoru_1160714229-c6afa1ee",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:41:09.223645+00:00"
+"seen_at": "2026-11-10T17:52:24.759699+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -93,39 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T17:40:54.154143+00:00"
-},
-{
-"ad_id": "autoru_1160725445-93d7c318",
-"source": "autoru",
-"brand": "Peugeot",
-"model": "308",
-"year": 2010,
-"price": 250000,
-"market_price": 325000,
-"url": "https://auto.ru/cars/used/sale/peugeot/308/1160725445-93d7c318/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2180111/7c67a44f79d10d3d85f7e816442e1817/1200x900n",
-"mileage_km": 156310,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T17:40:54.154121+00:00"
-},
-{
-"ad_id": "autoru_1160727116-cd41926a",
-"source": "autoru",
-"brand": "Peugeot",
-"model": "307",
-"year": 2005,
-"price": 360000,
-"market_price": 221000,
-"url": "https://auto.ru/cars/used/sale/peugeot/307/1160727116-cd41926a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2169110/0842cd5f7adab6619ac17ee807212ad3/1200x900n",
-"mileage_km": 167469,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T17:40:54.154106+00:00"
+"seen_at": "2026-11-10T17:52:05.335877+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -141,7 +109,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T17:40:54.154071+00:00"
+"seen_at": "2026-11-10T17:52:05.335843+00:00"
+},
+{
+"ad_id": "autoru_1160725445-93d7c318",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "308",
+"year": 2010,
+"price": 250000,
+"market_price": 325000,
+"url": "https://auto.ru/cars/used/sale/peugeot/308/1160725445-93d7c318/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2180111/7c67a44f79d10d3d85f7e816442e1817/1200x900n",
+"mileage_km": 156310,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T17:52:05.335817+00:00"
+},
+{
+"ad_id": "autoru_1160727116-cd41926a",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "307",
+"year": 2005,
+"price": 360000,
+"market_price": 221000,
+"url": "https://auto.ru/cars/used/sale/peugeot/307/1160727116-cd41926a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2169110/0842cd5f7adab6619ac17ee807212ad3/1200x900n",
+"mileage_km": 167469,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T17:52:05.335781+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
