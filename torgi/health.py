@@ -10,6 +10,7 @@
 """
 import json
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta
@@ -25,6 +26,12 @@ KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС"}
 def kind(s):
     """Вид сбоя по данным сбора (тип ошибки и код ответа), из фиксированного списка."""
     k, code = s.get("kind"), s.get("status")
+    if k is None and s.get("error"):          # отчёт старой версии сборщика: только текст ошибки
+        e = str(s["error"]).lower()
+        k = "tls" if ("ssl" in e or "certificate" in e) else "timeout" if "timed out" in e else None
+        m = re.search(r"\b([45]\d\d)\b", e)
+        if not k and m:
+            k, code = "http", int(m.group(1))
     if k == "tls":
         return "ошибка защищённого соединения (сертификат) — проверьте интернет на iMac, возможна подмена"
     if k == "timeout":
@@ -68,7 +75,9 @@ def main():
         for src, s in (st.get("sources") or {}).items():
             if not isinstance(s, dict) or src not in KNOWN:
                 continue
-            if not s.get("ok"):
+            if s.get("ok") and s.get("kind") == "tls":
+                problems.append(f"⚠️ {label}: площадка {src} ответила не с первого раза — была {kind(s)}")
+            elif not s.get("ok"):
                 problems.append(f"❌ {label}: площадка {src} {kind(s)}")
             elif isinstance(prev.get(src), int) and prev[src] >= 50 and s.get("count", 0) < prev[src] / 2:
                 problems.append(f"⚠️ {label}: с площадки {src} пришло {s.get('count')} лотов, в прошлый раз {prev[src]} — "

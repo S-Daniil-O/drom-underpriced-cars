@@ -1422,17 +1422,18 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
 
 
 # ---------------------------------------------------------------- main
-SOURCE_STATUS = {}    # площадка → {"ok", "count", "error"} — для проверки здоровья (status.json)
+SOURCE_STATUS = {}    # площадка → {"ok", "count", "kind", "status"} — для проверки здоровья (status.json)
 
 
 def with_retries(name, fn):
     """Площадка недоступна (нет сети, VPN с зарубежным IP) — ждём и пробуем ещё,
     потом пропускаем её, не роняя весь запуск. Итог записывается в SOURCE_STATUS."""
-    err, kind, code = "", "other", None
+    err, kind, code, kinds = "", "other", None, []
     for attempt in range(1, NET_RETRIES + 1):
         try:
             res = fn()
-            SOURCE_STATUS[name] = {"ok": True, "count": len(res or [])}
+            # ошибка сертификата важна, даже если следующая попытка прошла (возможна подмена соединения)
+            SOURCE_STATUS[name] = {"ok": True, "count": len(res or []), "kind": "tls" if "tls" in kinds else None}
             return res
         except requests.RequestException as e:
             err = str(e)[:150]
@@ -1441,11 +1442,12 @@ def with_retries(name, fn):
                     "timeout" if isinstance(e, requests.Timeout) else
                     "http" if code else
                     "connection" if isinstance(e, requests.ConnectionError) else "other")
+            kinds.append(kind)
             log(f"{name}: нет связи (попытка {attempt}/{NET_RETRIES}): {err}")
             if attempt < NET_RETRIES:
                 time.sleep(NET_RETRY_PAUSE_MIN * 60)
     log(f"{name}: площадка недоступна — пропускаю")
-    SOURCE_STATUS[name] = {"ok": False, "count": 0, "kind": kind, "status": code}
+    SOURCE_STATUS[name] = {"ok": False, "count": 0, "kind": "tls" if "tls" in kinds else kind, "status": code}
     return None
 
 
