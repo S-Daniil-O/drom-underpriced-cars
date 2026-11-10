@@ -3472,7 +3472,7 @@
   "https://auto.drom.ru/voronezh/opel/antara/729035648.html": {
     "posted_at": "2026-11-07T17:25:01.796551+00:00",
     "message_id": 257,
-    "deleted_at": null,
+    "deleted_at": "2026-11-10T17:32:00.694463+00:00",
     "brand": "Opel",
     "model": "Antara",
     "year": 2012,
@@ -3768,5 +3768,20 @@
     "mileage_km": 82000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/6432733/999b3d2e6a63fb86bdb92137fb03c91e/1200x900n"
+  },
+  "autoru_1160734345-221b7dbb": {
+    "posted_at": "2026-11-10T17:35:45.795829+00:00",
+    "message_id": 277,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Santa Fe",
+    "year": 2008,
+    "price": 697000,
+    "median_price": 1272337.5,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 180000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/21149570/8882609606334ddce5bc7b2b4d5f025b/1200x900n"
   }
 }
