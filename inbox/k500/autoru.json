@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725238+00:00"
+"seen_at": "2026-11-10T09:04:53.602556+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725226+00:00"
+"seen_at": "2026-11-10T09:04:53.602544+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T08:53:34.725212+00:00"
+"seen_at": "2026-11-10T09:04:53.602532+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725198+00:00"
+"seen_at": "2026-11-10T09:04:53.602518+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725181+00:00"
+"seen_at": "2026-11-10T09:04:53.602503+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725166+00:00"
+"seen_at": "2026-11-10T09:04:53.602488+00:00"
 },
 {
 "ad_id": "autoru_1160698138-f6f3feba",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725123+00:00"
+"seen_at": "2026-11-10T09:04:53.602442+00:00"
 },
 {
 "ad_id": "autoru_1160699034-7709f8c8",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:34.725084+00:00"
+"seen_at": "2026-11-10T09:04:53.602399+00:00"
 },
 {
 "ad_id": "autoru_1160714229-c6afa1ee",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:53:21.103218+00:00"
+"seen_at": "2026-11-10T09:04:35.137694+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -157,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T08:53:21.103174+00:00"
+"seen_at": "2026-11-10T09:04:35.137670+00:00"
+},
+{
+"ad_id": "autoru_1127782717-f90eb8ed",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2007,
+"price": 355000,
+"market_price": 102500,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1127782717-f90eb8ed/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2126383/ca6a942bca8202ee5082fdaddbbbb9ae/1200x900n",
+"mileage_km": 91153,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T09:04:35.137624+00:00"
 },
 {
 "ad_id": "autoru_1160723306-4f51313c",
@@ -190,21 +206,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-10T07:01:13.151337+00:00"
-},
-{
-"ad_id": "autoru_1127782717-f90eb8ed",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2114",
-"year": 2007,
-"price": 355000,
-"market_price": 102500,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1127782717-f90eb8ed/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2126383/ca6a942bca8202ee5082fdaddbbbb9ae/1200x900n",
-"mileage_km": 91153,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T06:38:30.273953+00:00"
 }
 ]
