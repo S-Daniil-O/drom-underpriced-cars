@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016336+00:00"
+"seen_at": "2026-11-10T08:53:02.364279+00:00"
 },
 {
 "ad_id": "autoru_1160696944-097f8aec",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016314+00:00"
+"seen_at": "2026-11-10T08:53:02.364248+00:00"
 },
 {
 "ad_id": "autoru_1160699233-6d85cda5",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016289+00:00"
+"seen_at": "2026-11-10T08:53:02.364221+00:00"
 },
 {
 "ad_id": "autoru_1160700231-3a59f126",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016274+00:00"
+"seen_at": "2026-11-10T08:53:02.364206+00:00"
 },
 {
 "ad_id": "autoru_1160700627-5e6441b3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016258+00:00"
+"seen_at": "2026-11-10T08:53:02.364190+00:00"
 },
 {
 "ad_id": "autoru_1160701378-eeaee878",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016239+00:00"
+"seen_at": "2026-11-10T08:53:02.364171+00:00"
 },
 {
 "ad_id": "autoru_1160365458-fa81f6d7",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016217+00:00"
+"seen_at": "2026-11-10T08:53:02.364149+00:00"
 },
 {
 "ad_id": "autoru_1160316686-6c934fdd",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016198+00:00"
+"seen_at": "2026-11-10T08:53:02.364130+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016154+00:00"
+"seen_at": "2026-11-10T08:53:02.364106+00:00"
 },
 {
 "ad_id": "autoru_1160708322-889f747e",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016135+00:00"
+"seen_at": "2026-11-10T08:53:02.364088+00:00"
 },
 {
 "ad_id": "autoru_1160708324-a13698da",
@@ -173,23 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:41:46.016097+00:00"
-},
-{
-"ad_id": "autoru_1160709750-a5f2a532",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Captiva",
-"year": 2013,
-"price": 1500000,
-"market_price": 1190500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/captiva/1160709750-a5f2a532/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/a104821a50e2fe7146d5c3e51f03e52c/1200x900n",
-"mileage_km": 157000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T08:41:26.912086+00:00"
+"seen_at": "2026-11-10T08:53:02.364051+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -205,7 +189,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-10T08:41:26.912009+00:00"
+"seen_at": "2026-11-10T08:52:43.416602+00:00"
+},
+{
+"ad_id": "autoru_1160709750-a5f2a532",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Captiva",
+"year": 2013,
+"price": 1500000,
+"market_price": 1190500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/captiva/1160709750-a5f2a532/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/a104821a50e2fe7146d5c3e51f03e52c/1200x900n",
+"mileage_km": 157000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T08:52:43.416593+00:00"
 },
 {
 "ad_id": "autoru_1160709933-ee419959",
@@ -221,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151413+00:00"
+"seen_at": "2026-11-10T08:52:43.416584+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -237,23 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151403+00:00"
-},
-{
-"ad_id": "autoru_1160659892-063a9f3b",
-"source": "autoru",
-"brand": "Kia",
-"model": "Rio",
-"year": 2017,
-"price": 1270000,
-"market_price": 1160000,
-"url": "https://auto.ru/cars/used/sale/kia/rio/1160659892-063a9f3b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1577915/44a98269a8d5c9cdb0b44efcab87e233/1200x900n",
-"mileage_km": 74330,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151390+00:00"
+"seen_at": "2026-11-10T08:52:43.416572+00:00"
 },
 {
 "ad_id": "autoru_1160715588-e5af908f",
@@ -269,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Коротояк",
-"seen_at": "2026-11-10T08:30:10.151370+00:00"
+"seen_at": "2026-11-10T08:52:43.416548+00:00"
 },
 {
 "ad_id": "autoru_1160491303-cfcba7ab",
@@ -280,12 +264,12 @@
 "price": 1290000,
 "market_price": 1036000,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/nKyt5GsPE_yf2aqgQQmA5SuKe5i9sse7z3Av4WN-7OlXiBOdc40TWzn5UeWpVh_gOXcmSJ5Wm1b4TUxd8OyC480I7ZLaDbAxKFjHDnzzxw0ZpeR1Q9ZqDwwOmavXSlk7AfgKDxuJ00nOdWkTgxq9_4GwheH0F3HS-FP_rlP9jVPRFK8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/FsMPOx-VR4TDLuzeEgYiCaxX4Tl6T4bY3W-PIJaJMLOWnKRIa1xCWAGfEGWBIgNSJlC7RXAevVvMuZleaeEGgmGVU1zsjEUnyemM6LgrOu4cT9TNewzL3DYvr6yiw6hKyw5MOzfd9qINwEWpMl2OtSX46qgtzWjOG8h3S0td1Tdv5wU/1200x900n",
 "mileage_km": 215000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151357+00:00"
+"seen_at": "2026-11-10T08:52:43.416536+00:00"
 },
 {
 "ad_id": "autoru_1160718039-b7f17578",
@@ -301,7 +285,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151345+00:00"
+"seen_at": "2026-11-10T08:52:43.416525+00:00"
 },
 {
 "ad_id": "autoru_1160722279-2e4be5d7",
@@ -312,12 +296,12 @@
 "price": 1250000,
 "market_price": 1080000,
 "url": "https://auto.ru/cars/used/sale/vaz/vesta/1160722279-2e4be5d7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5499071/9a3af00ea56bf70f90b106ec9cf84d6a/1200x900n",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17973062/d701c8317765bee6c8866d7c237dc065/1200x900n",
 "mileage_km": 40000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151307+00:00"
+"seen_at": "2026-11-10T08:52:43.416498+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -333,7 +317,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:30:10.151256+00:00"
+"seen_at": "2026-11-10T08:52:43.416485+00:00"
+},
+{
+"ad_id": "autoru_1160659892-063a9f3b",
+"source": "autoru",
+"brand": "Kia",
+"model": "Rio",
+"year": 2017,
+"price": 1270000,
+"market_price": 1160000,
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160659892-063a9f3b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1577915/44a98269a8d5c9cdb0b44efcab87e233/1200x900n",
+"mileage_km": 74330,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T08:52:43.416399+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",

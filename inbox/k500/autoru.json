@@ -13,39 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386769+00:00"
-},
-{
-"ad_id": "autoru_1160698138-f6f3feba",
-"source": "autoru",
-"brand": "Иж",
-"model": "2126 «Ода»",
-"year": 2003,
-"price": 69999,
-"market_price": 76500,
-"url": "https://auto.ru/cars/used/sale/ig/2126/1160698138-f6f3feba/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20035467/81662279db1367981b47b03bb4f76e7a/1200x900n",
-"mileage_km": 90000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386745+00:00"
-},
-{
-"ad_id": "autoru_1160699034-7709f8c8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2011,
-"price": 230000,
-"market_price": 155000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160699034-7709f8c8/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17890514/16c64738d8acf7578a1ca8d208f613ce/1200x900n",
-"mileage_km": 170000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386731+00:00"
+"seen_at": "2026-11-10T08:53:34.725238+00:00"
 },
 {
 "ad_id": "autoru_1160700059-24a3457e",
@@ -55,13 +23,13 @@
 "year": 2005,
 "price": 150000,
 "market_price": 80500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160700059-24a3457e/",
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160696654-1d9f6d47/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/18139133/09f10dc0dbae0a2a6ad35aab8546c332/1200x900n",
 "mileage_km": 240000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386717+00:00"
+"seen_at": "2026-11-10T08:53:34.725226+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -77,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-10T08:42:21.386707+00:00"
+"seen_at": "2026-11-10T08:53:34.725212+00:00"
 },
 {
 "ad_id": "autoru_1160700818-0fb80260",
@@ -93,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386694+00:00"
+"seen_at": "2026-11-10T08:53:34.725198+00:00"
 },
 {
 "ad_id": "autoru_1160701456-a7504dd9",
@@ -109,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386679+00:00"
+"seen_at": "2026-11-10T08:53:34.725181+00:00"
 },
 {
 "ad_id": "autoru_1160701739-239d8cd8",
@@ -125,7 +93,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:21.386645+00:00"
+"seen_at": "2026-11-10T08:53:34.725166+00:00"
+},
+{
+"ad_id": "autoru_1160698138-f6f3feba",
+"source": "autoru",
+"brand": "Иж",
+"model": "2126 «Ода»",
+"year": 2003,
+"price": 69999,
+"market_price": 76500,
+"url": "https://auto.ru/cars/used/sale/ig/2126/1160698138-f6f3feba/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20035467/81662279db1367981b47b03bb4f76e7a/1200x900n",
+"mileage_km": 90000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T08:53:34.725123+00:00"
+},
+{
+"ad_id": "autoru_1160699034-7709f8c8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2011,
+"price": 230000,
+"market_price": 155000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160699034-7709f8c8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17890514/16c64738d8acf7578a1ca8d208f613ce/1200x900n",
+"mileage_km": 170000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-10T08:53:34.725084+00:00"
 },
 {
 "ad_id": "autoru_1160714229-c6afa1ee",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-10T08:42:01.436559+00:00"
+"seen_at": "2026-11-10T08:53:21.103218+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-10T08:42:01.436512+00:00"
+"seen_at": "2026-11-10T08:53:21.103174+00:00"
 },
 {
 "ad_id": "autoru_1160723306-4f51313c",
