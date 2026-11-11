@@ -6,10 +6,12 @@
   • NHTSA vPIC + разбор самого VIN — марка, страна, год модели, контрольная цифра.
 ГИБДД и реестр залогов закрыты капчей — на них в сообщении только ссылки.
 
-Сбор идёт на iMac (torgi_monitor.py --fav-lots), результат лежит в lots.json → поле "vincheck",
-бот (favorites.py) показывает его одним сообщением под карточкой лота.
+Сбор идёт ТОЛЬКО на iMac (torgi_monitor.py --fav-lots): Федресурс не пускает серверы GitHub.
+Результат лежит в lots.json → поле "vincheck"; бот (favorites.py) показывает его одним сообщением
+под карточкой лота — и только если Федресурс ответил (useful), иначе сообщения нет.
 """
 import html
+import os
 import re
 from datetime import date
 
@@ -35,8 +37,14 @@ def check_digit_ok(vin):
     return ("X" if r == 10 else str(r)) == vin[8]
 
 
-def _get(url, **params):
-    r = requests.get(url, params=params, timeout=TIMEOUT,
+# Российские реестры открываем напрямую (домашний российский IP), зарубежные — через VPN-прокси iMac,
+# если он задан: TORGI_VPN_PROXY=http://127.0.0.1:<порт> (или socks5h://…). Без него — тоже напрямую.
+VPN_PROXY = os.environ.get("TORGI_VPN_PROXY", "").strip()
+
+
+def _get(url, vpn=False, **params):
+    proxies = {"http": VPN_PROXY, "https": VPN_PROXY} if vpn and VPN_PROXY else None
+    r = requests.get(url, params=params, timeout=TIMEOUT, proxies=proxies,
                      headers={"User-Agent": UA, "Referer": FR + "/", "Accept": "application/json"})
     r.raise_for_status()
     return r.json()
@@ -53,7 +61,7 @@ def _side(lst):
 
 
 def nhtsa(vin):
-    row = (_get(f"https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/{vin}", format="json").get("Results") or [{}])[0]
+    row = (_get(f"https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/{vin}", vpn=True, format="json").get("Results") or [{}])[0]
     keep = ("Make", "Model", "ModelYear", "PlantCountry")
     return {k: str(row[k]).strip() for k in keep if row.get(k) not in (None, "", "Not Applicable")}
 
@@ -108,6 +116,11 @@ def check(vin):
         except Exception as e:  # noqa: BLE001 — один источник не должен ронять остальные
             res["errors"].append(f"{key}: {type(e).__name__}")
     return res
+
+
+def useful(res):
+    """Есть что показать: VIN верный и Федресурс ответил и по лизингу, и по торгам."""
+    return bool(res.get("invalid") or (res.get("leasing") is not None and res.get("biddings") is not None))
 
 
 # ---------------------------------------------------------------- текст для Telegram
@@ -186,8 +199,6 @@ def text(v, res):
             if len(debtors) > 1:
                 lines.append(f"   ⚠️ Разные должники: {e('; '.join(debtors))}")
 
-    if res.get("errors"):
-        lines.append(f"\n▫️ Не ответили: {e(', '.join(x.split(':')[0] for x in res['errors']))} — повторю завтра")
     lines += ["", "Не проверено (там капча): "
               '<a href="https://xn--90adear.xn--p1ai/check/auto">ГИБДД</a> — владельцы, ДТП, ограничения, розыск · '
               '<a href="https://www.reestr-zalogov.ru/search">реестр залогов</a>']

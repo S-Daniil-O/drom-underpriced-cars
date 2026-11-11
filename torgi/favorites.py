@@ -16,7 +16,7 @@
   ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
 К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота,
   🔎 проверка по VIN без капчи — лизинг и прошлые торги этой машины (Федресурс), расшифровка VIN
-  (делает iMac каждое утро; лот, добавленный днём, бот проверяет сразу сам; см. torgi/vin_check.py).
+  (делает iMac каждое утро; если Федресурс не ответил — сообщения нет; см. torgi/vin_check.py).
 График и фото берутся из inbox/torgi_fav/ (lots.json, img/) — его каждое утро обновляет домашний iMac
 (площадки не открываются с серверов GitHub). Пока графика нет — срок берётся из текста поста.
 
@@ -779,7 +779,12 @@ def update_market(st, v, mk, sched, now):
     st.dirty = True
 
 
-VC_DIRECT = {}   # проверки VIN, сделанные самим ботом (для лотов, которых ещё нет в данных iMac)
+def drop_vincheck(st, v):
+    tg("deleteMessage", chat_id=home(v), message_id=v["vc_msg"])
+    v["msgs"] = [m for m in (v.get("msgs") or []) if m != v["vc_msg"]]
+    v["vc_msg"] = None
+    v["vc_text"] = None
+    st.dirty = True
 
 
 def update_vincheck(st, lid, v, res):
@@ -1012,13 +1017,10 @@ def check(st, live, img_dir):
                     update_market(st, v, info["market"], sched, now)
                 except (TypeError, ValueError, KeyError, AttributeError) as e:
                     log(f"рынок лота №{v['n']}: неверные данные ({type(e).__name__})")
-        vc = info.get("vincheck")
-        if not vc and v.get("vin") and not v.get("vc_msg"):
-            # лот добавлен после утреннего прогона iMac — проверяем сразу отсюда (один раз за запуск)
-            if v["vin"] not in VC_DIRECT:
-                VC_DIRECT[v["vin"]] = vin_check.check(v["vin"])
-            vc = VC_DIRECT[v["vin"]]
-        if vc:
+        if v.get("vc_msg") and "не ответил" in (v.get("vc_text") or ""):
+            drop_vincheck(st, v)       # пустое сообщение от прежней версии (проверка с GitHub) — убрать
+        vc = info.get("vincheck")      # проверку делает только iMac: Федресурс не пускает серверы GitHub
+        if vc and vin_check.useful(vc):
             try:
                 update_vincheck(st, lid, v, vc)
             except (TypeError, ValueError, KeyError, AttributeError, IndexError) as e:
