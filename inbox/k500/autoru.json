@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160714229-c6afa1ee",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2007,
-"price": 180000,
-"market_price": 68500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160714229-c6afa1ee/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
-"mileage_km": 91300,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T10:31:47.366690+00:00"
-},
-{
 "ad_id": "autoru_1160718259-35a44d7d",
 "source": "autoru",
 "brand": "УАЗ",
@@ -29,7 +13,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-11T10:31:47.366664+00:00"
+"seen_at": "2026-11-11T10:43:00.951711+00:00"
+},
+{
+"ad_id": "autoru_1160714229-c6afa1ee",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2007,
+"price": 180000,
+"market_price": 68500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160714229-c6afa1ee/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/14008031/b37d8086365e41273b50e3c5c81229e3/1200x900n",
+"mileage_km": 91300,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T10:43:00.951679+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -45,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T10:31:47.366611+00:00"
-},
-{
-"ad_id": "autoru_1160738467-d2160a73",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2112",
-"year": 2007,
-"price": 95000,
-"market_price": 110500,
-"url": "https://auto.ru/cars/used/sale/vaz/2112/1160738467-d2160a73/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17973312/990602c5183d88f2b9c97b753a62af1a/1200x900n",
-"mileage_km": 199999,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T10:31:29.862963+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 175000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T10:31:29.862954+00:00"
+"seen_at": "2026-11-11T10:43:00.951627+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -93,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T10:31:29.862930+00:00"
+"seen_at": "2026-11-11T10:42:42.055041+00:00"
+},
+{
+"ad_id": "autoru_1160738467-d2160a73",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2112",
+"year": 2007,
+"price": 95000,
+"market_price": 110500,
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160738467-d2160a73/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17973312/990602c5183d88f2b9c97b753a62af1a/1200x900n",
+"mileage_km": 199999,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T10:42:42.055019+00:00"
+},
+{
+"ad_id": "autoru_1160315473-914cc928",
+"source": "autoru",
+"brand": "Renault",
+"model": "Logan",
+"year": 2006,
+"price": 175000,
+"market_price": 228500,
+"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
+"mileage_km": 190000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T10:42:42.055009+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-11T10:31:29.862915+00:00"
+"seen_at": "2026-11-11T10:42:42.054995+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -125,7 +125,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T10:31:29.862886+00:00"
+"seen_at": "2026-11-11T10:42:42.054984+00:00"
+},
+{
+"ad_id": "autoru_1160744335-7c41aa8b",
+"source": "autoru",
+"brand": "Kia",
+"model": "Rio",
+"year": 2000,
+"price": 250000,
+"market_price": 114500,
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160744335-7c41aa8b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2048563/e7cc5762a5598ee24aa689813679f9c8/1200x900n",
+"mileage_km": 180000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-11-11T10:42:42.054950+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
