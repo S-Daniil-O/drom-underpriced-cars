@@ -13,6 +13,7 @@
 import html
 import os
 import re
+import socket
 from datetime import date
 
 import requests
@@ -37,17 +38,36 @@ def check_digit_ok(vin):
     return ("X" if r == 10 else str(r)) == vin[8]
 
 
-# Российские реестры открываем напрямую (домашний российский IP), зарубежные — через VPN-прокси iMac,
-# если он задан: TORGI_VPN_PROXY=http://127.0.0.1:<порт> (или socks5h://…). Без него — тоже напрямую.
-VPN_PROXY = os.environ.get("TORGI_VPN_PROXY", "").strip()
+# Российские реестры открываем напрямую (домашний российский IP iMac), зарубежные — через VPN.
+# VPN — локальный прокси xray на iMac (127.0.0.1:10809); другой адрес можно задать в TORGI_VPN_PROXY.
+# Если выбранный путь не сработал, пробуем второй: VPN выключен/включён «по ситуации».
+def _vpn_proxy():
+    env = os.environ.get("TORGI_VPN_PROXY", "").strip()
+    if env:
+        return env
+    try:
+        with socket.create_connection(("127.0.0.1", 10809), timeout=1):
+            return "http://127.0.0.1:10809"
+    except OSError:
+        return ""
+
+
+VPN_PROXY = _vpn_proxy()
 
 
 def _get(url, vpn=False, **params):
-    proxies = {"http": VPN_PROXY, "https": VPN_PROXY} if vpn and VPN_PROXY else None
-    r = requests.get(url, params=params, timeout=TIMEOUT, proxies=proxies,
-                     headers={"User-Agent": UA, "Referer": FR + "/", "Accept": "application/json"})
-    r.raise_for_status()
-    return r.json()
+    routes = [vpn, not vpn] if VPN_PROXY else [False]
+    last = None
+    for use_vpn in routes:
+        proxies = {"http": VPN_PROXY, "https": VPN_PROXY} if use_vpn else None
+        try:
+            r = requests.get(url, params=params, timeout=TIMEOUT, proxies=proxies,
+                             headers={"User-Agent": UA, "Referer": FR + "/", "Accept": "application/json"})
+            r.raise_for_status()
+            return r.json()
+        except (requests.RequestException, ValueError) as e:
+            last = e
+    raise last
 
 
 def _clean(s):
