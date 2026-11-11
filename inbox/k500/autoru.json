@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:51:04.549745+00:00"
+"seen_at": "2026-11-11T23:02:19.368171+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:51:04.549697+00:00"
+"seen_at": "2026-11-11T23:02:19.368129+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:50:50.281126+00:00"
+"seen_at": "2026-11-11T23:02:05.141758+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:50:50.281104+00:00"
+"seen_at": "2026-11-11T23:02:05.141724+00:00"
+},
+{
+"ad_id": "autoru_1160753728-5e7b92d2",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera",
+"year": 2006,
+"price": 288000,
+"market_price": 221000,
+"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
+"mileage_km": 233000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Поворино",
+"seen_at": "2026-11-11T23:02:05.141658+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -110,22 +126,6 @@
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
 "seen_at": "2026-11-11T22:50:50.281012+00:00"
-},
-{
-"ad_id": "autoru_1160753728-5e7b92d2",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera",
-"year": 2006,
-"price": 288000,
-"market_price": 221000,
-"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
-"mileage_km": 233000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Поворино",
-"seen_at": "2026-11-11T22:50:50.280927+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
