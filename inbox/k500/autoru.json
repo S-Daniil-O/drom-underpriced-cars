@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-11T17:04:28.217541+00:00"
+"seen_at": "2026-11-11T17:15:35.772167+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T17:04:28.217504+00:00"
+"seen_at": "2026-11-11T17:15:35.772132+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T17:04:28.217437+00:00"
+"seen_at": "2026-11-11T17:15:35.772065+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T17:04:08.272482+00:00"
+"seen_at": "2026-11-11T17:15:21.583662+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T17:04:08.272471+00:00"
+"seen_at": "2026-11-11T17:15:21.583652+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-11T17:04:08.272459+00:00"
+"seen_at": "2026-11-11T17:15:21.583639+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T17:04:08.272449+00:00"
+"seen_at": "2026-11-11T17:15:21.583630+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-11T17:04:08.272427+00:00"
+"seen_at": "2026-11-11T17:15:21.583612+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -134,14 +134,30 @@
 "model": "Almera",
 "year": 2006,
 "price": 288000,
-"market_price": null,
+"market_price": 221000,
 "url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/2023604/f500a2a32e8213ad7733a8535c816884/1200x900n",
 "mileage_km": 233000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-11T17:04:08.272368+00:00"
+"seen_at": "2026-11-11T17:15:21.583583+00:00"
+},
+{
+"ad_id": "autoru_1160753806-82a95811",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2014,
+"price": 330000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160753806-82a95811/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2079554/H15VbwYIjHl9AXDI4PdBunOW2mKT7o6hbwIPwfU5IW5NB6RreYVadw5ctealBtAREpyH13NX49mFzj3e6sBpn-14PiK-XonF46toNoHyqhKE17d499aTQonY_Rq6MkiByo5cNM5yfBH3xVGazJ-2SW2fkyIceleuy7SKebj17SSxvPk/1200x900n",
+"mileage_km": 202000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T17:15:21.583549+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
