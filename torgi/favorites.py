@@ -916,7 +916,7 @@ def note_requests(st, v, n, sched=None):
         return
     if n <= top:                               # устаревшие данные с iMac не дают повторных уведомлений
         return
-    v["req_max"] = n
+    v["req_max"] = min(n, top + 50)           # за раз не дальше +50: ошибочный скачок не заглушит уведомления
     old = top
     sent = v.setdefault("sent", {})
     if sent.get(f"req:{n}"):
