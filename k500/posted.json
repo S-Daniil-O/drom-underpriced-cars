@@ -7347,7 +7347,7 @@
   "autoru_1160699034-7709f8c8": {
     "posted_at": "2026-11-08T14:05:24.744205+00:00",
     "message_id": 537,
-    "deleted_at": null,
+    "deleted_at": "2026-11-11T16:55:51.837545+00:00",
     "brand": "Lada (ВАЗ)",
     "model": "Kalina",
     "year": 2011,
@@ -7362,7 +7362,7 @@
   "https://auto.drom.ru/voronezh/lada/priora/509203300.html": {
     "posted_at": "2026-11-08T14:05:27.397288+00:00",
     "message_id": 538,
-    "deleted_at": null,
+    "deleted_at": "2026-11-11T16:55:53.233068+00:00",
     "brand": "Лада",
     "model": "Приора",
     "year": 2012,
@@ -7377,7 +7377,7 @@
   "https://auto.drom.ru/voronezh/lada/priora/346444820.html": {
     "posted_at": "2026-11-08T14:05:30.347832+00:00",
     "message_id": 539,
-    "deleted_at": null,
+    "deleted_at": "2026-11-11T16:55:54.636825+00:00",
     "brand": "Лада",
     "model": "Приора",
     "year": 2007,
@@ -7392,7 +7392,7 @@
   "https://auto.drom.ru/voronezh/lada/2112/552901114.html": {
     "posted_at": "2026-11-08T14:49:56.612090+00:00",
     "message_id": 540,
-    "deleted_at": null,
+    "deleted_at": "2026-11-11T16:55:55.962710+00:00",
     "brand": "Лада",
     "model": "2112",
     "year": 2003,
@@ -7988,5 +7988,35 @@
     "mileage_km": 250000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/6bWtuJShsMA8UMI3VrvmFwjttDkfsitkBjJ-F_BQOx2D-6oDdiypz08hOa1q6JF0J38b9W4yZflo2S73/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/761103720.html": {
+    "posted_at": "2026-11-11T17:00:45.779042+00:00",
+    "message_id": 580,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2107",
+    "year": 2001,
+    "price": 75000,
+    "median_price": 155250.0,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 92179,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Vnek4zMHGMiIVVQLJ6NjoxLgAhQhKrDQCBtAkJwc9FusioDR6Iab1KMMA0V94SVjUXxgIIiL_QXbEpxp/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/165813307.html": {
+    "posted_at": "2026-11-11T17:01:41.912301+00:00",
+    "message_id": 581,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2007,
+    "price": 175000,
+    "median_price": 191556.19575,
+    "median_sample_size": 16,
+    "price_rating": "отличная цена",
+    "mileage_km": 245738,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/XSmaFIC5Y3rzhW835m6ycmxEG4XDsQGCAXLPlw8lIwB-2nqI-Dzm808AKXnyUiRuGJSeBn2e6D14nEKY/gen272wb.jpg"
   }
 }
