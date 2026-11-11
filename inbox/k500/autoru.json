@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T21:10:18.437922+00:00"
+"seen_at": "2026-11-11T21:21:28.457061+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T21:10:18.437856+00:00"
+"seen_at": "2026-11-11T21:21:28.456995+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,39 +45,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T21:10:03.166952+00:00"
-},
-{
-"ad_id": "autoru_1160745336-c8c14462",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2012,
-"price": 115000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
-"mileage_km": 290000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ольховатка",
-"seen_at": "2026-11-11T21:10:03.166940+00:00"
+"seen_at": "2026-11-11T21:21:09.915401+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
 "source": "autoru",
-"brand": "Mitsubishi",
-"model": "Lancer",
+"brand": "Renault",
+"model": "Logan",
 "year": 2006,
 "price": 170000,
 "market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160752902-20d71fb3/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/1601263/xxMXEW2ibQR9K3amMt8FqvuGmeIOsEdoncaq4-FM4cVf3SRU6oW441YPQY1DTkvXFmmqDsOAVoxFGaPcjBgGHfeDbQywmVaEJ7pbUk32s9dR-Lw2Kmr0_ZyAMzx6e2ClyYF0sOFlSFc2sZxQ1UL_tqxdyPi_uECknRAsiWyx9IoLRmo/1200x900n",
+"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
 "mileage_km": 190000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T21:10:03.166915+00:00"
+"seen_at": "2026-11-11T21:21:09.915387+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-11T21:10:03.166900+00:00"
+"seen_at": "2026-11-11T21:21:09.915370+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -109,7 +93,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T21:10:03.166888+00:00"
+"seen_at": "2026-11-11T21:21:09.915357+00:00"
+},
+{
+"ad_id": "autoru_1160745336-c8c14462",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 115000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
+"mileage_km": 290000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ольховатка",
+"seen_at": "2026-11-11T21:21:09.915333+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-11T21:10:03.166845+00:00"
+"seen_at": "2026-11-11T21:21:09.915275+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
