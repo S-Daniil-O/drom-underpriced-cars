@@ -13,23 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T23:24:46.949068+00:00"
+"seen_at": "2026-11-11T23:35:57.742046+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Volkswagen",
+"model": "Passat",
 "year": 2005,
 "price": 135000,
 "market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160735795-e7b7cba6/",
+"url": "https://auto.ru/cars/used/sale/volkswagen/passat/1160728184-8b5d1c9f/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17757189/a92ce57bb231688c10b30668fc320fb1/1200x900n",
 "mileage_km": 100600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T23:24:46.948989+00:00"
+"seen_at": "2026-11-11T23:35:57.742002+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T23:24:28.714770+00:00"
+"seen_at": "2026-11-11T23:35:41.026805+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T23:24:28.714759+00:00"
+"seen_at": "2026-11-11T23:35:41.026794+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-11T23:24:28.714747+00:00"
+"seen_at": "2026-11-11T23:35:41.026780+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T23:24:28.714736+00:00"
+"seen_at": "2026-11-11T23:35:41.026767+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-11T23:24:28.714718+00:00"
+"seen_at": "2026-11-11T23:35:41.026745+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-11T23:24:28.714671+00:00"
+"seen_at": "2026-11-11T23:35:41.026691+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-11T19:18:12.952194+00:00"
-},
-{
-"ad_id": "autoru_1160718259-35a44d7d",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
-"mileage_km": 38200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Грибановский",
-"seen_at": "2026-11-11T17:26:40.933450+00:00"
 }
 ]
