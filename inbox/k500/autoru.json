@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T05:16:47.079387+00:00"
+"seen_at": "2026-11-11T05:28:03.831304+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-11T05:16:47.079315+00:00"
+"seen_at": "2026-11-11T05:28:03.831251+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T05:16:29.703268+00:00"
+"seen_at": "2026-11-11T05:27:47.079813+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T05:16:29.703239+00:00"
+"seen_at": "2026-11-11T05:27:47.079781+00:00"
+},
+{
+"ad_id": "autoru_1160738467-d2160a73",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2112",
+"year": 2007,
+"price": 95000,
+"market_price": 110500,
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160738467-d2160a73/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17973312/990602c5183d88f2b9c97b753a62af1a/1200x900n",
+"mileage_km": 199999,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T05:27:47.079739+00:00"
 },
 {
 "ad_id": "autoru_1160737634-8c00a7fc",
@@ -78,22 +94,6 @@
 "seller_type": "PRIVATE",
 "city": "Эртиль",
 "seen_at": "2026-11-11T05:16:29.703222+00:00"
-},
-{
-"ad_id": "autoru_1160738467-d2160a73",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2112",
-"year": 2007,
-"price": 95000,
-"market_price": 110500,
-"url": "https://auto.ru/cars/used/sale/vaz/2112/1160738467-d2160a73/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17973312/990602c5183d88f2b9c97b753a62af1a/1200x900n",
-"mileage_km": 199999,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T05:16:29.703187+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
