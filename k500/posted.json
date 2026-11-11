@@ -8018,5 +8018,20 @@
     "mileage_km": 245738,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/XSmaFIC5Y3rzhW835m6ycmxEG4XDsQGCAXLPlw8lIwB-2nqI-Dzm808AKXnyUiRuGJSeBn2e6D14nEKY/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/citroen/c4/938320543.html": {
+    "posted_at": "2026-11-11T18:00:33.703850+00:00",
+    "message_id": 582,
+    "deleted_at": null,
+    "brand": "Citroen",
+    "model": "C4",
+    "year": 2011,
+    "price": 345000,
+    "median_price": 418500.0,
+    "median_sample_size": 792,
+    "price_rating": null,
+    "mileage_km": 270000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/aXQn06aK_geApXHprPJHK0Ye-Rra_3XDHJuBUUaWs7YGCy4w_pfHHZsAAmlZEN732lHPndFGNFlXFEe1/gen272wb.jpg"
   }
 }
