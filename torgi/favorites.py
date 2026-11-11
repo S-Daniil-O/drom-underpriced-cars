@@ -900,16 +900,21 @@ def note_requests(st, v, n, sched=None):
         log(f"заявки: странное значение {n}")
         return
     old = v.get("requests")
-    v["requests"] = n                          # храним самое свежее значение как есть
-    st.dirty = True
     top = v.get("req_max", old)                # максимум, о котором уже сообщили (или видели первым)
+    if isinstance(top, int) and n > top + 50:  # неправдоподобный скачок — принимаем, только если повторится
+        if v.get("req_pending") != n:
+            v["req_pending"] = n
+            st.dirty = True
+            log(f"заявки: скачок {top}→{n}, ждём подтверждения")
+            return
+        log(f"заявки: скачок {top}→{n} подтвердился")
+    v.pop("req_pending", None)
+    v["requests"] = n                          # храним проверенное свежее значение
+    st.dirty = True
     if not isinstance(top, int):
         v["req_max"] = n
         return
     if n <= top:                               # устаревшие данные с iMac не дают повторных уведомлений
-        return
-    if n > top + 50:                           # неправдоподобный скачок — не верим и не запоминаем
-        log(f"заявки: скачок {top}→{n} пропущен")
         return
     v["req_max"] = n
     old = top
