@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Коротояк",
-"seen_at": "2026-11-11T22:28:10.686915+00:00"
+"seen_at": "2026-11-11T22:39:22.031848+00:00"
 },
 {
 "ad_id": "autoru_1160718039-b7f17578",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686899+00:00"
+"seen_at": "2026-11-11T22:39:22.031834+00:00"
 },
 {
 "ad_id": "autoru_1160722279-2e4be5d7",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686867+00:00"
+"seen_at": "2026-11-11T22:39:22.031806+00:00"
 },
 {
 "ad_id": "autoru_1160726778-e5d1ca93",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686843+00:00"
+"seen_at": "2026-11-11T22:39:22.031785+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -72,12 +72,12 @@
 "price": 775000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/Ela53eV35Q1VHNMQkBaP4KFwW1Z98rRQxytrgX6JC_uJhfbDB_Twi4IrKG0NvkejCNDVBedhOq3BOuPlmLyveAhC-ECUbx2N8fwG-ePZGghoptEWENe0DVOSI4Gt7ge9gNtzrhVCoIy6L4cTo-Yi19MM5phUqAMVG9E27uKyLJpgYQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/6j3MR1Hvo7WuPKeDQXazMn7N-0IP4GJfbXJy99-DG3tqYkM_q8BtEpTlY-ZDEKULmPiOWFa0dinp0ankS6NsaWDj43tDy7H72S_4sBzN9OYoI3dyBGmwKPVMChe2HQ2shSNpQaTpKKg28DT_14haCer2y1mufzdDSFR3kdpZVHcveIo/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686831+00:00"
+"seen_at": "2026-11-11T22:39:22.031774+00:00"
 },
 {
 "ad_id": "autoru_1160727359-23f20222",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686815+00:00"
+"seen_at": "2026-11-11T22:39:22.031758+00:00"
 },
 {
 "ad_id": "autoru_1160590322-36e317de",
@@ -109,7 +109,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:28:10.686768+00:00"
+"seen_at": "2026-11-11T22:39:22.031713+00:00"
+},
+{
+"ad_id": "autoru_1160735307-c23b0086",
+"source": "autoru",
+"brand": "Hyundai",
+"model": "Solaris",
+"year": 2016,
+"price": 999999,
+"market_price": 544500,
+"url": "https://auto.ru/cars/used/sale/hyundai/solaris/1160735307-c23b0086/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20390804/qDTHAPu5U27taNzstLLlawP_sb2cpHBCZ4JoJZWfOUh3iQ4wbk_XOSNCdsk2QsDIeObgI1vZrFMkSFjx25o3CC9DRATTZZvr9tGHk7gqbz1RB9puvU7GdLNv1WnOXB5LIbIeCKtNsM7tyYjaLhf1umKpbFZciiIoJs3mhUD4UFhvKg/1200x900n",
+"mileage_km": 260000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T22:39:08.716675+00:00"
+},
+{
+"ad_id": "autoru_1160739836-681d06c3",
+"source": "autoru",
+"brand": "Skoda",
+"model": "Rapid",
+"year": 2018,
+"price": 1270000,
+"market_price": 1118000,
+"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160739836-681d06c3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17709926/3e4b625c0f6d3a517e14426add348b2b/1200x900n",
+"mileage_km": 74500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T22:39:08.716656+00:00"
+},
+{
+"ad_id": "autoru_1160740629-5efcff10",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2016,
+"price": 1020000,
+"market_price": 1013000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1160740629-5efcff10/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21119621/b84aea5d39e7ab9bcbf78929ea9e1d17/1200x900n",
+"mileage_km": 39353,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T22:39:08.716646+00:00"
+},
+{
+"ad_id": "autoru_1160324237-fade6d4c",
+"source": "autoru",
+"brand": "Haval",
+"model": "M6",
+"year": 2022,
+"price": 1300000,
+"market_price": 1500000,
+"url": "https://auto.ru/cars/used/sale/haval/m6/1160324237-fade6d4c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18185687/de65a356d5cea55e46848604b99c266e/1200x900n",
+"mileage_km": 18000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T22:39:08.716637+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -125,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498500+00:00"
+"seen_at": "2026-11-11T22:39:08.716622+00:00"
 },
 {
 "ad_id": "autoru_1160749524-ba7f469f",
@@ -141,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498486+00:00"
+"seen_at": "2026-11-11T22:39:08.716605+00:00"
 },
 {
 "ad_id": "autoru_1160752352-5d996610",
@@ -157,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498469+00:00"
+"seen_at": "2026-11-11T22:39:08.716589+00:00"
 },
 {
 "ad_id": "autoru_1160753406-1f91d7ab",
@@ -168,28 +232,12 @@
 "price": 690000,
 "market_price": 390500,
 "url": "https://auto.ru/cars/used/sale/volkswagen/caddy/1160753406-1f91d7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20656151/7xGTo0xQDCdLNhEmewYNsHZh21_YYIxqG1lNiHDF3a4UJrhBN1ZsUX9vG0KdMe8ORyTrZQeIIwA_5nKkyeA5BNx7Y-fEmwBap2CtvNh-6JqBhASiC4GGXE0EGw4KHvU_7flUWnZsriEIC3nFuZj3mfY_pJcEaAqOB3U5FMwqzK_EEHs/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20656151/ZnF3400Is-Tn6DtQlP9wwMg9lhZk68q4S_NSjKtkQEbiaj2O7vArjVTzmIdkrFuAt_qVA_tVOgfsU6YgTjpt60FfDL_LAmApCB5zk3TzQM6SABAfudApAT42vC7qRu03yP_3b41zRYsPDcIxds3G8SAUaVFqtNcK44m5aGAfi82ivg/1200x900n",
 "mileage_km": 372000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-11T22:27:50.498458+00:00"
-},
-{
-"ad_id": "autoru_1160491303-cfcba7ab",
-"source": "autoru",
-"brand": "Kia",
-"model": "Rio",
-"year": 2020,
-"price": 1290000,
-"market_price": 1036000,
-"url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/qyfkVMCCXUIBPgU_SkZwb0sJK-17zG1s0tUws-X6w6BOXv7kJbgO-5TIQ0tTDTKiqJlzWLfg64FVhtiYkqDbgPSRxI5CqBHdieAEFaxvQ31d27L95dM0dm11cxObrc4u3LXETmk1aZy5kItwjtCKJ2nq5y2mtMiueZIMvenoiK4XFvA/1200x900n",
-"mileage_km": 215000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498446+00:00"
+"seen_at": "2026-11-11T22:39:08.716575+00:00"
 },
 {
 "ad_id": "autoru_1160755418-41135841",
@@ -205,7 +253,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498427+00:00"
+"seen_at": "2026-11-11T22:39:08.716555+00:00"
+},
+{
+"ad_id": "autoru_1160491303-cfcba7ab",
+"source": "autoru",
+"brand": "Kia",
+"model": "Rio",
+"year": 2020,
+"price": 1290000,
+"market_price": 1036000,
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/sOsPU_QQkNDSTTZb_n9J6w0J-V5-cEV7ruJe5UasbgGmPk92GN-oN55FHqa09sN1gM6aJKeUVF-baksFWnuNGoj9lHGgIns8qox92x6jWIo4muDH9DWKx3Ala_VHrthdk4a1SHadpLFaHO0gmymc5cRpkL9TkX0HMBX3OCDK9ziRaA/1200x900n",
+"mileage_km": 215000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-11T22:39:08.716496+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -222,70 +286,6 @@
 "seller_type": "PRIVATE",
 "city": "Острогожск",
 "seen_at": "2026-11-11T22:27:50.498416+00:00"
-},
-{
-"ad_id": "autoru_1160735307-c23b0086",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2016,
-"price": 999999,
-"market_price": 544500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1133219307-be33ac0b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20390804/7O89nY2uc6znpGxqbbfY7C17V6GXnyn27LRvD85FMFwy6UhHchaWQSuompNfeUEuMDIHgEoy1fHIFgIro8o0n2CgQoO0qB90GmNZAwrmnAStTXymU-F7OM7RdnYeJipvwlHmnjeQU2q_YCzkmzIx8_t4hIoxr8BxghVJQ3fVG5RuUik/1200x900n",
-"mileage_km": 260000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498404+00:00"
-},
-{
-"ad_id": "autoru_1160739836-681d06c3",
-"source": "autoru",
-"brand": "Skoda",
-"model": "Rapid",
-"year": 2018,
-"price": 1270000,
-"market_price": 1118000,
-"url": "https://auto.ru/cars/used/sale/skoda/rapid/1160739836-681d06c3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709926/3e4b625c0f6d3a517e14426add348b2b/1200x900n",
-"mileage_km": 74500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498379+00:00"
-},
-{
-"ad_id": "autoru_1160740629-5efcff10",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2016,
-"price": 1020000,
-"market_price": 1013000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1160740629-5efcff10/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21119621/b84aea5d39e7ab9bcbf78929ea9e1d17/1200x900n",
-"mileage_km": 39353,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498364+00:00"
-},
-{
-"ad_id": "autoru_1160324237-fade6d4c",
-"source": "autoru",
-"brand": "Haval",
-"model": "M6",
-"year": 2022,
-"price": 1300000,
-"market_price": 1500000,
-"url": "https://auto.ru/cars/used/sale/haval/m6/1160324237-fade6d4c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18185687/de65a356d5cea55e46848604b99c266e/1200x900n",
-"mileage_km": 18000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-11T22:27:50.498313+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -334,21 +334,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-11T17:15:04.479185+00:00"
-},
-{
-"ad_id": "autoru_1160422889-9a203a8b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2020,
-"price": 1100000,
-"market_price": 886000,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160422889-9a203a8b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n",
-"mileage_km": 95000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-11T16:30:04.770907+00:00"
 }
 ]
