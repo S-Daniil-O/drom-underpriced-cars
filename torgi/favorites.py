@@ -14,7 +14,9 @@
   📈 рыночная цена (Дром и Авто.ру), обновляется каждый день;
   📉 начался новый период — цена снизилась;  🎯 цена дошла до вашей;  🔔 появилась новая заявка (ЦДТ и ТоргГрупп — в течение 15 минут, МЭТС — раз в день);
   ⏰ за 24 часа до окончания приёма заявок;  🏁 приём заявок закончился (#завершено).
-К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота.
+К карточке лота приходят: 📊 график снижения цены (одно сообщение, обновляется) и все фото лота,
+  🔎 проверка по VIN без капчи — лизинг и прошлые торги этой машины (Федресурс), расшифровка VIN
+  (делает iMac каждое утро; лот, добавленный днём, бот проверяет сразу сам; см. torgi/vin_check.py).
 График и фото берутся из inbox/torgi_fav/ (lots.json, img/) — его каждое утро обновляет домашний iMac
 (площадки не открываются с серверов GitHub). Пока графика нет — срок берётся из текста поста.
 
@@ -35,6 +37,7 @@ from pathlib import Path
 import requests
 
 import torgi_monitor as tm    # разбор площадок (ЦДТ и ТоргГрупп открываются с GitHub, МЭТС — нет)
+import vin_check              # текст сообщения «Проверка по VIN» (сама проверка — на iMac)
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
 CHAT = os.environ["TORGI_FAV_CHAT_ID"]
@@ -136,7 +139,8 @@ def link_forum(st, chat_id, allowed):
             continue
         v["card"] = mid
         # график и фото придут в тему заново
-        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False, "no_photos": False, "files_done": False})
+        v.update({"head": None, "msgs": [], "sched_msg": None, "sched_text": None, "photos_done": False, "no_photos": False, "files_done": False,
+                  "vc_msg": None, "vc_text": None})
         moved += 1
         time.sleep(3)
     tg("sendMessage", chat_id=FORUM, text=f"✅ Группа подключена. Лотов перенесено в темы: {moved}.\n"
@@ -421,6 +425,10 @@ def heal(st):
                 v["market_msg"] = None
                 v["market_text"] = None
                 st.dirty = True
+            if v.get("vc_msg") and not msg_exists(FORUM, v["vc_msg"]):
+                v["vc_msg"] = None
+                v["vc_text"] = None
+                st.dirty = True
             if v.get("sched_msg") and not msg_exists(FORUM, v["sched_msg"]):
                 v["sched_msg"] = None           # пропал только график — придёт заново
                 v["sched_text"] = None
@@ -432,14 +440,14 @@ def heal(st):
             log(f"лот №{v['n']}: карточка не восстановлена: {c.get('description')}")
             continue
         # фото могли уцелеть: заново отправляем, только если от прежних сообщений лота ничего нет
-        for old in (v.get("sched_msg"), v.get("market_msg")):   # старые график и рынок заменятся новыми
+        for old in (v.get("sched_msg"), v.get("market_msg"), v.get("vc_msg")):   # график, рынок и проверка VIN заменятся новыми
             if old:
                 tg("deleteMessage", chat_id=FORUM, message_id=old)
-        alive = [m for m in (v.get("msgs") or []) if m not in (v.get("sched_msg"), v.get("market_msg")) and msg_exists(FORUM, m)]
+        alive = [m for m in (v.get("msgs") or []) if m not in (v.get("sched_msg"), v.get("market_msg"), v.get("vc_msg")) and msg_exists(FORUM, m)]
         if not alive:
             v.update({"photos_done": False, "no_photos": False, "files_done": False})
         v.update({"card": mid, "head": None, "msgs": alive, "sched_msg": None, "sched_text": None,
-                  "market_msg": None, "market_text": None})
+                  "market_msg": None, "market_text": None, "vc_msg": None, "vc_text": None})
         fixed.append(v["n"])
         st.dirty = True
         time.sleep(3)
@@ -771,6 +779,37 @@ def update_market(st, v, mk, sched, now):
     st.dirty = True
 
 
+VC_DIRECT = {}   # проверки VIN, сделанные самим ботом (для лотов, которых ещё нет в данных iMac)
+
+
+def update_vincheck(st, lid, v, res):
+    """Одно сообщение «Проверка по VIN» на лот: создаётся один раз, дальше обновляется, если что-то изменилось."""
+    if res.get("vin") and v.get("vin") and res["vin"] != v["vin"]:
+        return                      # проверка по другому VIN (VIN в лоте поправили) — ждём свежую
+    text = vin_check.text({**v, "_lid": lid}, res)
+    if v.get("vc_text") == text:
+        return
+    if v.get("vc_msg"):
+        r = tg("editMessageText", chat_id=home(v), message_id=v["vc_msg"], text=text, parse_mode="HTML",
+               disable_web_page_preview="true")
+        if not r.get("ok") and "not modified" not in r.get("description", ""):
+            log(f"проверка VIN лота №{v['n']}: {r.get('description')}")
+            if "not found" in r.get("description", ""):
+                v["vc_msg"] = None
+                v["vc_text"] = None
+                st.dirty = True
+            return
+    else:
+        r = tg("sendMessage", text=text, parse_mode="HTML", disable_web_page_preview="true", **place(v))
+        if not r.get("ok"):
+            log(f"проверка VIN лота №{v['n']}: {r.get('description')}")
+            return
+        v["vc_msg"] = r["result"]["message_id"]
+        v.setdefault("msgs", []).append(v["vc_msg"])
+    v["vc_text"] = text
+    st.dirty = True
+
+
 def send_files(st, v, files, img_dir):
     """Файлы лота с площадки (например, «Фото ТС.pdf»): альбомом документов в тему."""
     items = [f for f in files if re.fullmatch(r"[A-Za-z0-9_-]+\.bin", str(f.get("file"))) and (img_dir / f["file"]).is_file()][:8]
@@ -973,6 +1012,17 @@ def check(st, live, img_dir):
                     update_market(st, v, info["market"], sched, now)
                 except (TypeError, ValueError, KeyError, AttributeError) as e:
                     log(f"рынок лота №{v['n']}: неверные данные ({type(e).__name__})")
+        vc = info.get("vincheck")
+        if not vc and v.get("vin") and not v.get("vc_msg"):
+            # лот добавлен после утреннего прогона iMac — проверяем сразу отсюда (один раз за запуск)
+            if v["vin"] not in VC_DIRECT:
+                VC_DIRECT[v["vin"]] = vin_check.check(v["vin"])
+            vc = VC_DIRECT[v["vin"]]
+        if vc:
+            try:
+                update_vincheck(st, lid, v, vc)
+            except (TypeError, ValueError, KeyError, AttributeError, IndexError) as e:
+                log(f"проверка VIN лота №{v['n']}: неверные данные ({type(e).__name__})")
         if info.get("photos") and not v.get("photos_done"):
             send_photos(st, v, info["photos"], photos_dir)
         elif info.get("photos_total") == 0 and not v.get("photos_done"):

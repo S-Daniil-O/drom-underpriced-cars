@@ -44,7 +44,8 @@ def self_update():
     try:
         subprocess.run(["git", "-C", CODE_REPO, "pull", "-q", "--ff-only", "origin", "main"],
                        check=True, capture_output=True, text=True, timeout=120)
-        shutil.copy2(os.path.join(CODE_REPO, "torgi", "torgi_monitor.py"), os.path.join(WORK, "torgi_monitor.py"))
+        for name in ("torgi_monitor.py", "vin_check.py"):      # vin_check.py — проверка VIN для «Моих лотов»
+            shutil.copy2(os.path.join(CODE_REPO, "torgi", name), os.path.join(WORK, name))
         new_run = os.path.join(CODE_REPO, "home", "torgi_run.py")
         me = os.path.join(HERE, "torgi_run.py")
         changed = open(new_run, "rb").read() != open(me, "rb").read()

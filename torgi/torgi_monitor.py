@@ -1365,6 +1365,21 @@ def fav_fetch(lid, v, img_dir, market=True, files=False):
     return out
 
 
+def fav_vincheck(vin):
+    """Проверка VIN без капчи (лизинг, прошлые торги, расшифровка) — torgi/vin_check.py рядом со скриптом."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import vin_check
+    except ImportError:
+        log("«Мои лоты»: vin_check.py не найден — проверка VIN пропущена")
+        return None
+    try:
+        return vin_check.check(vin)
+    except Exception as e:  # noqa: BLE001 — проверка VIN не должна ронять сбор
+        log(f"«Мои лоты»: проверка VIN {vin} не удалась ({e})")
+        return None
+
+
 def fav_lots(favs_path, out_path):
     """График, заявки, название и фото по лотам из «Моих лотов» (ветка state: torgi_fav/favs.json).
     Нужно прежде всего для МЭТС: она не открывается с серверов GitHub. ЦДТ и ТоргГрупп бот
@@ -1383,9 +1398,15 @@ def fav_lots(favs_path, out_path):
             continue
         if d:
             out[lid] = d
+        vin = (d or {}).get("vin") or v.get("vin")
+        if vin:
+            vc = fav_vincheck(vin)
+            if vc:
+                out.setdefault(lid, {})["vincheck"] = vc
     Path(out_path).parent.mkdir(parents=True, exist_ok=True)
     Path(out_path).write_text(json.dumps({"created": time.strftime("%Y-%m-%dT%H:%M"), "lots": out}, ensure_ascii=False))
-    log(f"«Мои лоты»: обновлено {len(out)} из {len(favs)}, фото: {sum(len(x.get('photos') or []) for x in out.values())}")
+    log(f"«Мои лоты»: обновлено {len(out)} из {len(favs)}, фото: {sum(len(x.get('photos') or []) for x in out.values())}, "
+        f"проверено по VIN: {sum(1 for x in out.values() if x.get('vincheck'))}")
 
 
 # ---------------------------------------------------------------- очередь для GitHub
