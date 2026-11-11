@@ -8033,5 +8033,20 @@
     "mileage_km": 270000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/aXQn06aK_geApXHprPJHK0Ye-Rra_3XDHJuBUUaWs7YGCy4w_pfHHZsAAmlZEN732lHPndFGNFlXFEe1/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/gentra/915359979.html": {
+    "posted_at": "2026-11-11T18:15:50.689671+00:00",
+    "message_id": 583,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Gentra",
+    "year": 2013,
+    "price": 230000,
+    "median_price": 298774.99999999994,
+    "median_sample_size": 1408,
+    "price_rating": null,
+    "mileage_km": 345000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/qw3n29ksqVKOPuadYyGdrbj68hRniZCIl3wtEnyzomcGDKYrZdqcPPqOxXC9-M1FiDinqEHq5G4hekev/gen272wb.jpg"
   }
 }
