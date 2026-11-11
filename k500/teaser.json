@@ -2350,11 +2350,11 @@
   "https://auto.drom.ru/voronezh/kia/rio/852186512.html": {
     "posted_at": "2026-11-08T21:33:27.263797+00:00",
     "message_id": 334,
-    "deleted_at": null,
+    "deleted_at": "2026-11-11T23:40:37.637155+00:00",
     "rejected": false,
     "checked_at": "2026-11-08T21:33:27.263797+00:00",
     "vk_post_id": 248,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-11T23:40:37.637155+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2104/836112817.html": {
     "posted_at": "2026-11-09T07:30:01.787569+00:00",
@@ -2832,6 +2832,24 @@
     "rejected": false,
     "checked_at": "2026-11-11T20:01:18.262322+00:00",
     "vk_post_id": 280,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/572780020.html": {
+    "posted_at": "2026-11-11T23:45:27.046016+00:00",
+    "message_id": 373,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-11T23:45:27.046016+00:00",
+    "vk_post_id": 281,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/novaya-usman/lada/2114/440169609.html": {
+    "posted_at": "2026-11-11T23:45:34.901106+00:00",
+    "message_id": 374,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-11T23:45:34.901106+00:00",
+    "vk_post_id": 282,
     "vk_deleted_at": null
   }
 }
