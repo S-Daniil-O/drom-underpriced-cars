@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T03:02:11.236050+00:00"
+"seen_at": "2026-11-11T03:13:18.817709+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-11T03:02:11.235994+00:00"
+"seen_at": "2026-11-11T03:13:18.817656+00:00"
 },
 {
 "ad_id": "autoru_1160725445-93d7c318",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T03:01:57.019875+00:00"
+"seen_at": "2026-11-11T03:13:03.450117+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T03:01:57.019863+00:00"
+"seen_at": "2026-11-11T03:13:03.450104+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T03:01:57.019831+00:00"
+"seen_at": "2026-11-11T03:13:03.450072+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-11T03:01:57.019802+00:00"
+"seen_at": "2026-11-11T03:13:03.450028+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-10T21:13:48.729096+00:00"
-},
-{
-"ad_id": "autoru_1160701456-a7504dd9",
-"source": "autoru",
-"brand": "Mitsubishi",
-"model": "Outlander",
-"year": 2004,
-"price": 490000,
-"market_price": 479000,
-"url": "https://auto.ru/cars/used/sale/mitsubishi/outlander/1160701456-a7504dd9/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1976050/8ba5e8169f1ef1680301ca236227d184/1200x900n",
-"mileage_km": 244000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-10T21:02:57.741449+00:00"
 }
 ]
