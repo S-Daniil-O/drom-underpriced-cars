@@ -2872,5 +2872,12 @@
     "posted_at": "2026-11-12T09:09:04.177783+00:00",
     "message_id": 376,
     "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/ford/fusion/243803718.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-12T16:30:58.148901+00:00"
   }
 }
