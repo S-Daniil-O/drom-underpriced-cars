@@ -8168,5 +8168,20 @@
     "mileage_km": 199000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/rjGGmmweQFikNT3ZAHIzgwiVHwHP0hmjh3SeXIzapFY78P2QeOQ86ygVzhrWTB0wkK5Fwv2wYdXXEbT8/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/zaz/chance/784676584.html": {
+    "posted_at": "2026-11-12T22:31:05.685529+00:00",
+    "message_id": 592,
+    "deleted_at": null,
+    "brand": "ЗАЗ",
+    "model": "Шанс",
+    "year": 2011,
+    "price": 77000,
+    "median_price": 305625.0,
+    "median_sample_size": 891,
+    "price_rating": null,
+    "mileage_km": 220000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/cqcm0h7dN04V2VNj3SJD2y5Uj5rCj6lDhE3iN7OZKeyoqYnwECXRuLiLm7sNJegUYi6cimZ34laEUreV/gen272wb.jpg"
   }
 }
