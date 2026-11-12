@@ -2397,51 +2397,23 @@
     "vk_post_id": 252,
     "vk_deleted_at": "2026-11-12T18:12:13.750447+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/2111/120009128.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T21:19:47.507669+00:00"
-  },
-  "https://auto.drom.ru/voronezh/mitsubishi/diamante/299563100.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T21:19:47.507669+00:00"
-  },
-  "https://auto.drom.ru/voronezh/hyundai/sonata/767956110.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T21:19:47.507669+00:00"
-  },
-  "https://auto.drom.ru/voronezh/volvo/s40/105984289.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T21:19:47.507669+00:00"
-  },
   "https://auto.drom.ru/voronezh/gaz/3102_volga/441063904.html": {
     "posted_at": "2026-11-09T21:20:02.558520+00:00",
     "message_id": 341,
-    "deleted_at": null,
+    "deleted_at": "2026-11-12T21:26:26.895711+00:00",
     "rejected": false,
     "checked_at": "2026-11-09T21:20:02.558520+00:00",
     "vk_post_id": 253,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-12T21:26:26.895711+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2115/485486208.html": {
     "posted_at": "2026-11-09T21:20:22.784539+00:00",
     "message_id": 342,
-    "deleted_at": null,
+    "deleted_at": "2026-11-12T21:26:26.895711+00:00",
     "rejected": false,
     "checked_at": "2026-11-09T21:20:22.784539+00:00",
     "vk_post_id": 254,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-12T21:26:26.895711+00:00"
   },
   "https://auto.drom.ru/voronezh/gaz/24_volga/364625799.html": {
     "posted_at": null,
@@ -2887,6 +2859,29 @@
     "rejected": false,
     "checked_at": "2026-11-12T18:31:28.704894+00:00",
     "vk_post_id": 284,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/661676868.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-12T21:31:02.370646+00:00"
+  },
+  "https://auto.drom.ru/voronezh/subaru/outback/698063549.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-12T21:31:02.370646+00:00"
+  },
+  "https://auto.drom.ru/voronezh/mazda/familia/358556854.html": {
+    "posted_at": "2026-11-12T21:31:10.450463+00:00",
+    "message_id": 379,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-12T21:31:10.450463+00:00",
+    "vk_post_id": 285,
     "vk_deleted_at": null
   }
 }
