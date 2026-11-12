@@ -2026,10 +2026,26 @@
    "topic": 1716,
    "title": "Nissan Tiida, 2011 · №57",
    "tried": true
+  },
+  "cdt-391638": {
+   "n": 58,
+   "url": "https://torgi.cdtrf.ru/trades/391638",
+   "name": "Chevrolet Captiva, 2012",
+   "vin": "XUUCG264JB0002457",
+   "target": 468000,
+   "card": 1720,
+   "added": "2026-11-12T11:13",
+   "end": null,
+   "sent": {},
+   "btn": true,
+   "head": 1721,
+   "msgs": [],
+   "topic": 1719,
+   "title": "Chevrolet Captiva, 2012 · №58"
   }
  },
- "offset": 177674158,
- "seq": 57,
+ "offset": 177674159,
+ "seq": 58,
  "forum": -1004498088083,
  "owners": [
   1188456401
