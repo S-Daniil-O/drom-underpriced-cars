@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T00:54:35.948798+00:00"
+"seen_at": "2026-11-12T01:05:49.469277+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T00:54:35.948756+00:00"
+"seen_at": "2026-11-12T01:05:49.469235+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T00:54:15.934354+00:00"
+"seen_at": "2026-11-12T01:05:33.921484+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T00:54:15.934342+00:00"
+"seen_at": "2026-11-12T01:05:33.921473+00:00"
+},
+{
+"ad_id": "autoru_1160745336-c8c14462",
+"source": "autoru",
+"brand": "Mitsubishi",
+"model": "Lancer",
+"year": 2012,
+"price": 115000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/mitsubishi/lancer/1160741570-8315ca9f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17786981/db8175aebb20d48f92cc5e3e87ee9599/1200x900n",
+"mileage_km": 290000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ольховатка",
+"seen_at": "2026-11-12T01:05:33.921464+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -77,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-12T00:54:15.934331+00:00"
+"seen_at": "2026-11-12T01:05:33.921435+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -93,23 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T00:54:15.934322+00:00"
-},
-{
-"ad_id": "autoru_1160745336-c8c14462",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 115000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
-"mileage_km": 290000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ольховатка",
-"seen_at": "2026-11-12T00:54:15.934302+00:00"
+"seen_at": "2026-11-12T01:05:33.921424+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -118,14 +118,14 @@
 "model": "Almera",
 "year": 2006,
 "price": 288000,
-"market_price": 221000,
+"market_price": 252500,
 "url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
 "mileage_km": 233000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-12T00:54:15.934254+00:00"
+"seen_at": "2026-11-12T01:05:33.921383+00:00"
 },
 {
 "ad_id": "autoru_1127782717-f90eb8ed",
