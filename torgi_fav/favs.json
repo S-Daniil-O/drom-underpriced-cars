@@ -2030,7 +2030,9 @@
    "msgs": [],
    "topic": 1716,
    "title": "Nissan Tiida, 2011 · №57",
-   "tried": true
+   "tried": true,
+   "requests": 0,
+   "req_max": 0
   },
   "cdt-391638": {
    "n": 58,
@@ -2096,5 +2098,5 @@
   "-1003901499895": "ТОРГИ НИС"
  },
  "audit_day": "2026-11-12",
- "req_cursor": 5799
+ "req_cursor": 5828
 }
