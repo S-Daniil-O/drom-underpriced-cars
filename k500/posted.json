@@ -8123,5 +8123,20 @@
     "mileage_km": 233000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/691405729.html": {
+    "posted_at": "2026-11-12T13:45:23.157097+00:00",
+    "message_id": 589,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2010,
+    "price": 345000,
+    "median_price": 432000.0,
+    "median_sample_size": 288,
+    "price_rating": null,
+    "mileage_km": 506000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HcW-monjXrouIZCZv7LjSlGYvh8Xd_GLx4wbvpmRFp-PBUVhIDob0cGEbupZzQ7B-BBiC4cgz3ABAVIe/gen272wb.jpg"
   }
 }
