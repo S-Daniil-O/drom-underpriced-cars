@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T14:32:53.342540+00:00"
+"seen_at": "2026-11-12T14:44:09.382900+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T14:32:53.342512+00:00"
+"seen_at": "2026-11-12T14:44:09.382872+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T14:32:53.342499+00:00"
+"seen_at": "2026-11-12T14:44:09.382859+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-12T14:32:53.342480+00:00"
+"seen_at": "2026-11-12T14:44:09.382842+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T14:32:53.342463+00:00"
+"seen_at": "2026-11-12T14:44:09.382828+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -93,7 +93,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-12T14:32:53.342412+00:00"
+"seen_at": "2026-11-12T14:44:09.382777+00:00"
+},
+{
+"ad_id": "autoru_1160763380-a88f4ff1",
+"source": "autoru",
+"brand": "Hyundai",
+"model": "Starex",
+"year": 2014,
+"price": 299999,
+"market_price": 288500,
+"url": "https://auto.ru/cars/used/sale/hyundai/starex/1134290266-adceb039/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2172104/b4a2b407f90c60eb30f1e974743d31f4/1200x900n",
+"mileage_km": 176000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-12T14:43:50.525837+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -126,22 +142,6 @@
 "seller_type": "PRIVATE",
 "city": "Острогожск",
 "seen_at": "2026-11-12T14:32:34.445386+00:00"
-},
-{
-"ad_id": "autoru_1160763380-a88f4ff1",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2014,
-"price": 299999,
-"market_price": 288500,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160763380-a88f4ff1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2172104/b4a2b407f90c60eb30f1e974743d31f4/1200x900n",
-"mileage_km": 176000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-12T14:32:34.445352+00:00"
 },
 {
 "ad_id": "autoru_1160727116-cd41926a",
