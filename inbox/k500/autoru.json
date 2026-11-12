@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T07:38:37.929654+00:00"
+"seen_at": "2026-11-12T07:49:52.624358+00:00"
 },
 {
 "ad_id": "autoru_1160735795-e7b7cba6",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T07:38:37.929618+00:00"
+"seen_at": "2026-11-12T07:49:52.624319+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T07:38:37.929587+00:00"
+"seen_at": "2026-11-12T07:49:52.624289+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,23 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T07:38:37.929551+00:00"
-},
-{
-"ad_id": "autoru_1160753728-5e7b92d2",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera",
-"year": 2006,
-"price": 288000,
-"market_price": 252500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
-"mileage_km": 233000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Поворино",
-"seen_at": "2026-11-12T07:38:24.560748+00:00"
+"seen_at": "2026-11-12T07:49:52.624250+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -87,13 +71,13 @@
 "year": 2017,
 "price": 487000,
 "market_price": 409500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160753806-82a95811/",
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160742933-ad330b32/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/15496515/4114b0e1e09026fb5c3158928160bcf4/1200x900n",
 "mileage_km": 87000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-12T07:38:24.560738+00:00"
+"seen_at": "2026-11-12T07:49:33.732529+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -109,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T07:38:24.560725+00:00"
+"seen_at": "2026-11-12T07:49:33.732518+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -125,6 +109,22 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-12T07:38:24.560683+00:00"
+"seen_at": "2026-11-12T07:49:33.732498+00:00"
+},
+{
+"ad_id": "autoru_1160753728-5e7b92d2",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera",
+"year": 2006,
+"price": 288000,
+"market_price": 252500,
+"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
+"mileage_km": 233000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Поворино",
+"seen_at": "2026-11-12T07:49:33.732449+00:00"
 }
 ]
