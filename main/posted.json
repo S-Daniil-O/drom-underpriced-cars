@@ -3828,5 +3828,20 @@
     "mileage_km": 257000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/en7mVDi-e2qfqtPvxkYN5NXfdZMOsAMIEiwhgSOgSqFbx0_S52MzuJU6mciAFueJh1LVC7gzh3pMHmIm/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/solaris/320901968.html": {
+    "posted_at": "2026-11-12T07:43:02.701970+00:00",
+    "message_id": 281,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Solaris",
+    "year": 2017,
+    "price": 585000,
+    "median_price": 958437.5,
+    "median_sample_size": 2026,
+    "price_rating": "отличная цена",
+    "mileage_km": 298000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/6xPEpQMEAeoVUjf88Ir_v0OCx8yfJPAdo1673f7Ak2vaTAZKOT90cHsUCV3VaWyIIZ9C9Pof4mlmn3Ch/gen272wb.jpg"
   }
 }
