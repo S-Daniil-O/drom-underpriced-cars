@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160727116-cd41926a",
-"source": "autoru",
-"brand": "Peugeot",
-"model": "307",
-"year": 2005,
-"price": 360000,
-"market_price": 221000,
-"url": "https://auto.ru/cars/used/sale/peugeot/307/1160727116-cd41926a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2169110/0842cd5f7adab6619ac17ee807212ad3/1200x900n",
-"mileage_km": 167469,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-12T06:08:43.987274+00:00"
-},
-{
 "ad_id": "autoru_1160735795-e7b7cba6",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T06:08:43.987233+00:00"
+"seen_at": "2026-11-12T06:20:04.480890+00:00"
+},
+{
+"ad_id": "autoru_1160727116-cd41926a",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "307",
+"year": 2005,
+"price": 360000,
+"market_price": 221000,
+"url": "https://auto.ru/cars/used/sale/peugeot/307/1160727116-cd41926a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2169110/0842cd5f7adab6619ac17ee807212ad3/1200x900n",
+"mileage_km": 167469,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-12T06:20:04.480866+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T06:08:43.987181+00:00"
+"seen_at": "2026-11-12T06:20:04.480825+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T06:08:23.129020+00:00"
+"seen_at": "2026-11-12T06:20:04.480785+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-12T06:08:23.129007+00:00"
+"seen_at": "2026-11-12T06:19:47.043124+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T06:08:23.128996+00:00"
+"seen_at": "2026-11-12T06:19:47.043104+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-12T06:08:23.128975+00:00"
+"seen_at": "2026-11-12T06:19:47.043081+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -125,6 +125,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-12T06:08:23.128931+00:00"
+"seen_at": "2026-11-12T06:19:47.043030+00:00"
 }
 ]
