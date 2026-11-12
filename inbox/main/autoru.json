@@ -1,5 +1,37 @@
 [
 {
+"ad_id": "autoru_1160764187-f770feda",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2024,
+"price": 1450000,
+"market_price": 1178500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160744777-d0f7f7db/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16467568/33c8913e9bfaac4113ca8142f7ecafe5/1200x900n",
+"mileage_km": 33770,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-12T18:39:31.466980+00:00"
+},
+{
+"ad_id": "autoru_1160491303-cfcba7ab",
+"source": "autoru",
+"brand": "Kia",
+"model": "Rio",
+"year": 2020,
+"price": 1290000,
+"market_price": 1036000,
+"url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/nXXVzKxOmWR1BZfimayl9cLypE0Yq4I6xRUKiO9g16-n9QTXBDUrN_tGaQSZ7rEZF6tUBBk6CiJRRup-BcYcIVTA1lxZ99PXAezjSYPcK8xl77kahJIP73AClKuKqKQwfv4SiZm2uSKhkF4fUEsYkKEYjSMztM8cQqnvChEBGEkwbaE/1200x900n",
+"mileage_km": 215000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-12T18:39:31.466959+00:00"
+},
+{
 "ad_id": "autoru_1160749524-ba7f469f",
 "source": "autoru",
 "brand": "Hyundai",
@@ -13,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983952+00:00"
+"seen_at": "2026-11-12T18:39:31.466941+00:00"
 },
 {
 "ad_id": "autoru_1160752352-5d996610",
@@ -29,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983940+00:00"
+"seen_at": "2026-11-12T18:39:31.466928+00:00"
 },
 {
 "ad_id": "autoru_1160753406-1f91d7ab",
@@ -40,12 +72,12 @@
 "price": 690000,
 "market_price": 401000,
 "url": "https://auto.ru/cars/used/sale/volkswagen/caddy/1160753406-1f91d7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20656151/dp8rrOPy1jBEG8JTn3Sd5lZe8mUpYQnX3IQOT5JCVcxpNQfh8Cu4h5wUcK7R7VVUt27V-m3zWcL6DvPx74wQLGDYbgwkPuRxJ4322vaQxsssuLFoI92AdQMJpm7ujB_orpDzzx5SgQnEA0c7QMncPFaX3XmICFiwtcrA_emXJGKRgQw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20656151/0VE1RZM3TlYZ3vmrH8lfCNyzWnYd7VNyNPD-NMekobBWUmo8RMNzHuNw0TU8AGvlUrU_eHFvHSQi9uqkzb3J8lW2gzxrh_vT0gK5Lf9mUjNeW0SMHvDuRkyybdax1dMgUwtwmbMs_1LbdhEc33AFuYJ3gIKpiD1OwvJTqeKhtJeCxdA/1200x900n",
 "mileage_km": 372000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-12T18:28:20.983929+00:00"
+"seen_at": "2026-11-12T18:39:31.466915+00:00"
 },
 {
 "ad_id": "autoru_1160755418-41135841",
@@ -61,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983912+00:00"
+"seen_at": "2026-11-12T18:39:31.466899+00:00"
 },
 {
 "ad_id": "autoru_1160324237-fade6d4c",
@@ -77,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983900+00:00"
+"seen_at": "2026-11-12T18:39:31.466884+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -93,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983877+00:00"
+"seen_at": "2026-11-12T18:39:31.466851+00:00"
 },
 {
 "ad_id": "autoru_1160763591-73763761",
@@ -109,23 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бабяково",
-"seen_at": "2026-11-12T18:28:20.983864+00:00"
-},
-{
-"ad_id": "autoru_1160491303-cfcba7ab",
-"source": "autoru",
-"brand": "Kia",
-"model": "Rio",
-"year": 2020,
-"price": 1290000,
-"market_price": 1036000,
-"url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/MOYaTZkmYux_nD8JB90cNBClw_b6pKSWhcOtDHzfwiofmPNVaKhVW9hCpStwPMxfpSz-ixnq78ZsoIQAxPJJBoMfGudbbfnV0bYdMiNJZLnhkBlofnqDVE4ewluYRyPaNxEkyLNtlstqDKfsPYqutkPvOOD0yJmMj4DEJGVVkwsq8II/1200x900n",
-"mileage_km": 215000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-12T18:28:20.983834+00:00"
+"seen_at": "2026-11-12T18:39:31.466788+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
