@@ -2442,51 +2442,23 @@
     "vk_post_id": 257,
     "vk_deleted_at": "2026-11-12T21:56:27.311254+00:00"
   },
-  "https://auto.drom.ru/voronezh/izh/2717/459521216.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T22:03:54.732540+00:00"
-  },
-  "https://auto.drom.ru/voronezh/toyota/picnic/272963667.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T22:03:54.732540+00:00"
-  },
-  "https://auto.drom.ru/voronezh/lada/2107/119880693.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T22:03:54.732540+00:00"
-  },
-  "https://auto.drom.ru/voronezh/mitsubishi/carisma/271449004.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-09T22:03:54.732540+00:00"
-  },
   "https://auto.drom.ru/voronezh/mitsubishi/galant/361036298.html": {
     "posted_at": "2026-11-09T22:04:48.127971+00:00",
     "message_id": 346,
-    "deleted_at": null,
+    "deleted_at": "2026-11-12T22:11:42.627060+00:00",
     "rejected": false,
     "checked_at": "2026-11-09T22:04:48.127971+00:00",
     "vk_post_id": 258,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-12T22:11:42.627060+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/21099/291005070.html": {
     "posted_at": "2026-11-09T22:04:56.194550+00:00",
     "message_id": 347,
-    "deleted_at": null,
+    "deleted_at": "2026-11-12T22:11:42.627060+00:00",
     "rejected": false,
     "checked_at": "2026-11-09T22:04:56.194550+00:00",
     "vk_post_id": 259,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-12T22:11:42.627060+00:00"
   },
   "https://auto.drom.ru/voronezh/toyota/carina/938118426.html": {
     "posted_at": null,
