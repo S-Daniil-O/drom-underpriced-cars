@@ -3903,5 +3903,20 @@
     "mileage_km": 12000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17712067/320b6b975a91dd0b9ce1b95f08615e12/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/nissan/fuga/352227187.html": {
+    "posted_at": "2026-11-13T21:22:56.141169+00:00",
+    "message_id": 286,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Fuga",
+    "year": 2005,
+    "price": 635000,
+    "median_price": 1066050.0,
+    "median_sample_size": 2190,
+    "price_rating": "отличная цена",
+    "mileage_km": 175000,
+    "owners_display": "1",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/AKRO3yrHX2VNoHGZC_U_qPPs6HTrt4rG3QNoOK9Z0KwJWAh5HpZqrDZLPNHlvqbuJbADdYifGr9SroFa/gen272wb.jpg"
   }
 }
