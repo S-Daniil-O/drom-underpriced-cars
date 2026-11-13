@@ -1,35 +1,19 @@
 [
 {
-"ad_id": "autoru_1160745336-c8c14462",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 115000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
-"mileage_km": 290000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ольховатка",
-"seen_at": "2026-11-13T17:49:45.689969+00:00"
-},
-{
 "ad_id": "autoru_1160753728-5e7b92d2",
 "source": "autoru",
-"brand": "Nissan",
-"model": "Almera",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
 "year": 2006,
 "price": 288000,
 "market_price": 252500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160745031-7ea81a3d/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
 "mileage_km": 233000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-13T17:49:45.689935+00:00"
+"seen_at": "2026-11-13T18:00:57.451038+00:00"
 },
 {
 "ad_id": "autoru_1160762299-97e1d466",
@@ -45,7 +29,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-13T17:49:45.689903+00:00"
+"seen_at": "2026-11-13T18:00:57.451003+00:00"
+},
+{
+"ad_id": "autoru_1160745336-c8c14462",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 115000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
+"mileage_km": 290000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ольховатка",
+"seen_at": "2026-11-13T18:00:57.450984+00:00"
 },
 {
 "ad_id": "autoru_1160763380-a88f4ff1",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T17:49:45.689865+00:00"
+"seen_at": "2026-11-13T18:00:57.450922+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T17:49:31.354738+00:00"
+"seen_at": "2026-11-13T18:00:44.181216+00:00"
 },
 {
 "ad_id": "autoru_1160784084-d11f9038",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-13T17:49:31.354701+00:00"
+"seen_at": "2026-11-13T18:00:44.181177+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
