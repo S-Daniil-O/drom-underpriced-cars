@@ -5,7 +5,7 @@
 "brand": "Renault",
 "model": "Logan",
 "year": 2006,
-"price": 165000,
+"price": 160000,
 "market_price": 228500,
 "url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T14:16:36.274467+00:00"
+"seen_at": "2026-11-13T14:27:45.378579+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-13T14:16:36.274451+00:00"
+"seen_at": "2026-11-13T14:27:45.378563+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T14:16:36.274438+00:00"
+"seen_at": "2026-11-13T14:27:45.378551+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-13T14:16:36.274411+00:00"
+"seen_at": "2026-11-13T14:27:45.378527+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-13T14:16:36.274355+00:00"
+"seen_at": "2026-11-13T14:27:45.378471+00:00"
 },
 {
 "ad_id": "autoru_1160762299-97e1d466",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-13T14:16:22.531462+00:00"
+"seen_at": "2026-11-13T14:27:30.951737+00:00"
 },
 {
 "ad_id": "autoru_1160763380-a88f4ff1",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T14:16:22.531429+00:00"
+"seen_at": "2026-11-13T14:27:30.951703+00:00"
 },
 {
 "ad_id": "autoru_1160738467-d2160a73",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-13T10:43:26.560124+00:00"
-},
-{
-"ad_id": "autoru_1160775754-a2b4eca6",
-"source": "autoru",
-"brand": "Opel",
-"model": "Zafira",
-"year": 2008,
-"price": 360000,
-"market_price": 336500,
-"url": "https://auto.ru/cars/used/sale/opel/zafira/1160775754-a2b4eca6/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2127079/1fa0ffb074d0f1fe4d8587bcadb1871f/1200x900n",
-"mileage_km": 378000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T08:17:25.204593+00:00"
 }
 ]
