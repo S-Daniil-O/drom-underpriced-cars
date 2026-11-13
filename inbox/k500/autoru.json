@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-13T20:27:01.065151+00:00"
+"seen_at": "2026-11-13T20:38:10.933940+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-13T20:27:01.065118+00:00"
+"seen_at": "2026-11-13T20:38:10.933905+00:00"
 },
 {
 "ad_id": "autoru_1160762299-97e1d466",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-13T20:27:01.065085+00:00"
+"seen_at": "2026-11-13T20:38:10.933873+00:00"
 },
 {
 "ad_id": "autoru_1160763380-a88f4ff1",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T20:27:01.065048+00:00"
+"seen_at": "2026-11-13T20:38:10.933834+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T20:26:44.867672+00:00"
+"seen_at": "2026-11-13T20:37:57.013568+00:00"
 },
 {
 "ad_id": "autoru_1160784084-d11f9038",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-13T20:26:44.867633+00:00"
+"seen_at": "2026-11-13T20:37:57.013530+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -142,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Лиски",
 "seen_at": "2026-11-13T15:23:28.773873+00:00"
-},
-{
-"ad_id": "autoru_1160315473-914cc928",
-"source": "autoru",
-"brand": "Renault",
-"model": "Logan",
-"year": 2006,
-"price": 160000,
-"market_price": 228500,
-"url": "https://auto.ru/cars/used/sale/renault/logan/1160315473-914cc928/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/07a22ada851af5b23f419097117f6563/1200x900n",
-"mileage_km": 190000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T14:27:45.378579+00:00"
 }
 ]
