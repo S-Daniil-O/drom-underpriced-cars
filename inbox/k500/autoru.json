@@ -13,7 +13,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-13T20:04:41.649880+00:00"
+"seen_at": "2026-11-13T20:15:55.393058+00:00"
+},
+{
+"ad_id": "autoru_1160778753-33c57919",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2011,
+"price": 365000,
+"market_price": 218500,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160778753-33c57919/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17768325/57a92360477af29868f81226fc1548b6/1200x900n",
+"mileage_km": 179605,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-13T20:15:39.628536+00:00"
+},
+{
+"ad_id": "autoru_1160784084-d11f9038",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2005,
+"price": 160000,
+"market_price": 77000,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160784084-d11f9038/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
+"mileage_km": 267000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-13T20:15:39.628499+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -62,38 +94,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-13T20:04:41.649775+00:00"
-},
-{
-"ad_id": "autoru_1160778753-33c57919",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2011,
-"price": 365000,
-"market_price": 218500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160778753-33c57919/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17768325/57a92360477af29868f81226fc1548b6/1200x900n",
-"mileage_km": 179605,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T20:04:24.473892+00:00"
-},
-{
-"ad_id": "autoru_1160784084-d11f9038",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
-"year": 2005,
-"price": 160000,
-"market_price": 77000,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160784084-d11f9038/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
-"mileage_km": 267000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-13T20:04:24.473855+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -158,21 +158,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-13T14:27:45.378579+00:00"
-},
-{
-"ad_id": "autoru_1160738467-d2160a73",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2112",
-"year": 2007,
-"price": 95000,
-"market_price": 110500,
-"url": "https://auto.ru/cars/used/sale/vaz/2112/1160738467-d2160a73/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17973312/990602c5183d88f2b9c97b753a62af1a/1200x900n",
-"mileage_km": 199999,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T14:05:27.808118+00:00"
 }
 ]
