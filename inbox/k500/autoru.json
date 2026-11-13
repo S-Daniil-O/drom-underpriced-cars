@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T12:24:35.229015+00:00"
+"seen_at": "2026-11-13T12:35:46.498461+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -29,55 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T12:24:35.229002+00:00"
-},
-{
-"ad_id": "autoru_1160742933-ad330b32",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2017,
-"price": 487000,
-"market_price": 409500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160742933-ad330b32/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/15496515/4114b0e1e09026fb5c3158928160bcf4/1200x900n",
-"mileage_km": 87000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Богучар",
-"seen_at": "2026-11-13T12:24:35.228984+00:00"
-},
-{
-"ad_id": "autoru_1160743044-5047406c",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2017,
-"price": 400000,
-"market_price": 394500,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160743044-5047406c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17768325/0f015cb4c305dd405471d5f633288612/1200x900n",
-"mileage_km": 160000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T12:24:35.228971+00:00"
-},
-{
-"ad_id": "autoru_1160745336-c8c14462",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 115000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
-"mileage_km": 290000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Ольховатка",
-"seen_at": "2026-11-13T12:24:35.228943+00:00"
+"seen_at": "2026-11-13T12:35:46.498448+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -93,7 +45,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-13T12:24:35.228886+00:00"
+"seen_at": "2026-11-13T12:35:46.498416+00:00"
+},
+{
+"ad_id": "autoru_1160742933-ad330b32",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2017,
+"price": 487000,
+"market_price": 409500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160742933-ad330b32/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/15496515/4114b0e1e09026fb5c3158928160bcf4/1200x900n",
+"mileage_km": 87000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Богучар",
+"seen_at": "2026-11-13T12:35:46.498398+00:00"
+},
+{
+"ad_id": "autoru_1160743044-5047406c",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2017,
+"price": 400000,
+"market_price": 394500,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160743044-5047406c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17768325/0f015cb4c305dd405471d5f633288612/1200x900n",
+"mileage_km": 160000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-13T12:35:46.498384+00:00"
+},
+{
+"ad_id": "autoru_1160745336-c8c14462",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 115000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160745336-c8c14462/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2164965/8a360f1357279369b336a533144dc1c9/1200x900n",
+"mileage_km": 290000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Ольховатка",
+"seen_at": "2026-11-13T12:35:46.498334+00:00"
 },
 {
 "ad_id": "autoru_1160762299-97e1d466",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-13T12:24:15.125326+00:00"
+"seen_at": "2026-11-13T12:35:26.692762+00:00"
 },
 {
 "ad_id": "autoru_1160763380-a88f4ff1",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T12:24:15.125292+00:00"
+"seen_at": "2026-11-13T12:35:26.692726+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
