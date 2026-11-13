@@ -40,7 +40,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests
+      - run: pip install requests reportlab==4.2.5 pillow
+      - run: test -f /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf || (sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core)
       - name: bot + уведомления
         run: python torgi/favorites.py _state/torgi_fav/favs.json _inbox/inbox/torgi_fav/lots.json 330
       - name: следующий запуск

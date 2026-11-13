@@ -38,6 +38,7 @@ import requests
 
 import torgi_monitor as tm    # разбор площадок (ЦДТ и ТоргГрупп открываются с GitHub, МЭТС — нет)
 import vin_check              # текст сообщения «Проверка по VIN» (сама проверка — на iMac)
+import apipoint_pdf           # PDF-отчёт по данным apipoint
 import apipoint               # платная проверка по VIN (apipoint.ru): пробег, ДТП, владельцы, залог, объявления
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
@@ -231,7 +232,7 @@ def kb(*rows):
 
 
 def kb_main(n):
-    return kb([("🔎 Проверить по VIN (~11 ₽)", f"vin:{n}")], [("🗑 Удалить лот", f"del:{n}")])
+    return kb([("🔎 Отчёт по VIN, PDF (~11 ₽)", f"vin:{n}")], [("🗑 Удалить лот", f"del:{n}")])
 
 
 def kb_vin(n, again=False):
@@ -873,7 +874,21 @@ def apipoint_one(st, v):
     km = f.get("mileage") or (f["history"][-1][1] if f["history"] else None)
     if km and not isinstance(v.get("mileage"), int):
         v["mileage"] = km
-    r = tg("sendMessage", text=apipoint.text(v, f), parse_mode="HTML", disable_web_page_preview="true", **place(v))
+    text = apipoint.text(v, f)
+    pdf = None
+    try:
+        pdf = apipoint_pdf.build(v, f, v.get("url"))
+    except Exception as e:  # noqa: BLE001 — без PDF отправим текстом
+        log(f"apipoint лот №{v['n']}: PDF не собрался ({type(e).__name__}: {str(e)[:100]})")
+    r = {}
+    if pdf:
+        cap = text if len(text) <= 1024 else text[:text.rfind("\n", 0, 1000)] + "\n…подробно — в файле"
+        r = tg("sendDocument", files={"document": (f"otchet_{v.get('vin')}.pdf", pdf, "application/pdf")},
+               caption=cap, parse_mode="HTML", **place(v))
+        if not r.get("ok"):
+            log(f"apipoint лот №{v['n']}: PDF не отправился: {r.get('description')}")
+    if not r.get("ok"):
+        r = tg("sendMessage", text=text, parse_mode="HTML", disable_web_page_preview="true", **place(v))
     if r.get("ok"):
         v.setdefault("msgs", []).append(r["result"]["message_id"])
     else:

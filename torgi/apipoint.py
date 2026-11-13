@@ -83,7 +83,10 @@ def facts(d):
             hist.append((dt, km, "объявление"))
         offers.append({"date": dt, "price": _num(o.get("Price")), "km": km, "city": str(o.get("City") or "")[:40],
                        "url": o["Url"] if isinstance(o.get("Url"), str) and OFFER.fullmatch(o["Url"]) else None,
-                       "sold": o.get("Sold") == 1})
+                       "sold": o.get("Sold") == 1,
+                       "images": [u for u in (x.strip() for x in str(o.get("Images") or "").split(",")) if PHOTO.fullmatch(u)][:4],
+                       "descr": str(o.get("Descr") or "")[:300], "volume": str(o.get("Volume") or "")[:60],
+                       "hp": _num(o.get("Horsepower"))})
     hist = sorted(set(hist))
     f["history"] = hist
     # скрутка: позже по дате пробег меньше, чем был раньше (с запасом 3 000 км на ошибки ввода)
@@ -99,7 +102,18 @@ def facts(d):
             g = json.loads(g)
         except ValueError:
             g = {}
-    per = ((g or {}).get("RequestResult") or {}).get("periods") or []
+    rr = (g or {}).get("RequestResult") or {}
+    per = rr.get("periods") or []
+    veh = {}
+    for key, label in (("vehicle_brandmodel", "Марка, модель"), ("vehicle_releaseyear", "Год выпуска"),
+                       ("vehicle_type_name", "Тип ТС"), ("vehicle_bodycolor", "Цвет"),
+                       ("vehicle_enginepower", "Мощность, л.с."), ("vehicle_enginepowerkw", "Мощность, кВт"),
+                       ("vehicle_enclosedvolume", "Объём двигателя, см³"), ("vehicle_eco_class", "Экологический класс"),
+                       ("vehicle_body_number", "Номер кузова"), ("reestr_status", "Статус регистрации")):
+        x = str(rr.get(key) or "").strip()
+        if x:
+            veh[label] = x[:60]
+    f["vehicle"] = veh
     f["owners"] = [(str(p.get("ownerType") or "")[:30], str(p.get("startDate") or ""), str(p.get("endDate") or ""))
                    for p in per if isinstance(p, dict)]
     z = _src(d, "zalog").get("result") or {}
