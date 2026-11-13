@@ -32,16 +32,45 @@ def _fonts():
     return False
 
 
+DEADLINE = [0.0]       # общий срок на загрузку всех картинок отчёта (time.monotonic)
+
+
 def _img(url, w, h):
-    """Картинка по ссылке (только уже проверенные адреса из apipoint.facts) → Image или None."""
+    """Картинка по проверенной ссылке → Image или None. Перенаправления проверяются тем же списком сайтов,
+    размер ограничен до распаковки, на все картинки отчёта — общий предел времени."""
+    import time
+    from urllib.parse import urljoin
+    import apipoint
+    from PIL import Image as PILImage
+    if time.monotonic() > DEADLINE[0]:
+        return None
     try:
-        r = requests.get(url, timeout=30, stream=True, headers={"User-Agent": "Mozilla/5.0"})
+        for _ in range(3):                       # не больше 3 перенаправлений, каждое — по списку сайтов
+            if not apipoint.PHOTO.fullmatch(url):
+                return None
+            r = requests.get(url, timeout=(5, 10), stream=True, allow_redirects=False,
+                             headers={"User-Agent": "Mozilla/5.0", "Accept-Encoding": "identity"})
+            if r.is_redirect:
+                url = urljoin(url, r.headers.get("location", ""))
+                r.close()
+                continue
+            break
+        else:
+            return None
         if not r.ok or not r.headers.get("content-type", "").startswith("image"):
             return None
-        data = r.raw.read(MAX_IMG + 1, decode_content=True)
-        if len(data) > MAX_IMG:
+        if int(r.headers.get("content-length") or 0) > MAX_IMG:
             return None
-        im = Image(io.BytesIO(data))
+        buf = bytearray()
+        for chunk in r.iter_content(64 * 1024, decode_unicode=False):
+            buf += chunk
+            if len(buf) > MAX_IMG or time.monotonic() > DEADLINE[0]:
+                return None
+        PILImage.MAX_IMAGE_PIXELS = 40_000_000
+        with PILImage.open(io.BytesIO(bytes(buf))) as pim:
+            if pim.width * pim.height > 40_000_000:
+                return None
+        im = Image(io.BytesIO(bytes(buf)))
         k = min(w / im.imageWidth, h / im.imageHeight)
         im.drawWidth, im.drawHeight = im.imageWidth * k, im.imageHeight * k
         return im
@@ -57,6 +86,8 @@ def build(v, f, lot_url=None):
     """bytes PDF или None (нет шрифта с кириллицей)."""
     if not _fonts():
         return None
+    import time
+    DEADLINE[0] = time.monotonic() + 60       # картинки — не дольше минуты на весь отчёт
     st = {
         "h1": ParagraphStyle("h1", fontName="B", fontSize=17, leading=21, textColor=INK),
         "sub": ParagraphStyle("sub", fontName="R", fontSize=9.5, leading=13, textColor=GREY),
