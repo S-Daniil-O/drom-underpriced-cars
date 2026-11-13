@@ -1,0 +1,16 @@
+# Разовая проверка: пускает ли apipoint.ru серверы GitHub и какие источники доступны (бесплатный метод balance).
+name: apipoint-probe
+on: workflow_dispatch
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - env:
+          TOKEN: ${{ secrets.APIPOINT_TOKEN }}
+        run: |
+          code=$(curl -s -m 60 -o r.json -w '%{http_code}' -X POST https://apipoint.ru/api/balance \
+            -H "Authorization: Bearer $TOKEN" -H 'Accept: application/json')
+          echo "HTTP $code"
+          python3 -c "import json;d=json.load(open('r.json'));print('balance:',d.get('balance'));print('sources:',', '.join(d.get('sources') or []));print('keys:',list(d))" || head -c 300 r.json
