@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
-"seen_at": "2026-11-13T21:56:47.073046+00:00"
+"seen_at": "2026-11-13T22:08:05.318188+00:00"
 },
 {
 "ad_id": "autoru_1160753728-5e7b92d2",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Поворино",
-"seen_at": "2026-11-13T21:56:47.073013+00:00"
+"seen_at": "2026-11-13T22:08:05.318152+00:00"
 },
 {
 "ad_id": "autoru_1160762299-97e1d466",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-13T21:56:47.072981+00:00"
+"seen_at": "2026-11-13T22:08:05.318117+00:00"
 },
 {
 "ad_id": "autoru_1160763380-a88f4ff1",
@@ -61,23 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T21:56:47.072945+00:00"
-},
-{
-"ad_id": "autoru_1160784084-d11f9038",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
-"year": 2005,
-"price": 160000,
-"market_price": 77000,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160784084-d11f9038/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
-"mileage_km": 267000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-13T21:56:26.633014+00:00"
+"seen_at": "2026-11-13T22:08:05.318079+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
@@ -93,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T21:56:26.632956+00:00"
+"seen_at": "2026-11-13T22:07:45.225485+00:00"
+},
+{
+"ad_id": "autoru_1160784084-d11f9038",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2005,
+"price": 160000,
+"market_price": 77000,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160784084-d11f9038/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
+"mileage_km": 267000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-13T22:07:45.225448+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
