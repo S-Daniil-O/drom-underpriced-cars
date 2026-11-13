@@ -13,7 +13,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T09:58:40.567566+00:00"
+"seen_at": "2026-11-13T10:09:55.821206+00:00"
+},
+{
+"ad_id": "autoru_1160753728-5e7b92d2",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Almera",
+"year": 2006,
+"price": 288000,
+"market_price": 252500,
+"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
+"mileage_km": 233000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Поворино",
+"seen_at": "2026-11-13T10:09:55.821174+00:00"
 },
 {
 "ad_id": "autoru_1160315473-914cc928",
@@ -29,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T09:58:40.567553+00:00"
+"seen_at": "2026-11-13T10:09:55.821161+00:00"
 },
 {
 "ad_id": "autoru_1160742933-ad330b32",
@@ -45,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Богучар",
-"seen_at": "2026-11-13T09:58:40.567536+00:00"
+"seen_at": "2026-11-13T10:09:55.821143+00:00"
 },
 {
 "ad_id": "autoru_1160743044-5047406c",
@@ -61,7 +77,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-13T09:58:40.567523+00:00"
+"seen_at": "2026-11-13T10:09:55.821109+00:00"
+},
+{
+"ad_id": "autoru_1160762299-97e1d466",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2012,
+"price": 330000,
+"market_price": 204500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160762299-97e1d466/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2056813/b679902ac4b8a2e6a3e9cf50850851a2/1200x900n",
+"mileage_km": 290000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-13T10:09:38.883105+00:00"
+},
+{
+"ad_id": "autoru_1160763380-a88f4ff1",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2014,
+"price": 299999,
+"market_price": 286000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160763380-a88f4ff1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2172104/b4a2b407f90c60eb30f1e974743d31f4/1200x900n",
+"mileage_km": 176000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-13T10:09:38.883073+00:00"
 },
 {
 "ad_id": "autoru_1160745336-c8c14462",
@@ -78,54 +126,6 @@
 "seller_type": "PRIVATE",
 "city": "Ольховатка",
 "seen_at": "2026-11-13T09:58:40.567497+00:00"
-},
-{
-"ad_id": "autoru_1160753728-5e7b92d2",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Almera",
-"year": 2006,
-"price": 288000,
-"market_price": 252500,
-"url": "https://auto.ru/cars/used/sale/nissan/almera/1160753728-5e7b92d2/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/9845457c0a3b49c2aad95ee025a61d5a/1200x900n",
-"mileage_km": 233000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Поворино",
-"seen_at": "2026-11-13T09:58:40.567440+00:00"
-},
-{
-"ad_id": "autoru_1160762299-97e1d466",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2012,
-"price": 330000,
-"market_price": 204500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160762299-97e1d466/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2056813/b679902ac4b8a2e6a3e9cf50850851a2/1200x900n",
-"mileage_km": 290000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-13T09:58:26.597756+00:00"
-},
-{
-"ad_id": "autoru_1160763380-a88f4ff1",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2014,
-"price": 299999,
-"market_price": 286000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160763380-a88f4ff1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2172104/b4a2b407f90c60eb30f1e974743d31f4/1200x900n",
-"mileage_km": 176000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-13T09:58:26.597723+00:00"
 },
 {
 "ad_id": "autoru_1160775754-a2b4eca6",
