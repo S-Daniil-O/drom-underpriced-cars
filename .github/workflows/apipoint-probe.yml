@@ -1,0 +1,31 @@
+# Разовая диагностика: структура последнего ответа apipoint (только ключи и типы, без значений).
+name: apipoint-probe
+on: workflow_dispatch
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - env:
+          TOKEN: ${{ secrets.APIPOINT_TOKEN }}
+        shell: python
+        run: |
+          import json, os, urllib.request
+          def post(path, body=None):
+              req = urllib.request.Request("https://apipoint.ru/api/" + path, data=json.dumps(body or {}).encode(), method="POST",
+                    headers={"Authorization": "Bearer " + os.environ["TOKEN"], "Content-Type": "application/json", "Accept": "application/json"})
+              return json.load(urllib.request.urlopen(req, timeout=60))
+          def shape(x, depth=0):
+              if depth > 7: return "…"
+              if isinstance(x, dict): return {str(k)[:40]: shape(v, depth + 1) for k, v in list(x.items())[:40]}
+              if isinstance(x, list): return [f"list[{len(x)}]"] + ([shape(x[0], depth + 1)] if x else [])
+              if isinstance(x, str):
+                  s = x.strip()
+                  if s[:1] in "{[":
+                      try: return {"json-строка": shape(json.loads(s), depth + 1)}
+                      except ValueError: pass
+                  return f"str[{len(x)}]"
+              return type(x).__name__
+          h = post("history", {"limit": "3"})
+          print(json.dumps(shape(h), ensure_ascii=False, indent=1)[:15000])
