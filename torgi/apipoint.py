@@ -14,7 +14,9 @@ import requests
 URL = "https://apipoint.ru/api/call"
 SOURCES = "probeg,probeg2,eaisto,dtp,gibddhistory,zalog,offerbyvin,pic"
 VIN = re.compile(r"[A-HJ-NPR-Z0-9]{17}")
-PHOTO = re.compile(r"https://(apipoint\.ru/trk/|s\.auto\.drom\.ru/|[\w.-]+\.(?:drom|auto|avito)\.ru/)[\w./?=&%-]+")
+SITES = r"(?:[\w-]+\.)*(?:drom|auto|avito)\.ru/"
+PHOTO = re.compile(r"https://(?:apipoint\.ru/trk/|" + SITES + r")[\w./?=&%-]+")
+OFFER = re.compile(r"https://" + SITES + r"[\w./?=&%-]*")   # ссылки на объявления — только эти площадки
 
 
 def token():
@@ -80,7 +82,7 @@ def facts(d):
         if dt and km:
             hist.append((dt, km, "объявление"))
         offers.append({"date": dt, "price": _num(o.get("Price")), "km": km, "city": str(o.get("City") or "")[:40],
-                       "url": o.get("Url") if str(o.get("Url", "")).startswith("https://") else None,
+                       "url": o["Url"] if isinstance(o.get("Url"), str) and OFFER.fullmatch(o["Url"]) else None,
                        "sold": o.get("Sold") == 1})
     hist = sorted(set(hist))
     f["history"] = hist

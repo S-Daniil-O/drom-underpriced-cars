@@ -851,14 +851,18 @@ def apipoint_one(st, v):
         cnt.update(date=day, n=0)
     if cnt["n"] >= AP_PER_DAY:
         return f"Сегодня уже {AP_PER_DAY} проверок по VIN — это дневной предел, чтобы случайно не потратить деньги. Завтра можно снова."
+    if not apipoint.VIN.fullmatch(v.get("vin") or ""):
+        return "Проверка не выполнена: в лоте нет корректного VIN."
+    cnt["n"] += 1                # учесть до запроса: при сбое деньги могли списаться
+    st.dirty = True
+    st.save()
     try:
         d = apipoint.call(v["vin"])
     except (requests.RequestException, ValueError) as e:
         log(f"apipoint лот №{v['n']}: {str(e)[:120]}")
         return "apipoint.ru не ответил — попробуйте нажать кнопку позже."
     if d is None:
-        return "Проверка не выполнена: в лоте нет корректного VIN."
-    cnt["n"] += 1
+        return "Проверка не выполнена."
     v["ap_done"] = now_msk().strftime("%Y-%m-%d")
     st.dirty = True
     try:
