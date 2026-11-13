@@ -302,11 +302,11 @@ def handle_button(st, q, allowed):
             tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
                text="В лоте нет VIN — проверить нечего.")
             return
-        r = tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_vin(n, v.get("ap_done")))
+        r = tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_vin(n, v.get("ap_ok")))
         if not r.get("ok"):
             log(f"кнопка VIN лота №{n}: подтверждение не показалось ({r.get('description')})")
         tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
-           text=("Лот уже проверялся. " if v.get("ap_done") else "") + "Нажмите под карточкой «✅ Да, проверить», чтобы запустить проверку (~11 ₽).")
+           text=("Лот уже проверялся. " if v.get("ap_ok") else "") + "Нажмите под карточкой «✅ Да, проверить», чтобы запустить проверку (~11 ₽).")
     elif m.group(1) == "vinok":
         tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_main(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Проверяю лот №{n} по VIN, это до 3 минут…")
@@ -859,14 +859,21 @@ def apipoint_one(st, v):
         return f"Сегодня уже {AP_PER_DAY} проверок по VIN — это дневной предел, чтобы случайно не потратить деньги. Завтра можно снова."
     if not apipoint.VIN.fullmatch(v.get("vin") or ""):
         return "Проверка не выполнена: в лоте нет корректного VIN."
-    cnt["n"] += 1                # учесть до запроса: при сбое деньги могли списаться
-    st.dirty = True
-    st.save()
-    try:
-        d = apipoint.call(v["vin"])
-    except (requests.RequestException, ValueError) as e:
-        log(f"apipoint лот №{v['n']}: {str(e)[:120]}")
-        return "apipoint.ru не ответил — попробуйте нажать кнопку позже."
+    d = None
+    if not v.get("ap_ok"):       # отчёта ещё не было — сначала бесплатно взять уже оплаченный ответ из истории
+        try:
+            d = apipoint.history(v["vin"])
+        except (requests.RequestException, ValueError) as e:
+            log(f"apipoint история, лот №{v['n']}: {type(e).__name__}")
+    if d is None:
+        cnt["n"] += 1            # учесть до запроса: при сбое деньги могли списаться
+        st.dirty = True
+        st.save()
+        try:
+            d = apipoint.call(v["vin"])
+        except (requests.RequestException, ValueError) as e:
+            log(f"apipoint лот №{v['n']}: {str(e)[:120]}")
+            return "apipoint.ru не ответил — попробуйте нажать кнопку позже."
     if d is None:
         return "Проверка не выполнена."
     v["ap_done"] = now_msk().strftime("%Y-%m-%d")
@@ -875,7 +882,9 @@ def apipoint_one(st, v):
         f = apipoint.facts(d)
     except (TypeError, ValueError, KeyError, AttributeError) as e:
         log(f"apipoint лот №{v['n']}: неверный ответ ({type(e).__name__})")
-        return "apipoint.ru прислал ответ, который не удалось разобрать."
+        return "apipoint.ru прислал ответ, который не удалось разобрать. Повторное нажатие возьмёт его из истории бесплатно."
+    if f.get("bad"):
+        log(f"apipoint лот №{v['n']}: не разобраны части: {', '.join(f['bad'])}")
     km = f.get("mileage") or (f["history"][-1][1] if f["history"] else None)
     if km and not isinstance(v.get("mileage"), int):
         v["mileage"] = km
@@ -896,6 +905,7 @@ def apipoint_one(st, v):
         r = tg("sendMessage", text=text, parse_mode="HTML", disable_web_page_preview="true", **place(v))
     if r.get("ok"):
         v.setdefault("msgs", []).append(r["result"]["message_id"])
+        v["ap_ok"] = True
     else:
         log(f"apipoint лот №{v['n']}: {r.get('description')}")
     if f["photos"]:

@@ -62,64 +62,130 @@ def _date(x):
     return None
 
 
+def history(vin):
+    """Уже оплаченный ответ по этому VIN из истории apipoint (бесплатно) или None."""
+    if not token() or not VIN.fullmatch(vin or ""):
+        return None
+    r = requests.post("https://apipoint.ru/api/history", json={"limit": "50"}, timeout=60,
+                      headers={"Authorization": f"Bearer {token()}", "Accept": "application/json"})
+    if r.status_code != 200:
+        return None
+    need = set(SOURCES.split(","))
+    for c in r.json().get("calls") or []:
+        o = c.get("options") or {}
+        resp = c.get("response")
+        if o.get("vin") == vin and need <= set(str(o.get("sources", "")).split(",")) and isinstance(resp, dict):
+            return {"result": resp, "price": "0"}
+    return None
+
+
+def _part(name, fn, f):
+    """Разбор одного источника: сбой в одном не должен ломать весь отчёт."""
+    try:
+        fn()
+    except (TypeError, ValueError, KeyError, AttributeError, IndexError) as e:
+        f.setdefault("bad", []).append(f"{name}: {type(e).__name__}")
+
+
+def _list(x, key=None):
+    """Список записей: apipoint отдаёт то список, то {key: список}."""
+    if isinstance(x, dict) and key:
+        x = x.get(key)
+    return x if isinstance(x, list) else []
+
+
 def facts(d):
-    """Ответ apipoint → короткие факты для сообщения и карточки."""
-    f = {"price": d.get("price"), "balance": d.get("balance")}
-    f["mileage"] = _num((_src(d, "probeg").get("result") or {}).get("mileage"))
+    """Ответ apipoint → короткие факты для сообщения, карточки и PDF."""
+    f = {"price": d.get("price"), "balance": d.get("balance"), "mileage": None, "history": [], "rollback": False,
+         "offers": [], "dtp": [], "dtp_known": False, "owners": [], "zalog": None, "photos": [], "vehicle": {}, "to": []}
     hist = []
-    for r in _src(d, "probeg2").get("result") or []:
-        km, dt = _num(r.get("Probeg")), _date(r.get("Datesecond") or r.get("DateString"))
-        if km and dt:
-            hist.append((dt, km, str(r.get("SourceName") or "")[:30]))
-    for r in (_src(d, "eaisto").get("result") or {}).get("eaisto") or []:
-        dt = _date(r.get("date"))
-        if dt:
-            f.setdefault("to", []).append(dt)
-    offers = []
-    for o in (_src(d, "offerbyvin").get("result") or {}).get("offerList") or []:
-        dt = _date(o.get("Credate"))
-        km = _num(o.get("Distance"))
-        if dt and km:
-            hist.append((dt, km, "объявление"))
-        offers.append({"date": dt, "price": _num(o.get("Price")), "km": km, "city": str(o.get("City") or "")[:40],
-                       "url": o["Url"] if isinstance(o.get("Url"), str) and OFFER.fullmatch(o["Url"]) else None,
-                       "sold": o.get("Sold") == 1,
-                       "images": [u for u in (x.strip() for x in str(o.get("Images") or "").split(",")) if PHOTO.fullmatch(u)][:4],
-                       "descr": str(o.get("Descr") or "")[:300], "volume": str(o.get("Volume") or "")[:60],
-                       "hp": _num(o.get("Horsepower"))})
+
+    def probeg():
+        res = _src(d, "probeg").get("result") or {}
+        m = res.get("m_probeg") if isinstance(res.get("m_probeg"), dict) else res
+        f["mileage"] = _num(m.get("mileage") or m.get("Probeg"))
+        dt = _date(m.get("Datesecond") or m.get("DateString"))
+        if f["mileage"] and dt:
+            hist.append((dt, f["mileage"], str(m.get("SourceName") or "")[:30]))
+
+    def probeg2():
+        for r in _list(_src(d, "probeg2").get("result")):
+            km, dt = _num(r.get("Probeg")), _date(r.get("Datesecond") or r.get("DateString"))
+            if km and dt:
+                hist.append((dt, km, str(r.get("SourceName") or "")[:30]))
+
+    def eaisto():
+        for r in _list(_src(d, "eaisto").get("result"), "eaisto"):
+            dt = _date(r.get("date") or r.get("datestring"))
+            if dt:
+                f["to"].append(dt)
+                km = _num(r.get("probeg"))
+                if km:
+                    hist.append((dt, km, "техосмотр"))
+
+    def offers():
+        for o in _list(_src(d, "offerbyvin").get("result"), "offerList"):
+            dt, km = _date(o.get("Credate")), _num(o.get("Distance"))
+            if dt and km:
+                hist.append((dt, km, "объявление"))
+            f["offers"].append({"date": dt, "price": _num(o.get("Price")), "km": km, "city": str(o.get("City") or "")[:40],
+                                "url": o["Url"] if isinstance(o.get("Url"), str) and OFFER.fullmatch(o["Url"]) else None,
+                                "sold": o.get("Sold") == 1,
+                                "images": [u for u in (x.strip() for x in str(o.get("Images") or "").split(",")) if PHOTO.fullmatch(u)][:4],
+                                "descr": str(o.get("Descr") or "")[:300], "volume": str(o.get("Volume") or "")[:60],
+                                "hp": _num(o.get("Horsepower"))})
+        f["offers"].sort(key=lambda o: o["date"] or datetime.min, reverse=True)
+
+    def dtp():
+        src = _src(d, "dtp")
+        dd = src.get("dtpData") or {}
+        f["dtp"] = [{"type": str(a.get("type") or "")[:60], "date": str(a.get("date") or "")[:16],
+                     "region": str(a.get("region") or "")[:40]} for a in _list(dd.get("accident")) if isinstance(a, dict)]
+        f["dtp_known"] = isinstance(dd.get("hasDtp"), bool)
+
+    def gibdd():
+        g = _src(d, "gibddhistory").get("result")
+        if isinstance(g, str):
+            g = json.loads(g)
+        rr = (g or {}).get("RequestResult") or {}
+        kinds = {"natural": "физическое лицо", "legal": "юридическое лицо"}
+        f["owners"] = [(kinds.get(str(p.get("ownerType") or "").strip().lower(), str(p.get("ownerType") or ""))[:30], str(p.get("startDate") or ""), str(p.get("endDate") or ""))
+                       for p in _list(rr.get("periods")) if isinstance(p, dict)]
+        for key, label in (("vehicle_brandmodel", "Марка, модель"), ("vehicle_releaseyear", "Год выпуска"),
+                           ("vehicle_type_name", "Тип ТС"), ("vehicle_category", "Категория"), ("vehicle_bodycolor", "Цвет"),
+                           ("vehicle_enginetype", "Двигатель"), ("vehicle_enginepower", "Мощность, л.с."),
+                           ("vehicle_enclosedvolume", "Объём двигателя, см³"), ("vehicle_transmissiontype", "Коробка"),
+                           ("vehicle_drivetype", "Привод"), ("vehicle_eco_class", "Экологический класс"),
+                           ("vehicle_body_number", "Номер кузова"), ("reestr_status", "Статус регистрации")):
+            x = rr.get(key)
+            if isinstance(x, (str, int, float)) and str(x).strip():
+                f["vehicle"][label] = str(x).strip()[:60]
+        last = rr.get("last_reg_action")
+        if isinstance(last, (str, int)) and str(last).strip():
+            f["vehicle"]["Последнее рег. действие"] = str(last).strip()[:80]
+        elif isinstance(last, dict):
+            t = ", ".join(str(v) for v in last.values() if isinstance(v, (str, int)) and str(v).strip())
+            if t:
+                f["vehicle"]["Последнее рег. действие"] = t[:80]
+
+    def zalog():
+        z = _src(d, "zalog").get("result") or {}
+        f["zalog"] = z.get("zalog") if isinstance(z.get("zalog"), bool) else None
+
+    def pic():
+        src = _src(d, "pic")
+        f["photos"] = [p for p in _list(src.get("imageList") or src.get("imagesList")) if isinstance(p, str) and PHOTO.fullmatch(p)][:10]
+
+    for name, fn in (("пробег", probeg), ("история пробега", probeg2), ("техосмотры", eaisto), ("объявления", offers),
+                     ("ДТП", dtp), ("ГИБДД", gibdd), ("залог", zalog), ("фото", pic)):
+        _part(name, fn, f)
     hist = sorted(set(hist))
     f["history"] = hist
     # скрутка: позже по дате пробег меньше, чем был раньше (с запасом 3 000 км на ошибки ввода)
     f["rollback"] = any(b[1] + 3000 < a[1] for i, a in enumerate(hist) for b in hist[i + 1:])
-    f["offers"] = sorted(offers, key=lambda o: o["date"] or datetime.min, reverse=True)
-    dtp = (_src(d, "dtp").get("dtpData") or {})
-    f["dtp"] = [{"type": str(a.get("type") or "")[:60], "date": str(a.get("date") or "")[:16],
-                 "region": str(a.get("region") or "")[:40]} for a in dtp.get("accident") or []]
-    f["dtp_known"] = bool(_src(d, "dtp"))
-    g = _src(d, "gibddhistory").get("result")
-    if isinstance(g, str):
-        try:
-            g = json.loads(g)
-        except ValueError:
-            g = {}
-    rr = (g or {}).get("RequestResult") or {}
-    per = rr.get("periods") or []
-    veh = {}
-    for key, label in (("vehicle_brandmodel", "Марка, модель"), ("vehicle_releaseyear", "Год выпуска"),
-                       ("vehicle_type_name", "Тип ТС"), ("vehicle_bodycolor", "Цвет"),
-                       ("vehicle_enginepower", "Мощность, л.с."), ("vehicle_enginepowerkw", "Мощность, кВт"),
-                       ("vehicle_enclosedvolume", "Объём двигателя, см³"), ("vehicle_eco_class", "Экологический класс"),
-                       ("vehicle_body_number", "Номер кузова"), ("reestr_status", "Статус регистрации")):
-        x = str(rr.get(key) or "").strip()
-        if x:
-            veh[label] = x[:60]
-    f["vehicle"] = veh
-    f["owners"] = [(str(p.get("ownerType") or "")[:30], str(p.get("startDate") or ""), str(p.get("endDate") or ""))
-                   for p in per if isinstance(p, dict)]
-    z = _src(d, "zalog").get("result") or {}
-    f["zalog"] = z.get("zalog") if isinstance(z.get("zalog"), bool) else None
-    pics = _src(d, "pic").get("imageList") or []
-    f["photos"] = [p for p in pics if isinstance(p, str) and PHOTO.fullmatch(p)][:10]
+    if not f["mileage"] and hist:
+        f["mileage"] = hist[-1][1]
+    f["to"] = sorted(set(f["to"]))
     return f
 
 
@@ -162,5 +228,6 @@ def text(v, f):
             s = ", ".join(b for b in bits if b)
             lines.append(f"  • <a href=\"{e(o['url'])}\">{s}</a>" if o["url"] else f"  • {s}")
     lines.append("")
-    lines.append("Источник: apipoint.ru" + (f", запрос {e(str(f['price']))} ₽" if f.get("price") else ""))
+    paid = str(f.get("price") or "")
+    lines.append("Источник: apipoint.ru" + (" (повторно из истории, бесплатно)" if paid in ("0", "0.00") else f", запрос {e(paid)} ₽" if paid else ""))
     return "\n".join(lines)[:4000]
