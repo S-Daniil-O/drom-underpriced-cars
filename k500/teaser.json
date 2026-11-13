@@ -2558,25 +2558,11 @@
   "https://auto.drom.ru/voronezh/renault/clio/926869272.html": {
     "posted_at": "2026-11-10T21:33:10.291375+00:00",
     "message_id": 360,
-    "deleted_at": null,
+    "deleted_at": "2026-11-13T21:34:06.732402+00:00",
     "rejected": false,
     "checked_at": "2026-11-10T21:33:10.291375+00:00",
     "vk_post_id": 270,
-    "vk_deleted_at": null
-  },
-  "https://auto.drom.ru/voronezh/toyota/corolla/835752156.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-10T21:33:37.216644+00:00"
-  },
-  "https://auto.drom.ru/voronezh/pontiac/vibe/130127622.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-10T21:33:37.216644+00:00"
+    "vk_deleted_at": "2026-11-13T21:34:06.732402+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2106/871092633.html": {
     "posted_at": "2026-11-10T21:34:25.575102+00:00",
@@ -2814,5 +2800,26 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-13T21:23:38.424769+00:00"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/931434050.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-13T21:38:45.355548+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2103/899346975.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-13T21:38:45.355548+00:00"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/matiz/703391418.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-13T21:38:45.355548+00:00"
   }
 }
