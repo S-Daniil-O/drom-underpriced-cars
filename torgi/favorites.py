@@ -281,6 +281,7 @@ def remove_lot(st, key):
 
 
 def handle_button(st, q, allowed):
+    log(f"кнопка: {str(q.get('data'))[:20]} (администратор: {q.get('from', {}).get('id') in allowed})")
     if q.get("from", {}).get("id") not in allowed:
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Только для администраторов канала", show_alert="true")
         return
@@ -301,13 +302,17 @@ def handle_button(st, q, allowed):
             tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
                text="В лоте нет VIN — проверить нечего.")
             return
-        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_vin(n, v.get("ap_done")))
-        tg("answerCallbackQuery", callback_query_id=q["id"],
-           text="Уже проверялся — результат в теме. Проверить снова?" if v.get("ap_done") else "Подтвердите платную проверку")
+        r = tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_vin(n, v.get("ap_done")))
+        if not r.get("ok"):
+            log(f"кнопка VIN лота №{n}: подтверждение не показалось ({r.get('description')})")
+        tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
+           text=("Лот уже проверялся. " if v.get("ap_done") else "") + "Нажмите под карточкой «✅ Да, проверить», чтобы запустить проверку (~11 ₽).")
     elif m.group(1) == "vinok":
         tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_main(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Проверяю лот №{n} по VIN, это до 3 минут…")
+        log(f"кнопка VIN лота №{n}: запускаю проверку")
         res = apipoint_one(st, v)
+        log(f"кнопка VIN лота №{n}: {res or 'готово'}")
         if res:
             tg("sendMessage", text=res, **place(v))
     elif m.group(1) == "del":
