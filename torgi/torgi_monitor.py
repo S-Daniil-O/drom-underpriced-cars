@@ -358,15 +358,26 @@ TG_BASE = "https://bankrot.torggroup.org"
 TG_STATUSES = {"32": "Объявлены", "34": "Приём заявок"}   # LotStateId: подтверждён / приём заявок
 
 
+TG_RETRY_PAUSE = 15   # пауза между повторами, с; бот «Моих лотов» ставит меньше, чтобы не зависать
+
+
+class AntiBot(requests.RequestException):
+    """Площадка показала проверку браузера (DDoS-Guard) — обходить её не пытаемся, только ждём и повторяем."""
+
+
 def _tg_get(s, url, **kw):
+    guard = False
     for attempt in range(3):
         try:
-            r = s.get(url, timeout=60, **kw)
-            if r.ok:
+            r = s.get(url, timeout=90, **kw)
+            if r.ok and "ddos-guard" not in r.text[:3000].lower():
                 return r.text
+            guard = guard or "ddos-guard" in (r.headers.get("server", "") + r.text[:3000]).lower()
         except requests.RequestException:
             pass
-        time.sleep(5)
+        time.sleep(TG_RETRY_PAUSE * (attempt + 1))     # сайт под защитой от частых запросов — паузы длиннее
+    if guard:
+        raise AntiBot(f"ТоргГрупп: проверка браузера DDoS-Guard ({url})")
     raise requests.RequestException(f"ТоргГрупп не ответил: {url}")
 
 
@@ -390,7 +401,7 @@ def tg_list():
                 seen.add(m.group(1))
                 rows.append({"lot_id": m.group(1), "name": html.unescape(m.group(2)).strip(), "status": st_name})
             page += 1
-            time.sleep(0.3)
+            time.sleep(2)        # реже: при частых запросах сайт включает проверку браузера
     log(f"ТоргГрупп: {len(rows)} лотов публичного предложения (все категории)")
     return rows
 
@@ -401,7 +412,8 @@ def tg_detail(row, any_lot=False):
         return None              # не машина по названию — карточку не грузим
     url = f"{TG_BASE}/TradeLot/View/{row['lot_id']}"
     try:
-        s = requests.get(url, headers={"User-Agent": UA}, timeout=60).text
+        time.sleep(1)            # не чаще раза в секунду — иначе сайт включает проверку браузера
+        s = _tg_get(requests, url, headers={"User-Agent": UA})
     except requests.RequestException:
         return None
     t = strip_html(re.sub(r"<script.*?</script>|<style.*?</style>", "", s, flags=re.S))
@@ -1459,7 +1471,8 @@ def with_retries(name, fn):
         except requests.RequestException as e:
             err = str(e)[:150]
             code = getattr(getattr(e, "response", None), "status_code", None)
-            kind = ("tls" if isinstance(e, requests.exceptions.SSLError) else
+            kind = ("antibot" if isinstance(e, AntiBot) else
+                    "tls" if isinstance(e, requests.exceptions.SSLError) else
                     "timeout" if isinstance(e, requests.Timeout) else
                     "http" if code else
                     "connection" if isinstance(e, requests.ConnectionError) else "other")

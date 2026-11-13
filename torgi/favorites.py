@@ -1011,12 +1011,19 @@ def check(st, live, img_dir):
             st.dirty = True
         sched = [r for r in info.get("schedule") or [] if parse_dt(r[0]) and parse_dt(r[1]) and r[2]]
         if sched:
+            if v.get("sched") != sched:
+                v["sched"] = sched     # запомнить: если площадка временно закроется, бот работает по нему
+                st.dirty = True
+        elif v.get("sched"):           # площадка не ответила — график и уведомления по последним данным
+            sched = v["sched"]
+            info = {**info, "requests": None}
+        if sched:
             v["end"] = max(parse_dt(r[1]) for r in sched).strftime("%Y-%m-%dT%H:%M")
             v["min_price"] = min(r[2] for r in sched)
             if info.get("requests") is not None:
                 note_requests(st, v, info["requests"], sched)
             st.dirty = True
-            update_schedule(st, v, sched, now, info.get("requests"))
+            update_schedule(st, v, sched, now, info.get("requests") if info.get("requests") is not None else v.get("requests"))
             if info.get("market"):
                 try:
                     update_market(st, v, info["market"], sched, now)
@@ -1097,6 +1104,7 @@ def main():
     lots_file = Path(sys.argv[2])
     global ACTIVE_FILE
     ACTIVE_FILE = lots_file.parent.parent / "torgi" / "active.json"
+    tm.TG_RETRY_PAUSE = 2     # бот отвечает в Telegram — долго ждать площадку нельзя
     minutes = int(sys.argv[3]) if len(sys.argv) > 3 else 330
     stop = time.time() + minutes * 60
     allowed = admins(st)
