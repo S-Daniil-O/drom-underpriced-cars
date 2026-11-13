@@ -38,6 +38,7 @@ import requests
 
 import torgi_monitor as tm    # разбор площадок (ЦДТ и ТоргГрупп открываются с GitHub, МЭТС — нет)
 import vin_check              # текст сообщения «Проверка по VIN» (сама проверка — на iMac)
+import apipoint               # платная проверка по VIN (apipoint.ru): пробег, ДТП, владельцы, залог, объявления
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
 CHAT = os.environ["TORGI_FAV_CHAT_ID"]
@@ -230,7 +231,11 @@ def kb(*rows):
 
 
 def kb_main(n):
-    return kb([("🗑 Удалить лот", f"del:{n}")])
+    return kb([("🔎 Проверить по VIN (~11 ₽)", f"vin:{n}")], [("🗑 Удалить лот", f"del:{n}")])
+
+
+def kb_vin(n, again=False):
+    return kb([("✅ " + ("Да, проверить ещё раз" if again else "Да, проверить") + " (~11 ₽)", f"vinok:{n}"), ("Отмена", f"no:{n}")])
 
 
 def kb_confirm(n):
@@ -278,7 +283,7 @@ def handle_button(st, q, allowed):
     if q.get("from", {}).get("id") not in allowed:
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Только для администраторов канала", show_alert="true")
         return
-    m = re.fullmatch(r"(del|yes|no):(\d+)", q.get("data") or "")
+    m = re.fullmatch(r"(del|yes|no|vin|vinok):(\d+)", q.get("data") or "")
     msg = q.get("message") or {}
     origin = msg.get("chat", {}).get("id")
     if str(origin) not in (str(CHAT), str(FORUM)) or not msg.get("message_id"):
@@ -289,7 +294,22 @@ def handle_button(st, q, allowed):
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Лот уже удалён")
         return
     n = int(m.group(2))
-    if m.group(1) == "del":
+    v = st.d["lots"][key]
+    if m.group(1) == "vin":
+        if not v.get("vin"):
+            tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
+               text="В лоте нет VIN — проверить нечего.")
+            return
+        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_vin(n, v.get("ap_done")))
+        tg("answerCallbackQuery", callback_query_id=q["id"],
+           text="Уже проверялся — результат в теме. Проверить снова?" if v.get("ap_done") else "Подтвердите платную проверку")
+    elif m.group(1) == "vinok":
+        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_main(n))
+        tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Проверяю лот №{n} по VIN, это до 3 минут…")
+        res = apipoint_one(st, v)
+        if res:
+            tg("sendMessage", text=res, **place(v))
+    elif m.group(1) == "del":
         tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_confirm(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Подтвердите удаление")
     elif m.group(1) == "no":
@@ -303,13 +323,14 @@ def handle_button(st, q, allowed):
 def add_buttons(st):
     """Кнопка на карточках лотов, добавленных до появления кнопок."""
     for v in st.d["lots"].values():
-        if v.get("removed") or v.get("btn"):
+        if v.get("removed") or v.get("btn") == 2 or (v.get("btn") and v.get("ended")):
             continue
+        first = not v.get("btn")
         r = tg("editMessageReplyMarkup", chat_id=home(v), message_id=v["card"], reply_markup=kb_main(v["n"]))
-        v["btn"] = True
+        v["btn"] = 2           # 2 — с кнопкой «Проверить по VIN»
         st.dirty = True
         # у карточек из пересланных постов следом идёт строка «МОЙ ЛОТ»
-        if v.get("vin") or v.get("forwarded") or not str(v.get("name", "")).startswith("http"):
+        if first and (v.get("vin") or v.get("forwarded") or not str(v.get("name", "")).startswith("http")):
             v["head"] = v["card"] + 1
         log(f"кнопка на карточке №{v['n']}: {r.get('ok')} {r.get('description', '')}")
 
@@ -388,7 +409,7 @@ def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=No
         return None
     st.d["lots"][lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
                          "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
-                         "btn": True, "head": head_id, "msgs": [],
+                         "btn": 2, "head": head_id, "msgs": [],
                          "topic": draft.get("topic"), "title": draft.get("title")}
     st.dirty = True
     return n
@@ -813,6 +834,61 @@ def update_vincheck(st, lid, v, res):
         v.setdefault("msgs", []).append(v["vc_msg"])
     v["vc_text"] = text
     st.dirty = True
+
+
+AP_PER_DAY = 15        # предел платных проверок в сутки (~11 ₽ каждая) — защита от случайных нажатий
+AP_LOW_BALANCE = 60    # предупредить владельца, когда на счёте apipoint меньше
+
+
+def apipoint_one(st, v):
+    """Платная проверка apipoint по кнопке: сообщение с результатом в тему лота. Возвращает текст ошибки или None."""
+    if not apipoint.token():
+        return "Проверка по VIN не подключена (нет токена apipoint)."
+    day = now_msk().strftime("%Y-%m-%d")
+    cnt = st.d.setdefault("ap_day", {})
+    if cnt.get("date") != day:
+        cnt.clear()
+        cnt.update(date=day, n=0)
+    if cnt["n"] >= AP_PER_DAY:
+        return f"Сегодня уже {AP_PER_DAY} проверок по VIN — это дневной предел, чтобы случайно не потратить деньги. Завтра можно снова."
+    try:
+        d = apipoint.call(v["vin"])
+    except (requests.RequestException, ValueError) as e:
+        log(f"apipoint лот №{v['n']}: {str(e)[:120]}")
+        return "apipoint.ru не ответил — попробуйте нажать кнопку позже."
+    if d is None:
+        return "Проверка не выполнена: в лоте нет корректного VIN."
+    cnt["n"] += 1
+    v["ap_done"] = now_msk().strftime("%Y-%m-%d")
+    st.dirty = True
+    try:
+        f = apipoint.facts(d)
+    except (TypeError, ValueError, KeyError, AttributeError) as e:
+        log(f"apipoint лот №{v['n']}: неверный ответ ({type(e).__name__})")
+        return "apipoint.ru прислал ответ, который не удалось разобрать."
+    km = f.get("mileage") or (f["history"][-1][1] if f["history"] else None)
+    if km and not isinstance(v.get("mileage"), int):
+        v["mileage"] = km
+    r = tg("sendMessage", text=apipoint.text(v, f), parse_mode="HTML", disable_web_page_preview="true", **place(v))
+    if r.get("ok"):
+        v.setdefault("msgs", []).append(r["result"]["message_id"])
+    else:
+        log(f"apipoint лот №{v['n']}: {r.get('description')}")
+    if f["photos"]:
+        media = [{"type": "photo", "media": u} for u in f["photos"]]
+        media[0]["caption"] = f"📷 Фото из прошлых объявлений — лот №{v['n']}"
+        r = tg("sendMediaGroup", media=json.dumps(media), **place(v))
+        if r.get("ok"):
+            v.setdefault("msgs", []).extend(m["message_id"] for m in r["result"])
+    log(f"apipoint лот №{v['n']}: проверен, списано {f.get('price')} ₽, остаток {f.get('balance')} ₽")
+    bal = apipoint._num(f.get("balance"))
+    if bal is not None and bal < AP_LOW_BALANCE and st.d.get("ap_low") != day:
+        st.d["ap_low"] = day
+        for uid in st.d.get("owners", []):
+            tg("sendMessage", chat_id=uid, text=f"💳 На счёте apipoint.ru осталось {bal} ₽ — примерно на "
+                                                f"{bal // 12} проверок. Пополните, чтобы кнопка «Проверить по VIN» работала.")
+    st.save()
+    return None
 
 
 def send_files(st, v, files, img_dir):

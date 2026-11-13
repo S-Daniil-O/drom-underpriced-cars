@@ -23,6 +23,7 @@ jobs:
       TORGI_FAV_CHAT_ID: ${{ vars.TORGI_FAV_CHAT_ID }}
       TORGI_FAV_EDITORS: ${{ vars.TORGI_FAV_EDITORS }}
       TORGI_MAIL_URL: ${{ secrets.TORGI_MAIL_URL }}
+      APIPOINT_TOKEN: ${{ secrets.APIPOINT_TOKEN }}
       PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
