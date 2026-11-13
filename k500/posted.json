@@ -8213,5 +8213,20 @@
     "mileage_km": 227777,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/k6lXSkCLLHFRszIolVaJ-dAqKiE8lbu6PI3PvN9CkjQeiPedQYFvximo6TkiiKf26ftUrMNhCj_qyv-f/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/skoda/fabia/862540978.html": {
+    "posted_at": "2026-11-13T09:09:35.236530+00:00",
+    "message_id": 595,
+    "deleted_at": null,
+    "brand": "Skoda",
+    "model": "Fabia",
+    "year": 2001,
+    "price": 199000,
+    "median_price": 209000.0,
+    "median_sample_size": 136,
+    "price_rating": "отличная цена",
+    "mileage_km": 250000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/1cwE-cQZqzKQE8XKWE9Hh-Uq1pIR-bwybPIqyJfX2nzi3XBv9CXHmWrelIW_VqErVny3FQOKmHkslef-/gen272wb.jpg"
   }
 }
