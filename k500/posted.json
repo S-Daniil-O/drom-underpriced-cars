@@ -7977,7 +7977,7 @@
   "https://auto.drom.ru/voronezh/lada/granta/755020937.html": {
     "posted_at": "2026-11-11T13:11:08.840624+00:00",
     "message_id": 579,
-    "deleted_at": null,
+    "deleted_at": "2026-11-14T13:21:37.118281+00:00",
     "brand": "Лада",
     "model": "Гранта",
     "year": 2018,
@@ -8273,5 +8273,20 @@
     "mileage_km": 160000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/uRNoPgb87xwlj6ZRaK-r6tBghKAiigl6Szbk3z5WwR7gkF6tnNHaJlO3qgvIzf2Q8-4cVNGJj-6lEf5r/gen272wb.jpg"
+  },
+  "autoru_1160793460-8feac67f": {
+    "posted_at": "2026-11-14T13:25:46.732175+00:00",
+    "message_id": 599,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2112",
+    "year": 2007,
+    "price": 150000,
+    "median_price": 287500.0,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 20000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/14637477/c769de9ca1a33807f89d92ddd33e495c/1200x900n"
   }
 }
