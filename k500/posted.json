@@ -8303,5 +8303,20 @@
     "mileage_km": 340000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/N7q-yJiR-UnkUICm9em--ul6I3xmg5ucZ4je9I9JaoFljg71jqa7n7kxHpzpkzm-MJM7J15_IrHWCvse/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/a6/658880550.html": {
+    "posted_at": "2026-11-14T19:13:42.704431+00:00",
+    "message_id": 601,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "A6",
+    "year": 1995,
+    "price": 180000,
+    "median_price": 258999.99999999997,
+    "median_sample_size": 1138,
+    "price_rating": null,
+    "mileage_km": 604385,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jgvk0GA3tSh9NMSt-_CaJOpDpG3Dqs1ARVhlDZ4XqR0NEv6b4FKhoQ2bln0uMeVXk8Pv2L9lWQjzSF4k/gen272wb.jpg"
   }
 }
