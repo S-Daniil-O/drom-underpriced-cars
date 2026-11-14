@@ -3918,5 +3918,20 @@
     "mileage_km": 175000,
     "owners_display": "1",
     "image_url": "https://s31.auto.drom.ru/photo/v2/AKRO3yrHX2VNoHGZC_U_qPPs6HTrt4rG3QNoOK9Z0KwJWAh5HpZqrDZLPNHlvqbuJbADdYifGr9SroFa/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/sorento/108508226.html": {
+    "posted_at": "2026-11-14T09:24:27.671459+00:00",
+    "message_id": 287,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Sorento",
+    "year": 2013,
+    "price": 1250000,
+    "median_price": 1474866.7395,
+    "median_sample_size": 295,
+    "price_rating": "отличная цена",
+    "mileage_km": 176253,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/1cAJ-ylNyqk-bkpLgZ8qOQGFcT12bjlFe3cBs58UyXjkZV-y37Q4A2bHtwn3H_dAP1zB1cYaIxCxQk0a/gen272wb.jpg"
   }
 }
