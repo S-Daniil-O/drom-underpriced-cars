@@ -8288,5 +8288,20 @@
     "mileage_km": 20000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/14637477/c769de9ca1a33807f89d92ddd33e495c/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/e-class/540000062.html": {
+    "posted_at": "2026-11-14T14:55:32.697818+00:00",
+    "message_id": 600,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 1997,
+    "price": 420000,
+    "median_price": 517498.96499999997,
+    "median_sample_size": 1745,
+    "price_rating": "нормальная цена",
+    "mileage_km": 340000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/N7q-yJiR-UnkUICm9em--ul6I3xmg5ucZ4je9I9JaoFljg71jqa7n7kxHpzpkzm-MJM7J15_IrHWCvse/gen272wb.jpg"
   }
 }
