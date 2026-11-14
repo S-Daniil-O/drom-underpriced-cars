@@ -2860,5 +2860,19 @@
     "checked_at": "2026-11-14T21:28:12.935200+00:00",
     "vk_post_id": 293,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/nissan/primera/917473135.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-14T21:42:51.736206+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/910622787.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-14T21:42:51.736206+00:00"
   }
 }
