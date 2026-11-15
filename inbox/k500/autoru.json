@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160784084-d11f9038",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2005,
+"price": 160000,
+"market_price": 89000,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160784084-d11f9038/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
+"mileage_km": 267000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-15T19:47:08.894875+00:00"
+},
+{
 "ad_id": "autoru_1160793280-58f0643f",
 "source": "autoru",
 "brand": "Иж",
@@ -13,23 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T19:36:01.086652+00:00"
-},
-{
-"ad_id": "autoru_1160784084-d11f9038",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2005,
-"price": 160000,
-"market_price": 89000,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160797639-acaa0f4f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2159177/c289f54ed94a32534512cc27076cf553/1200x900n",
-"mileage_km": 267000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-15T19:36:01.086600+00:00"
+"seen_at": "2026-11-15T19:47:08.894805+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-15T19:35:44.106801+00:00"
+"seen_at": "2026-11-15T19:46:55.095980+00:00"
 },
 {
 "ad_id": "autoru_1160800600-c632bbf8",
@@ -56,12 +56,12 @@
 "price": 500000,
 "market_price": 339000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/w7PxIa7b5zY2GfTkEeUMqtRBhra0yfBNLkmxndfeGl9FX1hUDsbKS33rCKrFgzJu6y4HDBo-Lh8Q4OE2o7SthPJzdQM4IdLIwyFHnbwRfnQf4Ks8NCwv9q_--jYJGAcAr2otFtX1G5guhURJwyubbdfjLcXoxAtOvXMUEb-lN9yg9BY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/Bi3Jf5MqxmLCynCD_vNz3UAZ9_rTWZRKISxcMGPylhacVgz0Fmer_UiapcAZOqiKVgNB5YwKI2O9dppAQvmRXsCCIB72BLpvDsSSXjTbxiupjii5E1rl8cHbH1YW1NTxpRr0tbcqxT2CGMIl9kE2-IzCakPMKlYXyDNQd2a9Kl5-Bns/1200x900n",
 "mileage_km": 169000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Щучье",
-"seen_at": "2026-11-15T19:35:44.106775+00:00"
+"seen_at": "2026-11-15T19:46:55.095957+00:00"
 },
 {
 "ad_id": "autoru_1160802564-eccb5612",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-15T19:35:44.106759+00:00"
+"seen_at": "2026-11-15T19:46:55.095941+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T19:35:44.106726+00:00"
+"seen_at": "2026-11-15T19:46:55.095908+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
