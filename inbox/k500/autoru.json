@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T15:51:26.381241+00:00"
+"seen_at": "2026-11-15T16:02:43.626948+00:00"
 },
 {
 "ad_id": "autoru_1160784084-d11f9038",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T15:51:26.381218+00:00"
+"seen_at": "2026-11-15T16:02:43.626927+00:00"
 },
 {
 "ad_id": "autoru_1160793280-58f0643f",
@@ -45,7 +45,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T15:51:26.381151+00:00"
+"seen_at": "2026-11-15T16:02:43.626858+00:00"
+},
+{
+"ad_id": "autoru_1160800600-c632bbf8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2015,
+"price": 500000,
+"market_price": 338000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/1Eab_gjvuI022eM7DnDjeFnoZicQz9VbFfjz0IzdufCVJU2myO54F7flowh_TP7jC5Z357-NtRkh0lKLq_S8CKBE1pddH9jPiyk0UA_MZI-xVkRsAG4tLg_rkZPvFELFu8Psx58HqVCUQCMGaG_wKAjSCzym9OHrhPvmKAX1TDOrsA/1200x900n",
+"mileage_km": 169000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Щучье",
+"seen_at": "2026-11-15T16:02:24.665728+00:00"
 },
 {
 "ad_id": "autoru_1160802564-eccb5612",
@@ -61,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-15T15:51:09.507376+00:00"
+"seen_at": "2026-11-15T16:02:24.665713+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -77,23 +93,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T15:51:09.507365+00:00"
+"seen_at": "2026-11-15T16:02:24.665700+00:00"
 },
 {
-"ad_id": "autoru_1160800600-c632bbf8",
+"ad_id": "autoru_1160329471-b41eaf9d",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2015,
-"price": 500000,
-"market_price": 338000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/MOHNtLMi6_nUFuzYwcqFypZKpYG-TMwlYBqxqpS2-ijRQSLGYQHP5vSC1-KOeb9ioE1QEldpJo4Jv72Evft4UnfgEeZfJM0_jZ_Z3j8bn99bvYZNE4kxFFSpUU7VgKRLQrXMqMQNBgGvRF4xrQqbFuaE4tLfCXrw-cpZJhpbtnR1KbQ/1200x900n",
-"mileage_km": 169000,
+"model": "2111",
+"year": 2010,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
+"mileage_km": 300000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
-"city": "Щучье",
-"seen_at": "2026-11-15T15:51:09.507304+00:00"
+"city": "Нижнедевицк",
+"seen_at": "2026-11-15T16:02:24.665655+00:00"
 },
 {
 "ad_id": "autoru_1160803736-41a7dbf5",
