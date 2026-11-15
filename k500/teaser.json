@@ -3010,5 +3010,14 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-15T10:38:55.058543+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/484667935.html": {
+    "posted_at": "2026-11-15T13:40:51.643066+00:00",
+    "message_id": 409,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-15T13:40:51.643066+00:00",
+    "vk_post_id": 308,
+    "vk_deleted_at": null
   }
 }

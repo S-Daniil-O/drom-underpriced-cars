@@ -8603,5 +8603,35 @@
     "mileage_km": 280000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/29KEDK2knsO9i_QSH0cippez9vU4aCirTHOm5OKqRNN1KlSbEUvqq4T7rw_0IUKN89AUbV0kmGxzmLXh/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/uaz/3151/825181556.html": {
+    "posted_at": "2026-11-15T13:39:35.176917+00:00",
+    "message_id": 621,
+    "deleted_at": null,
+    "brand": "УАЗ",
+    "model": "3151",
+    "year": 2006,
+    "price": 320000,
+    "median_price": 450000.0,
+    "median_sample_size": 1156,
+    "price_rating": null,
+    "mileage_km": 144000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/NBP9do-D0uDHwT2Y2uJdEmWYB478XZ1CQKTB0yaxZxLxvblN0GsEVC2ERCHEN3gbfbdSPMC22T7QOPnu/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/484667935.html": {
+    "posted_at": "2026-11-15T13:39:37.793750+00:00",
+    "message_id": 622,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2106",
+    "year": 2001,
+    "price": 65000,
+    "median_price": 85000.0,
+    "median_sample_size": 2240,
+    "price_rating": null,
+    "mileage_km": 86000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/R2sV5fuD7BFl-FhROWx2BR7ykHixLvmOfyBqvDdawCmZ7CFkPhWOpQE9MIXdtU0XXXcZl7aKXyMVTw-V/gen272wb.jpg"
   }
 }
