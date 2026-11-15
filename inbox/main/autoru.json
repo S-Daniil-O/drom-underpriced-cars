@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:47:00.734137+00:00"
+"seen_at": "2026-11-15T16:58:11.108168+00:00"
 },
 {
 "ad_id": "autoru_1160781024-e506cdc3",
@@ -29,23 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:47:00.734125+00:00"
-},
-{
-"ad_id": "autoru_1160783426-66b5ac09",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2026,
-"price": 950000,
-"market_price": 854500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160783426-66b5ac09/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/88a2f54feb3c1b661db6bf1af155a76f/1200x900n",
-"mileage_km": 12000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-15T16:47:00.734113+00:00"
+"seen_at": "2026-11-15T16:58:11.108155+00:00"
 },
 {
 "ad_id": "autoru_1160790491-f6515908",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T16:47:00.734081+00:00"
+"seen_at": "2026-11-15T16:58:11.108141+00:00"
 },
 {
 "ad_id": "autoru_1160793821-b803042d",
@@ -77,7 +61,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Кантемировка",
-"seen_at": "2026-11-15T16:47:00.734059+00:00"
+"seen_at": "2026-11-15T16:58:11.108120+00:00"
+},
+{
+"ad_id": "autoru_1160783426-66b5ac09",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2026,
+"price": 950000,
+"market_price": 854500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160783426-66b5ac09/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/88a2f54feb3c1b661db6bf1af155a76f/1200x900n",
+"mileage_km": 12000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-15T16:58:11.108091+00:00"
 },
 {
 "ad_id": "autoru_1160796430-f3f6f35f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:47:00.734009+00:00"
+"seen_at": "2026-11-15T16:58:11.108032+00:00"
 },
 {
 "ad_id": "autoru_1160796386-a1dee021",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993840+00:00"
+"seen_at": "2026-11-15T16:57:53.513831+00:00"
 },
 {
 "ad_id": "autoru_1160796630-21b0d5d9",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993831+00:00"
+"seen_at": "2026-11-15T16:57:53.513822+00:00"
 },
 {
 "ad_id": "autoru_1160797140-4d23f261",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993817+00:00"
+"seen_at": "2026-11-15T16:57:53.513811+00:00"
 },
 {
 "ad_id": "autoru_1160799887-98d5b7d8",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993795+00:00"
+"seen_at": "2026-11-15T16:57:53.513788+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993783+00:00"
+"seen_at": "2026-11-15T16:57:53.513777+00:00"
 },
 {
 "ad_id": "autoru_1160800600-c632bbf8",
@@ -184,12 +184,12 @@
 "price": 500000,
 "market_price": 338000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/F7TWfAdxaEsjSanKIEIyzMfDyt9kOoPK54Ip7ETNzf3CcJU-B1hEOXmBvVb5NKJic6RJiBl4kMZ4c2LAmliUiYd5O0EKyRLLrgAOfAa5SpEiVzKwxPLZB0NC9QiQddHs8s5qJ3Bu-Y2zDXLABaVeaQlo3PJmU_8FZLMeyX4oGs5PANA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/Zlam5DhNI6Xvl2LPTDtRjjcRR1B68m8IEzvC56maagBvUI7hnjKC1ix23PFvqLtx6NVGgXkRFIXiRNlhNVFjcU-F1107OcQ-FYvyW8KQIOScJ8eAc8DxUWDAfuRmsmnc-ISf5dd0O8XaIzWbY2t8gcQatlzth64TfKbPXwCYrKFacYg/1200x900n",
 "mileage_km": 169000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Щучье",
-"seen_at": "2026-11-15T16:46:45.993761+00:00"
+"seen_at": "2026-11-15T16:57:53.513760+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T16:46:45.993746+00:00"
+"seen_at": "2026-11-15T16:57:53.513741+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -214,14 +214,14 @@
 "model": "X-Trail",
 "year": 2011,
 "price": 1055000,
-"market_price": 973000,
+"market_price": 954000,
 "url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17783177/76c9c1c36d8dbde4d86ffb2542a66beb/1200x900n",
 "mileage_km": 268800,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T16:46:45.993719+00:00"
+"seen_at": "2026-11-15T16:57:53.513673+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -414,21 +414,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-15T10:59:13.898094+00:00"
-},
-{
-"ad_id": "autoru_1160763591-73763761",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2008,
-"price": 760000,
-"market_price": 556500,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160763591-73763761/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157046/1c5215f141d6099da49c94bd00dabe96/1200x900n",
-"mileage_km": 260000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Бабяково",
-"seen_at": "2026-11-15T10:47:51.007026+00:00"
 }
 ]
