@@ -8648,5 +8648,20 @@
     "mileage_km": 318000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ac5jaDhJi_h-Y5_M1Laf4pmKkIMjQAzBDgsY4k64gwYZtw9pRlbnoHL-l3PkGch7k_8nEQ_jX3wXVpKW/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/oka/136586961.html": {
+    "posted_at": "2026-11-15T14:59:34.621657+00:00",
+    "message_id": 624,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "1111 Ока",
+    "year": 2002,
+    "price": 95000,
+    "median_price": 130500.0,
+    "median_sample_size": 79,
+    "price_rating": null,
+    "mileage_km": 40000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/_zWypvNRjs9b2KXt9DSbhtSVD0hBkYAZom2LCCuXx81bSf6NnpxLNh8uD-3RCFMRUKha0md9J2tw-IHv/gen272wb.jpg"
   }
 }
