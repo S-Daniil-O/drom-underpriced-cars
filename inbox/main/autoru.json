@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:19.560435+00:00"
+"seen_at": "2026-11-15T14:43:37.006722+00:00"
 },
 {
 "ad_id": "autoru_1160774976-9aa2e211",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:19.560421+00:00"
+"seen_at": "2026-11-15T14:43:37.006711+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-15T14:32:19.560401+00:00"
+"seen_at": "2026-11-15T14:43:37.006691+00:00"
 },
 {
 "ad_id": "autoru_1160779618-4752b7c8",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:19.560381+00:00"
+"seen_at": "2026-11-15T14:43:37.006671+00:00"
 },
 {
 "ad_id": "autoru_1160781024-e506cdc3",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:19.560364+00:00"
+"seen_at": "2026-11-15T14:43:37.006657+00:00"
 },
 {
 "ad_id": "autoru_1160783426-66b5ac09",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T14:32:19.560347+00:00"
+"seen_at": "2026-11-15T14:43:37.006640+00:00"
 },
 {
 "ad_id": "autoru_1160790491-f6515908",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T14:32:19.560306+00:00"
+"seen_at": "2026-11-15T14:43:37.006596+00:00"
 },
 {
 "ad_id": "autoru_1160793821-b803042d",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Кантемировка",
-"seen_at": "2026-11-15T14:32:19.560257+00:00"
+"seen_at": "2026-11-15T14:43:37.006549+00:00"
 },
 {
 "ad_id": "autoru_1160796430-f3f6f35f",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005396+00:00"
+"seen_at": "2026-11-15T14:43:16.597318+00:00"
 },
 {
 "ad_id": "autoru_1160796386-a1dee021",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005385+00:00"
+"seen_at": "2026-11-15T14:43:16.597306+00:00"
 },
 {
 "ad_id": "autoru_1160796630-21b0d5d9",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005375+00:00"
+"seen_at": "2026-11-15T14:43:16.597296+00:00"
 },
 {
 "ad_id": "autoru_1160797140-4d23f261",
@@ -189,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005364+00:00"
+"seen_at": "2026-11-15T14:43:16.597281+00:00"
 },
 {
 "ad_id": "autoru_1160799887-98d5b7d8",
@@ -205,7 +205,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005341+00:00"
+"seen_at": "2026-11-15T14:43:16.597253+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-15T14:43:16.597240+00:00"
 },
 {
 "ad_id": "autoru_1160800600-c632bbf8",
@@ -216,12 +232,12 @@
 "price": 500000,
 "market_price": 338000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/dLI-_97mp3viCZtlZJUvn3Wcz5YIYiQHPJtc5c0B-rP9A9fOlwEXKCnAy-SpCn7PxQuwMA0gbqYJFhyR941OlhdoNDOduCva7CV643dShki9Tv9v-8W4uPwT0nv-OPl5KaOuCKL06CLnHbouwWHvbq7W_knXnga-s9uWWn1PkS_iEpk/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/Gr9BxL4qed6E8VH9EdnAJeplJm5ARhgrziAN4uYk8hOLf3FhhIocRsiegCYYUio3Z0jUUdXPVczeQwWoMzXjXRBQzbu1ear1g1zlSMhOhPKSfKROAb-2Kv3e-BDBDEWKrQSAG60oA3Pbj_gOqLZEbmN6ndBMCWtCmIaAfC5rMIFeIH0/1200x900n",
 "mileage_km": 169000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Щучье",
-"seen_at": "2026-11-15T14:32:03.005318+00:00"
+"seen_at": "2026-11-15T14:43:16.597218+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -237,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T14:32:03.005299+00:00"
+"seen_at": "2026-11-15T14:43:16.597149+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -254,22 +270,6 @@
 "seller_type": "PRIVATE",
 "city": "Острогожск",
 "seen_at": "2026-11-15T14:32:03.005281+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-15T14:32:03.005226+00:00"
 },
 {
 "ad_id": "autoru_1130347471-476d16cb",
