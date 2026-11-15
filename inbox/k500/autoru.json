@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T22:02:03.742941+00:00"
+"seen_at": "2026-11-15T22:13:19.419758+00:00"
 },
 {
 "ad_id": "autoru_1160793280-58f0643f",
@@ -29,23 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T22:02:03.742873+00:00"
-},
-{
-"ad_id": "autoru_1160329471-b41eaf9d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2111",
-"year": 2010,
-"price": 155000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
-"mileage_km": 300000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Нижнедевицк",
-"seen_at": "2026-11-15T22:01:49.454125+00:00"
+"seen_at": "2026-11-15T22:13:19.419646+00:00"
 },
 {
 "ad_id": "autoru_1160800600-c632bbf8",
@@ -56,12 +40,12 @@
 "price": 500000,
 "market_price": 339000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/uBiLzRFkb55FTLlJcKMYUqrqNEVj1YqdoSHpj-1LMq6xHSHwDLhAgXuQOEncHCphP0O4IGRNiw-AfPNQSJ9TkKqRDn5LAw780HkwQWoyp2J5Dept5EfZ_0RSkuDFU_ex3x973z5AtdyXD4RPzXpqYEhQsDesNkVelnPOU8lDlkHWhAo/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/lNTZCOQdg3OJXlqpTOlceElw_9WiEX6EXsR8ReMgyHcxTeca0Qqp4KdQUoocidxuATwnRKPZKr47MEDEMXLZxbgZHlFx_aEtykZRwMtzkJr4PSsCTbz9VuyehBda-G75L8nwdvsumLUbbHPU7d6K5emv2s8F3P9BqV1_frKx2YWHdA/1200x900n",
 "mileage_km": 169000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Щучье",
-"seen_at": "2026-11-15T22:01:49.454103+00:00"
+"seen_at": "2026-11-15T22:13:00.634283+00:00"
 },
 {
 "ad_id": "autoru_1160802564-eccb5612",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-15T22:01:49.454085+00:00"
+"seen_at": "2026-11-15T22:13:00.634268+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -93,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T22:01:49.454052+00:00"
+"seen_at": "2026-11-15T22:13:00.634256+00:00"
+},
+{
+"ad_id": "autoru_1160329471-b41eaf9d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2111",
+"year": 2010,
+"price": 155000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
+"mileage_km": 300000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Нижнедевицк",
+"seen_at": "2026-11-15T22:13:00.634210+00:00"
 },
 {
 "ad_id": "autoru_1160778753-33c57919",
