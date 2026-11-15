@@ -2677,13 +2677,6 @@
     "vk_post_id": 282,
     "vk_deleted_at": "2026-11-14T23:54:04.783123+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/priora/324251661.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-12T00:59:45.290722+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2114/573136345.html": {
     "posted_at": "2026-11-13T05:37:19.766920+00:00",
     "message_id": 382,
@@ -2883,5 +2876,12 @@
     "checked_at": "2026-11-14T21:58:26.530536+00:00",
     "vk_post_id": 294,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/324251661.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-15T01:13:34.745640+00:00"
   }
 }
