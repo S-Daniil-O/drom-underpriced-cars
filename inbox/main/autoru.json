@@ -13,87 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бабяково",
-"seen_at": "2026-11-15T07:59:45.081894+00:00"
-},
-{
-"ad_id": "autoru_1160764187-f770feda",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2024,
-"price": 1450000,
-"market_price": 1178500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160764187-f770feda/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16467568/33c8913e9bfaac4113ca8142f7ecafe5/1200x900n",
-"mileage_km": 33770,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-15T07:59:45.081881+00:00"
-},
-{
-"ad_id": "autoru_1160767787-4494e16f",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Malibu",
-"year": 2018,
-"price": 1250000,
-"market_price": 1203500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/malibu/1160767787-4494e16f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19792100/651e592a64e7368ef6aebd2c547f3e9d/1200x900n",
-"mileage_km": 155000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-15T07:59:45.081868+00:00"
-},
-{
-"ad_id": "autoru_1160626519-809ff3dd",
-"source": "autoru",
-"brand": "Chery",
-"model": "Tiggo 4 Pro",
-"year": 2023,
-"price": 1270000,
-"market_price": 1235500,
-"url": "https://auto.ru/cars/used/sale/chery/tiggo_4_pro/1160626519-809ff3dd/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20467659/22aed268ab65e338df3ec9b42798c740/1200x900n",
-"mileage_km": 90000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-15T07:59:45.081851+00:00"
-},
-{
-"ad_id": "autoru_1160774976-9aa2e211",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2022,
-"price": 715000,
-"market_price": 621500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160774976-9aa2e211/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18017415/fc23bd9ad349ea6a5d4dcd867900e020/1200x900n",
-"mileage_km": 72800,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-15T07:59:45.081840+00:00"
-},
-{
-"ad_id": "autoru_1160422889-9a203a8b",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2020,
-"price": 1100000,
-"market_price": 886000,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160422889-9a203a8b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n",
-"mileage_km": 95000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-15T07:59:45.081823+00:00"
+"seen_at": "2026-11-15T08:10:56.112116+00:00"
 },
 {
 "ad_id": "autoru_1160779618-4752b7c8",
@@ -109,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:45.081805+00:00"
+"seen_at": "2026-11-15T08:10:56.112102+00:00"
 },
 {
 "ad_id": "autoru_1160781024-e506cdc3",
@@ -125,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:45.081790+00:00"
+"seen_at": "2026-11-15T08:10:56.112089+00:00"
 },
 {
 "ad_id": "autoru_1160783426-66b5ac09",
@@ -141,7 +61,87 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T07:59:45.081753+00:00"
+"seen_at": "2026-11-15T08:10:56.112073+00:00"
+},
+{
+"ad_id": "autoru_1160764187-f770feda",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2024,
+"price": 1450000,
+"market_price": 1178500,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1160786307-e2f106a3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16467568/33c8913e9bfaac4113ca8142f7ecafe5/1200x900n",
+"mileage_km": 33770,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-15T08:10:56.112044+00:00"
+},
+{
+"ad_id": "autoru_1160767787-4494e16f",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Malibu",
+"year": 2018,
+"price": 1250000,
+"market_price": 1203500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/malibu/1160767787-4494e16f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19792100/651e592a64e7368ef6aebd2c547f3e9d/1200x900n",
+"mileage_km": 155000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-15T08:10:56.112028+00:00"
+},
+{
+"ad_id": "autoru_1160626519-809ff3dd",
+"source": "autoru",
+"brand": "Chery",
+"model": "Tiggo 4 Pro",
+"year": 2023,
+"price": 1270000,
+"market_price": 1235500,
+"url": "https://auto.ru/cars/used/sale/chery/tiggo_4_pro/1160626519-809ff3dd/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20467659/22aed268ab65e338df3ec9b42798c740/1200x900n",
+"mileage_km": 90000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-15T08:10:56.112007+00:00"
+},
+{
+"ad_id": "autoru_1160774976-9aa2e211",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2022,
+"price": 715000,
+"market_price": 621500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160774976-9aa2e211/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18017415/fc23bd9ad349ea6a5d4dcd867900e020/1200x900n",
+"mileage_km": 72800,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-15T08:10:56.111992+00:00"
+},
+{
+"ad_id": "autoru_1160422889-9a203a8b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2020,
+"price": 1100000,
+"market_price": 886000,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160422889-9a203a8b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/efe6e94fb2be0b8b31d6ff8a837558e6/1200x900n",
+"mileage_km": 95000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-11-15T08:10:56.111949+00:00"
 },
 {
 "ad_id": "autoru_1160790491-f6515908",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T07:59:30.250521+00:00"
+"seen_at": "2026-11-15T08:10:40.149987+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:30.250434+00:00"
+"seen_at": "2026-11-15T08:10:40.149970+00:00"
 },
 {
 "ad_id": "autoru_1160793821-b803042d",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Кантемировка",
-"seen_at": "2026-11-15T07:59:30.250405+00:00"
+"seen_at": "2026-11-15T08:10:40.149958+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T07:59:30.250379+00:00"
+"seen_at": "2026-11-15T08:10:40.149947+00:00"
 },
 {
 "ad_id": "autoru_1160796430-f3f6f35f",
@@ -221,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:30.250316+00:00"
+"seen_at": "2026-11-15T08:10:40.149914+00:00"
 },
 {
 "ad_id": "autoru_1160796386-a1dee021",
@@ -237,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:30.250259+00:00"
+"seen_at": "2026-11-15T08:10:40.149902+00:00"
 },
 {
 "ad_id": "autoru_1160796630-21b0d5d9",
@@ -253,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:30.250245+00:00"
+"seen_at": "2026-11-15T08:10:40.149889+00:00"
 },
 {
 "ad_id": "autoru_1160797140-4d23f261",
@@ -269,7 +269,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T07:59:30.250223+00:00"
+"seen_at": "2026-11-15T08:10:40.149872+00:00"
+},
+{
+"ad_id": "autoru_1160681749-dc362d99",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva",
+"year": 2020,
+"price": 930000,
+"market_price": 766500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
+"mileage_km": 48000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-15T08:10:40.149805+00:00"
 },
 {
 "ad_id": "autoru_1130347471-476d16cb",
@@ -302,22 +318,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-15T07:48:09.190576+00:00"
-},
-{
-"ad_id": "autoru_1160681749-dc362d99",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva",
-"year": 2020,
-"price": 930000,
-"market_price": 766500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
-"mileage_km": 48000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-15T07:36:49.177100+00:00"
 },
 {
 "ad_id": "autoru_1160491303-cfcba7ab",
