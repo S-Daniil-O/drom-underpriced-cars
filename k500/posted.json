@@ -8663,5 +8663,20 @@
     "mileage_km": 40000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/_zWypvNRjs9b2KXt9DSbhtSVD0hBkYAZom2LCCuXx81bSf6NnpxLNh8uD-3RCFMRUKha0md9J2tw-IHv/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mazda/millenia/577856657.html": {
+    "posted_at": "2026-11-15T15:14:34.167557+00:00",
+    "message_id": 625,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Millenia",
+    "year": 1998,
+    "price": 180000,
+    "median_price": 390999.99999999994,
+    "median_sample_size": 1493,
+    "price_rating": null,
+    "mileage_km": 157000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/KU9MYBMvEjMpu1_q7x7xOCCjc6Xt80rIFSTiBXTlHFaYip9C-ryF6Anv2pBZaRbctdXjq7i6XL3jNUdn/gen272wb.jpg"
   }
 }
