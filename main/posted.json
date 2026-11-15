@@ -4113,5 +4113,20 @@
     "mileage_km": 500000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/n51607Iud_hapcigToprGd_ZNcAb09KvKaOtXoEk3i3Z2H7uqntubzpLkKjicnwa-g1cdUhg2w0r-Sof/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/rio/417219778.html": {
+    "posted_at": "2026-11-15T09:08:54.176413+00:00",
+    "message_id": 300,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2015,
+    "price": 655000,
+    "median_price": 750000.0,
+    "median_sample_size": 4202,
+    "price_rating": "отличная цена",
+    "mileage_km": 171261,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/JQqFjB3c-7Og25E_wptqQxertqd81CrR1-QLcU3T5o7R5ZnBH9ggF_gj9ozdr5zaizzy-XOCr5BLqvEM/gen272wb.jpg"
   }
 }
