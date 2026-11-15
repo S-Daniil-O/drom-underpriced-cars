@@ -8708,5 +8708,20 @@
     "mileage_km": 250000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/w9Td0bMNvmjmbok-O8viiMBDOok0q__H3vesyO8BeM_UduypOVr7DCJxdhUL5wRTnmPv18sjOi-JX_CV/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2104/248789546.html": {
+    "posted_at": "2026-11-15T21:17:20.040371+00:00",
+    "message_id": 628,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2104",
+    "year": 2004,
+    "price": 135000,
+    "median_price": 147487.49999999997,
+    "median_sample_size": 835,
+    "price_rating": "отличная цена",
+    "mileage_km": 36000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/EZ9Lk1m8IFFHsIWf4u1HcVpko3sU0wgpgzEC8-INtvizX-SVu_nQub50zI42wJBLFtlqWNNMz7T_k2kc/gen272wb.jpg"
   }
 }

@@ -3037,5 +3037,23 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-15T16:44:54.022038+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2104/248789546.html": {
+    "posted_at": "2026-11-15T21:17:25.951036+00:00",
+    "message_id": 412,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-15T21:17:25.951036+00:00",
+    "vk_post_id": 311,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/nissan/primera/125300645.html": {
+    "posted_at": "2026-11-15T21:17:39.956155+00:00",
+    "message_id": 413,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-15T21:17:39.956155+00:00",
+    "vk_post_id": 312,
+    "vk_deleted_at": null
   }
 }
