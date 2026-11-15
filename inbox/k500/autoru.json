@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:55:24.165235+00:00"
+"seen_at": "2026-11-15T15:06:30.969622+00:00"
 },
 {
 "ad_id": "autoru_1160784084-d11f9038",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T14:55:24.165213+00:00"
+"seen_at": "2026-11-15T15:06:30.969600+00:00"
 },
 {
 "ad_id": "autoru_1160793280-58f0643f",
@@ -45,7 +45,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:55:24.165146+00:00"
+"seen_at": "2026-11-15T15:06:30.969531+00:00"
+},
+{
+"ad_id": "autoru_1160800600-c632bbf8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2015,
+"price": 500000,
+"market_price": 338000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/n0cKDwS4xgLy9GYrXyTC8DrrxrzFORaFVU_PvbnY1FjsSPxcqWvSQmsGVQIBC13E4NrdjDKoQp8SoEPsdSgLgwr_YB-998vDGFi6BWrZlENUtMB7mn6k3zdB1w_LRpIsIGBY8ILctKu0IxbejPQWp_naZHi-Xn3Ntk7qZlvJKYa8nzs/1200x900n",
+"mileage_km": 169000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Щучье",
+"seen_at": "2026-11-15T15:06:10.380215+00:00"
 },
 {
 "ad_id": "autoru_1160802564-eccb5612",
@@ -61,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-15T14:55:07.849779+00:00"
+"seen_at": "2026-11-15T15:06:10.380199+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -77,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T14:55:07.849767+00:00"
+"seen_at": "2026-11-15T15:06:10.380167+00:00"
 },
 {
 "ad_id": "autoru_1160803736-41a7dbf5",
@@ -94,22 +110,6 @@
 "seller_type": "PRIVATE",
 "city": "Острогожск",
 "seen_at": "2026-11-15T14:55:07.849745+00:00"
-},
-{
-"ad_id": "autoru_1160800600-c632bbf8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2015,
-"price": 500000,
-"market_price": 338000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/gsw6R9-87npdAyihSKZDQqGcsb3uOyxupWcC87mwHVKnavF_xgTt09RryvJCbXH5yCCdYRLuMvyMSps96OQ2KY-ALLN_TE7oyd-vrjlVuc8fAE4Sqh8mEk3XU-Qjzt2WcTIFtXVjKfIJswVezGwj5dEWX036wilYvSudZG-YL_477Q/1200x900n",
-"mileage_km": 169000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Щучье",
-"seen_at": "2026-11-15T14:55:07.849696+00:00"
 },
 {
 "ad_id": "autoru_1160800721-a6eab952",
