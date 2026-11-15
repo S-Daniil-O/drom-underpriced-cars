@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Бабяково",
-"seen_at": "2026-11-15T00:19:04.680079+00:00"
+"seen_at": "2026-11-15T00:30:16.202499+00:00"
 },
 {
 "ad_id": "autoru_1160764187-f770feda",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:19:04.680067+00:00"
+"seen_at": "2026-11-15T00:30:16.202488+00:00"
 },
 {
 "ad_id": "autoru_1160767787-4494e16f",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T00:19:04.680054+00:00"
+"seen_at": "2026-11-15T00:30:16.202476+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:19:04.680035+00:00"
+"seen_at": "2026-11-15T00:30:16.202459+00:00"
 },
 {
 "ad_id": "autoru_1160774976-9aa2e211",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:19:04.680024+00:00"
+"seen_at": "2026-11-15T00:30:16.202449+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-15T00:19:04.680005+00:00"
+"seen_at": "2026-11-15T00:30:16.202431+00:00"
 },
 {
 "ad_id": "autoru_1160779618-4752b7c8",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:19:04.679982+00:00"
+"seen_at": "2026-11-15T00:30:16.202411+00:00"
 },
 {
 "ad_id": "autoru_1160781024-e506cdc3",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:19:04.679965+00:00"
+"seen_at": "2026-11-15T00:30:16.202396+00:00"
 },
 {
 "ad_id": "autoru_1160783426-66b5ac09",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-15T00:19:04.679928+00:00"
+"seen_at": "2026-11-15T00:30:16.202359+00:00"
 },
 {
 "ad_id": "autoru_1160790491-f6515908",
@@ -157,23 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-15T00:18:45.104553+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-15T00:18:45.104536+00:00"
+"seen_at": "2026-11-15T00:30:01.056847+00:00"
 },
 {
 "ad_id": "autoru_1160793821-b803042d",
@@ -189,7 +173,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Кантемировка",
-"seen_at": "2026-11-15T00:18:45.104522+00:00"
+"seen_at": "2026-11-15T00:30:01.056828+00:00"
+},
+{
+"ad_id": "autoru_1160793365-e7ea7d2a",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2024,
+"price": 1355000,
+"market_price": 1312500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
+"mileage_km": 20000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-15T00:30:01.056818+00:00"
 },
 {
 "ad_id": "autoru_1160796430-f3f6f35f",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:18:45.104492+00:00"
+"seen_at": "2026-11-15T00:30:01.056793+00:00"
 },
 {
 "ad_id": "autoru_1160796386-a1dee021",
@@ -221,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:18:45.104480+00:00"
+"seen_at": "2026-11-15T00:30:01.056780+00:00"
 },
 {
 "ad_id": "autoru_1160796630-21b0d5d9",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:18:45.104469+00:00"
+"seen_at": "2026-11-15T00:30:01.056766+00:00"
 },
 {
 "ad_id": "autoru_1160491303-cfcba7ab",
@@ -248,12 +248,28 @@
 "price": 1290000,
 "market_price": 1036000,
 "url": "https://auto.ru/cars/used/sale/kia/rio/1160491303-cfcba7ab/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/h0Rh8d1Utf-d1YERTTjywbb7V9l8hrTbgzAibAwOL4exUxxZOQsQ5A8b3D2g9dSFh1SUtzJpMHq15pdNZ7jPii0oUV6IIZ7yLZsT4fAxp0-q3crn6uH2s7xEUPu4WwAqLlj4Nn2lh60iXjLlANBNJEZJHyw9wTr2hkun7Ctt49MBRy8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20104625/5eMbffHxN7ush9Eg1ipgjKDmuCEnl_L86JwjQKMOybJPcAw1hlODFdqCl6ck8ViEUv4xaBL5o0L2XQX7n-qsEW5RDRdcUFviW33-0Nm-6CpwIBAubWa_pQ__O8A-Z6kWVu5YExxyNZUlzoGDhKxckKnMV9Bw9lLWEoDNDOgTI_zlhI4/1200x900n",
 "mileage_km": 215000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-15T00:18:45.104454+00:00"
+"seen_at": "2026-11-15T00:30:01.056748+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-15T00:30:01.056688+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -270,22 +286,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-15T00:18:45.104435+00:00"
-},
-{
-"ad_id": "autoru_1160793365-e7ea7d2a",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2024,
-"price": 1355000,
-"market_price": 1312500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
-"mileage_km": 20000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-15T00:18:45.104373+00:00"
 },
 {
 "ad_id": "autoru_1130347471-476d16cb",
