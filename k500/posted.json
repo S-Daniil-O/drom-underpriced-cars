@@ -8678,5 +8678,20 @@
     "mileage_km": 157000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/KU9MYBMvEjMpu1_q7x7xOCCjc6Xt80rIFSTiBXTlHFaYip9C-ryF6Anv2pBZaRbctdXjq7i6XL3jNUdn/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/80/406330423.html": {
+    "posted_at": "2026-11-15T17:30:18.963266+00:00",
+    "message_id": 626,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "80",
+    "year": 1992,
+    "price": 130000,
+    "median_price": 212256.00000000003,
+    "median_sample_size": 1142,
+    "price_rating": null,
+    "mileage_km": 469500,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NYDxKDQLMZ0O_FeOs0qioCd7LKMeGO-a8hCBAADjXhsIxwKGM4qtbjQjX-JnmoJip_-7moGyofv9L_rW/gen272wb.jpg"
   }
 }
