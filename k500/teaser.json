@@ -3080,5 +3080,19 @@
     "checked_at": "2026-11-16T11:54:35.684889+00:00",
     "vk_post_id": 315,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/toyota/corolla/835752156.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-16T20:52:31.962559+00:00"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/479423244.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-16T20:52:31.962559+00:00"
   }
 }
