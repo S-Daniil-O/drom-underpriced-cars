@@ -119,7 +119,7 @@ def link_forum(st, chat_id, allowed):
         return
     FORUM = chat_id
     st.d["forum"] = chat_id
-    st.d["owners"] = sorted(allowed)
+    st.d["owners"] = sorted(channel_admins(st))   # снимок админов КАНАЛА, не группы — права группы остаются только живыми
     st.dirty = True
     moved = 0
     for v in st.d["lots"].values():
@@ -378,13 +378,20 @@ def audit_text(st):
 
 
 # ---------------------------------------------------------------- команды
+def channel_admins(st):
+    """Администраторы канала «Мои лоты» (TORGI_FAV_CHAT_ID) + снимок, сохранённый при /link, чтобы доступ
+    не пропал, если канал потом удалят. Это единственное, что попадает в постоянный список owners."""
+    r = tg("getChatAdministrators", chat_id=CHAT)
+    return {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")} | set(st.d.get("owners", []))
+
+
 def admins(st):
-    """Кто управляет ботом: администраторы канала «Мои лоты» и, если подключена, администраторы группы
-    с темами (после /link управление идёт там) — быстро добавленный в группу админ получает права сразу,
-    без /link заново. Плюс список, запомненный при /link, чтобы канал можно было потом удалить."""
-    ids = set(st.d.get("owners", []))
-    for chat_id in {CHAT, FORUM} - {None}:
-        r = tg("getChatAdministrators", chat_id=chat_id)
+    """Кто управляет ботом сейчас: админы канала (постоянно, через owners) + ТЕКУЩИЕ админы группы с темами,
+    если она подключена — их права не сохраняются навсегда: разжаловали в группе — на следующей проверке
+    доступ пропал сам собой, как и у editors. В owners (channel_admins) админы группы никогда не попадают."""
+    ids = channel_admins(st)
+    if FORUM:
+        r = tg("getChatAdministrators", chat_id=FORUM)
         ids |= {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
     return ids
 
