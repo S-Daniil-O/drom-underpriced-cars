@@ -4166,7 +4166,9 @@
    "msgs": [],
    "topic": 1913,
    "title": "Лот №64",
-   "tried": true
+   "tried": true,
+   "requests": 0,
+   "req_max": 0
   }
  },
  "offset": 177674388,
@@ -4184,7 +4186,7 @@
   "-1003901499895": "ТОРГИ НИС"
  },
  "audit_day": "2026-11-16",
- "req_cursor": 13932,
+ "req_cursor": 13951,
  "ap_day": {
   "date": "2026-11-16",
   "n": 1
