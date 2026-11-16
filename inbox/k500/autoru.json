@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160793280-58f0643f",
-"source": "autoru",
-"brand": "Иж",
-"model": "2126 «Ода»",
-"year": 2001,
-"price": 150000,
-"market_price": 55500,
-"url": "https://auto.ru/cars/used/sale/ig/2126/1160793280-58f0643f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/2c3930755d41f3e4a3c902756b1be7c6/1200x900n",
-"mileage_km": 91000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-16T15:36:57.794850+00:00"
-},
-{
 "ad_id": "autoru_1160800600-c632bbf8",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -24,12 +8,12 @@
 "price": 500000,
 "market_price": 339000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/2O_EbSSefqAavjHINEn6mtJDg8dzNytTSIoSwFLMGWo0RxD5RIrMjydYwE1SOgXoazfPTbVl9ucc_HSl0r2qaeL-L8wdpyF6vh4y_1a5H1xOIJVOZV8UZbpvtpvEoIgzWmBfeLqitx-mclqXGPbP8BIwDEwoKUugQaLMexEkqhefMA/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/8SnBcrneJGmS-rTNNIQk1OS6T3RMHUGbyo5Gls4cFEnQ-Rgq0D8x34-azm-B5ZdRZMHDoBO-x1bu2YwZ-FrNS3bIhUUXDMFAHg5lIxB6Kr15WoCyxdoPjRDyZcIeRJIN1QqDml0Nchw9MLJa6yeQi4eVXdZoAd5w_N64znr84vBH4v4/1200x900n",
 "mileage_km": 169000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Щучье",
-"seen_at": "2026-11-16T15:36:57.794796+00:00"
+"seen_at": "2026-11-16T15:48:03.342733+00:00"
 },
 {
 "ad_id": "autoru_1160802564-eccb5612",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-16T15:36:57.794775+00:00"
+"seen_at": "2026-11-16T15:48:03.342712+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-16T15:36:57.794756+00:00"
+"seen_at": "2026-11-16T15:48:03.342692+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-16T15:36:57.794695+00:00"
+"seen_at": "2026-11-16T15:48:03.342635+00:00"
 },
 {
 "ad_id": "autoru_1160805122-cd1423b4",
@@ -93,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-16T15:36:40.616519+00:00"
+"seen_at": "2026-11-16T15:47:47.556043+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-16T15:36:40.616491+00:00"
+"seen_at": "2026-11-16T15:47:47.556011+00:00"
 },
 {
 "ad_id": "autoru_1160814121-6f4c6558",
@@ -125,7 +109,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-16T15:36:40.616449+00:00"
+"seen_at": "2026-11-16T15:47:47.555969+00:00"
+},
+{
+"ad_id": "autoru_1160793280-58f0643f",
+"source": "autoru",
+"brand": "Иж",
+"model": "2126 «Ода»",
+"year": 2001,
+"price": 150000,
+"market_price": 55500,
+"url": "https://auto.ru/cars/used/sale/ig/2126/1160793280-58f0643f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18720861/2c3930755d41f3e4a3c902756b1be7c6/1200x900n",
+"mileage_km": 91000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-16T15:36:57.794850+00:00"
 },
 {
 "ad_id": "autoru_1160818103-ec74cc65",
