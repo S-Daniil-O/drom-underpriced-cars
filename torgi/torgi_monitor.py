@@ -460,7 +460,10 @@ def tg_detail(row, any_lot=False):
 
 # ---------------------------------------------------------------- НИС (nistp.ru)
 NIS_BASE = "https://nistp.ru/bankrot"
-NIS_FILTER = [("trade_type[]", "Публичное предложение"), ("trade_state[]", "Торги объявлены"),
+# Публичное предложение по банкротству + торги юрлиц с понижением цены (коммерческие)
+NIS_FILTER = [("trade_type[]", "Публичное предложение"), ("trade_type[]", "Коммерческое публичное предложение"),
+              ("trade_type[]", "Аукцион на понижение и повышение цены (Голландский аукцион)"),
+              ("trade_state[]", "Торги объявлены"),
               ("trade_state[]", "Прием заявок"), ("trade_state[]", "Идут торги"), ("view_type", "lot")]
 
 
@@ -538,22 +541,27 @@ def nis_cards(rows):
             by_trade.setdefault(row["trade"], []).append(row)
     lots = []
     for trade, items in by_trade.items():
-        page = None
-        for attempt in range(3):
-            try:
-                page = requests.get(f"{NIS_BASE}/trade_view.php?trade_nid={trade}", headers={"User-Agent": UA}, timeout=60).text
-                break
-            except requests.RequestException:
-                time.sleep(5)
-        time.sleep(0.5)
+        page = _nis_trade_page(trade, 1)
         if page is None or "id='table_lot_" not in page:
             log(f"НИС: карточка торгов {trade} не загрузилась")
             _nis_incomplete[0] = True
             continue
         head = page[:page.find("id='table_lot_")]
         region = strip_html((re.search(r"<td class='label'>Регион</td><td>(.*?)</td>", page, re.S) or [None, ""])[1])
-        blocks = {m.group(1): m.group(0) for m in re.finditer(
-            r"<table class='data ' id='table_lot_\d+'>.*?<a name='lot(\d+)'>.*?(?=<table class='data ' id='table_lot_|\Z)", page, re.S)}
+        blocks = _nis_blocks(page)
+        # В больших торгах (сотни лотов) на странице только 100 лотов — остальные на следующих страницах.
+        pages = max([1] + [int(x) for x in re.findall(r"pagenum_send\((\d+)\)", page)])
+        n = 2
+        while n <= min(pages, 30) and any(row["lot"] not in blocks for row in items):
+            more = _nis_trade_page(trade, n)
+            if more is None:
+                log(f"НИС: торги {trade}, страница лотов {n} не загрузилась")
+                _nis_incomplete[0] = True
+                break
+            blocks.update(_nis_blocks(more))
+            n += 1
+        if n > 2:
+            log(f"НИС: торги {trade} — {len(blocks)} лотов на {n - 1} стр.")
         for row in items:
             b = blocks.get(row["lot"])
             lot = nis_detail(row, b, region) if b else None
@@ -564,9 +572,30 @@ def nis_cards(rows):
     return lots
 
 
+def _nis_trade_page(trade, n):
+    """Страница торгов НИС; n — номер страницы списка лотов."""
+    params = {"trade_nid": trade} if n == 1 else {"trade_nid": trade, "lots_pagenum": str(n)}
+    for attempt in range(3):
+        try:
+            r = requests.get(f"{NIS_BASE}/trade_view.php", params=params, headers={"User-Agent": UA}, timeout=60)
+            time.sleep(0.5)
+            return r.text
+        except requests.RequestException:
+            time.sleep(5)
+    return None
+
+
+def _nis_blocks(page):
+    return {m.group(1): m.group(0) for m in re.finditer(
+        r"<table class='data ' id='table_lot_\d+'>.*?<a name='lot(\d+)'>.*?(?=<table class='data ' id='table_lot_|\Z)", page, re.S)}
+
+
 def nis_detail(row, b, region):
     field = lambda name: strip_html((re.search(r"<td class='label'>" + name + r"[^<]*</td>\s*<td[^>]*>(.*?)</td>", b, re.S) or [None, ""])[1])
-    if "легков" not in field("Категории лота").lower():
+    # Категорию организатор иногда ставит не ту («UAZ PATRIOT, легковой» в «Спецтехнике») —
+    # тогда верим слову «легковой» в описании самого лота.
+    if "легков" not in field("Категории лота").lower() and not re.search(
+            r"легков", field("Наименование имущества") + " " + field("Cведения об имуществе"), re.I):
         return None
     sched = []
     for m in re.finditer(r"class='discount_row'[^>]*><td>([\d. :]+)</td><td>([\d. :]+)</td><td>([\d .]+)</td><td>([\d .]*)</td>", b):
@@ -1598,7 +1627,10 @@ def main():
             if d["source"] == "МЭТС":
                 mets_start_price(d)
         # слишком дешёвые относительно рынка (<5%) — почти всегда доля/битый/ошибка распознавания
-        deals = [d for d in deals if d["min_price"] >= d["market"]["price"] * MIN_RATIO]
+        # У НИС публичное предложение часто опускается до 5% от старта: если торги начинались с цены
+        # целой машины (≥30% рынка), глубокий минимум — не ошибка, а настоящее снижение.
+        deals = [d for d in deals if d["min_price"] >= d["market"]["price"] * MIN_RATIO
+                 or (d["source"] == "НИС" and (d.get("start_price") or 0) >= d["market"]["price"] * 0.3)]
         # доли в праве собственности — не целый автомобиль
         deals = [d for d in deals if not re.search(r"\bдол[ьяиеюей]\b|\d/\d\s*дол", (d["title"] + " " + d.get("description", "")).lower())]
         deals.sort(key=lambda d: ("#Воронеж" not in tags(d), "#Черноземье" not in tags(d),
