@@ -550,7 +550,7 @@ def nis_cards(rows):
         region = strip_html((re.search(r"<td class='label'>Регион</td><td>(.*?)</td>", page, re.S) or [None, ""])[1])
         blocks = _nis_blocks(page)
         # В больших торгах (сотни лотов) на странице только 100 лотов — остальные на следующих страницах.
-        pages = max([1] + [int(x) for x in re.findall(r"pagenum_send\((\d+)\)", page)])
+        pages = max([1] + [int(x) for x in re.findall(r"pagenum_send\((\d{1,3})\)", page)])
         n = 2
         while n <= min(pages, 30) and any(row["lot"] not in blocks for row in items):
             more = _nis_trade_page(trade, n)
@@ -560,6 +560,10 @@ def nis_cards(rows):
                 break
             blocks.update(_nis_blocks(more))
             n += 1
+        missing = [row["lot"] for row in items if row["lot"] not in blocks]
+        if missing:     # не нашли лот — не считаем его снятым с торгов
+            log(f"НИС: торги {trade} — не найдены лоты {missing[:10]}")
+            _nis_incomplete[0] = True
         if n > 2:
             log(f"НИС: торги {trade} — {len(blocks)} лотов на {n - 1} стр.")
         for row in items:
@@ -579,7 +583,9 @@ def _nis_trade_page(trade, n):
         try:
             r = requests.get(f"{NIS_BASE}/trade_view.php", params=params, headers={"User-Agent": UA}, timeout=60)
             time.sleep(0.5)
-            return r.text
+            if r.ok and "id='table_lot_" in r.text:
+                return r.text
+            time.sleep(5)
         except requests.RequestException:
             time.sleep(5)
     return None
