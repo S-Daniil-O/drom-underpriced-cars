@@ -4308,5 +4308,35 @@
     "mileage_km": 25000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/3922519/a10e2a8ff53fd64bc41ef41ad825236a/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/subaru/forester/308969034.html": {
+    "posted_at": "2026-11-16T12:07:39.992472+00:00",
+    "message_id": 313,
+    "deleted_at": null,
+    "brand": "Subaru",
+    "model": "Forester",
+    "year": 2011,
+    "price": 950000,
+    "median_price": 1200000.0,
+    "median_sample_size": 1157,
+    "price_rating": "хорошая цена",
+    "mileage_km": 235000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/C1EunCD7v6tVdr0-AUNhBwyjbOu8Lmvh8olLhnqLqfYVc24YJpKsRiT60T1L3FYnZtae5aMChyN3gXyT/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/honda/civic/301422557.html": {
+    "posted_at": "2026-11-16T12:07:42.653111+00:00",
+    "message_id": 314,
+    "deleted_at": null,
+    "brand": "Honda",
+    "model": "Civic",
+    "year": 2007,
+    "price": 550000,
+    "median_price": 700000.0,
+    "median_sample_size": 1405,
+    "price_rating": "нормальная цена",
+    "mileage_km": 266000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/TcMDdO3MRAsbmukyc9iTvkYi6evsFpzmFOj5MHoxH2Ub7nPvlUMcAkMVYFZO6yrIrpCwjLRyCwmNjgoE/gen272wb.jpg"
   }
 }
