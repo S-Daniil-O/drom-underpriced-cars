@@ -249,6 +249,7 @@ def cleanup(active_file, posted_file):
         return
     act = json.loads(active_file.read_text())
     lots, ok_src, max_km = act.get("lots") or {}, set(act.get("sources_ok", [])), int(act.get("max_km", 1000))
+    unknown = set(act.get("unknown") or [])     # лот есть на площадке, но карточку не разобрали — не «снят»
     # защита: список должен быть свежим и непустым, иначе ничего не удаляем
     age_h = (datetime.now() - datetime.fromisoformat(act.get("created", "2000-01-01T00:00"))).total_seconds() / 3600
     if age_h > 36 or not ok_src or len(lots) < 100:
@@ -266,7 +267,7 @@ def cleanup(active_file, posted_file):
         info = lots.get(base)
         src = SOURCES.get(base.split("-")[0])
         if info is None:
-            why = "лот снят с торгов" if src in ok_src else None
+            why = "лот снят с торгов" if src in ok_src and base not in unknown else None
         elif info.get("km") is not None and info["km"] > max_km:   # регион не распознан — не трогаем
             why = f"регион вне зоны (дальше {max_km} км от Воронежа или исключён)"
         elif info.get("end") and datetime.fromisoformat(info["end"]) < now:

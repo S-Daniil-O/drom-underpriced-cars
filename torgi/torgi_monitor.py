@@ -475,6 +475,7 @@ NIS_NOT_PHOTO = re.compile(r"договор|задат|положени|реше
                            r"документ|птс|стс|паспорт|свидетельств|\bакт\b", re.I)
 NIS_PHOTO_EXT = (".pdf", ".zip", ".jpg", ".jpeg", ".png", ".webp")
 _nis_incomplete = [False]   # не все карточки загрузились: «лот пропал» в этот запуск не считается
+_nis_unknown = set()        # лоты есть в списке площадки, но не найдены в карточке — их посты не трогаем
 
 
 def nis_photo_docs(part):
@@ -561,9 +562,9 @@ def nis_cards(rows):
             blocks.update(_nis_blocks(more))
             n += 1
         missing = [row["lot"] for row in items if row["lot"] not in blocks]
-        if missing:     # не нашли лот — не считаем его снятым с торгов
+        if missing:     # не нашли лот — не считаем его снятым с торгов (только эти лоты, не всю площадку)
             log(f"НИС: торги {trade} — не найдены лоты {missing[:10]}")
-            _nis_incomplete[0] = True
+            _nis_unknown.update(f"nis-{trade}-{x}" for x in missing)
         if n > 2:
             log(f"НИС: торги {trade} — {len(blocks)} лотов на {n - 1} стр.")
         for row in items:
@@ -1320,6 +1321,7 @@ def write_active(lots, path):
     sources_ok — площадки, которые ответили (по остальным «лот пропал» не считается)."""
     data = {"created": time.strftime("%Y-%m-%dT%H:%M"), "max_km": MAX_KM,
             "sources_ok": sorted({lot["source"] for lot in lots} - ({"НИС"} if _nis_incomplete[0] else set())),
+            "unknown": sorted(_nis_unknown),
             "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"],
                                  "vin": parse_vin((lot.get("title") or "") + " " + (lot.get("description") or ""))[0]}
                      for lot in lots}}
