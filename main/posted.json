@@ -4263,5 +4263,20 @@
     "mileage_km": 243500,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/66fz9hjppyY8nzpmHi4W8mtx2j_tPuKDcsQVoVThXniblhVj8v0UKxsvX9DP3-bOsAdtc8R3vjnjnO7v/gen272wb.jpg"
+  },
+  "autoru_1160809371-d75bab7f": {
+    "posted_at": "2026-11-16T08:29:36.430312+00:00",
+    "message_id": 310,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2121 (4x4)",
+    "year": 2018,
+    "price": 549000,
+    "median_price": 729816.8,
+    "median_sample_size": 8,
+    "price_rating": null,
+    "mileage_km": 99500,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/16145448/f400d68f750629473ac6cd45226c67b6/1200x900n"
   }
 }
