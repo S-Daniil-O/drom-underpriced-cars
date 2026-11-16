@@ -379,11 +379,14 @@ def audit_text(st):
 
 # ---------------------------------------------------------------- команды
 def admins(st):
-    """Кто управляет ботом: администраторы канала «Мои лоты». Их список запоминается при /link,
-    чтобы канал можно было потом удалить. Администраторы группы прав не получают."""
-    r = tg("getChatAdministrators", chat_id=CHAT)
-    ids = {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
-    return ids | set(st.d.get("owners", []))
+    """Кто управляет ботом: администраторы канала «Мои лоты» и, если подключена, администраторы группы
+    с темами (после /link управление идёт там) — быстро добавленный в группу админ получает права сразу,
+    без /link заново. Плюс список, запомненный при /link, чтобы канал можно было потом удалить."""
+    ids = set(st.d.get("owners", []))
+    for chat_id in {CHAT, FORUM} - {None}:
+        r = tg("getChatAdministrators", chat_id=chat_id)
+        ids |= {a["user"]["id"] for a in r.get("result", []) if not a["user"].get("is_bot")}
+    return ids
 
 
 def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=None, note=""):
