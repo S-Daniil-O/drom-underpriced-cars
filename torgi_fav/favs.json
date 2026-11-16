@@ -4049,10 +4049,26 @@
    "photos_done": true,
    "no_photos": true,
    "hit_target": true
+  },
+  "cdt-394567": {
+   "n": 63,
+   "url": "https://torgi.cdtrf.ru/trades/394567",
+   "name": "https://torgi.cdtrf.ru/trades/394567",
+   "vin": null,
+   "target": null,
+   "card": 1910,
+   "added": "2026-11-16T16:43",
+   "end": null,
+   "sent": {},
+   "btn": 2,
+   "head": null,
+   "msgs": [],
+   "topic": 1909,
+   "title": "Лот №63"
   }
  },
- "offset": 177674287,
- "seq": 62,
+ "offset": 177674288,
+ "seq": 63,
  "forum": -1004498088083,
  "owners": [
   1188456401
