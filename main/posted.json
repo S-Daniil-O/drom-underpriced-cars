@@ -4353,5 +4353,35 @@
     "mileage_km": 193000,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/R40wb4oyrEdmjtwwLMUEFI6OXF9yfWSov1J4VLK8n-2g9SG9RHa9uUv5GgOjwpZ6d5qMlOlrlas2CYLJ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/sportage/846760414.html": {
+    "posted_at": "2026-11-16T18:22:44.333635+00:00",
+    "message_id": 320,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2011,
+    "price": 995000,
+    "median_price": 1175835.0,
+    "median_sample_size": 1055,
+    "price_rating": "хорошая цена",
+    "mileage_km": 220000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/pIyw5nYGKTPjQEEJIb3UWOHmGOcXl0AKbQMYTsKskAcD6Dkvs9lY4YtwzslJqJtHJm8BlJpMuFJBTU-v/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/826587714.html": {
+    "posted_at": "2026-11-16T18:22:47.125790+00:00",
+    "message_id": 321,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 2011,
+    "price": 840000,
+    "median_price": 1000000.0,
+    "median_sample_size": 1175,
+    "price_rating": "нормальная цена",
+    "mileage_km": 199000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/u6q_P1tpVIJXCs2GZW9ZdZgYka9mE0Bnx-p-Ic7ujchg4LrBNjN4-fs2SrtFwkUqOpU_qH_dIqB_ckgm/gen272wb.jpg"
   }
 }
