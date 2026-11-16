@@ -525,6 +525,9 @@ def nis_list():
                          "text": strip_html(cells[2]) if len(cells) > 2 else strip_html(row),
                          "status": strip_html(cells[-1]) if cells else ""})
         if not found:
+            if "Не найдено" not in r.text:     # пустая страница без пометки конца — сбой, а не конец списка
+                log(f"НИС: страница списка {page} пустая без пометки конца — список мог оборваться")
+                _nis_incomplete[0] = True
             break
         page += 1
         time.sleep(0.5)
@@ -565,11 +568,15 @@ def nis_cards(rows):
         if missing:     # не нашли лот — не считаем его снятым с торгов (только эти лоты, не всю площадку)
             log(f"НИС: торги {trade} — не найдены лоты {missing[:10]}")
             _nis_unknown.update(f"nis-{trade}-{x}" for x in missing)
+            if len(missing) > 5 or len(missing) * 5 > len(items):   # много пропало — карточка разобрана плохо
+                _nis_incomplete[0] = True
         if n > 2:
             log(f"НИС: торги {trade} — {len(blocks)} лотов на {n - 1} стр.")
         for row in items:
             b = blocks.get(row["lot"])
             lot = nis_detail(row, b, region) if b else None
+            if b and not lot:   # лот ещё на торгах, но не легковой или без графика — «снятым» не считаем
+                _nis_unknown.add(f"nis-{trade}-{row['lot']}")
             if lot:
                 lot["photo_docs"] = nis_lot_docs(b, head, lot["title"], len(blocks) == 1)
                 lots.append(lot)
