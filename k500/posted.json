@@ -8813,5 +8813,50 @@
     "mileage_km": 210000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2088079/36ebe90e4f12f731fd4da2f812472012/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2105/645135440.html": {
+    "posted_at": "2026-11-16T22:37:57.873408+00:00",
+    "message_id": 636,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2105",
+    "year": 2001,
+    "price": 70000,
+    "median_price": 191140.0,
+    "median_sample_size": 1553,
+    "price_rating": null,
+    "mileage_km": 66000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ZroFRNLxuFrS7SHhxFcx5s_EnF4iZQE6npZdhWAMc31Qm471l2-4jVZIPqHpql7JPG9EYr2juSznsY9h/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/555170554.html": {
+    "posted_at": "2026-11-16T22:38:47.995487+00:00",
+    "message_id": 637,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lanos",
+    "year": 2008,
+    "price": 50000,
+    "median_price": 118999.99999999999,
+    "median_sample_size": 5667,
+    "price_rating": null,
+    "mileage_km": 400000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/rTXq4t-dQHa8_LYdY8kXX_dXsW0xiOIrG-SXb5CJuBU3cRm89d8HCEgyVf73NGKg0lMZUiiVcVXfKTn1/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/granta/775356961.html": {
+    "posted_at": "2026-11-16T22:38:56.817061+00:00",
+    "message_id": 638,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Гранта",
+    "year": 2018,
+    "price": 269000,
+    "median_price": 424513.0,
+    "median_sample_size": 4394,
+    "price_rating": null,
+    "mileage_km": 185000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/CkrJEYpVvjxSl611sXZDokkaJdZSVYPwXZVkJCm03803vtGZlQ-jMierjjxombOtuCjxaQdlpGHgnwqn/gen272wb.jpg"
   }
 }

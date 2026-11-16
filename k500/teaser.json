@@ -3073,5 +3073,37 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-16T21:22:55.433376+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2105/645135440.html": {
+    "posted_at": "2026-11-16T22:38:44.889022+00:00",
+    "message_id": 420,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-16T22:38:44.889022+00:00",
+    "vk_post_id": 316,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lanos/555170554.html": {
+    "posted_at": "2026-11-16T22:38:54.030626+00:00",
+    "message_id": 421,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-16T22:38:54.030626+00:00",
+    "vk_post_id": 317,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/hyundai/grace/468688724.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-16T22:39:12.275345+00:00"
+  },
+  "https://auto.drom.ru/voronezh/honda/civic/589905022.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-16T22:39:12.275345+00:00"
   }
 }
