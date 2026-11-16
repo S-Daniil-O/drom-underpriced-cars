@@ -3071,5 +3071,12 @@
     "posted_at": "2026-11-16T09:11:52.520527+00:00",
     "message_id": 417,
     "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/664079097.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-16T09:58:01.125673+00:00"
   }
 }
