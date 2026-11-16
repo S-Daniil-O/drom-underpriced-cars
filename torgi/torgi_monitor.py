@@ -525,12 +525,15 @@ def nis_list():
                          "text": strip_html(cells[2]) if len(cells) > 2 else strip_html(row),
                          "status": strip_html(cells[-1]) if cells else ""})
         if not found:
-            if "Не найдено" not in r.text:     # пустая страница без пометки конца — сбой, а не конец списка
+            if "Не найдено торгов по заданным условиям" not in r.text:     # пустая страница без пометки конца — сбой, а не конец списка
                 log(f"НИС: страница списка {page} пустая без пометки конца — список мог оборваться")
                 _nis_incomplete[0] = True
             break
         page += 1
         time.sleep(0.5)
+    if page >= 300:
+        log("НИС: достигнут предел страниц списка — список неполный")
+        _nis_incomplete[0] = True
     log(f"НИС: {len(rows)} лотов публичного предложения (все категории), страниц {page - 1}")
     return rows
 
