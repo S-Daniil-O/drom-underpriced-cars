@@ -4278,5 +4278,20 @@
     "mileage_km": 99500,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/16145448/f400d68f750629473ac6cd45226c67b6/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/faw/besturn_x40/268913489.html": {
+    "posted_at": "2026-11-16T08:44:28.380265+00:00",
+    "message_id": 311,
+    "deleted_at": null,
+    "brand": "FAW",
+    "model": "Besturn X40",
+    "year": 2019,
+    "price": 900000,
+    "median_price": 1100000.0,
+    "median_sample_size": 1187,
+    "price_rating": "хорошая цена",
+    "mileage_km": 71000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/oerhSIwO8Hwv2gnKBLrikVdiMPrKCZFw4IvPAep1CRrzvkU2_fAAIW0yxx9h3lkTpSpe_WtMKnAhZY6W/gen272wb.jpg"
   }
 }
