@@ -1,35 +1,19 @@
 [
 {
-"ad_id": "autoru_1160800600-c632bbf8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2015,
-"price": 500000,
-"market_price": 339000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/RMVtZHEtUHtmCHOgTh-AeZWUYETKASKIXDRTIX-_peNgOloehedGlxd_ie3NyizxzKjIaNYkeG1zV_FtcqeuVl5YTfeWg6Im71YvWCEm9leCm4dFq6AK2anyBYCdYfr38cPERPhv4ugOETkSNi4B4TTmCulMTrmMajEJpQBBzFt9bH8/1200x900n",
-"mileage_km": 169000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Щучье",
-"seen_at": "2026-11-17T09:34:53.494537+00:00"
-},
-{
 "ad_id": "autoru_1160802564-eccb5612",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "Priora",
+"model": "2114",
 "year": 2012,
 "price": 450000,
 "market_price": 249500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160802564-eccb5612/",
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160799155-d0565934/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17831387/711f10878df9e3ec24dd09dff0ef7f67/1200x900n",
 "mileage_km": 170000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Колодезный",
-"seen_at": "2026-11-17T09:34:53.494520+00:00"
+"seen_at": "2026-11-17T09:46:09.575876+00:00"
 },
 {
 "ad_id": "autoru_1160802597-9438873e",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T09:34:53.494505+00:00"
+"seen_at": "2026-11-17T09:46:09.575863+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-17T09:34:53.494477+00:00"
+"seen_at": "2026-11-17T09:46:09.575840+00:00"
 },
 {
 "ad_id": "autoru_1160805122-cd1423b4",
@@ -77,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T09:34:53.494438+00:00"
+"seen_at": "2026-11-17T09:46:09.575824+00:00"
+},
+{
+"ad_id": "autoru_1160800600-c632bbf8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2015,
+"price": 500000,
+"market_price": 339000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/fYIXvBo5zpWavbpfzBHKFHT8JMFdAl_9migCtPkuv6YLSQAbbDbMSEFqbkurCu4WNgepuJXWOb4e8BViP1V4T8Cwr70MZa04jh4UetZJeDXpu9pO5jcb8F3_AyY7_jYuv6z-0ZmhYYMurVlt2OyrRP650H7Wabs_3QST_uX2YrlcAX8/1200x900n",
+"mileage_km": 169000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Щучье",
+"seen_at": "2026-11-17T09:46:09.575800+00:00"
 },
 {
 "ad_id": "autoru_1160809014-9a5d7886",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T09:34:33.397095+00:00"
+"seen_at": "2026-11-17T09:46:09.575767+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T09:34:33.397083+00:00"
+"seen_at": "2026-11-17T09:46:09.575727+00:00"
 },
 {
 "ad_id": "autoru_1160814121-6f4c6558",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-17T09:34:33.397060+00:00"
+"seen_at": "2026-11-17T09:45:50.265012+00:00"
 },
 {
 "ad_id": "autoru_1160818103-ec74cc65",
@@ -136,11 +136,11 @@
 "price": 289000,
 "market_price": 86500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/k0DaPneseFPdl8dTYE-TuP1q5qfJ0gQEpOfTspcPa67ev_I1IkEvJSIud0IdcCqS8NyydwohU5PZayC_gOZFcdVcmjjHyq4UhLP8uKrcGAODBamtDlZrRTnpHM4UWg4E6e4X5HJ-iR4iyF5zfElQcdK_J6tVxK8rcTwFwtixupQ9thY/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/3_ubFs_AO_OIo2xgm1pllhlZEbwrvndTKD6oQeFsiY53hqbPVTDYvUkl6UhF6U9OjyAabP9JMxme51C092mEO10qk5Wbt-Pkfs2SmaIleiIsFE9Cd-L3lXgBQW4zlYe0ME3vJcmICbnfoLdi3AMUyvO9a6LdvXP2pdmbkP1xFfd-ZpU/1200x900n",
 "mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T09:34:33.397024+00:00"
+"seen_at": "2026-11-17T09:45:50.264975+00:00"
 }
 ]
