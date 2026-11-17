@@ -8873,5 +8873,20 @@
     "mileage_km": 167000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/1981791/83a5fedb8dd4725a1ecfa8bb8e4dc78b/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mazda/mazda3/461859688.html": {
+    "posted_at": "2026-11-17T11:25:09.746823+00:00",
+    "message_id": 640,
+    "deleted_at": null,
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "year": 2008,
+    "price": 410000,
+    "median_price": 445000.0,
+    "median_sample_size": 6,
+    "price_rating": "отличная цена",
+    "mileage_km": null,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/XyEbJYqc5K-uOXLBLCoJvSQ_Bjw26BKwJzo4xMe1jz16qA_Zr-SPoHxEpunRkHGzDj4k-ldvtQc-PB1w/gen272wb.jpg"
   }
 }
