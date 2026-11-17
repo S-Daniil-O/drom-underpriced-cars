@@ -8,7 +8,7 @@
 "mileage_km": 155445,
 "price_rating": "нормальная цена",
 "url": "https://auto.drom.ru/voronezh/hyundai/solaris/736839753.html",
-"image_url": "https://s12.auto.drom.ru/photo/v2/mc-p0L_oeikTHvYQBxCndc9eJyEp30DeommyNpD_eDz2A7lUkAXKj85P28nsXX6RCgQkdzzUG6_vvPZb/gen272wb.jpg",
+"image_url": "https://s31.auto.drom.ru/photo/v2/mc-p0L_oeikTHvYQBxCndc9eJyEp30DeommyNpD_eDz2A7lUkAXKj85P28nsXX6RCgQkdzzUG6_vvPZb/gen272wb.jpg",
 "market_price": 799000,
 "market_ref_km": null,
 "median_sample_size": 5,
@@ -17,7 +17,27 @@
 "description": "Дополнительно: Продаю авто в отличном состоянии, бережное использование. Все вопросы по телефону",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-11-17T07:44:05.522836+00:00"
+"seen_at": "2026-11-17T10:56:23.720870+00:00"
+},
+{
+"ad_id": "https://auto.drom.ru/voronezh/lada/granta/807798575.html",
+"brand": "Лада",
+"model": "Гранта",
+"year": 2022,
+"price": 700000,
+"mileage_km": 20172,
+"price_rating": null,
+"url": "https://auto.drom.ru/voronezh/lada/granta/807798575.html",
+"image_url": "https://s31.auto.drom.ru/photo/v2/tJtv51iFOGnoQoMqOIfKNYXrPbzZ-cA7h68LC5Z6ERWThNvgeLk9IhshGR6wACrCypyQHXuGPM35iejx/gen272wb.jpg",
+"market_price": 715000,
+"market_ref_km": 72800,
+"median_sample_size": 11,
+"owners": 1,
+"owners_display": "1",
+"description": "Дополнительно: 1 хозяин. Родной пробег.Усилитель руля. Музыка. Состояние нового авто. Подушка безопасности. ЭСП.",
+"special_marks": "",
+"source": "drom",
+"seen_at": "2026-11-17T10:56:23.720870+00:00"
 },
 {
 "ad_id": "https://auto.drom.ru/voronezh/lada/vesta/924619242.html",
@@ -28,7 +48,7 @@
 "mileage_km": 98100,
 "price_rating": null,
 "url": "https://auto.drom.ru/voronezh/lada/vesta/924619242.html",
-"image_url": "https://s12.auto.drom.ru/photo/v2/76lVhZt6Zgaip_sm5g51Y9fZpSR9zrYT63joABl9UcDpsLrL0k5_Z5HSAkd6dVl-nz4z8_JOugQGSBE9/gen272wb.jpg",
+"image_url": "https://s31.auto.drom.ru/photo/v2/76lVhZt6Zgaip_sm5g51Y9fZpSR9zrYT63joABl9UcDpsLrL0k5_Z5HSAkd6dVl-nz4z8_JOugQGSBE9/gen272wb.jpg",
 "market_price": 780000,
 "market_ref_km": null,
 "median_sample_size": 5,
@@ -37,6 +57,6 @@
 "description": "Дополнительно: хороший автомобиль🚘. связи с постройке дома вынужден продать!",
 "special_marks": "",
 "source": "drom",
-"seen_at": "2026-11-17T07:44:05.522836+00:00"
+"seen_at": "2026-11-17T10:56:23.720870+00:00"
 }
 ]
