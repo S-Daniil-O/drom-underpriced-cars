@@ -1,53 +1,5 @@
 [
 {
-"ad_id": "autoru_1160802564-eccb5612",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2012,
-"price": 450000,
-"market_price": 249500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160802564-eccb5612/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17831387/711f10878df9e3ec24dd09dff0ef7f67/1200x900n",
-"mileage_km": 170000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Колодезный",
-"seen_at": "2026-11-17T07:09:04.866749+00:00"
-},
-{
-"ad_id": "autoru_1160802597-9438873e",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2014,
-"price": 420000,
-"market_price": 307500,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160802597-9438873e/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/6c9407fb72277d35033059edd5e1982e/1200x900n",
-"mileage_km": 120000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-17T07:09:04.866733+00:00"
-},
-{
-"ad_id": "autoru_1160800600-c632bbf8",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2015,
-"price": 500000,
-"market_price": 339000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/_rB3wKynQSi6LXi8V_4q-sVvLhPijQRroOdu-y2Hjpbhuav9AczFfziU05C2YICBYMF-XN6TIG8rGs8D-yMHyByxWD1a44c7kHvR9ACqzKZD3oHi0q6scSbR325zf9Y_ENJ0PWzUjwQJs4Sy4OByMyOI3lRC7NqFW7mNykFi4dfUwSE/1200x900n",
-"mileage_km": 169000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Щучье",
-"seen_at": "2026-11-17T07:09:04.866695+00:00"
-},
-{
 "ad_id": "autoru_1160329471-b41eaf9d",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -61,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нижнедевицк",
-"seen_at": "2026-11-17T07:09:04.866670+00:00"
+"seen_at": "2026-11-17T07:20:19.448216+00:00"
 },
 {
 "ad_id": "autoru_1160805122-cd1423b4",
@@ -77,39 +29,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T07:09:04.866631+00:00"
+"seen_at": "2026-11-17T07:20:19.448198+00:00"
 },
 {
-"ad_id": "autoru_1160814121-6f4c6558",
+"ad_id": "autoru_1160800600-c632bbf8",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2015,
+"price": 500000,
+"market_price": 339000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160800600-c632bbf8/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19815194/uKSqZE5cA0QFz21TD2J1wUMBuSitqNy90FSTiXhljXXn0BeAe_tchXdPdOp3hN2kk_6nkTKdO6fb3kw3mg6fC-2QoQ0cz6TEzgMlziDhH_AhahyKmHiB9_KiBUHBvb4QpN07OCxj_0oJ_BHFImcuWcPCji-rbWir15hrlo_fUL3pKZ0/1200x900n",
+"mileage_km": 169000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Щучье",
+"seen_at": "2026-11-17T07:20:19.448170+00:00"
+},
+{
+"ad_id": "autoru_1160802564-eccb5612",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
 "model": "Priora",
-"year": 2008,
-"price": 400000,
-"market_price": 151500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160814121-6f4c6558/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17713999/cca152127ef520c328fd5ec28f4df05d/1200x900n",
-"mileage_km": 106544,
+"year": 2012,
+"price": 450000,
+"market_price": 249500,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160802564-eccb5612/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17831387/711f10878df9e3ec24dd09dff0ef7f67/1200x900n",
+"mileage_km": 170000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-17T07:08:49.700037+00:00"
+"city": "Колодезный",
+"seen_at": "2026-11-17T07:20:19.448149+00:00"
 },
 {
-"ad_id": "autoru_1160818103-ec74cc65",
+"ad_id": "autoru_1160802597-9438873e",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2009,
-"price": 289000,
-"market_price": 86500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/fqlXN76KNlaKlOc77uzDrB8DYUWlth1TmJ5EUaGb_-wivHgSnKvXriNyCzqXxS73Q4vcC0THyJoOY0DhHQ5pGiOLB0-xPrkaJgR9qPwWOv-_y_UQzURX4CrGAKBTGI9ISzYSIxzK_4HBDNTzWE3MzvZvtMHcDd3Dk1JPmV9ocDjZew/1200x900n",
-"mileage_km": 92000,
+"model": "Kalina",
+"year": 2014,
+"price": 420000,
+"market_price": 307500,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160802597-9438873e/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/6c9407fb72277d35033059edd5e1982e/1200x900n",
+"mileage_km": 120000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T07:08:49.700023+00:00"
+"seen_at": "2026-11-17T07:20:19.448112+00:00"
 },
 {
 "ad_id": "autoru_1160809014-9a5d7886",
@@ -125,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T07:08:49.700004+00:00"
+"seen_at": "2026-11-17T07:19:59.873958+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -141,6 +109,38 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T07:08:49.699969+00:00"
+"seen_at": "2026-11-17T07:19:59.873947+00:00"
+},
+{
+"ad_id": "autoru_1160814121-6f4c6558",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2008,
+"price": 400000,
+"market_price": 151500,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160814121-6f4c6558/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17713999/cca152127ef520c328fd5ec28f4df05d/1200x900n",
+"mileage_km": 106544,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-17T07:19:59.873925+00:00"
+},
+{
+"ad_id": "autoru_1160818103-ec74cc65",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2009,
+"price": 289000,
+"market_price": 86500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/QiXmao90iyJuZ9vQYMcucdQ19TgEdzrgl_7gLyaaByaN4F7CxGsa2vIdaS2ROIVR4QM2ZnPU1izEWMJoFCMI_DiphLjqPHJdaoJvfzlbwmIDh5ZOrWX1G9UVOnHpCsR6vBkeznZ7lQpL1cvqMNYpCh2AisiUDRf1t-aT5-sZXqX9CTU/1200x900n",
+"mileage_km": 92000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-17T07:19:59.873890+00:00"
 }
 ]
