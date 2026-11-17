@@ -2773,30 +2773,23 @@
     "message_id": 389,
     "deleted_at": "2026-11-17T09:07:28.624167+00:00"
   },
-  "https://auto.drom.ru/voronezh/mitsubishi/lancer/736235809.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-14T21:27:45.225250+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2111/497617660.html": {
     "posted_at": "2026-11-14T21:28:02.222161+00:00",
     "message_id": 390,
-    "deleted_at": null,
+    "deleted_at": "2026-11-17T21:37:32.372699+00:00",
     "rejected": false,
     "checked_at": "2026-11-14T21:28:02.222161+00:00",
     "vk_post_id": 292,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-17T21:37:32.372699+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2104/209629481.html": {
     "posted_at": "2026-11-14T21:28:12.935200+00:00",
     "message_id": 391,
-    "deleted_at": null,
+    "deleted_at": "2026-11-17T21:37:32.372699+00:00",
     "rejected": false,
     "checked_at": "2026-11-14T21:28:12.935200+00:00",
     "vk_post_id": 293,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-17T21:37:32.372699+00:00"
   },
   "https://auto.drom.ru/voronezh/nissan/primera/917473135.html": {
     "posted_at": null,
