@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160814121-6f4c6558",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2008,
-"price": 400000,
-"market_price": 151500,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160814121-6f4c6558/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17713999/cca152127ef520c328fd5ec28f4df05d/1200x900n",
-"mileage_km": 106544,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-17T23:16:20.650348+00:00"
-},
-{
-"ad_id": "autoru_1160818103-ec74cc65",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2009,
-"price": 289000,
-"market_price": 86500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/OgV5byXsuCwQyIwOqQ8Y_urlvyg2K2fzaKsJgbLgOyny9fPGdKKQdigtwADuNR_Ts-hD_2gq6NuBnTsfuaUOQrxl9TyYQRuKvztaJ07qjIhj2LdgiXD3zS7edP2FGvuN5jedVfw1rnuymJuLWX54lZnHVL3HdMCoTEpP7q5Jc97Pr90/1200x900n",
-"mileage_km": 92000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-17T23:16:20.650332+00:00"
-},
-{
 "ad_id": "autoru_1160805122-cd1423b4",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -45,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T23:16:20.650316+00:00"
+"seen_at": "2026-11-17T23:27:29.406689+00:00"
 },
 {
 "ad_id": "autoru_1160809014-9a5d7886",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T23:16:20.650281+00:00"
+"seen_at": "2026-11-17T23:27:29.406656+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -77,23 +45,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T23:16:20.650244+00:00"
+"seen_at": "2026-11-17T23:27:29.406642+00:00"
 },
 {
-"ad_id": "autoru_1160839276-3b3a8ece",
+"ad_id": "autoru_1160814121-6f4c6558",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2016,
-"price": 412000,
-"market_price": 378000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
-"mileage_km": 109257,
+"model": "Priora",
+"year": 2008,
+"price": 400000,
+"market_price": 151500,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160814121-6f4c6558/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17713999/cca152127ef520c328fd5ec28f4df05d/1200x900n",
+"mileage_km": 106544,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-17T23:27:29.406613+00:00"
+},
+{
+"ad_id": "autoru_1160818103-ec74cc65",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2009,
+"price": 289000,
+"market_price": 86500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/v4gN-4pPQkGJEtyx2se8RhLrHYNH2eRkBFiD0QDJI1GPKrTyT24vooFD14mY4dXdcZi3q5vJg7zmVvu4BY9fPjmZx8BNbYHxP2Bq24Bd80NKmGWcUNlETYncnhbPh3sV8qy7s3GbjVPTB0af4SQsh1Khg1iMzb5MMq8ciNtqmjSV2fo/1200x900n",
+"mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T23:16:01.188936+00:00"
+"seen_at": "2026-11-17T23:27:29.406569+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -109,7 +93,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-17T23:16:01.188896+00:00"
+"seen_at": "2026-11-17T23:27:12.337870+00:00"
+},
+{
+"ad_id": "autoru_1160839276-3b3a8ece",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2016,
+"price": 412000,
+"market_price": 378000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
+"mileage_km": 109257,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-17T23:27:12.337821+00:00"
 },
 {
 "ad_id": "autoru_1160329471-b41eaf9d",
