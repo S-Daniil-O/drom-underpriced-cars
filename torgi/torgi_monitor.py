@@ -47,6 +47,8 @@ MARKET_CACHE_FILE = DATA / "torgi_market_cache.json"
 # Порог скидки: лот берём, если минимальная цена < MAX_RATIO * рыночной.
 # 0.5 = ниже рынка более чем на 50%; 0.4 = более чем на 60% и т.д.
 MAX_RATIO = 0.5
+# Канал «ТОРГИ НИС»: порог мягче — берём лоты, где минимальная цена ниже рынка хотя бы на 30%.
+NIS_MAX_RATIO = 0.7
 # Минимальный год выпуска: машины старше не публикуются.
 # Если год распознать не удалось — лот публикуется с пометкой «год не указан» (отбор вручную).
 MIN_YEAR = 2010
@@ -908,6 +910,11 @@ def market_price(car, specs=None):
     brand, models, year = car
     specs = specs or {}
     models = [m for m in (models if isinstance(models, tuple) else (models,)) if m]
+    # Запасные написания модели для адреса Дрома: rav_4 → rav4, jf_optima → optima, BMW 3 → 3-series
+    for m in list(models):
+        for alt in (m.replace("_", ""), m.split("_")[-1], f"{m}-series" if m.isdigit() else ""):
+            if alt and alt not in models:
+                models.append(alt)
     for model in models:
         items = drom_listings(brand, model, year, specs.get("volume"))
         if specs.get("volume") and not items:      # с фильтром объёма ничего — пробуем без него
@@ -1631,7 +1638,7 @@ def main():
                 MARKET_CACHE_FILE.write_text(json.dumps(_market_cache, ensure_ascii=False))
             if not mk or not lot.get("min_price"):
                 continue
-            if lot["min_price"] < mk["price"] * MAX_RATIO:
+            if lot["min_price"] < mk["price"] * (NIS_MAX_RATIO if lot["source"] == "НИС" else MAX_RATIO):
                 brand, models, year = car
                 model = models if isinstance(models, str) else models[-1]
                 lot["car_name"] = f"{brand.replace('_', ' ').title()} {model.replace('_', ' ').title()}" + (f", {year}" if year else "")
