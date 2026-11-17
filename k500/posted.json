@@ -8858,5 +8858,20 @@
     "mileage_km": 185000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/CkrJEYpVvjxSl611sXZDokkaJdZSVYPwXZVkJCm03803vtGZlQ-jMierjjxombOtuCjxaQdlpGHgnwqn/gen272wb.jpg"
+  },
+  "autoru_1160829242-436cf5f7": {
+    "posted_at": "2026-11-17T11:10:09.018645+00:00",
+    "message_id": 639,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Kalina",
+    "year": 2010,
+    "price": 175000,
+    "median_price": 268980.0,
+    "median_sample_size": 14,
+    "price_rating": null,
+    "mileage_km": 167000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/1981791/83a5fedb8dd4725a1ecfa8bb8e4dc78b/1200x900n"
   }
 }
