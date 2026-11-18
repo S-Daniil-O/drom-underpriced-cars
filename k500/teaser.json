@@ -2943,20 +2943,20 @@
   "https://auto.drom.ru/voronezh/lada/2104/248789546.html": {
     "posted_at": "2026-11-15T21:17:25.951036+00:00",
     "message_id": 412,
-    "deleted_at": null,
+    "deleted_at": "2026-11-18T21:19:07.738487+00:00",
     "rejected": false,
     "checked_at": "2026-11-15T21:17:25.951036+00:00",
     "vk_post_id": 311,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-18T21:19:07.738487+00:00"
   },
   "https://auto.drom.ru/voronezh/nissan/primera/125300645.html": {
     "posted_at": "2026-11-15T21:17:39.956155+00:00",
     "message_id": 413,
-    "deleted_at": null,
+    "deleted_at": "2026-11-18T21:19:07.738487+00:00",
     "rejected": false,
     "checked_at": "2026-11-15T21:17:39.956155+00:00",
     "vk_post_id": 312,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-18T21:19:07.738487+00:00"
   },
   "https://auto.drom.ru/voronezh/lada/2106/657978620.html": {
     "posted_at": null,
@@ -3164,5 +3164,12 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-18T16:31:29.515787+00:00"
+  },
+  "https://auto.drom.ru/voronezh/citroen/c4/257384813.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-18T21:22:03.328611+00:00"
   }
 }
