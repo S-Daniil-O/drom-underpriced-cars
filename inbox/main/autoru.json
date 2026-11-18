@@ -13,71 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563275+00:00"
-},
-{
-"ad_id": "autoru_1160819506-2ed0f095",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2003,
-"price": 1050000,
-"market_price": 376500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1133516456-dfabd82e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2128077/DXb4ttNFc3enw7hIqbF9Z4PCcq1zKZ2mpMw7QmbySvR1ZrwUD4VaNiFGf-dmUm1weOv_Pl3G4Xhe9DBK1DARNVfgmauL0ru3iHz5m-QlWnqzUywOEpt7sAj_Dqsqpjoyq5ZajwMiNgZ1ebXiQUyaB11qClrQokXpu7QLEfUc-wlJWZw/1200x900n",
-"mileage_km": 127000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новохоперск",
-"seen_at": "2026-11-18T06:33:34.563254+00:00"
-},
-{
-"ad_id": "autoru_1160683196-74963cf6",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Lacetti",
-"year": 2009,
-"price": 533500,
-"market_price": 358000,
-"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160683196-74963cf6/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21058297/21f1d29cf0b15f73bf958f05906088ca/1200x900n",
-"mileage_km": 202750,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563242+00:00"
-},
-{
-"ad_id": "autoru_1160819890-aff50f13",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva Legend",
-"year": 2023,
-"price": 950000,
-"market_price": 715000,
-"url": "https://auto.ru/cars/used/sale/vaz/niva_legend/1160819890-aff50f13/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18143138/a96b594651ef4ff38bb6c07b846945cf/1200x900n",
-"mileage_km": 21775,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563230+00:00"
-},
-{
-"ad_id": "autoru_1134193601-55ad2ded",
-"source": "autoru",
-"brand": "Hyundai",
-"model": "Elantra",
-"year": 2013,
-"price": 930000,
-"market_price": 847500,
-"url": "https://auto.ru/cars/used/sale/hyundai/elantra/1134193601-55ad2ded/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/15688781/1BRuQ15Txj-l8KshMWIH7wDqLodyyQvIlwhbQpHT1HlrmXRKB3bYx9p_WwoaYb1xC_Ks9LHyOG-6WDnlWF_GEvJZzB6oIVhis-SE6ZPh_xVqpvGYGCZ1HHYK0PWCAzMmWEyF96x9yeNzDyVHAp0laUU09_DhwbMx8Z4r1UVondcx3ZA/1200x900n",
-"mileage_km": 246000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-18T06:33:34.563199+00:00"
+"seen_at": "2026-11-18T06:44:41.741649+00:00"
 },
 {
 "ad_id": "autoru_1160811544-71e14fff",
@@ -93,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563183+00:00"
+"seen_at": "2026-11-18T06:44:41.741627+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -109,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563168+00:00"
+"seen_at": "2026-11-18T06:44:41.741614+00:00"
 },
 {
 "ad_id": "autoru_1160814847-c45776fc",
@@ -125,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563149+00:00"
+"seen_at": "2026-11-18T06:44:41.741597+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -141,7 +77,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-18T06:33:34.563118+00:00"
+"seen_at": "2026-11-18T06:44:41.741569+00:00"
+},
+{
+"ad_id": "autoru_1160819506-2ed0f095",
+"source": "autoru",
+"brand": "Land Rover",
+"model": "Freelander",
+"year": 2003,
+"price": 1050000,
+"market_price": 376500,
+"url": "https://auto.ru/cars/used/sale/land_rover/freelander/1160819506-2ed0f095/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2128077/f7gP2GxtUC1b1YZQA9uOZSD05CknJ8O3HNpgRylilVOGXnjqvW1RCSLIBsfCYrgrCjkeJwdIVaNE43ZV5xxk10VeWO1yjUW6BcdTmar37riCNxBLgPVfisZH3yKiLUjc6mvQaZf5Ry9zwOvWmh840h5yfF9aNICPvVicgaG411zfgg/1200x900n",
+"mileage_km": 127000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новохоперск",
+"seen_at": "2026-11-18T06:44:41.741558+00:00"
+},
+{
+"ad_id": "autoru_1160683196-74963cf6",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2009,
+"price": 533500,
+"market_price": 358000,
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160683196-74963cf6/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21058297/21f1d29cf0b15f73bf958f05906088ca/1200x900n",
+"mileage_km": 202750,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T06:44:41.741546+00:00"
+},
+{
+"ad_id": "autoru_1160819890-aff50f13",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva Legend",
+"year": 2023,
+"price": 950000,
+"market_price": 715000,
+"url": "https://auto.ru/cars/used/sale/vaz/niva_legend/1160819890-aff50f13/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18143138/a96b594651ef4ff38bb6c07b846945cf/1200x900n",
+"mileage_km": 21775,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T06:44:41.741534+00:00"
+},
+{
+"ad_id": "autoru_1134193601-55ad2ded",
+"source": "autoru",
+"brand": "Hyundai",
+"model": "Elantra",
+"year": 2013,
+"price": 930000,
+"market_price": 847500,
+"url": "https://auto.ru/cars/used/sale/hyundai/elantra/1134193601-55ad2ded/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/15688781/x5-FGPI0Klf6Aa3GD3NYTbkv1WTjILE05QYleHME6GWe6jck6_NNnzkCa1Rv6rcYzak8oVpYXiUXsm4EmCg9MnnFLg5Za23ZNw2GvwoKSZhYh2kqpaElWm7cGAyzJSwWxXKB8x-j8E7x-XR0M8cDpoaK51nDClfW3zNpNVPC-UBnhg/1200x900n",
+"mileage_km": 246000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-18T06:44:41.741502+00:00"
 },
 {
 "ad_id": "autoru_1160826992-775d9386",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:34.563075+00:00"
+"seen_at": "2026-11-18T06:44:41.741459+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -168,28 +168,12 @@
 "price": 775000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/VfuYOHQ7VR4OVS9ZVbecvZrx3TS5ZMAvGzHewweUZexlatFJZyJzii629XvV1OIVJ46mKtSwnC7R7e2WTJB1PYfak_-Nx6EGBSq4du29IukBaXD-o1ASWCb70W0PU66mQEov2-zMnAZq3pmtoGxyV4H--qJXU-1f06XI3wiSpLdJUfc/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/nwfDWC579VkJMtMN46CMirQK0HhrbYBtZGhV4mKQpRsH69i1atFVGNBc285SCVccIjbJJkJ2ocy05FJsRCshh38sAxfql9Hme8cXVFyQwy5H05Z5N9-AAp2R7AIBcNwcgxiNqTWx-DtIzo3Dz3cXa-vQKf4p3ownhQQ2PI_NEVRf-Q/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663503+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663494+00:00"
+"seen_at": "2026-11-18T06:44:26.638469+00:00"
 },
 {
 "ad_id": "autoru_1160690464-050c76f3",
@@ -205,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T06:33:20.663475+00:00"
+"seen_at": "2026-11-18T06:44:26.638447+00:00"
 },
 {
 "ad_id": "autoru_1160767787-4494e16f",
@@ -221,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T06:33:20.663466+00:00"
+"seen_at": "2026-11-18T06:44:26.638438+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -237,7 +221,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T06:33:20.663454+00:00"
+"seen_at": "2026-11-18T06:44:26.638426+00:00"
 },
 {
 "ad_id": "autoru_1160835761-6f73aaf8",
@@ -253,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663444+00:00"
+"seen_at": "2026-11-18T06:44:26.638416+00:00"
 },
 {
 "ad_id": "autoru_1160838057-4c590e29",
@@ -269,7 +253,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663424+00:00"
+"seen_at": "2026-11-18T06:44:26.638397+00:00"
 },
 {
 "ad_id": "autoru_1160838468-d7c3aa6a",
@@ -285,7 +269,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663414+00:00"
+"seen_at": "2026-11-18T06:44:26.638383+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -301,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663402+00:00"
+"seen_at": "2026-11-18T06:44:26.638371+00:00"
 },
 {
 "ad_id": "autoru_1160839886-6746b164",
@@ -317,7 +301,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663388+00:00"
+"seen_at": "2026-11-18T06:44:26.638353+00:00"
 },
 {
 "ad_id": "autoru_1160840283-c791eb58",
@@ -333,7 +317,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663372+00:00"
+"seen_at": "2026-11-18T06:44:26.638339+00:00"
 },
 {
 "ad_id": "autoru_1160841571-a0be3818",
@@ -349,7 +333,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663357+00:00"
+"seen_at": "2026-11-18T06:44:26.638322+00:00"
 },
 {
 "ad_id": "autoru_1160842949-04cb2a74",
@@ -365,7 +349,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T06:33:20.663340+00:00"
+"seen_at": "2026-11-18T06:44:26.638308+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T06:44:26.638235+00:00"
 },
 {
 "ad_id": "autoru_1160806359-15a932c9",
