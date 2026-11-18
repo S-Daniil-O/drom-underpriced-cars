@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T10:29:59.459490+00:00"
+"seen_at": "2026-11-18T10:41:18.414579+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T10:29:59.459478+00:00"
+"seen_at": "2026-11-18T10:41:18.414566+00:00"
 },
 {
 "ad_id": "autoru_1160814121-6f4c6558",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-18T10:29:59.459449+00:00"
+"seen_at": "2026-11-18T10:41:18.414539+00:00"
 },
 {
 "ad_id": "autoru_1160818103-ec74cc65",
@@ -56,12 +56,12 @@
 "price": 289000,
 "market_price": 86500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/0nHjiBlImLw8DpPP516FWpphbCHEwspxSt_9jKc4itm8SRzygrU8j5DY1zu50IEtzUZjPiX7_BVGDZGtyUqjfs-e2PYlm3ymTPKIr2HJukEgpKsewd0SKiaOfugf2y--kl2wpy2JhLwflmXYZaTnFS1Ajhk5D2bXR0O_KfjjFbhn_V8/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/4Czgvv2g4WtQgC-arvdOWjVL_PvUut9slMp_IYmqLUYpf0AcT1vBAAG8Wr5OHhtpxJeMkxzl94pvbJWAfbLh24l0Qw2QHuiO9gpml_dDsAMaC2Zxiqgs8DbedKNxG1zDlPLDNnXr_lMiHBo0SzoD-w92Icd1MXnCj7cLvYwIEVU8uZk/1200x900n",
 "mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T10:29:59.459409+00:00"
+"seen_at": "2026-11-18T10:41:18.414498+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -77,23 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T10:29:45.432930+00:00"
-},
-{
-"ad_id": "autoru_1160839276-3b3a8ece",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2016,
-"price": 412000,
-"market_price": 378000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
-"mileage_km": 109257,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T10:29:45.432900+00:00"
+"seen_at": "2026-11-18T10:40:57.663693+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -109,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-18T10:29:45.432879+00:00"
+"seen_at": "2026-11-18T10:40:57.663672+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
@@ -125,7 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T10:29:45.432835+00:00"
+"seen_at": "2026-11-18T10:40:57.663637+00:00"
+},
+{
+"ad_id": "autoru_1160839276-3b3a8ece",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2016,
+"price": 412000,
+"market_price": 378000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
+"mileage_km": 109257,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T10:40:57.663567+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
