@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-18T15:55:37.301120+00:00"
+"seen_at": "2026-11-18T16:06:54.695332+00:00"
 },
 {
 "ad_id": "autoru_1160818103-ec74cc65",
@@ -24,12 +24,12 @@
 "price": 289000,
 "market_price": 86500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/nszpkGLj9WqOqGaIUpwhKr04Da4Car5-_9qXfxzI4LXJ6juVR1Wvp139O2LzhMfHMQDq-6joxu29PcbRjPDrcOIUwDlV3ZwCv81AgnHbdflvWEYZUw1KvO09nme_FdnRYVwpRgQ9-WrBwrdvRUqzL6vefkiasnEboN1bsA3xktDbnYI/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/msOD1-0l1qhSXPqA4ju0ssS991fdSIjzMSlcSEMOk-aaExG3BRb6EFzVoMdAQPRLOuJBrj68PLE1ZDUUbf2Av_aEDngeU6-K-IA4fuoAaITroyCUbS_oaEMzcpRq13W7gzjs1xrBNjaTaudaUX3At-pCdsHGoW6gvX1LGcJwHcrMjOE/1200x900n",
 "mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T15:55:37.301101+00:00"
+"seen_at": "2026-11-18T16:06:54.695314+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -45,55 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T15:55:37.301035+00:00"
-},
-{
-"ad_id": "autoru_1160846592-ac4dcdf5",
-"source": "autoru",
-"brand": "Ford",
-"model": "Mondeo",
-"year": 2003,
-"price": 320000,
-"market_price": 192000,
-"url": "https://auto.ru/cars/used/sale/ford/mondeo/1160846592-ac4dcdf5/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20363536/1f16eada76db9b16d3a8428fc4550dad/1200x900n",
-"mileage_km": 280000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T15:55:16.758336+00:00"
-},
-{
-"ad_id": "autoru_1160846719-e1a5d97f",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2008,
-"price": 177000,
-"market_price": 125000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160846719-e1a5d97f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/dd86ee8446cf0950380cc7e5d4898837/1200x900n",
-"mileage_km": 85000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T15:55:16.758324+00:00"
-},
-{
-"ad_id": "autoru_1160850729-66eeb378",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2008,
-"price": 155000,
-"market_price": 68500,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160850729-66eeb378/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/4c31bbab0e371ae71a4029ec4a4d46ed/1200x900n",
-"mileage_km": 50000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T15:55:16.758300+00:00"
+"seen_at": "2026-11-18T16:06:54.695241+00:00"
 },
 {
 "ad_id": "autoru_1160839276-3b3a8ece",
@@ -109,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T15:55:16.758280+00:00"
+"seen_at": "2026-11-18T16:06:36.054197+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -125,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-18T15:55:16.758256+00:00"
+"seen_at": "2026-11-18T16:06:36.054179+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -141,7 +93,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T15:55:16.758222+00:00"
+"seen_at": "2026-11-18T16:06:36.054168+00:00"
+},
+{
+"ad_id": "autoru_1160846592-ac4dcdf5",
+"source": "autoru",
+"brand": "Ford",
+"model": "Mondeo",
+"year": 2003,
+"price": 320000,
+"market_price": 192000,
+"url": "https://auto.ru/cars/used/sale/ford/mondeo/1160846592-ac4dcdf5/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20363536/1f16eada76db9b16d3a8428fc4550dad/1200x900n",
+"mileage_km": 280000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T16:06:36.054152+00:00"
+},
+{
+"ad_id": "autoru_1160846719-e1a5d97f",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Nexia",
+"year": 2008,
+"price": 177000,
+"market_price": 125000,
+"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160846719-e1a5d97f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/dd86ee8446cf0950380cc7e5d4898837/1200x900n",
+"mileage_km": 85000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T16:06:36.054140+00:00"
+},
+{
+"ad_id": "autoru_1160850729-66eeb378",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2008,
+"price": 155000,
+"market_price": 68500,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160850729-66eeb378/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/4c31bbab0e371ae71a4029ec4a4d46ed/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T16:06:36.054095+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
