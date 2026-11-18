@@ -8322,7 +8322,7 @@
   "https://auto.drom.ru/voronezh/daewoo/nexia/795431170.html": {
     "posted_at": "2026-11-15T08:10:23.805619+00:00",
     "message_id": 602,
-    "deleted_at": null,
+    "deleted_at": "2026-11-18T08:11:26.139258+00:00",
     "brand": "Daewoo",
     "model": "Nexia",
     "year": 2007,
@@ -8993,5 +8993,20 @@
     "mileage_km": 43000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/hN0iERna2xiQfdKjTkDIlrWX0hzgyc-nCGzCGjwK-xB7R7MWZzPFMyICvFNDw4RMxygVIlCh6i-DQosr/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/937226087.html": {
+    "posted_at": "2026-11-18T08:14:01.288358+00:00",
+    "message_id": 648,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2009,
+    "price": 175000,
+    "median_price": 233043.92369999998,
+    "median_sample_size": 2053,
+    "price_rating": "хорошая цена",
+    "mileage_km": 203851,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/iAGvTZHiJrmh8rWNZaeowIqOsqgS77tyHFRYik5xd_Fak2lnHyB5DLJZgWvhUqquot2ENqwo2zRaaeOy/gen272wb.jpg"
   }
 }
