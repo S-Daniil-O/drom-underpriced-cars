@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T05:49:03.998987+00:00"
+"seen_at": "2026-11-18T06:00:17.071074+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T05:49:03.998974+00:00"
+"seen_at": "2026-11-18T06:00:17.071062+00:00"
 },
 {
 "ad_id": "autoru_1160814121-6f4c6558",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-18T05:49:03.998947+00:00"
+"seen_at": "2026-11-18T06:00:17.071035+00:00"
 },
 {
 "ad_id": "autoru_1160818103-ec74cc65",
@@ -56,12 +56,28 @@
 "price": 289000,
 "market_price": 86500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/ueMi25Yk_O1WvThmU1YfNg_M0R8sY5w-Ynfrg9SLcqfnqDUYoRDYHLfPkUiSQAFNwWP9Tet8sJnxLJpZLCEvNdor3jCmdhnxuAQA2VaKVZo2el_TcKNg_X5PRlV4YZ5vpLvpcFvNjT6wacq07vHv-w5T-crnV_6dlHp0miIirgu_Ca0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/p13k4wtfE0x_rG0f41RFVUzynFZ2BY2K25d1Pp-tgLY7edhroMSVIJMq6SYY2sgmTEiZ5Zc7pDSlQCtYVi_E0H8LN4HrklXYThTYQRgavDPcuwxHxw-8nPGJB84NmODmg5pYrbinSi19y9F1c3kVrRBg8JMqyrZprGEnAZfXh-v_5lM/1200x900n",
 "mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T05:49:03.998905+00:00"
+"seen_at": "2026-11-18T06:00:17.070995+00:00"
+},
+{
+"ad_id": "autoru_1160827875-ac25d4ba",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 1995,
+"price": 200000,
+"market_price": 141500,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160827875-ac25d4ba/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1880478/ae6c9d01360fe32bb21d76067e95036e/1200x900n",
+"mileage_km": 198000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T06:00:03.332033+00:00"
 },
 {
 "ad_id": "autoru_1160839276-3b3a8ece",
@@ -77,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T05:48:44.318819+00:00"
+"seen_at": "2026-11-18T06:00:03.332003+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -88,12 +104,12 @@
 "price": 415000,
 "market_price": 509000,
 "url": "https://auto.ru/cars/used/sale/vaz/largus/1160842541-5e73206d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1991541/736fb70bea3492601052f1e48824a01d/1200x900n",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2175772/5fcafaafde25060c53deefbd9060dc19/1200x900n",
 "mileage_km": 15500,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-18T05:48:44.318800+00:00"
+"seen_at": "2026-11-18T06:00:03.331964+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -110,22 +126,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-18T05:48:44.318787+00:00"
-},
-{
-"ad_id": "autoru_1160827875-ac25d4ba",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 1995,
-"price": 200000,
-"market_price": 141500,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160827875-ac25d4ba/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1880478/ae6c9d01360fe32bb21d76067e95036e/1200x900n",
-"mileage_km": 198000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T05:48:44.318742+00:00"
 },
 {
 "ad_id": "autoru_1160805122-cd1423b4",
