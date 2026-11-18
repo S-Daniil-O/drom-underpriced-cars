@@ -9083,5 +9083,20 @@
     "mileage_km": 40000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/jP1dfSxHhPMVW-gaNibLCtXF1OTKzn8MSb6XO3_5peaF_n1KCpFQpzzK9yMj00Uv2xr_7FJef8ldgJeZ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/180330120.html": {
+    "posted_at": "2026-11-18T17:51:00.998768+00:00",
+    "message_id": 654,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2008,
+    "price": 160000,
+    "median_price": 262710.0,
+    "median_sample_size": 4133,
+    "price_rating": null,
+    "mileage_km": 235000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NS073iOqOSKim9tcawpcx1nRWJ0uPa566SylbUx63IeHlQG52nH9xXcLBiurdl2YfzrV3IKxdaQv9Uo-/gen272wb.jpg"
   }
 }
