@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236570+00:00"
+"seen_at": "2026-11-18T02:48:55.891196+00:00"
 },
 {
 "ad_id": "autoru_1160806898-645a3be0",
@@ -29,71 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236555+00:00"
-},
-{
-"ad_id": "autoru_1160681749-dc362d99",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva",
-"year": 2020,
-"price": 930000,
-"market_price": 766500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
-"mileage_km": 48000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-18T02:37:40.236535+00:00"
-},
-{
-"ad_id": "autoru_1160819506-2ed0f095",
-"source": "autoru",
-"brand": "Land Rover",
-"model": "Freelander",
-"year": 2003,
-"price": 1050000,
-"market_price": 376500,
-"url": "https://auto.ru/cars/used/sale/land_rover/freelander/1160819506-2ed0f095/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2128077/7-Bjd0fcuhP0vANVUDBDwJtleLnLGuFqDEZgnI6mVaG1mnJU1uAqiX8vT7Z3eNRtpHSJ-CTF727WrNrCnpLpV1kS_NVYwfagPrTbadTwBODVqisKfnH_EbM_ogYa5OLry2BrDRZ_JhNsIidwrybHId622w3DQlFc-YU6PnTFStbZP64/1200x900n",
-"mileage_km": 127000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Новохоперск",
-"seen_at": "2026-11-18T02:37:40.236523+00:00"
-},
-{
-"ad_id": "autoru_1160683196-74963cf6",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Lacetti",
-"year": 2009,
-"price": 533500,
-"market_price": 358000,
-"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160683196-74963cf6/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21058297/21f1d29cf0b15f73bf958f05906088ca/1200x900n",
-"mileage_km": 202750,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236512+00:00"
-},
-{
-"ad_id": "autoru_1160819890-aff50f13",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva Legend",
-"year": 2023,
-"price": 950000,
-"market_price": 715000,
-"url": "https://auto.ru/cars/used/sale/vaz/niva_legend/1160819890-aff50f13/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18143138/a96b594651ef4ff38bb6c07b846945cf/1200x900n",
-"mileage_km": 21775,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236500+00:00"
+"seen_at": "2026-11-18T02:48:55.891185+00:00"
 },
 {
 "ad_id": "autoru_1160811544-71e14fff",
@@ -109,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236464+00:00"
+"seen_at": "2026-11-18T02:48:55.891165+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -125,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236449+00:00"
+"seen_at": "2026-11-18T02:48:55.891151+00:00"
 },
 {
 "ad_id": "autoru_1160814847-c45776fc",
@@ -141,7 +77,71 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:40.236429+00:00"
+"seen_at": "2026-11-18T02:48:55.891136+00:00"
+},
+{
+"ad_id": "autoru_1160681749-dc362d99",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva",
+"year": 2020,
+"price": 930000,
+"market_price": 766500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
+"mileage_km": 48000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-18T02:48:55.891111+00:00"
+},
+{
+"ad_id": "autoru_1160819506-2ed0f095",
+"source": "autoru",
+"brand": "Land Rover",
+"model": "Freelander",
+"year": 2003,
+"price": 1050000,
+"market_price": 376500,
+"url": "https://auto.ru/cars/used/sale/land_rover/freelander/1160819506-2ed0f095/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2128077/iqQ6hGMVi05vVHDzAWAUjyWgmqQK-tLv1FSjubGPoyFJzOwc2N2tBPXpfBn8Ij6dj0hynfNvMvfMOgcrGiTMtXTPVJsROviWzUxbWpJBHnYy8W04Ec1FebdUflZnr8CkGoOTE4_LV5uni6vWz8fv3lSWSF4W59EIlcw9T6XyqI3jNaY/1200x900n",
+"mileage_km": 127000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Новохоперск",
+"seen_at": "2026-11-18T02:48:55.891099+00:00"
+},
+{
+"ad_id": "autoru_1160683196-74963cf6",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Lacetti",
+"year": 2009,
+"price": 533500,
+"market_price": 358000,
+"url": "https://auto.ru/cars/used/sale/chevrolet/lacetti/1160683196-74963cf6/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21058297/21f1d29cf0b15f73bf958f05906088ca/1200x900n",
+"mileage_km": 202750,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T02:48:55.891086+00:00"
+},
+{
+"ad_id": "autoru_1160819890-aff50f13",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva Legend",
+"year": 2023,
+"price": 950000,
+"market_price": 715000,
+"url": "https://auto.ru/cars/used/sale/vaz/niva_legend/1160819890-aff50f13/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18143138/a96b594651ef4ff38bb6c07b846945cf/1200x900n",
+"mileage_km": 21775,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T02:48:55.891070+00:00"
 },
 {
 "ad_id": "autoru_1134193601-55ad2ded",
@@ -152,12 +152,12 @@
 "price": 930000,
 "market_price": 847500,
 "url": "https://auto.ru/cars/used/sale/hyundai/elantra/1134193601-55ad2ded/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/15688781/E9c5Psdy6mVmWrJoj9sqHiQ90LH68Kv6iVKZ6ZSNX1RLw6IVVit6wv6blM-XzqqekFf2Kk9g_Y_D1V6oC27gM55RIU71Fw_QllIPaDAR6olU9Wo4I_MUm9994BNlzRjTqY-jZ-jYBc9gv9rusIhNeIbJsFBXevYC4WO1Pnddy8FSgFo/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/15688781/u0vbSueC7vkw8KrPIb_2aBYMq2IbATpsCV3DbaPAqFB8yIKj4PlI0NgTFPRWDAjMzgAy3ONpHx67nv9n0QlkOPEZO0N5kL9W5ku9G3kaTNeAzN5YpQY14B55bWIOdSRywWt6zi9kSnf1XtCFN4zErWcOoEHLs1eBhrJia7Z3M5hxbPg/1200x900n",
 "mileage_km": 246000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T02:37:40.236381+00:00"
+"seen_at": "2026-11-18T02:48:55.891017+00:00"
 },
 {
 "ad_id": "autoru_1160826992-775d9386",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668214+00:00"
+"seen_at": "2026-11-18T02:48:38.367411+00:00"
 },
 {
 "ad_id": "autoru_1134284208-74a39e8b",
@@ -184,12 +184,12 @@
 "price": 775000,
 "market_price": 581000,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1134284208-74a39e8b/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/L-QhepM4feVTgsne6SH3z_iO3ErXpd1GAfU8VKqw_BSCEFIrNbMoxARW6kdkkyEE5yXnGVxjRIbyrG5_YQ1aSZTLB4627jtpSxvndzqIaUU40yem4yJMO2jD09dq84hRKLPwnOclW7iHxk36ZNkbfI-Cm0xcyddcQv__LGYhHUJsl30/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19831563/bjlcnQl_HGn_Qgjt-3dmJeRs7FyE3u7sdbWUCjsNDsP1vQtb7RBQkTggX6ZBxw6qsBOjnQk3O-CaRLqTCWrwVU7pLTSRJ5k_fgg6MDze0Fr8MYWLBLv4MpgYRf_Bz783_Q0YtJlgnuF08pSlAWSl2nN_rvD3D3M652Vj_Ao2pScOo2g/1200x900n",
 "mileage_km": 9400,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668203+00:00"
+"seen_at": "2026-11-18T02:48:38.367401+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -205,7 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668195+00:00"
+"seen_at": "2026-11-18T02:48:38.367391+00:00"
 },
 {
 "ad_id": "autoru_1160690464-050c76f3",
@@ -221,7 +221,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T02:37:25.668178+00:00"
+"seen_at": "2026-11-18T02:48:38.367373+00:00"
 },
 {
 "ad_id": "autoru_1160767787-4494e16f",
@@ -237,7 +237,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T02:37:25.668166+00:00"
+"seen_at": "2026-11-18T02:48:38.367363+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -253,7 +253,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-18T02:37:25.668154+00:00"
+"seen_at": "2026-11-18T02:48:38.367351+00:00"
 },
 {
 "ad_id": "autoru_1160835761-6f73aaf8",
@@ -269,7 +269,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668145+00:00"
+"seen_at": "2026-11-18T02:48:38.367341+00:00"
 },
 {
 "ad_id": "autoru_1160838057-4c590e29",
@@ -285,7 +285,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668122+00:00"
+"seen_at": "2026-11-18T02:48:38.367322+00:00"
 },
 {
 "ad_id": "autoru_1160838468-d7c3aa6a",
@@ -301,7 +301,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668112+00:00"
+"seen_at": "2026-11-18T02:48:38.367312+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -317,7 +317,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668102+00:00"
+"seen_at": "2026-11-18T02:48:38.367300+00:00"
 },
 {
 "ad_id": "autoru_1160839886-6746b164",
@@ -333,7 +333,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668092+00:00"
+"seen_at": "2026-11-18T02:48:38.367290+00:00"
 },
 {
 "ad_id": "autoru_1160840283-c791eb58",
@@ -349,7 +349,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668079+00:00"
+"seen_at": "2026-11-18T02:48:38.367277+00:00"
 },
 {
 "ad_id": "autoru_1160841571-a0be3818",
@@ -365,6 +365,6 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T02:37:25.668060+00:00"
+"seen_at": "2026-11-18T02:48:38.367258+00:00"
 }
 ]
