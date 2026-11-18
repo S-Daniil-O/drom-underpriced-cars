@@ -8337,7 +8337,7 @@
   "https://auto.drom.ru/voronezh/lada/2110/256530878.html": {
     "posted_at": "2026-11-15T08:40:24.054745+00:00",
     "message_id": 603,
-    "deleted_at": null,
+    "deleted_at": "2026-11-18T08:41:37.934942+00:00",
     "brand": "Лада",
     "model": "2110",
     "year": 2003,
@@ -8352,7 +8352,7 @@
   "https://auto.drom.ru/voronezh/datsun/on-do/762898148.html": {
     "posted_at": "2026-11-15T08:40:32.113445+00:00",
     "message_id": 604,
-    "deleted_at": null,
+    "deleted_at": "2026-11-18T08:41:39.251049+00:00",
     "brand": "Datsun",
     "model": "on-DO",
     "year": 2017,
@@ -9008,5 +9008,20 @@
     "mileage_km": 203851,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/iAGvTZHiJrmh8rWNZaeowIqOsqgS77tyHFRYik5xd_Fak2lnHyB5DLJZgWvhUqquot2ENqwo2zRaaeOy/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/kalina/458304096.html": {
+    "posted_at": "2026-11-18T08:44:18.343454+00:00",
+    "message_id": 649,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Калина",
+    "year": 2012,
+    "price": 265000,
+    "median_price": 335435.5,
+    "median_sample_size": 9026,
+    "price_rating": "хорошая цена",
+    "mileage_km": 129300,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/ilSMvj-qwvwb2ZqpiWKUpkPp8_brI9Kko3joHaAbWi1xGWVgJWt6kutbvNVmf0qY1thCIN5nygJ9TE8Z/gen272wb.jpg"
   }
 }
