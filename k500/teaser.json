@@ -2800,13 +2800,6 @@
     "vk_post_id": 294,
     "vk_deleted_at": "2026-11-17T22:06:32.196935+00:00"
   },
-  "https://auto.drom.ru/voronezh/toyota/carina/896608462.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-15T05:59:16.464265+00:00"
-  },
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/634592886.html": {
     "posted_at": "2026-11-15T06:30:41.084674+00:00",
     "message_id": 394,
@@ -3132,5 +3125,12 @@
     "checked_at": "2026-11-18T06:02:01.974916+00:00",
     "vk_post_id": 321,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/toyota/carina/896608462.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-18T06:15:16.064137+00:00"
   }
 }
