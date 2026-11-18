@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160818103-ec74cc65",
-"source": "autoru",
-"brand": "Audi",
-"model": "80",
-"year": 2009,
-"price": 289000,
-"market_price": 86500,
-"url": "https://auto.ru/cars/used/sale/audi/80/1160807986-5adc396f/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/lK1WG2TdllRjO279LdNo3SuueSaHxU290BX4gjORKG6LD6oJfh-hTCUhp1EAajRZxQQOdHYms0r9dipVWWLvnSbHCriDqWT0mU3CpvWn-AzrOJagudPJXULdhFsVP_m0xo3yqXcCCob1RdXQQzbHQVEKzZ0HTO67oz0xCDAGw5LLPt4/1200x900n",
-"mileage_km": 92000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-18T09:11:27.116374+00:00"
-},
-{
 "ad_id": "autoru_1160809014-9a5d7886",
 "source": "autoru",
 "brand": "Chevrolet",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T09:11:27.116336+00:00"
+"seen_at": "2026-11-18T09:22:40.243960+00:00"
 },
 {
 "ad_id": "autoru_1160809217-c93f9daf",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T09:11:27.116321+00:00"
+"seen_at": "2026-11-18T09:22:40.243947+00:00"
 },
 {
 "ad_id": "autoru_1160814121-6f4c6558",
@@ -61,39 +45,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-18T09:11:27.116272+00:00"
+"seen_at": "2026-11-18T09:22:40.243919+00:00"
 },
 {
-"ad_id": "autoru_1160839276-3b3a8ece",
+"ad_id": "autoru_1160818103-ec74cc65",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2016,
-"price": 412000,
-"market_price": 378000,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
-"mileage_km": 109257,
+"model": "2107",
+"year": 2009,
+"price": 289000,
+"market_price": 86500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/MHh6T2bTnWwhcPCnkU_bRgIsT4DET6S2QnXyELNQf-Tl6rqayTOj7xybrZyWSllK59B3CHfj6pUOvl6hRqJuMoEun8fKl5rhVNB0n-VS1ia1cb1ShftENgS8iwLa5kchH61ZcACBZTzId5nXgZpgBQUVSzWTFylw8Qfdb1VO3yZdrWE/1200x900n",
+"mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T09:11:06.781909+00:00"
-},
-{
-"ad_id": "autoru_1160842541-5e73206d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2013,
-"price": 415000,
-"market_price": 509000,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160842541-5e73206d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/374827e60023a2d852e87d52da219873/1200x900n",
-"mileage_km": 15500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Нововоронеж",
-"seen_at": "2026-11-18T09:11:06.781890+00:00"
+"seen_at": "2026-11-18T09:22:40.243877+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -109,7 +77,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-18T09:11:06.781845+00:00"
+"seen_at": "2026-11-18T09:22:24.510760+00:00"
+},
+{
+"ad_id": "autoru_1160839276-3b3a8ece",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2016,
+"price": 412000,
+"market_price": 378000,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160839276-3b3a8ece/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17755365/ed9fdc75e723ca257633f90eda5b1242/1200x900n",
+"mileage_km": 109257,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-18T09:22:24.510726+00:00"
+},
+{
+"ad_id": "autoru_1160842541-5e73206d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2013,
+"price": 415000,
+"market_price": 509000,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160842541-5e73206d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/374827e60023a2d852e87d52da219873/1200x900n",
+"mileage_km": 15500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Нововоронеж",
+"seen_at": "2026-11-18T09:22:24.510684+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
