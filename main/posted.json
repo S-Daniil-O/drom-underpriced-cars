@@ -4533,5 +4533,20 @@
     "mileage_km": 28000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/2170011/7a5cabef158cc819b243de52f52d8255/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/ravon/r4/467179647.html": {
+    "posted_at": "2026-11-19T22:42:25.724438+00:00",
+    "message_id": 333,
+    "deleted_at": null,
+    "brand": "Ravon",
+    "model": "R4",
+    "year": 2017,
+    "price": 550000,
+    "median_price": 669500.0,
+    "median_sample_size": 1056,
+    "price_rating": "нормальная цена",
+    "mileage_km": 200000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/qdfW55BB69G0V_zNH_yDfl2jV-oLUdOvvhgL2kxx_qz2uK3iPLnEgah5WY3oUzYBnOhqG7ARnon4gByQ/gen272wb.jpg"
   }
 }
