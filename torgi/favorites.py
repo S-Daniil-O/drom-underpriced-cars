@@ -232,11 +232,19 @@ def kb(*rows):
 
 
 def kb_main(n):
-    return kb([("🔎 Отчёт по VIN, PDF (~11 ₽)", f"vin:{n}")], [("🗑 Удалить лот", f"del:{n}")])
+    return kb([("🔎 Отчёт по VIN, PDF (~11 ₽)", f"vin:{n}")],
+              [("🔓 Ограничения и залог (~22 ₽)", f"restrict:{n}")],
+              [("🗑 Удалить лот", f"del:{n}")])
 
 
 def kb_vin(n, again=False):
     return kb([("✅ " + ("Да, проверить ещё раз" if again else "Да, проверить") + " (~11 ₽)", f"vinok:{n}"), ("Отмена", f"no:{n}")])
+
+
+def kb_restrict(n):
+    # повторную проверку не блокируем «уже проверялось» — после покупки лота смысл именно в том, чтобы
+    # проверять заново, пока ограничения не снимутся
+    return kb([("✅ Да, проверить (~22 ₽)", f"restrictok:{n}"), ("Отмена", f"no:{n}")])
 
 
 def kb_confirm(n):
@@ -285,7 +293,7 @@ def handle_button(st, q, allowed):
     if q.get("from", {}).get("id") not in allowed:
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Только для администраторов канала", show_alert="true")
         return
-    m = re.fullmatch(r"(del|yes|no|vin|vinok):(\d+)", q.get("data") or "")
+    m = re.fullmatch(r"(del|yes|no|vin|vinok|restrict|restrictok):(\d+)", q.get("data") or "")
     msg = q.get("message") or {}
     origin = msg.get("chat", {}).get("id")
     if str(origin) not in (str(CHAT), str(FORUM)) or not msg.get("message_id"):
@@ -315,6 +323,24 @@ def handle_button(st, q, allowed):
         log(f"кнопка VIN лота №{n}: {res or 'готово'}")
         if res:
             tg("sendMessage", text=res, **place(v))
+    elif m.group(1) == "restrict":
+        if not v.get("vin"):
+            tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
+               text="В лоте нет VIN — проверить нечего.")
+            return
+        r = tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_restrict(n))
+        if not r.get("ok"):
+            log(f"кнопка ограничений лота №{n}: подтверждение не показалось ({r.get('description')})")
+        tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
+           text="Нажмите под карточкой «✅ Да, проверить», чтобы запустить проверку (~22 ₽).")
+    elif m.group(1) == "restrictok":
+        tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_main(n))
+        tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Проверяю лот №{n}: ограничения и залог…")
+        log(f"кнопка ограничений лота №{n}: запускаю проверку")
+        res = apipoint_restrict(st, v)
+        log(f"кнопка ограничений лота №{n}: {res or 'готово'}")
+        if res:
+            tg("sendMessage", text=res, **place(v))
     elif m.group(1) == "del":
         tg("editMessageReplyMarkup", chat_id=origin, message_id=msg.get("message_id"), reply_markup=kb_confirm(n))
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Подтвердите удаление")
@@ -327,13 +353,13 @@ def handle_button(st, q, allowed):
 
 
 def add_buttons(st):
-    """Кнопка на карточках лотов, добавленных до появления кнопок."""
+    """Кнопки на карточках лотов — добавить недостающие и обновить до последнего набора."""
     for v in st.d["lots"].values():
-        if v.get("removed") or v.get("btn") == 2 or (v.get("btn") and v.get("ended")):
+        if v.get("removed") or v.get("btn") == 3 or (v.get("btn") and v.get("ended")):
             continue
         first = not v.get("btn")
         r = tg("editMessageReplyMarkup", chat_id=home(v), message_id=v["card"], reply_markup=kb_main(v["n"]))
-        v["btn"] = 2           # 2 — с кнопкой «Проверить по VIN»
+        v["btn"] = 3           # 3 — добавлена кнопка «Ограничения и залог»
         st.dirty = True
         # у карточек из пересланных постов следом идёт строка «МОЙ ЛОТ»
         if first and (v.get("vin") or v.get("forwarded") or not str(v.get("name", "")).startswith("http")):
@@ -425,7 +451,7 @@ def create_lot(st, lid, name=None, vin=None, target=None, end=None, copy_from=No
         return None
     st.d["lots"][lid] = {"n": n, "url": url, "name": name, "vin": vin, "target": target, "card": card,
                          "added": now_msk().strftime("%Y-%m-%dT%H:%M"), "end": end, "sent": {},
-                         "btn": 2, "head": head_id, "msgs": [],
+                         "btn": 3, "head": head_id, "msgs": [],
                          "topic": draft.get("topic"), "title": draft.get("title")}
     st.dirty = True
     return n
@@ -931,6 +957,57 @@ def apipoint_one(st, v):
         for uid in st.d.get("owners", []):
             tg("sendMessage", chat_id=uid, text=f"💳 На счёте apipoint.ru осталось {bal} ₽ — примерно на "
                                                 f"{bal // 12} проверок. Пополните, чтобы кнопка «Проверить по VIN» работала.")
+    st.save()
+    return None
+
+
+def apipoint_restrict(st, v):
+    """Платная проверка ограничений на регистрацию, розыска и залога (кнопка «Ограничения и залог»,
+    обычно — для уже выкупленного лота, чтобы понять, можно ли переоформить машину на покупателя).
+    В отличие от общего отчёта по VIN, тут каждое нажатие — новая оплаченная проверка (не из истории):
+    ограничения снимаются со временем, и смысл именно в том, чтобы проверять заново."""
+    if not apipoint.token():
+        return "Проверка не подключена (нет токена apipoint)."
+    day = now_msk().strftime("%Y-%m-%d")
+    cnt = st.d.setdefault("ap_day", {})      # дневной предел общий с отчётом по VIN — обе тратят деньги
+    if cnt.get("date") != day:
+        cnt.clear()
+        cnt.update(date=day, n=0)
+    if cnt["n"] >= AP_PER_DAY:
+        return f"Сегодня уже {AP_PER_DAY} платных проверок — дневной предел. Завтра можно снова."
+    if not apipoint.VIN.fullmatch(v.get("vin") or ""):
+        return "Проверка не выполнена: в лоте нет корректного VIN."
+    cnt["n"] += 1                # учесть до запроса: при сбое деньги могли списаться
+    st.dirty = True
+    st.save()
+    try:
+        d = apipoint.call(v["vin"], sources=apipoint.RESTRICT_SOURCES)
+    except (requests.RequestException, ValueError) as e:
+        log(f"apipoint (ограничения) лот №{v['n']}: {str(e)[:120]}")
+        return "apipoint.ru не ответил — попробуйте нажать кнопку позже."
+    if d is None:
+        return "Проверка не выполнена."
+    v["restrict_checked"] = now_msk().strftime("%Y-%m-%d %H:%M")
+    st.dirty = True
+    try:
+        f = apipoint.restriction_facts(d)
+    except (TypeError, ValueError, KeyError, AttributeError) as e:
+        log(f"apipoint (ограничения) лот №{v['n']}: неверный ответ ({type(e).__name__})")
+        return "apipoint.ru прислал ответ, который не удалось разобрать."
+    if f.get("bad"):
+        log(f"apipoint (ограничения) лот №{v['n']}: не разобраны части: {', '.join(f['bad'])}")
+    r = tg("sendMessage", text=apipoint.restriction_text(v, f), parse_mode="HTML", **place(v))
+    if r.get("ok"):
+        v.setdefault("msgs", []).append(r["result"]["message_id"])
+    else:
+        log(f"apipoint (ограничения) лот №{v['n']}: {r.get('description')}")
+    log(f"apipoint (ограничения) лот №{v['n']}: проверен, списано {d.get('price')} ₽, остаток {d.get('balance')} ₽")
+    bal = apipoint._num(d.get("balance"))
+    if bal is not None and bal < AP_LOW_BALANCE and st.d.get("ap_low") != day:
+        st.d["ap_low"] = day
+        for uid in st.d.get("owners", []):
+            tg("sendMessage", chat_id=uid, text=f"💳 На счёте apipoint.ru осталось {bal} ₽ — примерно на "
+                                                f"{bal // 12} проверок. Пополните, чтобы кнопки проверки работали.")
     st.save()
     return None
 

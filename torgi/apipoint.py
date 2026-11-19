@@ -13,6 +13,7 @@ import requests
 
 URL = "https://apipoint.ru/api/call"
 SOURCES = "probeg,probeg2,eaisto,dtp,gibddhistory,zalog,offerbyvin,pic"
+RESTRICT_SOURCES = "gai,zalog"   # официальная проверка ГИБДД: ограничения на регистрацию, розыск + залог заново
 VIN = re.compile(r"[A-HJ-NPR-Z0-9]{17}")
 SITES = r"(?:[\w-]+\.)*(?:drom|auto|avito)\.ru/"
 PHOTO = re.compile(r"https://(?:apipoint\.ru/trk/|" + SITES + r")[\w./?=&%-]+")
@@ -23,11 +24,11 @@ def token():
     return os.environ.get("APIPOINT_TOKEN", "").strip()
 
 
-def call(vin):
-    """Один запрос по всем источникам. None — сбой (повторить позже), dict — ответ (деньги списаны)."""
+def call(vin, sources=SOURCES):
+    """Один запрос по заданным источникам. None — сбой (повторить позже), dict — ответ (деньги списаны)."""
     if not token() or not VIN.fullmatch(vin or ""):
         return None
-    r = requests.post(URL, json={"sources": SOURCES, "vin": vin}, timeout=240,
+    r = requests.post(URL, json={"sources": sources, "vin": vin}, timeout=240,
                       headers={"Authorization": f"Bearer {token()}", "Accept": "application/json"})
     if r.status_code != 200:
         raise requests.RequestException(f"apipoint: HTTP {r.status_code}")
@@ -62,15 +63,15 @@ def _date(x):
     return None
 
 
-def history(vin):
-    """Уже оплаченный ответ по этому VIN из истории apipoint (бесплатно) или None."""
+def history(vin, sources=SOURCES):
+    """Уже оплаченный ответ по этому VIN и набору источников из истории apipoint (бесплатно) или None."""
     if not token() or not VIN.fullmatch(vin or ""):
         return None
     r = requests.post("https://apipoint.ru/api/history", json={"limit": "50"}, timeout=60,
                       headers={"Authorization": f"Bearer {token()}", "Accept": "application/json"})
     if r.status_code != 200:
         return None
-    need = set(SOURCES.split(","))
+    need = set(sources.split(","))
     for c in r.json().get("calls") or []:
         o = c.get("options") or {}
         resp = c.get("response")
@@ -230,4 +231,78 @@ def text(v, f):
     lines.append("")
     paid = str(f.get("price") or "")
     lines.append("Источник: apipoint.ru" + (" (повторно из истории, бесплатно)" if paid in ("0", "0.00") else f", запрос {e(paid)} ₽" if paid else ""))
+    return "\n".join(lines)[:4000]
+
+
+def restriction_facts(d):
+    """Ответ gai+zalog → ограничения на регистрацию, розыск, залог. Формат источника gai в документации
+    apipoint раскрыт только заглушкой ({"status": "ok"}), поэтому вытаскиваем по известным названиям
+    полей, а сырой ответ сохраняем всегда — для проверки «можно ли переоформить» так безопаснее, чем
+    молча ошибиться с разбором."""
+    f = {"zalog": None, "restrictions": None, "restriction_list": [], "wanted": None, "raw_gai": None}
+
+    def zalog():
+        z = _src(d, "zalog").get("result") or {}
+        f["zalog"] = z.get("zalog") if isinstance(z.get("zalog"), bool) else None
+
+    def gai():
+        g = _src(d, "gai")
+        raw = g.get("result")
+        if isinstance(raw, str):
+            raw = json.loads(raw)
+        f["raw_gai"] = raw
+        node = raw if isinstance(raw, dict) else {}
+        for key in ("restrictions", "Restrictions", "restrictionList", "ограничения"):
+            v = node.get(key)
+            if isinstance(v, list):
+                f["restriction_list"] = v
+                f["restrictions"] = bool(v)
+                break
+        else:
+            for key in ("hasRestriction", "has_restriction", "restriction", "isRestricted", "restricted"):
+                if isinstance(node.get(key), bool):
+                    f["restrictions"] = node[key]
+                    break
+        for key in ("wanted", "isWanted", "stolen", "inWanted", "в_розыске"):
+            if isinstance(node.get(key), bool):
+                f["wanted"] = node[key]
+                break
+
+    for name, fn in (("залог", zalog), ("ГИБДД (ограничения/розыск)", gai)):
+        _part(name, fn, f)
+    return f
+
+
+def restriction_text(v, f):
+    """Текст сообщения по проверке ограничений/залога — всегда с сырым ответом ГИБДД, если готовые
+    поля не распознаны: лучше дать проверить глазами, чем выдать неверное «можно переоформлять»."""
+    e = html.escape
+    lines = [f"🔓 <b>Ограничения и залог — лот №{v['n']}</b>", f"<code>{e(v.get('vin') or '')}</code>", ""]
+    if f["restrictions"] is True:
+        lines.append("⚠️ <b>Есть ограничения на регистрацию</b> — переоформить на покупателя пока нельзя.")
+        for r in f["restriction_list"][:5]:
+            if isinstance(r, dict):
+                bits = [str(r[k]) for k in ("date", "Date", "type", "Type", "basis", "Basis", "region", "Region") if r.get(k)]
+                if bits:
+                    lines.append("  • " + e(", ".join(bits))[:200])
+    elif f["restrictions"] is False:
+        lines.append("✅ Ограничений на регистрацию не найдено — похоже, можно переоформлять.")
+    else:
+        lines.append("ℹ️ Разбор не распознал поле об ограничениях — смотрите сырой ответ ГИБДД ниже.")
+    if f["wanted"] is True:
+        lines.append("🚨 <b>Числится в розыске!</b>")
+    elif f["wanted"] is False:
+        lines.append("✅ В розыске не числится.")
+    if f["zalog"] is True:
+        lines.append("🔒 <b>Залог всё ещё числится.</b>")
+    elif f["zalog"] is False:
+        lines.append("✅ Залогов не найдено.")
+    else:
+        lines.append("ℹ️ Залог: нет данных.")
+    if f["restrictions"] is None and f.get("raw_gai") is not None:
+        dump = json.dumps(f["raw_gai"], ensure_ascii=False)[:1200]
+        lines += ["", "Ответ ГИБДД как есть (разбор не распознал поля):", f"<pre>{e(dump)}</pre>"]
+    if f.get("bad"):
+        lines.append(f"\n⚠️ Не разобрано: {e(', '.join(f['bad']))}")
+    lines += ["", "Источник: apipoint.ru (ГИБДД + залог). Перед переоформлением всё равно сверьтесь в ГИБДД/у нотариуса."]
     return "\n".join(lines)[:4000]
