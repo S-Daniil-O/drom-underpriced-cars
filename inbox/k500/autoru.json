@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797108+00:00"
+"seen_at": "2026-11-19T20:24:21.697497+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-19T20:13:11.797086+00:00"
+"seen_at": "2026-11-19T20:24:21.697474+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797074+00:00"
+"seen_at": "2026-11-19T20:24:21.697462+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797059+00:00"
+"seen_at": "2026-11-19T20:24:21.697446+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797046+00:00"
+"seen_at": "2026-11-19T20:24:21.697433+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797031+00:00"
+"seen_at": "2026-11-19T20:24:21.697419+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T20:13:11.797006+00:00"
+"seen_at": "2026-11-19T20:24:21.697394+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-19T20:13:11.796960+00:00"
+"seen_at": "2026-11-19T20:24:21.697350+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-19T20:12:52.162982+00:00"
+"seen_at": "2026-11-19T20:24:07.142643+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -238,21 +238,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-19T15:09:29.935278+00:00"
-},
-{
-"ad_id": "autoru_1160867639-db0ba879",
-"source": "autoru",
-"brand": "Honda",
-"model": "Jazz",
-"year": 2003,
-"price": 330000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/honda/jazz/1160867639-db0ba879/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2129093/f70f51a9b5a142e50155c7bcd6e4f8ae/1200x900n",
-"mileage_km": 200000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-19T14:24:08.322776+00:00"
 }
 ]
