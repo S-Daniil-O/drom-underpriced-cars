@@ -8742,7 +8742,7 @@
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/634592886.html": {
     "posted_at": "2026-11-16T08:44:03.509431+00:00",
     "message_id": 630,
-    "deleted_at": null,
+    "deleted_at": "2026-11-19T08:52:20.650397+00:00",
     "brand": "Mitsubishi",
     "model": "Lancer",
     "year": 2004,
@@ -9128,5 +9128,20 @@
     "mileage_km": 80000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19682479/2e3cab062fab69b7a6932a4c1a0391cc/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/441123993.html": {
+    "posted_at": "2026-11-19T08:55:18.169602+00:00",
+    "message_id": 657,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "Приора",
+    "year": 2008,
+    "price": 215000,
+    "median_price": 253935.0,
+    "median_sample_size": 16894,
+    "price_rating": "отличная цена",
+    "mileage_km": 220000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ZKEDbV2vFjalLV9liiJKOGt-s9q0TDVi1kdUds7W-FmSOm4dypjeYyt3FTTFsU-6rkvX6-9KXEhg7CMg/gen272wb.jpg"
   }
 }
