@@ -256,7 +256,10 @@ def restriction_facts(d):
             v = node.get(key)
             if isinstance(v, list):
                 f["restriction_list"] = v
-                f["restrictions"] = bool(v)
+                # пустой список — «ограничений нет» только при явном признаке успешного ответа,
+                # иначе это может быть сбой источника, а не чистая машина
+                ok = str(node.get("status", "")).lower() in ("ok", "success", "200") or node.get("found") is True
+                f["restrictions"] = True if v else (False if ok else None)
                 break
         else:
             for key in ("hasRestriction", "has_restriction", "restriction", "isRestricted", "restricted"):
@@ -284,25 +287,35 @@ def restriction_text(v, f):
             if isinstance(r, dict):
                 bits = [str(r[k]) for k in ("date", "Date", "type", "Type", "basis", "Basis", "region", "Region") if r.get(k)]
                 if bits:
-                    lines.append("  • " + e(", ".join(bits))[:200])
+                    lines.append("  • " + e(", ".join(bits)[:200]))
     elif f["restrictions"] is False:
         lines.append("✅ Ограничений на регистрацию не найдено — похоже, можно переоформлять.")
     else:
-        lines.append("ℹ️ Разбор не распознал поле об ограничениях — смотрите сырой ответ ГИБДД ниже.")
+        lines.append("ℹ️ Ограничения: ответ не распознан.")
     if f["wanted"] is True:
         lines.append("🚨 <b>Числится в розыске!</b>")
     elif f["wanted"] is False:
         lines.append("✅ В розыске не числится.")
+    else:
+        lines.append("ℹ️ Розыск: нет данных.")
     if f["zalog"] is True:
         lines.append("🔒 <b>Залог всё ещё числится.</b>")
     elif f["zalog"] is False:
         lines.append("✅ Залогов не найдено.")
     else:
         lines.append("ℹ️ Залог: нет данных.")
-    if f["restrictions"] is None and f.get("raw_gai") is not None:
-        dump = json.dumps(f["raw_gai"], ensure_ascii=False)[:1200]
-        lines += ["", "Ответ ГИБДД как есть (разбор не распознал поля):", f"<pre>{e(dump)}</pre>"]
+    if None in (f["restrictions"], f["wanted"], f["zalog"]):
+        lines += ["", "⚠️ Часть ответа не распознана — не считайте это разрешением на переоформление, "
+                      "проверьте на гибдд.рф/check/auto. Сырой ответ отправлен владельцу в личку."]
     if f.get("bad"):
         lines.append(f"\n⚠️ Не разобрано: {e(', '.join(f['bad']))}")
     lines += ["", "Источник: apipoint.ru (ГИБДД + залог). Перед переоформлением всё равно сверьтесь в ГИБДД/у нотариуса."]
     return "\n".join(lines)[:4000]
+
+
+def raw_dump(f, limit=3500):
+    """Сырой ответ ГИБДД для владельца в личку (не в общую тему): экранирован, <pre> не разрывается."""
+    if f.get("raw_gai") is None:
+        return None
+    body = html.escape(json.dumps(f["raw_gai"], ensure_ascii=False))[:limit]
+    return f"Сырой ответ ГИБДД (apipoint gai):\n<pre>{body}</pre>"

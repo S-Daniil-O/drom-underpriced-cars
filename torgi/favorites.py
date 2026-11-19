@@ -996,11 +996,19 @@ def apipoint_restrict(st, v):
         return "apipoint.ru прислал ответ, который не удалось разобрать."
     if f.get("bad"):
         log(f"apipoint (ограничения) лот №{v['n']}: не разобраны части: {', '.join(f['bad'])}")
-    r = tg("sendMessage", text=apipoint.restriction_text(v, f), parse_mode="HTML", **place(v))
+    text = apipoint.restriction_text(v, f)
+    r = tg("sendMessage", text=text, parse_mode="HTML", **place(v))
+    if not r.get("ok"):          # сломалась разметка — отправить простым текстом, но не молчать
+        log(f"apipoint (ограничения) лот №{v['n']}: {r.get('description')}")
+        r = tg("sendMessage", text=re.sub(r"<[^>]+>", "", text), **place(v))
     if r.get("ok"):
         v.setdefault("msgs", []).append(r["result"]["message_id"])
-    else:
-        log(f"apipoint (ограничения) лот №{v['n']}: {r.get('description')}")
+    if None in (f["restrictions"], f["wanted"], f["zalog"]):
+        dump = apipoint.raw_dump(f)
+        for uid in st.d.get("owners", []) if dump else []:
+            tg("sendMessage", chat_id=uid, text=f"Лот №{v['n']}. " + dump, parse_mode="HTML")
+    if not r.get("ok"):
+        return "Проверка выполнена, но сообщение с результатом не отправилось — напишите Claude."
     log(f"apipoint (ограничения) лот №{v['n']}: проверен, списано {d.get('price')} ₽, остаток {d.get('balance')} ₽")
     bal = apipoint._num(d.get("balance"))
     if bal is not None and bal < AP_LOW_BALANCE and st.d.get("ap_low") != day:
