@@ -8,12 +8,12 @@
 "price": 289000,
 "market_price": 86500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160818103-ec74cc65/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/BsU_tI4tu4o5QG5uTTgcI4B6tO52OVj6q4MSDLBR9LUybtDZcsa4eHxKxB9cBGW95ULfWSWqBruWrwP66muPMCK3tIXMETFeQW27aPqANZzK2aSCO6pEtJ2XTUQrWRoVWBvxTldNmPJkiOmpoEnCc6g-tu1aMmdXpaXGYrIa4MzdbQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/mqPmKXgOvh18qvnMli7DtqpnTFR7MciesTLYNfBLBeoevZjN12Vs410QGbQ02l0wFb0AKuJp_BroMQIV5o8bBm4Sd0M9kk-thegjPHdkJDrbLXFwNI3GoE1nmYROnMSYW1zZ-k4t0sUvw2HqKLp4HklcE4Zuxfot66RgP-UC4iUseQ/1200x900n",
 "mileage_km": 92000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:30.692878+00:00"
+"seen_at": "2026-11-19T06:42:47.718389+00:00"
 },
 {
 "ad_id": "autoru_1160827875-ac25d4ba",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:30.692820+00:00"
+"seen_at": "2026-11-19T06:42:47.718343+00:00"
 },
 {
 "ad_id": "autoru_1160839276-3b3a8ece",
@@ -45,39 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:30.692759+00:00"
-},
-{
-"ad_id": "autoru_1160853658-7774604f",
-"source": "autoru",
-"brand": "Kia",
-"model": "Spectra",
-"year": 2007,
-"price": 389000,
-"market_price": 186000,
-"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
-"mileage_km": 247000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-19T06:31:11.394968+00:00"
-},
-{
-"ad_id": "autoru_1160850729-66eeb378",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2104",
-"year": 2008,
-"price": 155000,
-"market_price": 68500,
-"url": "https://auto.ru/cars/used/sale/vaz/2104/1160850729-66eeb378/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/4c31bbab0e371ae71a4029ec4a4d46ed/1200x900n",
-"mileage_km": 50000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-19T06:31:11.394948+00:00"
+"seen_at": "2026-11-19T06:42:47.718286+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -93,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-19T06:31:11.394937+00:00"
+"seen_at": "2026-11-19T06:42:27.432124+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -109,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:11.394927+00:00"
+"seen_at": "2026-11-19T06:42:27.432115+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
@@ -125,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:11.394910+00:00"
+"seen_at": "2026-11-19T06:42:27.432101+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
@@ -141,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:11.394898+00:00"
+"seen_at": "2026-11-19T06:42:27.432092+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -157,6 +125,38 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T06:31:11.394867+00:00"
+"seen_at": "2026-11-19T06:42:27.432080+00:00"
+},
+{
+"ad_id": "autoru_1160853658-7774604f",
+"source": "autoru",
+"brand": "Kia",
+"model": "Spectra",
+"year": 2007,
+"price": 389000,
+"market_price": 186000,
+"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
+"mileage_km": 247000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-19T06:42:27.432054+00:00"
+},
+{
+"ad_id": "autoru_1160850729-66eeb378",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2104",
+"year": 2008,
+"price": 155000,
+"market_price": 68500,
+"url": "https://auto.ru/cars/used/sale/vaz/2104/1160850729-66eeb378/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/4c31bbab0e371ae71a4029ec4a4d46ed/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-19T06:42:27.432011+00:00"
 }
 ]
