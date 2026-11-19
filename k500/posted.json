@@ -9158,5 +9158,20 @@
     "mileage_km": 50000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/4c31bbab0e371ae71a4029ec4a4d46ed/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2106/410680402.html": {
+    "posted_at": "2026-11-19T12:10:51.392063+00:00",
+    "message_id": 659,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2106",
+    "year": 1996,
+    "price": 65000,
+    "median_price": 245700.0,
+    "median_sample_size": 1605,
+    "price_rating": null,
+    "mileage_km": 160000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/MQfsfk-LD9tOvCe4yxwiCtc8sAbjVYh0EMbNwT36l4ptoXC0rItUeITPTJCEvAKJVHQ2OL-u-w5vpHQZ/gen272wb.jpg"
   }
 }
