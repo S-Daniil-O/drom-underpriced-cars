@@ -52,6 +52,11 @@ NIS_MAX_RATIO = 0.7
 # Минимальный год выпуска: машины старше не публикуются.
 # Если год распознать не удалось — лот публикуется с пометкой «год не указан» (отбор вручную).
 MIN_YEAR = 2010
+NIS_MIN_YEAR = 2005     # канал «ТОРГИ НИС» — машины от 2005 года
+
+
+def min_year(lot):
+    return NIS_MIN_YEAR if lot.get("source") == "НИС" else MIN_YEAR
 # Отсев «слишком дешёвых»: мин. цена < MIN_RATIO * рынка — обычно ошибка распознавания.
 MIN_RATIO = 0.05
 # Публикация: пачками по BATCH_SIZE постов, между пачками пауза BATCH_PAUSE_MIN минут.
@@ -1627,7 +1632,7 @@ def main():
 
         # рынок проверяем только у тех, кто пройдёт фильтры по году и состоянию (меньше запросов к Drom)
         cars = [(lot, car) for lot, car in cars
-                if (not car[2] or car[2] >= MIN_YEAR) and not bad_reason(lot)]
+                if (not car[2] or car[2] >= min_year(lot)) and not bad_reason(lot)]
         log(f"Подходят по году и состоянию, проверяем рынок: {len(cars)}")
         deals, checked = [], 0
         for lot, car in cars:
@@ -1671,8 +1676,8 @@ def main():
         if "year" not in d:  # старые сохранённые записи: год есть в названии
             m = re.search(r", (\d{4})$", d.get("car_name", ""))
             d["year"] = int(m.group(1)) if m else None
-    old = [d for d in deals if d["year"] and d["year"] < MIN_YEAR]
-    deals = [d for d in deals if not d["year"] or d["year"] >= MIN_YEAR]
+    old = [d for d in deals if d["year"] and d["year"] < min_year(d)]
+    deals = [d for d in deals if not d["year"] or d["year"] >= min_year(d)]
     log(f"Отсеяно по году (< {MIN_YEAR}): {len(old)}, осталось {len(deals)} "
         f"(из них без года: {sum(1 for d in deals if not d['year'])})")
 
