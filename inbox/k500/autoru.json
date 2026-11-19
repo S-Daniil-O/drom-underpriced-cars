@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.799040+00:00"
+"seen_at": "2026-11-19T23:46:38.012762+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-19T23:35:17.799021+00:00"
+"seen_at": "2026-11-19T23:46:38.012723+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.799008+00:00"
+"seen_at": "2026-11-19T23:46:38.012699+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.798995+00:00"
+"seen_at": "2026-11-19T23:46:38.012674+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.798983+00:00"
+"seen_at": "2026-11-19T23:46:38.012653+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.798970+00:00"
+"seen_at": "2026-11-19T23:46:38.012626+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:17.798947+00:00"
+"seen_at": "2026-11-19T23:46:38.012583+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-19T23:35:17.798905+00:00"
+"seen_at": "2026-11-19T23:46:38.012517+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-19T23:35:01.046249+00:00"
+"seen_at": "2026-11-19T23:46:17.886807+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T23:35:01.046234+00:00"
+"seen_at": "2026-11-19T23:46:17.886789+00:00"
 },
 {
 "ad_id": "autoru_1160873398-9d6af5b2",
@@ -190,21 +190,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-19T18:31:55.779653+00:00"
-},
-{
-"ad_id": "autoru_1160871161-0e18cc58",
-"source": "autoru",
-"brand": "Honda",
-"model": "Capa",
-"year": 1999,
-"price": 145000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/honda/capa/1160871161-0e18cc58/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/11871473/39b2cc6245d497ba829cd3273aa56ef4/1200x900n",
-"mileage_km": 100000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-19T17:46:52.032976+00:00"
 }
 ]
