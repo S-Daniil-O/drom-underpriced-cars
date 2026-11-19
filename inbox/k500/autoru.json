@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160827875-ac25d4ba",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 1995,
-"price": 200000,
-"market_price": 141500,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160827875-ac25d4ba/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1880478/ae6c9d01360fe32bb21d76067e95036e/1200x900n",
-"mileage_km": 198000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341483+00:00"
-},
-{
 "ad_id": "autoru_1160839276-3b3a8ece",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341447+00:00"
+"seen_at": "2026-11-19T15:32:19.562073+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
-"seen_at": "2026-11-19T15:21:06.341424+00:00"
+"seen_at": "2026-11-19T15:32:19.562049+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -61,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341412+00:00"
+"seen_at": "2026-11-19T15:32:19.562034+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
@@ -77,23 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341396+00:00"
+"seen_at": "2026-11-19T15:32:19.562017+00:00"
+},
+{
+"ad_id": "autoru_1160827875-ac25d4ba",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 1995,
+"price": 200000,
+"market_price": 141500,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160827875-ac25d4ba/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1880478/ae6c9d01360fe32bb21d76067e95036e/1200x900n",
+"mileage_km": 198000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-19T15:32:19.561993+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
 "source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
+"brand": "Lada (ВАЗ)",
+"model": "2112",
 "year": 2008,
 "price": 177000,
 "market_price": 125000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160846719-e1a5d97f/",
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160837855-334ab172/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/b3a95aefa4981097263dac8d376b123b/1200x900n",
 "mileage_km": 85000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341380+00:00"
+"seen_at": "2026-11-19T15:32:19.561956+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:21:06.341340+00:00"
+"seen_at": "2026-11-19T15:32:19.561911+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-19T15:20:48.052535+00:00"
+"seen_at": "2026-11-19T15:32:04.309990+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-19T15:20:48.052517+00:00"
+"seen_at": "2026-11-19T15:32:04.309953+00:00"
 },
 {
 "ad_id": "autoru_1160868619-e8d2b031",
