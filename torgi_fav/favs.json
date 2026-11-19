@@ -4587,10 +4587,26 @@
    "vc_msg": 2083,
    "vc_text": "🔎 <b>Проверка по VIN — лот №64</b>\n<code>XTAKS0Y5LE0794528</code>\n\n✅ Лизинг не найден\n🔨 Торги банкротства с этим VIN: 3 (раньше выставлялась 2 раза)\n   • 28.09.2026–02.11.2026 открытый аукцион, объявлены торги · <a href=\"https://fedresurs.ru/biddings/7480adff-2aa8-4bd9-8551-2d617cc6d67e\">380858</a>\n   • 06.11.2026–06.11.2026 открытый аукцион, торги не состоялись · <a href=\"https://fedresurs.ru/biddings/1c0a033a-a9f5-409e-931d-478b15d7fcbf\">18546</a>\n   • 12.11.2026–24.02.2027 публичное предложение, открыт прием заявок · <a href=\"https://fedresurs.ru/biddings/c1a19d37-58c0-44a5-b689-24a673290510\">22642</a> ← этот лот\n\nНе проверено (там капча): <a href=\"https://xn--90adear.xn--p1ai/check/auto\">ГИБДД</a> — владельцы, ДТП, ограничения, розыск · <a href=\"https://www.reestr-zalogov.ru/search\">реестр залогов</a>",
    "photos_done": true
+  },
+  "cdt-377352": {
+   "n": 65,
+   "url": "https://torgi.cdtrf.ru/trades/377352",
+   "name": "Volkswagen Polo, 2011",
+   "vin": "XW8ZZZ61ZCG000013",
+   "target": 269640,
+   "card": 2091,
+   "added": "2026-11-19T09:15",
+   "end": null,
+   "sent": {},
+   "btn": 2,
+   "head": 2092,
+   "msgs": [],
+   "topic": 2090,
+   "title": "Volkswagen Polo, 2011 · №65"
   }
  },
- "offset": 177674425,
- "seq": 64,
+ "offset": 177674426,
+ "seq": 65,
  "forum": -1004498088083,
  "owners": [
   1188456401
