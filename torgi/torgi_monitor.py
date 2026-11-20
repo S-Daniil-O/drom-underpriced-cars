@@ -752,7 +752,7 @@ def scan_detail(row):
         "start_price": prices[0], "current_price": cur, "min_price": min(prices),
         "end_date": sched[-1][1][:10], "status": status, "region": region, "region_name": region,
         "schedule": sched, "code": strip_html(field("Номер торгов")), "image": image,
-        "etp": etp, "etp_url": etp_url if re.match(r"https://[\w.-]+/", etp_url or "") else "",
+        "etp": etp, "etp_url": etp_url if re.fullmatch(r"https://[A-Za-z0-9.-]+\.[a-z]{2,}(/[A-Za-z0-9_./?=&%#:-]*)?", etp_url or "") else "",
     }
 
 
@@ -768,9 +768,8 @@ def scan_cards(rows):
     for row in rows:
         y = _scan_year(row["title"])
         km = region_km({"region": row["place"]})
-        if (y and y < NIS_MIN_YEAR) or km is None or km > MAX_KM:
-            continue
-        if not parse_car(row["title"]):
+        if (y and y < NIS_MIN_YEAR) or km is None or km > MAX_KM or not parse_car(row["title"]):
+            _nis_unknown.add(f"scan-{row['id']}")   # лот жив, просто не наш — «снятым» не считаем
             continue
         want.append(row)
     log(f"ScanLot: по году (от {NIS_MIN_YEAR}) и расстоянию (до {MAX_KM} км) подходят {len(want)} из {len(rows)}")
@@ -1672,7 +1671,7 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
         if d.get("image") and image_url_ok(d["image"]):
             try:
                 r = requests.get(d["image"], headers={"User-Agent": UA}, timeout=60)
-                if r.ok and r.headers.get("content-type", "").startswith("image") and len(r.content) < 5_000_000:
+                if r.ok and image_url_ok(r.url) and r.headers.get("content-type", "").startswith("image") and len(r.content) < 5_000_000:
                     img = f"img/{re.sub(r'[^A-Za-z0-9_-]', '_', d['id'])}.jpg"
                     (qdir / img).write_bytes(r.content)
             except requests.RequestException as e:
