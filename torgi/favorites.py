@@ -925,10 +925,19 @@ WANTS_PER_ROUND = 8      # находок по одному запросу за 
 WANT_FILES = ("torgi", "torgi_nis", "torgi_scan")   # inbox/<папка>/active.json — все лоты площадок от iMac
 
 
-def wants_round(st, inbox):
-    """Новые лоты, подходящие под запросы «/хочу», — в личку автору запроса."""
+def wants_round(st, inbox, allowed):
+    """Новые лоты, подходящие под запросы «/хочу», — в личку автору запроса. Запросы тех, у кого
+    доступа больше нет (не администратор и не редактор), удаляются — находки им не уходят."""
+    if st.d.pop("wants_now", None):
+        st.dirty = True
     if not st.d.get("wants"):
         return
+    editors = {k: v for k, v in st.d.get("editors", {}).items() if k in EDITORS}
+    keep = [w for w in st.d["wants"] if w["uid"] in allowed or w["uid"] in editors.values()]
+    if len(keep) != len(st.d["wants"]):
+        log(f"поиск по запросам: убрано запросов без доступа {len(st.d['wants']) - len(keep)}")
+        st.d["wants"] = keep
+        st.dirty = True
     lots = {}
     for folder in WANT_FILES:
         f = inbox / folder / "active.json"
@@ -960,7 +969,6 @@ def wants_round(st, inbox):
         w["seen"] = w["seen"][-1500:]
         if sent:
             log(f"запрос №{w['id']}: отправлено находок {sent}")
-    st.d.pop("wants_now", None)
 
 
 def apipoint_one(st, v):
@@ -1366,8 +1374,9 @@ def main():
             live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
             check(st, live, lots_file.parent / "img")
             try:
-                wants_round(st, lots_file.parent.parent)
+                wants_round(st, lots_file.parent.parent, allowed)
             except Exception as e:  # noqa: BLE001 — поиск по запросам не должен ронять бота
+                st.d.pop("wants_now", None)
                 log(f"поиск по запросам: ошибка {type(e).__name__}: {str(e)[:150]}")
             for k, v in st.d["lots"].items():
                 if not v.get("ended") and not v.get("sched_msg"):

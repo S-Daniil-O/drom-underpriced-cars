@@ -124,7 +124,7 @@ def match(q, lot, now=None):
     try:
         if end and datetime.fromisoformat(end) < now:
             return None
-    except ValueError:
+    except (ValueError, TypeError):
         pass
     notes = []
     if q.get("model"):
@@ -182,7 +182,7 @@ def found_text(want, lot, notes):
     if lot.get("end"):
         try:
             tail.append("до " + datetime.fromisoformat(lot["end"]).strftime("%d.%m"))
-        except ValueError:
+        except (ValueError, TypeError):
             pass
     if lot.get("reg"):
         tail.append(lot["reg"])
