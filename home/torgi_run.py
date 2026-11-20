@@ -26,6 +26,8 @@ POSTED = os.path.join(WORK, "data", "posted_from_state.json")
 POSTED_HOT = os.path.join(WORK, "data", "posted_hot_from_state.json")
 QUEUE_NIS = os.path.join(WORK, "queue_nis")     # отдельный канал «ТОРГИ НИС» (nistp.ru)
 POSTED_NIS = os.path.join(WORK, "data", "posted_nis_from_state.json")
+QUEUE_SCAN = os.path.join(WORK, "queue_scan")   # отдельный канал «Торги Сканлот» (scanlot.ru)
+POSTED_SCAN = os.path.join(WORK, "data", "posted_scan_from_state.json")
 FAVS = os.path.join(WORK, "data", "favs_from_state.json")          # «Мои лоты»
 FAV_LOTS = os.path.join(WORK, "queue_fav", "lots.json")
 
@@ -97,6 +99,16 @@ def main():
     shutil.rmtree(QUEUE_NIS, ignore_errors=True)
     subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=nis", f"--queue={QUEUE_NIS}",
                     f"--active={os.path.join(QUEUE_NIS, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_NIS))
+    # «Торги Сканлот»: те же правила, что для НИС, только сайт scanlot.ru и свой канал
+    try:
+        scan_posted = git("show", "origin/state:torgi_scan/posted.json")
+    except subprocess.CalledProcessError:
+        scan_posted = "{}"
+    with open(POSTED_SCAN, "w") as f:
+        f.write(scan_posted)
+    shutil.rmtree(QUEUE_SCAN, ignore_errors=True)
+    subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=scan", f"--queue={QUEUE_SCAN}",
+                    f"--active={os.path.join(QUEUE_SCAN, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_SCAN))
     # «Мои лоты»: график и заявки по избранным — для уведомлений на GitHub
     subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), f"--fav-lots={FAVS},{FAV_LOTS}"],
                    cwd=WORK, env=env)
@@ -111,12 +123,13 @@ def main():
     fcntl.flock(lock, fcntl.LOCK_EX)  # autoru_collect.py и drom_sweep.py пишут в тот же клон
     git("fetch", "-q", "origin", "inbox")
     git("reset", "-q", "--hard", "origin/inbox")
-    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot"), (os.path.dirname(FAV_LOTS), "torgi_fav"), (QUEUE_NIS, "torgi_nis")):
+    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot"), (os.path.dirname(FAV_LOTS), "torgi_fav"), (QUEUE_NIS, "torgi_nis"),
+                      (QUEUE_SCAN, "torgi_scan")):
         dest = os.path.join(INBOX_REPO, "inbox", name)
         shutil.rmtree(dest, ignore_errors=True)
         if os.path.exists(src):
             shutil.copytree(src, dest)
-    git("add", "-A", *[p for p in ("inbox/torgi", "inbox/torgi_hot", "inbox/torgi_fav", "inbox/torgi_nis")
+    git("add", "-A", *[p for p in ("inbox/torgi", "inbox/torgi_hot", "inbox/torgi_fav", "inbox/torgi_nis", "inbox/torgi_scan")
                          if os.path.exists(os.path.join(INBOX_REPO, p)) or git("ls-files", p).strip()])
     if git("status", "--porcelain").strip():
         git("commit", "-q", "-m", "inbox: torgi")

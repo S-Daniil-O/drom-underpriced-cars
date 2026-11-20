@@ -18,8 +18,8 @@ from pathlib import Path
 import requests
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
-CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis": "ТОРГИ НИС"}
-KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС"}
+CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis": "ТОРГИ НИС", "torgi_scan": "Торги Сканлот"}
+KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС", "Сканлот"}
 
 
 def kind(s):

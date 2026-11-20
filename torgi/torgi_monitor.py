@@ -52,11 +52,12 @@ NIS_MAX_RATIO = 0.7
 # Минимальный год выпуска: машины старше не публикуются.
 # Если год распознать не удалось — лот публикуется с пометкой «год не указан» (отбор вручную).
 MIN_YEAR = 2010
-NIS_MIN_YEAR = 2005     # канал «ТОРГИ НИС» — машины от 2005 года
+NIS_MIN_YEAR = 2005     # каналы «ТОРГИ НИС» и «Торги Сканлот» — машины от 2005 года
+SOFT_SOURCES = {"НИС", "Сканлот"}   # для них мягче порог цены и год
 
 
 def min_year(lot):
-    return NIS_MIN_YEAR if lot.get("source") == "НИС" else MIN_YEAR
+    return NIS_MIN_YEAR if lot.get("source") in SOFT_SOURCES else MIN_YEAR
 # Отсев «слишком дешёвых»: мин. цена < MIN_RATIO * рынка — обычно ошибка распознавания.
 MIN_RATIO = 0.05
 # Публикация: пачками по BATCH_SIZE постов, между пачками пауза BATCH_PAUSE_MIN минут.
@@ -644,6 +645,174 @@ def nis_detail(row, b, region):
     }
 
 
+# ---------------------------------------------------------------- ScanLot (scanlot.ru)
+# Сайт-агрегатор автомобилей с торгов по банкротству (лоты десятков площадок).
+# Берём только адреса, разрешённые robots.txt: каталог «Публичное предложение» по страницам
+# и страницы лотов; фильтры региона/цены и /api/ сайт роботам не разрешает — их не трогаем.
+SCAN_BASE = "https://scanlot.ru"
+SCAN_CACHE_FILE = DATA / "scan_cache.json"
+SCAN_CACHE_DAYS = 3        # карточку лота перечитываем раз в 3 дня (график снижения не меняется)
+SCAN_PAUSE = 1.0           # пауза между запросами к сайту, с
+SCAN_FETCH_PER_RUN = 800   # не больше стольких страниц лотов за запуск (первый проход каталога — за несколько дней)
+_scan_incomplete = [False]
+
+
+def scan_list():
+    """Карточки каталога ScanLot «Публичное предложение»: id, путь, цена, «Марка Модель, год», регион."""
+    rows, seen, page, last = [], set(), 1, None
+    s = requests.Session()
+    s.headers["User-Agent"] = UA
+    while page <= 1000:
+        r = s.get(SCAN_BASE + "/", params={"auction_type": "публичн", "page": str(page)}, timeout=60)
+        r.raise_for_status()
+        if last is None:
+            last = max([1] + [int(x) for x in re.findall(r"[?&]page=(\d{1,4})", r.text)])
+        found = 0
+        for card in r.text.split('<div class="card">')[1:]:
+            m = re.search(r'<a href="(/torgi/auto/[a-z0-9_-]+/[a-z0-9_-]+/(\d{1,9})/)" class="card-content">(.*?)</a>', card, re.S)
+            if not m or m.group(2) in seen:
+                continue
+            seen.add(m.group(2))
+            found += 1
+            body = m.group(3)
+            g = lambda cls: strip_html((re.search(r'class="' + cls + r'"[^>]*>(.*?)</(?:div|h3)>', body, re.S) or [None, ""])[1])
+            place = re.search(r'class="card-place" title="([^"]*)"', body)
+            rows.append({"id": m.group(2), "path": m.group(1), "price": to_float(re.sub(r"\D", "", g("card-price")) or None),
+                         "title": g("card-title"), "specs": g("card-specs"),
+                         "place": html.unescape(place.group(1)).split("·")[0].strip() if place else ""})
+        if not found:
+            break
+        page += 1
+        if page > last:
+            break
+        time.sleep(SCAN_PAUSE)
+    if page <= last:
+        log(f"ScanLot: каталог оборвался на странице {page} из {last}")
+        _scan_incomplete[0] = True
+    log(f"ScanLot: {len(rows)} лотов публичного предложения, страниц {min(page, last)}")
+    return rows
+
+
+def _scan_year(title):
+    m = re.search(r",\s*((?:19|20)\d\d)\s*$", title or "")
+    return int(m.group(1)) if m else None
+
+
+def scan_detail(row):
+    """Страница лота ScanLot → лот в общем формате (график снижения, минимальная цена, регион, фото)."""
+    r = requests.get(SCAN_BASE + row["path"], headers={"User-Agent": UA}, timeout=60)
+    if not r.ok:
+        return None
+    s = r.text
+    ld = {}
+    for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
+        try:
+            x = json.loads(m)
+        except ValueError:
+            continue
+        if isinstance(x, dict) and x.get("@type") == "Vehicle":
+            ld = x
+    period = re.search(r'class="period"><span>с (\d\d)\.(\d\d)\.(\d{4})[^<]*</span>\s*<span>по ([\d.]{10} [\d:]{5})', s)
+    sched_html = (re.search(r'<details class="price-sched">(.*?)</details>', s, re.S) or [None, ""])[1]
+    rows = re.findall(r"<td>(\d\d)\.(\d\d) (\d\d:\d\d)</td><td>(\d\d)\.(\d\d) (\d\d:\d\d)</td><td>([\d\s\xa0 ]+)", sched_html)
+    if not rows or not period:
+        return None
+    # в графике даты без года — восстанавливаем от начала приёма заявок (переход через Новый год)
+    year, prev_m, sched = int(period.group(3)), int(period.group(2)), []
+    def with_year(d, mth):
+        nonlocal year, prev_m
+        if int(mth) < prev_m:
+            year += 1
+        prev_m = int(mth)
+        return f"{d}.{mth}.{year}"
+    for d1, m1, t1, d2, m2, t2, price in rows:
+        a = with_year(d1, m1) + " " + t1
+        b = with_year(d2, m2) + " " + t2
+        p = to_float(price)
+        if p:
+            sched.append([a, b, p, None])
+    if not sched:
+        return None
+    field = lambda name: (re.search(r"<tr><td>" + name + r"</td><td[^>]*>(.*?)</td></tr>", s, re.S) or [None, ""])[1]
+    region = strip_html(re.sub(r'<div class="full-name">.*', "", field("Где машина"), flags=re.S))
+    etp = strip_html(re.sub(r'<div class="full-name">.*', "", field(r"Площадка \(ЭТП\)"), flags=re.S))
+    etp_url = (re.search(r'<a href="(https://[^"]+)" class="btn btn-primary"', s) or [None, ""])[1]
+    desc = strip_html((re.search(r'<div class="description-box">(.*?)</div>', s, re.S) or [None, ""])[1])
+    status = strip_html((re.search(r'<div class="trade-status[^"]*">(.*?)</div></div>', s, re.S) or [None, ""])[1])
+    image = ld.get("image") if isinstance(ld.get("image"), str) else None
+    name = ld.get("name") or row["title"]
+    prices = [x[2] for x in sched]
+    now = time.time()
+    cur = next((x[2] for x in sched if _dt(x[0]) and _dt(x[1]) and _dt(x[0]).timestamp() <= now < _dt(x[1]).timestamp()), prices[0])
+    return {
+        "source": "Сканлот", "id": f"scan-{row['id']}", "url": SCAN_BASE + row["path"],
+        "title": f"{name}. {desc}".strip(" .")[:300],
+        "description": (desc + (f" VIN {ld.get('vehicleIdentificationNumber')}" if ld.get("vehicleIdentificationNumber")
+                                and ld["vehicleIdentificationNumber"] not in desc else ""))[:3000],
+        "start_price": prices[0], "current_price": cur, "min_price": min(prices),
+        "end_date": sched[-1][1][:10], "status": status, "region": region, "region_name": region,
+        "schedule": sched, "code": strip_html(field("Номер торгов")), "image": image,
+        "etp": etp, "etp_url": etp_url if re.match(r"https://[\w.-]+/", etp_url or "") else "",
+    }
+
+
+def scan_cards(rows):
+    """Лоты ScanLot, подходящие по году и расстоянию (по карточке списка); страницы лотов — с кэшем."""
+    cache = {}
+    if SCAN_CACHE_FILE.exists():
+        try:
+            cache = json.loads(SCAN_CACHE_FILE.read_text())
+        except ValueError:
+            cache = {}
+    want = []
+    for row in rows:
+        y = _scan_year(row["title"])
+        km = region_km({"region": row["place"]})
+        if (y and y < NIS_MIN_YEAR) or km is None or km > MAX_KM:
+            continue
+        if not parse_car(row["title"]):
+            continue
+        want.append(row)
+    log(f"ScanLot: по году (от {NIS_MIN_YEAR}) и расстоянию (до {MAX_KM} км) подходят {len(want)} из {len(rows)}")
+    lots, fetched, failed = [], 0, 0
+    for row in want:
+        c = cache.get(row["id"])
+        if c and (time.time() - c.get("t", 0) < SCAN_CACHE_DAYS * 86400 or fetched >= SCAN_FETCH_PER_RUN):
+            lot = c.get("lot")        # свежий кэш, или лимит запуска исчерпан — берём сохранённое
+        elif fetched >= SCAN_FETCH_PER_RUN:
+            _nis_unknown.add(f"scan-{row['id']}")   # прочитаем в следующий раз
+            continue
+        else:
+            try:
+                lot = scan_detail(row)
+            except requests.RequestException:
+                failed += 1
+                _scan_incomplete[0] = True
+                continue
+            fetched += 1
+            cache[row["id"]] = {"t": time.time(), "lot": lot}
+            time.sleep(SCAN_PAUSE)
+            if fetched % 100 == 0:
+                log(f"  ScanLot: прочитано страниц лотов {fetched}")
+                SCAN_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False))
+        if not lot:     # лот на сайте есть, но без графика — его пост «снятым» не считаем
+            _nis_unknown.add(f"scan-{row['id']}")
+        if lot:
+            lot = dict(lot)
+            now = time.time()
+            lot["current_price"] = next((x[2] for x in lot["schedule"] if _dt(x[0]) and _dt(x[1])
+                                         and _dt(x[0]).timestamp() <= now < _dt(x[1]).timestamp()), lot["current_price"])
+            lots.append(lot)
+    live = {r["id"] for r in rows}
+    cache = {k: v for k, v in cache.items() if k in live}      # снятые с торгов — из кэша
+    SCAN_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False))
+    if failed:
+        log(f"ScanLot: не загрузились страницы {failed} лотов")
+    left = sum(1 for r in want if r["id"] not in cache)
+    log(f"ScanLot: с графиком снижения {len(lots)} (страниц прочитано {fetched}, ещё не прочитано {left})")
+    return lots
+
+
 # ---------------------------------------------------------------- марка/модель/год
 BRANDS = {
     # slug drom: варианты написания
@@ -1089,7 +1258,7 @@ CITY_STEMS = {"Воронежская": "воронеж", "Белгородск�
 
 
 PRICE_TAGS = [(100_000, "#до100тыс"), (300_000, "#до300тыс"), (500_000, "#до500тыс"), (1_000_000, "#до1млн")]
-SOURCE_TAGS = {"ЦДТ": "#ЦДТ", "МЭТС": "#МЭТС", "ТоргГрупп": "#ТоргГрупп", "НИС": "#НИС"}
+SOURCE_TAGS = {"ЦДТ": "#ЦДТ", "МЭТС": "#МЭТС", "ТоргГрупп": "#ТоргГрупп", "НИС": "#НИС", "Сканлот": "#Сканлот"}
 
 
 def _is_moscow_city(d):
@@ -1272,8 +1441,9 @@ def caption(d):
         (f"{'Текущий период цены до' if d['source'] == 'МЭТС' else 'Приём заявок до'}: {d['end_date']}"
          if d.get("end_date") else None),
         f"VIN: {d['vin']}" if d.get("vin") else None,
-        f"Площадка: {d['source']}",
+        (f"Площадка: {d['etp'] or 'см. в лоте'} (найдено на ScanLot)" if d["source"] == "Сканлот" else f"Площадка: {d['source']}"),
         f"Лот: {d['url']}",
+        f"На площадке торгов: {d['etp_url']}" if d.get("etp_url") else None,
     ]
     return scrub("\n".join(x for x in lines if x is not None))[:1024]
 
@@ -1317,7 +1487,7 @@ def tg_send(d):
 
 
 # ---------------------------------------------------------------- фото лотов
-IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru", "bankrot.torggroup.org", "nistp.ru")
+IMAGE_HOSTS = ("torgi.cdtrf.ru", "m-ets.ru", "bankrot.torggroup.org", "nistp.ru", "scanlot.ru")
 
 
 def image_url_ok(url):
@@ -1342,7 +1512,8 @@ def write_active(lots, path):
     GitHub удаляет посты: торги закончились, лот снят с площадки, регион дальше MAX_KM.
     sources_ok — площадки, которые ответили (по остальным «лот пропал» не считается)."""
     data = {"created": time.strftime("%Y-%m-%dT%H:%M"), "max_km": MAX_KM,
-            "sources_ok": sorted({lot["source"] for lot in lots} - ({"НИС"} if _nis_incomplete[0] else set())),
+            "sources_ok": sorted({lot["source"] for lot in lots} - ({"НИС"} if _nis_incomplete[0] else set())
+                                 - ({"Сканлот"} if _scan_incomplete[0] else set())),
             "unknown": sorted(_nis_unknown),
             "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"],
                                  "vin": parse_vin((lot.get("title") or "") + " " + (lot.get("description") or ""))[0]}
@@ -1581,8 +1752,12 @@ def main():
     else:
         lots = []
         only_nis = "--source=nis" in sys.argv      # отдельный канал «ТОРГИ НИС»
+        only_scan = "--source=scan" in sys.argv    # отдельный канал «Торги Сканлот»
         if only_nis:
             lots = nis_cards(with_retries("НИС", nis_list) or [])
+        if only_scan:
+            lots = scan_cards(with_retries("Сканлот", scan_list) or [])
+            only_nis = True                         # остальные площадки в этот канал не собираем
         if USE_CDT and not only_nis:
             items = with_retries("ЦДТ", cdt_list)
             if items:
@@ -1643,7 +1818,7 @@ def main():
                 MARKET_CACHE_FILE.write_text(json.dumps(_market_cache, ensure_ascii=False))
             if not mk or not lot.get("min_price"):
                 continue
-            if lot["min_price"] < mk["price"] * (NIS_MAX_RATIO if lot["source"] == "НИС" else MAX_RATIO):
+            if lot["min_price"] < mk["price"] * (NIS_MAX_RATIO if lot["source"] in SOFT_SOURCES else MAX_RATIO):
                 brand, models, year = car
                 model = models if isinstance(models, str) else models[-1]
                 lot["car_name"] = f"{brand.replace('_', ' ').title()} {model.replace('_', ' ').title()}" + (f", {year}" if year else "")
@@ -1660,7 +1835,7 @@ def main():
         # У НИС публичное предложение часто опускается до 5% от старта: если торги начинались с цены
         # целой машины (≥30% рынка), глубокий минимум — не ошибка, а настоящее снижение.
         deals = [d for d in deals if d["min_price"] >= d["market"]["price"] * MIN_RATIO
-                 or (d["source"] == "НИС" and (d.get("start_price") or 0) >= d["market"]["price"] * 0.3)]
+                 or (d["source"] in SOFT_SOURCES and (d.get("start_price") or 0) >= d["market"]["price"] * 0.3)]
         # доли в праве собственности — не целый автомобиль
         deals = [d for d in deals if not re.search(r"\bдол[ьяиеюей]\b|\d/\d\s*дол", (d["title"] + " " + d.get("description", "")).lower())]
         deals.sort(key=lambda d: ("#Воронеж" not in tags(d), "#Черноземье" not in tags(d),
