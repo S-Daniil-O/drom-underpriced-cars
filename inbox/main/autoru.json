@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671648+00:00"
+"seen_at": "2026-11-20T02:12:10.208080+00:00"
 },
 {
 "ad_id": "autoru_1160843776-7a573b20",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671629+00:00"
+"seen_at": "2026-11-20T02:12:10.208060+00:00"
 },
 {
 "ad_id": "autoru_1160847336-8715d84f",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671614+00:00"
+"seen_at": "2026-11-20T02:12:10.208044+00:00"
 },
 {
 "ad_id": "autoru_1160847555-6a01a8c6",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671603+00:00"
+"seen_at": "2026-11-20T02:12:10.208033+00:00"
 },
 {
 "ad_id": "autoru_1160847771-0e8f35b1",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671592+00:00"
+"seen_at": "2026-11-20T02:12:10.208021+00:00"
 },
 {
 "ad_id": "autoru_1160848320-36771256",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671581+00:00"
+"seen_at": "2026-11-20T02:12:10.208009+00:00"
 },
 {
 "ad_id": "autoru_1160853239-f730ce3e",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671558+00:00"
+"seen_at": "2026-11-20T02:12:10.207985+00:00"
 },
 {
 "ad_id": "autoru_1160854327-69563690",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Краснодар",
-"seen_at": "2026-11-20T02:00:50.671538+00:00"
+"seen_at": "2026-11-20T02:12:10.207963+00:00"
 },
 {
 "ad_id": "autoru_1160855598-e5824b4a",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671516+00:00"
+"seen_at": "2026-11-20T02:12:10.207940+00:00"
 },
 {
 "ad_id": "autoru_1160857858-ff0bc0d7",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:50.671498+00:00"
+"seen_at": "2026-11-20T02:12:10.207923+00:00"
 },
 {
 "ad_id": "autoru_1160859831-e09dfab3",
@@ -173,23 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-11-20T02:00:50.671463+00:00"
-},
-{
-"ad_id": "autoru_1160860792-e18a504c",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2013,
-"price": 1150000,
-"market_price": 1057500,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
-"mileage_km": 187400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T02:00:32.425810+00:00"
+"seen_at": "2026-11-20T02:12:10.207887+00:00"
 },
 {
 "ad_id": "autoru_1160861554-1173a2b2",
@@ -205,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:32.425801+00:00"
+"seen_at": "2026-11-20T02:11:52.001563+00:00"
 },
 {
 "ad_id": "autoru_1160861637-e2d9442f",
@@ -221,55 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-11-20T02:00:32.425789+00:00"
-},
-{
-"ad_id": "autoru_1160793365-e7ea7d2a",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2024,
-"price": 1355000,
-"market_price": 1312500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
-"mileage_km": 20000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-20T02:00:32.425761+00:00"
-},
-{
-"ad_id": "autoru_1160804929-8e973751",
-"source": "autoru",
-"brand": "Nissan",
-"model": "X-Trail",
-"year": 2011,
-"price": 1033000,
-"market_price": 948000,
-"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
-"mileage_km": 268800,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T02:00:32.425738+00:00"
-},
-{
-"ad_id": "autoru_1160681749-dc362d99",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Niva",
-"year": 2020,
-"price": 950000,
-"market_price": 766500,
-"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
-"mileage_km": 48000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-20T02:00:32.425704+00:00"
+"seen_at": "2026-11-20T02:11:52.001552+00:00"
 },
 {
 "ad_id": "autoru_1160328880-912dd168",
@@ -285,7 +221,71 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T02:00:32.425637+00:00"
+"seen_at": "2026-11-20T02:11:52.001535+00:00"
+},
+{
+"ad_id": "autoru_1160793365-e7ea7d2a",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2024,
+"price": 1355000,
+"market_price": 1312500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
+"mileage_km": 20000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-20T02:11:52.001513+00:00"
+},
+{
+"ad_id": "autoru_1160804929-8e973751",
+"source": "autoru",
+"brand": "Nissan",
+"model": "X-Trail",
+"year": 2011,
+"price": 1033000,
+"market_price": 948000,
+"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
+"mileage_km": 268800,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T02:11:52.001493+00:00"
+},
+{
+"ad_id": "autoru_1160681749-dc362d99",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Niva",
+"year": 2020,
+"price": 950000,
+"market_price": 766500,
+"url": "https://auto.ru/cars/used/sale/vaz/niva/1160681749-dc362d99/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19793268/2e177cfbef148678fea3413553fa22fe/1200x900n",
+"mileage_km": 48000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-20T02:11:52.001462+00:00"
+},
+{
+"ad_id": "autoru_1160860792-e18a504c",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Corolla",
+"year": 2013,
+"price": 1150000,
+"market_price": 1057500,
+"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
+"mileage_km": 187400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T02:11:52.001398+00:00"
 },
 {
 "ad_id": "autoru_1160840283-c791eb58",
