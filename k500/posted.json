@@ -9308,5 +9308,20 @@
     "mileage_km": 291083,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/ezhlwStEHsKEdrR5Rm4Jmi0B3QMGs1LDt1ZmhTqE0xBw7UyDBTq5d5INDXRW8xKMOP_mjFKxvoHFD9aJ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/corsa/766830685.html": {
+    "posted_at": "2026-11-20T14:14:12.529262+00:00",
+    "message_id": 669,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Corsa",
+    "year": 2007,
+    "price": 350000,
+    "median_price": 420612.49999999994,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 186000,
+    "owners_display": "3",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/Ac0CqVtJL2oGXyukg-DSVM0Z-0mP_tZDliscTLmAue-OmvEWY5VUWi3kYor3_9QnNx_r0bz8EJbkA5KM/gen272wb.jpg"
   }
 }
