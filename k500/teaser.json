@@ -3031,13 +3031,6 @@
     "vk_post_id": 319,
     "vk_deleted_at": "2026-11-20T17:56:54.033607+00:00"
   },
-  "https://auto.drom.ru/voronezh/chery/kimo/623365412.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-17T21:23:53.855294+00:00"
-  },
   "https://auto.drom.ru/voronezh/mercedes-benz/e-class/129948875.html": {
     "posted_at": null,
     "message_id": null,
@@ -3254,6 +3247,24 @@
     "rejected": false,
     "checked_at": "2026-11-20T21:20:20.317607+00:00",
     "vk_post_id": 333,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/uaz/3151/656156107.html": {
+    "posted_at": "2026-11-20T21:35:37.727768+00:00",
+    "message_id": 446,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-20T21:35:37.727768+00:00",
+    "vk_post_id": 334,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/izh/2126_oda/633390767.html": {
+    "posted_at": "2026-11-20T21:35:57.276796+00:00",
+    "message_id": 447,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-20T21:35:57.276796+00:00",
+    "vk_post_id": 335,
     "vk_deleted_at": null
   }
 }

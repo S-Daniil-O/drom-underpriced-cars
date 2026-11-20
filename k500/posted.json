@@ -9368,5 +9368,35 @@
     "mileage_km": 240000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/S4GjSYSkNCGmnclExFrYWbWWm9E84b8UR9SgXWOn157bNYdak-ZErLxY0IwEbjLhPZvQSqmyaWuI7ky-/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/uaz/3151/656156107.html": {
+    "posted_at": "2026-11-20T21:35:21.723593+00:00",
+    "message_id": 673,
+    "deleted_at": null,
+    "brand": "УАЗ",
+    "model": "3151",
+    "year": 1998,
+    "price": 300000,
+    "median_price": 327749.99999999994,
+    "median_sample_size": 818,
+    "price_rating": "отличная цена",
+    "mileage_km": 31100,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/sDImmwsyNwQ-HkqHqlkfr9gF8_Fvug_YbhXQSK5-zJv1Gp8OwsD4yMImqiNpn68PYhoNll3KV2eH4tqs/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/izh/2126_oda/633390767.html": {
+    "posted_at": "2026-11-20T21:35:40.095409+00:00",
+    "message_id": 674,
+    "deleted_at": null,
+    "brand": "ИЖ",
+    "model": "2126 Ода",
+    "year": 2003,
+    "price": 65000,
+    "median_price": 150278.895,
+    "median_sample_size": 491,
+    "price_rating": null,
+    "mileage_km": 20000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/4TXd3K-4_HJFbx9oauKtttttrdRd70CdHojyjHra16fKPsssBmeReaPNZWfIWkYaOelp1hGEa9TU-mgP/gen272wb.jpg"
   }
 }
