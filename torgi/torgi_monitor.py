@@ -752,6 +752,7 @@ def scan_detail(row):
         "start_price": prices[0], "current_price": cur, "min_price": min(prices),
         "end_date": sched[-1][1][:10], "status": status, "region": region, "region_name": region,
         "schedule": sched, "code": strip_html(field("Номер торгов")), "image": image,
+        "engine": strip_html(field("Двигатель"))[:80], "gearbox_text": strip_html(field("Коробка передач"))[:40],
         "etp": etp, "etp_url": etp_url if re.fullmatch(r"https://[A-Za-z0-9.-]+\.[a-z]{2,}(/[A-Za-z0-9_./?=&%#:-]*)?", etp_url or "") else "",
     }
 
@@ -1506,6 +1507,47 @@ def lot_end(d):
     return e.isoformat(timespec="minutes") if e else None
 
 
+def parse_fuel(text):
+    """Топливо из текста лота: diesel / petrol / hybrid / electric / gas или None."""
+    t = (text or "").lower().replace("ё", "е")
+    if re.search(r"гибрид|hybrid", t):
+        return "hybrid"
+    if re.search(r"электромоб|электрич\w* (двиг|авто)|\bev\b|электро\b", t):
+        return "electric"
+    if re.search(r"дизел|diesel|\btdi\b|\bcrdi\b|\bdci\b|\bhdi\b|\bcdi\b|\d{3}d\b|\d\.\dd\b|xdrive\d{2}d", t):
+        return "diesel"
+    if re.search(r"бензин|petrol|gasoline|\btsi\b|\btfsi\b|\bmpi\b|\bgdi\b", t):
+        return "petrol"
+    if re.search(r"газ\b|\bгбо\b|метан|пропан", t):
+        return "gas"
+    return None
+
+
+def want_info(lot):
+    """Короткая карточка лота для поиска по запросам («/хочу BMW 2017-2022 3.0 дизель»)."""
+    text = " ".join(str(lot.get(k) or "") for k in ("title", "engine", "gearbox_text", "description"))
+    car = parse_car(text) or (None, (), None)
+    models = [car[1]] if isinstance(car[1], str) else [m for m in car[1] or () if m]
+    sp = parse_specs(text)
+    if "volume" not in sp:                                  # ScanLot: «2,0 л / 150 л.с. / Дизель»
+        m = re.search(r"(\d[.,]\d)\s*л\b", str(lot.get("engine") or ""))
+        if m:
+            sp["volume"] = float(m.group(1).replace(",", "."))
+    return {"t": (car_title(text) or str(lot.get("title") or ""))[:80], "b": car[0], "m": " ".join(models)[:60], "y": car[2],
+            "vol": sp.get("volume"), "hp": sp.get("power"), "gear": sp.get("gearbox"), "fuel": parse_fuel(text),
+            "p": lot.get("current_price"), "min": lot.get("min_price"), "url": lot.get("url"),
+            "etp_url": lot.get("etp_url") or "", "etp": lot.get("etp") or "", "reg": str(lot.get("region_name") or "")[:40],
+            "bad": bool(bad_reason(lot))}
+
+
+def _safe_want_info(lot):
+    try:
+        return want_info(lot)
+    except Exception as e:  # noqa: BLE001 — карточка для поиска не должна ломать автоудаление постов
+        log(f"поиск по запросам: лот {lot.get('id')} не разобран ({type(e).__name__})")
+        return {}
+
+
 def write_active(lots, path):
     """Все собранные лоты (до фильтров): окончание торгов и расстояние. По этому файлу
     GitHub удаляет посты: торги закончились, лот снят с площадки, регион дальше MAX_KM.
@@ -1515,7 +1557,8 @@ def write_active(lots, path):
                                  - ({"Сканлот"} if _scan_incomplete[0] else set())),
             "unknown": sorted(_nis_unknown),
             "lots": {lot["id"]: {"end": lot_end(lot), "km": lot.get("km"), "source": lot["source"],
-                                 "vin": parse_vin((lot.get("title") or "") + " " + (lot.get("description") or ""))[0]}
+                                 "vin": parse_vin((lot.get("title") or "") + " " + (lot.get("description") or ""))[0],
+                                 **_safe_want_info(lot)}
                      for lot in lots}}
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False))

@@ -6,7 +6,9 @@
   • /цена <номер> <сумма> — задать свою цену (номер — из списка);
   • /убрать <номер> или кнопка «🗑 Удалить лот» на карточке — удалить лот и всё по нему из канала;
   • /список — что отслеживается;
-  • /check или /проверка — у каких лотов всё на месте и чего не хватает.
+  • /check или /проверка — у каких лотов всё на месте и чего не хватает;
+  • /хочу BMW 2017-2022 3.0 дизель до 2 млн — искать такие машины на всех площадках и присылать находки;
+    /хотелки — ваши запросы, /нехочу <номер> — убрать запрос.
 В группе с темами команда /link переносит лоты в отдельные темы (одна тема — один лот).
 Команды принимаются только от администраторов канала «Мои лоты».
 
@@ -39,6 +41,7 @@ import requests
 import torgi_monitor as tm    # разбор площадок (ЦДТ и ТоргГрупп открываются с GitHub, МЭТС — нет)
 import vin_check              # текст сообщения «Проверка по VIN» (сама проверка — на iMac)
 import apipoint_pdf           # PDF-отчёт по данным apipoint
+import wants                  # поиск по запросам «/хочу …» по всем площадкам
 import apipoint               # платная проверка по VIN (apipoint.ru): пробег, ДТП, владельцы, залог, объявления
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
@@ -285,6 +288,23 @@ def remove_lot(st, key):
 
 def handle_button(st, q, allowed):
     log(f"кнопка: {str(q.get('data'))[:20]} (администратор: {q.get('from', {}).get('id') in allowed})")
+    wm = re.fullmatch(r"wadd:(cdt-\d{1,12}|mets-\d{1,12}-\d{1,12}|tg-\d{1,12})", q.get("data") or "")
+    if wm:
+        who = q.get("from", {})
+        if who.get("id") not in allowed and not is_editor(st, who):
+            tg("answerCallbackQuery", callback_query_id=q["id"], text="Нет доступа", show_alert="true")
+            return
+        lid = wm.group(1)
+        if lid in st.d["lots"] and not st.d["lots"][lid].get("removed"):
+            tg("answerCallbackQuery", callback_query_id=q["id"], text=f"Уже в «Моих лотах» (№{st.d['lots'][lid]['n']})", show_alert="true")
+            return
+        if lid in st.d["lots"] and who.get("id") not in allowed:
+            tg("answerCallbackQuery", callback_query_id=q["id"], text="Этот лот удалён владельцем.", show_alert="true")
+            return
+        n = create_lot(st, lid, note="\n🎯 Добавлен из поиска по запросу.")
+        tg("answerCallbackQuery", callback_query_id=q["id"], show_alert="true",
+           text=f"✅ Добавлен в «Мои лоты»: №{n}" if n else "Не удалось создать тему — проверьте права бота в группе.")
+        return
     if q.get("from", {}).get("id") not in allowed:
         tg("answerCallbackQuery", callback_query_id=q["id"], text="Только для администраторов канала", show_alert="true")
         return
@@ -651,6 +671,38 @@ def handle(st, msg, allowed):
     if text.startswith("/start") or text.startswith("/help"):
         tg("sendMessage", chat_id=chat, text=__doc__.split("Уведомления")[0].split("Как пользоваться")[1].strip())
         return
+    m = re.match(r"/хочу(?:@\w+)?\s*(.*)", text, re.I | re.S)
+    if m:
+        req = m.group(1).strip()[:120]
+        q = wants.parse(req) if req else None
+        if not q:
+            tg("sendMessage", chat_id=chat, text="Напишите марку и условия, например:\n/хочу BMW 2017-2022 3.0 дизель до 2 млн\n"
+                                                  "/хочу Toyota Camry от 2018 автомат в районе 1,5 млн")
+            return
+        mine = [w for w in st.d.setdefault("wants", []) if w["uid"] == user]
+        if len(mine) >= WANTS_PER_USER:
+            tg("sendMessage", chat_id=chat, text=f"У вас уже {WANTS_PER_USER} запросов — уберите лишний: /хотелки, /нехочу <номер>.")
+            return
+        st.d["want_seq"] = st.d.get("want_seq", 0) + 1
+        st.d["wants"].append({"id": st.d["want_seq"], "uid": user, "text": req, "q": q, "seen": []})
+        st.dirty = True
+        tg("sendMessage", chat_id=chat, text=f"🎯 Запрос №{st.d['want_seq']}: {wants.describe(q)}\n"
+                                              "Ищу на ЦДТ, МЭТС, НИС и площадках ScanLot (ТоргГрупп, Альфалот и др.). "
+                                              "Битые и проблемные лоты пропускаю. Подходящие пришлю сюда — сразу и дальше после каждого сбора (раз в день).")
+        st.d["wants_now"] = True
+        return
+    if re.match(r"/хотелки\b", text):
+        mine = [w for w in st.d.get("wants", []) if w["uid"] == user]
+        tg("sendMessage", chat_id=chat, text="\n".join(f"№{w['id']}: {wants.describe(w['q'])} (найдено {len(w['seen'])})" for w in mine)
+           + "\n\nУбрать: /нехочу <номер>" if mine else "Запросов нет. Пример: /хочу BMW 2017-2022 3.0 дизель до 2 млн")
+        return
+    m = re.match(r"/нехочу\s+(\d+)", text)
+    if m:
+        before = len(st.d.get("wants", []))
+        st.d["wants"] = [w for w in st.d.get("wants", []) if not (w["uid"] == user and w["id"] == int(m.group(1)))]
+        st.dirty = True
+        tg("sendMessage", chat_id=chat, text="Запрос убран." if len(st.d["wants"]) < before else "Нет такого запроса. /хотелки — ваши запросы.")
+        return
     if text.startswith("/список"):
         act = [(v["n"], k, v) for k, v in lots.items() if not v.get("ended")]
         if not act:
@@ -866,6 +918,49 @@ def update_vincheck(st, lid, v, res):
 
 AP_PER_DAY = 15        # предел платных проверок в сутки (~11 ₽ каждая) — защита от случайных нажатий
 AP_LOW_BALANCE = 60    # предупредить владельца, когда на счёте apipoint меньше
+
+
+WANTS_PER_USER = 10
+WANTS_PER_ROUND = 8      # находок по одному запросу за раз — остальные придут в следующий проход (через 30 минут)
+WANT_FILES = ("torgi", "torgi_nis", "torgi_scan")   # inbox/<папка>/active.json — все лоты площадок от iMac
+
+
+def wants_round(st, inbox):
+    """Новые лоты, подходящие под запросы «/хочу», — в личку автору запроса."""
+    if not st.d.get("wants"):
+        return
+    lots = {}
+    for folder in WANT_FILES:
+        f = inbox / folder / "active.json"
+        try:
+            lots.update(json.loads(f.read_text()).get("lots", {}) if f.exists() else {})
+        except ValueError:
+            log(f"поиск по запросам: {folder}/active.json не читается")
+    now = datetime.now()
+    for w in st.d["wants"]:
+        seen, sent = set(w["seen"]), 0
+        for lid, lot in lots.items():
+            if lid in seen or sent >= WANTS_PER_ROUND:
+                continue
+            notes = wants.match(w["q"], lot, now)
+            if notes is None:
+                continue
+            fav = lid if REF.fullmatch(lid) and not lid.startswith(("tgtrade-", "vin-")) else lot_id(lot.get("etp_url"))
+            markup = kb([("⭐ В мои лоты", f"wadd:{fav}")]) if fav and not (fav in st.d["lots"] and not st.d["lots"][fav].get("removed")) else None
+            r = tg("sendMessage", chat_id=w["uid"], text=wants.found_text(w, lot, notes), parse_mode="HTML",
+                   disable_web_page_preview="true", **({"reply_markup": markup} if markup else {}))
+            if not r.get("ok"):
+                log(f"запрос №{w['id']}: не отправилось ({r.get('description')})")
+                if "blocked" in str(r.get("description")) or "chat not found" in str(r.get("description")):
+                    break                       # автор не писал боту или заблокировал — не пытаться сто раз
+                continue
+            w["seen"].append(lid)
+            sent += 1
+            st.dirty = True
+        w["seen"] = w["seen"][-1500:]
+        if sent:
+            log(f"запрос №{w['id']}: отправлено находок {sent}")
+    st.d.pop("wants_now", None)
 
 
 def apipoint_one(st, v):
@@ -1242,7 +1337,7 @@ def daily_audit(st):
 
 def u_new(st):
     """Появился лот без графика или запрошена проверка — проверить сразу, не ждать 30 минут."""
-    return bool(st.d.get("want_check")) or any(
+    return bool(st.d.get("want_check")) or bool(st.d.get("wants_now")) or any(
         not v.get("ended") and not v.get("sched_msg") and not v.get("tried") and not k.startswith("mets-")
         for k, v in st.d["lots"].items())
 
@@ -1270,6 +1365,10 @@ def main():
             subprocess.run(["git", "-C", inbox, "reset", "-q", "--hard", "FETCH_HEAD"], capture_output=True)
             live = json.loads(lots_file.read_text()).get("lots", {}) if lots_file.exists() else {}
             check(st, live, lots_file.parent / "img")
+            try:
+                wants_round(st, lots_file.parent.parent)
+            except Exception as e:  # noqa: BLE001 — поиск по запросам не должен ронять бота
+                log(f"поиск по запросам: ошибка {type(e).__name__}: {str(e)[:150]}")
             for k, v in st.d["lots"].items():
                 if not v.get("ended") and not v.get("sched_msg"):
                     v["tried"] = True      # не повторять проверку сразу: следующая — через полчаса
