@@ -4548,5 +4548,20 @@
     "mileage_km": 200000,
     "owners_display": "1",
     "image_url": "https://s12.auto.drom.ru/photo/v2/qdfW55BB69G0V_zNH_yDfl2jV-oLUdOvvhgL2kxx_qz2uK3iPLnEgah5WY3oUzYBnOhqG7ARnon4gByQ/gen272wb.jpg"
+  },
+  "autoru_1160861637-e2d9442f": {
+    "posted_at": "2026-11-20T13:13:28.795816+00:00",
+    "message_id": 334,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Granta",
+    "year": 2021,
+    "price": 650000,
+    "median_price": 769078.0,
+    "median_sample_size": 13,
+    "price_rating": null,
+    "mileage_km": 123900,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17686578/07aebba7da01e97fe13902651276a4a9/1200x900n"
   }
 }
