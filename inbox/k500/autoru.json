@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T20:12:56.201475+00:00"
+"seen_at": "2026-11-20T20:24:20.916487+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T20:12:56.201459+00:00"
+"seen_at": "2026-11-20T20:24:20.916468+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T20:12:56.201435+00:00"
+"seen_at": "2026-11-20T20:24:20.916440+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-20T20:12:56.201389+00:00"
+"seen_at": "2026-11-20T20:24:20.916389+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-20T20:12:35.278638+00:00"
+"seen_at": "2026-11-20T20:23:59.876506+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T20:12:35.278624+00:00"
+"seen_at": "2026-11-20T20:23:59.876343+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-20T20:12:35.278608+00:00"
+"seen_at": "2026-11-20T20:23:59.875867+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T20:12:35.278579+00:00"
+"seen_at": "2026-11-20T20:23:59.875775+00:00"
 },
 {
 "ad_id": "autoru_1160842984-54841085",
@@ -158,21 +158,5 @@
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
 "seen_at": "2026-11-20T17:35:38.559177+00:00"
-},
-{
-"ad_id": "autoru_1160846719-e1a5d97f",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Nexia",
-"year": 2008,
-"price": 177000,
-"market_price": 125000,
-"url": "https://auto.ru/cars/used/sale/daewoo/nexia/1160846719-e1a5d97f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/b3a95aefa4981097263dac8d376b123b/1200x900n",
-"mileage_km": 85000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T14:13:42.245392+00:00"
 }
 ]
