@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:50:04.109335+00:00"
+"seen_at": "2026-11-20T17:01:24.884290+00:00"
 },
 {
 "ad_id": "autoru_1160853239-f730ce3e",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:50:04.109324+00:00"
+"seen_at": "2026-11-20T17:01:24.884279+00:00"
 },
 {
 "ad_id": "autoru_1160854327-69563690",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Краснодар",
-"seen_at": "2026-11-20T16:50:04.109307+00:00"
+"seen_at": "2026-11-20T17:01:24.884260+00:00"
 },
 {
 "ad_id": "autoru_1160855598-e5824b4a",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:50:04.109288+00:00"
+"seen_at": "2026-11-20T17:01:24.884239+00:00"
 },
 {
 "ad_id": "autoru_1160859831-e09dfab3",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-11-20T16:50:04.109273+00:00"
+"seen_at": "2026-11-20T17:01:24.884222+00:00"
 },
 {
 "ad_id": "autoru_1160861554-1173a2b2",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:50:04.109255+00:00"
+"seen_at": "2026-11-20T17:01:24.884202+00:00"
 },
 {
 "ad_id": "autoru_1160861637-e2d9442f",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новая Усмань",
-"seen_at": "2026-11-20T16:50:04.109241+00:00"
+"seen_at": "2026-11-20T17:01:24.884187+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:50:04.109183+00:00"
+"seen_at": "2026-11-20T17:01:24.884125+00:00"
 },
 {
 "ad_id": "autoru_1160718039-b7f17578",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464610+00:00"
+"seen_at": "2026-11-20T17:01:05.100870+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464601+00:00"
+"seen_at": "2026-11-20T17:01:05.100861+00:00"
 },
 {
 "ad_id": "autoru_1160875336-8e0cf328",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464592+00:00"
+"seen_at": "2026-11-20T17:01:05.100851+00:00"
 },
 {
 "ad_id": "autoru_1160857858-ff0bc0d7",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464580+00:00"
+"seen_at": "2026-11-20T17:01:05.100839+00:00"
 },
 {
 "ad_id": "autoru_1160877521-d23db55e",
@@ -198,14 +198,30 @@
 "model": "Granta",
 "year": 2022,
 "price": 780000,
-"market_price": 664000,
+"market_price": 665500,
 "url": "https://auto.ru/cars/used/sale/vaz/granta/1160877521-d23db55e/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/17709926/9d6bd245504f667a23335b10c859e32a/1200x900n",
 "mileage_km": 11020,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464567+00:00"
+"seen_at": "2026-11-20T17:01:05.100826+00:00"
+},
+{
+"ad_id": "autoru_1160860792-e18a504c",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Corolla",
+"year": 2013,
+"price": 1150000,
+"market_price": 1057500,
+"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
+"mileage_km": 187400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T17:01:05.100815+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -221,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-20T16:49:49.464556+00:00"
+"seen_at": "2026-11-20T17:01:05.100804+00:00"
 },
 {
 "ad_id": "autoru_1160878730-7fb4fbc7",
@@ -237,7 +253,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-11-20T16:49:49.464545+00:00"
+"seen_at": "2026-11-20T17:01:05.100791+00:00"
+},
+{
+"ad_id": "autoru_1160328880-912dd168",
+"source": "autoru",
+"brand": "Geely",
+"model": "Geometry E",
+"year": 2025,
+"price": 1340000,
+"market_price": 1673000,
+"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
+"mileage_km": 3400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T17:01:05.100778+00:00"
 },
 {
 "ad_id": "autoru_1160880318-407993db",
@@ -253,7 +285,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464532+00:00"
+"seen_at": "2026-11-20T17:01:05.100760+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -269,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-20T16:49:49.464519+00:00"
+"seen_at": "2026-11-20T17:01:05.100704+00:00"
 },
 {
 "ad_id": "autoru_1160885964-7f52bded",
@@ -286,38 +318,6 @@
 "seller_type": "PRIVATE",
 "city": "Бобров",
 "seen_at": "2026-11-20T16:49:49.464501+00:00"
-},
-{
-"ad_id": "autoru_1160328880-912dd168",
-"source": "autoru",
-"brand": "Geely",
-"model": "Geometry E",
-"year": 2025,
-"price": 1340000,
-"market_price": 1673000,
-"url": "https://auto.ru/cars/used/sale/geely/geometry_e/1160328880-912dd168/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20102415/763e4ce28414f89a849587ba2d16aa3a/1200x900n",
-"mileage_km": 3400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464466+00:00"
-},
-{
-"ad_id": "autoru_1160860792-e18a504c",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2013,
-"price": 1150000,
-"market_price": 1057500,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
-"mileage_km": 187400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T16:49:49.464413+00:00"
 },
 {
 "ad_id": "autoru_1160848320-36771256",
@@ -414,21 +414,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-20T12:19:22.085881+00:00"
-},
-{
-"ad_id": "autoru_1160847336-8715d84f",
-"source": "autoru",
-"brand": "Renault Samsung",
-"model": "XM3",
-"year": 2023,
-"price": 1458000,
-"market_price": 1851500,
-"url": "https://auto.ru/cars/used/sale/samsung/xm3/1160847336-8715d84f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/21221080/dd6560fb72c90dcbd05dfe7acafe1a7d/1200x900n",
-"mileage_km": 39000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T11:00:37.343169+00:00"
 }
 ]
