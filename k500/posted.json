@@ -9263,5 +9263,20 @@
     "mileage_km": 150000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19816781/5b46733a9b09f18ec73c14088b5e156a/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/renault/megane/299361215.html": {
+    "posted_at": "2026-11-20T07:36:47.184100+00:00",
+    "message_id": 666,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Megane",
+    "year": 2008,
+    "price": 330000,
+    "median_price": 401098.95,
+    "median_sample_size": 5,
+    "price_rating": "хорошая цена",
+    "mileage_km": 278000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/kXp_HN5-HeRWtIGYCWBv8Q3vDlRCx68zbEIavnlZ7nKDdGGwDEC6o2u_DyBcnwmwsDyyok-Uhwd3HTPl/gen272wb.jpg"
   }
 }
