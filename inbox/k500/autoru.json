@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160842984-54841085",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2106",
-"year": 2001,
-"price": 55000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2106/1160842984-54841085/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17923922/1056a9f24ce509faa591e511aa6e459e/1200x900n",
-"mileage_km": 88880,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-20T18:54:25.732987+00:00"
-},
-{
 "ad_id": "autoru_1160846592-ac4dcdf5",
 "source": "autoru",
 "brand": "Ford",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T18:54:25.732972+00:00"
+"seen_at": "2026-11-20T19:05:35.890837+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T18:54:25.732956+00:00"
+"seen_at": "2026-11-20T19:05:35.890819+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T18:54:25.732933+00:00"
+"seen_at": "2026-11-20T19:05:35.890793+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -77,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-20T18:54:25.732888+00:00"
+"seen_at": "2026-11-20T19:05:35.890749+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -93,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-20T18:54:05.453469+00:00"
+"seen_at": "2026-11-20T19:05:18.784345+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -109,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T18:54:05.453455+00:00"
+"seen_at": "2026-11-20T19:05:18.784333+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -125,7 +109,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-20T18:54:05.453436+00:00"
+"seen_at": "2026-11-20T19:05:18.784318+00:00"
+},
+{
+"ad_id": "autoru_1160842984-54841085",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2106",
+"year": 2001,
+"price": 55000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2106/1160842984-54841085/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17923922/1056a9f24ce509faa591e511aa6e459e/1200x900n",
+"mileage_km": 88880,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T18:54:25.732987+00:00"
 },
 {
 "ad_id": "autoru_1160842541-5e73206d",
