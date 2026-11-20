@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160842541-5e73206d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Largus",
-"year": 2013,
-"price": 415000,
-"market_price": 558500,
-"url": "https://auto.ru/cars/used/sale/vaz/largus/1160842541-5e73206d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/374827e60023a2d852e87d52da219873/1200x900n",
-"mileage_km": 15500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Нововоронеж",
-"seen_at": "2026-11-20T14:24:56.642859+00:00"
-},
-{
 "ad_id": "autoru_1160842984-54841085",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T14:24:56.642848+00:00"
+"seen_at": "2026-11-20T14:36:04.213667+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
@@ -45,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T14:24:56.642835+00:00"
+"seen_at": "2026-11-20T14:36:04.213652+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T14:24:56.642818+00:00"
+"seen_at": "2026-11-20T14:36:04.213635+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T14:24:56.642796+00:00"
+"seen_at": "2026-11-20T14:36:04.213611+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -93,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-20T14:24:56.642753+00:00"
+"seen_at": "2026-11-20T14:36:04.213567+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -109,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-20T14:24:38.713647+00:00"
+"seen_at": "2026-11-20T14:35:49.108901+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -125,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T14:24:38.713632+00:00"
+"seen_at": "2026-11-20T14:35:49.108888+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -141,7 +125,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-20T14:24:38.713609+00:00"
+"seen_at": "2026-11-20T14:35:49.108870+00:00"
+},
+{
+"ad_id": "autoru_1160842541-5e73206d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Largus",
+"year": 2013,
+"price": 415000,
+"market_price": 558500,
+"url": "https://auto.ru/cars/used/sale/vaz/largus/1160842541-5e73206d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/374827e60023a2d852e87d52da219873/1200x900n",
+"mileage_km": 15500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Нововоронеж",
+"seen_at": "2026-11-20T14:24:56.642859+00:00"
 },
 {
 "ad_id": "autoru_1160846719-e1a5d97f",
