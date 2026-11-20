@@ -9338,5 +9338,35 @@
     "mileage_km": 12000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/n1IJ6vRuE1pNTwkk9lVUz6ua_pVcd6SMHaJ5sZPZGHUpzXuDthrG1eeyDmQQJ560yYRqmNxFfIXBdNva/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera_classic/938118611.html": {
+    "posted_at": "2026-11-20T20:50:02.550852+00:00",
+    "message_id": 671,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera Classic",
+    "year": 2006,
+    "price": 359000,
+    "median_price": 460370.69100000005,
+    "median_sample_size": 5,
+    "price_rating": "хорошая цена",
+    "mileage_km": 211312,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/u2y8h6H7BA8-Vm0gFh9mo_hbGybeEZ-KMGGq0H5V9AHxQyccnzppb5Z13UKmEdeVyRQF9e9t-siQ7NnL/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/705567041.html": {
+    "posted_at": "2026-11-20T20:50:06.371783+00:00",
+    "message_id": 672,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2004,
+    "price": 87000,
+    "median_price": 103162.5,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 240000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/S4GjSYSkNCGmnclExFrYWbWWm9E84b8UR9SgXWOn157bNYdak-ZErLxY0IwEbjLhPZvQSqmyaWuI7ky-/gen272wb.jpg"
   }
 }
