@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T21:54:20.286333+00:00"
+"seen_at": "2026-11-20T22:05:40.316442+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T21:54:20.286309+00:00"
+"seen_at": "2026-11-20T22:05:40.316417+00:00"
 },
 {
 "ad_id": "autoru_1160853658-7774604f",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-20T21:54:20.286267+00:00"
+"seen_at": "2026-11-20T22:05:40.316374+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-20T21:54:05.523716+00:00"
+"seen_at": "2026-11-20T22:05:23.798724+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T21:54:05.523704+00:00"
+"seen_at": "2026-11-20T22:05:23.798710+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-20T21:54:05.523689+00:00"
+"seen_at": "2026-11-20T22:05:23.798693+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -109,7 +109,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-20T21:54:05.523658+00:00"
+"seen_at": "2026-11-20T22:05:23.798662+00:00"
+},
+{
+"ad_id": "autoru_1160888276-18ad024b",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2012,
+"price": 250000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160888276-18ad024b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16503020/dfea4b66c985fe93d331758bc1078e8c/1200x900n",
+"mileage_km": 50000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-20T22:05:23.798627+00:00"
 },
 {
 "ad_id": "autoru_1160846592-ac4dcdf5",
