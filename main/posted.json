@@ -4683,5 +4683,50 @@
     "mileage_km": 240000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/VSpf_gOZlov0dKfdBlnSPdBoMQkFupkUJk4WX3q7OruaE13iMekUKwIKt7-YC1klqNLkLKAXkib_Phjl/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra_gtc/562879626.html": {
+    "posted_at": "2026-11-21T22:08:05.849453+00:00",
+    "message_id": 343,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra GTC",
+    "year": 2012,
+    "price": 660000,
+    "median_price": 787325.0,
+    "median_sample_size": 5327,
+    "price_rating": "хорошая цена",
+    "mileage_km": 193000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/gASV0g6wBR7cvTkwTDu_Rk_nxoF0Sdrz6nA8HfMfSHfkUwT_kurMpS284eG2dxaJYdaIHnkD44cKxDoQ/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/corolla/466606949.html": {
+    "posted_at": "2026-11-21T22:08:07.840120+00:00",
+    "message_id": 344,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2011,
+    "price": 600000,
+    "median_price": 910000.0,
+    "median_sample_size": 1713,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jvGRzYUJULNKvmfCsCGX1cORL74F1cYeZPEuFGrg7Xb0sceGYfXnUCBpwsqIwt8qVHgaZSKNjhhH2whv/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra_gtc/949341217.html": {
+    "posted_at": "2026-11-21T22:08:24.677965+00:00",
+    "message_id": 345,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra GTC",
+    "year": 2012,
+    "price": 660000,
+    "median_price": 808115.0000000001,
+    "median_sample_size": 5328,
+    "price_rating": "нормальная цена",
+    "mileage_km": 175000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/Omr65jWQ2PpwhIaiACzShltzWvP_gv_19iEk2gs9ShAXEM6vdaIF7ZIfz3p36d3A9lVPYPD95FZS9BaP/gen272wb.jpg"
   }
 }
