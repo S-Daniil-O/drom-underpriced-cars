@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T13:16:59.443519+00:00"
+"seen_at": "2026-11-21T13:28:14.329422+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T13:16:59.443499+00:00"
+"seen_at": "2026-11-21T13:28:14.329386+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-21T13:16:59.443451+00:00"
+"seen_at": "2026-11-21T13:28:14.329338+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T13:16:44.292033+00:00"
+"seen_at": "2026-11-21T13:27:58.351950+00:00"
 },
 {
 "ad_id": "autoru_1160889832-6f46ee50",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T13:16:44.292015+00:00"
+"seen_at": "2026-11-21T13:27:58.351930+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,7 +93,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T13:16:44.291999+00:00"
+"seen_at": "2026-11-21T13:27:58.351914+00:00"
+},
+{
+"ad_id": "autoru_1160846793-1fb15cbe",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 1998,
+"price": 195000,
+"market_price": 51500,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160846793-1fb15cbe/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
+"mileage_km": 160000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-21T13:27:58.351860+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
@@ -110,22 +126,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-21T13:16:44.291950+00:00"
-},
-{
-"ad_id": "autoru_1160846793-1fb15cbe",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 1998,
-"price": 195000,
-"market_price": 51500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160846793-1fb15cbe/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
-"mileage_km": 160000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-21T12:54:29.216232+00:00"
 },
 {
 "ad_id": "autoru_1160892854-df8c3718",
