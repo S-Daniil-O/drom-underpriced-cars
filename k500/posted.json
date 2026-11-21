@@ -9638,5 +9638,20 @@
     "mileage_km": 431000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/fVunqWHQZJyHFzQq7aSqSLMjA5xv-SFh4-aLTR3MAvbokvJg6VXpSW7doJRtUQxP0EIwDC7J1UJYfDs9/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/audi/100/149655069.html": {
+    "posted_at": "2026-11-21T21:21:35.354757+00:00",
+    "message_id": 691,
+    "deleted_at": null,
+    "brand": "Audi",
+    "model": "100",
+    "year": 1986,
+    "price": 100000,
+    "median_price": 134550.0,
+    "median_sample_size": 807,
+    "price_rating": "хорошая цена",
+    "mileage_km": 192366,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/-l_ovlzZgejLoxwILNkAQJYPBsXCyNbh1YNciQsXSxOTgLensR5XUIbbRY3EjuI5oLx-qDBFAwhmKUAS/gen272wb.jpg"
   }
 }

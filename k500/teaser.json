@@ -3304,5 +3304,21 @@
     "checked_at": "2026-11-21T16:06:55.375166+00:00",
     "vk_post_id": 341,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/audi/100/149655069.html": {
+    "posted_at": "2026-11-21T21:21:51.139604+00:00",
+    "message_id": 457,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-21T21:21:51.139604+00:00",
+    "vk_post_id": 343,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/vento/199020286.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-21T21:21:59.384557+00:00"
   }
 }
