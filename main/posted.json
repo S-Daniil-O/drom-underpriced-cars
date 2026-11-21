@@ -4608,5 +4608,35 @@
     "mileage_km": 330000,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/0x4J_BEm1Yxm9fvpWLibFZQ164YYAAuKM9mot3OhByNsqp7rvXEmeDPxFut16fFNm9xiifcV-19dWMlC/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lexus/gs300/487467633.html": {
+    "posted_at": "2026-11-21T16:06:40.659155+00:00",
+    "message_id": 338,
+    "deleted_at": null,
+    "brand": "Lexus",
+    "model": "GS300",
+    "year": 2005,
+    "price": 900000,
+    "median_price": 1100000.0,
+    "median_sample_size": 1548,
+    "price_rating": "нормальная цена",
+    "mileage_km": 310000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/x9ubYfouIwkK0z03UAuDHrUYq3DhQTaM-sm7aQa-Gx_w57Uy7dzV-N9XjNRviv9wRQu_ofoZVfQmu6sz/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/kia/optima/749682934.html": {
+    "posted_at": "2026-11-21T16:06:42.756831+00:00",
+    "message_id": 339,
+    "deleted_at": null,
+    "brand": "Kia",
+    "model": "Optima",
+    "year": 2016,
+    "price": 1250000,
+    "median_price": 1491065.25,
+    "median_sample_size": 1056,
+    "price_rating": "хорошая цена",
+    "mileage_km": 175571,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/EG795ypfq-19KSElm-tze57l-011Hg-NEigZmY15PjbPIkDwoJf2dM68tmz6o_jVm3CI0eUqToyLUw2R/gen272wb.jpg"
   }
 }
