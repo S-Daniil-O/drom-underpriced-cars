@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-21T10:16:52.608126+00:00"
+"seen_at": "2026-11-21T10:28:10.915228+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T10:16:52.608094+00:00"
+"seen_at": "2026-11-21T10:28:10.915168+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -45,23 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T10:16:52.608053+00:00"
-},
-{
-"ad_id": "autoru_1133448637-0d69e621",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2017,
-"price": 350000,
-"market_price": 346000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1133448637-0d69e621/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20035467/0a667310cd0988dfb51e90b764dbacd1/1200x900n",
-"mileage_km": 246873,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Павловск",
-"seen_at": "2026-11-21T10:16:39.260645+00:00"
+"seen_at": "2026-11-21T10:28:10.915127+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-21T10:16:39.260618+00:00"
+"seen_at": "2026-11-21T10:27:54.507837+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -93,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T10:16:39.260575+00:00"
+"seen_at": "2026-11-21T10:27:54.507790+00:00"
+},
+{
+"ad_id": "autoru_1133448637-0d69e621",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 2017,
+"price": 350000,
+"market_price": 346000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1133448637-0d69e621/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20035467/0a667310cd0988dfb51e90b764dbacd1/1200x900n",
+"mileage_km": 246873,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-11-21T10:27:54.507726+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
