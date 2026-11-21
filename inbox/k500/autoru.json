@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160853658-7774604f",
-"source": "autoru",
-"brand": "Kia",
-"model": "Spectra",
-"year": 2007,
-"price": 389000,
-"market_price": 186000,
-"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
-"mileage_km": 247000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-21T11:24:42.349843+00:00"
-},
-{
 "ad_id": "autoru_1160718259-35a44d7d",
 "source": "autoru",
 "brand": "УАЗ",
@@ -29,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T11:24:42.349779+00:00"
+"seen_at": "2026-11-21T11:35:59.700361+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -45,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T11:24:42.349741+00:00"
+"seen_at": "2026-11-21T11:35:59.700322+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-21T11:24:21.804221+00:00"
+"seen_at": "2026-11-21T11:35:37.865598+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -77,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T11:24:21.804195+00:00"
+"seen_at": "2026-11-21T11:35:37.865566+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T11:24:21.804153+00:00"
+"seen_at": "2026-11-21T11:35:37.865519+00:00"
+},
+{
+"ad_id": "autoru_1160853658-7774604f",
+"source": "autoru",
+"brand": "Kia",
+"model": "Spectra",
+"year": 2007,
+"price": 389000,
+"market_price": 186000,
+"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
+"mileage_km": 247000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-21T11:24:42.349843+00:00"
 },
 {
 "ad_id": "autoru_1160850729-66eeb378",
