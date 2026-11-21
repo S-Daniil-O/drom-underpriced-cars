@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T14:24:23.038480+00:00"
+"seen_at": "2026-11-21T14:35:32.591083+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T14:24:23.038441+00:00"
+"seen_at": "2026-11-21T14:35:32.591044+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T14:24:08.176187+00:00"
+"seen_at": "2026-11-21T14:35:18.585204+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T14:24:08.176164+00:00"
+"seen_at": "2026-11-21T14:35:18.585179+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T14:24:08.176108+00:00"
+"seen_at": "2026-11-21T14:35:18.585119+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -190,21 +190,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-21T10:05:16.676741+00:00"
-},
-{
-"ad_id": "autoru_1160890731-236e9b21",
-"source": "autoru",
-"brand": "Datsun",
-"model": "on-DO",
-"year": 2014,
-"price": 425000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/datsun/on_do/1160890731-236e9b21/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20315033/a56af7c19b4603871f0d11bc937848dc/1200x900n",
-"mileage_km": 124000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-21T08:35:29.506849+00:00"
 }
 ]
