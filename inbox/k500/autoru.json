@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T11:47:13.192205+00:00"
+"seen_at": "2026-11-21T11:58:24.524179+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T11:47:13.192186+00:00"
+"seen_at": "2026-11-21T11:58:24.524128+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-21T11:47:13.192136+00:00"
+"seen_at": "2026-11-21T11:58:24.524081+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T11:46:52.979980+00:00"
+"seen_at": "2026-11-21T11:58:08.092309+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T11:46:52.979954+00:00"
+"seen_at": "2026-11-21T11:58:08.092264+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -158,21 +158,5 @@
 "seller_type": "PRIVATE",
 "city": "Россошь",
 "seen_at": "2026-11-21T08:35:29.506849+00:00"
-},
-{
-"ad_id": "autoru_1160889654-33a3d2f3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2014,
-"price": 470000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160889654-33a3d2f3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1880362/5bdf01ab3f7665673e9e7de5ebf15f16/1200x900n",
-"mileage_km": 75000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-21T05:57:51.829551+00:00"
 }
 ]
