@@ -9072,7 +9072,7 @@
   "https://auto.drom.ru/voronezh/lada/2106/844262891.html": {
     "posted_at": "2026-11-18T12:14:50.074034+00:00",
     "message_id": 653,
-    "deleted_at": null,
+    "deleted_at": "2026-11-21T12:27:51.390184+00:00",
     "brand": "Лада",
     "model": "2106",
     "year": 1997,
@@ -9503,5 +9503,20 @@
     "mileage_km": 131254,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/16145448/6c6b81c479790ccb38f6d0ab0d0294fd/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/lada/2114/105189061.html": {
+    "posted_at": "2026-11-21T12:30:48.107107+00:00",
+    "message_id": 682,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2114 Самара",
+    "year": 2008,
+    "price": 140000,
+    "median_price": 208561.5,
+    "median_sample_size": 6189,
+    "price_rating": null,
+    "mileage_km": 131000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/NL3O4xrDM3ADx_EPSfPLSocCrmFOO27qSR2weYTXXFTkzAllh_GZ-3bR0zEfdpLsJtdjcpLF1kIVcKv-/gen272wb.jpg"
   }
 }
