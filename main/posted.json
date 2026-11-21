@@ -4638,5 +4638,20 @@
     "mileage_km": 175571,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/EG795ypfq-19KSElm-tze57l-011Hg-NEigZmY15PjbPIkDwoJf2dM68tmz6o_jVm3CI0eUqToyLUw2R/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/renault/sandero_stepway/918817882.html": {
+    "posted_at": "2026-11-21T16:51:07.141760+00:00",
+    "message_id": 340,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Sandero Stepway",
+    "year": 2018,
+    "price": 770000,
+    "median_price": 1104120.25,
+    "median_sample_size": 23,
+    "price_rating": "отличная цена",
+    "mileage_km": 117000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/FU7pDWOMy3OX8aPJTcDftBlHvBEcqZZDadPF96cP6B57RiTPqe9USa0QX2S1_yfWP_U7j2WOenHvJJRg/gen272wb.jpg"
   }
 }
