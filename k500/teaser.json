@@ -3081,13 +3081,6 @@
     "vk_post_id": 324,
     "vk_deleted_at": "2026-11-21T12:27:52.399823+00:00"
   },
-  "https://auto.drom.ru/voronezh/citroen/c4/257384813.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-18T21:22:03.328611+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2105/894796428.html": {
     "posted_at": "2026-11-18T21:37:17.510824+00:00",
     "message_id": 433,
@@ -3320,5 +3313,12 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-21T21:21:59.384557+00:00"
+  },
+  "https://auto.drom.ru/voronezh/opel/vectra/665625347.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-21T21:37:41.733267+00:00"
   }
 }
