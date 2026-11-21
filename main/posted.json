@@ -4653,5 +4653,35 @@
     "mileage_km": 117000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/FU7pDWOMy3OX8aPJTcDftBlHvBEcqZZDadPF96cP6B57RiTPqe9USa0QX2S1_yfWP_U7j2WOenHvJJRg/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/fuga/642502584.html": {
+    "posted_at": "2026-11-21T18:51:54.964688+00:00",
+    "message_id": 341,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Fuga",
+    "year": 2006,
+    "price": 610000,
+    "median_price": 1018500.0,
+    "median_sample_size": 1189,
+    "price_rating": null,
+    "mileage_km": 200000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/v7TrrUoGsy_fozDrUAtqqXlXojFwfC_Rktin0uhY_gq_NRKQt4mFtjYXMNkuYgCtYSNfP4-pBY_kiZcM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/410500313.html": {
+    "posted_at": "2026-11-21T18:51:57.108100+00:00",
+    "message_id": 342,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2008,
+    "price": 550000,
+    "median_price": 570000.0,
+    "median_sample_size": 7515,
+    "price_rating": "отличная цена",
+    "mileage_km": 240000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/VSpf_gOZlov0dKfdBlnSPdBoMQkFupkUJk4WX3q7OruaE13iMekUKwIKt7-YC1klqNLkLKAXkib_Phjl/gen272wb.jpg"
   }
 }
