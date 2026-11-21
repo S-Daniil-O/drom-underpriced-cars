@@ -4593,5 +4593,20 @@
     "mileage_km": 200000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/6Pl4XOMA3vPRqdQkHYMewbV87atKMivVAg7kuRIbpqeAId04vxzoSqAT8SvIHVHNYGTnXq6FFuvPmKZa/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/sonata/861734720.html": {
+    "posted_at": "2026-11-21T12:45:35.742459+00:00",
+    "message_id": 337,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Sonata",
+    "year": 2011,
+    "price": 930000,
+    "median_price": 1238300.0,
+    "median_sample_size": 1282,
+    "price_rating": "хорошая цена",
+    "mileage_km": 330000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/0x4J_BEm1Yxm9fvpWLibFZQ164YYAAuKM9mot3OhByNsqp7rvXEmeDPxFut16fFNm9xiifcV-19dWMlC/gen272wb.jpg"
   }
 }
