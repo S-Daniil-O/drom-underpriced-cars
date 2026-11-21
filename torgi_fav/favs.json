@@ -4841,7 +4841,7 @@
    "photos_done": true
   }
  },
- "offset": 177674468,
+ "offset": 177674469,
  "seq": 66,
  "forum": -1004498088083,
  "owners": [
@@ -4857,9 +4857,28 @@
   "-1003907174458": "Торги Сканлот"
  },
  "audit_day": "2026-11-20",
- "req_cursor": 20539,
+ "req_cursor": 20552,
  "ap_day": {
   "date": "2026-11-16",
   "n": 1
- }
+ },
+ "wants": [
+  {
+   "id": 1,
+   "uid": 1188456401,
+   "text": "BMW 2017-2022 3.0 дизель в районе 2 млн",
+   "q": {
+    "price_max": 2200000,
+    "year_min": 2017,
+    "year_max": 2022,
+    "vol_min": 2.9,
+    "vol_max": 3.1,
+    "fuel": "diesel",
+    "brand": "bmw"
+   },
+   "seen": []
+  }
+ ],
+ "want_seq": 1,
+ "wants_now": true
 }
