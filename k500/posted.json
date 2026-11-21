@@ -9012,7 +9012,7 @@
   "https://auto.drom.ru/voronezh/lada/kalina/458304096.html": {
     "posted_at": "2026-11-18T08:44:18.343454+00:00",
     "message_id": 649,
-    "deleted_at": null,
+    "deleted_at": "2026-11-21T08:57:24.254722+00:00",
     "brand": "Лада",
     "model": "Калина",
     "year": 2012,
@@ -9458,5 +9458,20 @@
     "mileage_km": 400000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/atBZysOiDouDQ2ar9DNVKIjSFgEH8zQiHd4c-F9k7gk__r0BKocHWeITBoDbK1DRVzUp0jViVr4eLXnK/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/honda/civic_ferio/731589646.html": {
+    "posted_at": "2026-11-21T09:00:22.374517+00:00",
+    "message_id": 679,
+    "deleted_at": null,
+    "brand": "Honda",
+    "model": "Civic Ferio",
+    "year": 1992,
+    "price": 290000,
+    "median_price": 370000.0,
+    "median_sample_size": 1146,
+    "price_rating": "нормальная цена",
+    "mileage_km": 321456,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/hLpLvqbtBtz9y3VqzMpMheMfHcAZDN8Zuax_V7Ai0Oq-h78WfccpDbftLgTNr9TpB2o9jQ524A8j7jIa/gen272wb.jpg"
   }
 }
