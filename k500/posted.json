@@ -9443,5 +9443,20 @@
     "mileage_km": 341000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/CbZWDjPbYdZoe3mmkoFqs0wXCAGzGg2UMYG3P9koZ85Lg0W0mjtz-z2gZyr2mQbT5yGBK_c48KVeqigA/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/cefiro/550816869.html": {
+    "posted_at": "2026-11-21T08:45:13.661878+00:00",
+    "message_id": 678,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Cefiro",
+    "year": 1995,
+    "price": 70000,
+    "median_price": 110000.0,
+    "median_sample_size": 1171,
+    "price_rating": null,
+    "mileage_km": 400000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/atBZysOiDouDQ2ar9DNVKIjSFgEH8zQiHd4c-F9k7gk__r0BKocHWeITBoDbK1DRVzUp0jViVr4eLXnK/gen272wb.jpg"
   }
 }
