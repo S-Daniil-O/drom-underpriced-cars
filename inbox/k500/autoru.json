@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160853658-7774604f",
-"source": "autoru",
-"brand": "Kia",
-"model": "Spectra",
-"year": 2007,
-"price": 389000,
-"market_price": 186000,
-"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
-"mileage_km": 247000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-21T05:46:53.334747+00:00"
-},
-{
 "ad_id": "autoru_1160850729-66eeb378",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -29,7 +13,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T05:46:53.334687+00:00"
+"seen_at": "2026-11-21T05:58:06.693325+00:00"
+},
+{
+"ad_id": "autoru_1160853658-7774604f",
+"source": "autoru",
+"brand": "Kia",
+"model": "Spectra",
+"year": 2007,
+"price": 389000,
+"market_price": 186000,
+"url": "https://auto.ru/cars/used/sale/kia/spectra/1160853658-7774604f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2023372/bf0fa2a9a872d1bb2d4ccce3f087128d/1200x900n",
+"mileage_km": 247000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Лиски",
+"seen_at": "2026-11-21T05:58:06.693283+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T05:46:36.715107+00:00"
+"seen_at": "2026-11-21T05:57:51.829651+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T05:46:36.715094+00:00"
+"seen_at": "2026-11-21T05:57:51.829638+00:00"
 },
 {
 "ad_id": "autoru_1160877537-322640d7",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-21T05:46:36.715078+00:00"
+"seen_at": "2026-11-21T05:57:51.829622+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T05:46:36.715048+00:00"
+"seen_at": "2026-11-21T05:57:51.829591+00:00"
 },
 {
 "ad_id": "autoru_1160889654-33a3d2f3",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T05:46:36.715032+00:00"
+"seen_at": "2026-11-21T05:57:51.829551+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
