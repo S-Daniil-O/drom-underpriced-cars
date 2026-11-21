@@ -3061,7 +3061,7 @@
   "_pitch_2026-11-18": {
     "posted_at": "2026-11-18T09:11:40.213292+00:00",
     "message_id": 429,
-    "deleted_at": null
+    "deleted_at": "2026-11-21T09:12:17.993459+00:00"
   },
   "https://auto.drom.ru/voronezh/daewoo/matiz/707113961.html": {
     "posted_at": "2026-11-18T10:30:29.912439+00:00",
@@ -3279,5 +3279,10 @@
     "checked_at": "2026-11-21T08:46:17.745085+00:00",
     "vk_post_id": 338,
     "vk_deleted_at": null
+  },
+  "_pitch_2026-11-21": {
+    "posted_at": "2026-11-21T09:12:19.282120+00:00",
+    "message_id": 451,
+    "deleted_at": null
   }
 }
