@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T17:58:38.376693+00:00"
+"seen_at": "2026-11-21T18:10:02.149187+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:38.376657+00:00"
+"seen_at": "2026-11-21T18:10:02.149147+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:18.387348+00:00"
+"seen_at": "2026-11-21T18:09:40.768682+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:18.387330+00:00"
+"seen_at": "2026-11-21T18:09:40.768666+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:18.387311+00:00"
+"seen_at": "2026-11-21T18:09:40.768646+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T17:58:18.387301+00:00"
+"seen_at": "2026-11-21T18:09:40.768636+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:18.387276+00:00"
+"seen_at": "2026-11-21T18:09:40.768610+00:00"
 },
 {
 "ad_id": "autoru_1160895063-7213c776",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T17:58:18.387244+00:00"
+"seen_at": "2026-11-21T18:09:40.768578+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -190,21 +190,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-21T13:39:09.086572+00:00"
-},
-{
-"ad_id": "autoru_1160892854-df8c3718",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Niva",
-"year": 2005,
-"price": 270000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/chevrolet/niva/1160892854-df8c3718/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5485794/c571634452d4b76c2edb302594d301f4/1200x900n",
-"mileage_km": 104000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Лиски",
-"seen_at": "2026-11-21T12:09:21.872631+00:00"
 }
 ]
