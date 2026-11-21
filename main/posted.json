@@ -4728,5 +4728,20 @@
     "mileage_km": 175000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/Omr65jWQ2PpwhIaiACzShltzWvP_gv_19iEk2gs9ShAXEM6vdaIF7ZIfz3p36d3A9lVPYPD95FZS9BaP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/500542221.html": {
+    "posted_at": "2026-11-21T23:21:01.778911+00:00",
+    "message_id": 346,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 2012,
+    "price": 679000,
+    "median_price": 900550.0,
+    "median_sample_size": 5,
+    "price_rating": "нормальная цена",
+    "mileage_km": 265300,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ECbRSrzSCMqldZkF-Fr_TNSy_OMy3AJ6CxujPnVRKGiiwsNx5LzVERKIE5_V__qr02dq2x8CCHPAlRYp/gen272wb.jpg"
   }
 }
