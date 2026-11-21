@@ -9488,5 +9488,20 @@
     "mileage_km": 250000,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/AcxI8N23m9JXlicDYwbUlScbVxEqT8LWfDCnrh1qAGg4Ec0OGZ8awM30O32v0BPAzD793uPYWPzeuN2D/gen272wb.jpg"
+  },
+  "autoru_1160889832-6f46ee50": {
+    "posted_at": "2026-11-21T12:15:53.477874+00:00",
+    "message_id": 681,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "Granta",
+    "year": 2016,
+    "price": 315000,
+    "median_price": 415373.42715999996,
+    "median_sample_size": 11,
+    "price_rating": null,
+    "mileage_km": 131254,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/16145448/6c6b81c479790ccb38f6d0ab0d0294fd/1200x900n"
   }
 }
