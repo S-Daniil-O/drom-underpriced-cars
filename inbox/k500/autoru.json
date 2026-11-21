@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Лиски",
-"seen_at": "2026-11-21T10:05:35.386823+00:00"
+"seen_at": "2026-11-21T10:16:52.608126+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-21T10:05:35.386766+00:00"
+"seen_at": "2026-11-21T10:16:52.608094+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -45,39 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-21T10:05:35.386726+00:00"
-},
-{
-"ad_id": "autoru_1160877537-322640d7",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2114",
-"year": 2007,
-"price": 120000,
-"market_price": 100500,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1160877537-322640d7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/f169c9a71ae37a49a58ce961d91aa6ac/1200x900n",
-"mileage_km": 170000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Калач",
-"seen_at": "2026-11-21T10:05:16.676846+00:00"
-},
-{
-"ad_id": "autoru_1160887871-667f9280",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2016,
-"price": 480000,
-"market_price": 449000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
-"mileage_km": 130000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-21T10:05:16.676814+00:00"
+"seen_at": "2026-11-21T10:16:52.608053+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,7 +61,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-21T10:05:16.676784+00:00"
+"seen_at": "2026-11-21T10:16:39.260645+00:00"
+},
+{
+"ad_id": "autoru_1160877537-322640d7",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2007,
+"price": 120000,
+"market_price": 100500,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160877537-322640d7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/f169c9a71ae37a49a58ce961d91aa6ac/1200x900n",
+"mileage_km": 170000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Калач",
+"seen_at": "2026-11-21T10:16:39.260618+00:00"
+},
+{
+"ad_id": "autoru_1160887871-667f9280",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2016,
+"price": 480000,
+"market_price": 449000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-21T10:16:39.260575+00:00"
+},
+{
+"ad_id": "autoru_1160846793-1fb15cbe",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 1998,
+"price": 195000,
+"market_price": 51500,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160846793-1fb15cbe/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
+"mileage_km": 160000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-21T10:16:39.260514+00:00"
 },
 {
 "ad_id": "autoru_1160891606-dce99eb7",
@@ -126,22 +142,6 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-21T09:54:04.574785+00:00"
-},
-{
-"ad_id": "autoru_1160846793-1fb15cbe",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 1998,
-"price": 195000,
-"market_price": 51500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160846793-1fb15cbe/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
-"mileage_km": 160000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-21T09:54:04.574753+00:00"
 },
 {
 "ad_id": "autoru_1160890731-236e9b21",
