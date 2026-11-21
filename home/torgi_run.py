@@ -99,16 +99,6 @@ def main():
     shutil.rmtree(QUEUE_NIS, ignore_errors=True)
     subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=nis", f"--queue={QUEUE_NIS}",
                     f"--active={os.path.join(QUEUE_NIS, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_NIS))
-    # «Торги Сканлот»: те же правила, что для НИС, только сайт scanlot.ru и свой канал
-    try:
-        scan_posted = git("show", "origin/state:torgi_scan/posted.json")
-    except subprocess.CalledProcessError:
-        scan_posted = "{}"
-    with open(POSTED_SCAN, "w") as f:
-        f.write(scan_posted)
-    shutil.rmtree(QUEUE_SCAN, ignore_errors=True)
-    subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=scan", f"--queue={QUEUE_SCAN}",
-                    f"--active={os.path.join(QUEUE_SCAN, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_SCAN))
     # «Мои лоты»: график и заявки по избранным — для уведомлений на GitHub
     subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), f"--fav-lots={FAVS},{FAV_LOTS}"],
                    cwd=WORK, env=env)
@@ -123,13 +113,12 @@ def main():
     fcntl.flock(lock, fcntl.LOCK_EX)  # autoru_collect.py и drom_sweep.py пишут в тот же клон
     git("fetch", "-q", "origin", "inbox")
     git("reset", "-q", "--hard", "origin/inbox")
-    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot"), (os.path.dirname(FAV_LOTS), "torgi_fav"), (QUEUE_NIS, "torgi_nis"),
-                      (QUEUE_SCAN, "torgi_scan")):
+    for src, name in ((QUEUE, "torgi"), (QUEUE_HOT, "torgi_hot"), (os.path.dirname(FAV_LOTS), "torgi_fav"), (QUEUE_NIS, "torgi_nis")):
         dest = os.path.join(INBOX_REPO, "inbox", name)
         shutil.rmtree(dest, ignore_errors=True)
         if os.path.exists(src):
             shutil.copytree(src, dest)
-    git("add", "-A", *[p for p in ("inbox/torgi", "inbox/torgi_hot", "inbox/torgi_fav", "inbox/torgi_nis", "inbox/torgi_scan")
+    git("add", "-A", *[p for p in ("inbox/torgi", "inbox/torgi_hot", "inbox/torgi_fav", "inbox/torgi_nis")
                          if os.path.exists(os.path.join(INBOX_REPO, p)) or git("ls-files", p).strip()])
     if git("status", "--porcelain").strip():
         git("commit", "-q", "-m", "inbox: torgi")
@@ -137,6 +126,36 @@ def main():
         log("очередь торгов отправлена в ветку inbox → GitHub опубликует")
     else:
         log("очередь не изменилась")
+    lock.close()
+
+    # «Торги Сканлот» — после отправки остальных каналов: сверка цен с Дромом для тысяч лотов
+    # бывает долгой и не должна задерживать основной канал, «горящие» и НИС.
+    # «Торги Сканлот»: те же правила, что для НИС, только сайт scanlot.ru и свой канал
+    try:
+        scan_posted = git("show", "origin/state:torgi_scan/posted.json")
+    except subprocess.CalledProcessError:
+        scan_posted = "{}"
+    with open(POSTED_SCAN, "w") as f:
+        f.write(scan_posted)
+    shutil.rmtree(QUEUE_SCAN, ignore_errors=True)
+    subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=scan", f"--queue={QUEUE_SCAN}",
+                    f"--active={os.path.join(QUEUE_SCAN, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_SCAN))
+    lock = open(os.path.join(HERE, "inbox.lock"), "w")
+    fcntl.flock(lock, fcntl.LOCK_EX)
+    git("fetch", "-q", "origin", "inbox")
+    git("reset", "-q", "--hard", "origin/inbox")
+    dest = os.path.join(INBOX_REPO, "inbox", "torgi_scan")
+    shutil.rmtree(dest, ignore_errors=True)
+    if os.path.exists(QUEUE_SCAN):
+        shutil.copytree(QUEUE_SCAN, dest)
+    if os.path.exists(dest) or git("ls-files", "inbox/torgi_scan").strip():
+        git("add", "-A", "inbox/torgi_scan")
+    if git("status", "--porcelain").strip():
+        git("commit", "-q", "-m", "inbox: torgi_scan")
+        git("push", "-q", "origin", "HEAD:inbox")
+        log("очередь «Торги Сканлот» отправлена в ветку inbox → GitHub опубликует")
+    else:
+        log("очередь «Торги Сканлот» не изменилась")
 
 
 if __name__ == "__main__":

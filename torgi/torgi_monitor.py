@@ -653,6 +653,7 @@ SCAN_BASE = "https://scanlot.ru"
 SCAN_CACHE_FILE = DATA / "scan_cache.json"
 SCAN_CACHE_DAYS = 3        # карточку лота перечитываем раз в 3 дня (график снижения не меняется)
 SCAN_PAUSE = 1.0           # пауза между запросами к сайту, с
+SCAN_MARKET_MINUTES = 45  # сверка цен с Дромом для ScanLot — не дольше (остальное в следующий раз, цены в кэше)
 SCAN_FETCH_PER_RUN = 800   # не больше стольких страниц лотов за запуск (первый проход каталога — за несколько дней)
 _scan_incomplete = [False]
 
@@ -1852,7 +1853,11 @@ def main():
                 if (not car[2] or car[2] >= min_year(lot)) and not bad_reason(lot)]
         log(f"Подходят по году и состоянию, проверяем рынок: {len(cars)}")
         deals, checked = [], 0
+        market_deadline = time.time() + SCAN_MARKET_MINUTES * 60 if "--source=scan" in sys.argv else None
         for lot, car in cars:
+            if market_deadline and time.time() > market_deadline:
+                log(f"ScanLot: время на сверку цен вышло — проверено {checked} из {len(cars)}, остальные в следующий раз")
+                break
             mk = market_price(car, lot["specs"])
             checked += 1
             if checked % 50 == 0:
