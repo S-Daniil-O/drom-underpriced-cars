@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160887871-667f9280",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2016,
+"price": 480000,
+"market_price": 449000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T08:03:13.681948+00:00"
+},
+{
 "ad_id": "autoru_1160718259-35a44d7d",
 "source": "autoru",
 "brand": "УАЗ",
@@ -13,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-22T07:51:56.721717+00:00"
+"seen_at": "2026-11-22T08:03:13.681919+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,23 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T07:51:56.721697+00:00"
-},
-{
-"ad_id": "autoru_1160887871-667f9280",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2016,
-"price": 480000,
-"market_price": 449000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
-"mileage_km": 130000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T07:51:56.721626+00:00"
+"seen_at": "2026-11-22T08:03:13.681901+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T07:51:36.487264+00:00"
+"seen_at": "2026-11-22T08:03:13.681846+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-22T07:51:36.487254+00:00"
+"seen_at": "2026-11-22T08:02:56.110387+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T07:51:36.487223+00:00"
+"seen_at": "2026-11-22T08:02:56.110358+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T07:51:36.487205+00:00"
+"seen_at": "2026-11-22T08:02:56.110343+00:00"
 },
 {
 "ad_id": "autoru_1160895063-7213c776",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T07:51:36.487170+00:00"
+"seen_at": "2026-11-22T08:02:56.110310+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
