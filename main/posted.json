@@ -4743,5 +4743,20 @@
     "mileage_km": 265300,
     "owners_display": "2",
     "image_url": "https://s12.auto.drom.ru/photo/v2/ECbRSrzSCMqldZkF-Fr_TNSy_OMy3AJ6CxujPnVRKGiiwsNx5LzVERKIE5_V__qr02dq2x8CCHPAlRYp/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/cruze/369909881.html": {
+    "posted_at": "2026-11-22T02:59:25.916883+00:00",
+    "message_id": 347,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Cruze",
+    "year": 2018,
+    "price": 920000,
+    "median_price": 1100000.0,
+    "median_sample_size": 1346,
+    "price_rating": "хорошая цена",
+    "mileage_km": 210000,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/q78yGU3aNc68JI5-IyVsuE3xZf_j_Jv2IorTgLWyTI2aBOF7qQQ0c44NhE3VyNpvy8CnpCd-JdteJ-tk/gen272wb.jpg"
   }
 }
