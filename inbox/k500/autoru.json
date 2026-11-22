@@ -1,37 +1,5 @@
 [
 {
-"ad_id": "autoru_1160887871-667f9280",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2016,
-"price": 480000,
-"market_price": 449000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
-"mileage_km": 130000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T08:25:42.415318+00:00"
-},
-{
-"ad_id": "autoru_1160889654-33a3d2f3",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2121 (4x4)",
-"year": 2014,
-"price": 470000,
-"market_price": 397000,
-"url": "https://auto.ru/cars/used/sale/vaz/2121/1160889654-33a3d2f3/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1880362/5bdf01ab3f7665673e9e7de5ebf15f16/1200x900n",
-"mileage_km": 75000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T08:25:42.415299+00:00"
-},
-{
 "ad_id": "autoru_1160718259-35a44d7d",
 "source": "autoru",
 "brand": "УАЗ",
@@ -45,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-22T08:25:42.415279+00:00"
+"seen_at": "2026-11-22T08:36:59.004040+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -61,7 +29,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T08:25:42.415259+00:00"
+"seen_at": "2026-11-22T08:36:59.004024+00:00"
+},
+{
+"ad_id": "autoru_1160887871-667f9280",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2016,
+"price": 480000,
+"market_price": 449000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160887871-667f9280/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18005086/7572434c3dbe5d652d9945c7577d5c36/1200x900n",
+"mileage_km": 130000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T08:36:59.003984+00:00"
+},
+{
+"ad_id": "autoru_1160889654-33a3d2f3",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 2014,
+"price": 470000,
+"market_price": 397000,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160889654-33a3d2f3/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1880362/5bdf01ab3f7665673e9e7de5ebf15f16/1200x900n",
+"mileage_km": 75000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T08:36:59.003967+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T08:25:42.415201+00:00"
+"seen_at": "2026-11-22T08:36:59.003948+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-22T08:25:25.222777+00:00"
+"seen_at": "2026-11-22T08:36:59.003912+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T08:25:25.222748+00:00"
+"seen_at": "2026-11-22T08:36:45.316267+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T08:25:25.222731+00:00"
+"seen_at": "2026-11-22T08:36:45.316253+00:00"
 },
 {
 "ad_id": "autoru_1160895063-7213c776",
@@ -141,7 +141,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T08:25:25.222698+00:00"
+"seen_at": "2026-11-22T08:36:45.316239+00:00"
+},
+{
+"ad_id": "autoru_1160898295-a4c2c68d",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Aveo",
+"year": 2007,
+"price": 415000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/chevrolet/aveo/1160898295-a4c2c68d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17024389/7bcd740f82be8d562a2a6e2f3d1800c9/1200x900n",
+"mileage_km": 168000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T08:36:45.316189+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
