@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032906+00:00"
+"seen_at": "2026-11-22T19:18:13.603013+00:00"
 },
 {
 "ad_id": "autoru_1160889654-33a3d2f3",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032886+00:00"
+"seen_at": "2026-11-22T19:18:13.602998+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032869+00:00"
+"seen_at": "2026-11-22T19:18:13.602985+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-22T19:06:59.032856+00:00"
+"seen_at": "2026-11-22T19:18:13.602974+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032815+00:00"
+"seen_at": "2026-11-22T19:18:13.602940+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032792+00:00"
+"seen_at": "2026-11-22T19:18:13.602924+00:00"
 },
 {
 "ad_id": "autoru_1160895063-7213c776",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:59.032752+00:00"
+"seen_at": "2026-11-22T19:18:13.602890+00:00"
 },
 {
 "ad_id": "autoru_1160898295-a4c2c68d",
@@ -125,7 +125,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:06:39.792697+00:00"
+"seen_at": "2026-11-22T19:17:55.153580+00:00"
+},
+{
+"ad_id": "autoru_1160899709-5474a8e6",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2107",
+"year": 2006,
+"price": 110000,
+"market_price": 63500,
+"url": "https://auto.ru/cars/used/sale/vaz/2107/1160899709-5474a8e6/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2160970/9CI_X79-daF2rnA14GdO9bSpSyNpCPtRqX_JU8cj6ZavBhMm6_P_7bliEcKfM98Mu0MxIey-iDPi175KUYHNXANOFh0WJGnIkL8jXbGMta96Pq_Wq-CjZ9rx5dl2PfSuLNBZriYNVPurYj2nJOtHB_i2O6sNGfIegLirLgSy46YBKIw/1200x900n",
+"mileage_km": 102000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T19:17:55.153562+00:00"
+},
+{
+"ad_id": "autoru_1160329471-b41eaf9d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2111",
+"year": 2010,
+"price": 145000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
+"mileage_km": 300000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Нижнедевицк",
+"seen_at": "2026-11-22T19:17:55.153510+00:00"
 },
 {
 "ad_id": "autoru_1160899426-c17c6589",
@@ -142,38 +174,6 @@
 "seller_type": "PRIVATE",
 "city": "Семилуки",
 "seen_at": "2026-11-22T19:06:39.792687+00:00"
-},
-{
-"ad_id": "autoru_1160899709-5474a8e6",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2107",
-"year": 2006,
-"price": 110000,
-"market_price": 63500,
-"url": "https://auto.ru/cars/used/sale/vaz/2107/1160899709-5474a8e6/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2160970/91KMKoab6AOcgPH3X-fePRr9KFKCcwDx6u7rsiZFI7MnYJKnV9xsBA8oCRSMC29dBtFgqY1fq8CuMxiKMItYDE4UGhO4VGhuwwrZTLKm_utYXbP5S4TaCC5eLMJRAuWcrN8bQ7BAxF5Pkf61_AnyKaU8L_2MJjMi82pKZGYMTnmfXw/1200x900n",
-"mileage_km": 102000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T19:06:39.792674+00:00"
-},
-{
-"ad_id": "autoru_1160329471-b41eaf9d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2111",
-"year": 2010,
-"price": 145000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2111/1160329471-b41eaf9d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20740510/ee9f009e48dc69ee24e160cb257d2679/1200x900n",
-"mileage_km": 300000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Нижнедевицк",
-"seen_at": "2026-11-22T19:06:39.792618+00:00"
 },
 {
 "ad_id": "autoru_1160903407-97c29d9d",
