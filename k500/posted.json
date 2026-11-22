@@ -9668,5 +9668,20 @@
     "mileage_km": 320000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/NydPN9UxLswhrOm3wtINJmsUiKnNsl9wpDar9yVQjHYMI5hH4NOdsqbbFI1KlCY4iRiqTItGSXmCBWjk/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2109/819882764.html": {
+    "posted_at": "2026-11-22T03:59:47.756205+00:00",
+    "message_id": 693,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2109",
+    "year": 2002,
+    "price": 100000,
+    "median_price": 134550.0,
+    "median_sample_size": 682,
+    "price_rating": "отличная цена",
+    "mileage_km": 200000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/7tAvsZa2L6mRXkDB4srpap_4Y8wAo6zjTHbOuqyWOfgf1Oz19swcylsmbVstuuCl_E7J-wfJeHbEMh7y/gen272wb.jpg"
   }
 }
