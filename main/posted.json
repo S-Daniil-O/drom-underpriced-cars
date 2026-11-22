@@ -4788,5 +4788,20 @@
     "mileage_km": 150000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/SCMmur-a1kDO3f4uLSbzedxG5RS-tT9GCm67K-X9-AcmDpp9l-MQ6pZ2-GrOvJvKOOg9ILn0O-OSLIuv/gen272wb.jpg"
+  },
+  "autoru_1160903318-b41ffcc1": {
+    "posted_at": "2026-11-22T17:56:01.909128+00:00",
+    "message_id": 350,
+    "deleted_at": null,
+    "brand": "Renault",
+    "model": "Sandero",
+    "year": 2018,
+    "price": 750000,
+    "median_price": 930600.0,
+    "median_sample_size": 5,
+    "price_rating": null,
+    "mileage_km": 167500,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/19936221/352c4f2a50b69c9706364963b6c0fa60/1200x900n"
   }
 }
