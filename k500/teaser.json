@@ -3131,20 +3131,6 @@
     "vk_post_id": 329,
     "vk_deleted_at": "2026-11-22T15:41:00.992496+00:00"
   },
-  "https://auto.drom.ru/voronezh/hyundai/grace/468688724.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-19T22:42:47.122599+00:00"
-  },
-  "https://auto.drom.ru/voronezh/honda/civic/589905022.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-19T22:42:47.122599+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2110/520147838.html": {
     "posted_at": "2026-11-20T06:38:29.678967+00:00",
     "message_id": 440,
@@ -3361,5 +3347,12 @@
     "checked_at": "2026-11-22T21:29:09.190974+00:00",
     "vk_post_id": 347,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/hyundai/grace/468688724.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-22T22:47:05.175361+00:00"
   }
 }
