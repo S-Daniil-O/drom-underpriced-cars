@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-22T03:33:39.906652+00:00"
+"seen_at": "2026-11-22T03:44:47.486498+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T03:33:39.906630+00:00"
+"seen_at": "2026-11-22T03:44:47.486477+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T03:33:39.906552+00:00"
+"seen_at": "2026-11-22T03:44:47.486407+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T03:33:21.622681+00:00"
+"seen_at": "2026-11-22T03:44:33.705759+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -77,7 +77,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-22T03:33:21.622669+00:00"
+"seen_at": "2026-11-22T03:44:33.705747+00:00"
+},
+{
+"ad_id": "autoru_1160846793-1fb15cbe",
+"source": "autoru",
+"brand": "Audi",
+"model": "80",
+"year": 1998,
+"price": 190000,
+"market_price": 51500,
+"url": "https://auto.ru/cars/used/sale/audi/80/1160891020-d18df225/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
+"mileage_km": 160000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T03:44:33.705713+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -126,21 +142,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-22T03:33:21.622565+00:00"
-},
-{
-"ad_id": "autoru_1160846793-1fb15cbe",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 1998,
-"price": 190000,
-"market_price": 51500,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160846793-1fb15cbe/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2175262/7e2c375f2e7f9b5c52e11fb2b077203c/1200x900n",
-"mileage_km": 160000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T03:10:58.024432+00:00"
 }
 ]
