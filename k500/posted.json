@@ -9728,5 +9728,20 @@
     "mileage_km": 200000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/AwV-duPqXCTk267cnl5y9f4YtRa5hESYTskGsFqX1emOQhLhjDRToNKSK1BpXSv1HqM5HHxPe4v535S_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/note/198258970.html": {
+    "posted_at": "2026-11-22T19:42:01.870197+00:00",
+    "message_id": 697,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Note",
+    "year": 2011,
+    "price": 415000,
+    "median_price": 450000.0,
+    "median_sample_size": 386,
+    "price_rating": "отличная цена",
+    "mileage_km": 300000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HV2CIy_xnxqgTsyUL0J7GFBB1ciPga5_4LiL8Rs6blmmC72kBLeVTNchdldEvZoIy-N7zAdp5ongj2CU/gen272wb.jpg"
   }
 }
