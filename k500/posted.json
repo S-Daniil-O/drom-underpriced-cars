@@ -9683,5 +9683,20 @@
     "mileage_km": 200000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/7tAvsZa2L6mRXkDB4srpap_4Y8wAo6zjTHbOuqyWOfgf1Oz19swcylsmbVstuuCl_E7J-wfJeHbEMh7y/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/21099/617495096.html": {
+    "posted_at": "2026-11-22T06:45:01.918384+00:00",
+    "message_id": 694,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "21099",
+    "year": 1997,
+    "price": 80000,
+    "median_price": 116100.0,
+    "median_sample_size": 1538,
+    "price_rating": null,
+    "mileage_km": 170000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/o5Ym7ljscQQGpe--enSfbePVjo1JYacnK7JLpr2DvpuJ16C1lAhS2zliIRW_kbLRlC9AexJcqvthzItD/gen272wb.jpg"
   }
 }
