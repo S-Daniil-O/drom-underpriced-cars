@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-22T10:40:40.596447+00:00"
+"seen_at": "2026-11-22T10:51:55.098458+00:00"
 },
 {
 "ad_id": "autoru_1160872392-657ddda0",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:40.596430+00:00"
+"seen_at": "2026-11-22T10:51:55.098442+00:00"
 },
 {
 "ad_id": "autoru_1160887871-667f9280",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:40.596382+00:00"
+"seen_at": "2026-11-22T10:51:55.098399+00:00"
 },
 {
 "ad_id": "autoru_1160889654-33a3d2f3",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:40.596362+00:00"
+"seen_at": "2026-11-22T10:51:55.098382+00:00"
 },
 {
 "ad_id": "autoru_1160890180-232d7979",
@@ -77,7 +77,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:40.596343+00:00"
+"seen_at": "2026-11-22T10:51:55.098365+00:00"
 },
 {
 "ad_id": "autoru_1133448637-0d69e621",
@@ -93,23 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Павловск",
-"seen_at": "2026-11-22T10:40:40.596305+00:00"
-},
-{
-"ad_id": "autoru_1160895063-7213c776",
-"source": "autoru",
-"brand": "Chevrolet",
-"model": "Aveo",
-"year": 2008,
-"price": 299000,
-"market_price": 152500,
-"url": "https://auto.ru/cars/used/sale/chevrolet/aveo/1160891792-c1076352/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2169493/09c53006c28425135723052b4e0f1830/1200x900n",
-"mileage_km": 120000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T10:40:26.459582+00:00"
+"seen_at": "2026-11-22T10:51:55.098328+00:00"
 },
 {
 "ad_id": "autoru_1160893879-5325061e",
@@ -125,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:26.459540+00:00"
+"seen_at": "2026-11-22T10:51:42.187767+00:00"
 },
 {
 "ad_id": "autoru_1160894569-5f7c8f57",
@@ -141,7 +125,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T10:40:26.459505+00:00"
+"seen_at": "2026-11-22T10:51:42.187754+00:00"
+},
+{
+"ad_id": "autoru_1160895063-7213c776",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2008,
+"price": 299000,
+"market_price": 152500,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160895063-7213c776/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2169493/09c53006c28425135723052b4e0f1830/1200x900n",
+"mileage_km": 120000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T10:51:42.187742+00:00"
+},
+{
+"ad_id": "autoru_1160899426-c17c6589",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2121 (4x4)",
+"year": 1999,
+"price": 160000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2121/1160899426-c17c6589/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17909659/4c341abc611e14db7009483fe25564d0/1200x900n",
+"mileage_km": 306107,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Семилуки",
+"seen_at": "2026-11-22T10:51:42.187692+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
