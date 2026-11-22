@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:40:07.531374+00:00"
+"seen_at": "2026-11-22T19:51:18.154304+00:00"
 },
 {
 "ad_id": "autoru_1160422889-9a203a8b",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-22T19:40:07.531359+00:00"
+"seen_at": "2026-11-22T19:51:18.154291+00:00"
 },
 {
 "ad_id": "autoru_1160878730-7fb4fbc7",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Ямное",
-"seen_at": "2026-11-22T19:40:07.531342+00:00"
+"seen_at": "2026-11-22T19:51:18.154275+00:00"
 },
 {
 "ad_id": "autoru_1160879163-9fe9c855",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новохоперск",
-"seen_at": "2026-11-22T19:40:07.531326+00:00"
+"seen_at": "2026-11-22T19:51:18.154261+00:00"
 },
 {
 "ad_id": "autoru_1160880318-407993db",
@@ -77,55 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:40:07.531286+00:00"
-},
-{
-"ad_id": "autoru_1160793365-e7ea7d2a",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Vesta",
-"year": 2024,
-"price": 1355000,
-"market_price": 1312500,
-"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
-"mileage_km": 20000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Россошь",
-"seen_at": "2026-11-22T19:39:48.729383+00:00"
-},
-{
-"ad_id": "autoru_1160804929-8e973751",
-"source": "autoru",
-"brand": "Nissan",
-"model": "X-Trail",
-"year": 2011,
-"price": 999000,
-"market_price": 948000,
-"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
-"mileage_km": 268800,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-22T19:39:48.729365+00:00"
-},
-{
-"ad_id": "autoru_1160903318-b41ffcc1",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2018,
-"price": 750000,
-"market_price": 603500,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1160903318-b41ffcc1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16273341/d7ebf0ccee378449a7ffe9e48deeba17/1200x900n",
-"mileage_km": 167500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-22T19:39:48.729353+00:00"
+"seen_at": "2026-11-22T19:51:18.154223+00:00"
 },
 {
 "ad_id": "autoru_1160898153-8987eb6c",
@@ -141,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:39:48.729333+00:00"
+"seen_at": "2026-11-22T19:51:01.555752+00:00"
 },
 {
 "ad_id": "autoru_1160860792-e18a504c",
@@ -157,7 +109,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-22T19:39:48.729274+00:00"
+"seen_at": "2026-11-22T19:51:01.555736+00:00"
+},
+{
+"ad_id": "autoru_1160804929-8e973751",
+"source": "autoru",
+"brand": "Nissan",
+"model": "X-Trail",
+"year": 2011,
+"price": 999000,
+"market_price": 948000,
+"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
+"mileage_km": 268800,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-22T19:51:01.555696+00:00"
+},
+{
+"ad_id": "autoru_1160903318-b41ffcc1",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2018,
+"price": 750000,
+"market_price": 603500,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1160903318-b41ffcc1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16273341/d7ebf0ccee378449a7ffe9e48deeba17/1200x900n",
+"mileage_km": 167500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-11-22T19:51:01.555683+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -173,7 +157,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-22T19:17:19.921451+00:00"
+"seen_at": "2026-11-22T19:51:01.555661+00:00"
+},
+{
+"ad_id": "autoru_1160793365-e7ea7d2a",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Vesta",
+"year": 2024,
+"price": 1355000,
+"market_price": 1312500,
+"url": "https://auto.ru/cars/used/sale/vaz/vesta/1160793365-e7ea7d2a/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17674678/d4cfc50f7a99e990242843c1c13ff0dc/1200x900n",
+"mileage_km": 20000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-22T19:51:01.555602+00:00"
 },
 {
 "ad_id": "autoru_1160887701-837e4721",
