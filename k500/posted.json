@@ -9818,5 +9818,35 @@
     "mileage_km": 269000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/RXDxS1R4ou_Bue_9XGpQbjFjr167laptJi0KJvwiZF321TgCUVAG5fkJBNvDhb5R-CinDhgSUyXL5PdD/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2110/270609057.html": {
+    "posted_at": "2026-11-23T11:42:56.870992+00:00",
+    "message_id": 703,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2110",
+    "year": 2002,
+    "price": 55000,
+    "median_price": 87999.96,
+    "median_sample_size": 7673,
+    "price_rating": null,
+    "mileage_km": 400000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/wW4YiVPTpJGwrFgBA7H0bSZiu8pbCWo6zCJHM37RiganRhMr70DR-5zPYRIGBDTPCIvvWxSlmcvWpOHp/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lifan/smily/491825984.html": {
+    "posted_at": "2026-11-23T11:43:47.881119+00:00",
+    "message_id": 704,
+    "deleted_at": null,
+    "brand": "Lifan",
+    "model": "Smily",
+    "year": 2011,
+    "price": 55000,
+    "median_price": 67338.75,
+    "median_sample_size": 1884,
+    "price_rating": null,
+    "mileage_km": 163000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/191xMCaB_c4cMSYfrI7Lml9MIOpraF9EZQ7Fs4lR0cwWB8hxyxM1S8KDYY0veZPHgQVULNdlDNK0qmrG/gen272wb.jpg"
   }
 }
