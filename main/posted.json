@@ -4803,5 +4803,20 @@
     "mileage_km": 167500,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19936221/352c4f2a50b69c9706364963b6c0fa60/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/nissan/qashqai/747162897.html": {
+    "posted_at": "2026-11-23T01:16:49.900733+00:00",
+    "message_id": 351,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Qashqai",
+    "year": 2010,
+    "price": 930000,
+    "median_price": 1119160.0,
+    "median_sample_size": 2953,
+    "price_rating": "нормальная цена",
+    "mileage_km": 175500,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jAkQJxrbACvYMyoZTg6lemfQZi5EllDZagm7Lj0ALzpMeftfSGcVzxo_31tgruAmPP4XOeGhvybwOxZ8/gen272wb.jpg"
   }
 }
