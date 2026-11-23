@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:52.492808+00:00"
+"seen_at": "2026-11-23T22:50:07.579231+00:00"
 },
 {
 "ad_id": "autoru_1160903318-b41ffcc1",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-23T22:38:52.492757+00:00"
+"seen_at": "2026-11-23T22:50:07.579178+00:00"
 },
 {
 "ad_id": "autoru_1160904525-cb63c0bf",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:52.492732+00:00"
+"seen_at": "2026-11-23T22:50:07.579153+00:00"
 },
 {
 "ad_id": "autoru_1160857858-ff0bc0d7",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:52.492693+00:00"
+"seen_at": "2026-11-23T22:50:07.579111+00:00"
 },
 {
 "ad_id": "autoru_1160910347-0275cfe4",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Митрофановка",
-"seen_at": "2026-11-23T22:38:34.505199+00:00"
+"seen_at": "2026-11-23T22:49:52.333558+00:00"
 },
 {
 "ad_id": "autoru_1160912122-d2cf7a0b",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505187+00:00"
+"seen_at": "2026-11-23T22:49:52.333544+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505173+00:00"
+"seen_at": "2026-11-23T22:49:52.333530+00:00"
 },
 {
 "ad_id": "autoru_1160917064-86ff2c81",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505160+00:00"
+"seen_at": "2026-11-23T22:49:52.333513+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-23T22:38:34.505148+00:00"
+"seen_at": "2026-11-23T22:49:52.333498+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-23T22:38:34.505133+00:00"
+"seen_at": "2026-11-23T22:49:52.333480+00:00"
 },
 {
 "ad_id": "autoru_1160683196-74963cf6",
@@ -173,23 +173,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505117+00:00"
-},
-{
-"ad_id": "autoru_1160804929-8e973751",
-"source": "autoru",
-"brand": "Nissan",
-"model": "X-Trail",
-"year": 2011,
-"price": 999000,
-"market_price": 948000,
-"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
-"mileage_km": 268800,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505101+00:00"
+"seen_at": "2026-11-23T22:49:52.333465+00:00"
 },
 {
 "ad_id": "autoru_1160924887-a58f40d5",
@@ -205,7 +189,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505084+00:00"
+"seen_at": "2026-11-23T22:49:52.333437+00:00"
 },
 {
 "ad_id": "autoru_1160925000-af7da0ba",
@@ -216,12 +200,28 @@
 "price": 680000,
 "market_price": 688500,
 "url": "https://auto.ru/cars/used/sale/vaz/vesta/1160925000-af7da0ba/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21074985/iHYybvY9Zxr71CLqM15vYQETRvyX7BODIWZvp2A3nicGoUYzJ1Gu2x-dZXDJTd98ezDjhLNW-vaFRpOfxouDIEz1DUOMTYRQTygNKEa-g9zppceV4t3pKNxwzjcPMHzA5bmUxpZoAG63uKfMKVqAOGwUnWz_MB1XYtF0-RELzUhfvY0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21074985/NAl5TXMYC83SKntWAzG8PnufN74vGsx414QN-nXuuH_AIU935cplV8Pg2-6_pGucJ0hBhwwST2AvQgMvmuWbSvnJqaNpT3XCgMF6KTUyoQKJK7KocMavqPH4KSZDOIR-3QtAx74yBJGdC7SwCCClu-S9RffxzM-rFgV1z5G4b6vmg0U/1200x900n",
 "mileage_km": 185000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505068+00:00"
+"seen_at": "2026-11-23T22:49:52.333424+00:00"
+},
+{
+"ad_id": "autoru_1160804929-8e973751",
+"source": "autoru",
+"brand": "Nissan",
+"model": "X-Trail",
+"year": 2011,
+"price": 999000,
+"market_price": 948000,
+"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
+"mileage_km": 268800,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T22:49:52.333403+00:00"
 },
 {
 "ad_id": "autoru_1160860792-e18a504c",
@@ -237,7 +237,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T22:38:34.505002+00:00"
+"seen_at": "2026-11-23T22:49:52.333340+00:00"
 },
 {
 "ad_id": "autoru_1160887701-837e4721",
