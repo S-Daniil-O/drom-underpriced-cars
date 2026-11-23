@@ -9923,5 +9923,20 @@
     "mileage_km": 120000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/HjJew5QJQtg5s6uIocq9Ak2zO1FI7ER9gc3hyNLoeZSUrqgXfaTGw9y_HdMZ_ZKT_6v7Rd_bmu8-8UVN/gen272wb.jpg"
+  },
+  "autoru_1160902720-188d3f19": {
+    "posted_at": "2026-11-23T17:28:45.924112+00:00",
+    "message_id": 710,
+    "deleted_at": null,
+    "brand": "Lada (ВАЗ)",
+    "model": "2114",
+    "year": 2005,
+    "price": 89000,
+    "median_price": 109497.36875000001,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 386000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/4886275/55cda6a6eaa7fc8ff231141b24d40489/1200x900n"
   }
 }
