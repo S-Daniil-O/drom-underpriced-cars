@@ -683,6 +683,8 @@ SCAN_PAUSE = 1.0           # пауза между запросами к сай�
 SCAN_MARKET_MINUTES = 45  # сверка цен с Дромом для ScanLot — не дольше (остальное в следующий раз, цены в кэше)
 SCAN_FETCH_PER_RUN = 800   # не больше стольких страниц лотов за запуск (первый проход каталога — за несколько дней)
 _scan_incomplete = [False]
+# ScanLot держит в каталоге и проданные лоты: «Торги состоялись — итоговая цена …», «Торги отменены»
+SCAN_FINISHED = re.compile(r"состоял|заверш|отмен|приостан|подведен|аннулир", re.I)
 
 
 def scan_list():
@@ -705,7 +707,10 @@ def scan_list():
             body = m.group(3)
             g = lambda cls: strip_html((re.search(r'class="' + cls + r'"[^>]*>(.*?)</(?:div|h3)>', body, re.S) or [None, ""])[1])
             place = re.search(r'class="card-place" title="([^"]*)"', body)
-            rows.append({"id": m.group(2), "path": m.group(1), "price": to_float(re.sub(r"\D", "", g("card-price")) or None),
+            # на карточке текущая цена и, если идёт снижение, зачёркнутая начальная: «526 500 ₽<s …>585 000 ₽</s>»
+            nums = [to_float(re.sub(r"\D", "", x)) for x in re.findall(r"[\d\s\xa0]*\d[\d\s\xa0]*(?=₽)", g("card-price"))]
+            rows.append({"id": m.group(2), "path": m.group(1), "price": nums[0] if nums else None,
+                         "start": max(nums) if nums else None,
                          "title": g("card-title"), "specs": g("card-specs"),
                          "place": html.unescape(place.group(1)).split("·")[0].strip() if place else ""})
         if not found:
@@ -802,7 +807,7 @@ def scan_cards(rows):
             continue
         want.append(row)
     log(f"ScanLot: по году (от {NIS_MIN_YEAR}) и расстоянию (до {MAX_KM} км) подходят {len(want)} из {len(rows)}")
-    lots, fetched, failed = [], 0, 0
+    lots, fetched, failed, finished = [], 0, 0, 0
     for row in want:
         c = cache.get(row["id"])
         if c and (time.time() - c.get("t", 0) < SCAN_CACHE_DAYS * 86400 or fetched >= SCAN_FETCH_PER_RUN):
@@ -825,6 +830,9 @@ def scan_cards(rows):
                 SCAN_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False))
         if not lot:     # лот на сайте есть, но без графика — его пост «снятым» не считаем
             _nis_unknown.add(f"scan-{row['id']}")
+        if lot and SCAN_FINISHED.search(lot.get("status") or ""):
+            finished += 1             # в «живые» не попадает — его пост очистка пометит #завершено
+            continue
         if lot:
             lot = dict(lot)
             now = time.time()
@@ -836,9 +844,30 @@ def scan_cards(rows):
     SCAN_CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False))
     if failed:
         log(f"ScanLot: не загрузились страницы {failed} лотов")
+    log(f"ScanLot: торги уже завершены или отменены — пропущено {finished}")
     left = sum(1 for r in want if r["id"] not in cache)
     log(f"ScanLot: с графиком снижения {len(lots)} (страниц прочитано {fetched}, ещё не прочитано {left})")
     return lots
+
+
+def scan_recheck(deals, posted, limit):
+    """Перед публикацией заново открыть лоты, которые сейчас уйдут в канал: в кэше статус до 3 дней старый."""
+    out, checked, gone = [], 0, 0
+    for d in deals:
+        if d["id"] not in posted and checked < limit:
+            checked += 1
+            try:
+                fresh = scan_detail({"id": d["id"][5:], "path": d["url"][len(SCAN_BASE):], "title": d["title"]})
+            except requests.RequestException:
+                continue              # не открылся — опубликуем в другой раз
+            time.sleep(SCAN_PAUSE)
+            if not fresh or SCAN_FINISHED.search(fresh["status"] or ""):
+                gone += 1
+                continue
+            d = {**d, "status": fresh["status"], "current_price": fresh["current_price"]}
+        out.append(d)
+    log(f"ScanLot: перед публикацией перепроверено {checked}, уже завершены {gone}")
+    return out
 
 
 # ---------------------------------------------------------------- марка/модель/год
@@ -1944,6 +1973,9 @@ def main():
 
     queue_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue=")), None)
     if queue_dir:
+        if "--source=scan" in sys.argv:
+            done = json.loads(POSTED_FILE.read_text()) if POSTED_FILE.exists() else {}
+            deals = scan_recheck(deals, done, (limit or MAIN_DAILY_LIMIT) * 2)
         write_queue(deals, Path(queue_dir), limit or MAIN_DAILY_LIMIT)
         hot_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue-hot=")), None)
         if hot_dir:

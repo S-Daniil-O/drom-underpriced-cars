@@ -20,14 +20,8 @@ import torgi_monitor as tm
 
 LUX_MIN = 5_000_000
 LUX_CHECK = 2_500_000        # начальная цена ниже LUX_MIN: берём, только если рынок ≥ LUX_MIN
-SCAN_PRICE = 1_500_000       # ScanLot: текущая цена в списке, от которой открываем карточку
-LUX_NAMES = re.compile(r"porsche|bentley|rolls|ferrari|lamborghini|maserati|maybach|aston|mclaren|hummer|"
-                       r"land rover|range|lexus (lx|gx|ls)|land cruiser|\bg-?класс|\bg-class|gelandewagen|gls|\bs-класс|amg|"
-                       r"bmw (x[5-7]|xm|m\d|7|8)|audi (q[78]|rs|a8|s8|r8|e-tron)|escalade|tahoe|suburban|yukon|"
-                       r"tesla|zeekr|li auto|lixiang|voyah|hongqi|tank 500|tank 700|navigator|alphard|vellfire|"
-                       r"sequoia|tundra|volvo xc90|wrangler|grand cherokee|\bram\b|hiphi|avatr|aito|genesis g[v]?[89]0", re.I)
 NOT_CAR = re.compile(r"грузов|тягач|седельн|самосвал|автобус|микроавтобус|экскаватор|погрузчик|бульдозер|трактор|"
-                     r"прицеп|автокран|кран[- ]|спецтехник|фургон|бетоно|комбайн|катер|\bяхт|снегоболот|квадроцикл|"
+                     r"полуприцеп|^\W*прицеп|автокран|кран[- ]|спецтехник|фургон|бетоно|комбайн|катер|\bяхт|снегоболот|квадроцикл|"
                      r"мотоцикл|эвакуатор|actros|axor|arocs|atego|\bman\b|scania|kamaz|камаз|\bмаз\b|\bшасси\s+kamaz|howo|sitrak|shacman", re.I)
 BUNDLE = re.compile(r"един(ым|ый) лот|транспортные средства|автомобили\b|\b\d+\s*(ед\.|единиц)|земельн\w+ участ|кадастров|"
                     r"жил\w+ дом|квартир", re.I)
@@ -85,7 +79,10 @@ def from_nis():
 
 def from_scan():
     rows = tm.scan_list()
-    want = [r for r in rows if (r.get("price") or 0) >= SCAN_PRICE or LUX_NAMES.search(r["title"] or "")]
+    no_price = sum(1 for r in rows if not r.get("start"))
+    if no_price > len(rows) * 0.1:
+        raise requests.RequestException(f"цена не разобрана у {no_price} карточек из {len(rows)}")
+    want = [r for r in rows if not r.get("start") or r["start"] >= LUX_CHECK]
     tm.log(f"ScanLot: открываем карточек {len(want)} из {len(rows)}")
     out, bad = [], 0
     for n, r in enumerate(want, 1):
@@ -129,8 +126,10 @@ def car_of(lot):
     vin, vy = tm.parse_vin(text)
     vin = vin or lot.get("page_vin")
     car = tm.parse_car(lot["title"]) or tm.parse_car(text)
-    if car and car[2] is None and vy:
+    if car and car[2] is None and vy and vy >= 2010:      # 5–9 в VIN российской сборки — не год
         car = (car[0], car[1], vy)
+    if car and car[0] == "toyota" and re.search(r"prado|прадо|cruiser\W+150|крузер\W+150", text, re.I):
+        car = ("toyota", ("land_cruiser_prado",), car[2])     # иначе сравнится с Land Cruiser 200/300
     return car, vin
 
 
@@ -162,7 +161,7 @@ def select(out):
         car, lot["vin"] = car_of(lot)
         text = lot["title"] + " " + lot.get("description", "")
         head = lot["title"][:200]
-        why = ("торги закончились" if ended(lot) else
+        why = ("торги закончились" if ended(lot) or re.search(r"состоялись|заверш|отмен|приостан|подведен", lot.get("status") or "", re.I) else
                "доля/право требования" if SHARE.search(text) else
                "битый: " + tm.bad_reason(lot) if tm.bad_reason(lot) else
                "грузовой/спецтехника" if NOT_CAR.search(head) else
@@ -170,11 +169,25 @@ def select(out):
         if not why:
             lot["specs"] = tm.parse_specs(text)
             lot["market"] = tm.market_price(car, lot["specs"]) if car else None
-            if price_of(lot) < LUX_MIN and (lot["market"] or {}).get("price", 0) < LUX_MIN:
+            mk = (lot["market"] or {}).get("price", 0)
+            if price_of(lot) < LUX_MIN and mk < LUX_MIN:
                 why = "дешевле 5 млн"
+            elif mk and mk < LUX_MIN and lot["current_price"] < LUX_MIN:
+                why = "дешевле 5 млн (завышена только начальная цена)"
         lot["year"] = car[2] if car else None
+        if car:
+            model = car[1] if isinstance(car[1], str) else car[1][-1]
+            if lot.get("market"):
+                model = lot["market"]["url"].split("/")[4]
+            lot["car_name"] = f"{car[0]} {model}".replace("_", " ").title().replace("Bmw", "BMW").replace("Gls", "GLS").replace("Lexus Lx", "Lexus LX") + (f", {car[2]}" if car[2] else "")
         lot["why"] = why
         (drop if why else good).append(lot)
+    # битая по одной площадке — битая и на другой (у ScanLot описание бывает короче)
+    bad_vins = {x["vin"] for x in drop if (x["why"] or "").startswith("битый") and x.get("vin")}
+    for x in [x for x in good if x["vin"] in bad_vins]:
+        x["why"] = "битый: по описанию на другой площадке"
+        good.remove(x)
+        drop.append(x)
     good.sort(key=lambda x: x["source"] != "Сканлот")       # ScanLot в приоритете
     seen, uniq = set(), []
     for x in good:
@@ -195,6 +208,9 @@ def name_of(lot):
     """Название для поста: ScanLot — «Марка Модель, год» с сайта, иначе по распознанной марке."""
     if lot["source"] == "Сканлот":
         return lot["title"].split(". ")[0]
+    head = re.split(r"[.;,]| VIN|идентификационн", lot["title"])[0].strip()
+    if lot["source"] == "МЭТС" or re.match(r"[A-Za-z]+[ -][A-Za-z0-9]", head):      # заголовок уже «Марка Модель»
+        return head[:60] + (f", {lot['year']}" if lot.get("year") and str(lot["year"]) not in head else "")
     return lot.get("car_name") or re.split(r"[.;]| VIN|идентификационн", lot["title"])[0][:80].strip(" ,")
 
 
