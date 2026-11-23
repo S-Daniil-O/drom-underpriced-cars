@@ -9863,5 +9863,20 @@
     "mileage_km": 184000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/qcTlIflsJr-iCWZ_OwnSlzOo0aLD8-4BMC8YnNuUQUAQAyYUoZsL5Y_YsB2fANEZT5A8YITROe9Zsktv/gen272wb.jpg"
+  },
+  "autoru_1160921513-f3bb042c": {
+    "posted_at": "2026-11-23T15:13:51.031863+00:00",
+    "message_id": 706,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 1991,
+    "price": 73000,
+    "median_price": 152375.0,
+    "median_sample_size": 10,
+    "price_rating": null,
+    "mileage_km": 279561,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17909659/87e8c39a3b227d3def5dbef990d431dc/1200x900n"
   }
 }
