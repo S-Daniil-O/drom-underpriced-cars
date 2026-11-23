@@ -9803,5 +9803,20 @@
     "mileage_km": 153255,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/-2FJD86SG3ZF98drPtJPxU6pOCjTHBdr3hy7QEsDNjMlCmhggHp14j1qPFzwcdogNyonQkRGeITdZzNg/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/aveo/431678150.html": {
+    "posted_at": "2026-11-23T08:20:15.448459+00:00",
+    "message_id": 702,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Aveo",
+    "year": 2010,
+    "price": 315000,
+    "median_price": 374519.25,
+    "median_sample_size": 151,
+    "price_rating": "нормальная цена",
+    "mileage_km": 269000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/RXDxS1R4ou_Bue_9XGpQbjFjr167laptJi0KJvwiZF321TgCUVAG5fkJBNvDhb5R-CinDhgSUyXL5PdD/gen272wb.jpg"
   }
 }
