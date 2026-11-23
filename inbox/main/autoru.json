@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:33.650829+00:00"
+"seen_at": "2026-11-23T18:19:52.384258+00:00"
 },
 {
 "ad_id": "autoru_1160903318-b41ffcc1",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Борисоглебск",
-"seen_at": "2026-11-23T18:08:33.650783+00:00"
+"seen_at": "2026-11-23T18:19:52.384216+00:00"
 },
 {
 "ad_id": "autoru_1160904525-cb63c0bf",
@@ -45,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:33.650758+00:00"
+"seen_at": "2026-11-23T18:19:52.384195+00:00"
 },
 {
 "ad_id": "autoru_1160857858-ff0bc0d7",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:33.650721+00:00"
+"seen_at": "2026-11-23T18:19:52.384157+00:00"
 },
 {
 "ad_id": "autoru_1160910347-0275cfe4",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Митрофановка",
-"seen_at": "2026-11-23T18:08:14.534342+00:00"
+"seen_at": "2026-11-23T18:19:37.611150+00:00"
 },
 {
 "ad_id": "autoru_1160912122-d2cf7a0b",
@@ -93,7 +93,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:14.534326+00:00"
+"seen_at": "2026-11-23T18:19:37.611139+00:00"
 },
 {
 "ad_id": "autoru_1160197631-b919b3e8",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:14.534309+00:00"
+"seen_at": "2026-11-23T18:19:37.611126+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-23T18:08:14.534287+00:00"
+"seen_at": "2026-11-23T18:19:37.611105+00:00"
 },
 {
 "ad_id": "autoru_1160681749-dc362d99",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-23T18:08:14.534266+00:00"
+"seen_at": "2026-11-23T18:19:37.611085+00:00"
 },
 {
 "ad_id": "autoru_1160683196-74963cf6",
@@ -157,7 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:14.534249+00:00"
+"seen_at": "2026-11-23T18:19:37.611070+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -173,7 +173,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T18:08:14.534227+00:00"
+"seen_at": "2026-11-23T18:19:37.611056+00:00"
+},
+{
+"ad_id": "autoru_1160860792-e18a504c",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Corolla",
+"year": 2013,
+"price": 1150000,
+"market_price": 1057500,
+"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
+"mileage_km": 187400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T18:19:37.610989+00:00"
 },
 {
 "ad_id": "autoru_1160924611-9712168b",
@@ -190,22 +206,6 @@
 "seller_type": "PRIVATE",
 "city": "Отрадное",
 "seen_at": "2026-11-23T18:08:14.534203+00:00"
-},
-{
-"ad_id": "autoru_1160860792-e18a504c",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2013,
-"price": 1150000,
-"market_price": 1057500,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
-"mileage_km": 187400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T18:08:14.534136+00:00"
 },
 {
 "ad_id": "autoru_1160924432-22d2cb18",
