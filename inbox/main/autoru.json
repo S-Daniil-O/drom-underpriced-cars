@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T12:31:20.477516+00:00"
+"seen_at": "2026-11-23T12:42:43.938176+00:00"
 },
 {
 "ad_id": "autoru_1160895226-fd470b93",
@@ -29,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T12:31:20.477502+00:00"
+"seen_at": "2026-11-23T12:42:43.938160+00:00"
 },
 {
 "ad_id": "autoru_1160895244-966264bf",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-23T12:31:20.477491+00:00"
+"seen_at": "2026-11-23T12:42:43.938149+00:00"
 },
 {
 "ad_id": "autoru_1160895437-a5215afc",
@@ -61,7 +61,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T12:31:20.477480+00:00"
+"seen_at": "2026-11-23T12:42:43.938135+00:00"
 },
 {
 "ad_id": "autoru_1160895703-8b3838dd",
@@ -72,12 +72,12 @@
 "price": 990000,
 "market_price": 649500,
 "url": "https://auto.ru/cars/used/sale/vaz/vesta/1160895703-8b3838dd/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/VxcHqZDFZeExc2sL7YCO7XVbIo54p8BOxzFVDNMy-IqzZe_Ly83mZLglcyUj_OHpxIdZpS4q0BnTCS4uNOs7y4OBDTISIY-wFBvbbX_BHzEvxUXwaI7iHG3vVawThfTf6_I-LNdhqWCvTaCe7tUylen3t_UxJMz-Xlr2HHh5CB6q9jw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/17410390/BYVpjfbL0kvBohuMeAxSWK94WkuWtqk5cDGlZvF14sNN7FduNVQy4l0qCMZmbG3-8Urn2LA3_4EpBMPv7BjL7M4FGMrn5GKdkhbM6DoJmn9CGinn-P274-ShdHrLQeT10ndK_pGZvi7rAHiHvXda7F1VGWZeYbcsdCnB98qWjZYUYg/1200x900n",
 "mileage_km": 208440,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Бутурлиновка",
-"seen_at": "2026-11-23T12:31:20.477466+00:00"
+"seen_at": "2026-11-23T12:42:43.938120+00:00"
 },
 {
 "ad_id": "autoru_1160898153-8987eb6c",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T12:31:20.477436+00:00"
+"seen_at": "2026-11-23T12:42:43.938087+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -109,103 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-23T12:31:20.477381+00:00"
-},
-{
-"ad_id": "autoru_1160903318-b41ffcc1",
-"source": "autoru",
-"brand": "Renault",
-"model": "Sandero",
-"year": 2018,
-"price": 750000,
-"market_price": 592000,
-"url": "https://auto.ru/cars/used/sale/renault/sandero/1160903318-b41ffcc1/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16273341/d7ebf0ccee378449a7ffe9e48deeba17/1200x900n",
-"mileage_km": 167500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Борисоглебск",
-"seen_at": "2026-11-23T12:31:02.000758+00:00"
-},
-{
-"ad_id": "autoru_1160904525-cb63c0bf",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Kalina",
-"year": 2015,
-"price": 560000,
-"market_price": 440000,
-"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160904525-cb63c0bf/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698736/e2cd6a212b520ae522cfb1a20380461e/1200x900n",
-"mileage_km": 85000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T12:31:02.000743+00:00"
-},
-{
-"ad_id": "autoru_1160857858-ff0bc0d7",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Golf",
-"year": 2013,
-"price": 1100000,
-"market_price": 875500,
-"url": "https://auto.ru/cars/used/sale/volkswagen/golf/1160857858-ff0bc0d7/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16510904/f71cb61a9020fad2c1ac7de766cdd557/1200x900n",
-"mileage_km": 190000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T12:31:02.000731+00:00"
-},
-{
-"ad_id": "autoru_1160860792-e18a504c",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Corolla",
-"year": 2013,
-"price": 1150000,
-"market_price": 1057500,
-"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
-"mileage_km": 187400,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T12:31:02.000705+00:00"
-},
-{
-"ad_id": "autoru_1160910347-0275cfe4",
-"source": "autoru",
-"brand": "Toyota",
-"model": "Avensis",
-"year": 2008,
-"price": 800000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/toyota/avensis/1160910347-0275cfe4/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20606978/34e43ec10bedb3bb472a9007516260d0/1200x900n",
-"mileage_km": 295,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Митрофановка",
-"seen_at": "2026-11-23T12:31:02.000693+00:00"
-},
-{
-"ad_id": "autoru_1160912122-d2cf7a0b",
-"source": "autoru",
-"brand": "SsangYong",
-"model": "Actyon",
-"year": 2013,
-"price": 1095000,
-"market_price": 801000,
-"url": "https://auto.ru/cars/used/sale/ssang_yong/actyon/1160912122-d2cf7a0b/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17777984/c591003ec2f3ec4ee95ee67a727687ea/1200x900n",
-"mileage_km": 184500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-23T12:31:02.000676+00:00"
+"seen_at": "2026-11-23T12:42:43.938026+00:00"
 },
 {
 "ad_id": "autoru_1160804929-8e973751",
@@ -221,7 +125,103 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T12:31:02.000651+00:00"
+"seen_at": "2026-11-23T12:42:22.487680+00:00"
+},
+{
+"ad_id": "autoru_1160903318-b41ffcc1",
+"source": "autoru",
+"brand": "Renault",
+"model": "Sandero",
+"year": 2018,
+"price": 750000,
+"market_price": 592000,
+"url": "https://auto.ru/cars/used/sale/renault/sandero/1160903318-b41ffcc1/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16273341/d7ebf0ccee378449a7ffe9e48deeba17/1200x900n",
+"mileage_km": 167500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Борисоглебск",
+"seen_at": "2026-11-23T12:42:22.487669+00:00"
+},
+{
+"ad_id": "autoru_1160904525-cb63c0bf",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 2015,
+"price": 560000,
+"market_price": 440000,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160904525-cb63c0bf/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698736/e2cd6a212b520ae522cfb1a20380461e/1200x900n",
+"mileage_km": 85000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T12:42:22.487653+00:00"
+},
+{
+"ad_id": "autoru_1160857858-ff0bc0d7",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Golf",
+"year": 2013,
+"price": 1100000,
+"market_price": 875500,
+"url": "https://auto.ru/cars/used/sale/volkswagen/golf/1160857858-ff0bc0d7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16510904/f71cb61a9020fad2c1ac7de766cdd557/1200x900n",
+"mileage_km": 190000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T12:42:22.487637+00:00"
+},
+{
+"ad_id": "autoru_1160910347-0275cfe4",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Avensis",
+"year": 2008,
+"price": 800000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/toyota/avensis/1160910347-0275cfe4/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20606978/34e43ec10bedb3bb472a9007516260d0/1200x900n",
+"mileage_km": 295000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Митрофановка",
+"seen_at": "2026-11-23T12:42:22.487610+00:00"
+},
+{
+"ad_id": "autoru_1160912122-d2cf7a0b",
+"source": "autoru",
+"brand": "SsangYong",
+"model": "Actyon",
+"year": 2013,
+"price": 1095000,
+"market_price": 801000,
+"url": "https://auto.ru/cars/used/sale/ssang_yong/actyon/1160912122-d2cf7a0b/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17777984/c591003ec2f3ec4ee95ee67a727687ea/1200x900n",
+"mileage_km": 184500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T12:42:22.487594+00:00"
+},
+{
+"ad_id": "autoru_1160860792-e18a504c",
+"source": "autoru",
+"brand": "Toyota",
+"model": "Corolla",
+"year": 2013,
+"price": 1150000,
+"market_price": 1057500,
+"url": "https://auto.ru/cars/used/sale/toyota/corolla/1160860792-e18a504c/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17709910/7414f2c53127ad4b40a62b9d9591dc63/1200x900n",
+"mileage_km": 187400,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-23T12:42:22.487521+00:00"
 },
 {
 "ad_id": "autoru_1160887701-837e4721",
