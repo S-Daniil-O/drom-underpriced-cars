@@ -3431,5 +3431,23 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-23T17:00:13.207301+00:00"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/162956822.html": {
+    "posted_at": "2026-11-23T17:14:14.165834+00:00",
+    "message_id": 474,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-23T17:14:14.165834+00:00",
+    "vk_post_id": 356,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/742118810.html": {
+    "posted_at": "2026-11-23T17:14:56.460114+00:00",
+    "message_id": 475,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-23T17:14:56.460114+00:00",
+    "vk_post_id": 357,
+    "vk_deleted_at": null
   }
 }

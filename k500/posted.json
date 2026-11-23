@@ -9893,5 +9893,35 @@
     "mileage_km": 190000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/w34bDmZBO8oYFjqi_HJYV3lrM6-Aetf7uP_LOFyIB8qqQ06YZcojEXMYLpTxh42Tt3FQhr6kvITBTGKx/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/golf/162956822.html": {
+    "posted_at": "2026-11-23T17:14:07.457827+00:00",
+    "message_id": 708,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 1991,
+    "price": 130000,
+    "median_price": 155000.0,
+    "median_sample_size": 112,
+    "price_rating": null,
+    "mileage_km": 250000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/7k6gS3ZcCGbPL9SyzZUYimn01fkd1o5tMAStIXFhNPX52JKZD-Lc6qEo3JyR2ArLB4AFZ6YHeZeU-9XM/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/742118810.html": {
+    "posted_at": "2026-11-23T17:14:16.902453+00:00",
+    "message_id": 709,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2005,
+    "price": 55000,
+    "median_price": 149500.0,
+    "median_sample_size": 8275,
+    "price_rating": null,
+    "mileage_km": 120000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/HjJew5QJQtg5s6uIocq9Ak2zO1FI7ER9gc3hyNLoeZSUrqgXfaTGw9y_HdMZ_ZKT_6v7Rd_bmu8-8UVN/gen272wb.jpg"
   }
 }
