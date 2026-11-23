@@ -3166,11 +3166,11 @@
   "https://auto.drom.ru/voronezh/lada/2107/333172730.html": {
     "posted_at": "2026-11-20T21:20:20.317607+00:00",
     "message_id": 445,
-    "deleted_at": null,
+    "deleted_at": "2026-11-23T21:27:06.519328+00:00",
     "rejected": false,
     "checked_at": "2026-11-20T21:20:20.317607+00:00",
     "vk_post_id": 333,
-    "vk_deleted_at": null
+    "vk_deleted_at": "2026-11-23T21:27:06.519328+00:00"
   },
   "https://auto.drom.ru/voronezh/uaz/3151/656156107.html": {
     "posted_at": "2026-11-20T21:35:37.727768+00:00",
@@ -3466,6 +3466,40 @@
     "rejected": false,
     "checked_at": "2026-11-23T20:44:48.016273+00:00",
     "vk_post_id": 359,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/2107/930539506.html": {
+    "posted_at": "2026-11-23T21:29:41.411841+00:00",
+    "message_id": 478,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-23T21:29:41.411841+00:00",
+    "vk_post_id": 360,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/mazda/demio/874929489.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-23T21:30:05.296449+00:00"
+  },
+  "https://auto.drom.ru/voronezh/lada/2104/160793947.html": {
+    "posted_at": "2026-11-23T21:30:43.095703+00:00",
+    "message_id": 479,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-23T21:30:43.095703+00:00",
+    "vk_post_id": 361,
+    "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/iran_khodro/samand/282357202.html": {
+    "posted_at": "2026-11-23T21:31:32.700396+00:00",
+    "message_id": 480,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-23T21:31:32.700396+00:00",
+    "vk_post_id": 362,
     "vk_deleted_at": null
   }
 }
