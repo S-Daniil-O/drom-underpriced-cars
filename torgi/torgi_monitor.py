@@ -232,13 +232,40 @@ def cdt_list():
     return items
 
 
+def _nuxt_lot(page):
+    """Данные лота из блока __NUXT_DATA__ (с 11.2026 ЦДТ на Nuxt): плоский массив, где значения полей —
+    номера других элементов. Разворачивает объект с ключом «lot»; нет его — None."""
+    m = re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+    if not m:
+        return None
+    arr = json.loads(m.group(1))
+
+    def val(i, depth=0):
+        if not isinstance(i, int) or isinstance(i, bool) or i < 0 or i >= len(arr) or depth > 12:
+            return None                       # отрицательные номера — undefined/NaN и т. п.
+        x = arr[i]
+        if isinstance(x, dict):
+            return {k: val(v, depth + 1) for k, v in x.items()}
+        if isinstance(x, list):
+            if x and isinstance(x[0], str):   # обёртки Nuxt: ["Reactive", n], ["Date", "..."], ["Set", ...]
+                return val(x[1], depth + 1) if len(x) == 2 and isinstance(x[1], int) else (x[1] if len(x) == 2 else None)
+            return [val(v, depth + 1) for v in x]
+        return x
+    for i, x in enumerate(arr):
+        if isinstance(x, dict) and "lot" in x:
+            obj = val(i)
+            if isinstance(obj.get("lot"), dict) and "lotScheduleItems" in obj["lot"]:
+                return obj
+    return None
+
+
 def cdt_detail(item):
     url = f"https://torgi.cdtrf.ru/trades/{item['tradeId']}"
     for attempt in range(3):
         try:
-            t = html.unescape(requests.get(url, headers={"User-Agent": UA}, timeout=60).text)
-            i = t.find('{\n  "lot"')
-            obj, _ = json.JSONDecoder().raw_decode(t[i:])
+            obj = _nuxt_lot(requests.get(url, headers={"User-Agent": UA}, timeout=60).text)
+            if not obj:
+                raise ValueError("в странице нет данных лота")
             break
         except Exception as e:  # noqa: BLE001
             if attempt == 2:
