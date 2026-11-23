@@ -4878,5 +4878,20 @@
     "mileage_km": 165149,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/7f93afb787abec01ca18d80441b7c05b/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/lancer/496333577.html": {
+    "posted_at": "2026-11-23T17:28:54.431240+00:00",
+    "message_id": 356,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "Lancer",
+    "year": 2008,
+    "price": 650000,
+    "median_price": 798375.0,
+    "median_sample_size": 5639,
+    "price_rating": "нормальная цена",
+    "mileage_km": 162000,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/HFvsQy3KoU6HHIpJz0XapFc_D3Vk5eixtSdoVxDdpNYPY59YWg9UT4GlrnrPjqnHSQ1_Ejgo7Wg8qnGO/gen272wb.jpg"
   }
 }
