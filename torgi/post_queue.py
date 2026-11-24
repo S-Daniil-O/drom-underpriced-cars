@@ -344,11 +344,17 @@ def apply_edits(edits, posted, posted_file):
         log(f"исправлено постов: {n} из {len(edits)}")
 
 
+# Площадки, где у каждого лота свой адрес. На остальных ссылка бывает общей на все машины торгов —
+# по ней повтор определять нельзя (пропустили бы другую машину).
+LOT_URL = re.compile(r"https://(?:m-ets\.ru/\d+-\d+|bankrot\.torggroup\.org/TradeLot/View/\d+|"
+                     r"torgi\.cdtrf\.ru/trades/\d+|scanlot\.ru/torgi/auto/[\w-]+/[\w-]+/\d+)/?")
+
+
 def car_keys(text):
-    """По чему узнаём одну и ту же машину в постах: VIN и ссылки на конкретный лот (с номером в адресе)."""
+    """По чему узнаём одну и ту же машину в постах: VIN и адрес лота на его площадке."""
     vin = re.search(r"^VIN: ([A-HJ-NPR-Z0-9]{17})\b", text, re.M)
     urls = {u.rstrip("/") for u in re.findall(r"^(?:Лот|На площадке торгов): (https://\S+)", text, re.M)
-            if re.search(r"^https://[^/]+/.*\d", u)}
+            if LOT_URL.fullmatch(u)}
     return vin.group(1) if vin else None, urls
 
 
