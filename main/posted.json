@@ -5013,5 +5013,35 @@
     "mileage_km": 200000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20785675/f5eb46a25273ff619f3007d79fa18c85/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/asx/450974295.html": {
+    "posted_at": "2026-11-24T22:01:35.893272+00:00",
+    "message_id": 365,
+    "deleted_at": null,
+    "brand": "Mitsubishi",
+    "model": "ASX",
+    "year": 2013,
+    "price": 1075000,
+    "median_price": 1285625.0,
+    "median_sample_size": 1392,
+    "price_rating": "нормальная цена",
+    "mileage_km": 191000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/wqaZRxbYam4TLgmeQX1drxQWZCaXqfMDqG11qpS2hddWLI182BQYAzeCX6DcBzgxFXyJvUrpOklkqfIX/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/gentra/107573006.html": {
+    "posted_at": "2026-11-24T22:01:38.907582+00:00",
+    "message_id": 366,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Gentra",
+    "year": 2014,
+    "price": 530000,
+    "median_price": 628475.0,
+    "median_sample_size": 3654,
+    "price_rating": "нормальная цена",
+    "mileage_km": 188000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/0Hy71WTvCNq3jC2MQ13SB3KZnLxPx53FieWjKXIB0kTSgrpKQSjRvEWxFmUnB32-ZXFUfMnWktuASEg9/gen272wb.jpg"
   }
 }
