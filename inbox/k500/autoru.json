@@ -1,53 +1,5 @@
 [
 {
-"ad_id": "autoru_1160904339-a02915f7",
-"source": "autoru",
-"brand": "Opel",
-"model": "Astra",
-"year": 2010,
-"price": 350000,
-"market_price": 121500,
-"url": "https://auto.ru/cars/used/sale/opel/astra/1160901337-a0f163bf/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/3955ad9b4ffaccf94b7e6781e751dd4e/1200x900n",
-"mileage_km": 185000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-24T17:35:09.815020+00:00"
-},
-{
-"ad_id": "autoru_1160905368-57a4e30d",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2110",
-"year": 2003,
-"price": 90000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2110/1160905368-57a4e30d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17999629/0af84c20abf673792b392888fc482678/1200x900n",
-"mileage_km": 281000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Дракино",
-"seen_at": "2026-11-24T17:35:09.815010+00:00"
-},
-{
-"ad_id": "autoru_1160911196-f069f913",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2112",
-"year": 2002,
-"price": 105000,
-"market_price": 77000,
-"url": "https://auto.ru/cars/used/sale/vaz/2112/1160911196-f069f913/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/3cc290ac22dee5e91d4fa22add5bd71b/1200x900n",
-"mileage_km": 353803,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Калач",
-"seen_at": "2026-11-24T17:35:09.814991+00:00"
-},
-{
 "ad_id": "autoru_1160901441-57669f16",
 "source": "autoru",
 "brand": "Daewoo",
@@ -61,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Острогожск",
-"seen_at": "2026-11-24T17:35:09.814969+00:00"
+"seen_at": "2026-11-24T17:46:29.481212+00:00"
 },
 {
 "ad_id": "autoru_1160902720-188d3f19",
@@ -77,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:35:09.814947+00:00"
+"seen_at": "2026-11-24T17:46:29.481193+00:00"
 },
 {
 "ad_id": "autoru_1160903407-97c29d9d",
@@ -88,12 +40,12 @@
 "price": 130000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/seat/arosa/1160903407-97c29d9d/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/vcGxX4mud1s8QN4rq9ABXSxyOn5mhtYqVg0mWlSh6ttTvbzbToyNGdKsvp4oe1XJEzgJCZr3z4-n25nBTGoEiS_I4429MqiH2Fxjb7hZ7A8LL6ZY4DTKWKyTYYM_XQMxDhJJ1qW1hbeMOW024ZjQ5YAcnv5vEdwsoV69cq2ediqnHFQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/BIftjPMx7BVF6WdaHsQge4-ReAASxflVYbamKP2s_7i2GMDmF-yQ4pALsktnAC1n48TD99DLhhIqcAMoKN0adItQ4cn8wmX0ydVB0h4Sl_1Hv57aLIXWxybg3Nb_iAMLCaEvpMO3Wd_gOz2AK82PfHj8YKCsliQ7VMW-4s1833u-0mU/1200x900n",
 "mileage_km": 250000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:35:09.814932+00:00"
+"seen_at": "2026-11-24T17:46:29.481180+00:00"
 },
 {
 "ad_id": "autoru_1160903986-82238755",
@@ -109,7 +61,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:35:09.814893+00:00"
+"seen_at": "2026-11-24T17:46:29.481164+00:00"
+},
+{
+"ad_id": "autoru_1160904339-a02915f7",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2010,
+"price": 350000,
+"market_price": 121500,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160904339-a02915f7/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/3955ad9b4ffaccf94b7e6781e751dd4e/1200x900n",
+"mileage_km": 185000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-24T17:46:29.481147+00:00"
+},
+{
+"ad_id": "autoru_1160905368-57a4e30d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2110",
+"year": 2003,
+"price": 90000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2110/1160905368-57a4e30d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17999629/0af84c20abf673792b392888fc482678/1200x900n",
+"mileage_km": 281000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Дракино",
+"seen_at": "2026-11-24T17:46:29.481131+00:00"
+},
+{
+"ad_id": "autoru_1160911196-f069f913",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2112",
+"year": 2002,
+"price": 105000,
+"market_price": 77000,
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160911196-f069f913/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20140694/3cc290ac22dee5e91d4fa22add5bd71b/1200x900n",
+"mileage_km": 353803,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Калач",
+"seen_at": "2026-11-24T17:46:29.481089+00:00"
 },
 {
 "ad_id": "autoru_1160924403-b4164684",
@@ -120,12 +120,12 @@
 "price": 240000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/uaz/3151/1160924403-b4164684/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2093577/BdPJRAEIfOQldeLzyBcxMA6MUVA3yjksocdbZZGRhH5GcTF5bMMmtJovpYHAjwCWZaNB0tuBlp541gR7gaQB0-J2oIgIcjyozgBYUhNccgIzH-_neTS6T5ML9Cx14JKKju9DYGHooYs-zo39LaJ7Z0Yq0A3wNE0uruQybP5OjlMoIQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2093577/o1b6HB51mU3rEgzu7F8pbWxeXkGYy3dmJKNO93eiC6f_H21-rRKWyEjvxTeJr5hOHXkB6XOzcNWqNz4BudhYN2gUvxoLLh1mJZg4ctDR3Ygwu8VoVCWeG32H_5A9iQ3sPW9ySeT5rgtKyvLNZ_6C01P7ZObtcVWK84-GDX0AIi1F7sw/1200x900n",
 "mileage_km": 150000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:34:55.342111+00:00"
+"seen_at": "2026-11-24T17:46:13.315829+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:34:55.341988+00:00"
+"seen_at": "2026-11-24T17:46:13.315754+00:00"
 },
 {
 "ad_id": "autoru_1160899709-5474a8e6",
