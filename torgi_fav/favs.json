@@ -5315,10 +5315,26 @@
    "msgs": [],
    "topic": 2399,
    "title": "Nissan Juke, 2014 · №74"
+  },
+  "tg-22706": {
+   "n": 75,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/22706",
+   "name": "Kia Optima, 2019",
+   "vin": "XWEGT411BK0008396",
+   "target": 750000,
+   "card": 2403,
+   "added": "2026-11-24T21:30",
+   "end": "2027-02-24T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2404,
+   "msgs": [],
+   "topic": 2402,
+   "title": "Kia Optima, 2019 · до 24.02 · №75"
   }
  },
- "offset": 177674607,
- "seq": 74,
+ "offset": 177674608,
+ "seq": 75,
  "forum": -1004498088083,
  "owners": [
   1188456401
