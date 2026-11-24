@@ -5348,7 +5348,9 @@
    "tried": true,
    "ap_done": "2026-11-24",
    "mileage": 149523,
-   "ap_ok": true
+   "ap_ok": true,
+   "requests": 0,
+   "req_max": 0
   },
   "cdt-393081": {
    "n": 76,
@@ -5519,7 +5521,7 @@
   "-1003489771210": "дорогие лоты"
  },
  "audit_day": "2026-11-24",
- "req_cursor": 25818,
+ "req_cursor": 25843,
  "ap_day": {
   "date": "2026-11-24",
   "n": 5
