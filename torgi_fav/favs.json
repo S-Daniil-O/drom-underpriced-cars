@@ -5111,10 +5111,26 @@
    "ap_done": "2026-11-24",
    "mileage": 52000,
    "ap_ok": true
+  },
+  "mets-240556-1": {
+   "n": 71,
+   "url": "https://m-ets.ru/240556-1",
+   "name": "Lada Vesta, 2023",
+   "vin": "XTAGFL110R0703937",
+   "target": 1092600,
+   "card": 2362,
+   "added": "2026-11-24T21:18",
+   "end": null,
+   "sent": {},
+   "btn": 4,
+   "head": 2363,
+   "msgs": [],
+   "topic": 2361,
+   "title": "Lada Vesta, 2023 · №71"
   }
  },
- "offset": 177674593,
- "seq": 70,
+ "offset": 177674594,
+ "seq": 71,
  "forum": -1004498088083,
  "owners": [
   1188456401
