@@ -1,83 +1,19 @@
 [
 {
-"ad_id": "autoru_1160901441-57669f16",
-"source": "autoru",
-"brand": "Daewoo",
-"model": "Matiz",
-"year": 2012,
-"price": 270000,
-"market_price": 156500,
-"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160901441-57669f16/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/2eca214a0456b8cc458f930ab8c63cc0/1200x900n",
-"mileage_km": 71500,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Острогожск",
-"seen_at": "2026-11-24T17:23:54.943158+00:00"
-},
-{
-"ad_id": "autoru_1160902720-188d3f19",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2114",
-"year": 2005,
-"price": 89000,
-"market_price": 58500,
-"url": "https://auto.ru/cars/used/sale/vaz/2114/1160902720-188d3f19/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/4886275/55cda6a6eaa7fc8ff231141b24d40489/1200x900n",
-"mileage_km": 386000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-24T17:23:54.943139+00:00"
-},
-{
-"ad_id": "autoru_1160903407-97c29d9d",
-"source": "autoru",
-"brand": "SEAT",
-"model": "Arosa",
-"year": 1997,
-"price": 130000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/seat/arosa/1160903407-97c29d9d/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/nBZ2CEJTbeUVvKNooS1ga0xu_U98DYP_rWJKBKxDVfWKpbpFQZZxa6Ddls9NWZUxMiZWqgKPtjeWNPQH6WipvvhKRWGH5CaLMVSX5o7zio8GZS914U3-2aa6E4HZdafTEqISb8rHD8-J5pa8UlpDlT8MHPQo5hgGCtzs6iZK62pcTg/1200x900n",
-"mileage_km": 250000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-24T17:23:54.943126+00:00"
-},
-{
-"ad_id": "autoru_1160903986-82238755",
-"source": "autoru",
-"brand": "ГАЗ",
-"model": "31105 «Волга»",
-"year": 2008,
-"price": 249000,
-"market_price": 84000,
-"url": "https://auto.ru/cars/used/sale/gaz/31105/1160903986-82238755/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/85a513b6b95222a6c86a48279ccfbe75/1200x900n",
-"mileage_km": 185000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-24T17:23:54.943111+00:00"
-},
-{
 "ad_id": "autoru_1160904339-a02915f7",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Opel",
+"model": "Astra",
 "year": 2010,
 "price": 350000,
 "market_price": 121500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160904339-a02915f7/",
+"url": "https://auto.ru/cars/used/sale/opel/astra/1160901337-a0f163bf/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/20507677/3955ad9b4ffaccf94b7e6781e751dd4e/1200x900n",
 "mileage_km": 185000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:23:54.943096+00:00"
+"seen_at": "2026-11-24T17:35:09.815020+00:00"
 },
 {
 "ad_id": "autoru_1160905368-57a4e30d",
@@ -93,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Дракино",
-"seen_at": "2026-11-24T17:23:54.943083+00:00"
+"seen_at": "2026-11-24T17:35:09.815010+00:00"
 },
 {
 "ad_id": "autoru_1160911196-f069f913",
@@ -109,7 +45,71 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-24T17:23:54.943042+00:00"
+"seen_at": "2026-11-24T17:35:09.814991+00:00"
+},
+{
+"ad_id": "autoru_1160901441-57669f16",
+"source": "autoru",
+"brand": "Daewoo",
+"model": "Matiz",
+"year": 2012,
+"price": 270000,
+"market_price": 156500,
+"url": "https://auto.ru/cars/used/sale/daewoo/matiz/1160901441-57669f16/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17672043/2eca214a0456b8cc458f930ab8c63cc0/1200x900n",
+"mileage_km": 71500,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Острогожск",
+"seen_at": "2026-11-24T17:35:09.814969+00:00"
+},
+{
+"ad_id": "autoru_1160902720-188d3f19",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2114",
+"year": 2005,
+"price": 89000,
+"market_price": 58500,
+"url": "https://auto.ru/cars/used/sale/vaz/2114/1160902720-188d3f19/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/4886275/55cda6a6eaa7fc8ff231141b24d40489/1200x900n",
+"mileage_km": 386000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-24T17:35:09.814947+00:00"
+},
+{
+"ad_id": "autoru_1160903407-97c29d9d",
+"source": "autoru",
+"brand": "SEAT",
+"model": "Arosa",
+"year": 1997,
+"price": 130000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/seat/arosa/1160903407-97c29d9d/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/19297093/vcGxX4mud1s8QN4rq9ABXSxyOn5mhtYqVg0mWlSh6ttTvbzbToyNGdKsvp4oe1XJEzgJCZr3z4-n25nBTGoEiS_I4429MqiH2Fxjb7hZ7A8LL6ZY4DTKWKyTYYM_XQMxDhJJ1qW1hbeMOW024ZjQ5YAcnv5vEdwsoV69cq2ediqnHFQ/1200x900n",
+"mileage_km": 250000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-24T17:35:09.814932+00:00"
+},
+{
+"ad_id": "autoru_1160903986-82238755",
+"source": "autoru",
+"brand": "ГАЗ",
+"model": "31105 «Волга»",
+"year": 2008,
+"price": 249000,
+"market_price": 84000,
+"url": "https://auto.ru/cars/used/sale/gaz/31105/1160903986-82238755/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18557545/85a513b6b95222a6c86a48279ccfbe75/1200x900n",
+"mileage_km": 185000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-24T17:35:09.814893+00:00"
 },
 {
 "ad_id": "autoru_1160924403-b4164684",
@@ -120,12 +120,12 @@
 "price": 240000,
 "market_price": null,
 "url": "https://auto.ru/cars/used/sale/uaz/3151/1160924403-b4164684/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2093577/aNbDusnZNiaCJejfDpO6FogdpW7GdOlOsOPjqL4ttkfzAHLBSHJqA1cMs7lXoRX0GeFZIyb4iuIVU-ciHbyRUYn146er6DLGQdWOHx7HxhelIhNO6MTUxOxlgaAFJPvKRRUu7kau-Z3TUXHGTWQsUonMFsfuJifGaeg9HFuhu_97vQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2093577/BdPJRAEIfOQldeLzyBcxMA6MUVA3yjksocdbZZGRhH5GcTF5bMMmtJovpYHAjwCWZaNB0tuBlp541gR7gaQB0-J2oIgIcjyozgBYUhNccgIzH-_neTS6T5ML9Cx14JKKju9DYGHooYs-zo39LaJ7Z0Yq0A3wNE0uruQybP5OjlMoIQ/1200x900n",
 "mileage_km": 150000,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:23:36.614177+00:00"
+"seen_at": "2026-11-24T17:34:55.342111+00:00"
 },
 {
 "ad_id": "autoru_1160846793-1fb15cbe",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-24T17:23:36.614102+00:00"
+"seen_at": "2026-11-24T17:34:55.341988+00:00"
 },
 {
 "ad_id": "autoru_1160899709-5474a8e6",
