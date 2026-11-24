@@ -1834,7 +1834,9 @@
      162900.0
     ]
    ],
-   "req_max": 1
+   "req_max": 1,
+   "ended": true,
+   "removed": true
   },
   "tg-20973": {
    "n": 35,
@@ -5491,7 +5493,7 @@
    "hit_target": true
   }
  },
- "offset": 177674643,
+ "offset": 177674644,
  "seq": 77,
  "forum": -1004498088083,
  "owners": [
