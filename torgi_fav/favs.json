@@ -5095,10 +5095,15 @@
    "sent": {},
    "btn": 4,
    "head": 2343,
-   "msgs": [],
+   "msgs": [
+    2352
+   ],
    "topic": 2341,
    "title": "Skoda Octavia, 2015 · до 02.12 · №70",
-   "tried": true
+   "tried": true,
+   "ap_done": "2026-11-24",
+   "mileage": 52000,
+   "ap_ok": true
   }
  },
  "offset": 177674579,
