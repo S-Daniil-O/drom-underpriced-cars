@@ -5396,10 +5396,26 @@
    "photos_done": true,
    "no_photos": true,
    "hit_target": true
+  },
+  "cdt-383980": {
+   "n": 77,
+   "url": "https://torgi.cdtrf.ru/trades/383980",
+   "name": "Kaiyi X3, 2023",
+   "vin": null,
+   "target": 838253,
+   "card": 2413,
+   "added": "2026-11-24T21:52",
+   "end": "2026-12-23T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2414,
+   "msgs": [],
+   "topic": 2412,
+   "title": "Kaiyi X3, 2023 · до 23.12 · №77"
   }
  },
- "offset": 177674612,
- "seq": 76,
+ "offset": 177674613,
+ "seq": 77,
  "forum": -1004498088083,
  "owners": [
   1188456401
