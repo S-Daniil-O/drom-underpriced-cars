@@ -3608,7 +3608,8 @@
    "mileage": 209035,
    "ap_ok": true,
    "ended": true,
-   "closed": true
+   "closed": true,
+   "removed": true
   },
   "tg-14856": {
    "n": 54,
@@ -5108,7 +5109,7 @@
    "ap_ok": true
   }
  },
- "offset": 177674587,
+ "offset": 177674591,
  "seq": 70,
  "forum": -1004498088083,
  "owners": [
