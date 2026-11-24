@@ -317,6 +317,33 @@ def cleanup(active_file, posted_file):
     log(f"удалено: {n_del}, помечено #завершено/#далеко: {n_stub}")
 
 
+def apply_edits(edits, posted, posted_file):
+    """Исправить текст уже вышедших постов (например, неверная цена). Завершённые посты не трогаем."""
+    cap_file = posted_file.with_name("captions.json")
+    captions = json.loads(cap_file.read_text()) if cap_file.exists() else {}
+    done_file = posted_file.with_name("cleaned.json")
+    done = json.loads(done_file.read_text()) if done_file.exists() else {}
+    n = 0
+    for e in edits:
+        mid = posted.get(e["id"])
+        cap = captions.get(str(mid))
+        if not isinstance(mid, int) or not cap or str(mid) in done or cap["text"] == e["caption"]:
+            continue
+        method, field = ("editMessageCaption", "caption") if cap.get("photo", True) else ("editMessageText", "text")
+        r = requests.post(f"{API}/{method}", data={"chat_id": CHAT, "message_id": mid, field: e["caption"]}, timeout=30).json()
+        if r.get("ok"):
+            cap["text"] = e["caption"]
+            n += 1
+        else:
+            log(f"пост {mid} не исправлен: {r.get('description')}")
+        time.sleep(1.1)
+    if n:
+        cap_file.write_text(json.dumps(captions, ensure_ascii=False))
+        save_state(posted_file)
+    if edits:
+        log(f"исправлено постов: {n} из {len(edits)}")
+
+
 def main():
     if sys.argv[1] == "--cleanup":
         cleanup(Path(sys.argv[2]), Path(sys.argv[3]))
@@ -339,6 +366,7 @@ def main():
         return
     queue = json.loads(queue_file.read_text())
     posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
+    apply_edits(queue.get("edits") or [], posted, posted_file)
     todo = [i for i in queue["items"] if i["id"] not in posted]
     log(f"очередь от {queue.get('created')}: {len(queue['items'])}, новых: {len(todo)}")
     cap_file = posted_file.with_name("captions.json")

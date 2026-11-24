@@ -352,17 +352,33 @@ def mets_list():
     return lots
 
 
+def _mets_block(page, lot_url):
+    """Кусок страницы МЭТС со своим лотом: на странице торгов показаны сразу все лоты (первый — не обязательно наш).
+    None — лот на странице с несколькими лотами не нашёлся."""
+    page = page.split('id="analog-lots-container"')[0]            # «похожие лоты» — чужие цены и фото
+    m = re.search(r"/(\d+)-(\d+)$", lot_url)
+    parts = page.split('<div class="lot-generalinfoblock')
+    if len(parts) <= 2 or not m:
+        return page
+    key = re.compile(rf"lot-id-num>\s*{m.group(1)}-МЭТС-{m.group(2)}\s*<")
+    return next((x for x in parts[1:] if key.search(x)), None)
+
+
 def mets_start_price(lot):
     """Начальная цена на МЭТС есть только в карточке лота (в списке — цена периода)."""
     try:
         t = requests.get(lot["url"], headers={"User-Agent": UA}, timeout=60).text
     except requests.RequestException:
         return
+    og = re.search(r'og:title" content="(?:Купить\s+)?([^"]*?)(?:\.\s*Лот:[^"]*)?"', t)      # заголовок — в шапке страницы
+    t = _mets_block(t, lot["url"])
+    if t is None:
+        log(f"МЭТС {lot['id']}: лот не найден на странице торгов — цены из карточки не берём")
+        return
     # полные фото лота: download/<id>/<файл>.jpg (файлы *_thumb_* — миниатюры)
     lot["photos"] = [urljoin("https://m-ets.ru/", u) for u in dict.fromkeys(
         re.findall(r'["\'(]((?:https?://m-ets\.ru/|/)?download/\d+/[^"\')\s]+\.(?:jpe?g|png|webp))', t, re.I))
         if "_thumb_" not in u]
-    og = re.search(r'og:title" content="(?:Купить\s+)?([^"]*?)(?:\.\s*Лот:[^"]*)?"', t)
     if og and not lot.get("title"):
         lot["title"] = strip_html(og.group(1))
     t = strip_html(re.sub(r"<script.*?</script>", "", t, flags=re.S))
@@ -678,6 +694,8 @@ def nis_detail(row, b, region):
 # и страницы лотов; фильтры региона/цены и /api/ сайт роботам не разрешает — их не трогаем.
 SCAN_BASE = "https://scanlot.ru"
 SCAN_CACHE_FILE = DATA / "scan_cache.json"
+SCAN_ROWS_FILE = DATA / "scan_rows.json"   # каталог целиком: один обход на «Торги Сканлот» и «дорогие лоты»
+SCAN_ROWS_HOURS = 5
 SCAN_CACHE_DAYS = 3        # карточку лота перечитываем раз в 3 дня (график снижения не меняется)
 SCAN_PAUSE = 1.0           # пауза между запросами к сайту, с
 SCAN_MARKET_MINUTES = 45  # сверка цен с Дромом для ScanLot — не дольше (остальное в следующий раз, цены в кэше)
@@ -689,12 +707,23 @@ SCAN_FINISHED = re.compile(r"состоял|заверш|отмен|приост
 
 def scan_list():
     """Карточки каталога ScanLot «Публичное предложение»: id, путь, цена, «Марка Модель, год», регион."""
+    if SCAN_ROWS_FILE.exists() and time.time() - SCAN_ROWS_FILE.stat().st_mtime < SCAN_ROWS_HOURS * 3600:
+        rows = json.loads(SCAN_ROWS_FILE.read_text())
+        log(f"ScanLot: каталог уже прочитан сегодня — {len(rows)} лотов")
+        return rows
     rows, seen, page, last = [], set(), 1, None
     s = requests.Session()
     s.headers["User-Agent"] = UA
     while page <= 1000:
-        r = s.get(SCAN_BASE + "/", params={"auction_type": "публичн", "page": str(page)}, timeout=60)
-        r.raise_for_status()
+        for attempt in range(5):           # обрыв на одной из сотен страниц не должен срывать весь обход
+            try:
+                r = s.get(SCAN_BASE + "/", params={"auction_type": "публичн", "page": str(page)}, timeout=60)
+                r.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == 4:
+                    raise
+                time.sleep(15 * (attempt + 1))
         if last is None:
             last = max([1] + [int(x) for x in re.findall(r"[?&]page=(\d{1,4})", r.text)])
         found = 0
@@ -723,6 +752,8 @@ def scan_list():
         log(f"ScanLot: каталог оборвался на странице {page} из {last}")
         _scan_incomplete[0] = True
     log(f"ScanLot: {len(rows)} лотов публичного предложения, страниц {min(page, last)}")
+    if not _scan_incomplete[0]:
+        SCAN_ROWS_FILE.write_text(json.dumps(rows, ensure_ascii=False))
     return rows
 
 
@@ -1861,7 +1892,10 @@ def main():
             items = with_retries("ЦДТ", cdt_list)
             if items:
                 with ThreadPoolExecutor(6) as ex:
-                    lots += [x for x in ex.map(cdt_detail, items) if x]
+                    full = [x for x in ex.map(cdt_detail, items) if x]
+                if len(full) < len(items) / 2:     # список есть, а карточки не читаются — площадка сменила страницы
+                    SOURCE_STATUS["ЦДТ"] = {"ok": False, "count": len(full), "kind": "parse"}
+                lots += full
         if USE_METS and not only_nis:
             lots += with_retries("МЭТС", mets_list) or []
         if USE_TG and not only_nis:
@@ -1877,6 +1911,9 @@ def main():
         if len(uniq) != len(lots):
             log(f"Убраны повторы лотов: {len(lots) - len(uniq)}")
         lots = list(uniq.values())
+        # снимок собранного — для «дорогих лотов» (lux.py), чтобы не опрашивать площадки второй раз
+        if not only_scan:
+            (DATA / f"last_lots_{'nis' if only_nis else 'main'}.json").write_text(json.dumps(lots, ensure_ascii=False))
         # расстояние до региона
         for lot in lots:
             lot["km"] = region_km(lot)

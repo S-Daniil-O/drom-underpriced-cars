@@ -18,7 +18,8 @@ from pathlib import Path
 import requests
 
 TOKEN = os.environ["TORGI_BOT_TOKEN"]
-CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis": "ТОРГИ НИС", "torgi_scan": "Торги Сканлот"}
+CHANNELS = {"torgi": "основной канал и горящие", "torgi_nis": "ТОРГИ НИС", "torgi_scan": "Торги Сканлот",
+            "torgi_lux": "дорогие лоты"}
 KNOWN = {"ЦДТ", "МЭТС", "ТоргГрупп", "НИС", "Сканлот"}
 
 
@@ -32,6 +33,8 @@ def kind(s):
     if k == "antibot":
         return ("закрылась проверкой браузера (DDoS-Guard) — в браузере открывается, а программе не отдаёт данные. "
                 "Обходить защиту не будем; по «Моим лотам» бот работает по последнему известному графику")
+    if k == "parse":
+        return "открывается, но карточки лотов не читаются — похоже, изменила сайт"
     if k == "timeout":
         return "не ответила вовремя"
     if k == "http" and isinstance(code, int):

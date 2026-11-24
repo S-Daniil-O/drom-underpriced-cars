@@ -26,6 +26,8 @@ POSTED = os.path.join(WORK, "data", "posted_from_state.json")
 POSTED_HOT = os.path.join(WORK, "data", "posted_hot_from_state.json")
 QUEUE_NIS = os.path.join(WORK, "queue_nis")     # отдельный канал «ТОРГИ НИС» (nistp.ru)
 POSTED_NIS = os.path.join(WORK, "data", "posted_nis_from_state.json")
+QUEUE_LUX = os.path.join(WORK, "queue_lux")     # канал «дорогие лоты» (со всех площадок, вся Россия)
+POSTED_LUX = os.path.join(WORK, "data", "posted_lux_from_state.json")
 QUEUE_SCAN = os.path.join(WORK, "queue_scan")   # отдельный канал «Торги Сканлот» (scanlot.ru)
 POSTED_SCAN = os.path.join(WORK, "data", "posted_scan_from_state.json")
 FAVS = os.path.join(WORK, "data", "favs_from_state.json")          # «Мои лоты»
@@ -46,7 +48,7 @@ def self_update():
     try:
         subprocess.run(["git", "-C", CODE_REPO, "pull", "-q", "--ff-only", "origin", "main"],
                        check=True, capture_output=True, text=True, timeout=120)
-        for name in ("torgi_monitor.py", "vin_check.py"):      # vin_check.py — проверка VIN для «Моих лотов»
+        for name in ("torgi_monitor.py", "vin_check.py", "lux.py"):   # vin_check.py — проверка VIN для «Моих лотов», lux.py — «дорогие лоты»
             shutil.copy2(os.path.join(CODE_REPO, "torgi", name), os.path.join(WORK, name))
         new_run = os.path.join(CODE_REPO, "home", "torgi_run.py")
         me = os.path.join(HERE, "torgi_run.py")
@@ -127,6 +129,35 @@ def main():
     else:
         log("очередь не изменилась")
     lock.close()
+
+    # «Дорогие лоты» — после отправки основных каналов; сбой здесь ничего больше не задевает
+    try:
+        try:
+            lux_posted = git("show", "origin/state:torgi_lux/posted.json")
+        except subprocess.CalledProcessError:
+            lux_posted = "{}"
+        with open(POSTED_LUX, "w") as f:
+            f.write(lux_posted)
+        shutil.rmtree(QUEUE_LUX, ignore_errors=True)
+        subprocess.run([sys.executable, "-u", os.path.join(WORK, "lux.py"), "daily", QUEUE_LUX, POSTED_LUX,
+                        os.path.join(QUEUE, "active.json"), os.path.join(QUEUE_NIS, "active.json")],
+                       cwd=WORK, env=env, timeout=2 * 3600)
+        if os.path.exists(os.path.join(QUEUE_LUX, "queue.json")):
+            lock = open(os.path.join(HERE, "inbox.lock"), "w")
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            git("fetch", "-q", "origin", "inbox")
+            git("reset", "-q", "--hard", "origin/inbox")
+            dest = os.path.join(INBOX_REPO, "inbox", "torgi_lux")
+            shutil.rmtree(dest, ignore_errors=True)
+            shutil.copytree(QUEUE_LUX, dest)
+            git("add", "-A", "inbox/torgi_lux")
+            if git("status", "--porcelain").strip():
+                git("commit", "-q", "-m", "inbox: torgi_lux")
+                git("push", "-q", "origin", "HEAD:inbox")
+                log("очередь «дорогие лоты» отправлена в ветку inbox → GitHub опубликует")
+            lock.close()
+    except Exception as e:  # noqa: BLE001
+        log(f"«дорогие лоты» не собраны: {type(e).__name__}: {e}")
 
     # «Торги Сканлот» — после отправки остальных каналов: сверка цен с Дромом для тысяч лотов
     # бывает долгой и не должна задерживать основной канал, «горящие» и НИС.
