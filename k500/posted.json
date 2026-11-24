@@ -10058,5 +10058,20 @@
     "mileage_km": 250000,
     "owners_display": "4 и более",
     "image_url": "https://s31.auto.drom.ru/photo/v2/BzrNhTuJ4dd0RtOu6LhMxZN2K8POYPYE432MB9EBW4VD1ULxpBHeJcFqHmI0i0uc_HPbL4vgJMqC3RY_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chery/bonus/215600522.html": {
+    "posted_at": "2026-11-24T14:04:22.872353+00:00",
+    "message_id": 719,
+    "deleted_at": null,
+    "brand": "Chery",
+    "model": "Bonus A13",
+    "year": 2011,
+    "price": 215000,
+    "median_price": 258749.99999999997,
+    "median_sample_size": 2921,
+    "price_rating": "нормальная цена",
+    "mileage_km": 159000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/YLydU4k5ywIelkJjiroWD2Kvfq4Z0Nq_sAOtC3wzXaMMQBOBsTgltQhCE81xUG2XnE8C7yBZwusFQKhY/gen272wb.jpg"
   }
 }
