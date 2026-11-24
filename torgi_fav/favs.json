@@ -4995,10 +4995,14 @@
    "sent": {},
    "btn": 4,
    "head": 2330,
-   "msgs": [],
+   "msgs": [
+    2360
+   ],
    "topic": 2328,
    "title": "Lada Granta, 2025 · №68",
-   "tried": true
+   "tried": true,
+   "ap_done": "2026-11-24",
+   "ap_ok": true
   },
   "cdt-396879": {
    "n": 69,
