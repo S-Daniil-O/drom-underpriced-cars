@@ -9522,7 +9522,7 @@
   "https://auto.drom.ru/voronezh/mitsubishi/lancer/844139319.html": {
     "posted_at": "2026-11-21T13:15:34.961951+00:00",
     "message_id": 683,
-    "deleted_at": null,
+    "deleted_at": "2026-11-24T13:16:51.935212+00:00",
     "brand": "Mitsubishi",
     "model": "Lancer",
     "year": 2006,
@@ -10043,5 +10043,20 @@
     "mileage_km": 171000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/UsTBdCJ9Ixidh41YLC-hUhAW7AwwruZ7cRIGOXjKVX__mxtr5CF3YZ-WJ8urER-u0exwacXYE-sI4ZL_/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2113/339576913.html": {
+    "posted_at": "2026-11-24T13:19:23.923723+00:00",
+    "message_id": 718,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2113 Самара",
+    "year": 2005,
+    "price": 80000,
+    "median_price": 103499.99999999999,
+    "median_sample_size": 1740,
+    "price_rating": "отличная цена",
+    "mileage_km": 250000,
+    "owners_display": "4 и более",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/BzrNhTuJ4dd0RtOu6LhMxZN2K8POYPYE432MB9EBW4VD1ULxpBHeJcFqHmI0i0uc_HPbL4vgJMqC3RY_/gen272wb.jpg"
   }
 }
