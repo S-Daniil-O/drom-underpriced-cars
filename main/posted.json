@@ -4953,5 +4953,35 @@
     "mileage_km": 238300,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/13922065/61a24af207dbdc95e3c953da654b7255/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/174628108.html": {
+    "posted_at": "2026-11-24T11:33:45.058698+00:00",
+    "message_id": 361,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2007,
+    "price": 620000,
+    "median_price": 747500.0,
+    "median_sample_size": 2216,
+    "price_rating": "нормальная цена",
+    "mileage_km": 298000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/OfrjkQ1yhZkB1FjiR7LKQ8T_P3V7WcvDoKKwg6tzU9jic9R6n3UVpI4L8CZ94b4o9HFoTKIL2w5kKF8v/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/camry/117513504.html": {
+    "posted_at": "2026-11-24T11:33:47.000366+00:00",
+    "message_id": 362,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2006,
+    "price": 900000,
+    "median_price": 1100000.0,
+    "median_sample_size": 578,
+    "price_rating": "нормальная цена",
+    "mileage_km": 360000,
+    "owners_display": null,
+    "image_url": "https://s12.auto.drom.ru/photo/v2/ocU1pRdiLi78S7GZROeNlnYC0BIImoRA_VPBJyJWmxDVfpUKWfxqpHOidtvvEaGNbSyyb1E30eWx3bzb/gen272wb.jpg"
   }
 }
