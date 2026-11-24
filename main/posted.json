@@ -4983,5 +4983,20 @@
     "mileage_km": 360000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/ocU1pRdiLi78S7GZROeNlnYC0BIImoRA_VPBJyJWmxDVfpUKWfxqpHOidtvvEaGNbSyyb1E30eWx3bzb/gen272wb.jpg"
+  },
+  "autoru_1160904525-cb63c0bf": {
+    "posted_at": "2026-11-24T12:18:55.818290+00:00",
+    "message_id": 363,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2015,
+    "price": 560000,
+    "median_price": 894304.25,
+    "median_sample_size": 9,
+    "price_rating": null,
+    "mileage_km": 85000,
+    "owners_display": "2",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/17698736/e2cd6a212b520ae522cfb1a20380461e/1200x900n"
   }
 }
