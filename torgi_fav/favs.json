@@ -4977,10 +4977,26 @@
    "vc_text": "🔎 <b>Проверка по VIN — лот №67</b>\n<code>TMBLB25L0D6080067</code>\n\n✅ Лизинг не найден\n🔨 Торги банкротства с этим VIN: 3 (раньше выставлялась 2 раза, не состоялись: 2)\n   • 11.09.2026–15.10.2026 открытый аукцион, не состоялись · <a href=\"https://fedresurs.ru/biddings/02e634a9-52d7-4fc6-b0a2-ca1cbf34321b\">233424-МЭТС-1</a>\n   • 16.10.2026–20.11.2026 открытый аукцион, не состоялись · <a href=\"https://fedresurs.ru/biddings/b4ccff9e-3144-48f4-b3e2-6c66ea76bcb8\">240491-МЭТС-1</a>\n   • 23.11.2026–11.01.2027 публичное предложение, открыт прием заявок · <a href=\"https://fedresurs.ru/biddings/fe2ef084-d343-4efb-9c7c-14dd3da00965\">247682-МЭТС-1</a> ← этот лот\n\nНе проверено (там капча): <a href=\"https://xn--90adear.xn--p1ai/check/auto\">ГИБДД</a> — владельцы, ДТП, ограничения, розыск · <a href=\"https://www.reestr-zalogov.ru/search\">реестр залогов</a>",
    "photos_done": true,
    "hit_target": true
+  },
+  "mets-245987-1": {
+   "n": 68,
+   "url": "https://m-ets.ru/245987-1",
+   "name": "Lada Granta, 2025",
+   "vin": "XTA219070S1184117",
+   "target": 765000,
+   "card": 2329,
+   "added": "2026-11-24T13:40",
+   "end": null,
+   "sent": {},
+   "btn": 4,
+   "head": 2330,
+   "msgs": [],
+   "topic": 2328,
+   "title": "Lada Granta, 2025 · №68"
   }
  },
- "offset": 177674559,
- "seq": 67,
+ "offset": 177674561,
+ "seq": 68,
  "forum": -1004498088083,
  "owners": [
   1188456401
