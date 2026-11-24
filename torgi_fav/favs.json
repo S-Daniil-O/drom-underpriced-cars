@@ -5194,10 +5194,26 @@
    "hit_target": true,
    "ap_done": "2026-11-24",
    "ap_ok": true
+  },
+  "cdt-394560": {
+   "n": 73,
+   "url": "https://torgi.cdtrf.ru/trades/394560",
+   "name": "Kia Cerato, 2020",
+   "vin": "XWEFB416ALC000415",
+   "target": 1278000,
+   "card": 2373,
+   "added": "2026-11-24T21:22",
+   "end": "2027-02-09T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2374,
+   "msgs": [],
+   "topic": 2372,
+   "title": "Kia Cerato, 2020 · до 09.02 · №73"
   }
  },
- "offset": 177674600,
- "seq": 72,
+ "offset": 177674601,
+ "seq": 73,
  "forum": -1004498088083,
  "owners": [
   1188456401
