@@ -5127,10 +5127,26 @@
    "msgs": [],
    "topic": 2361,
    "title": "Lada Vesta, 2023 · №71"
+  },
+  "cdt-393598": {
+   "n": 72,
+   "url": "https://torgi.cdtrf.ru/trades/393598",
+   "name": "Tank 500, 2023",
+   "vin": "LGWFF9A64PM605200",
+   "target": 3690000,
+   "card": 2365,
+   "added": "2026-11-24T21:20",
+   "end": "2026-12-23T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2366,
+   "msgs": [],
+   "topic": 2364,
+   "title": "Tank 500, 2023 · до 23.12 · №72"
   }
  },
- "offset": 177674595,
- "seq": 71,
+ "offset": 177674596,
+ "seq": 72,
  "forum": -1004498088083,
  "owners": [
   1188456401
