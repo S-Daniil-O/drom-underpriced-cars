@@ -5333,10 +5333,26 @@
    "topic": 2402,
    "title": "Kia Optima, 2019 · до 24.02 · №75",
    "tried": true
+  },
+  "cdt-393081": {
+   "n": 76,
+   "url": "https://torgi.cdtrf.ru/trades/393081",
+   "name": "Kia Rio, 2019",
+   "vin": "Z94C241ABKR138527",
+   "target": 800000,
+   "card": 2406,
+   "added": "2026-11-24T21:31",
+   "end": "2026-12-22T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2407,
+   "msgs": [],
+   "topic": 2405,
+   "title": "Kia Rio, 2019 · до 22.12 · №76"
   }
  },
- "offset": 177674609,
- "seq": 75,
+ "offset": 177674610,
+ "seq": 76,
  "forum": -1004498088083,
  "owners": [
   1188456401
