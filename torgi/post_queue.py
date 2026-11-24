@@ -344,6 +344,21 @@ def apply_edits(edits, posted, posted_file):
         log(f"исправлено постов: {n} из {len(edits)}")
 
 
+def car_keys(text):
+    """По чему узнаём одну и ту же машину в постах: VIN и ссылки на конкретный лот (с номером в адресе)."""
+    vin = re.search(r"^VIN: ([A-HJ-NPR-Z0-9]{17})\b", text, re.M)
+    urls = {u.rstrip("/") for u in re.findall(r"^(?:Лот|На площадке торгов): (https://\S+)", text, re.M)
+            if re.search(r"^https://[^/]+/.*\d", u)}
+    return vin.group(1) if vin else None, urls
+
+
+def same_car(a, b):
+    """VIN есть у обоих — решает только он: в одних торгах бывает несколько машин с общей ссылкой."""
+    if a[0] and b[0]:
+        return a[0] == b[0]
+    return bool(a[1] & b[1])
+
+
 def main():
     if sys.argv[1] == "--cleanup":
         cleanup(Path(sys.argv[2]), Path(sys.argv[3]))
@@ -365,12 +380,33 @@ def main():
         log("очереди нет — нечего публиковать")
         return
     queue = json.loads(queue_file.read_text())
+    # вчерашнюю очередь срочного канала не публикуем: за сутки торги могли закончиться (created — время МСК)
+    max_age = float(os.environ.get("TORGI_QUEUE_MAX_AGE_H") or 0)
+    if max_age:
+        from datetime import datetime, timedelta, timezone
+        msk = datetime.now(timezone.utc).replace(tzinfo=None) + timedelta(hours=3)
+        try:
+            age = (msk - datetime.strptime(queue.get("created") or "", "%Y-%m-%d %H:%M")).total_seconds() / 3600
+        except ValueError:
+            age = None
+        if age is None or age > max_age:
+            log(f"очередь старая или без даты ({queue.get('created')}) — не публикую")
+            return
     posted = json.loads(posted_file.read_text()) if posted_file.exists() else {}
     apply_edits(queue.get("edits") or [], posted, posted_file)
     todo = [i for i in queue["items"] if i["id"] not in posted]
     log(f"очередь от {queue.get('created')}: {len(queue['items'])}, новых: {len(todo)}")
     cap_file = posted_file.with_name("captions.json")
     captions = json.loads(cap_file.read_text()) if cap_file.exists() else {}
+    # канал собирается с нескольких площадок, а ScanLot показывает и их лоты: одну машину дважды не публикуем
+    dedup = os.environ.get("TORGI_DEDUP_CARS") == "1"
+    live = {}
+    if dedup:
+        done_file = posted_file.with_name("cleaned.json")
+        done = json.loads(done_file.read_text()) if done_file.exists() else {}
+        for lid, mid in posted.items():          # завершённые не в счёт: машину могли выставить снова
+            if isinstance(mid, int) and str(mid) not in done and str(mid) in captions:
+                live[mid] = (lid.split("#")[0], car_keys(captions[str(mid)]["text"]))
     n = fails = 0
     done_urls = set()
     for k, item in enumerate(todo):
@@ -384,11 +420,17 @@ def main():
             log(f"пропуск повтора: {item['id']}")
             continue
         done_urls.add(url_key)
+        base, keys = item["id"].split("#")[0], car_keys(item["caption"])
+        # «последний шанс» (#last) — намеренный второй пост, его не режем
+        if dedup and not item["id"].endswith("#last") and any(b != base and same_car(keys, k) for b, k in live.values()):
+            log(f"пропуск: машина уже в канале с другой площадки — {item['id']}")
+            continue
         sent = send(item, qdir)
         if sent:
             msg_id = sent["id"]
             posted[item["id"]] = msg_id
             captions[str(msg_id)] = {"text": item["caption"], "photo": sent["photo"]}
+            live[msg_id] = (base, keys)
             if sent.get("album"):
                 captions[str(msg_id)]["album"] = sent["album"]
             for other in item.get("also_ids") or []:   # «последний шанс» закрывает и обычный горящий пост

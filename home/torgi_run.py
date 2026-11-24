@@ -28,6 +28,7 @@ QUEUE_NIS = os.path.join(WORK, "queue_nis")     # отдельный канал 
 POSTED_NIS = os.path.join(WORK, "data", "posted_nis_from_state.json")
 QUEUE_LUX = os.path.join(WORK, "queue_lux")     # канал «дорогие лоты» (со всех площадок, вся Россия)
 POSTED_LUX = os.path.join(WORK, "data", "posted_lux_from_state.json")
+QUEUE_SCAN_HOT = os.path.join(WORK, "queue_scan_hot")   # крайние предложения со ScanLot → «Крайние предложения торги»
 QUEUE_SCAN = os.path.join(WORK, "queue_scan")   # отдельный канал «Торги Сканлот» (scanlot.ru)
 POSTED_SCAN = os.path.join(WORK, "data", "posted_scan_from_state.json")
 FAVS = os.path.join(WORK, "data", "favs_from_state.json")          # «Мои лоты»
@@ -169,18 +170,21 @@ def main():
     with open(POSTED_SCAN, "w") as f:
         f.write(scan_posted)
     shutil.rmtree(QUEUE_SCAN, ignore_errors=True)
+    shutil.rmtree(QUEUE_SCAN_HOT, ignore_errors=True)
     subprocess.run([sys.executable, "-u", os.path.join(WORK, "torgi_monitor.py"), "--source=scan", f"--queue={QUEUE_SCAN}",
+                    f"--queue-hot={QUEUE_SCAN_HOT}",
                     f"--active={os.path.join(QUEUE_SCAN, 'active.json')}"], cwd=WORK, env=dict(env, TORGI_POSTED_FILE=POSTED_SCAN))
     lock = open(os.path.join(HERE, "inbox.lock"), "w")
     fcntl.flock(lock, fcntl.LOCK_EX)
     git("fetch", "-q", "origin", "inbox")
     git("reset", "-q", "--hard", "origin/inbox")
-    dest = os.path.join(INBOX_REPO, "inbox", "torgi_scan")
-    shutil.rmtree(dest, ignore_errors=True)
-    if os.path.exists(QUEUE_SCAN):
-        shutil.copytree(QUEUE_SCAN, dest)
-    if os.path.exists(dest) or git("ls-files", "inbox/torgi_scan").strip():
-        git("add", "-A", "inbox/torgi_scan")
+    for src, name in ((QUEUE_SCAN, "torgi_scan"), (QUEUE_SCAN_HOT, "torgi_scan_hot")):
+        dest = os.path.join(INBOX_REPO, "inbox", name)
+        shutil.rmtree(dest, ignore_errors=True)
+        if os.path.exists(src):
+            shutil.copytree(src, dest)
+        if os.path.exists(dest) or git("ls-files", f"inbox/{name}").strip():
+            git("add", "-A", f"inbox/{name}")
     if git("status", "--porcelain").strip():
         git("commit", "-q", "-m", "inbox: torgi_scan")
         git("push", "-q", "origin", "HEAD:inbox")

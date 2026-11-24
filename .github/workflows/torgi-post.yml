@@ -9,7 +9,7 @@ name: torgi-post
 on:
   push:
     branches: [inbox]
-    paths: ["inbox/torgi/queue.json", "inbox/torgi_hot/queue.json", "inbox/torgi/active.json", "inbox/torgi_nis/queue.json", "inbox/torgi_scan/queue.json", "inbox/torgi_lux/queue.json"]
+    paths: ["inbox/torgi/queue.json", "inbox/torgi_hot/queue.json", "inbox/torgi/active.json", "inbox/torgi_nis/queue.json", "inbox/torgi_scan/queue.json", "inbox/torgi_scan_hot/queue.json", "inbox/torgi_lux/queue.json"]
   workflow_dispatch:
 
 permissions:
@@ -67,6 +67,7 @@ jobs:
         if: vars.TORGI_HOT_CHAT_ID != ''
         env:
           TORGI_CHAT_ID: ${{ vars.TORGI_HOT_CHAT_ID }}
+          TORGI_DEDUP_CARS: "1"
         run: |
           mkdir -p _state/torgi_hot
           test -f _state/torgi_hot/posted.json || echo '{}' > _state/torgi_hot/posted.json
@@ -77,6 +78,18 @@ jobs:
           mkdir -p _state/torgi
           test -f _state/torgi/posted.json   # без posted.json нельзя: будут повторы
           python torgi/post_queue.py _inbox/inbox/torgi _state/torgi/posted.json
+      - name: Крайние предложения со ScanLot (тот же закрытый канал)
+        if: always() && vars.TORGI_HOT_CHAT_ID != ''
+        continue-on-error: true
+        env:
+          TORGI_CHAT_ID: ${{ vars.TORGI_HOT_CHAT_ID }}
+          TORGI_DEDUP_CARS: "1"          # ScanLot показывает и лоты ЦДТ/МЭТС/ТоргГрупп — без повторов по VIN
+          TORGI_QUEUE_MAX_AGE_H: "12"    # вчерашнюю очередь (запуск от чужого push) не публиковать
+        run: |
+          test -f _state/torgi_hot/posted.json
+          A=_inbox/inbox/torgi_scan/active.json
+          if [ -f "$A" ]; then python torgi/post_queue.py --cleanup "$A" _state/torgi_hot/posted.json || true; fi
+          if [ -f _inbox/inbox/torgi_scan_hot/queue.json ]; then python torgi/post_queue.py _inbox/inbox/torgi_scan_hot _state/torgi_hot/posted.json; fi
       - name: Сканлот — очистка и публикация (канал «Торги Сканлот»)
         if: always() && vars.TORGI_SCAN_CHAT_ID != ''
         continue-on-error: true   # последним: публикация сотни постов долгая, не задерживает остальные каналы

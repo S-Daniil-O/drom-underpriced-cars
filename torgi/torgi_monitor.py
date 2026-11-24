@@ -803,7 +803,7 @@ def scan_detail(row):
     etp_url = (re.search(r'<a href="(https://[^"]+)" class="btn btn-primary"', s) or [None, ""])[1]
     desc = strip_html((re.search(r'<div class="description-box">(.*?)</div>', s, re.S) or [None, ""])[1])
     status = strip_html((re.search(r'<div class="trade-status[^"]*">(.*?)</div></div>', s, re.S) or [None, ""])[1])
-    image = ld.get("image") if isinstance(ld.get("image"), str) else None
+    image = ld.get("image") if isinstance(ld.get("image"), str) and "/s3-images/" in ld["image"] else None   # без фото сайт отдаёт свой логотип
     name = ld.get("name") or row["title"]
     prices = [x[2] for x in sched]
     now = time.time()
@@ -895,7 +895,7 @@ def scan_recheck(deals, posted, limit):
             if not fresh or SCAN_FINISHED.search(fresh["status"] or ""):
                 gone += 1
                 continue
-            d = {**d, "status": fresh["status"], "current_price": fresh["current_price"]}
+            d = {**d, **{k: fresh[k] for k in ("status", "current_price", "min_price", "schedule", "end_date")}}
         out.append(d)
     log(f"ScanLot: перед публикацией перепроверено {checked}, уже завершены {gone}")
     return out
@@ -1498,8 +1498,9 @@ def hot_caption(d):
         "📝 " + (d.get("description") or d["title"] if d["source"] == "МЭТС" else d["title"])[:300],
         "",
         f"VIN: {d['vin']}" if d.get("vin") else None,
-        f"Площадка: {d['source']}",
+        (f"Площадка: {d['etp'] or 'см. в лоте'} (найдено на ScanLot)" if d["source"] == "Сканлот" else f"Площадка: {d['source']}"),
         f"Лот: {d['url']}",
+        f"На площадке торгов: {d['etp_url']}" if d.get("etp_url") else None,
     ]
     return scrub("\n".join(x for x in lines if x is not None))[:1024]
 
@@ -1582,6 +1583,8 @@ def image_url_ok(url):
     """Фото качаем только с самих площадок (адрес берётся из HTML чужого сайта)."""
     from urllib.parse import urlparse
     u = urlparse(url or "")
+    if u.hostname == "scanlot.ru" and not u.path.startswith("/s3-images/"):   # /static/… — логотип сайта вместо фото
+        return False
     return u.scheme == "https" and (u.hostname or "") in IMAGE_HOSTS
 
 
@@ -1800,13 +1803,17 @@ def write_queue(deals, qdir, limit=0, posted_file=None, cap=None, stats=None):
     for d in todo:
         img = None
         if d.get("image") and image_url_ok(d["image"]):
-            try:
-                r = requests.get(d["image"], headers={"User-Agent": UA}, timeout=60)
-                if r.ok and image_url_ok(r.url) and r.headers.get("content-type", "").startswith("image") and len(r.content) < 5_000_000:
-                    img = f"img/{re.sub(r'[^A-Za-z0-9_-]', '_', d['id'])}.jpg"
-                    (qdir / img).write_bytes(r.content)
-            except requests.RequestException as e:
-                log(f"фото не скачалось ({d['id']}): {e}")
+            for attempt in range(3):      # картинка иногда «зависает», а со второго раза отдаётся сразу
+                try:
+                    r = requests.get(d["image"], headers={"User-Agent": UA}, timeout=20)
+                    if r.ok and image_url_ok(r.url) and r.headers.get("content-type", "").startswith("image") and len(r.content) < 5_000_000:
+                        img = f"img/{re.sub(r'[^A-Za-z0-9_-]', '_', d['id'])}.jpg"
+                        (qdir / img).write_bytes(r.content)
+                    break
+                except requests.RequestException as e:
+                    if attempt == 2:
+                        log(f"фото не скачалось ({d['id']}): {type(e).__name__}")
+                    time.sleep(2)
         items.append({"id": d["id"], "url": d["url"], "caption": cap(d), "image": img,
                       "photo_docs": d.get("photo_docs", []), "also_ids": d.get("also_ids", [])})
     (qdir / "queue.json").write_text(json.dumps(
@@ -1947,6 +1954,8 @@ def main():
         log(f"Подходят по году и состоянию, проверяем рынок: {len(cars)}")
         deals, checked = [], 0
         market_deadline = time.time() + SCAN_MARKET_MINUTES * 60 if "--source=scan" in sys.argv else None
+        if market_deadline:      # на всех времени может не хватить — горящие проверяем первыми
+            cars.sort(key=lambda x: not is_hot(x[0]))
         for lot, car in cars:
             if market_deadline and time.time() > market_deadline:
                 log(f"ScanLot: время на сверку цен вышло — проверено {checked} из {len(cars)}, остальные в следующий раз")
@@ -2010,6 +2019,7 @@ def main():
 
     queue_dir = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--queue=")), None)
     if queue_dir:
+        all_deals = deals          # горящие ищем среди всех: перепроверка ниже касается только очереди своего канала
         if "--source=scan" in sys.argv:
             done = json.loads(POSTED_FILE.read_text()) if POSTED_FILE.exists() else {}
             deals = scan_recheck(deals, done, (limit or MAIN_DAILY_LIMIT) * 2)
@@ -2019,6 +2029,17 @@ def main():
             for d in deals:   # график МЭТС есть только в карточке лота
                 if d["source"] == "МЭТС" and not d.get("schedule"):
                     mets_start_price(d)
+            hp = os.environ.get("TORGI_HOT_POSTED_FILE")
+            hp = Path(hp) if hp else DATA / "torgi_hot_posted.json"
+            if "--source=scan" in sys.argv:
+                # в «Крайние предложения» — по правилам этого канала (мягкий порог «Торгов Сканлот» не действует),
+                # и каждый лот перед публикацией открываем заново: график в кэше до 3 дней старый
+                def fits(d):
+                    return (is_hot(d) and d["min_price"] < d["market"]["price"] * MAX_RATIO
+                            and (not d.get("year") or d["year"] >= MIN_YEAR))
+                done_hot = json.loads(hp.read_text()) if hp.exists() else {}
+                fresh = [d for d in all_deals if fits(d) and d["id"] not in done_hot]
+                deals = [d for d in scan_recheck(fresh, done_hot, len(fresh)) if fits(d)]
             hot = sorted((d for d in deals if is_hot(d)), key=lambda d: hot_info(d)["end"])
             # «последний шанс» — отдельные посты с ключом <id>#last, идут первыми
             # also_ids: при публикации «последнего шанса» лот отмечается и как обычный горящий,
@@ -2028,8 +2049,6 @@ def main():
             last_base = {d["id"] for d in hot if is_last_call(d)}
             hot = last + [d for d in hot if d["id"] not in last_base]
             log(f"Горящих лотов (до конца {HOT_MIN_DAYS}–{HOT_MAX_DAYS} дн., цена ≤ {HOT_MAX_PRICE_RATIO}× мин.): {len(hot)}")
-            hp = os.environ.get("TORGI_HOT_POSTED_FILE")
-            hp = Path(hp) if hp else DATA / "torgi_hot_posted.json"
             # статистика отбора — видна в inbox/torgi_hot/queue.json на GitHub (без доступа к iMac)
             infos = [(d, hot_info(d)) for d in deals]
             with_s = [(d, h) for d, h in infos if h and h["current_price"] is not None]
