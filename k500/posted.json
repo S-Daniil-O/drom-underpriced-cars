@@ -10013,5 +10013,20 @@
     "mileage_km": 281000,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/17999629/0af84c20abf673792b392888fc482678/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/hyundai/accent/530179731.html": {
+    "posted_at": "2026-11-24T07:18:13.116105+00:00",
+    "message_id": 716,
+    "deleted_at": null,
+    "brand": "Hyundai",
+    "model": "Accent",
+    "year": 2004,
+    "price": 245000,
+    "median_price": 390812.49999999994,
+    "median_sample_size": 740,
+    "price_rating": "хорошая цена",
+    "mileage_km": 300000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/TNg5gqHDrDHOQqzop3yXGKCLrDHJWltbXWUWhEyL3AajqsbfHYRUwaB8opNO0ERPsey1_4hXHfncdwcA/gen272wb.jpg"
   }
 }
