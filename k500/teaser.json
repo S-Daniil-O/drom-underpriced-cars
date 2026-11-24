@@ -3258,13 +3258,6 @@
     "vk_post_id": 343,
     "vk_deleted_at": "2026-11-24T21:28:37.132139+00:00"
   },
-  "https://auto.drom.ru/voronezh/opel/vectra/665625347.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-21T21:37:41.733267+00:00"
-  },
   "https://auto.drom.ru/voronezh/lada/2109/819882764.html": {
     "posted_at": "2026-11-22T04:01:29.875256+00:00",
     "message_id": 458,
@@ -3554,5 +3547,12 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-24T21:29:32.978716+00:00"
+  },
+  "https://auto.drom.ru/voronezh/opel/vectra/665625347.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-24T21:45:06.357025+00:00"
   }
 }
