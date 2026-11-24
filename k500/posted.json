@@ -9657,7 +9657,7 @@
   "https://auto.drom.ru/voronezh/kia/picanto/868422551.html": {
     "posted_at": "2026-11-21T22:07:48.229504+00:00",
     "message_id": 692,
-    "deleted_at": null,
+    "deleted_at": "2026-11-24T22:13:42.350162+00:00",
     "brand": "Kia",
     "model": "Picanto",
     "year": 2006,
@@ -10103,5 +10103,35 @@
     "mileage_km": 175000,
     "owners_display": "4 и более",
     "image_url": "https://s12.auto.drom.ru/photo/v2/3kiqKFk861bVwEtDADjHyTGo8hHU7dEmrXpMur2Y9GgAIYMCL5ek-104RTxAkT_jgeZkusXuRT9eHMXA/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra/710178505.html": {
+    "posted_at": "2026-11-24T22:16:06.884926+00:00",
+    "message_id": 722,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra",
+    "year": 2010,
+    "price": 380000,
+    "median_price": 452025.0,
+    "median_sample_size": 879,
+    "price_rating": "отличная цена",
+    "mileage_km": 297000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/yfsI5xUt7v9oZVJcRULNS-w1ibAEoNk8Lfp649N2y2b776mteGoD6Dwzu9905P-irEKwj4Xv8SoJip6a/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/toyota/corolla_ii/236812139.html": {
+    "posted_at": "2026-11-24T22:16:09.929382+00:00",
+    "message_id": 723,
+    "deleted_at": null,
+    "brand": "Toyota",
+    "model": "Corolla II",
+    "year": 1996,
+    "price": 180000,
+    "median_price": 220000.0,
+    "median_sample_size": 1250,
+    "price_rating": "нормальная цена",
+    "mileage_km": 490000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/qdMoby0J8j0wJ2-5AYiOxCSJXSjs3xIOyy3Pz1CTZu4BTSl-XutxDRvy1clMy6a0acdEX3Hf-kBQsWru/gen272wb.jpg"
   }
 }
