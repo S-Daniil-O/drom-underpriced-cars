@@ -3563,5 +3563,17 @@
     "checked_at": "2026-11-25T04:53:07.210394+00:00",
     "vk_post_id": 366,
     "vk_deleted_at": null
+  },
+  "_pitch_2026-11-25": {
+    "posted_at": "2026-11-25T09:07:02.828058+00:00",
+    "message_id": 487,
+    "deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/peugeot/206/649462311.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-25T09:08:55.458250+00:00"
   }
 }
