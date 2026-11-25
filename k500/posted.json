@@ -10178,5 +10178,35 @@
     "mileage_km": 170000,
     "owners_display": "3",
     "image_url": "https://s31.auto.drom.ru/photo/v2/5KkPsDsELR8XlIIhdOlf9CA70fg1qzryGVImAyleZnMHH-_wfOwx7zazqYt_4XXFXn8NJpncuJ8XvRuT/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2112/252424822.html": {
+    "posted_at": "2026-11-25T10:09:30.503601+00:00",
+    "message_id": 727,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2112",
+    "year": 2007,
+    "price": 175000,
+    "median_price": 241230.0,
+    "median_sample_size": 4936,
+    "price_rating": "хорошая цена",
+    "mileage_km": 236000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5OzwjS7Y2uafpwApKmR0nwqo-Bd98Qm3JjwNWRNty2QdJ3zcQvmvmt2pbKJHVyhxrkh2S4pqCE1ciwD7/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/fiat/punto/613616550.html": {
+    "posted_at": "2026-11-25T10:09:33.884984+00:00",
+    "message_id": 728,
+    "deleted_at": null,
+    "brand": "Fiat",
+    "model": "Punto",
+    "year": 1998,
+    "price": 80000,
+    "median_price": 100000.0,
+    "median_sample_size": 521,
+    "price_rating": null,
+    "mileage_km": 250000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/dLXKZs8fHILws6TMhstEDT1P690XuMlJN0JgoDFMshH2jCk1M5nZUVbgFIqGXeezGypcm2X3np5AIZWA/gen272wb.jpg"
   }
 }
