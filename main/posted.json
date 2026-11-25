@@ -5073,5 +5073,20 @@
     "mileage_km": 405000,
     "owners_display": null,
     "image_url": "https://s12.auto.drom.ru/photo/v2/QhfguGx27ze4NQ8V_mCCGlQl9O0Zpdh7eWVysidXWbm07GSmtY32wLEJFiiSdKky2LKBPoahXKTxIXN2/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/subaru/levorg/474473713.html": {
+    "posted_at": "2026-11-25T21:29:38.855298+00:00",
+    "message_id": 369,
+    "deleted_at": null,
+    "brand": "Subaru",
+    "model": "Levorg",
+    "year": 2015,
+    "price": 1450000,
+    "median_price": 1776749.9999999998,
+    "median_sample_size": 247,
+    "price_rating": "нормальная цена",
+    "mileage_km": 63000,
+    "owners_display": "1",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/o32MkalDs6_JpiZQGiUC4joTHAnv7eI8IwPBGnGnV91zWWZEr8QdnnRBCUHQKXHk5IAPxpkTn1Atssht/gen272wb.jpg"
   }
 }
