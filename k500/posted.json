@@ -10163,5 +10163,20 @@
     "mileage_km": 20657,
     "owners_display": "3",
     "image_url": "https://s12.auto.drom.ru/photo/v2/HCiFLAvzTDcQRTS3kYf9EU3RIdQSIBF1nsImIREXezevaMe2_kDjTL15bmh1vilDPN7ZkYwNtgGWPrmP/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/555957172.html": {
+    "posted_at": "2026-11-25T08:54:39.642907+00:00",
+    "message_id": 726,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2012,
+    "price": 205000,
+    "median_price": 341091.91875,
+    "median_sample_size": 4309,
+    "price_rating": "нормальная цена",
+    "mileage_km": 170000,
+    "owners_display": "3",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/5KkPsDsELR8XlIIhdOlf9CA70fg1qzryGVImAyleZnMHH-_wfOwx7zazqYt_4XXFXn8NJpncuJ8XvRuT/gen272wb.jpg"
   }
 }
