@@ -5609,7 +5609,9 @@
    "msgs": [],
    "topic": 2512,
    "title": "Omoda S5, 2023 · до 11.02 · №79",
-   "tried": true
+   "tried": true,
+   "requests": 0,
+   "req_max": 0
   }
  },
  "offset": 177674699,
@@ -5629,7 +5631,7 @@
   "-1003489771210": "дорогие лоты"
  },
  "audit_day": "2026-11-26",
- "req_cursor": 29799,
+ "req_cursor": 29825,
  "ap_day": {
   "date": "2026-11-24",
   "n": 5
