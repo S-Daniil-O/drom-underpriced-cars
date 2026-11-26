@@ -10208,5 +10208,20 @@
     "mileage_km": 250000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/dLXKZs8fHILws6TMhstEDT1P690XuMlJN0JgoDFMshH2jCk1M5nZUVbgFIqGXeezGypcm2X3np5AIZWA/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/150737844.html": {
+    "posted_at": "2026-11-26T15:39:37.718944+00:00",
+    "message_id": 729,
+    "deleted_at": null,
+    "brand": "Daewoo",
+    "model": "Nexia",
+    "year": 2008,
+    "price": 110000,
+    "median_price": 135405.0,
+    "median_sample_size": 3780,
+    "price_rating": null,
+    "mileage_km": 280000,
+    "owners_display": "4 и более",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/cCkzifTtV505UABb3vFQWWVVhaybfzqXL4z7bxcqkkOO7uF3lZQXdcZwrL6B2ff2Ae228nFGGrsoFE6C/gen272wb.jpg"
   }
 }
