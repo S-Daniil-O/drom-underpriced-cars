@@ -5532,10 +5532,26 @@
    "photos_done": true,
    "no_photos": true,
    "hit_target": true
+  },
+  "cdt-390687": {
+   "n": 78,
+   "url": "https://torgi.cdtrf.ru/trades/390687",
+   "name": "Kia Cerato, 2017",
+   "vin": "XWEFK411BHC000412",
+   "target": 1000000,
+   "card": 2498,
+   "added": "2026-11-26T16:27",
+   "end": "2026-12-07T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2499,
+   "msgs": [],
+   "topic": 2497,
+   "title": "Kia Cerato, 2017 · до 07.12 · №78"
   }
  },
- "offset": 177674687,
- "seq": 77,
+ "offset": 177674688,
+ "seq": 78,
  "forum": -1004498088083,
  "owners": [
   1188456401
