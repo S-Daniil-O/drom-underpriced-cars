@@ -5827,10 +5827,26 @@
    "tried": true,
    "requests": 0,
    "req_max": 0
+  },
+  "cdt-383745": {
+   "n": 86,
+   "url": "https://torgi.cdtrf.ru/trades/383745",
+   "name": "https://torgi.cdtrf.ru/trades/383745",
+   "vin": null,
+   "target": null,
+   "card": 2577,
+   "added": "2026-11-28T00:16",
+   "end": null,
+   "sent": {},
+   "btn": 4,
+   "head": null,
+   "msgs": [],
+   "topic": 2576,
+   "title": "Лот №86"
   }
  },
- "offset": 177674718,
- "seq": 85,
+ "offset": 177674719,
+ "seq": 86,
  "forum": -1004498088083,
  "owners": [
   1188456401
