@@ -5163,5 +5163,20 @@
     "mileage_km": 94000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/jYcLM1SvvZ7bx57kVFLYf8hkkgGYvPnkOqItI03VmE-BweWJjdkRflN_tV4skzyPdAl01pIGsmAmLBEq/gen272wb.jpg"
+  },
+  "autoru_1160960279-36d1e803": {
+    "posted_at": "2026-11-27T10:39:50.319641+00:00",
+    "message_id": 375,
+    "deleted_at": null,
+    "brand": "Ford",
+    "model": "Focus",
+    "year": 2012,
+    "price": 760000,
+    "median_price": 962524.7000000001,
+    "median_sample_size": 7,
+    "price_rating": null,
+    "mileage_km": 207000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/20306952/acebf155194f2bb195ccebdc94c7c65b/1200x900n"
   }
 }
