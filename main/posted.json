@@ -5178,5 +5178,20 @@
     "mileage_km": 207000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20306952/acebf155194f2bb195ccebdc94c7c65b/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/touareg/201890689.html": {
+    "posted_at": "2026-11-27T14:46:55.759982+00:00",
+    "message_id": 376,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Touareg",
+    "year": 2007,
+    "price": 830000,
+    "median_price": 1149988.5,
+    "median_sample_size": 2875,
+    "price_rating": "хорошая цена",
+    "mileage_km": 10000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/f2RgsAiXtMGUuPhb7aHIqIDtOEBSd0ZhDk55N4LLPg83Rf_Q5bnLpNJ3rtVCZ-Oytait4tdXmnwhPdyk/gen272wb.jpg"
   }
 }
