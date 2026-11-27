@@ -5787,10 +5787,26 @@
    "photos_done": true,
    "no_photos": true,
    "hit_target": true
+  },
+  "tg-20092": {
+   "n": 84,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/20092",
+   "name": "Nissan X-Trail, 2017",
+   "vin": "Z8NTANT32ES062292",
+   "target": 1200000,
+   "card": 2569,
+   "added": "2026-11-27T16:49",
+   "end": "2027-01-22T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2570,
+   "msgs": [],
+   "topic": 2568,
+   "title": "Nissan X-Trail, 2017 · до 22.01 · №84"
   }
  },
- "offset": 177674712,
- "seq": 83,
+ "offset": 177674713,
+ "seq": 84,
  "forum": -1004498088083,
  "owners": [
   1188456401
