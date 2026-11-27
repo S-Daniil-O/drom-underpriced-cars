@@ -5717,7 +5717,9 @@
    "msgs": [],
    "topic": 2556,
    "title": "Kia Rio, 2021 · до 11.01 · №82",
-   "tried": true
+   "tried": true,
+   "requests": 0,
+   "req_max": 0
   },
   "cdt-385050": {
    "n": 83,
@@ -5840,7 +5842,7 @@
   "-1003489771210": "дорогие лоты"
  },
  "audit_day": "2026-11-27",
- "req_cursor": 31390,
+ "req_cursor": 31411,
  "ap_day": {
   "date": "2026-11-24",
   "n": 5
