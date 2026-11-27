@@ -5804,10 +5804,26 @@
    "topic": 2568,
    "title": "Nissan X-Trail, 2017 · до 22.01 · №84",
    "tried": true
+  },
+  "tg-19196": {
+   "n": 85,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/19196",
+   "name": "Mitsubishi Outlander, 2017",
+   "vin": "Z8TXTGF2WHM022954",
+   "target": 1314000,
+   "card": 2573,
+   "added": "2026-11-27T16:54",
+   "end": "2027-01-14T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2574,
+   "msgs": [],
+   "topic": 2572,
+   "title": "Mitsubishi Outlander, 2017 · до 14.01 · №85"
   }
  },
- "offset": 177674715,
- "seq": 84,
+ "offset": 177674716,
+ "seq": 85,
  "forum": -1004498088083,
  "owners": [
   1188456401
