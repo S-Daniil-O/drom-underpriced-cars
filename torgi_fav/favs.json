@@ -5805,7 +5805,9 @@
    "msgs": [],
    "topic": 2568,
    "title": "Nissan X-Trail, 2017 · до 22.01 · №84",
-   "tried": true
+   "tried": true,
+   "requests": 0,
+   "req_max": 0
   },
   "tg-19196": {
    "n": 85,
@@ -5844,7 +5846,7 @@
   "-1003489771210": "дорогие лоты"
  },
  "audit_day": "2026-11-27",
- "req_cursor": 31707,
+ "req_cursor": 31730,
  "ap_day": {
   "date": "2026-11-24",
   "n": 5
