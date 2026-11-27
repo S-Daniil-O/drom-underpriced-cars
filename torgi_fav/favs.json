@@ -5718,10 +5718,26 @@
    "topic": 2556,
    "title": "Kia Rio, 2021 · до 11.01 · №82",
    "tried": true
+  },
+  "cdt-385050": {
+   "n": 83,
+   "url": "https://torgi.cdtrf.ru/trades/385050",
+   "name": "Lada Vesta, 2024",
+   "vin": "XTAGFL110R0784922",
+   "target": 324900,
+   "card": 2561,
+   "added": "2026-11-27T16:45",
+   "end": "2026-12-16T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2562,
+   "msgs": [],
+   "topic": 2560,
+   "title": "Lada Vesta, 2024 · до 16.12 · №83"
   }
  },
- "offset": 177674708,
- "seq": 82,
+ "offset": 177674709,
+ "seq": 83,
  "forum": -1004498088083,
  "owners": [
   1188456401
