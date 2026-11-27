@@ -5193,5 +5193,20 @@
     "mileage_km": 10000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/f2RgsAiXtMGUuPhb7aHIqIDtOEBSd0ZhDk55N4LLPg83Rf_Q5bnLpNJ3rtVCZ-Oytait4tdXmnwhPdyk/gen272wb.jpg"
+  },
+  "autoru_1160985314-86cc73ad": {
+    "posted_at": "2026-11-27T19:17:31.665819+00:00",
+    "message_id": 377,
+    "deleted_at": null,
+    "brand": "Honda",
+    "model": "Freed",
+    "year": 2017,
+    "price": 1230000,
+    "median_price": 1546396.9375,
+    "median_sample_size": 6,
+    "price_rating": null,
+    "mileage_km": 65000,
+    "owners_display": "1",
+    "image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/6303b25b6ff2a9afb3b70589e39b3e4e/1200x900n"
   }
 }
