@@ -3471,20 +3471,6 @@
     "vk_post_id": 365,
     "vk_deleted_at": "2026-11-27T21:00:46.085107+00:00"
   },
-  "https://auto.drom.ru/voronezh/mitsubishi/lancer_cedia/382856596.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-24T21:29:32.978716+00:00"
-  },
-  "https://auto.drom.ru/voronezh/mitsubishi/galant/394728322.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-24T21:29:32.978716+00:00"
-  },
   "https://auto.drom.ru/voronezh/opel/vectra/665625347.html": {
     "posted_at": null,
     "message_id": null,
@@ -3694,5 +3680,28 @@
     "deleted_at": null,
     "rejected": true,
     "checked_at": "2026-11-27T21:17:54.740436+00:00"
+  },
+  "https://auto.drom.ru/voronezh/daewoo/nexia/507917670.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-27T21:33:15.985488+00:00"
+  },
+  "https://auto.drom.ru/voronezh/mitsubishi/galant/394728322.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-27T21:33:15.985488+00:00"
+  },
+  "https://auto.drom.ru/voronezh/renault/laguna/613395092.html": {
+    "posted_at": "2026-11-27T21:33:23.603036+00:00",
+    "message_id": 502,
+    "deleted_at": null,
+    "rejected": false,
+    "checked_at": "2026-11-27T21:33:23.603036+00:00",
+    "vk_post_id": 376,
+    "vk_deleted_at": null
   }
 }
