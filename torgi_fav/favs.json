@@ -5701,10 +5701,26 @@
    "photos_done": true,
    "no_photos": true,
    "hit_target": true
+  },
+  "tg-18934": {
+   "n": 82,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/18934",
+   "name": "Kia Rio, 2021",
+   "vin": null,
+   "target": 1134000,
+   "card": 2557,
+   "added": "2026-11-27T16:38",
+   "end": "2027-01-11T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2558,
+   "msgs": [],
+   "topic": 2556,
+   "title": "Kia Rio, 2021 · до 11.01 · №82"
   }
  },
- "offset": 177674705,
- "seq": 81,
+ "offset": 177674706,
+ "seq": 82,
  "forum": -1004498088083,
  "owners": [
   1188456401
