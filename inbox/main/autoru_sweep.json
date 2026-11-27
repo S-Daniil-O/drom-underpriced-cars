@@ -1,5 +1,37 @@
 [
 {
+"ad_id": "autoru_1126016011-1a916dd9",
+"source": "autoru",
+"brand": "Honda",
+"model": "Elysion",
+"year": 2006,
+"price": 600000,
+"market_price": 776500,
+"url": "https://auto.ru/cars/used/sale/honda/elysion/1126016011-1a916dd9/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2077878/pJZoEE7uByG8XozYsRGebIFejaXp5EtKH-6FfmVeLJZzgLE5gkjasuxnRqtHbecB4NTZFJv0fdJ0ca7pGP9hoLSogEEu-4TATs0b3VsHYuZEgw-R4GkxqQjbGJTpX1SKKpOQhPSf5ro33DVKBE7965ojfpem1hVsKcleDsVaDi40g0M/1200x900n",
+"mileage_km": 218000,
+"owners_display": null,
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-27T23:49:54.850681+00:00"
+},
+{
+"ad_id": "autoru_1160767787-4494e16f",
+"source": "autoru",
+"brand": "Chevrolet",
+"model": "Malibu",
+"year": 2018,
+"price": 1100000,
+"market_price": 1203500,
+"url": "https://auto.ru/cars/used/sale/chevrolet/malibu/1160767787-4494e16f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19792100/651e592a64e7368ef6aebd2c547f3e9d/1200x900n",
+"mileage_km": 155000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Россошь",
+"seen_at": "2026-11-27T23:24:54.836837+00:00"
+},
+{
 "ad_id": "autoru_1160848320-36771256",
 "source": "autoru",
 "brand": "Volkswagen",
@@ -13,6 +45,6 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-23T21:26:40.523467+00:00"
+"seen_at": "2026-11-27T23:22:03.940047+00:00"
 }
 ]
