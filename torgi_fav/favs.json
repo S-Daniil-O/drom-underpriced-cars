@@ -5626,10 +5626,26 @@
    "tried": true,
    "requests": 0,
    "req_max": 0
+  },
+  "tg-19625": {
+   "n": 80,
+   "url": "https://bankrot.torggroup.org/TradeLot/View/19625",
+   "name": "Geely Atlas, 2018",
+   "vin": "Y4K8762D5JB302619",
+   "target": 1071000,
+   "card": 2547,
+   "added": "2026-11-27T16:35",
+   "end": "2027-01-19T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2548,
+   "msgs": [],
+   "topic": 2546,
+   "title": "Geely Atlas, 2018 · до 19.01 · №80"
   }
  },
- "offset": 177674700,
- "seq": 79,
+ "offset": 177674701,
+ "seq": 80,
  "forum": -1004498088083,
  "owners": [
   1188456401
