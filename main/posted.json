@@ -5208,5 +5208,50 @@
     "mileage_km": 65000,
     "owners_display": "1",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/19700919/6303b25b6ff2a9afb3b70589e39b3e4e/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/nissan/x-trail/449408736.html": {
+    "posted_at": "2026-11-27T21:33:24.080698+00:00",
+    "message_id": 378,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "X-Trail",
+    "year": 2012,
+    "price": 1000000,
+    "median_price": 1191000.0,
+    "median_sample_size": 3476,
+    "price_rating": "хорошая цена",
+    "mileage_km": 186000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/EOLiT2uCM9OJCILAn_XgPUhxiw851Y5UGgsimK0TlXhdbhwFWnoZOERAjNIwcTQ08Sc3KTiZGaCrEJ-r/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/subaru/legacy_b4/474049447.html": {
+    "posted_at": "2026-11-27T21:33:26.473210+00:00",
+    "message_id": 379,
+    "deleted_at": null,
+    "brand": "Subaru",
+    "model": "Legacy B4",
+    "year": 2003,
+    "price": 695000,
+    "median_price": 830000.0,
+    "median_sample_size": 1201,
+    "price_rating": "хорошая цена",
+    "mileage_km": 231000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/rSVj3FdEYxUb5RCxW5_FYpL9wgzOK5fSKHQa5ImCNOuXxzi4P_XdjM5e-VJdIrIqhubwsccqun9-P1as/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/nissan/qashqai/343060616.html": {
+    "posted_at": "2026-11-27T21:33:28.888641+00:00",
+    "message_id": 380,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Qashqai",
+    "year": 2012,
+    "price": 900000,
+    "median_price": 1130000.0,
+    "median_sample_size": 1206,
+    "price_rating": "нормальная цена",
+    "mileage_km": 298000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/gzbw55RC1iwAb-YtSZudaY-IXH0mID0gmcolkg3RGsd6lWJV4XnQGbzQd7a1nyFLGn-vvBrWSo5uO67X/gen272wb.jpg"
   }
 }
