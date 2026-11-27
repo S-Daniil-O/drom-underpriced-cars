@@ -5118,5 +5118,50 @@
     "mileage_km": 160000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/fAOcdhQOnGcee50cU_A8pzRRi3AOiGFEzWW5-3HXXdqF9jsst8wbVjei-_keGDBwJ69yzeOHNTE2cuS8/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/m-class/149571318.html": {
+    "posted_at": "2026-11-27T07:41:11.814275+00:00",
+    "message_id": 372,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "M-Class",
+    "year": 2007,
+    "price": 1000000,
+    "median_price": 1250000.0,
+    "median_sample_size": 2455,
+    "price_rating": "хорошая цена",
+    "mileage_km": 220000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/LAVJnkGJWq9rU9o_3KSp7QBLnHLbXXpIEmKwc6k4K2qgxn6zZqXf0WJZSK936P0B0iR0lGsYK-QvxW2D/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/antara/126664772.html": {
+    "posted_at": "2026-11-27T07:41:14.686624+00:00",
+    "message_id": 373,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Antara",
+    "year": 2012,
+    "price": 800000,
+    "median_price": 1149600.0,
+    "median_sample_size": 5695,
+    "price_rating": "хорошая цена",
+    "mileage_km": 178000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/b_Jnom_inwsQ4u9eFFneXGafKjmqZLoB5qU4wDujbzga6412Fx9aUGQJpLYg4zSBl-kDKzdzV8IeQenk/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/chevrolet/lacetti/835699835.html": {
+    "posted_at": "2026-11-27T07:41:17.530089+00:00",
+    "message_id": 374,
+    "deleted_at": null,
+    "brand": "Chevrolet",
+    "model": "Lacetti",
+    "year": 2011,
+    "price": 500000,
+    "median_price": 598000.0,
+    "median_sample_size": 1901,
+    "price_rating": "нормальная цена",
+    "mileage_km": 94000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/jYcLM1SvvZ7bx57kVFLYf8hkkgGYvPnkOqItI03VmE-BweWJjdkRflN_tV4skzyPdAl01pIGsmAmLBEq/gen272wb.jpg"
   }
 }
