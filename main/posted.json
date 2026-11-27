@@ -5103,5 +5103,20 @@
     "mileage_km": 208000,
     "owners_display": null,
     "image_url": "https://s31.auto.drom.ru/photo/v2/FrGz29OLUdrYnjDAzioXJbGMc5_aIbFVvhh9brbJOYq-JSAzcdqwkHDs0q6UmCB7d7HM1v9-8k051Gus/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/opel/astra/711048551.html": {
+    "posted_at": "2026-11-27T04:10:38.984766+00:00",
+    "message_id": 371,
+    "deleted_at": null,
+    "brand": "Opel",
+    "model": "Astra",
+    "year": 2014,
+    "price": 650000,
+    "median_price": 791600.0,
+    "median_sample_size": 6601,
+    "price_rating": "хорошая цена",
+    "mileage_km": 160000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/fAOcdhQOnGcee50cU_A8pzRRi3AOiGFEzWW5-3HXXdqF9jsst8wbVjei-_keGDBwJ69yzeOHNTE2cuS8/gen272wb.jpg"
   }
 }
