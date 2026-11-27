@@ -10253,5 +10253,20 @@
     "mileage_km": 19506,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/acBtUn2jCvF2Q9Yku0tLXqraRGsV5lIDOtAY4FCK4eXUagRbRT8d6NIcDfnDb4WkY1hnSGFoPdwFK9ee/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/lada/2105/501660179.html": {
+    "posted_at": "2026-11-27T05:55:25.779352+00:00",
+    "message_id": 732,
+    "deleted_at": null,
+    "brand": "Лада",
+    "model": "2105",
+    "year": 2003,
+    "price": 79000,
+    "median_price": 195499.99999999997,
+    "median_sample_size": 783,
+    "price_rating": null,
+    "mileage_km": 39530,
+    "owners_display": "2",
+    "image_url": "https://s12.auto.drom.ru/photo/v2/g-sPzfs9Yp6BgFYmEY_L5dejNFOoK0TVcaEJZu4JF_khFuuyLLwaqEwxHzEVsg9W0mqJEoPjWeNqCfxO/gen272wb.jpg"
   }
 }
