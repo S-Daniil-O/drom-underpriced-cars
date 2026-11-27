@@ -5643,10 +5643,26 @@
    "topic": 2546,
    "title": "Geely Atlas, 2018 · до 19.01 · №80",
    "tried": true
+  },
+  "cdt-392863": {
+   "n": 81,
+   "url": "https://torgi.cdtrf.ru/trades/392863",
+   "name": "Kia Rio, 2018",
+   "vin": "Z94C241ABJR074314",
+   "target": 634410,
+   "card": 2550,
+   "added": "2026-11-27T16:36",
+   "end": "2026-12-14T23:59",
+   "sent": {},
+   "btn": 4,
+   "head": 2551,
+   "msgs": [],
+   "topic": 2549,
+   "title": "Kia Rio, 2018 · до 14.12 · №81"
   }
  },
- "offset": 177674702,
- "seq": 80,
+ "offset": 177674703,
+ "seq": 81,
  "forum": -1004498088083,
  "owners": [
   1188456401
