@@ -3462,13 +3462,6 @@
     "vk_post_id": 364,
     "vk_deleted_at": "2026-11-27T13:24:40.754727+00:00"
   },
-  "https://auto.drom.ru/voronezh/renault/logan/599638675.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-24T17:20:09.264739+00:00"
-  },
   "https://auto.drom.ru/voronezh/daewoo/nexia/528400577.html": {
     "posted_at": "2026-11-24T20:46:10.392747+00:00",
     "message_id": 485,
@@ -3687,5 +3680,12 @@
     "checked_at": "2026-11-27T14:00:04.445409+00:00",
     "vk_post_id": 375,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/renault/logan/599638675.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-27T17:32:18.740798+00:00"
   }
 }
