@@ -1,21 +1,5 @@
 [
 {
-"ad_id": "autoru_1160963789-596bea96",
-"source": "autoru",
-"brand": "Ford",
-"model": "Fusion",
-"year": 2007,
-"price": 400000,
-"market_price": 311500,
-"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
-"mileage_km": 234000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T15:59:00.557289+00:00"
-},
-{
 "ad_id": "autoru_1160968280-9e623056",
 "source": "autoru",
 "brand": "Kia",
@@ -29,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:59:00.557271+00:00"
+"seen_at": "2026-11-28T16:10:28.204460+00:00"
 },
 {
 "ad_id": "autoru_1160968801-e7a09a1e",
@@ -40,12 +24,12 @@
 "price": 230000,
 "market_price": 114500,
 "url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/yT6tT32Klx_YiREeo22ntxaUWwbhNbLAr0bzlP2cR8mEKXdX6PwOanRYI2-9WNUOPBkZYEawvXfeG05mQtE-ghflNedhn5D9GZkybWcltgcYjoHdaZ2gDqQrpGBXI3BKTtwhre6SXGKgQDgCPrA3NHpIPe-A7Q48T8QHBflc8GNhaw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/w1WFSg_J3TmHxzImVwogIQJVMZt0KvD5XSJgf9zJZUQ64LUNsk0MocFr9J8SyfrTNR9SDasOe7I5BOnA_h19C55mbmnmo_itiwLeF-wEHMKmxssyfujFMLDUBLSi77ZAxVUU0gBHpvuefBIOcKphENfr_xxYKcMWldz_Tor-fIzbq3w/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:59:00.557256+00:00"
+"seen_at": "2026-11-28T16:10:28.204444+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -61,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:59:00.557239+00:00"
+"seen_at": "2026-11-28T16:10:28.204429+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +61,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T15:59:00.557197+00:00"
+"seen_at": "2026-11-28T16:10:28.204408+00:00"
+},
+{
+"ad_id": "autoru_1160963789-596bea96",
+"source": "autoru",
+"brand": "Ford",
+"model": "Fusion",
+"year": 2007,
+"price": 400000,
+"market_price": 311500,
+"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
+"mileage_km": 234000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:10:28.204349+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,39 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:58:38.090686+00:00"
-},
-{
-"ad_id": "autoru_1160981944-693a5f63",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2105",
-"year": 2008,
-"price": 175000,
-"market_price": 89500,
-"url": "https://auto.ru/cars/used/sale/vaz/2105/1160981944-693a5f63/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18986119/b40028b17b817c8781056e0848d55564/1200x900n",
-"mileage_km": 90000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Калач",
-"seen_at": "2026-11-28T15:58:38.090667+00:00"
-},
-{
-"ad_id": "autoru_1160988955-62da8edb",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2112",
-"year": 2004,
-"price": 85000,
-"market_price": 91500,
-"url": "https://auto.ru/cars/used/sale/vaz/2112/1160988955-62da8edb/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/16149001/98804c64a85bb3f532088a2efce6a79a/1200x900n",
-"mileage_km": 241000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T15:58:38.090640+00:00"
+"seen_at": "2026-11-28T16:10:09.300494+00:00"
 },
 {
 "ad_id": "autoru_1160992476-5b19f2ae",
@@ -141,7 +109,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Садовое",
-"seen_at": "2026-11-28T15:58:38.090598+00:00"
+"seen_at": "2026-11-28T16:10:09.300473+00:00"
+},
+{
+"ad_id": "autoru_1160981944-693a5f63",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2105",
+"year": 2008,
+"price": 175000,
+"market_price": 89500,
+"url": "https://auto.ru/cars/used/sale/vaz/2105/1160981944-693a5f63/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18986119/b40028b17b817c8781056e0848d55564/1200x900n",
+"mileage_km": 90000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Калач",
+"seen_at": "2026-11-28T16:10:09.300458+00:00"
+},
+{
+"ad_id": "autoru_1160988955-62da8edb",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2112",
+"year": 2004,
+"price": 85000,
+"market_price": 91500,
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160988955-62da8edb/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/16149001/98804c64a85bb3f532088a2efce6a79a/1200x900n",
+"mileage_km": 241000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:10:09.300433+00:00"
 },
 {
 "ad_id": "autoru_1160956807-3dbcc275",
@@ -152,12 +152,12 @@
 "price": 170000,
 "market_price": 172500,
 "url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/bmdomcB6LcG8fOVzxJk9ETReugnfWYjphPgrqS27cOG6QcBivFqWpJ0SDov2XlVyiZDcMsbJGlZdd6Cw-YlTgczkeuvvMA7av3ai5t_znwUL_zwcJXBBtq8LIgWXf7EcxLOuGS0-QDttYcb2M3S-dw0UNHI2Gym6xRAS_UZGPpnP_Uw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/fbDkaXEAjXziD3Kq0VMMyAoYpS2FMKs7AsL2PBY5_zpF8HPAzcheC7N6IQU3fDB9aIkOK2r8F26F9hD0Faga-opkbImKG_1Evgy01V2ojOoUJyMz-K2x9E5JJBvsOzUcMj4TO1d2F2qJfXDcmSSUa-pXOIXOvnWGCfaOySR5RwegW18/1200x900n",
 "mileage_km": 403000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Эртиль",
-"seen_at": "2026-11-28T15:58:38.090558+00:00"
+"seen_at": "2026-11-28T16:10:09.300386+00:00"
 },
 {
 "ad_id": "autoru_1160957661-d8ac25ba",
