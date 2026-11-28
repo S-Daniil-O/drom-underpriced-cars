@@ -8,12 +8,12 @@
 "price": 80000,
 "market_price": 53500,
 "url": "https://auto.ru/cars/used/sale/vaz/2107/1160951608-7d20f7fa/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21177414/1Ptr9kERmgvDrZ52Ruco3rhBOJ8gj8kjAyo-5FdMxOXb_aM41l2dM7r4TyrSbaGhTnAQ_qN263NLHvbgVqvRCJTbWtzmQlYtOY23kJUz5q9NqyGbLXEVg9xG8eOyfyogNiG09caSNOohv2kCOTaUN369VjI2GISckqTEDddvRL9QnuQ/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/21177414/XIGSkypC0TAI_71gFfAxYmjb5_T0ohUEyQAwt-NJzdJIqoirjYAchCPYGJbDbpn6eIOPPL4UUuPagg6lY_H9merv9Yb-fYNqhZel-rjkr1Ku9kj72v2xRTqfJYTTXzOo-46JdXPp1cGT7-sdrZb-J56oBa8SLnw6Tpe0EutSPI91Zg/1200x900n",
 "mileage_km": 140777,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035862+00:00"
+"seen_at": "2026-11-28T09:21:56.819039+00:00"
 },
 {
 "ad_id": "autoru_1160952568-1eedea19",
@@ -29,39 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035851+00:00"
-},
-{
-"ad_id": "autoru_1160956807-3dbcc275",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "E-Класс",
-"year": 1995,
-"price": 185000,
-"market_price": 172500,
-"url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/SZXjZxab4ZtOYupOYjmoNJt9VCpy2Rp_4k06xOEekFQRkKqmWIymtUhnTjbYu55x41_uo3h9kqn8sQ_WH_lRRfAeC3NmrfHHQQCW33KA5JZht5SnPzpEGgaOKqtnZ2VsSVugJTHWhP3v0gzCe70aflDyKljfKhXgDIf_hbWIb8Ulomw/1200x900n",
-"mileage_km": 403000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Эртиль",
-"seen_at": "2026-11-28T09:10:26.035827+00:00"
-},
-{
-"ad_id": "autoru_1160957661-d8ac25ba",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Priora",
-"year": 2011,
-"price": 400000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/vaz/2170/1160957661-d8ac25ba/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17642370/3b702db65e19ed5c7c9a23315b7c21fb/1200x900n",
-"mileage_km": 360000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035813+00:00"
+"seen_at": "2026-11-28T09:21:56.819028+00:00"
 },
 {
 "ad_id": "autoru_1160963789-596bea96",
@@ -77,7 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035782+00:00"
+"seen_at": "2026-11-28T09:21:56.819006+00:00"
 },
 {
 "ad_id": "autoru_1160968280-9e623056",
@@ -93,23 +61,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035763+00:00"
+"seen_at": "2026-11-28T09:21:56.818988+00:00"
+},
+{
+"ad_id": "autoru_1160956807-3dbcc275",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "E-Класс",
+"year": 1995,
+"price": 185000,
+"market_price": 172500,
+"url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/kXaUagQSnL9EJwD6qajJDLk2nIm2Zj0uxWXs0HCPFhPVRo_iZ5vdXHE44GjRFvsAYKYfLzE9D1KkQq5_r54ZIS99ec4yw_4A-AsZ0bckBaQbj1yYhgcHUSlT62aR25-ZeBLJt5b1gxKyy8HzQIET17niG_zoPfb1VIwbJVe7-cvGIw/1200x900n",
+"mileage_km": 403000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Эртиль",
+"seen_at": "2026-11-28T09:21:56.818969+00:00"
+},
+{
+"ad_id": "autoru_1160957661-d8ac25ba",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Priora",
+"year": 2011,
+"price": 400000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160957661-d8ac25ba/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17642370/3b702db65e19ed5c7c9a23315b7c21fb/1200x900n",
+"mileage_km": 360000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T09:21:56.818953+00:00"
 },
 {
 "ad_id": "autoru_1160968801-e7a09a1e",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2115",
+"model": "Priora",
 "year": 2011,
 "price": 230000,
 "market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/T2N5xd4eM55Jr1MljPnLlEIs4lQaEYwvwyKRHHHIx9ccXOVCPXvYJOH9dxczacdUZhaFtqFrp68xZgeSY3iIA7mTpozWE7hGU4-O44WusoM6Si1qSP-QRXJqUCIrCYwrnEERr2VtV4HHlNjboVugxPe_RDvBKlq_Qnf6udSYD6UM3vg/1200x900n",
+"url": "https://auto.ru/cars/used/sale/vaz/2170/1160963611-89f92c9f/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/dZzg0WCb7eHy2TyzdIrA_d2ITnLT3_loQaipO4b04mb-eQ2VuD_ozt7sWZdLEmfmCqDntwpGM616EN5zQ_WgcYC4ED2om6Ae7J-Y53KFgRZR4vHf0G7EaKqh3Bk5yJijRLQXPkTM_xVwgBSMti_9b57jQ9oIPJozpH-0G0Lxuk7KJw/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035746+00:00"
+"seen_at": "2026-11-28T09:21:56.818921+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:26.035710+00:00"
+"seen_at": "2026-11-28T09:21:56.818884+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -141,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T09:10:06.146575+00:00"
+"seen_at": "2026-11-28T09:21:38.765235+00:00"
 },
 {
 "ad_id": "autoru_1160977227-26c47473",
@@ -157,7 +157,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:06.146553+00:00"
+"seen_at": "2026-11-28T09:21:38.765212+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -173,7 +173,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:06.146536+00:00"
+"seen_at": "2026-11-28T09:21:38.765195+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T09:10:06.146519+00:00"
+"seen_at": "2026-11-28T09:21:38.765178+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -205,7 +205,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T09:10:06.146492+00:00"
+"seen_at": "2026-11-28T09:21:38.765133+00:00"
 },
 {
 "ad_id": "autoru_1160988625-31f3a543",
