@@ -1,5 +1,21 @@
 [
 {
+"ad_id": "autoru_1160956807-3dbcc275",
+"source": "autoru",
+"brand": "Mercedes-Benz",
+"model": "E-Класс",
+"year": 1995,
+"price": 185000,
+"market_price": 172500,
+"url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/Tihf5JHq78KcrwYlzVvXhizcyrq-0DMxf1yYa-L4NWHWwU1PBuhB_ZrgXr4nXNAS34EkC6GvuDj8hF41C8MpxEJ01ei85huUU8L9mCbGBtXknxExKkfnfRwoRrjcPWrJgbR3Ob_FNQcgePPf2Cq8t-ovu6N2-e1_MdaQy64byKfCQ2w/1200x900n",
+"mileage_km": 403000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Эртиль",
+"seen_at": "2026-11-28T13:42:51.569668+00:00"
+},
+{
 "ad_id": "autoru_1160957661-d8ac25ba",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
@@ -13,55 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T13:31:19.509351+00:00"
-},
-{
-"ad_id": "autoru_1160968280-9e623056",
-"source": "autoru",
-"brand": "Kia",
-"model": "Cerato",
-"year": 2007,
-"price": 439000,
-"market_price": 451500,
-"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
-"mileage_km": 147935,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T13:31:19.509324+00:00"
-},
-{
-"ad_id": "autoru_1160968801-e7a09a1e",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
-"year": 2011,
-"price": 230000,
-"market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/me5w4PtZaoFK9albBckYkrnbjua-iDNJsqDRDjdketZRprHC5lCZo4jBpfVRHg0XbjsMA_FLHodcd_zzVXr35LpEJHe7EVmgAsIIfoKmJfFJJVXYUFifvLrs0t5W8WORsYE5Xbovt4xmjB0ZXq9-s46S-pBzad6JpbBz0tb_r2MfFHA/1200x900n",
-"mileage_km": 241600,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T13:31:19.509308+00:00"
-},
-{
-"ad_id": "autoru_1160969381-f6e8bb54",
-"source": "autoru",
-"brand": "Peugeot",
-"model": "406",
-"year": 2000,
-"price": 160000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/peugeot/406/1160969381-f6e8bb54/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/217bed68c20813c1cced2746eaf25e8d/1200x900n",
-"mileage_km": 420000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T13:31:19.509295+00:00"
+"seen_at": "2026-11-28T13:42:51.569654+00:00"
 },
 {
 "ad_id": "autoru_1160963789-596bea96",
@@ -77,7 +45,55 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T13:31:19.509264+00:00"
+"seen_at": "2026-11-28T13:42:51.569624+00:00"
+},
+{
+"ad_id": "autoru_1160968280-9e623056",
+"source": "autoru",
+"brand": "Kia",
+"model": "Cerato",
+"year": 2007,
+"price": 439000,
+"market_price": 451500,
+"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
+"mileage_km": 147935,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T13:42:51.569607+00:00"
+},
+{
+"ad_id": "autoru_1160968801-e7a09a1e",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2011,
+"price": 230000,
+"market_price": 114500,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/b5O3vhDhrhaup1t6HI7dT-AMwXqkVf5PxxvDUWlW9N6ed6uueXpSq6TGQZKa-Wv8mMf1XynbFx1VkScpC9TO8Xkld9zRl_swQ4dE6P49m8rSgeD4b9ew5GRJnLlWA95hD7uGfoIqKJFIWsCnp0kBBO8Nw1SHmncA_KCz2RENv8Iry9o/1200x900n",
+"mileage_km": 241600,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T13:42:51.569591+00:00"
+},
+{
+"ad_id": "autoru_1160969381-f6e8bb54",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "406",
+"year": 2000,
+"price": 160000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/peugeot/406/1160969381-f6e8bb54/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/217bed68c20813c1cced2746eaf25e8d/1200x900n",
+"mileage_km": 420000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T13:42:51.569574+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -93,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T13:31:19.509223+00:00"
+"seen_at": "2026-11-28T13:42:51.569534+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -109,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T13:30:58.855674+00:00"
+"seen_at": "2026-11-28T13:42:29.830424+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -125,7 +141,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T13:30:58.855655+00:00"
+"seen_at": "2026-11-28T13:42:29.830407+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -141,23 +157,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T13:30:58.855612+00:00"
-},
-{
-"ad_id": "autoru_1160956807-3dbcc275",
-"source": "autoru",
-"brand": "Mercedes-Benz",
-"model": "E-Класс",
-"year": 1995,
-"price": 185000,
-"market_price": 172500,
-"url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/x7h4X-YXZ0OyN0PLVEVnE1NUyemRsR1o9T0zJWhv6ikcu6Rhi1Jzg71GvLeZtlsbIIlAn99e3Ug6EVYwA_Jcoip1ZzdEnvKe0K70PhPK9FDyLMT59_R_1Qb2UWAuQ6to8xdTJD-IjxuaAwOqLE_je_hOzQ5d4NLeXIVBJGkwhiwKw3k/1200x900n",
-"mileage_km": 403000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Эртиль",
-"seen_at": "2026-11-28T13:08:38.090855+00:00"
+"seen_at": "2026-11-28T13:42:29.830363+00:00"
 },
 {
 "ad_id": "autoru_1160951608-7d20f7fa",
