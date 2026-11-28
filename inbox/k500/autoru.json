@@ -13,39 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:02:15.325962+00:00"
-},
-{
-"ad_id": "autoru_1160718259-35a44d7d",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
-"mileage_km": 38200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Грибановский",
-"seen_at": "2026-11-28T15:02:15.325940+00:00"
-},
-{
-"ad_id": "autoru_1160963789-596bea96",
-"source": "autoru",
-"brand": "Ford",
-"model": "Fusion",
-"year": 2007,
-"price": 400000,
-"market_price": 311500,
-"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
-"mileage_km": 234000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T15:02:15.325909+00:00"
+"seen_at": "2026-11-28T15:13:32.287090+00:00"
 },
 {
 "ad_id": "autoru_1160968280-9e623056",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:02:15.325891+00:00"
+"seen_at": "2026-11-28T15:13:32.287067+00:00"
 },
 {
 "ad_id": "autoru_1160968801-e7a09a1e",
@@ -72,12 +40,12 @@
 "price": 230000,
 "market_price": 114500,
 "url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/XONYUXDJhXOOwxdCccBrzVjczQRScKf-L2ZMdLzS08h-WLqWC5Vkma_q1xf3T9JaOwEsoFyS1XwMSvtftc2T_4w28T9ZIPvgxQWiIziGZMw_OD7HEVV4OCE-VyI1tGzEuURrT_KiKQUpU1BpnZltEZaNi2unFTWHRHxP2iN_dmrFPlw/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/BQbgDVoZFM2Y0jEvahOAn9qq_cHJDRt9Up9zDDPn0misbLA5wd7RXS_9PzsPvYaaAQA_lmKb4RPDt26s9ocCKViRZuX6nAuS7zbZ4RwXuuuctHuEiG1ellJP-l29MLuVZZzl09QL4c6_QqK9v4F1X88EF3S_UkJYIQC0giSZSdJmdf0/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:02:15.325874+00:00"
+"seen_at": "2026-11-28T15:13:32.287051+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -93,7 +61,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:02:15.325835+00:00"
+"seen_at": "2026-11-28T15:13:32.287037+00:00"
+},
+{
+"ad_id": "autoru_1160963789-596bea96",
+"source": "autoru",
+"brand": "Ford",
+"model": "Fusion",
+"year": 2007,
+"price": 400000,
+"market_price": 311500,
+"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
+"mileage_km": 234000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T15:13:32.287006+00:00"
+},
+{
+"ad_id": "autoru_1160718259-35a44d7d",
+"source": "autoru",
+"brand": "УАЗ",
+"model": "3151",
+"year": 1997,
+"price": 280000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
+"mileage_km": 38200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Грибановский",
+"seen_at": "2026-11-28T15:13:32.286963+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:01:50.060238+00:00"
+"seen_at": "2026-11-28T15:13:12.653529+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T15:01:50.060223+00:00"
+"seen_at": "2026-11-28T15:13:12.653512+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T15:01:50.060201+00:00"
+"seen_at": "2026-11-28T15:13:12.653471+00:00"
 },
 {
 "ad_id": "autoru_1160992250-eba4eff7",
