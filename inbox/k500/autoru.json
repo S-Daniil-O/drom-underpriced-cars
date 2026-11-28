@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:46:16.314093+00:00"
+"seen_at": "2026-11-28T19:57:49.276050+00:00"
 },
 {
 "ad_id": "autoru_1160968280-9e623056",
@@ -29,23 +29,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:46:16.314077+00:00"
+"seen_at": "2026-11-28T19:57:49.276031+00:00"
 },
 {
 "ad_id": "autoru_1160968801-e7a09a1e",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Ford",
+"model": "Focus",
 "year": 2011,
 "price": 230000,
 "market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/86U3AglWn9SepP5-3ROtikzwDTj3VD8zjL-OXSeCn3FGNQpZICaRURqvJAdDSmqvzz1S47I7cZlnd1eQFBGNbdTfxyjLk7G25xsztKz4PDSisz8x_R5vS87qCT1fKxpBHnJPNtvFJfYOYHenjpNJN68s39GZYE4hhld29wIkNGF7KRk/1200x900n",
+"url": "https://auto.ru/cars/used/sale/ford/focus/1160977448-4e9ad3a2/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/41ukGBm3yYXKxE_x0yB3mUVA3-sejgnbwss8b7bvM1pAX3aR1V558XLb2B4tPHmHTTAJufZZT7XMvlY2Qnl8IHgsPdixn5dAXyhr4l1g1kJl0uMOWfNtwZs3YEHFGC1Ed46I2_oEguJqQwBqgL0P0ObKFjX-hg4IfYO3vrb7h4Ej28I/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:46:16.314062+00:00"
+"seen_at": "2026-11-28T19:57:49.276001+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:46:16.314045+00:00"
+"seen_at": "2026-11-28T19:57:49.275983+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T19:46:16.314005+00:00"
+"seen_at": "2026-11-28T19:57:49.275960+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,23 +93,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:45:53.651739+00:00"
+"seen_at": "2026-11-28T19:57:49.275904+00:00"
+},
+{
+"ad_id": "autoru_1160981944-693a5f63",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2105",
+"year": 2008,
+"price": 175000,
+"market_price": 89500,
+"url": "https://auto.ru/cars/used/sale/vaz/2105/1160981944-693a5f63/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/18986119/b40028b17b817c8781056e0848d55564/1200x900n",
+"mileage_km": 90000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Калач",
+"seen_at": "2026-11-28T19:57:27.117511+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
 "source": "autoru",
 "brand": "Lada (ВАЗ)",
-"model": "2109",
+"model": "2112",
 "year": 2004,
 "price": 85000,
 "market_price": 91500,
-"url": "https://auto.ru/cars/used/sale/vaz/2109/1160981664-2d601035/",
+"url": "https://auto.ru/cars/used/sale/vaz/2112/1160988955-62da8edb/",
 "image_url": "https://avatars.avto.ru/get-autoru-vos/16149001/98804c64a85bb3f532088a2efce6a79a/1200x900n",
 "mileage_km": 241000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:45:53.651726+00:00"
+"seen_at": "2026-11-28T19:57:27.117465+00:00"
 },
 {
 "ad_id": "autoru_1160992476-5b19f2ae",
@@ -126,22 +142,6 @@
 "seller_type": "PRIVATE",
 "city": "Садовое",
 "seen_at": "2026-11-28T19:45:53.651696+00:00"
-},
-{
-"ad_id": "autoru_1160981944-693a5f63",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2105",
-"year": 2008,
-"price": 175000,
-"market_price": 89500,
-"url": "https://auto.ru/cars/used/sale/vaz/2105/1160981944-693a5f63/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/18986119/b40028b17b817c8781056e0848d55564/1200x900n",
-"mileage_km": 90000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Калач",
-"seen_at": "2026-11-28T19:45:53.651662+00:00"
 },
 {
 "ad_id": "autoru_1160956807-3dbcc275",
