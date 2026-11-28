@@ -1,51 +1,19 @@
 [
 {
-"ad_id": "autoru_1160963789-596bea96",
-"source": "autoru",
-"brand": "Ford",
-"model": "Fusion",
-"year": 2007,
-"price": 400000,
-"market_price": 311500,
-"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
-"mileage_km": 234000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T19:57:49.276050+00:00"
-},
-{
-"ad_id": "autoru_1160968280-9e623056",
-"source": "autoru",
-"brand": "Kia",
-"model": "Cerato",
-"year": 2007,
-"price": 439000,
-"market_price": 451500,
-"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
-"mileage_km": 147935,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T19:57:49.276031+00:00"
-},
-{
 "ad_id": "autoru_1160968801-e7a09a1e",
 "source": "autoru",
-"brand": "Ford",
-"model": "Focus",
+"brand": "Chrysler",
+"model": "Pacifica",
 "year": 2011,
 "price": 230000,
 "market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/ford/focus/1160977448-4e9ad3a2/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/41ukGBm3yYXKxE_x0yB3mUVA3-sejgnbwss8b7bvM1pAX3aR1V558XLb2B4tPHmHTTAJufZZT7XMvlY2Qnl8IHgsPdixn5dAXyhr4l1g1kJl0uMOWfNtwZs3YEHFGC1Ed46I2_oEguJqQwBqgL0P0ObKFjX-hg4IfYO3vrb7h4Ej28I/1200x900n",
+"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160962705-1e6c7a05/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/_uT00HlUnkT07q1u_Qjj0-QHIvpotk-hX3uY93i50ZYPVnWuftBAOXhLqUwpz3bdPfR_1Z8pDDGm4jNPfsyO-Vd4BXTQGgkmfgBU95altpBetWKiH9dvuWK_baRR3NlxAxY7QD8kTHOPwij9RaD90EgPTVw-yVLVoTInXiWDNXZ40ks/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:57:49.276001+00:00"
+"seen_at": "2026-11-28T20:09:00.733802+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:57:49.275983+00:00"
+"seen_at": "2026-11-28T20:09:00.733790+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +45,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T19:57:49.275960+00:00"
+"seen_at": "2026-11-28T20:09:00.733772+00:00"
+},
+{
+"ad_id": "autoru_1160963789-596bea96",
+"source": "autoru",
+"brand": "Ford",
+"model": "Fusion",
+"year": 2007,
+"price": 400000,
+"market_price": 311500,
+"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
+"mileage_km": 234000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T20:09:00.733739+00:00"
+},
+{
+"ad_id": "autoru_1160968280-9e623056",
+"source": "autoru",
+"brand": "Kia",
+"model": "Cerato",
+"year": 2007,
+"price": 439000,
+"market_price": 451500,
+"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
+"mileage_km": 147935,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T20:09:00.733698+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:57:49.275904+00:00"
+"seen_at": "2026-11-28T20:08:43.581227+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T19:57:27.117511+00:00"
+"seen_at": "2026-11-28T20:08:43.581199+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T19:57:27.117465+00:00"
+"seen_at": "2026-11-28T20:08:43.581155+00:00"
 },
 {
 "ad_id": "autoru_1160992476-5b19f2ae",
