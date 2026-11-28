@@ -13,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:28.204460+00:00"
+"seen_at": "2026-11-28T16:21:47.620722+00:00"
 },
 {
 "ad_id": "autoru_1160968801-e7a09a1e",
@@ -24,12 +24,12 @@
 "price": 230000,
 "market_price": 114500,
 "url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/w1WFSg_J3TmHxzImVwogIQJVMZt0KvD5XSJgf9zJZUQ64LUNsk0MocFr9J8SyfrTNR9SDasOe7I5BOnA_h19C55mbmnmo_itiwLeF-wEHMKmxssyfujFMLDUBLSi77ZAxVUU0gBHpvuefBIOcKphENfr_xxYKcMWldz_Tor-fIzbq3w/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/-C4K4xWyr_BCrmleSWd4v2jqKbMKQMvpWPFv2C77cU6qqvPIkcHUh_lWEtxwqHUVYCzIZ7kD6ioUGiAddhKa06Nn-6-APhYCeQlwQIF3orypcl3n4Fz-XE8n3V1JsWGw8iIHbg_cc7ZuL_hEV4_9svTH2-Eng_c_FRMAofi0D8wfXHM/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:28.204444+00:00"
+"seen_at": "2026-11-28T16:21:47.620707+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -45,23 +45,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:28.204429+00:00"
-},
-{
-"ad_id": "autoru_1160718259-35a44d7d",
-"source": "autoru",
-"brand": "УАЗ",
-"model": "3151",
-"year": 1997,
-"price": 280000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/uaz/3151/1160718259-35a44d7d/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
-"mileage_km": 38200,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Грибановский",
-"seen_at": "2026-11-28T16:10:28.204408+00:00"
+"seen_at": "2026-11-28T16:21:47.620695+00:00"
 },
 {
 "ad_id": "autoru_1160963789-596bea96",
@@ -77,7 +61,23 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:28.204349+00:00"
+"seen_at": "2026-11-28T16:21:47.620667+00:00"
+},
+{
+"ad_id": "autoru_1160718259-35a44d7d",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Kalina",
+"year": 1997,
+"price": 280000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/vaz/kalina/1160967549-6649e4c8/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2157912/3261845c5baf3ffc26b6f5c4e3deec4e/1200x900n",
+"mileage_km": 38200,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Грибановский",
+"seen_at": "2026-11-28T16:21:47.620627+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,23 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:09.300494+00:00"
-},
-{
-"ad_id": "autoru_1160992476-5b19f2ae",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2018,
-"price": 430000,
-"market_price": 320500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160992476-5b19f2ae/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20346480/c7682fe92a91f41a0cb3b6a9f00c3329/1200x900n",
-"mileage_km": 209035,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Садовое",
-"seen_at": "2026-11-28T16:10:09.300473+00:00"
+"seen_at": "2026-11-28T16:21:29.182359+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -125,7 +109,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T16:10:09.300458+00:00"
+"seen_at": "2026-11-28T16:21:29.182344+00:00"
+},
+{
+"ad_id": "autoru_1160992476-5b19f2ae",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2018,
+"price": 430000,
+"market_price": 320500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160992476-5b19f2ae/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20346480/c7682fe92a91f41a0cb3b6a9f00c3329/1200x900n",
+"mileage_km": 209035,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Садовое",
+"seen_at": "2026-11-28T16:21:29.182316+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:10:09.300433+00:00"
+"seen_at": "2026-11-28T16:21:29.182299+00:00"
 },
 {
 "ad_id": "autoru_1160956807-3dbcc275",
@@ -152,12 +152,12 @@
 "price": 170000,
 "market_price": 172500,
 "url": "https://auto.ru/cars/used/sale/mercedes/e_klasse/1160956807-3dbcc275/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/fbDkaXEAjXziD3Kq0VMMyAoYpS2FMKs7AsL2PBY5_zpF8HPAzcheC7N6IQU3fDB9aIkOK2r8F26F9hD0Faga-opkbImKG_1Evgy01V2ojOoUJyMz-K2x9E5JJBvsOzUcMj4TO1d2F2qJfXDcmSSUa-pXOIXOvnWGCfaOySR5RwegW18/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/4077809/Jk5SIoKHfDV_zEZ1NoAqscQPeQ1X7Hg2XE5fVx_yidMg0goZmOTTntKWY8CHF-beulKbSu4ie4YNf4qvWSXWF_p9FrfGOxj_a0e03rrPTxhOgboGRSh_vhLTwaQjIM3BZxHzh1CGTfvP3ExzZooDMg5cA4SUNxL1GCxTa1pOrbr4EQ/1200x900n",
 "mileage_km": 403000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Эртиль",
-"seen_at": "2026-11-28T16:10:09.300386+00:00"
+"seen_at": "2026-11-28T16:21:29.182253+00:00"
 },
 {
 "ad_id": "autoru_1160957661-d8ac25ba",
