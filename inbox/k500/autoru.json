@@ -1,53 +1,5 @@
 [
 {
-"ad_id": "autoru_1160968280-9e623056",
-"source": "autoru",
-"brand": "Kia",
-"model": "Cerato",
-"year": 2007,
-"price": 439000,
-"market_price": 451500,
-"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
-"mileage_km": 147935,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T17:29:43.533369+00:00"
-},
-{
-"ad_id": "autoru_1160968801-e7a09a1e",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
-"year": 2011,
-"price": 230000,
-"market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/YuYgVqO29NoYbMglfg2hbpbugdxJ6VI1NI8CeITMoeBdryzVugxuAELFEr-DwaQnPnhMGtIG9zaUPJsWrmrt8P0hBr38EVIKpxIX5bhMSBkJt2bH-1Dk9O5pmlf2ZLt5-wujq1wIml2XkM75-MrSwjVIYiujUDTPZdgHSdjzWktUP9c/1200x900n",
-"mileage_km": 241600,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T17:29:43.533351+00:00"
-},
-{
-"ad_id": "autoru_1160969381-f6e8bb54",
-"source": "autoru",
-"brand": "Peugeot",
-"model": "406",
-"year": 2000,
-"price": 160000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/peugeot/406/1160969381-f6e8bb54/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/217bed68c20813c1cced2746eaf25e8d/1200x900n",
-"mileage_km": 420000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T17:29:43.533337+00:00"
-},
-{
 "ad_id": "autoru_1160963789-596bea96",
 "source": "autoru",
 "brand": "Ford",
@@ -61,7 +13,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T17:29:43.533305+00:00"
+"seen_at": "2026-11-28T17:41:10.501591+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +29,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T17:29:43.533263+00:00"
+"seen_at": "2026-11-28T17:41:10.501576+00:00"
+},
+{
+"ad_id": "autoru_1160968280-9e623056",
+"source": "autoru",
+"brand": "Kia",
+"model": "Cerato",
+"year": 2007,
+"price": 439000,
+"market_price": 451500,
+"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
+"mileage_km": 147935,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T17:41:10.501549+00:00"
+},
+{
+"ad_id": "autoru_1160968801-e7a09a1e",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "2115",
+"year": 2011,
+"price": 230000,
+"market_price": 114500,
+"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/cQVeLBIl1FkcgPOkmlwDgJ-CpidG_SdT7P51KG4JZMAleI6mDgD3-ex-qJOj4umrxh0JeQmR3OHImvXe0mbaOQO1YhGz4uTN-CJG3aguv8SXdPAGyPC91TpFVDkdjouNPnxnpceG_K0NfXGNpS3APbttjb8hwNnMyoGImWGkUfbWoVo/1200x900n",
+"mileage_km": 241600,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T17:41:10.501530+00:00"
+},
+{
+"ad_id": "autoru_1160969381-f6e8bb54",
+"source": "autoru",
+"brand": "Peugeot",
+"model": "406",
+"year": 2000,
+"price": 160000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/peugeot/406/1160969381-f6e8bb54/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20272960/217bed68c20813c1cced2746eaf25e8d/1200x900n",
+"mileage_km": 420000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T17:41:10.501491+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T17:29:26.458071+00:00"
+"seen_at": "2026-11-28T17:40:51.020539+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -109,7 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T17:29:26.458054+00:00"
+"seen_at": "2026-11-28T17:40:51.020521+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -125,7 +125,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T17:29:26.458017+00:00"
+"seen_at": "2026-11-28T17:40:51.020477+00:00"
 },
 {
 "ad_id": "autoru_1160992476-5b19f2ae",
@@ -136,12 +136,12 @@
 "price": 430000,
 "market_price": 320500,
 "url": "https://auto.ru/cars/used/sale/mazda/626/1160986044-036d7469/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20346480/c7682fe92a91f41a0cb3b6a9f00c3329/1200x900n",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/19298886/0c6233172f2c29ec5f53c1e48fce8671/1200x900n",
 "mileage_km": 209035,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Садовое",
-"seen_at": "2026-11-28T17:29:26.457978+00:00"
+"seen_at": "2026-11-28T17:40:51.020435+00:00"
 },
 {
 "ad_id": "autoru_1160956807-3dbcc275",
@@ -222,21 +222,5 @@
 "seller_type": "PRIVATE",
 "city": "Воронеж",
 "seen_at": "2026-11-28T12:11:41.028661+00:00"
-},
-{
-"ad_id": "autoru_1160952568-1eedea19",
-"source": "autoru",
-"brand": "Москвич",
-"model": "412",
-"year": 1974,
-"price": 410000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/moscvich/412/1160952568-1eedea19/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/19785726/b0917e8fd58372b3cd8bcff11eac037a/1200x900n",
-"mileage_km": 100600,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T11:38:00.691274+00:00"
 }
 ]
