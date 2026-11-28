@@ -3494,13 +3494,6 @@
     "vk_post_id": 367,
     "vk_deleted_at": "2026-11-28T10:20:21.052415+00:00"
   },
-  "https://auto.drom.ru/voronezh/lada/priora/363278305.html": {
-    "posted_at": null,
-    "message_id": null,
-    "deleted_at": null,
-    "rejected": true,
-    "checked_at": "2026-11-25T13:28:55.308975+00:00"
-  },
   "https://auto.drom.ru/voronezh/lifan/breez/141774724.html": {
     "posted_at": null,
     "message_id": null,
@@ -3728,5 +3721,12 @@
     "checked_at": "2026-11-28T12:08:00.935755+00:00",
     "vk_post_id": 379,
     "vk_deleted_at": null
+  },
+  "https://auto.drom.ru/voronezh/lada/priora/363278305.html": {
+    "posted_at": null,
+    "message_id": null,
+    "deleted_at": null,
+    "rejected": true,
+    "checked_at": "2026-11-28T13:34:18.149950+00:00"
   }
 }
