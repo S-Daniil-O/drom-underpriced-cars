@@ -1,51 +1,19 @@
 [
 {
-"ad_id": "autoru_1160963789-596bea96",
-"source": "autoru",
-"brand": "Ford",
-"model": "Fusion",
-"year": 2007,
-"price": 400000,
-"market_price": 311500,
-"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
-"mileage_km": 234000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T18:49:20.210858+00:00"
-},
-{
-"ad_id": "autoru_1160968280-9e623056",
-"source": "autoru",
-"brand": "Kia",
-"model": "Cerato",
-"year": 2007,
-"price": 439000,
-"market_price": 451500,
-"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
-"mileage_km": 147935,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T18:49:20.210841+00:00"
-},
-{
 "ad_id": "autoru_1160968801-e7a09a1e",
 "source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "2115",
+"brand": "Chrysler",
+"model": "Pacifica",
 "year": 2011,
 "price": 230000,
 "market_price": 114500,
-"url": "https://auto.ru/cars/used/sale/vaz/2115/1160968801-e7a09a1e/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/UbZyneZ_0mwOhlMNiTRawoX7LOCpQiCydYsPeAIVU6xmSiT6RKeute83IUISDKW1FXvkPDgYL5WjlGZ-jnw3FN2iXBDIXGBjCPHXWG3omvgRGqJitA3ya6nJnzTsEJPZCDm5lLa165aRm7EUlwdHY-4up6iZpze7WiqEtPfAVqErjec/1200x900n",
+"url": "https://auto.ru/cars/used/sale/chrysler/pacifica/1160962705-1e6c7a05/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2165520/4yhe2AHEpnH1vZ-JPKy0Q6fepit5rn4jidvrPe-4EnF8McSbRwMjbzv00gx6HVPq4HR1NpLYFnDG9tfaEkSeFBl7pjsAbbjwUH4FjUNI2isAc0f9eAd4fB42JQ50gMtiVf_zOEhP8UptGsqjMuS3cu7G_i3ZHK3nT5R8xIkhG1zeOg/1200x900n",
 "mileage_km": 241600,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T18:49:20.210825+00:00"
+"seen_at": "2026-11-28T19:00:42.739741+00:00"
 },
 {
 "ad_id": "autoru_1160969381-f6e8bb54",
@@ -61,7 +29,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T18:49:20.210809+00:00"
+"seen_at": "2026-11-28T19:00:42.739730+00:00"
 },
 {
 "ad_id": "autoru_1160718259-35a44d7d",
@@ -77,7 +45,39 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Грибановский",
-"seen_at": "2026-11-28T18:49:20.210768+00:00"
+"seen_at": "2026-11-28T19:00:42.739713+00:00"
+},
+{
+"ad_id": "autoru_1160963789-596bea96",
+"source": "autoru",
+"brand": "Ford",
+"model": "Fusion",
+"year": 2007,
+"price": 400000,
+"market_price": 311500,
+"url": "https://auto.ru/cars/used/sale/ford/fusion/1160963789-596bea96/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/2000154/c35bfb13b9644302cdacff2b297a4d20/1200x900n",
+"mileage_km": 234000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T19:00:42.739683+00:00"
+},
+{
+"ad_id": "autoru_1160968280-9e623056",
+"source": "autoru",
+"brand": "Kia",
+"model": "Cerato",
+"year": 2007,
+"price": 439000,
+"market_price": 451500,
+"url": "https://auto.ru/cars/used/sale/kia/cerato/1160968280-9e623056/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17637180/b7ddbacac225ff5337f9b1059c8f07cb/1200x900n",
+"mileage_km": 147935,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T19:00:42.739641+00:00"
 },
 {
 "ad_id": "autoru_1160979374-4c112c2f",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T18:49:05.484948+00:00"
+"seen_at": "2026-11-28T19:00:25.822314+00:00"
 },
 {
 "ad_id": "autoru_1160981944-693a5f63",
@@ -109,7 +109,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Калач",
-"seen_at": "2026-11-28T18:49:05.484931+00:00"
+"seen_at": "2026-11-28T19:00:25.822298+00:00"
 },
 {
 "ad_id": "autoru_1160988955-62da8edb",
@@ -125,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T18:49:05.484904+00:00"
+"seen_at": "2026-11-28T19:00:25.822272+00:00"
 },
 {
 "ad_id": "autoru_1160992476-5b19f2ae",
@@ -141,7 +141,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Садовое",
-"seen_at": "2026-11-28T18:49:05.484847+00:00"
+"seen_at": "2026-11-28T19:00:25.822215+00:00"
 },
 {
 "ad_id": "autoru_1160956807-3dbcc275",
