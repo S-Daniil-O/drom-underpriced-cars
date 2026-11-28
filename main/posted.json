@@ -5313,5 +5313,35 @@
     "mileage_km": 127554,
     "owners_display": "2",
     "image_url": "https://s31.auto.drom.ru/photo/v2/c_-0pOec7z0ITPoM6KfWVvLHJKgDKxnhTyc_SCc-vKNhRcT_qp0Py6XyxPNqVQHcPdbQJUKuwtkakfei/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/volkswagen/passat/892587045.html": {
+    "posted_at": "2026-11-28T15:36:14.919479+00:00",
+    "message_id": 385,
+    "deleted_at": null,
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2012,
+    "price": 800000,
+    "median_price": 1034999.9999999999,
+    "median_sample_size": 6627,
+    "price_rating": "хорошая цена",
+    "mileage_km": 172000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/GWaa1wjnMeRZfBwghhMSzkihUX-VFpVp1wLIyYikzKFwx25fhuW1ZHEciBYKi7VLOlmOzFEp2JKs30Ka/gen272wb.jpg"
+  },
+  "https://auto.drom.ru/voronezh/mercedes-benz/gl-class/400091749.html": {
+    "posted_at": "2026-11-28T15:36:32.447859+00:00",
+    "message_id": 386,
+    "deleted_at": null,
+    "brand": "Mercedes-Benz",
+    "model": "GL-Class",
+    "year": 2008,
+    "price": 850000,
+    "median_price": 950000.0,
+    "median_sample_size": 1898,
+    "price_rating": "отличная цена",
+    "mileage_km": 250000,
+    "owners_display": null,
+    "image_url": "https://s31.auto.drom.ru/photo/v2/2OIt-J1sY1jlBfccchsgslDn_2pKxa-GYzX1QS8oFgHuHfP1ipRGahW9cayQgL4Jz23tKWT8QObG-R6l/gen272wb.jpg"
   }
 }
