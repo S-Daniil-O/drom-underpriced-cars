@@ -5298,5 +5298,20 @@
     "mileage_km": 268800,
     "owners_display": "2",
     "image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n"
+  },
+  "https://auto.drom.ru/voronezh/nissan/almera/380979158.html": {
+    "posted_at": "2026-11-28T11:22:39.699002+00:00",
+    "message_id": 384,
+    "deleted_at": null,
+    "brand": "Nissan",
+    "model": "Almera",
+    "year": 2018,
+    "price": 680000,
+    "median_price": 845442.24,
+    "median_sample_size": 929,
+    "price_rating": "нормальная цена",
+    "mileage_km": 127554,
+    "owners_display": "2",
+    "image_url": "https://s31.auto.drom.ru/photo/v2/c_-0pOec7z0ITPoM6KfWVvLHJKgDKxnhTyc_SCc-vKNhRcT_qp0Py6XyxPNqVQHcPdbQJUKuwtkakfei/gen272wb.jpg"
   }
 }
