@@ -13,7 +13,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462686+00:00"
+"seen_at": "2026-11-28T16:32:25.012203+00:00"
 },
 {
 "ad_id": "autoru_1160961093-733cc743",
@@ -29,7 +29,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462672+00:00"
+"seen_at": "2026-11-28T16:32:25.012189+00:00"
 },
 {
 "ad_id": "autoru_1160961733-32febf33",
@@ -45,7 +45,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462658+00:00"
+"seen_at": "2026-11-28T16:32:25.012176+00:00"
 },
 {
 "ad_id": "autoru_1160013989-8d9b50c3",
@@ -61,7 +61,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462643+00:00"
+"seen_at": "2026-11-28T16:32:25.012161+00:00"
 },
 {
 "ad_id": "autoru_1160964115-52167a25",
@@ -77,7 +77,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462633+00:00"
+"seen_at": "2026-11-28T16:32:25.012151+00:00"
 },
 {
 "ad_id": "autoru_1160964495-4fb70d87",
@@ -93,7 +93,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462622+00:00"
+"seen_at": "2026-11-28T16:32:25.012139+00:00"
 },
 {
 "ad_id": "autoru_1160814847-c45776fc",
@@ -109,39 +109,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462606+00:00"
-},
-{
-"ad_id": "autoru_1160968383-0f136015",
-"source": "autoru",
-"brand": "Nissan",
-"model": "Primastar",
-"year": 2007,
-"price": 1369000,
-"market_price": null,
-"url": "https://auto.ru/cars/used/sale/nissan/primastar/1160968383-0f136015/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20104625/a183320cd6c6562cc1cb087ef06b10ac/1200x900n",
-"mileage_km": 188600,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462593+00:00"
-},
-{
-"ad_id": "autoru_1160969955-15dc8858",
-"source": "autoru",
-"brand": "Volkswagen",
-"model": "Tiguan",
-"year": 2014,
-"price": 1261000,
-"market_price": 1172000,
-"url": "https://auto.ru/cars/used/sale/volkswagen/tiguan/1160969955-15dc8858/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/5227498/bf6abd5d2331b40b28cf67c07450eeff/1200x900n",
-"mileage_km": 226000,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462576+00:00"
+"seen_at": "2026-11-28T16:32:25.012125+00:00"
 },
 {
 "ad_id": "autoru_1160626519-809ff3dd",
@@ -157,7 +125,7 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462559+00:00"
+"seen_at": "2026-11-28T16:32:25.012112+00:00"
 },
 {
 "ad_id": "autoru_1160975973-78372164",
@@ -173,7 +141,39 @@
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462548+00:00"
+"seen_at": "2026-11-28T16:32:25.012101+00:00"
+},
+{
+"ad_id": "autoru_1160968383-0f136015",
+"source": "autoru",
+"brand": "Nissan",
+"model": "Primastar",
+"year": 2007,
+"price": 1369000,
+"market_price": null,
+"url": "https://auto.ru/cars/used/sale/nissan/primastar/1160968383-0f136015/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20104625/a183320cd6c6562cc1cb087ef06b10ac/1200x900n",
+"mileage_km": 188600,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:32:25.012077+00:00"
+},
+{
+"ad_id": "autoru_1160969955-15dc8858",
+"source": "autoru",
+"brand": "Volkswagen",
+"model": "Tiguan",
+"year": 2014,
+"price": 1261000,
+"market_price": 1172000,
+"url": "https://auto.ru/cars/used/sale/volkswagen/tiguan/1160969955-15dc8858/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/5227498/bf6abd5d2331b40b28cf67c07450eeff/1200x900n",
+"mileage_km": 226000,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:32:25.012060+00:00"
 },
 {
 "ad_id": "autoru_1160981756-dca56bbf",
@@ -189,7 +189,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:21:11.462519+00:00"
+"seen_at": "2026-11-28T16:32:25.012039+00:00"
 },
 {
 "ad_id": "autoru_1160793365-e7ea7d2a",
@@ -205,55 +205,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Россошь",
-"seen_at": "2026-11-28T16:21:11.462486+00:00"
-},
-{
-"ad_id": "autoru_1160804929-8e973751",
-"source": "autoru",
-"brand": "Nissan",
-"model": "X-Trail",
-"year": 2011,
-"price": 1050000,
-"market_price": 948000,
-"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
-"mileage_km": 268800,
-"owners_display": "2",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925861+00:00"
-},
-{
-"ad_id": "autoru_1160988021-93da0578",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "Granta",
-"year": 2024,
-"price": 980000,
-"market_price": 733500,
-"url": "https://auto.ru/cars/used/sale/vaz/granta/1160988021-93da0578/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/7165b74378498417ecff0599045d1a13/1200x900n",
-"mileage_km": 17000,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Павловск",
-"seen_at": "2026-11-28T16:20:51.925840+00:00"
-},
-{
-"ad_id": "autoru_1160988026-88105f2f",
-"source": "autoru",
-"brand": "Lada (ВАЗ)",
-"model": "XRAY",
-"year": 2021,
-"price": 970000,
-"market_price": 897000,
-"url": "https://auto.ru/cars/used/sale/vaz/xray/1160988026-88105f2f/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/1924530/ea4437d425a1fb9a0cf43d55392a64cb/1200x900n",
-"mileage_km": 47700,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925830+00:00"
+"seen_at": "2026-11-28T16:32:25.012005+00:00"
 },
 {
 "ad_id": "autoru_1160940104-690af0a3",
@@ -264,12 +216,12 @@
 "price": 1360000,
 "market_price": 1113500,
 "url": "https://auto.ru/cars/used/sale/skoda/yeti/1160940104-690af0a3/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20785675/HzUztkwb5AWRnpyIptKLKDHblP3VkRfW9i8t-hbSmnR0eBkdapcB_zx89ddMPKZfd1p41dc-DwHd47i8WAKFPplxxWPWBeOrx_GwYY2U0ry72tci5qMVfKjXab6l_VAj1cQlM3zocnUb_7HRoKIMCh3dVY2m_YHoFJyZNMVnvrvWLP0/1200x900n",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/20785675/FwBaYuR0Vo-6t-25q0aqJu_Pw6B_hfoSCXHr30RN-RwadlcZO4YmMRmdR7k6HrO8bimJ7TUnPLOrNLCWdX6WbS_WinwhUt-FOFcNudsWeEq0LQK9Vof0YuDcQZxZbN-2qeVD-rA8JRuJ1WjuFIGuEOox-qxsAPWANFzBkA4VkvOaUiM/1200x900n",
 "mileage_km": 74717,
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925813+00:00"
+"seen_at": "2026-11-28T16:32:11.073412+00:00"
 },
 {
 "ad_id": "autoru_1160590322-36e317de",
@@ -285,23 +237,55 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925801+00:00"
+"seen_at": "2026-11-28T16:32:11.073401+00:00"
+},
+{
+"ad_id": "autoru_1160988021-93da0578",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "Granta",
+"year": 2024,
+"price": 980000,
+"market_price": 733500,
+"url": "https://auto.ru/cars/used/sale/vaz/granta/1160988021-93da0578/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/17698338/7165b74378498417ecff0599045d1a13/1200x900n",
+"mileage_km": 17000,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Павловск",
+"seen_at": "2026-11-28T16:32:11.073380+00:00"
+},
+{
+"ad_id": "autoru_1160988026-88105f2f",
+"source": "autoru",
+"brand": "Lada (ВАЗ)",
+"model": "XRAY",
+"year": 2021,
+"price": 970000,
+"market_price": 897000,
+"url": "https://auto.ru/cars/used/sale/vaz/xray/1160988026-88105f2f/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/1924530/ea4437d425a1fb9a0cf43d55392a64cb/1200x900n",
+"mileage_km": 47700,
+"owners_display": "1",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:32:11.073370+00:00"
 },
 {
 "ad_id": "autoru_1160966402-c55d6b0c",
 "source": "autoru",
-"brand": "Toyota",
-"model": "Land Cruiser Prado",
+"brand": "Ford",
+"model": "Focus",
 "year": 1999,
 "price": 1180000,
 "market_price": 853000,
-"url": "https://auto.ru/cars/used/sale/toyota/land_cruiser_prado/1160966402-c55d6b0c/",
-"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2078760/xpXrteh1kg0G2IWH7EKd_-ElGd62vaHfBAM50wyAf-WOxFSR-6TDWEgNt7D0Y6jSs-K8KW-WMxqozVj_IqAlaRX_YqJbCxldViQ_nAiXC8tijnKS6JsfB9xIRpMqIqZOF4wf3ztxE6fXATl-v-EN51rMafVVziGI5BpPjTtQuu40qIg/1200x900n",
+"url": "https://auto.ru/cars/used/sale/ford/focus/1134208305-9e626ff1/",
+"image_url": "https://photo.auto.ru/photo/get-autoru-vos/2078760/1kuohKDkeVt6HHasI5L8aBUExFtFPd4rTKQFXneO-8Ovw9rmkU2mnpLjDd7tYiUWkcaCqrRjDL3rEF2Nkm7Lw_w6RnX4Za2hkbtUJi9vrvkDNvbFoeO1m5csYL4CNh3Da1vTDeZ2zh3ap5F3DpS-zKsj_GcFjzO9AzgLB_TV-d43Ksg/1200x900n",
 "mileage_km": 368000,
 "owners_display": "2",
 "seller_type": "PRIVATE",
 "city": "Новоподклетное",
-"seen_at": "2026-11-28T16:20:51.925786+00:00"
+"seen_at": "2026-11-28T16:32:11.073353+00:00"
 },
 {
 "ad_id": "autoru_1160847555-6a01a8c6",
@@ -317,7 +301,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925775+00:00"
+"seen_at": "2026-11-28T16:32:11.073343+00:00"
 },
 {
 "ad_id": "autoru_1160848320-36771256",
@@ -333,7 +317,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925765+00:00"
+"seen_at": "2026-11-28T16:32:11.073332+00:00"
 },
 {
 "ad_id": "autoru_1160847336-8715d84f",
@@ -349,7 +333,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925754+00:00"
+"seen_at": "2026-11-28T16:32:11.073322+00:00"
 },
 {
 "ad_id": "autoru_1160749524-ba7f469f",
@@ -365,7 +349,23 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925735+00:00"
+"seen_at": "2026-11-28T16:32:11.073305+00:00"
+},
+{
+"ad_id": "autoru_1160804929-8e973751",
+"source": "autoru",
+"brand": "Nissan",
+"model": "X-Trail",
+"year": 2011,
+"price": 1050000,
+"market_price": 948000,
+"url": "https://auto.ru/cars/used/sale/nissan/x_trail/1160804929-8e973751/",
+"image_url": "https://avatars.avto.ru/get-autoru-vos/20657148/a3bfa232eee55350919fccc4ca62e6a5/1200x900n",
+"mileage_km": 268800,
+"owners_display": "2",
+"seller_type": "PRIVATE",
+"city": "Воронеж",
+"seen_at": "2026-11-28T16:32:11.073278+00:00"
 },
 {
 "ad_id": "autoru_1160847771-0e8f35b1",
@@ -381,7 +381,7 @@
 "owners_display": "1",
 "seller_type": "PRIVATE",
 "city": "Воронеж",
-"seen_at": "2026-11-28T16:20:51.925671+00:00"
+"seen_at": "2026-11-28T16:32:11.073222+00:00"
 },
 {
 "ad_id": "autoru_1160957635-047ed03b",
@@ -462,21 +462,5 @@
 "seller_type": "PRIVATE",
 "city": "Нововоронеж",
 "seen_at": "2026-11-28T11:02:48.945404+00:00"
-},
-{
-"ad_id": "autoru_1160953559-72de99ba",
-"source": "autoru",
-"brand": "Kia",
-"model": "Cerato",
-"year": 2012,
-"price": 680000,
-"market_price": 467500,
-"url": "https://auto.ru/cars/used/sale/kia/cerato/1160953559-72de99ba/",
-"image_url": "https://avatars.avto.ru/get-autoru-vos/11635645/5c1818816282d891e27044decf8e3120/1200x900n",
-"mileage_km": 418633,
-"owners_display": "1",
-"seller_type": "PRIVATE",
-"city": "Воронеж",
-"seen_at": "2026-11-28T10:29:06.738677+00:00"
 }
 ]
